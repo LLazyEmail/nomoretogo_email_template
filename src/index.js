@@ -1,3 +1,4 @@
+// Get components
 import { head } from "./components/get-head.js";
 import { footer } from "./components/get-footer.js";
 import { ViewInBrows } from "./components/get-view-in-brows.js";
