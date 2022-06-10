@@ -1,4 +1,19 @@
-// Create 123 component
-const asd = function () {};
+// Create image component
+const image = function (link, src) {
+  if (link == "") {
+    throw new Error("No link iamage");
+  }
+  if (src == "") {
+    throw new Error("No src iamage");
+  }
 
-export {};
+  return (
+    '<a href="' +
+    link +
+    '" data-link-id="960357279" target="_self"><img src="./images/' +
+    src +
+    '" border="0" alt="" width="267" style="display: block;"></a>'
+  );
+};
+
+export { image };
