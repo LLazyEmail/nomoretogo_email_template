@@ -67,4 +67,6 @@ const head = function (title) {
     var data += '</head>';
     return data;
   };
+
+  export {head};
   
