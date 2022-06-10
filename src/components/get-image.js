@@ -1,10 +1,10 @@
 // Create image component
 const image = function (link, src) {
   if (link == "") {
-    throw new Error("No link iamage");
+    throw new Error("No link image");
   }
   if (src == "") {
-    throw new Error("No src iamage");
+    throw new Error("No src image");
   }
 
   return (

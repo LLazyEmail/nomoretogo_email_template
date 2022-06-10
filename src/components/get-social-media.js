@@ -1,5 +1,11 @@
 // Create socialMedia component
-const socialMedia = function (href, scr) {
+const socialMedia = function (href, src) {
+  if (href == "") {
+    throw new Error("No href sosial media");
+  }
+  if (src == "") {
+    throw new Error("No src social media");
+  }
   return (
     '<a href="' +
     href +

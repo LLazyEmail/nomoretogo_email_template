@@ -1,5 +1,8 @@
 // Create link component
 const link = function (link) {
+  if (link == "") {
+    throw new Error("No link link");
+  }
   return (
     '<a href="' +
     link +
