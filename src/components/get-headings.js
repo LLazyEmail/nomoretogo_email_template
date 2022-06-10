@@ -1,4 +1,6 @@
-// Create 123 component
-const asd = function () {};
+// Create headings component
+const headings = function () {
+  return "headings";
+};
 
-export {};
+export { headings };

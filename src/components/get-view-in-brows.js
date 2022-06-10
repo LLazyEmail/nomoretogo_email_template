@@ -1,4 +1,6 @@
-// Create 123 component
-const asd = function () {};
+// Create view-in-brows component
+const WiewInBrows = function () {
+  return "WiewInBrows";
+};
 
-export {};
+export { WiewInBrows };
