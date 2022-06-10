@@ -9,7 +9,7 @@ import { headings } from "./components/get-headings.js";
 import { SociaMedia } from "./components/get-social-media.js";
 import { address } from "./components/get-address.js";
 
-return {
+export {
   head,
   footer,
   ViewInBrows,
