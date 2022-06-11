@@ -1,5 +1,5 @@
 // Create socialMedia component
-const socialMedia = function (href, src) {
+const SocialMedia = function (href, src) {
   if (href == "") {
     throw new Error("No href sosial media");
   }
@@ -15,4 +15,4 @@ const socialMedia = function (href, src) {
   );
 };
 
-export { socialMedia };
+export { SocialMedia };

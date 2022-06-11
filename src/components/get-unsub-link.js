@@ -1,5 +1,5 @@
 // Create unsub-link component
-const unsubLink = function (link) {
+const UnsubLink = function (link) {
   if (link == "") {
     throw new Error("No unsub link");
   }
@@ -10,4 +10,4 @@ const unsubLink = function (link) {
   );
 };
 
-export { unsubLink };
+export { UnsubLink };

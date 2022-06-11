@@ -1,6 +1,6 @@
 // Create view-in-brows component
-const WiewInBrows = function () {
-  return "WiewInBrows";
+const ViewInBrows = function () {
+  return "ViewInBrows";
 };
 
-export { WiewInBrows };
+export { ViewInBrows };
