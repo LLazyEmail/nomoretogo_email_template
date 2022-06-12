@@ -1,5 +1,5 @@
 // Create footer component
-const footer = function () {
+export default function () {
   return '<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">\
       <tbody><tr>\
         <td class="mlContentTableFooterCardTd">\
@@ -100,6 +100,4 @@ const footer = function () {
         </td>\
       </tr>\
     </tbody></table>';
-};
-
-export { footer };
+}

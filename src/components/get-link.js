@@ -1,5 +1,5 @@
 // Create link component
-const link = function (id, link) {
+export default function (id, link) {
   if (id == "") {
     throw new Error("No id link");
   }
@@ -13,6 +13,4 @@ const link = function (id, link) {
     id +
     '" target="_blank" style="word-break: break-word; font-family: "Poppins", sans-serif; color: #09c269; text-decoration: underline;">How Can We Help"</a>'
   );
-};
-
-export { link };
+}

@@ -1,5 +1,5 @@
 // Create image component
-const image = function (id, link, src) {
+export default function (id, link, src) {
   if (id == "") {
     throw new Error("No id image");
   }
@@ -19,6 +19,4 @@ const image = function (id, link, src) {
     src +
     '" border="0" alt="" width="267" style="display: block;"></a>'
   );
-};
-
-export { image };
+}
