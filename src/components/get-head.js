@@ -6,6 +6,8 @@ import style from "../miscellaneous/style.js";
 import style2 from "../miscellaneous/style2.js";
 import font1 from "../miscellaneous/font1.js";
 import font2 from "../miscellaneous/font2.js";
+import meta from "../miscellaneous/meta.js";
+import ifStyle from "../miscellaneous/ifStyle.js";
 
 export default function (title) {
   if (title == "") {
@@ -19,26 +21,12 @@ export default function (title) {
   dataHead +=
     "<!--[if gte mso 9]><xml><o:OfficeDocumentsettings><o:AllowPNG/><o:PixelsPerInch>96<o:PixelsPerInch></o:OfficeDocumentsettings></xml><![endif]-->";
 
-  dataHead +=
-    '<meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">\
-    <meta name="format-detection" content="address=no">\
-    <meta name="format-detection" content="telephone=no">\
-    <meta name="format-detection" content="email=no">\
-    <meta name="x-apple-disable-message-reformatting"></meta>';
-
+  dataHead += meta;
   dataHead += "<!--[if !mso]><!-->";
   dataHead += font1;
   dataHead += "<!--<![endif]-->";
 
-  dataHead += " <!-- RSS STYLE STARTS -->";
-  dataHead +=
-    ' <!--[if mso]><style type="text/css">.content-MS .content img { width: 560px; }</style><![endif]-->';
-  dataHead += "<!-- WINDOWS 10 HACKS FOR LINK AND BG COLOR -->";
-  dataHead +=
-    '<!--[if (mso)|(mso 16)]><style type="text/css">.mlContentButton a { text-decoration: none; }<style[endif]--><!--[if !mso]><!-- --><!--<![endif]-->';
-  dataHead +=
-    '<!--[if (lt mso 16)]><style type="text/css" if="variable.bodyBackgroundImage.value">.mlBodyBackgroundImage { background-image: none; }</style><![endif]-->';
+  dataHead += ifStyle;
   dataHead += style;
 
   dataHead += "<!--[if mso]>";
