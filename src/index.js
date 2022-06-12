@@ -8,7 +8,7 @@ import { button } from "./components/get-button.js";
 import { link } from "./components/get-link.js";
 import { headings } from "./components/get-headings.js";
 import { SocialMedia } from "./components/get-social-media.js";
-import { address } from "./components/get-address.js";
+import address from "./components/get-address.js";
 
 export {
   head,
