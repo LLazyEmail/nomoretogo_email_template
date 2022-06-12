@@ -1,5 +1,8 @@
 // Create image component
-const image = function (link, src) {
+const image = function (id, link, src) {
+  if (id == "") {
+    throw new Error("No id image");
+  }
   if (link == "") {
     throw new Error("No link image");
   }
@@ -10,7 +13,9 @@ const image = function (link, src) {
   return (
     '<a href="' +
     link +
-    '" data-link-id="960357279" target="_self"><img src="./images/' +
+    '" data-link-id="' +
+    id +
+    '" target="_self"><img src="./images/' +
     src +
     '" border="0" alt="" width="267" style="display: block;"></a>'
   );
