@@ -1,6 +1,6 @@
 // Create socialMedia component
 const srcPath = "./images/";
-const SocialMedia = function (href, src) {
+export default function (href, src) {
   if (href == "") {
     throw new Error("No href sosial media");
   }
@@ -15,6 +15,4 @@ const SocialMedia = function (href, src) {
     src +
     '" style="display: block;" border="0"></a>'
   );
-};
-
-export { SocialMedia };
+}

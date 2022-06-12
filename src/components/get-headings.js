@@ -1,6 +1,4 @@
 // Create headings component
-const headings = function () {
+export default function () {
   return "headings";
-};
-
-export { headings };
+}
