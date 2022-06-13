@@ -4,8 +4,8 @@ export default function (link) {
     throw new Error("No unsub link");
   }
   return (
-    '<a href="' +
+    `<a href="` +
     link +
-    '" style="color: #111111; text-decoration: underline;"><span style="color: #111111;">Unsubscribe</span></a>'
+    `" style="color: #111111; text-decoration: underline;"><span style="color: #111111;">Unsubscribe</span></a>`
   );
 }
