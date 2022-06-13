@@ -1,8 +1,13 @@
 // Create footer component
 export default function (footContent) {
-  if (footContent == "" || !footContent.length) {
+  if (footContent == "") {
     throw new Error("No footContent footer");
   }
+
+  if (footContent.length == 0) {
+    throw new Error("No footContent footer");
+  }
+
   const pathImg = `../../template/images/`;
   var res = footContent.map((cont) => {
     return (
