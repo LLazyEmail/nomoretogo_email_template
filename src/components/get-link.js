@@ -7,10 +7,10 @@ export default function (id, link) {
     throw new Error("No link link");
   }
   return (
-    '<a href="' +
+    `<a href="` +
     link +
-    '" data-link-id="' +
+    `" data-link-id="` +
     id +
-    '" target="_blank" style="word-break: break-word; font-family: "Poppins", sans-serif; color: #09c269; text-decoration: underline;">How Can We Help"</a>'
+    `" target="_blank" style="word-break: break-word; font-family: "Poppins", sans-serif; color: #09c269; text-decoration: underline;">How Can We Help"</a>`
   );
 }

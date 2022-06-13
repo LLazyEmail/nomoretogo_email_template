@@ -3,7 +3,7 @@ import headComponent from "./components/get-headComponent.js";
 import footer from "./components/get-footer.js";
 import ViewInBrows from "./miscellaneous/get-view-in-brows.js";
 import UnsubLink from "./miscellaneous/get-unsub-link.js";
-import image from "./components/get-image.js";
+import ImageTitleDesc from "./components/get-ImageTitleDesc";
 import button from "./components/get-button.js";
 import link from "./components/get-link.js";
 import headings from "./typography/get-headings.js";
@@ -16,7 +16,7 @@ export {
   footer,
   ViewInBrows,
   UnsubLink,
-  image,
+  ImageTitleDesc,
   button,
   link,
   headings,

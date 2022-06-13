@@ -15,30 +15,28 @@ export default function (title) {
   }
 
   var dataHead = "";
-  dataHead += "<head>";
-  dataHead +=
-    '<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">';
-  dataHead +=
-    "<!--[if gte mso 9]><xml><o:OfficeDocumentsettings><o:AllowPNG/><o:PixelsPerInch>96<o:PixelsPerInch></o:OfficeDocumentsettings></xml><![endif]-->";
+  dataHead += `<head>`;
+  dataHead += `<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">`;
+  dataHead += `<!--[if gte mso 9]><xml><o:OfficeDocumentsettings><o:AllowPNG/><o:PixelsPerInch>96<o:PixelsPerInch></o:OfficeDocumentsettings></xml><![endif]-->`;
 
   dataHead += meta;
-  dataHead += "<!--[if !mso]><!-->";
+  dataHead += `<!--[if !mso]><!-->`;
   dataHead += font1;
-  dataHead += "<!--<![endif]-->";
+  dataHead += `<!--<![endif]-->`;
 
   dataHead += ifStyle;
   dataHead += style;
 
-  dataHead += "<!--[if mso]>";
+  dataHead += `<!--[if mso]>`;
   dataHead += bodyStyle;
-  dataHead += "<![endif]-->";
+  dataHead += `<![endif]-->`;
 
   dataHead += mediaStyle;
-  dataHead += "<title>" + title + "</title>";
-  dataHead += '<meta name="robots" content="noindex, nofollow">';
+  dataHead += `<title>` + title + `</title>`;
+  dataHead += `<meta name="robots" content="noindex, nofollow">`;
   dataHead += style2;
   dataHead += font2;
   dataHead += blobHead;
-  dataHead += "</head>";
+  dataHead += `</head>`;
   return dataHead;
 }
