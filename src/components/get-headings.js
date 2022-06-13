@@ -1,5 +1,12 @@
 // Create headings component
 export default function (text, type) {
+  if (text == "") {
+    throw new Error("No text headings");
+  }
+  if (type == "") {
+    throw new Error("No type headings");
+  }
+
   const resault = "";
   if (type == 1) {
     resault = "<h1 style='font-size: 2em, font-weight:700'>" + text + "</h1>";
