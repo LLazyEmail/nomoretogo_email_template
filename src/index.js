@@ -1,5 +1,5 @@
 // Get components
-import head from "./components/get-head.js";
+import headComponent from "./components/get-headComponent.js";
 import footer from "./components/get-footer.js";
 import ViewInBrows from "./components/get-view-in-brows.js";
 import UnsubLink from "./components/get-unsub-link.js";
@@ -11,7 +11,7 @@ import SocialMedia from "./components/get-social-media.js";
 import address from "./components/get-address.js";
 
 export {
-  head,
+  headComponent,
   footer,
   ViewInBrows,
   UnsubLink,
