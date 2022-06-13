@@ -1,11 +1,7 @@
 // Create socialMedia component
 const srcPath = "./images/";
-export default function (socialItem) {
-  if (socialItem == "" || !socialItem.length) {
-    throw new Error("No socialItem sosial-media");
-  }
-
-  var res = socialItem.map((social) => {
+function getSocialItem(socialItem) {
+  return socialItem.map((social) => {
     return (
       `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link !=''">
         <a href="` +
@@ -19,10 +15,18 @@ export default function (socialItem) {
       </td>`
     );
   });
+}
+
+const createSocialItem = function (socialItem) {
+  if (socialItem == "" || !socialItem.length) {
+    throw new Error("No socialItem sosial-media");
+  }
 
   return (
     `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left"><tbody><tr>` +
-    res +
+    getSocialItem(socialItem) +
     `</tr></tbody></table>`
   );
-}
+};
+
+export default createSocialItem;
