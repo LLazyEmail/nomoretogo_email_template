@@ -6,7 +6,7 @@ import UnsubLink from "./components/get-unsub-link.js";
 import image from "./components/get-image.js";
 import button from "./components/get-button.js";
 import link from "./components/get-link.js";
-import headings from "./components/get-headings.js";
+import headings from "./typography/get-headings.js";
 import SocialMedia from "./components/get-social-media.js";
 import address from "./components/get-address.js";
 
