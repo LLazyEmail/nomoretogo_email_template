@@ -1,18 +1,28 @@
 // Create socialMedia component
 const srcPath = "./images/";
-export default function (href, src) {
-  if (href == "") {
-    throw new Error("No href sosial media");
+export default function (socialItem) {
+  if (socialItem == "" || !socialItem.length) {
+    throw new Error("No socialItem sosial-media");
   }
-  if (src == "") {
-    throw new Error("No src social media");
-  }
+
+  var res = socialItem.map((social) => {
+    return (
+      '<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != \'\'">\
+        <a href="' +
+      social.href +
+      '" target="_self">\
+          <img width="24" alt="facebook" src="' +
+      srcPath +
+      social.src +
+      '" style="display: block;" border="0">\
+        </a>\
+      </td>'
+    );
+  });
+
   return (
-    '<a href="' +
-    href +
-    '" target="_self"><img width="24" alt="instagram" src="' +
-    srcPath +
-    src +
-    '" style="display: block;" border="0"></a>'
+    '<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left"><tbody><tr>' +
+    res +
+    "</tr></tbody></table>"
   );
 }
