@@ -88,10 +88,18 @@ var searchError = (err) => {
 };
 
 export default function (hrefSocial, hrefHelp, idSocial, idHelp) {
-  if (hrefSocial == "") searchError("hrefSocial");
-  if (hrefHelp == "") searchError("hrefHelp");
-  if (idSocial == "") searchError("idSocial");
-  if (idHelp == "") searchError("idHelp");
+  if (hrefSocial == "") {
+    searchError("hrefSocial");
+  }
+  if (hrefHelp == "") {
+    searchError("hrefHelp");
+  }
+  if (idSocial == "") {
+    searchError("idSocial");
+  }
+  if (idHelp == "") {
+    searchError("idHelp");
+  }
 
   return mlContentTable(hrefSocial, hrefHelp, idSocial, idHelp);
 }
