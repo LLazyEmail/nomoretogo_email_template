@@ -1,5 +1,5 @@
 // Create supportContact component
-const hrefContact = "href contact";
+const hrefContact = "contact@nomoretogo.com.%C2%A0";
 
 // Top block start
 var title = `No More To-Go Facebook Users:`;
