@@ -1,6 +1,6 @@
 // Create view-in-brows component
-var hrefViewInBrows = (href) => {
-  return `<a style="color: #111111;" href="${href}" data-link-id="960357273" target="_blank">View in browser</a>`;
+var hrefViewInBrows = (id, href) => {
+  return `<a style="color: #111111;" href="${href}" data-link-id="${id}" target="_blank">View in browser</a>`;
 };
 
 var topPanel = (href) => {
@@ -14,7 +14,7 @@ var topPanel = (href) => {
         <tr>
           <td align="left" style="font-family: 'Poppins', sans-serif; color: #111111; font-size: 12px; line-height: 18px;"></td>
           <td align="right" style="font-family: 'Poppins', sans-serif; color: #111111; font-size: 12px; line-height: 18px;">
-            ${hrefViewInBrows(href)}
+            ${hrefViewInBrows(id, href)}
           </td>
         </tr>
         <tr>
@@ -26,10 +26,10 @@ var topPanel = (href) => {
   </tbody></table>`;
 };
 
-export default function (href) {
+export default function (id, href) {
   if (href == "") {
     throw new Error("No href view-in-brows");
   }
 
-  topPanel(href);
+  topPanel(id, href);
 }
