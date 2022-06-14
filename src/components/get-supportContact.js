@@ -1,4 +1,5 @@
 // Create supportContact component
+const hrefContact = "href contact";
 
 // Top block start
 var title = `No More To-Go Facebook Users:`;
@@ -75,24 +76,30 @@ var mlContentTable = () => {
 };
 // Main block end
 
-var searchError = (variable) => {
-  const textError = {
+var searchError = (err) => {
+  const error = {
     hrefSocial: "No hrefSocial supportContact",
     hrefHelp: "No hrefHelp supportContact",
-    hrefContact: "No hrefContact supportContact",
     idSocial: "No idSocial supportContact",
     idHelp: "No idHelp supportContact",
   };
 
-  throw new Error(textError.variable);
+  throw new Error(error[err]);
 };
 
-export default function (hrefSocial, hrefHelp, hrefContact, idSocial, idHelp) {
-  if (hrefSocial == "") searchError("hrefSocial");
-  if (hrefHelp == "") searchError("hrefHelp");
-  if (hrefContact == "") searchError("hrefContact");
-  if (idSocial == "") searchError("idSocial");
-  if (idHelp == "") searchError("idHelp");
+export default function (hrefSocial, hrefHelp, idSocial, idHelp) {
+  if (hrefSocial == "") {
+    searchError("hrefSocial");
+  }
+  if (hrefHelp == "") {
+    searchError("hrefHelp");
+  }
+  if (idSocial == "") {
+    searchError("idSocial");
+  }
+  if (idHelp == "") {
+    searchError("idHelp");
+  }
 
-  return mlContentTable(hrefSocial, hrefHelp, hrefContact, idSocial, idHelp);
+  return mlContentTable(hrefSocial, hrefHelp, idSocial, idHelp);
 }
