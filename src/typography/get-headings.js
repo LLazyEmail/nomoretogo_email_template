@@ -31,7 +31,7 @@ export default function (text, type) {
     throw new Error("No type headings");
   }
 
-  const hFunction = [h1, h2, h3, h4, h5, h6];
-  const getH = hFunction[type];
+  const headingsFunctionsArr = [h1, h2, h3, h4, h5, h6];
+  const getH = headingsFunctionsArr[type];
   getH(text);
 }
