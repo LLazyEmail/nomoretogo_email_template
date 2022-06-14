@@ -9,7 +9,8 @@ import link from "./components/get-link.js";
 import headings from "./typography/get-headings.js";
 import SocialMedia from "./miscellaneous/get-social-media.js";
 import address from "./miscellaneous/get-address.js";
-import supportContact from "./components/supportContact.js";
+import supportContact from "./components/get-supportContact.js";
+import content from "./components/get-content.js";
 
 export {
   headComponent,
@@ -23,4 +24,5 @@ export {
   SocialMedia,
   address,
   supportContact,
+  content,
 };
