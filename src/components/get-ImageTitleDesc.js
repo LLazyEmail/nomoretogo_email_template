@@ -79,11 +79,21 @@ const searchError = (err) => {
 // Search error end
 
 export default function (id, href, src, title, text) {
-  if (id == "") searchError("id");
-  if (href == "") searchError("href");
-  if (src == "") searchError("src");
-  if (title == "") searchError("title");
-  if (text == "") searchError("text");
+  if (id == "") {
+    searchError("id");
+  }
+  if (href == "") {
+    searchError("href");
+  }
+  if (src == "") {
+    searchError("src");
+  }
+  if (title == "") {
+    searchError("title");
+  }
+  if (text == "") {
+    searchError("text");
+  }
 
   return mainBlock(id, href, src, title, text);
 }
