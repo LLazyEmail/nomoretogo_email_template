@@ -65,7 +65,7 @@ const mainBlock = (id, href, src, title, text) => {
 };
 // Get main block end
 
-// Get serch error start
+// Search error start
 const searchError = (err) => {
   const error = {
     id: "No id imageTitleText",
@@ -76,7 +76,7 @@ const searchError = (err) => {
   };
   throw new Error(error[err]);
 };
-// Get serch error end
+// Search error end
 
 export default function (id, href, src, title, text) {
   if (id == "") searchError("id");
