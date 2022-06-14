@@ -1,7 +1,7 @@
 // Create view-in-brows component
 export default function (href) {
   if (href == "") {
-    throw new Error("No href view-in-brows");
+    throw new Error("No href view in browser link");
   }
 
   return `<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" class="mobileHide">
