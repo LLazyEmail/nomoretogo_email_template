@@ -143,7 +143,7 @@ const textDescription = (textTop, textBottom) => {
 // Text block end
 
 // Image block row start
-const imageBlockRow = (
+const RowWithTwoRecipes = (
   id,
   href,
   src,
@@ -324,7 +324,7 @@ const content = (
         ${subTitleText(titleSubText)}
         ${textDescription(textTop, textBottom)}
 
-        ${imageBlockRow(
+        ${RowWithTwoRecipes(
           id,
           href,
           src,
@@ -338,7 +338,7 @@ const content = (
           text2
         )}
 
-        ${imageBlockRow(
+        ${RowWithTwoRecipes(
           id3,
           href3,
           src3,
@@ -352,7 +352,7 @@ const content = (
           text4
         )}
 
-        ${imageBlockRow(
+        ${RowWithTwoRecipes(
           id5,
           href5,
           src5,
