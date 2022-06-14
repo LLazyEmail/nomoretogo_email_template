@@ -1,5 +1,5 @@
 // Create image component
-export default function (href, src, title, text) {
+export default function (id, href, src, title, text) {
   const srcPath = "./image/";
   // if (id == "") {
   //   throw new Error("No id image");
@@ -22,7 +22,9 @@ export default function (href, src, title, text) {
   <td id="imageBlock-26" align="center">
     <a href="` +
     href +
-    `" data-link-id="960357283" target="_self">
+    `" data-link-id="` +
+    id +
+    `" target="_self">
 <img src="` +
     srcPath +
     src +
