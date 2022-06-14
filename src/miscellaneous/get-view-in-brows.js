@@ -1,5 +1,4 @@
 // Create view-in-brows component
-
 var hrefViewInBrows = (href) => {
   return `<a style="color: #111111;" href="${href}" data-link-id="960357273" target="_blank">View in browser</a>`;
 };
