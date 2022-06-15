@@ -3,7 +3,7 @@ import headComponent from "./components/get-headComponent.js";
 import footer from "./components/get-footer.js";
 import ViewInBrowsLink from "./miscellaneous/view-in-browser-link.js";
 import UnsubLink from "./miscellaneous/get-unsub-link.js";
-import ImageTitleDesc from "./components/get-ImageTitleDesc";
+import recipe from "./components/get-recipe.js";
 import button from "./components/get-button.js";
 import link from "./components/get-link.js";
 import headings from "./typography/get-headings.js";
@@ -17,7 +17,7 @@ export {
   footer,
   ViewInBrowsLink,
   UnsubLink,
-  ImageTitleDesc,
+  recipe,
   button,
   link,
   headings,
