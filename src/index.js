@@ -1,7 +1,7 @@
 // Get components
 import headComponent from "./components/get-headComponent.js";
 import footer from "./components/get-footer.js";
-import ViewInBrows from "./miscellaneous/get-view-in-brows.js";
+import ViewInBrowsLink from "./miscellaneous/view-in-browser-link.js";
 import UnsubLink from "./miscellaneous/get-unsub-link.js";
 import ImageTitleDesc from "./components/get-ImageTitleDesc";
 import button from "./components/get-button.js";
@@ -15,7 +15,7 @@ import content from "./components/get-content.js";
 export {
   headComponent,
   footer,
-  ViewInBrows,
+  ViewInBrowsLink,
   UnsubLink,
   ImageTitleDesc,
   button,
