@@ -6,6 +6,8 @@ const unsubscribe =
 const pathImages = "../data/images/";
 const pathMainLogo = "../data/images/logo.jpeg";
 const pathSocialIcons = "../data/images/";
+const titleHead =
+  "Korean Barbecue Beef | Pork Schnitzel | Bahn Mi Meatball Skewers";
 
 export {
   contact,
@@ -14,4 +16,5 @@ export {
   pathImages,
   pathMainLogo,
   pathSocialIcons,
+  titleHead,
 };
