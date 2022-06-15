@@ -1,5 +1,5 @@
 // Get components
-import headComponent from "./components/get-headComponent.js";
+import headComponent from "./components/headComponent.js";
 import footer from "./components/get-footer.js";
 import ViewInBrowsLink from "./miscellaneous/view-in-browser-link.js";
 import UnsubLink from "./miscellaneous/get-unsub-link.js";
