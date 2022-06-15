@@ -6,7 +6,7 @@ import UnsubLink from "./miscellaneous/get-unsub-link.js";
 import recipe from "./components/get-recipe.js";
 import button from "./components/get-button.js";
 import link from "./components/get-link.js";
-import headings from "./typography/get-headings.js";
+import headings from "../components/typography/src/components/get-headings.js";
 import SocialMedia from "./miscellaneous/get-social-media.js";
 import address from "./miscellaneous/get-address.js";
 import supportContact from "./components/get-supportContact.js";

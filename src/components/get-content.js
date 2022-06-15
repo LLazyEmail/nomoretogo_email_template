@@ -426,7 +426,6 @@ export default (
   /////////////////////////////////////////////////
   // add checks
   /////////////////////////////////////////////////
-
   return content(
     idTitle,
     hrefTitle,
@@ -434,45 +433,43 @@ export default (
     titleSubText,
     textTop,
     textBottom,
-
     // Image data start
     id,
     href,
     src,
     title,
     text,
-
+    ///////
     id2,
     href2,
     src2,
     title2,
     text2,
-
+    ////////
     id3,
     href3,
     src3,
     title3,
     text3,
-
+    ////////
     id4,
     href4,
     src4,
     title4,
     text4,
-
+    ////////
     id5,
     href5,
     src5,
     title5,
     text5,
-
+    ////////
     id6,
     href6,
     src6,
     title6,
     text6,
     // Image data end
-
     btnId,
     btnHref
   );
