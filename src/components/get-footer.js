@@ -1,7 +1,7 @@
 // Create footer component
 
 // Config file
-import { config } from "../config.js";
+import { pathSocialIcons } from "../config.js";
 
 export default function (footContent) {
   if (footContent == "") {
@@ -19,7 +19,7 @@ export default function (footContent) {
       cont.href +
       `target="_self">
       <img width="24" alt="facebook" src=` +
-      config.pathSocialIcons +
+      pathSocialIcons +
       cont.src +
       `style="display: block; border="0">
       </a>
