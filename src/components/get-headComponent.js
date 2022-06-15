@@ -1,13 +1,13 @@
 // Create head component
-import blobHead from "../miscellaneous/blobHead.js";
-import bodyStyle from "../miscellaneous/bodyStyle.js";
-import mediaStyle from "../miscellaneous/mediaStyle.js";
-import style from "../miscellaneous/style.js";
-import style2 from "../miscellaneous/style2.js";
-import font1 from "../miscellaneous/font1.js";
-import font2 from "../miscellaneous/font2.js";
-import meta from "../miscellaneous/meta.js";
-import ifStyle from "../miscellaneous/ifStyle.js";
+import blobHead from "../outerTemplate/blobHead.js";
+import bodyStyle from "../outerTemplate/bodyStyle.js";
+import mediaStyle from "../outerTemplate/mediaStyle.js";
+import style from "../outerTemplate/style.js";
+import style2 from "../outerTemplate/style2.js";
+import font1 from "../outerTemplate/font1.js";
+import font2 from "../outerTemplate/font2.js";
+import meta from "../outerTemplate/meta.js";
+import ifStyle from "../outerTemplate/ifStyle.js";
 
 export default function (title) {
   if (title == "") {
