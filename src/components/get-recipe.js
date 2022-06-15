@@ -29,12 +29,8 @@ const getText = (text) => {
 
 // Get image start
 const getImage = (id, href, src) => {
-  return (
-    `<a href="${href}" data-link-id="${id}" target="_self"><img src="` +
-    pathImages +
-    src +
-    `" border="0" alt="" width="267" style="display: block;"></a>`
-  );
+  const srcPath = pathImages + src;
+  return `<a href="${href}" data-link-id="${id}" target="_self"><img src="${srcPath}" border="0" alt="" width="267" style="display: block;"></a>`;
 };
 // Get image end
 
