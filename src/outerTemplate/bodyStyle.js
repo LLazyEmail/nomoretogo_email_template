@@ -1,5 +1,5 @@
 const bodyStyle = () => {
-  return `<style type="text/css">
+  return `<!--[if mso]><style type="text/css">
     .bodyText { font-family: Arial, Helvetica, sans-serif!important ; }
     .bodyText * { font-family: Arial, Helvetica, sans-serif!important; }
     .bodyText a { font-family: Arial, Helvetica, sans-serif!important; }
@@ -20,7 +20,7 @@ const bodyStyle = () => {
     .bodyFont span { font-family: Arial, Helvetica, sans-serif!important; }
     .bodyFont p { font-family: Arial, Helvetica, sans-serif!important; }
     .mlContentButton { font-family: Arial, Helvetica, sans-serif!important; }
-  </style>`;
+  </style><![endif]-->`;
 };
 
 export default bodyStyle;

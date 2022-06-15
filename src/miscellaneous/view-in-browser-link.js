@@ -1,5 +1,8 @@
 // Create view-in-brows component
 
+// Config file
+import { config } from "../config.js";
+
 // Top panel start
 const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {
   return `<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" class="mobileHide">
@@ -26,8 +29,7 @@ const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {
 // Top panel end
 
 // Block header/logotip start
-const headerBlockLogo = (srcImageLogo) => {
-  const pathImage = `../../images/`;
+const headerBlockLogo = () => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -40,9 +42,7 @@ const headerBlockLogo = (srcImageLogo) => {
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
                       <td align="center">
-                        <img src="${
-                          pathImage + srcImageLogo
-                        }" id="logoBlock-4" border="0" alt="" width="560" style="display: block;">
+                        <img src="${config.pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;">
                       </td>
                     </tr>
                   </tbody></table>
@@ -64,7 +64,7 @@ const headerBlockLogo = (srcImageLogo) => {
 // Block header/logotip end
 
 // Block main table content (wrap) start
-const contentMainTableWrap = (idViewInBrows, hrefViewInBrows, srcImageLogo) => {
+const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {
   return `<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f8f9" class="mainTable mlBodyBackground" dir="ltr" background="https://preview.mailerlite.com/r0n8w0g0n6/1934358861754405982/l8n5/">
   <tbody><tr>
     <td class="mlTemplateContainer" align="center">
@@ -84,7 +84,7 @@ const contentMainTableWrap = (idViewInBrows, hrefViewInBrows, srcImageLogo) => {
             <tbody><tr>
               <td>
                 <!-- Block header/logotip start -->
-                ${headerBlockLogo(srcImageLogo)}
+                ${headerBlockLogo()}
                 <!-- Block header/logotip end -->
               </td>
             </tr>
@@ -126,7 +126,7 @@ export default function (idViewInBrows, hrefViewInBrows, srcImageLogo) {
     searchError("srcImageLogo");
   }
 
-  contentMainTableWrap(idViewInBrows, hrefViewInBrows, srcImageLogo);
+  contentMainTableWrap(idViewInBrows, hrefViewInBrows);
 }
 
 ////// old version ///////////////////////////////////////////////////////////////////////////

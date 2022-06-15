@@ -1,5 +1,5 @@
 import button from "./get-button.js";
-import getImageTitleDesc from "./get-ImageTitleDesc.js";
+import getImageTitleDesc from "./get-recipe.js";
 
 // Title block start
 const titleText = (idTitle, hrefTitle, textTitle) => {
