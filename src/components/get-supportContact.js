@@ -76,6 +76,7 @@ var mlContentTable = () => {
 };
 // Main block end
 
+// Block error start
 var searchError = (err) => {
   const error = {
     hrefSocial: "No hrefSocial supportContact",
@@ -86,6 +87,7 @@ var searchError = (err) => {
 
   throw new Error(error[err]);
 };
+// Block error end
 
 export default function (hrefSocial, hrefHelp, idSocial, idHelp) {
   if (hrefSocial == "") {
