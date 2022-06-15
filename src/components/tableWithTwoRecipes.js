@@ -1,9 +1,11 @@
 // Component image start
+// Config file
+import { config } from "../config.js";
+
 const getImage = (id, href, src) => {
-  const pathImage = `../../data/images/`;
   return `<a href="${href}" data-link-id="${id}" target="_self">
 <img src="${
-    pathImage + src
+    config.pathImages + src
   }" border="0" alt="" width="267" style="display: block;">
 </a>`;
 };

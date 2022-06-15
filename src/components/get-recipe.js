@@ -1,5 +1,8 @@
 // Create image component
 
+// Config file
+import { config } from "../config.js";
+
 // Get title start
 const getTitle = (title) => {
   return `<strong>
@@ -26,10 +29,9 @@ const getText = (text) => {
 
 // Get image start
 const getImage = (id, href, src) => {
-  const srcPath = "./image/";
   return (
     `<a href="${href}" data-link-id="${id}" target="_self"><img src="` +
-    srcPath +
+    config.pathImages +
     src +
     `" border="0" alt="" width="267" style="display: block;"></a>`
   );

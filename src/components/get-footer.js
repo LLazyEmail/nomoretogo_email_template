@@ -1,4 +1,8 @@
 // Create footer component
+
+// Config file
+import { config } from "../config.js";
+
 export default function (footContent) {
   if (footContent == "") {
     throw new Error("No footContent footer");
@@ -8,7 +12,6 @@ export default function (footContent) {
     throw new Error("No footContent footer");
   }
 
-  const pathImg = `../../template/images/`;
   var res = footContent.map((cont) => {
     return (
       `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">
@@ -16,7 +19,7 @@ export default function (footContent) {
       cont.href +
       `target="_self">
       <img width="24" alt="facebook" src=` +
-      pathImg +
+      config.pathSocialIcons +
       cont.src +
       `style="display: block; border="0">
       </a>
