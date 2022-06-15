@@ -1,5 +1,5 @@
 // Create supportContact component
-const hrefContact = "href contact";
+const hrefContact = "contact@nomoretogo.com.%C2%A0";
 
 // Top block start
 var title = `No More To-Go Facebook Users:`;
@@ -76,6 +76,7 @@ var mlContentTable = () => {
 };
 // Main block end
 
+// Block error start
 var searchError = (err) => {
   const error = {
     hrefSocial: "No hrefSocial supportContact",
@@ -86,6 +87,7 @@ var searchError = (err) => {
 
   throw new Error(error[err]);
 };
+// Block error end
 
 export default function (hrefSocial, hrefHelp, idSocial, idHelp) {
   if (hrefSocial == "") {
