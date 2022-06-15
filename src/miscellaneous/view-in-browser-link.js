@@ -1,7 +1,7 @@
 // Create view-in-brows component
 
 // Config file
-import { config } from "../config.js";
+import { pathMainLogo } from "../config.js";
 
 // Top panel start
 const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {
@@ -42,7 +42,7 @@ const headerBlockLogo = () => {
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
                       <td align="center">
-                        <img src="${config.pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;">
+                        <img src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;">
                       </td>
                     </tr>
                   </tbody></table>

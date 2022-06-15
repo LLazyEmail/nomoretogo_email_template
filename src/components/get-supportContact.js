@@ -1,5 +1,7 @@
 // Create supportContact component
-const hrefContact = "contact@nomoretogo.co";
+
+// Config file
+import { mailingAddress } from "../config.js";
 
 // Top block start
 var title = `No More To-Go Facebook Users:`;
@@ -14,7 +16,7 @@ var textBottom = (hrefHelp, hrefContact, idHelp) => {
   return `Please contact us via the 
   "<a href="${hrefHelp}" data-link-id="${idHelp}" target="_blank" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">How Can We Help"</a>
    link at the bottom of each page on the site. Or, email us at 
-   <a href="mailto:${hrefContact}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">contact@nomoretogo.com.&nbsp;</a>`;
+   <a href="mailto:${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">contact@nomoretogo.com.&nbsp;</a>`;
 };
 // Bottom block end
 
