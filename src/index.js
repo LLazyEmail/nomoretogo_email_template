@@ -1,6 +1,6 @@
 // Get components
-import headComponent from "./components/headComponent.js";
-import footerComponent from "./components/footerComponent.js";
+// import headComponent from "./components/headComponent.js";
+// import footerComponent from "./components/footerComponent.js";
 import UnsubLink from "./miscellaneous/get-unsub-link.js";
 import recipe from "./components/get-recipe.js";
 import button from "./components/get-button.js";
@@ -20,8 +20,8 @@ import strongText from "../components/typography/src/components/strong.js";
 // typography end
 
 export {
-  headComponent,
-  footerComponent,
+  // headComponent,
+  // footerComponent,
   UnsubLink,
   recipe,
   button,
