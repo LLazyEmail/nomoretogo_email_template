@@ -1,18 +1,18 @@
 // Create view-in-brows component
 
 // View in brows link start
-const viewInBrowsLink = (idViewInBrows, hrefViewInBrows) => {
-  return `<a style="color: #111111;" href="${hrefViewInBrows}" data-link-id="${idViewInBrows}" target="_blank">View in browser</a>`;
+const viewInBrowsLink = (id, href) => {
+  return `<a style="color: #111111;" href="${href}" data-link-id="${id}" target="_blank">View in browser</a>`;
 };
 // View in brows link end
 
-export default function (idViewInBrows, hrefViewInBrows) {
-  if (idViewInBrows == "") {
-    throw new Error("No idViewInBrows viewInBrowsLink");
+export default function (id, href) {
+  if (id == "") {
+    throw new Error("No id viewInBrowsLink");
   }
-  if (hrefViewInBrows == "") {
-    throw new Error("No hrefViewInBrows viewInBrowsLink");
+  if (href == "") {
+    throw new Error("No href viewInBrowsLink");
   }
 
-  return viewInBrowsLink(idViewInBrows, hrefViewInBrows);
+  return viewInBrowsLink(id, href);
 }
