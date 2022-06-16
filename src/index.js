@@ -1,7 +1,6 @@
 // Get components
 import headComponent from "./components/headComponent.js";
 import footer from "./components/get-footer.js";
-// import ViewInBrowsLink from "./miscellaneous/view-in-browser-link.js";
 import UnsubLink from "./miscellaneous/get-unsub-link.js";
 import recipe from "./components/get-recipe.js";
 import button from "./components/get-button.js";
@@ -13,8 +12,6 @@ import content from "./components/get-content.js";
 import tableForNotes from "./components/tableForNotes.js";
 import tableWithTwoRecipes from "./components/tableWithTwoRecipes.js";
 
-// import topPanelViewInBrows from "./outerTemplate/topPanelViewInBrows.js";
-// import tableHeaderBlockLogo from "./outerTemplate/tableHeaderBlockLogo.js";
 import contentMainTableWrap from "./outerTemplate/contentMainTableWrap.js";
 
 // typography start
@@ -37,8 +34,6 @@ export {
   content,
   tableForNotes,
   tableWithTwoRecipes,
-  // topPanelViewInBrows,
-  // tableHeaderBlockLogo,
   contentMainTableWrap,
   headings,
   paragraph,
