@@ -1,6 +1,6 @@
 // Create panel view in brows
 
-import viewInBrowserLink from "../miscellaneous/view-in-browser-link.js";
+import viewInBrowserLink from "../../../../src/miscellaneous/view-in-browser-link.js";
 
 // Top panel start
 const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {

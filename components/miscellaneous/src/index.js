@@ -1,2 +1,2 @@
-const test2 = 123;
-export { test2 };
+const miscellaneous = "miscellaneous";
+export { miscellaneous };
