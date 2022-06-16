@@ -14,6 +14,7 @@ import tableForNotes from "./components/tableForNotes.js";
 import tableWithTwoRecipes from "./components/tableWithTwoRecipes.js";
 
 import topPanelViewInBrows from "./outerTemplate/topPanelViewInBrows.js";
+import tableHeaderBlockLogo from "./outerTemplate/tableHeaderBlockLogo.js";
 
 // typography start
 import headings from "../components/typography/src/components/get-headings.js";
@@ -36,6 +37,7 @@ export {
   tableForNotes,
   tableWithTwoRecipes,
   topPanelViewInBrows,
+  tableHeaderBlockLogo,
   headings,
   paragraph,
   strongText,
