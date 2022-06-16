@@ -1,7 +1,8 @@
 // create content main table wrap
 
-import topPanelViewInBrows from "./topPanelViewInBrows.js";
-import tableHeaderBlockLogo from "./tableHeaderBlockLogo.js";
+// import topPanelViewInBrows from "../../src/component";
+// import topPanelViewInBrows from "./topPanelViewInBrows.js";
+// import tableHeaderBlockLogo from "./tableHeaderBlockLogo.js";
 
 // Block main table content (wrap) start
 const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {
