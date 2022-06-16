@@ -13,6 +13,8 @@ import content from "./components/get-content.js";
 import tableForNotes from "./components/tableForNotes.js";
 import tableWithTwoRecipes from "./components/tableWithTwoRecipes.js";
 
+import topPanelViewInBrows from "./outerTemplate/topPanelViewInBrows.js";
+
 // typography start
 import headings from "../components/typography/src/components/get-headings.js";
 import paragraph from "../components/typography/src/components/paragraph.js";
@@ -33,6 +35,7 @@ export {
   content,
   tableForNotes,
   tableWithTwoRecipes,
+  topPanelViewInBrows,
   headings,
   paragraph,
   strongText,

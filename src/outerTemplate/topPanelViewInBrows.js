@@ -27,10 +27,10 @@ const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {
 
 export default function (idViewInBrows, hrefViewInBrows) {
   if (idViewInBrows == "") {
-    throw new Error("idViewInBrows");
+    throw new Error("No idViewInBrows topPanelViewInBrows");
   }
   if (hrefViewInBrows == "") {
-    throw new Error("hrefViewInBrows");
+    throw new Error("No hrefViewInBrows topPanelViewInBrows");
   }
 
   return topPanelViewInBrows(idViewInBrows, hrefViewInBrows);
