@@ -46,8 +46,8 @@ const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {
 // Block error start
 var searchError = (err) => {
   const error = {
-    hrefViewInBrows: "No hrefViewInBrows view-in-browser-link",
-    srcImageLogo: "No srcImageLogo view-in-browser-link",
+    hrefViewInBrows: "No hrefViewInBrows contentMainTableWrap",
+    srcImageLogo: "No srcImageLogo contentMainTableWrap",
   };
 
   throw new Error(error[err]);
