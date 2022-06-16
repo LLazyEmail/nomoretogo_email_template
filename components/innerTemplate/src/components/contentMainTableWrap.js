@@ -1,7 +1,7 @@
 // create content main table wrap
 
-import topPanelViewInBrows from "./topPanelViewInBrows.js";
-import tableHeaderBlockLogo from "./tableHeaderBlockLogo.js";
+import topPanelViewInBrows from "../../../outerTemplate/src/components/topPanelViewInBrows.js";
+import tableHeaderBlockLogo from "../../../outerTemplate/src/components/tableHeaderBlockLogo.js";
 
 // Block main table content (wrap) start
 const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {
@@ -46,8 +46,8 @@ const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {
 // Block error start
 var searchError = (err) => {
   const error = {
-    hrefViewInBrows: "No hrefViewInBrows view-in-browser-link",
-    srcImageLogo: "No srcImageLogo view-in-browser-link",
+    hrefViewInBrows: "No hrefViewInBrows contentMainTableWrap",
+    srcImageLogo: "No srcImageLogo contentMainTableWrap",
   };
 
   throw new Error(error[err]);

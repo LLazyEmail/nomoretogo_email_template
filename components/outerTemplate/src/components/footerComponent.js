@@ -1,7 +1,7 @@
 // Create footer component
 
 // Config file
-import { pathSocialIcons } from "../config.js";
+import { pathSocialIcons } from "../../../../src/config.js";
 
 export default function (footContent) {
   if (footContent == "") {
