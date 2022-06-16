@@ -11,7 +11,6 @@ import supportContact from "./components/get-supportContact.js";
 import content from "./components/get-content.js";
 import tableForNotes from "./components/tableForNotes.js";
 import tableWithTwoRecipes from "./components/tableWithTwoRecipes.js";
-
 import contentMainTableWrap from "./outerTemplate/contentMainTableWrap.js";
 
 // typography start
@@ -23,7 +22,6 @@ import strongText from "../components/typography/src/components/strong.js";
 export {
   headComponent,
   footer,
-  // ViewInBrowsLink,
   UnsubLink,
   recipe,
   button,
