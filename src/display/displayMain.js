@@ -4,6 +4,9 @@ import displayFactoryTwo from './factoryTwo';
 const settings = {
     component: '',
     params: {  },
-    subcomponents: {  }
-    
+    subcomponents: {  }    
 }
+
+const Factory = new displayFactoryTwo();
+
+Factory.create(settings);

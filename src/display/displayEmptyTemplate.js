@@ -5,5 +5,8 @@ const settings = {
     component: '',
     params: {  },
     subcomponents: {  }
-    
 }
+
+const Factory = new displayFactoryTwo();
+
+Factory.create(settings);
