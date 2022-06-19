@@ -6,7 +6,7 @@ import footerComponent from '../../components/outerTemplate/src/components/foote
 // @TODO for footerComponent i need an example of what we exactly passing inside it
 
 let addon1 = {
-    footer: footerComponent(),
+    // footer: footerComponent(),
 
     // variable:value, 
 
@@ -14,7 +14,7 @@ let addon1 = {
 
 //variant one
 const settings = {
-    component: '',
+    component: footerComponent,
     params: {  },
  
 }

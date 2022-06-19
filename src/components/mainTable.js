@@ -1,3 +1,7 @@
+// TODO what this file is about? Do we need to having it here?
+// can be delete it or we still need it for some reasons?
+
+
 // var test = `<!--[if !mso]>
 // <!-- -->
 // <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f8f9" class="mainTable mlBodyBackground" dir="ltr" background="https://preview.mailerlite.com/r0n8w0g0n6/1934358861754405982/l8n5/">

@@ -1,5 +1,7 @@
 import displayFactoryTwo from './factoryTwo';
 
+import bodyComponent from '../components/bodyComponent'
+
 let addon1 = {
     // footer: footerString,
 
@@ -11,7 +13,7 @@ let addon1 = {
 }
 //variant one
 const settings = {
-    component: '',
+    component: bodyComponent,
     params: {  },
 
 }
