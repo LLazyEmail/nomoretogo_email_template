@@ -1,7 +1,12 @@
 import displayFactoryTwo from './factoryTwo';
 
+import footerComponent from '../../components/outerTemplate/src/components/footerComponent';
+
+
+// @TODO for footerComponent i need an example of what we exactly passing inside it
+
 let addon1 = {
-    // footer: footerString,
+    footer: footerComponent(),
 
     // logoTop:logoTopComponent(), 
     // logoBottom: logoBottomComponent(), 
