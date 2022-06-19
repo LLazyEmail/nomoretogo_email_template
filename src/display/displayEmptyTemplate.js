@@ -14,9 +14,10 @@ let addon1 = {
 const settings = {
     component: '',
     params: {  },
-    subcomponents: {  }
+
 }
 
 const Factory = new displayFactoryTwo();
 
-Factory.create(settings);
+console.log(Factory.create(settings))
+// export default Factory.create(settings);
