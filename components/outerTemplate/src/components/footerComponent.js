@@ -6,6 +6,7 @@ import { pathSocialIcons } from "../../../config";
 export default function (footContent) {
   if (footContent == "") {
     throw new Error("No footContent footer");
+
   }
 
   if (footContent.length == 0) {
@@ -13,6 +14,7 @@ export default function (footContent) {
     throw new Error("No footContent footer");
   }
 
+  
   //@TODO move this loop away, it's hard to wrap your head around two long strings
   var res = footContent.map((cont) => {
     const srcPath = pathSocialIcons + cont.src;
