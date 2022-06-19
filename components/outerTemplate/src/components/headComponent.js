@@ -9,6 +9,12 @@ import font2 from "./font2.js";
 import meta from "./headMetaTags";
 import ifStyle from "./ifStyle.js";
 
+
+// TODO let's make this file more clear.
+// imports of all variables we'll move outside and our function will just accept an object with all these variables.
+// and we need to put more checks and errors here.
+
+
 export default function (title) {
   if (title == "") {
     throw new Error("No title");

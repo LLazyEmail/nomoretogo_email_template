@@ -1,22 +1,52 @@
 import displayFactoryTwo from './factoryTwo';
 
-let addon1 = {
-    // footer: footerString,
+import headComponent from '../../components/outerTemplate/src/components/headComponent';
 
-    // logoTop:logoTopComponent(), 
-    // logoBottom: logoBottomComponent(), 
-    // content:'[[THIS IS PLACE FOR A CONTENT INSIDE]',
-    // previewText:previewTextComponent('[AMA PREVIEW TEXT]')
+// copied from headComponent
+// // Create head component
+import blobHead from "./blobHead.js";
+import bodyStyle from "./bodyStyle.js";
+import mediaStyle from "./mediaStyle.js";
+import style from "./style.js";
+import style2 from "./style2.js";
+import font1 from "./font1.js";
+import font2 from "./font2.js";
+import meta from "./headMetaTags";
+import ifStyle from "./ifStyle.js";
+
+
+
+
+
+
+
+
+let addon1 = {
+    // head: footerString,
+
+ blobHead, 
+ bodyStyle,
+ mediaStyle,
+ style,
+ style2,
+ font1 ,
+ font2 ,
+ meta ,
+ ifStyle,
+
+    // variable:value, 
 
 }
 
 //variant one
 const settings = {
-    component: '',
-    params: {  },
-    subcomponents: {  }
+    component: headComponent,
+    params: addon1,
+
 }
 
 const Factory = new displayFactoryTwo();
 
-Factory.create(settings);
+console.log(Factory.create(settings))
+// export default Factory.create(settings);
+

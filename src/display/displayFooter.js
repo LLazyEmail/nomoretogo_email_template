@@ -8,10 +8,7 @@ import footerComponent from '../../components/outerTemplate/src/components/foote
 let addon1 = {
     footer: footerComponent(),
 
-    // logoTop:logoTopComponent(), 
-    // logoBottom: logoBottomComponent(), 
-    // content:'[[THIS IS PLACE FOR A CONTENT INSIDE]',
-    // previewText:previewTextComponent('[AMA PREVIEW TEXT]')
+    // variable:value, 
 
 }
 

@@ -3,10 +3,10 @@ import displayFactoryTwo from './factoryTwo';
 let addon1 = {
     // footer: footerString,
 
-    // logoTop:logoTopComponent(), 
-    // logoBottom: logoBottomComponent(), 
-    // content:'[[THIS IS PLACE FOR A CONTENT INSIDE]',
-    // previewText:previewTextComponent('[AMA PREVIEW TEXT]')
+    // variable:value, 
+    // variable:value, 
+    // variable:value, 
+    // variable:value, 
 
 }
 
