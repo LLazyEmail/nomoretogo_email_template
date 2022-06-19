@@ -3,8 +3,11 @@ import displayFactoryTwo from './factoryTwo';
 import headComponent from '../../components/outerTemplate/src/components/headComponent';
 
 // copied from headComponent
-// // Create head component
-import blobHead from "./blobHead.js";
+// TODO update paths, because it will break for sure
+// compare with that crazy long path from the top     ^
+//                                                    |
+//                                                    |
+import blobHead from "../blobHead.js";
 import bodyStyle from "./bodyStyle.js";
 import mediaStyle from "./mediaStyle.js";
 import style from "./style.js";
@@ -15,14 +18,7 @@ import meta from "./headMetaTags";
 import ifStyle from "./ifStyle.js";
 
 
-
-
-
-
-
-
 let addon1 = {
-    // head: footerString,
 
  blobHead, 
  bodyStyle,

@@ -3,7 +3,7 @@ import displayFactoryTwo from './factoryTwo';
 import bodyComponent from '../components/bodyComponent'
 
 let addon1 = {
-    // footer: footerString,
+    
 
    // variable:value,
    // variable:value, 
