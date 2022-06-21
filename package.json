@@ -52,6 +52,7 @@
     "fsevents": "*"
   },
   "dependencies": {
-    "@babel/runtime": "^7.18.3"
+    "@babel/runtime": "^7.18.3",
+    "email-template-object": "^0.1.0"
   }
 }

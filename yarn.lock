@@ -2057,6 +2057,11 @@
   dependencies:
     "esutils" "^2.0.2"
 
+"easy-factory@^1.3.0":
+  "integrity" "sha512-PRY7E0JgyvoEKF/Z3jHK0NM2lru67vqgdLoi1D4R4JJNiT8AE3l9ozvy0N8SsztqHGAGLA3XEbnNfPc2scW4oA=="
+  "resolved" "https://registry.npmjs.org/easy-factory/-/easy-factory-1.3.0.tgz"
+  "version" "1.3.0"
+
 "electron-to-chromium@^1.4.147":
   "integrity" "sha512-jk4Ju5SGZAQQJ1iI4Rgru7dDlvkQPLpNPWH9gIZmwCD4YteA5Bbk1xPcPDUf5jUYs3e1e80RXdi8XgKQZaigeg=="
   "resolved" "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.152.tgz"
@@ -2074,6 +2079,16 @@
     "inherits" "^2.0.4"
     "minimalistic-assert" "^1.0.1"
     "minimalistic-crypto-utils" "^1.0.1"
+
+"email-template-object@^0.1.0":
+  "integrity" "sha512-Cs88RiqXuPE5lqY00Pfn9DI3vxa61s2Xa+MXv6+9NZa43b/lxcaLXIw/92cC0DyGqwY+epSeRygq6FmS5YIfkQ=="
+  "resolved" "https://registry.npmjs.org/email-template-object/-/email-template-object-0.1.0.tgz"
+  "version" "0.1.0"
+  dependencies:
+    "easy-factory" "^1.3.0"
+    "lodash" "^4.17.21"
+  optionalDependencies:
+    "fsevents" "*"
 
 "emittery@^0.10.2":
   "integrity" "sha512-aITqOwnLanpHLNXZJENbOgjUBeHocD+xsSJmNrjovKBW5HbSpW3d1pEls7GFQPUWXiwG9+0P4GtHfEqC/4M0Iw=="
