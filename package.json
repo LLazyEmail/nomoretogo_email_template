@@ -36,7 +36,7 @@
     "rollup-plugin-includepaths": "0.2.4",
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-node-globals": "1.4.0",
-    "semver": "7.3.7",
+    "semver": "^7.3.7",
     "shx": "0.3.4"
   },
   "author": "Arthur Tkachenko",
