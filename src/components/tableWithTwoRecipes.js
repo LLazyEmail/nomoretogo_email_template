@@ -69,21 +69,6 @@ const mainTableWitchTwoRecipes = (id, href, src, id2, href2, src2) => {
 };
 // Main table end
 
-// Block error start
-// var searchError = (err) => {
-//   const error = {
-//     id: "No id TableWitchTwoRecipes",
-//     id2: "No id2 TableWitchTwoRecipes",
-//     href: "No href TableWitchTwoRecipes",
-//     href2: "No href2 TableWitchTwoRecipes",
-//     src: "No src TableWitchTwoRecipes",
-//     src2: "No src2 TableWitchTwoRecipes",
-//   };
-
-//   throw new Error(error[err]);
-// };
-// Block error end
-
 export default (id, href, src, id2, href2, src2) => {
   const datas = [
     { data: id, key: "id" },
