@@ -86,12 +86,12 @@ const mainTableWitchTwoRecipes = (id, href, src, id2, href2, src2) => {
 
 export default (id, href, src, id2, href2, src2) => {
   const datas = [
-    { data: id, key: id },
-    { data: href, key: href },
-    { data: src, key: src },
-    { data: id2, key: id2 },
-    { data: href2, key: href2 },
-    { data: src2, key: src2 },
+    { data: id, key: "id" },
+    { data: href, key: "href" },
+    { data: src, key: "src" },
+    { data: id2, key: "id2" },
+    { data: href2, key: "href2" },
+    { data: src2, key: "src2" },
   ];
 
   datas.forEach((item) => {
