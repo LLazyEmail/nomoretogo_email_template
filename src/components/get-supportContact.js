@@ -78,32 +78,19 @@ var mlContentTable = () => {
 };
 // Main block end
 
-// Block error start
-var searchError = (err) => {
-  const error = {
-    hrefSocial: "No hrefSocial supportContact",
-    hrefHelp: "No hrefHelp supportContact",
-    idSocial: "No idSocial supportContact",
-    idHelp: "No idHelp supportContact",
-  };
-
-  throw new Error(error[err]);
-};
-// Block error end
-
 export default function (hrefSocial, hrefHelp, idSocial, idHelp) {
-  if (hrefSocial == "") {
-    searchError("hrefSocial");
-  }
-  if (hrefHelp == "") {
-    searchError("hrefHelp");
-  }
-  if (idSocial == "") {
-    searchError("idSocial");
-  }
-  if (idHelp == "") {
-    searchError("idHelp");
-  }
+  const datas = [
+    { data: hrefSocial, key: "hrefSocial" },
+    { data: hrefHelp, key: "hrefHelp" },
+    { data: idSocial, key: "idSocial" },
+    { data: idHelp, key: "idHelp" },
+  ];
+
+  datas.forEach((item) => {
+    if (item.data == "") {
+      throw new Error("No " + item.key + " SupportContact");
+    }
+  });
 
   return mlContentTable(hrefSocial, hrefHelp, idSocial, idHelp);
 }
