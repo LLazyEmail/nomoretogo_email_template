@@ -1,7 +1,9 @@
-// Component image start
+// Create tableWithTwoRecipes
+
 // Config file
 import { pathImages } from "../config.js";
 
+// Component image start
 const getImage = (id, href, src) => {
   const srcPath = pathImages + src;
   return `<a href="${href}" data-link-id="${id}" target="_self">
@@ -68,39 +70,39 @@ const mainTableWitchTwoRecipes = (id, href, src, id2, href2, src2) => {
 // Main table end
 
 // Block error start
-var searchError = (err) => {
-  const error = {
-    id: "No id TableWitchTwoRecipes",
-    id2: "No id2 TableWitchTwoRecipes",
-    href: "No href TableWitchTwoRecipes",
-    href2: "No href2 TableWitchTwoRecipes",
-    src: "No src TableWitchTwoRecipes",
-    src2: "No src2 TableWitchTwoRecipes",
-  };
+// var searchError = (err) => {
+//   const error = {
+//     id: "No id TableWitchTwoRecipes",
+//     id2: "No id2 TableWitchTwoRecipes",
+//     href: "No href TableWitchTwoRecipes",
+//     href2: "No href2 TableWitchTwoRecipes",
+//     src: "No src TableWitchTwoRecipes",
+//     src2: "No src2 TableWitchTwoRecipes",
+//   };
 
-  throw new Error(error[err]);
-};
+//   throw new Error(error[err]);
+// };
 // Block error end
 
+// TODO create a function that simply return an object like { data: id, key: id } or { data: href, key: href }
+
 export default (id, href, src, id2, href2, src2) => {
-  if (id == "") {
-    searchError("id");
-  }
-  if (id2 == "") {
-    searchError("id2");
-  }
-  if (href == "") {
-    searchError("href");
-  }
-  if (href2 == "") {
-    searchError("href2");
-  }
-  if (src == "") {
-    searchError("src");
-  }
-  if (src2 == "") {
-    searchError("src2");
-  }
+  // TODO name it like dataArr or data_array
+
+  const datas = [
+    { data: id, key: "id" },
+    { data: href, key: "href" },
+    { data: src, key: "src" },
+    { data: id2, key: "id2" },
+    { data: href2, key: "href2" },
+    { data: src2, key: "src2" },
+  ];
+
+  datas.forEach((item) => {
+    if (item.data == "") {
+      throw new Error("No " + item.key + " TableWitchTwoRecipes");
+    }
+  });
 
   return mainTableWitchTwoRecipes(id, href, src, id2, href2, src2);
 };
