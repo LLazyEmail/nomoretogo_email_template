@@ -63,35 +63,20 @@ const mainBlock = (id, href, src, title, text) => {
 };
 // Get main block end
 
-// Search error start
-const searchError = (err) => {
-  const error = {
-    id: "No id imageTitleText",
-    href: "No href imageTitleText",
-    src: "No src imageTitleText",
-    title: "No title imageTitleText",
-    text: "No text imageTitleText",
-  };
-  throw new Error(error[err]);
-};
-// Search error end
-
 export default function (id, href, src, title, text) {
-  if (id == "") {
-    searchError("id");
-  }
-  if (href == "") {
-    searchError("href");
-  }
-  if (src == "") {
-    searchError("src");
-  }
-  if (title == "") {
-    searchError("title");
-  }
-  if (text == "") {
-    searchError("text");
-  }
+  const datas = [
+    { data: id, key: "id" },
+    { data: href, key: "href" },
+    { data: src, key: "src" },
+    { data: title, key: "title" },
+    { data: text, key: "text" },
+  ];
+
+  datas.forEach((item) => {
+    if (item.data == "") {
+      throw new Error("No " + item.key + " recipes");
+    }
+  });
 
   return mainBlock(id, href, src, title, text);
 }
