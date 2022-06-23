@@ -73,6 +73,7 @@ export {
   tableHeaderBlockLogo,
   topPanelViewInBrows,
   // outerTamplate end
+
   // typography start
   headings,
   paragraph,
