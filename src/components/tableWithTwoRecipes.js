@@ -84,7 +84,11 @@ const mainTableWitchTwoRecipes = (id, href, src, id2, href2, src2) => {
 // };
 // Block error end
 
+// TODO create a function that simply return an object like { data: id, key: id } or { data: href, key: href }
+
 export default (id, href, src, id2, href2, src2) => {
+  // TODO name it like dataArr or data_array
+
   const datas = [
     { data: id, key: "id" },
     { data: href, key: "href" },
