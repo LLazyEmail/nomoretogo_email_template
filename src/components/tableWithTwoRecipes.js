@@ -1,7 +1,9 @@
-// Component image start
+// Create tableWithTwoRecipes
+
 // Config file
 import { pathImages } from "../config.js";
 
+// Component image start
 const getImage = (id, href, src) => {
   const srcPath = pathImages + src;
   return `<a href="${href}" data-link-id="${id}" target="_self">
@@ -83,24 +85,20 @@ var searchError = (err) => {
 // Block error end
 
 export default (id, href, src, id2, href2, src2) => {
-  if (id == "") {
-    searchError("id");
-  }
-  if (id2 == "") {
-    searchError("id2");
-  }
-  if (href == "") {
-    searchError("href");
-  }
-  if (href2 == "") {
-    searchError("href2");
-  }
-  if (src == "") {
-    searchError("src");
-  }
-  if (src2 == "") {
-    searchError("src2");
-  }
+  const datas = [
+    { data: id, key: id },
+    { data: href, key: href },
+    { data: src, key: src },
+    { data: id2, key: id2 },
+    { data: href2, key: href2 },
+    { data: src2, key: src2 },
+  ];
+
+  datas.forEach((item) => {
+    if (item.data == "") {
+      searchError(item.key);
+    }
+  });
 
   return mainTableWitchTwoRecipes(id, href, src, id2, href2, src2);
 };
