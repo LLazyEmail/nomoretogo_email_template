@@ -70,7 +70,7 @@ const mainTableWitchTwoRecipes = (id, href, src, id2, href2, src2) => {
 // Main table end
 
 export default (id, href, src, id2, href2, src2) => {
-  const datas = [
+  const data_array = [
     { data: id, key: "id" },
     { data: href, key: "href" },
     { data: src, key: "src" },
@@ -79,7 +79,7 @@ export default (id, href, src, id2, href2, src2) => {
     { data: src2, key: "src2" },
   ];
 
-  datas.forEach((item) => {
+  data_array.forEach((item) => {
     if (item.data == "") {
       throw new Error("No " + item.key + " TableWitchTwoRecipes");
     }

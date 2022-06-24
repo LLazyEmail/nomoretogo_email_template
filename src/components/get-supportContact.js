@@ -79,14 +79,14 @@ var mlContentTable = () => {
 // Main block end
 
 export default function (hrefSocial, hrefHelp, idSocial, idHelp) {
-  const datas = [
+  const data_array = [
     { data: hrefSocial, key: "hrefSocial" },
     { data: hrefHelp, key: "hrefHelp" },
     { data: idSocial, key: "idSocial" },
     { data: idHelp, key: "idHelp" },
   ];
 
-  datas.forEach((item) => {
+  data_array.forEach((item) => {
     if (item.data == "") {
       throw new Error("No " + item.key + " SupportContact");
     }

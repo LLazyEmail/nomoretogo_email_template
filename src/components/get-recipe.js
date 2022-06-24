@@ -64,7 +64,7 @@ const mainBlock = (id, href, src, title, text) => {
 // Get main block end
 
 export default function (id, href, src, title, text) {
-  const datas = [
+  const data_array = [
     { data: id, key: "id" },
     { data: href, key: "href" },
     { data: src, key: "src" },
@@ -72,7 +72,7 @@ export default function (id, href, src, title, text) {
     { data: text, key: "text" },
   ];
 
-  datas.forEach((item) => {
+  data_array.forEach((item) => {
     if (item.data == "") {
       throw new Error("No " + item.key + " recipes");
     }
