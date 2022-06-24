@@ -1,5 +1,8 @@
 // Create tableWithTwoRecipes
 
+// Error
+const errorTableWitchTwoRecipes = `No ${variable} in table two recipes`;
+
 // Config file
 import { pathImages } from "../config.js";
 
@@ -69,21 +72,50 @@ const mainTableWitchTwoRecipes = (id, href, src, id2, href2, src2) => {
 };
 // Main table end
 
-export default (id, href, src, id2, href2, src2) => {
-  const data_array = [
-    { data: id, key: "id" },
-    { data: href, key: "href" },
-    { data: src, key: "src" },
-    { data: id2, key: "id2" },
-    { data: href2, key: "href2" },
-    { data: src2, key: "src2" },
-  ];
+function checkingForErrors(variable) {
+  throw new Error(errorTableWitchTwoRecipes);
+}
 
-  data_array.forEach((item) => {
-    if (item.data == "") {
-      throw new Error("No " + item.key + " TableWitchTwoRecipes");
-    }
-  });
+export default (dataImageOne, dataImageTwo) => {
+  const { id, href, src } = dataImageOne;
+  const { id2, href2, src2 } = dataImageTwo;
+
+  if (!id) {
+    checkingForErrors("id");
+  }
+  if (!href) {
+    checkingForErrors("href");
+  }
+  if (!src) {
+    checkingForErrors("src");
+  }
+  if (!id2) {
+    checkingForErrors("id2");
+  }
+  if (!href2) {
+    checkingForErrors("href2");
+  }
+  if (!src2) {
+    checkingForErrors("src2");
+  }
+
+  // old version start
+  //id, href, src, id2, href2, src2
+  // const data_array = [
+  //   { data: id, key: "id" },
+  //   { data: href, key: "href" },
+  //   { data: src, key: "src" },
+  //   { data: id2, key: "id2" },
+  //   { data: href2, key: "href2" },
+  //   { data: src2, key: "src2" },
+  // ];
+
+  // data_array.forEach((item) => {
+  //   if (item.data == "") {
+  //     throw new Error("No " + item.key + " TableWitchTwoRecipes");
+  //   }
+  // });
+  // old version end
 
   return mainTableWitchTwoRecipes(id, href, src, id2, href2, src2);
 };
