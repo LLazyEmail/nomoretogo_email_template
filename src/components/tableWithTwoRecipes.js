@@ -72,9 +72,11 @@ const mainTableWitchTwoRecipes = (id, href, src, id2, href2, src2) => {
 };
 // Main table end
 
+// Checking for errors start
 function checkingForErrors(variable) {
   throw new Error(errorTableWitchTwoRecipes);
 }
+// Checking for errors end
 
 export default (dataImageOne, dataImageTwo) => {
   const { id, href, src } = dataImageOne;

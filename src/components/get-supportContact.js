@@ -79,18 +79,20 @@ var mlContentTable = () => {
 // Main block end
 
 export default function (hrefSocial, hrefHelp, idSocial, idHelp) {
-  const data_array = [
-    { data: hrefSocial, key: "hrefSocial" },
-    { data: hrefHelp, key: "hrefHelp" },
-    { data: idSocial, key: "idSocial" },
-    { data: idHelp, key: "idHelp" },
-  ];
+  // old version start
+  // const data_array = [
+  //   { data: hrefSocial, key: "hrefSocial" },
+  //   { data: hrefHelp, key: "hrefHelp" },
+  //   { data: idSocial, key: "idSocial" },
+  //   { data: idHelp, key: "idHelp" },
+  // ];
 
-  data_array.forEach((item) => {
-    if (item.data == "") {
-      throw new Error("No " + item.key + " SupportContact");
-    }
-  });
+  // data_array.forEach((item) => {
+  //   if (item.data == "") {
+  //     throw new Error("No " + item.key + " SupportContact");
+  //   }
+  // });
+  // old version end
 
   return mlContentTable(hrefSocial, hrefHelp, idSocial, idHelp);
 }
