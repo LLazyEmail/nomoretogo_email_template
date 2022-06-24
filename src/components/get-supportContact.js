@@ -3,16 +3,37 @@
 // Config file
 import { mailingAddress } from "../config.js";
 
+// Errors
+const supportContacterrors = `No ${variable} in supportContact`;
+
+// Checking for errors start
+function checkingForErrors(variable) {
+  throw new Error(supportContacterrors);
+}
+// Checking for errors end
+
 // Top block start
 var title = `No More To-Go Facebook Users:`;
 var textTop = (hrefSocial, idSosial) => {
+  if (!hrefSocial) {
+    checkingForErrors("hrefSocial");
+  }
+  if (!idSosial) {
+    checkingForErrors("idSosial");
+  }
   return `Connect with other home cooks on our closed group for No More To-Go Members Only<a href="${hrefSocial}" data-link-id="${idSosial}" target="_blank" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">Facebook Group Page</a>.`;
 };
 // Top block end
 
 // Bottom block start
 var textBottomStrong = `Have Questions?`;
-var textBottom = (hrefHelp, hrefContact, idHelp) => {
+var textBottom = (hrefHelp, idHelp) => {
+  if (!hrefHelp) {
+    checkingForErrors("hrefHelp");
+  }
+  if (!idHelp) {
+    checkingForErrors("idHelp");
+  }
   return `Please contact us via the 
   "<a href="${hrefHelp}" data-link-id="${idHelp}" target="_blank" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">How Can We Help"</a>
    link at the bottom of each page on the site. Or, email us at 
@@ -21,27 +42,29 @@ var textBottom = (hrefHelp, hrefContact, idHelp) => {
 // Bottom block end
 
 // Table content start
-var content = `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
-<tbody><tr>
-  <td class="bodyTitle" id="bodyText-36" style="font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 150%; color: #6f6f6f;">
-    <h4><strong>${title}</strong><br></h4>
-    <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
-      ${textTop(hrefSocial, idSosial)}
-    </p>
-    <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-    <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-    <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-    <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
-      <strong>
-        ${textBottomStrong}
-      </strong><br>
-        ${textBottom(hrefHelp, hrefContact, idHelp)}<br>
-      <strong><br></strong>
-    </p>
-    <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;"></p>
-  </td>
-</tr>
-</tbody></table>`;
+var content = () => {
+  return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+  <tbody><tr>
+    <td class="bodyTitle" id="bodyText-36" style="font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 150%; color: #6f6f6f;">
+      <h4><strong>${title}</strong><br></h4>
+      <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
+        ${textTop(hrefSocial, idSosial)}
+      </p>
+      <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
+      <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
+      <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
+      <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
+        <strong>
+          ${textBottomStrong}
+        </strong><br>
+          ${textBottom(hrefHelp, idHelp)}<br>
+        <strong><br></strong>
+      </p>
+      <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;"></p>
+    </td>
+  </tr>
+  </tbody></table>`;
+};
 // Table content end
 
 // Main block start
