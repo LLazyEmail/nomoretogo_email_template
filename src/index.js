@@ -33,7 +33,7 @@ import {
 // typography end
 
 import UnsubLink from "./miscellaneous/get-unsub-link.js";
-import recipe from "./components/get-recipe.js";
+import recipe from "./components/recipeComponent.js";
 import button from "./components/get-button.js";
 import link from "./components/get-link.js";
 import SocialMedia from "./miscellaneous/get-social-media.js";
