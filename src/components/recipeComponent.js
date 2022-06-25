@@ -9,6 +9,12 @@ const RECIPE_ERROR = `No ${variable} in recipeComponent`;
 // Config file
 import { pathToImages } from "../config.js";
 
+// Create path to image start
+function createPathToImage(src) {
+  return pathToImages + src;
+}
+// Create path to image end
+
 // Checking for errors start
 function createError(variable) {
   throw new Error(RECIPE_ERROR);
@@ -61,8 +67,9 @@ const imageComponent = (id, href, src) => {
     createError("src");
   }
 
-  const srcPath = pathToImages + src;
-  return `<a href="${href}" data-link-id="${id}" target="_self"><img src="${srcPath}" border="0" alt="" width="267" style="display: block;"></a>`;
+  return `<a href="${href}" data-link-id="${id}" target="_self"><img src="${createPathToImage(
+    src
+  )}" border="0" alt="" width="267" style="display: block;"></a>`;
 };
 // Get image end
 
