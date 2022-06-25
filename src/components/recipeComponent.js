@@ -4,14 +4,14 @@
 // const recipeTitleError = "No title in recipeComponent";
 // const recipeTextError = "No text in recipeComponent";
 // const recipeImageError = `No ${variable} in recipeComponent`;
-const recipeErrors = `No ${variable} in recipeComponent`;
+const RECIPE_ERROR = `No ${variable} in recipeComponent`;
 
 // Config file
-import { pathImages } from "../config.js";
+import { pathToImages } from "../config.js";
 
 // Checking for errors start
-function checkingForErrors(variable) {
-  throw new Error(recipeErrors);
+function createError(variable) {
+  throw new Error(RECIPE_ERROR);
 }
 // Checking for errors end
 
@@ -19,7 +19,7 @@ function checkingForErrors(variable) {
 const titleComponent = (title) => {
   if (!title) {
     // throw new Error(recipeTitleError);
-    checkingForErrors("title");
+    createError("title");
   }
 
   return `<strong>
@@ -38,7 +38,7 @@ const titleComponent = (title) => {
 const textComponent = (text) => {
   if (!text) {
     // throw new Error(recipeTextError);
-    checkingForErrors("text");
+    createError("text");
   }
 
   return `<font style="vertical-align: inherit;">
@@ -52,16 +52,16 @@ const textComponent = (text) => {
 // Get image start
 const imageComponent = (id, href, src) => {
   if (!id) {
-    checkingForErrors("id");
+    createError("id");
   }
   if (!href) {
-    checkingForErrors("href");
+    createError("href");
   }
   if (!src) {
-    checkingForErrors("src");
+    createError("src");
   }
 
-  const srcPath = pathImages + src;
+  const srcPath = pathToImages + src;
   return `<a href="${href}" data-link-id="${id}" target="_self"><img src="${srcPath}" border="0" alt="" width="267" style="display: block;"></a>`;
 };
 // Get image end
