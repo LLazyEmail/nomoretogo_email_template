@@ -48,7 +48,7 @@ function createHeadComponent(params) {
 }
 // Create head component end
 
-<<<<<<< HEAD
+// we are throwing an error with the same constant 10 times.
 function searchForErrors(params) {
   const {
     blobHead,
@@ -63,11 +63,6 @@ function searchForErrors(params) {
     title,
   } = params;
 
-=======
-
-// we are throwing an error with the same constant 10 times.
-function searchForErrors(data) {
->>>>>>> 9f7b61334687cfc03e561833bec411d898642885
   var variable = "";
   if (blobHead == "") {
     variable = "blobHead";
