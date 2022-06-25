@@ -4,11 +4,11 @@
 const ERROR_TABLE_WITCH_TWO_RECIPES = `No ${variable} in table two recipes`;
 
 // Config file
-import { pathImages } from "../config.js";
+import { pathToImages } from "../config.js";
 
 // Component image start
 const getImage = (id, href, src) => {
-  const srcPath = pathImages + src;
+  const srcPath = pathToImages + src;
   return `<a href="${href}" data-link-id="${id}" target="_self">
 <img src="${srcPath}" border="0" alt="" width="267" style="display: block;">
 </a>`;
