@@ -35,6 +35,8 @@ function createHeadComponent(data) {
 }
 // Create head component end
 
+
+// we are throwing an error with the same constant 10 times.
 function searchForErrors(data) {
   var variable = "";
   if (data.blobHead == "") {
@@ -78,6 +80,8 @@ function searchForErrors(data) {
     throw new Error(HEAD_COMPONENT_ERROR);
   }
 }
+
+// TODO I dont think we need to return this function. fill find a comment to it later
 
 export default function (title) {
   const data = {
