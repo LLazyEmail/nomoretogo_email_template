@@ -7,7 +7,7 @@ import { mailingAddress } from "../config.js";
 const SUPPORT_CONTACT_ERROR = `No ${variable} in supportContact`;
 
 // Checking for errors start
-function checkingForErrors(variable) {
+function createError(variable) {
   throw new Error(SUPPORT_CONTACT_ERROR);
 }
 // Checking for errors end
@@ -16,10 +16,10 @@ function checkingForErrors(variable) {
 var title = `No More To-Go Facebook Users:`;
 var textTop = (hrefSocial, idSosial) => {
   if (!hrefSocial) {
-    checkingForErrors("hrefSocial");
+    createError("hrefSocial");
   }
   if (!idSosial) {
-    checkingForErrors("idSosial");
+    createError("idSosial");
   }
   return `Connect with other home cooks on our closed group for No More To-Go Members Only<a href="${hrefSocial}" data-link-id="${idSosial}" target="_blank" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">Facebook Group Page</a>.`;
 };
@@ -29,10 +29,10 @@ var textTop = (hrefSocial, idSosial) => {
 var textBottomStrong = `Have Questions?`;
 var textBottom = (hrefHelp, idHelp) => {
   if (!hrefHelp) {
-    checkingForErrors("hrefHelp");
+    createError("hrefHelp");
   }
   if (!idHelp) {
-    checkingForErrors("idHelp");
+    createError("idHelp");
   }
   return `Please contact us via the 
   "<a href="${hrefHelp}" data-link-id="${idHelp}" target="_blank" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">How Can We Help"</a>

@@ -73,7 +73,7 @@ const mainTableWitchTwoRecipes = (id, href, src, id2, href2, src2) => {
 // Main table end
 
 // Checking for errors start
-function checkingForErrors(variable) {
+function createError(variable) {
   throw new Error(ERROR_TABLE_WITCH_TWO_RECIPES);
 }
 // Checking for errors end
@@ -83,22 +83,22 @@ export default (dataImageOne, dataImageTwo) => {
   const { id2, href2, src2 } = dataImageTwo;
 
   if (!id) {
-    checkingForErrors("id");
+    createError("id");
   }
   if (!href) {
-    checkingForErrors("href");
+    createError("href");
   }
   if (!src) {
-    checkingForErrors("src");
+    createError("src");
   }
   if (!id2) {
-    checkingForErrors("id2");
+    createError("id2");
   }
   if (!href2) {
-    checkingForErrors("href2");
+    createError("href2");
   }
   if (!src2) {
-    checkingForErrors("src2");
+    createError("src2");
   }
 
   // old version start

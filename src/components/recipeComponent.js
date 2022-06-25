@@ -10,7 +10,7 @@ const RECIPE_ERROR = `No ${variable} in recipeComponent`;
 import { pathToImages } from "../config.js";
 
 // Checking for errors start
-function checkingForErrors(variable) {
+function createError(variable) {
   throw new Error(RECIPE_ERROR);
 }
 // Checking for errors end
@@ -19,7 +19,7 @@ function checkingForErrors(variable) {
 const titleComponent = (title) => {
   if (!title) {
     // throw new Error(recipeTitleError);
-    checkingForErrors("title");
+    createError("title");
   }
 
   return `<strong>
@@ -38,7 +38,7 @@ const titleComponent = (title) => {
 const textComponent = (text) => {
   if (!text) {
     // throw new Error(recipeTextError);
-    checkingForErrors("text");
+    createError("text");
   }
 
   return `<font style="vertical-align: inherit;">
@@ -52,13 +52,13 @@ const textComponent = (text) => {
 // Get image start
 const imageComponent = (id, href, src) => {
   if (!id) {
-    checkingForErrors("id");
+    createError("id");
   }
   if (!href) {
-    checkingForErrors("href");
+    createError("href");
   }
   if (!src) {
-    checkingForErrors("src");
+    createError("src");
   }
 
   const srcPath = pathToImages + src;
