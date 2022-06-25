@@ -4,14 +4,14 @@
 // const recipeTitleError = "No title in recipeComponent";
 // const recipeTextError = "No text in recipeComponent";
 // const recipeImageError = `No ${variable} in recipeComponent`;
-const recipeErrors = `No ${variable} in recipeComponent`;
+const RECIPE_ERROR = `No ${variable} in recipeComponent`;
 
 // Config file
-import { pathImages } from "../config.js";
+import { pathToImages } from "../config.js";
 
 // Checking for errors start
 function checkingForErrors(variable) {
-  throw new Error(recipeErrors);
+  throw new Error(RECIPE_ERROR);
 }
 // Checking for errors end
 
@@ -61,7 +61,7 @@ const imageComponent = (id, href, src) => {
     checkingForErrors("src");
   }
 
-  const srcPath = pathImages + src;
+  const srcPath = pathToImages + src;
   return `<a href="${href}" data-link-id="${id}" target="_self"><img src="${srcPath}" border="0" alt="" width="267" style="display: block;"></a>`;
 };
 // Get image end

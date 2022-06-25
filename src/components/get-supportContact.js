@@ -4,11 +4,11 @@
 import { mailingAddress } from "../config.js";
 
 // Errors
-const supportContacterrors = `No ${variable} in supportContact`;
+const SUPPORT_CONTACT_ERROR = `No ${variable} in supportContact`;
 
 // Checking for errors start
 function checkingForErrors(variable) {
-  throw new Error(supportContacterrors);
+  throw new Error(SUPPORT_CONTACT_ERROR);
 }
 // Checking for errors end
 

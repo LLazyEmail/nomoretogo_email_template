@@ -1,7 +1,7 @@
 // Create tableWithTwoRecipes
 
 // Error
-const errorTableWitchTwoRecipes = `No ${variable} in table two recipes`;
+const ERROR_TABLE_WITCH_TWO_RECIPES = `No ${variable} in table two recipes`;
 
 // Config file
 import { pathImages } from "../config.js";
@@ -74,7 +74,7 @@ const mainTableWitchTwoRecipes = (id, href, src, id2, href2, src2) => {
 
 // Checking for errors start
 function checkingForErrors(variable) {
-  throw new Error(errorTableWitchTwoRecipes);
+  throw new Error(ERROR_TABLE_WITCH_TWO_RECIPES);
 }
 // Checking for errors end
 
