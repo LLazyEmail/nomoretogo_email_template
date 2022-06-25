@@ -16,66 +16,91 @@ const HEAD_COMPONENT_ERROR = `Empty ${variable} in headComponent`;
 // and we need to put more checks and errors here.
 
 // Create head component start
-function createHeadComponent(data) {
+function createHeadComponent(params) {
+  const {
+    blobHead,
+    bodyStyle,
+    mediaStyle,
+    style,
+    style2,
+    font1,
+    font2,
+    meta,
+    ifStyle,
+    title,
+  } = params;
+
   return `<head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <!--[if !mso]><!--><!--[if gte mso 9]><xml><o:OfficeDocumentsettings><o:AllowPNG/><o:PixelsPerInch>96<o:PixelsPerInch></o:OfficeDocumentsettings></xml><![endif]--><!--<![endif]-->
-    ${data.meta}
-    ${data.font1}
-    ${data.ifStyle}
-    ${data.style}
-    ${data.bodyStyle}
-    ${data.mediaStyle}
-    <title>${data.title}</title>
+    ${meta}
+    ${font1}
+    ${ifStyle}
+    ${style}
+    ${bodyStyle}
+    ${mediaStyle}
+    <title>${title}</title>
     <meta name="robots" content="noindex, nofollow">
-    ${data.style2}
-    ${data.font2}
-    ${data.blobHead}
+    ${style2}
+    ${font2}
+    ${blobHead}
   </head>`;
 }
 // Create head component end
 
-
 // we are throwing an error with the same constant 10 times.
-function searchForErrors(data) {
+function searchForErrors(params) {
+  const {
+    blobHead,
+    bodyStyle,
+    mediaStyle,
+    style,
+    style2,
+    font1,
+    font2,
+    meta,
+    ifStyle,
+    title,
+  } = params;
+
   var variable = "";
-  if (data.blobHead == "") {
+  if (blobHead == "") {
     variable = "blobHead";
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (data.bodyStyle == "") {
+  if (bodyStyle == "") {
     variable = "bodyStyle";
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (data.mediaStyle == "") {
+  if (mediaStyle == "") {
     variable = "mediaStyle";
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (data.style == "") {
+  if (style == "") {
     variable = "style";
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (data.style2 == "") {
+  if (style2 == "") {
     variable = "style2";
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (data.font1 == "") {
+  if (font1 == "") {
     variable = "font1";
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (data.font2 == "") {
+  if (font2 == "") {
     variable = "font2";
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (data.meta == "") {
+  if (meta == "") {
     variable = "meta";
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (data.ifStyle == "") {
+  if (ifStyle == "") {
     variable = "ifStyle";
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (data.title == "") {
+  if (title == "") {
     variable = "title";
     throw new Error(HEAD_COMPONENT_ERROR);
   }
