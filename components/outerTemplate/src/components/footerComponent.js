@@ -21,10 +21,6 @@ export default function (footContent) {
 
   // TODO move this loop away, it's hard to wrap your head around two long strings
   var res = footContent.map((cont) => {
-    // TODO make srcPath as a function that returns a full string.
-    // reason is simple, pathSocialIcons is a variable from the outside
-    // and cont.src is a variable that was passed into this method from the outside as an array of settings.
-    // sooo - it's very confusing might be
 
     return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">
       <a href="${cont.href}" target="_self">
