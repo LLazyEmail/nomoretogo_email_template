@@ -1,13 +1,13 @@
 // Create head component
-import blobHead from "./blobHead.js";
-import bodyStyle from "./bodyStyle.js";
-import mediaStyle from "./mediaStyle.js";
-import style from "./style.js";
-import style2 from "./style2.js";
-import font1 from "./font1.js";
-import font2 from "./font2.js";
-import meta from "./headMetaTags";
-import ifStyle from "./ifStyle.js";
+// import blobHead from "./blobHead.js";
+// import bodyStyle from "./bodyStyle.js";
+// import mediaStyle from "./mediaStyle.js";
+// import style from "./style.js";
+// import style2 from "./style2.js";
+// import font1 from "./font1.js";
+// import font2 from "./font2.js";
+// import meta from "./headMetaTags";
+// import ifStyle from "./ifStyle.js";
 
 const HEAD_COMPONENT_ERROR = `Empty ${variable} in headComponent`;
 
@@ -17,7 +17,7 @@ const HEAD_COMPONENT_ERROR = `Empty ${variable} in headComponent`;
 
 // Create head component start
 function createHeadComponent(params) {
-  const {
+  var {
     blobHead,
     bodyStyle,
     mediaStyle,
@@ -50,7 +50,7 @@ function createHeadComponent(params) {
 
 // we are throwing an error with the same constant 10 times.
 function searchForErrors(params) {
-  const {
+  var {
     blobHead,
     bodyStyle,
     mediaStyle,
@@ -108,20 +108,20 @@ function searchForErrors(params) {
 
 // TODO I dont think we need to return this function. fill find a comment to it later
 
-export default function (title) {
-  const data = {
-    blobHead,
-    bodyStyle,
-    mediaStyle,
-    style,
-    style2,
-    font1,
-    font2,
-    meta,
-    ifStyle,
-    title,
-  };
+export default function (subComponent) {
+  // const data = {
+  //   blobHead,
+  //   bodyStyle,
+  //   mediaStyle,
+  //   style,
+  //   style2,
+  //   font1,
+  //   font2,
+  //   meta,
+  //   ifStyle,
+  //   title,
+  // };
 
-  searchForErrors(data);
-  createHeadComponent(data);
+  searchForErrors(subComponent);
+  createHeadComponent(subComponent);
 }
