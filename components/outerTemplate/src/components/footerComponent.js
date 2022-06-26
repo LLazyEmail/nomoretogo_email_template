@@ -10,8 +10,8 @@ function createPathToImage(src) {
 // Create path to image end
 
 // Create foot content start
-function createFootItem(footContent) {
-  return footContent.map((cont) => {
+function createrSocialPanel(content) {
+  return content.map((cont) => {
     return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">
     <a href="${cont.href}" target="_self">
     <img width="24" alt="${cont.alt}" 
@@ -26,7 +26,7 @@ function createFootItem(footContent) {
 // Create foot content start
 function createFootContent(footContent) {
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
-  <tbody><tr>${createFootItem(footContent)}</tr></tbody>
+  <tbody><tr>${createrSocialPanel(footContent)}</tr></tbody>
 </table>`;
 }
 // Create foot content end
