@@ -24,7 +24,11 @@ function createrSocialPanel(content) {
 // Create foot content end
 
 // Create foot content start
-function createFootContent(footContent) {
+function socialMediaTable(footContent) {
+  if (footContent == "") {
+    throw new Error("No footContent footer");
+  }
+
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
   <tbody><tr>${createrSocialPanel(footContent)}</tr></tbody>
 </table>`;
@@ -32,9 +36,5 @@ function createFootContent(footContent) {
 // Create foot content end
 
 export default function (footContent) {
-  if (footContent == "") {
-    throw new Error("No footContent footer");
-  }
-
-  createFootContent(footContent);
+  socialMediaTable(footContent);
 }
