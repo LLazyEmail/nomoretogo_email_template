@@ -1,4 +1,4 @@
-import displayFactoryTwo from "./factoryTwo";
+import displayFactoryTwo from 'email-template-object';
 
 import headComponent from "../../components/outerTemplate/src/components/headComponent";
 
