@@ -1,7 +1,9 @@
 import displayFactoryTwo from 'email-template-object';
 
 
-import headComponent from "../../components/outerTemplate/src/components/headComponent";
+// import headComponent from "../../components/outerTemplate/src/components/headComponent";
+
+import headComponent from '../domain/outer/headComponent'
 
 import {
   blobHead,
@@ -13,7 +15,8 @@ import {
   mediaStyle,
   style,
   style2,
-} from "../../components/outerTemplate/src/components/subHeadComponents";
+// } from "../../components/outerTemplate/src/components/subHeadComponents";
+} from "../domain/outer/";
 
 // copied from headComponent
 // TODO update paths, because it will break for sure
