@@ -1,7 +1,5 @@
-// import asd from "../display/displayHead";
-
-import { font1 } from "../../components/outerTemplate/src/components/subHeadComponents";
+import displayHead from "../display/displayHead";
 
 test("rendering Main Component", () => {
-  console.log(asd);
+  console.log(123);
 });
