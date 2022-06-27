@@ -1,15 +1,5 @@
 // Create head component
-// import blobHead from "./blobHead.js";
-// import bodyStyle from "./bodyStyle.js";
-// import mediaStyle from "./mediaStyle.js";
-// import style from "./style.js";
-// import style2 from "./style2.js";
-// import font1 from "./font1.js";
-// import font2 from "./font2.js";
-// import meta from "./headMetaTags";
-// import ifStyle from "./ifStyle.js";
-
-const HEAD_COMPONENT_ERROR = `Empty ${variable} in headComponent`;
+const HEAD_COMPONENT_ERROR = (variable) => `Empty ${variable} in headComponent`;
 
 // TODO let's make this file more clear.
 // imports of all variables we'll move outside and our function will just accept an object with all these variables.
