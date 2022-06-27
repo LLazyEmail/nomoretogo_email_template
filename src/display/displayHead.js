@@ -1,6 +1,7 @@
-import displayFactoryTwo from "./displayFactoryTwo";
+import displayFactoryTwo from 'email-template-object';
 
-import headComponent from "../../components/outerTemplate/src/components/headComponent.js";
+
+import headComponent from "../../components/outerTemplate/src/components/headComponent";
 
 import {
   blobHead,

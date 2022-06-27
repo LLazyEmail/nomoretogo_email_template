@@ -1,6 +1,6 @@
 {
   "name": "nmtg-template-mailerlite",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -21,16 +21,17 @@
   "devDependencies": {
     "@babel/cli": "7.17.10",
     "@babel/core": "7.18.5",
+    "@babel/eslint-parser": "^7.18.2",
     "@babel/plugin-syntax-dynamic-import": "7.8.3",
     "@babel/plugin-transform-runtime": "7.18.5",
     "@babel/preset-env": "7.18.2",
     "@rollup/plugin-babel": "5.3.1",
     "@rollup/plugin-commonjs": "22.0.0",
     "@rollup/plugin-node-resolve": "13.3.0",
-    "babel-eslint": "10.1.0",
     "eslint": "8.18.0",
     "eslint-plugin-json": "3.1.0",
     "jest": "28.1.1",
+    "markup-generator": "^0.5.0",
     "prettier": "2.7.1",
     "rollup": "2.75.7",
     "rollup-plugin-includepaths": "0.2.4",
@@ -53,6 +54,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.18.3",
+    "babel-preset-react-app": "^10.0.1",
     "email-template-object": "^0.2.0"
-  }
+  }  
 }

@@ -1,4 +1,4 @@
-import displayFactoryTwo from './factoryTwo';
+import displayFactoryTwo from 'email-template-object';
 
 let addon1 = {
     // footer: footerString,
