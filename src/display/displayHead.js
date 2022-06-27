@@ -1,6 +1,6 @@
-import displayFactoryTwo from "./factoryTwo";
+import displayFactoryTwo from "./displayFactoryTwo";
 
-import headComponent from "../../components/outerTemplate/src/components/headComponent";
+import headComponent from "../../components/outerTemplate/src/components/headComponent.js";
 
 import {
   blobHead,
