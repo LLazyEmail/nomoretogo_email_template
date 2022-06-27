@@ -99,19 +99,7 @@ function searchForErrors(params) {
 // TODO I dont think we need to return this function. fill find a comment to it later
 
 export default function (subComponent) {
-  // const data = {
-  //   blobHead,
-  //   bodyStyle,
-  //   mediaStyle,
-  //   style,
-  //   style2,
-  //   font1,
-  //   font2,
-  //   meta,
-  //   ifStyle,
-  //   title,
-  // };
-
+ 
   searchForErrors(subComponent);
   createHeadComponent(subComponent);
 }

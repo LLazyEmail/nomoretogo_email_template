@@ -1,4 +1,12 @@
 
 import HeadString from '../src/display/displayHead'
 
-console.log(HeadString);
+
+
+describe('test helpers', () => {
+
+  test("rendering Main Component", () => {
+   console.log(HeadString);
+  });
+  
+})
