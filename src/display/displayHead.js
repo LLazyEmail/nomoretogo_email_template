@@ -13,6 +13,7 @@ import {
   style,
   style2,
 } from "../../components/outerTemplate/src/components/subHeadComponents";
+
 // copied from headComponent
 // TODO update paths, because it will break for sure
 // compare with that crazy long path from the top     ^
@@ -51,4 +52,4 @@ const settings = {
 const Factory = new displayFactoryTwo();
 
 console.log(Factory.create(settings));
-// export default Factory.create(settings);
+export default Factory.create(settings);
