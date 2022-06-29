@@ -53,53 +53,52 @@ function searchForErrors(params) {
     title,
   } = params;
 
-  var variable = "";
-  if (blobHead == "") {
-    variable = "blobHead";
-    throw new Error(HEAD_COMPONENT_ERROR);
+  var variable = '';
+  if (blobHead == '') {
+    variable = 'blobHead';
+    throw new Error(HEAD_COMPONENT_ERROR(variable));
   }
-  if (bodyStyle == "") {
-    variable = "bodyStyle";
-    throw new Error(HEAD_COMPONENT_ERROR);
+  if (bodyStyle == '') {
+    variable = 'bodyStyle';
+    throw new Error(HEAD_COMPONENT_ERROR(variable));
   }
-  if (mediaStyle == "") {
-    variable = "mediaStyle";
-    throw new Error(HEAD_COMPONENT_ERROR);
+  if (mediaStyle == '') {
+    variable = 'mediaStyle';
+    throw new Error(HEAD_COMPONENT_ERROR(variable));
   }
-  if (style == "") {
-    variable = "style";
-    throw new Error(HEAD_COMPONENT_ERROR);
+  if (style == '') {
+    variable = 'style';
+    throw new Error(HEAD_COMPONENT_ERROR(variable));
   }
-  if (style2 == "") {
-    variable = "style2";
-    throw new Error(HEAD_COMPONENT_ERROR);
+  if (style2 == '') {
+    variable = 'style2';
+    throw new Error(HEAD_COMPONENT_ERROR(variable));
   }
-  if (font1 == "") {
-    variable = "font1";
-    throw new Error(HEAD_COMPONENT_ERROR);
+  if (font1 == '') {
+    variable = 'font1';
+    throw new Error(HEAD_COMPONENT_ERROR(variable));
   }
-  if (font2 == "") {
-    variable = "font2";
-    throw new Error(HEAD_COMPONENT_ERROR);
+  if (font2 == '') {
+    variable = 'font2';
+    throw new Error(HEAD_COMPONENT_ERROR(variable));
   }
-  if (meta == "") {
-    variable = "meta";
-    throw new Error(HEAD_COMPONENT_ERROR);
+  if (meta == '') {
+    variable = 'meta';
+    throw new Error(HEAD_COMPONENT_ERROR(variable));
   }
-  if (ifStyle == "") {
-    variable = "ifStyle";
-    throw new Error(HEAD_COMPONENT_ERROR);
+  if (ifStyle == '') {
+    variable = 'ifStyle';
+    throw new Error(HEAD_COMPONENT_ERROR(variable));
   }
-  if (title == "") {
-    variable = "title";
-    throw new Error(HEAD_COMPONENT_ERROR);
+  if (title == '') {
+    variable = 'title';
+    throw new Error(HEAD_COMPONENT_ERROR(variable));
   }
 }
 
 // TODO I dont think we need to return this function. fill find a comment to it later
 
 export default function (subComponent) {
- 
   searchForErrors(subComponent);
-  createHeadComponent(subComponent);
+  return createHeadComponent(subComponent);
 }
