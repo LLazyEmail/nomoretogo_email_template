@@ -1,7 +1,12 @@
-import HeadString from '../src/display/displayHead';
+// import HeadString from '../src/display/displayHead';
+import FooterString from '../src/display/displayFooter';
 
-describe('test HeadString', () => {
+describe('test fullComponent', () => {
   test('rendering HeadString Component', () => {
-    console.log(HeadString);
+    // console.log(HeadString);
+  });
+
+  test('rendering FooterString Component', () => {
+    console.log(FooterString);
   });
 });
