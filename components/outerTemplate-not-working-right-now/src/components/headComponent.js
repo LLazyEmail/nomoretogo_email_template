@@ -53,45 +53,45 @@ function searchForErrors(params) {
     title,
   } = params;
 
-  var variable = "";
-  if (blobHead == "") {
-    variable = "blobHead";
+  var variable = '';
+  if (blobHead == '') {
+    variable = 'blobHead';
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (bodyStyle == "") {
-    variable = "bodyStyle";
+  if (bodyStyle == '') {
+    variable = 'bodyStyle';
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (mediaStyle == "") {
-    variable = "mediaStyle";
+  if (mediaStyle == '') {
+    variable = 'mediaStyle';
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (style == "") {
-    variable = "style";
+  if (style == '') {
+    variable = 'style';
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (style2 == "") {
-    variable = "style2";
+  if (style2 == '') {
+    variable = 'style2';
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (font1 == "") {
-    variable = "font1";
+  if (font1 == '') {
+    variable = 'font1';
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (font2 == "") {
-    variable = "font2";
+  if (font2 == '') {
+    variable = 'font2';
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (meta == "") {
-    variable = "meta";
+  if (meta == '') {
+    variable = 'meta';
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (ifStyle == "") {
-    variable = "ifStyle";
+  if (ifStyle == '') {
+    variable = 'ifStyle';
     throw new Error(HEAD_COMPONENT_ERROR);
   }
-  if (title == "") {
-    variable = "title";
+  if (title == '') {
+    variable = 'title';
     throw new Error(HEAD_COMPONENT_ERROR);
   }
 }
@@ -113,5 +113,5 @@ export default function (subComponent) {
   // };
 
   searchForErrors(subComponent);
-  createHeadComponent(subComponent);
+  return createHeadComponent(subComponent);
 }
