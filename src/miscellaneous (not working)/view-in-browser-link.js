@@ -7,11 +7,11 @@ const viewInBrowsLink = (id, href) => {
 // View in brows link end
 
 export default function (id, href) {
-  if (id == "") {
-    throw new Error("No id viewInBrowsLink");
+  if (id == '') {
+    throw new Error('No id viewInBrowsLink');
   }
-  if (href == "") {
-    throw new Error("No href viewInBrowsLink");
+  if (href == '') {
+    throw new Error('No href viewInBrowsLink');
   }
 
   return viewInBrowsLink(id, href);

@@ -1,6 +1,7 @@
 // Create panel view in brows
 
-import viewInBrowserLink from "../../../../src/miscellaneous/view-in-browser-link.js";
+// import viewInBrowserLink from "../../../../src/miscellaneous/view-in-browser-link.js";
+import viewInBrowserLink from '../miscellaneous/view-in-browser-link';
 
 // Top panel start
 const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {
@@ -28,11 +29,11 @@ const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {
 // Top panel end
 
 export default function (idViewInBrows, hrefViewInBrows) {
-  if (idViewInBrows == "") {
-    throw new Error("No idViewInBrows topPanelViewInBrows");
+  if (idViewInBrows == undefined) {
+    throw new Error('No idViewInBrows topPanelViewInBrows');
   }
-  if (hrefViewInBrows == "") {
-    throw new Error("No hrefViewInBrows topPanelViewInBrows");
+  if (hrefViewInBrows == undefined) {
+    throw new Error('No hrefViewInBrows topPanelViewInBrows');
   }
 
   return topPanelViewInBrows(idViewInBrows, hrefViewInBrows);
