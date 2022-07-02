@@ -1,6 +1,7 @@
 // import HeadString from '../src/display/displayHead';
 // import FooterString from '../src/display/displayFooter';
-import displayTopPanelViewInBrowsString from '../src/display/displayTopPanelViewInBrows';
+// import TopPanelViewInBrowsString from '../src/display/displayTopPanelViewInBrows';
+import ContentMainTableWrapString from '../src/display/displayContentMainTableWrap';
 
 describe('test fullComponent', () => {
   test('rendering HeadString Component', () => {
@@ -11,7 +12,11 @@ describe('test fullComponent', () => {
     // console.log(FooterString);
   });
 
-  test('rendering displayTopPanelViewInBrows Component', () => {
-    console.log(displayTopPanelViewInBrowsString);
+  test('rendering TopPanelViewInBrows Component', () => {
+    // console.log(TopPanelViewInBrowsString);
+  });
+
+  test('rendering ContentMainTableWrap Component', () => {
+    console.log(ContentMainTableWrapString);
   });
 });
