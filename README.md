@@ -7,6 +7,33 @@ project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/
 
 
 
+
+---
+
+```bash
+├── xxx
+│   ├── xxx
+│   │   ├── **/*.xxx
+│   ├── xxx
+│   ├── images
+│   ├── xxx
+│   ├── js
+│   │   ├── **/*.js
+│   └── xxx
+├── dist (or build)
+├── 
+├── 
+├── 
+├── 
+├── README.md
+├── package.json
+├── 
+└── .gitignore
+```
+
+---
+
+
 #### Arthur Tkachenko articles
 
 * [https://hackernoon.com/5-reasons-why-newsletters-should-be-part-of-your-business-strategy](https://hackernoon.com/5-reasons-why-newsletters-should-be-part-of-your-business-strategy)
