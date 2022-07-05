@@ -7,7 +7,7 @@
 const RECIPE_ERROR = `No ${variable} in recipeComponent`;
 
 // Config file
-import { pathToImages } from "../config.js";
+import { pathToImages } from '../config.js';
 
 // Create path to image start
 function createPathToImage(src) {
@@ -25,16 +25,12 @@ function createError(variable) {
 const titleComponent = (title) => {
   if (!title) {
     // throw new Error(recipeTitleError);
-    createError("title");
+    createError('title');
   }
 
   return `<strong>
       <span style="font-size: 16px;">
-        <font style="vertical-align: inherit;">
-          <font style="vertical-align: inherit;">
-            ${title}
-          </font>
-        </font>
+        ${title}
       </span>
     </strong><br>`;
 };
@@ -44,7 +40,7 @@ const titleComponent = (title) => {
 const textComponent = (text) => {
   if (!text) {
     // throw new Error(recipeTextError);
-    createError("text");
+    createError('text');
   }
 
   return `<font style="vertical-align: inherit;">
@@ -58,13 +54,13 @@ const textComponent = (text) => {
 // Get image start
 const imageComponent = (id, href, src) => {
   if (!id) {
-    createError("id");
+    createError('id');
   }
   if (!href) {
-    createError("href");
+    createError('href');
   }
   if (!src) {
-    createError("src");
+    createError('src');
   }
 
   return `<a href="${href}" data-link-id="${id}" target="_self"><img src="${createPathToImage(

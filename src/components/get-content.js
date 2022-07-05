@@ -1,5 +1,5 @@
-import button from "./get-button.js";
-import getImageTitleDesc from "./recipeComponent.js";
+import button from './get-button.js';
+import recipeComponent from './recipeComponent.js';
 
 // Title block start
 const titleText = (idTitle, hrefTitle, textTitle) => {
@@ -177,18 +177,12 @@ const RowWithTwoRecipes = (
                     <table role="presentation" cellpadding="0" border="0" align="center" width="100%">
                       <tbody><tr>
                         <td valign="top">
-                            ${getImageTitleDesc(id, href, src, title, text)}
+                            ${recipeComponent(id, href, src, title, text)}
                           <!--[if mso]>
                         </td>
                         <td valign="top">
                         <![endif]-->
-                            ${getImageTitleDesc(
-                              id2,
-                              href2,
-                              src2,
-                              title2,
-                              text2
-                            )}
+                            ${recipeComponent(id2, href2, src2, title2, text2)}
                         </td>
                 </tr>
               </tbody></table>
