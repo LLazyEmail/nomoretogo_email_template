@@ -1,6 +1,6 @@
 {
   "name": "nmtg-template-mailerlite-typography",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -39,7 +39,7 @@
     "semver": "7.3.7",
     "shx": "0.3.4"
   },
-  "author": "Arthur Tkachenko",
+  "author": "Arthur Tkachenko, Yuriy",
   "license": "MIT",
   "private": false,
   "release": {
