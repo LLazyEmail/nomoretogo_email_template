@@ -1,5 +1,6 @@
 // Create socialMedia component
 const srcPath = "./images/";
+
 function getSocialItem(socialItem) {
   return socialItem.map((social) => {
     return (
@@ -23,8 +24,8 @@ const createSocialItem = function (socialItem) {
   }
 
   return (
-    `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left"><tbody><tr>` +
-    getSocialItem(socialItem) +
+    `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left"><tbody><tr>` 
+    + getSocialItem(socialItem) +
     `</tr></tbody></table>`
   );
 };
