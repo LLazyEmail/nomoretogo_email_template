@@ -3,12 +3,12 @@
 // inner tamplate
 import { contentMainTableWrap } from '../components/innerTemplate/src/index';
 
-// miscellaneous tamplate (empty)
-// import { miscellaneous } from "../components/miscellaneous/src/index";
-import UnsubLink from './miscellaneous/get-unsub-link.js';
-import SocialMedia from './miscellaneous/get-social-media.js';
-import address from './miscellaneous/get-address.js';
-
+import {
+  address,
+  createSocialItem,
+  unsubscribeLink,
+  viewInBrowserLink
+} from 'nmtg-template-mailerlite-miscellaneous';
 
 // outerTemplate tamplate start
 import {

@@ -1,5 +1,3 @@
-const miscellaneous = "miscellaneous";
-
 import address from './components/address';
 // TODO change this name too
 import  createSocialItem from './components/social-media';
