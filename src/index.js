@@ -5,6 +5,10 @@ import { contentMainTableWrap } from '../components/innerTemplate/src/index';
 
 // miscellaneous tamplate (empty)
 // import { miscellaneous } from "../components/miscellaneous/src/index";
+import UnsubLink from './miscellaneous/get-unsub-link.js';
+import SocialMedia from './miscellaneous/get-social-media.js';
+import address from './miscellaneous/get-address.js';
+
 
 // outerTemplate tamplate start
 import {
@@ -32,12 +36,15 @@ import {
 } from '../components/typography/src/index';
 // typography end
 
-import UnsubLink from './miscellaneous/get-unsub-link.js';
+
+
+
 import recipe from './components/recipeComponent.js';
 import button from './components/get-button.js';
 import link from './components/get-link.js';
-import SocialMedia from './miscellaneous/get-social-media.js';
-import address from './miscellaneous/get-address.js';
+
+
+// TODO change the name of get-support-contact. its not clear what is inside of this component
 import supportContact from './components/get-supportContact.js';
 // import content from './components/old_get-content.js';
 import content from './components/contentComponent';
@@ -46,11 +53,16 @@ import tableWithTwoRecipes from './components/tableWithTwoRecipes.js';
 
 export {
   UnsubLink,
+  SocialMedia,
+  address,
+//--------
+
   recipe,
   button,
   link,
-  SocialMedia,
-  address,
+  
+
+  
   supportContact,
   content,
   tableForNotes,
