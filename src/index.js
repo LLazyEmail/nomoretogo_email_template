@@ -39,7 +39,8 @@ import link from './components/get-link.js';
 import SocialMedia from './miscellaneous/get-social-media.js';
 import address from './miscellaneous/get-address.js';
 import supportContact from './components/get-supportContact.js';
-import content from './components/get-content.js';
+// import content from './components/old_get-content.js';
+import content from './components/contentComponent';
 import tableForNotes from './components/tableForNotes.js';
 import tableWithTwoRecipes from './components/tableWithTwoRecipes.js';
 
