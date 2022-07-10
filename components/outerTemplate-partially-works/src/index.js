@@ -11,7 +11,7 @@ import {
   mediaStyle,
   style,
   style2,
-} from "./components/subHeadComponents.js";
+} from "./components/subHeadComponents.j-s";
 // Head sub components end
 
 // import blobHead from "./components/blobHead";
@@ -24,8 +24,8 @@ import {
 // import mediaStyle from "./components/mediaStyle";
 // import style from "./components/style";
 // import style2 from "./components/style2";
-import footerComponent from "./components/footerComponent";
-import headComponent from "./components/headComponent";
+import footerComponent from "./components/footerComponent.j-s";
+import headComponent from "./components/headComponent.j-s";
 import tableHeaderBlockLogo from "./components/tableHeaderBlockLogo";
 import topPanelViewInBrows from "./components/topPanelViewInBrows";
 
