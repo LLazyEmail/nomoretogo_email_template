@@ -1,7 +1,9 @@
 // create content main table wrap
+// TODO looks like an issue, because we will need to 
+// import components from the outer template into the inner template
+import topPanelViewInBrows from "../../../../src/domain/outer/topPanelViewInBrows";
 
-import topPanelViewInBrows from "../../../outerTemplate/src/components/topPanelViewInBrows.js";
-import tableHeaderBlockLogo from "../../../outerTemplate/src/components/tableHeaderBlockLogo.js";
+import tableHeaderBlockLogo from "../../../../src/domain/outer/tableHeaderBlockLogo";
 
 // Block main table content (wrap) start
 const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {

@@ -6,7 +6,7 @@ const viewInBrowsLink = (id, href) => {
 };
 // View in brows link end
 
-export default function (id, href) {
+const viewInBrowserLink = (id, href) => {
   if (id == '') {
     throw new Error('No id viewInBrowsLink');
   }
@@ -16,3 +16,6 @@ export default function (id, href) {
 
   return viewInBrowsLink(id, href);
 }
+
+
+export default viewInBrowserLink;

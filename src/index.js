@@ -1,7 +1,7 @@
 // Get components
 
 // inner tamplate
-import { contentMainTableWrap } from '../components/innerTemplate/src/index';
+import { contentMainTableWrap } from '../components/innerTemplate (not working)/src/index';
 
 import {
   address,
@@ -16,24 +16,39 @@ import {
   bodyStyle,
   font1,
   font2,
-  footerComponent,
-  headComponent,
+  //---------------
+  // footerComponent,
+  // headComponent,
+  //---------------
   headMetaTags,
   ifStyle,
   mediaStyle,
   style,
   style2,
+  //---------------
+  // tableHeaderBlockLogo,
+  // topPanelViewInBrows,
+  //---------------
+} from 'nmtg-template-mailerlite-outertemplate';
+
+import { 
+   footerComponent,
+  headComponent,
   tableHeaderBlockLogo,
   topPanelViewInBrows,
-} from '../components/outerTemplate/src/index';
+} from './domain/outer/index'
+
 // outerTemplate tamplate end
 
 // typography start
+
 import {
   headings,
   paragraph,
   strong,
 } from '../components/typography/src/index';
+
+
 // typography end
 
 import recipe from './components/recipeComponent.js';

@@ -1,7 +1,6 @@
 // Create panel view in brows
 
-// import viewInBrowserLink from "../../../../src/miscellaneous/view-in-browser-link.js";
-import viewInBrowserLink from '../miscellaneous/view-in-browser-link';
+import { viewInBrowserLink } from 'nmtg-template-mailerlite-miscellaneous';
 
 // Top panel start
 const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {
