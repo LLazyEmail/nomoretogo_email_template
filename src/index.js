@@ -7,7 +7,7 @@ import {
   address,
   createSocialItem,
   unsubscribeLink,
-  viewInBrowserLink
+  viewInBrowserLink,
 } from 'nmtg-template-mailerlite-miscellaneous';
 
 // outerTemplate tamplate start
@@ -36,16 +36,12 @@ import {
 } from '../components/typography/src/index';
 // typography end
 
-
-
-
 import recipe from './components/recipeComponent.js';
 import button from './components/get-button.js';
 import link from './components/get-link.js';
 
-
 // TODO change the name of get-support-contact. its not clear what is inside of this component
-import supportContact from './components/get-supportContact.js';
+import supportContact from './components/old_get-supportContact.js';
 // import content from './components/old_get-content.js';
 import content from './components/contentComponent';
 import tableForNotes from './components/tableForNotes.js';
@@ -55,14 +51,11 @@ export {
   UnsubLink,
   SocialMedia,
   address,
-//--------
+  //--------
 
   recipe,
   button,
   link,
-  
-
-  
   supportContact,
   content,
   tableForNotes,
