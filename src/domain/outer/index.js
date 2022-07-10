@@ -15,6 +15,12 @@ import { blobHead,
 
 import headComponent from "./headComponent";
 
+import footerComponent from './footerComponent';
+
+import tableHeaderBlockLogo from './tableHeaderBlockLogo';
+
+import topPanelViewInBrows from './topPanelViewInBrows';
+
 export {
   blobHead,
   bodyStyle,
@@ -26,5 +32,8 @@ export {
   style,
   style2,
 
-  headComponent
+  headComponent,
+  footerComponent, tableHeaderBlockLogo, topPanelViewInBrows
+
+
 };
