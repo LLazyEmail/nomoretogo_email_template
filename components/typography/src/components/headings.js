@@ -23,6 +23,7 @@ var h6 = function (text) {
   return "<h6 style='font-size: 1em>" + text + "</h6>";
 };
 
+// TODO i dont like that we overcomplicated headings...
 export default function (text, type) {
   if (text == "") {
     throw new Error("No text headings");

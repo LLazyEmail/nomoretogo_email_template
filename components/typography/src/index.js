@@ -1,4 +1,4 @@
-import headings from "./components/get-headings.js";
+import headings from "./components/headings.js";
 import paragraph from "./components/paragraph.js";
 import strong from "./components/strong.js";
 

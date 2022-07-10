@@ -48,9 +48,9 @@ import tableForNotes from './components/tableForNotes.js';
 import tableWithTwoRecipes from './components/tableWithTwoRecipes.js';
 
 export {
-  UnsubLink,
-  SocialMedia,
-  address,
+  // UnsubLink,
+  // SocialMedia,
+  // address,
   //--------
 
   recipe,
