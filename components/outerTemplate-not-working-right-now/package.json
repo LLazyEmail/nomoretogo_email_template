@@ -1,6 +1,6 @@
 {
   "name": "nmtg-template-mailerlite-outertemplate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -21,25 +21,22 @@
   "devDependencies": {
     "@babel/cli": "7.18.6",
     "@babel/core": "7.18.6",
+    "@babel/eslint-parser": "7.18.2",
     "@babel/plugin-syntax-dynamic-import": "7.8.3",
-    "@babel/plugin-transform-runtime": "7.18.6",
     "@babel/preset-env": "7.18.6",
     "@rollup/plugin-babel": "5.3.1",
-    "@rollup/plugin-commonjs": "22.0.0",
+    "@rollup/plugin-commonjs": "22.0.1",
     "@rollup/plugin-node-resolve": "13.3.0",
-    "babel-eslint": "10.1.0",
     "eslint": "8.19.0",
     "eslint-plugin-json": "3.1.0",
-    "jest": "28.1.2",
     "prettier": "2.7.1",
     "rollup": "2.76.0",
     "rollup-plugin-includepaths": "0.2.4",
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-node-globals": "1.4.0",
-    "semver": "7.3.7",
     "shx": "0.3.4"
   },
-  "author": "Arthur Tkachenko",
+  "author": "Arthur Tkachenko, Yuriy",
   "license": "MIT",
   "private": false,
   "release": {
@@ -47,11 +44,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "optionalDependencies": {
-    "fsevents": "*"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.18.3"
   }
 }
