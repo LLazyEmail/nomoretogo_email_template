@@ -12,9 +12,6 @@ function createError(variable) {
 // Checking for errors end
 
 const createImage = (src) => {
-  if (src == '') {
-    createError('src');
-  }
   return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
 };
 
@@ -58,5 +55,8 @@ ${emptyBlock()}`;
 };
 
 export default function (src) {
+  if (src == '') {
+    createError('src');
+  }
   return mainBlock(src);
 }

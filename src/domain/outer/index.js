@@ -1,7 +1,7 @@
 //------------
 
-
-import { blobHead,
+import {
+  blobHead,
   bodyStyle,
   font1,
   font2,
@@ -9,13 +9,12 @@ import { blobHead,
   ifStyle,
   mediaStyle,
   style,
-  style2, } from 'nmtg-template-mailerlite-outertemplate'
+  style2,
+} from 'nmtg-template-mailerlite-outertemplate';
 
+import headComponent from './headComponent';
 
-
-import headComponent from "./headComponent";
-
-import footerComponent from './footerComponent';
+import footerComponent from './old_footerComponent';
 
 import tableHeaderBlockLogo from './tableHeaderBlockLogo';
 
@@ -31,9 +30,8 @@ export {
   mediaStyle,
   style,
   style2,
-
   headComponent,
-  footerComponent, tableHeaderBlockLogo, topPanelViewInBrows
-
-
+  footerComponent,
+  tableHeaderBlockLogo,
+  topPanelViewInBrows,
 };

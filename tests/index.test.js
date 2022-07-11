@@ -3,8 +3,10 @@
 // import contentString from '../src/display/displayContent';
 // import instructionString from '../src/display/displayInstruction';
 // import SupportContactString from '../src/display/displaySupportContact';
-import AfterSupporComponentString from '../src/display/displayAfterSupportComponent';
+// import AfterSupporComponentString from '../src/display/displayAfterSupportComponent';
 // import FooterString from '../src/display/displayFooter';
+///////////////////////////////////////////////////////////
+import BodyComponentString from '../src/display/displayBodyComponent';
 
 describe('test fullComponent', () => {
   // test('rendering HeadString Component', () => {
@@ -22,10 +24,14 @@ describe('test fullComponent', () => {
   // test('rendering SupportContact Component', () => {
   //   console.log(SupportContactString);
   // });
-  test('rendering AfterSupportContact Component', () => {
-    console.log(AfterSupporComponentString);
-  });
+  // test('rendering AfterSupportContact Component', () => {
+  //   console.log(AfterSupporComponentString);
+  // });
   // test('rendering FooterString Component', () => {
   //   console.log(FooterString);
   // });
+  ///////////////////////////////////////////////////////////
+  test('rendering  BodyString Component', () => {
+    console.log(BodyComponentString);
+  });
 });

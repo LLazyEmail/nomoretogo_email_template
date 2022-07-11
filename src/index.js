@@ -31,12 +31,12 @@ import {
   //---------------
 } from 'nmtg-template-mailerlite-outertemplate';
 
-import { 
-   footerComponent,
+import {
+  footerComponent,
   headComponent,
   tableHeaderBlockLogo,
   topPanelViewInBrows,
-} from './domain/outer/index'
+} from './domain/outer/index';
 
 // outerTemplate tamplate end
 
@@ -48,7 +48,6 @@ import {
   strong,
 } from '../components/typography/src/index';
 
-
 // typography end
 
 import recipe from './components/recipeComponent.js';
@@ -59,7 +58,7 @@ import link from './components/get-link.js';
 import supportContact from './components/old_get-supportContact.js';
 // import content from './components/old_get-content.js';
 import content from './components/contentComponent';
-import tableForNotes from './components/tableForNotes.js';
+import tableForNotes from './components/old_tableForNotes.js';
 import tableWithTwoRecipes from './components/tableWithTwoRecipes.js';
 
 export {
