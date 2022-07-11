@@ -13,8 +13,8 @@ const mainTableForNotes = (content) => {
 // Main table end
 
 export default (content) => {
-  if (content == "") {
-    throw new Error("No content TableForNotes");
+  if (content == '') {
+    throw new Error('No content TableForNotes');
   }
   return mainTableForNotes(content);
 };

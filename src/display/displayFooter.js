@@ -1,30 +1,12 @@
-// import displayFactoryTwo from 'email-template-object';
-
-// import footerComponent from '../../components/outerTemplate/src/components/footerComponent';
-
-// @TODO for footerComponent i need an example of what we exactly passing inside it
-
-// let addon1 = {
-// footer: footerComponent(),
-// variable:value,
-//};
-
-//variant one
-// const settings = {
-//   component: footerComponent,
-//   params: {},
-// };
-
-// const Factory = new displayFactoryTwo();
-
-// console.log(Factory.create(settings));
-// export default Factory.create(settings);
-
-//////////////////// NEW VERSION //////////////////////////////////
-
 import footerComponent from '../domain/outer/footerComponent';
+const socials = [
+  { href: 123, src: 123 },
+  { href: 123, src: 123 },
+  { href: '123', src: 123 },
+];
+
 try {
-  var fullComponent = footerComponent([]);
+  var fullComponent = footerComponent(socials);
 } catch (err) {
   var error = err;
 }
