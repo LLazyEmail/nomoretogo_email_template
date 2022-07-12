@@ -1,4 +1,4 @@
-// import HeadString from '../src/display/displayHead';
+import HeadString from '../src/display/displayHead';
 // import ContentMainTableWrapString from '../src/display/displayContentMainTableWrap';
 // import contentString from '../src/display/displayContent';
 // import instructionString from '../src/display/displayInstruction';
@@ -6,12 +6,12 @@
 // import AfterSupporComponentString from '../src/display/displayAfterSupportComponent';
 // import FooterString from '../src/display/displayFooter';
 ///////////////////////////////////////////////////////////
-import BodyComponentString from '../src/display/displayBodyComponent';
+// import BodyComponentString from '../src/display/displayBodyComponent';
 
 describe('test fullComponent', () => {
-  // test('rendering HeadString Component', () => {
-  //   console.log(HeadString);
-  // });
+  test('rendering HeadString Component', () => {
+    console.log(HeadString);
+  });
   // test('rendering ContentMainTableWrap Component', () => {
   //   console.log(ContentMainTableWrapString);
   // });
@@ -31,7 +31,7 @@ describe('test fullComponent', () => {
   //   console.log(FooterString);
   // });
   ///////////////////////////////////////////////////////////
-  test('rendering  BodyString Component', () => {
-    console.log(BodyComponentString);
-  });
+  // test('rendering  BodyString Component', () => {
+  //   console.log(BodyComponentString);
+  // });
 });

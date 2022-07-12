@@ -1,7 +1,7 @@
 // Create wrap component content
 
 import tableWithTwoRecipes from './tableWithTwoRecipes.js';
-import button from './get-button.js';
+import button from './old_get-button.js';
 import emptyBlock from './emptyBlock.js';
 
 // Error
