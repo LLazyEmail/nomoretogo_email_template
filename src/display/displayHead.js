@@ -4,32 +4,39 @@
 
 import headComponent from '../domain/outer/headComponent';
 
-import {
-  blobHead,
-  bodyStyle,
-  font1,
-  font2,
-  headMetaTags,
-  ifStyle,
-  mediaStyle,
-  style,
-  style2, //'../../components/outerTemplate/src/components/subHeadComponents';
-} from '../domain/outer/';
+//import {
+// blobHead,
+// bodyStyle,
+// font1,
+// font2,
+// headMetaTags,
+// ifStyle,
+// mediaStyle,
+// style,
+// style2,
+//} from '../../components/outerTemplate-partially-works/src/components/';
 
-let addon1 = {
-  blobHead: blobHead(),
-  bodyStyle: bodyStyle(),
-  font1: font1(),
-  font2: font2(),
-  headMetaTags: headMetaTags(),
-  ifStyle: ifStyle(),
-  mediaStyle: mediaStyle(),
-  style: style(),
-  style2: style2(),
+// import blobHead from '../../components/outerTemplate-partially-works/src/components/blobHead';
 
-  // variable:value,
-  title: 'text title',
-};
+import { blobHead } from "nmtg-template-mailerlite-outertemplate"
+
+
+console.log(blobHead());
+
+// let addon1 = {
+//   blobHead: blobHead(),
+//   bodyStyle: bodyStyle(),
+//   font1: font1(),
+//   font2: font2(),
+//   headMetaTags: headMetaTags(),
+//   ifStyle: ifStyle(),
+//   mediaStyle: mediaStyle(),
+//   style: style(),
+//   style2: style2(),
+
+//   // variable:value,
+//   title: 'text title',
+// };
 
 // var component;
 // var error;
@@ -40,7 +47,6 @@ try {
 }
 
 var result = error != undefined ? error : fullComponent;
-// var result = font1();
 
 //variant one
 // const settings = {

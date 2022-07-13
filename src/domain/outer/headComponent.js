@@ -53,46 +53,35 @@ function searchForErrors(params) {
     title,
   } = params;
 
-  var variable = '';
   if (blobHead == '') {
-    variable = 'blobHead';
-    throw new Error(HEAD_COMPONENT_ERROR(variable));
+    throw new Error(HEAD_COMPONENT_ERROR('blobHead'));
   }
   if (bodyStyle == '') {
-    variable = 'bodyStyle';
-    throw new Error(HEAD_COMPONENT_ERROR(variable));
+    throw new Error(HEAD_COMPONENT_ERROR('bodyStyle'));
   }
   if (mediaStyle == '') {
-    variable = 'mediaStyle';
-    throw new Error(HEAD_COMPONENT_ERROR(variable));
+    throw new Error(HEAD_COMPONENT_ERROR('mediaStyle'));
   }
   if (style == '') {
-    variable = 'style';
-    throw new Error(HEAD_COMPONENT_ERROR(variable));
+    throw new Error(HEAD_COMPONENT_ERROR('style'));
   }
   if (style2 == '') {
-    variable = 'style2';
-    throw new Error(HEAD_COMPONENT_ERROR(variable));
+    throw new Error(HEAD_COMPONENT_ERROR('style2'));
   }
   if (font1 == '') {
-    variable = 'font1';
-    throw new Error(HEAD_COMPONENT_ERROR(variable));
+    throw new Error(HEAD_COMPONENT_ERROR('font1'));
   }
   if (font2 == '') {
-    variable = 'font2';
-    throw new Error(HEAD_COMPONENT_ERROR(variable));
+    throw new Error(HEAD_COMPONENT_ERROR('font2'));
   }
   if (meta == '') {
-    variable = 'meta';
-    throw new Error(HEAD_COMPONENT_ERROR(variable));
+    throw new Error(HEAD_COMPONENT_ERROR('meta'));
   }
   if (ifStyle == '') {
-    variable = 'ifStyle';
-    throw new Error(HEAD_COMPONENT_ERROR(variable));
+    throw new Error(HEAD_COMPONENT_ERROR('ifStyle'));
   }
   if (title == '') {
-    variable = 'title';
-    throw new Error(HEAD_COMPONENT_ERROR(variable));
+    throw new Error(HEAD_COMPONENT_ERROR('title'));
   }
 }
 

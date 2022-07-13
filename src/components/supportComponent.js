@@ -2,7 +2,7 @@
 
 import { mailingAddress } from '../config';
 
-import emptyBlock from '../components/emptyBlock';
+import lineBlock from './lineBlock';
 
 const SUPPORT_COMPONENT_ERROR = (variable) =>
   `Empty ${variable} in supportComponent`;
@@ -148,7 +148,7 @@ const mainBlock = (params) => {
     </td>
   </tr>
 </tbody></table>
-${emptyBlock()}`;
+${lineBlock()}`;
 };
 
 export default function (data) {

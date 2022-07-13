@@ -1,10 +1,10 @@
 // Create link component
 export default function (id, link) {
-  if (id == "") {
-    throw new Error("No id link");
+  if (id == '') {
+    throw new Error('No id link');
   }
-  if (link == "") {
-    throw new Error("No link link");
+  if (link == '') {
+    throw new Error('No link link');
   }
   return (
     `<a href="` +

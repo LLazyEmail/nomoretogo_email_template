@@ -1,6 +1,6 @@
 // Create afterSupport component
 
-import emptyBlock from '../components/emptyBlock';
+import lineBlock from './lineBlock';
 
 const AFTER_SUPPORT_COMPONENT_ERROR = (variable) =>
   `Empty ${variable} in afterSupportComponent`;
@@ -51,7 +51,7 @@ const mainBlock = (src) => {
     </td>
   </tr>
 </tbody></table> 
-${emptyBlock()}`;
+${lineBlock()}`;
 };
 
 export default function (src) {

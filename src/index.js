@@ -51,8 +51,8 @@ import {
 // typography end
 
 import recipe from './components/recipeComponent.js';
-import button from './components/get-button.js';
-import link from './components/get-link.js';
+import button from './components/old_get-button.js';
+import link from './components/old_get-link.js';
 
 // TODO change the name of get-support-contact. its not clear what is inside of this component
 import supportContact from './components/old_get-supportContact.js';
