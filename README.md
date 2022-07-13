@@ -22,9 +22,15 @@ project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/
 │   └── xxx
 ├── dist (or build)
 ├── 
+├── components
+│   ├── typography
+│   ├── miscellaneous
+│   ├── xxx
+│   ├── xxx
 ├── 
-├── 
-├── 
+├── data
+├── src
+├── test
 ├── README.md
 ├── package.json
 ├── 
