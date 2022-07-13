@@ -16,7 +16,10 @@ import headComponent from '../domain/outer/headComponent';
 // style2,
 //} from '../../components/outerTemplate-partially-works/src/components/';
 
-import blobHead from '../../components/outerTemplate-partially-works/src/components/blobHead';
+// import blobHead from '../../components/outerTemplate-partially-works/src/components/blobHead';
+
+import { blobHead } from "nmtg-template-mailerlite-outertemplate"
+
 
 console.log(blobHead());
 
