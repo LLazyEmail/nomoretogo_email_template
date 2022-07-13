@@ -22,9 +22,21 @@ project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/
 │   └── xxx
 ├── dist (or build)
 ├── 
-├── 
-├── 
-├── 
+├── components
+│   ├── typography
+│   │   ├── src/components/
+│   │       ├── headings.js
+│   │       ├── paragraph.js
+│   │       ├── strong.js
+│   │   ├── index.js
+│   ├── miscellaneous
+│   ├── outerTemplate-partially-works
+│   ├── innerTemplate (not working)
+│   ├── config.js
+├── data
+│   ├── images
+├── src
+├── test
 ├── README.md
 ├── package.json
 ├── 
