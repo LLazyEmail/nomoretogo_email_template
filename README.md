@@ -24,11 +24,19 @@ project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/
 ├── 
 ├── components
 │   ├── typography
+
+│   │   ├── src/components/
+│   │       ├── headings.js
+│   │       ├── paragraph.js
+│   │       ├── strong.js
+│   │   ├── index.js
 │   ├── miscellaneous
-│   ├── xxx
-│   ├── xxx
-├── 
+│   ├── outerTemplate-partially-works
+│   ├── innerTemplate (not working)
+│   ├── config.js
 ├── data
+│   ├── images
+
 ├── src
 ├── test
 ├── README.md
