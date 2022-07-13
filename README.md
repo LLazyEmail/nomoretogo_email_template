@@ -24,6 +24,7 @@ project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/
 ├── 
 ├── components
 │   ├── typography
+
 │   │   ├── src/components/
 │   │       ├── headings.js
 │   │       ├── paragraph.js
@@ -35,6 +36,7 @@ project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/
 │   ├── config.js
 ├── data
 │   ├── images
+
 ├── src
 ├── test
 ├── README.md
