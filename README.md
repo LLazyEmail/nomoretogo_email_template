@@ -23,22 +23,41 @@ project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/
 ├── dist (or build)
 ├── 
 ├── components
-│   ├── typography
-
-│   │   ├── src/components/
-│   │       ├── headings.js
-│   │       ├── paragraph.js
-│   │       ├── strong.js
-│   │   ├── index.js
-│   ├── miscellaneous
-│   ├── outerTemplate-partially-works
 │   ├── innerTemplate (not working)
-│   ├── config.js
+│   │   ├── src
+│   │       ├── components/contentMainTableWrap.js
+│   │       ├── index.te-st.js 
+│   ├── miscellaneous
+│   │   ├── src
+│   │       ├── components/address.js
+│   │       ├── components/social-media.js
+│   │       ├── components/unsubscribe-link.js
+│   │       ├── components/view-in-browser-link.js
+│   ├── outerTemplate-partially-works
+│   │   ├── src
+│   │       ├── components
+│   │       ├── test
+│   │       ├── index.te-st.js 
+│   ├── typography
+│   │   ├── src
+│   │       ├── components/headings.js
+│   │       ├── components/paragraph.js
+│   │       ├── components/strong.js
+│   │       ├── index.js
+│   │   ├── test
+│   │       ├──index.te-st.js 
+│   └── config.js
 ├── data
 │   ├── images
-
+│   └── startTemplate.html
 ├── src
+│   ├── components
+│   ├── display
+│   ├── domain
+│   ├── config.js
+│   └── index.js
 ├── test
+│   └── index.test.js
 ├── README.md
 ├── package.json
 ├── 
