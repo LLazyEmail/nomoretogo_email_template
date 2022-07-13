@@ -22,9 +22,54 @@ project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/
 │   └── xxx
 ├── dist (or build)
 ├── 
-├── 
-├── 
-├── 
+├── components
+│   ├── innerTemplate (not working)
+│   │   ├── src
+│   │       ├── components/contentMainTableWrap.js
+│   │       ├── index.te-st.js 
+│   ├── miscellaneous
+│   │   ├── src
+│   │       ├── components/address.js
+│   │       ├── components/social-media.js
+│   │       ├── components/unsubscribe-link.js
+│   │       ├── components/view-in-browser-link.js
+│   ├── outerTemplate-partially-works
+│   │   ├── src
+│   │       ├── components
+│   │       ├── test
+│   │       ├── index.te-st.js 
+│   ├── typography
+│   │   ├── src
+│   │       ├── components/headings.js
+│   │       ├── components/paragraph.js
+│   │       ├── components/strong.js
+│   │       ├── index.js
+│   │   ├── test
+│   │       ├──index.te-st.js 
+│   └── config.js
+├── data
+│   ├── images
+│   └── startTemplate.html
+├── src
+│   ├── components
+│   ├── display
+│   │       ├── displayAfterSupportComponent.js
+│   │       ├── displayBodyComponent.js
+│   │       ├── displayContent.js
+│   │       ├── displayContentMainTableWrap.js
+│   │       ├── displayFooter.js
+│   │       ├── displayHead.js
+│   │       ├── displayInstruction.js
+│   │       ├── displaySupportContact.js
+│   │       ├── old_displayBody.js
+│   │       ├── old_displayEmptyTemplate.js
+│   │       ├── old_displayFooter.js
+│   │       ├── old_displayMain.js
+│   ├── domain
+│   ├── config.js
+│   └── index.js
+├── test
+│   └── index.test.js
 ├── README.md
 ├── package.json
 ├── 
