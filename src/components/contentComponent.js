@@ -2,7 +2,7 @@
 
 import tableWithTwoRecipes from './tableWithTwoRecipes.js';
 import button from './old_get-button.js';
-import emptyBlock from './emptyBlock.js';
+import lineBlock from './lineBlock.js';
 
 // Error
 const CONTENT_ERROR = (variable) => `No ${variable} in contentComponent`;
@@ -321,5 +321,5 @@ export default function (
   ${textDescription(textTop, textBottom)}
   ${tableWithTwoRecipes(dataImageOne, dataImageTwo)}
   ${buttonBlock(id, href, text)}
-  ${emptyBlock()}`;
+  ${lineBlock()}`;
 }

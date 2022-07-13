@@ -1,5 +1,5 @@
-import headings from "./components/headings.js";
-import paragraph from "./components/paragraph.js";
-import strong from "./components/strong.js";
+import headings from './components/old_headings.js';
+import paragraph from './components/old_paragraph.js';
+import strong from './components/old_strong.js';
 
 export { headings, paragraph, strong };

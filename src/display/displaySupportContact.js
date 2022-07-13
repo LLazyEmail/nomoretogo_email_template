@@ -1,4 +1,4 @@
-import supportContact from '../components/supportContact';
+import supportContact from '../components/supportComponent';
 
 let data = {
   topTitle: '123',
