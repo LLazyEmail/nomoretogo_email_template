@@ -1,9 +1,7 @@
 // create content main table wrap
 
-// import topPanelViewInBrows from "../../../outerTemplate/src/components/topPanelViewInBrows.js";
-// import tableHeaderBlockLogo from "../../../outerTemplate/src/components/tableHeaderBlockLogo.js";
-import topPanelViewInBrows from '../../domain/outer/topPanelViewInBrows';
-import tableHeaderBlockLogo from '../../domain/outer/tableHeaderBlockLogo';
+import topPanelViewInBrows from '../outer/topPanelViewInBrows';
+import tableHeaderBlockLogo from '../outer/tableHeaderBlockLogo';
 
 // Block main table content (wrap) start
 const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {
@@ -45,24 +43,11 @@ const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {
 };
 // Block main table content (wrap) end
 
-// Block error start
-// var searchError = (err) => {
-//   const error = {
-//     hrefViewInBrows: 'No hrefViewInBrows contentMainTableWrap',
-//     srcImageLogo: 'No srcImageLogo contentMainTableWrap',
-//   };
-
-//   throw new Error(error[err]);
-// };
-// Block error end
-
 export default function (idViewInBrows, hrefViewInBrows) {
   if (idViewInBrows == '') {
-    // searchError('idViewInBrows');
     new Error('No idViewInBrows contentMainTableWrap');
   }
   if (hrefViewInBrows == '') {
-    // searchError('hrefViewInBrows');
     new Error('No hrefViewInBrows contentMainTableWrap');
   }
 
