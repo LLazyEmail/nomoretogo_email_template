@@ -14,7 +14,7 @@ import {
 
 import headComponent from './headComponent';
 
-import footerComponent from './old_footerComponent';
+// import footerComponent from './old_footerComponent';
 
 import tableHeaderBlockLogo from './tableHeaderBlockLogo';
 
@@ -31,7 +31,7 @@ export {
   style,
   style2,
   headComponent,
-  footerComponent,
+  // footerComponent,
   tableHeaderBlockLogo,
   topPanelViewInBrows,
 };

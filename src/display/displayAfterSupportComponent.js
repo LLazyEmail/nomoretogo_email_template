@@ -1,9 +1,9 @@
-import afterSupportComponent from '../components/afterSupportComponent';
+import imageAfterSupportComponent from '../components/imageAfterSupportComponent';
 
 const src = '123';
 
 try {
-  var fullComponent = afterSupportComponent(src);
+  var fullComponent = imageAfterSupportComponent(src);
 } catch (err) {
   var error = err;
 }
