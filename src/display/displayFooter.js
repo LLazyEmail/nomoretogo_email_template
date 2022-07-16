@@ -1,4 +1,5 @@
 import footerComponent from '../domain/outer/footerComponent';
+
 const socials = [
   { href: 123, src: 123 },
   { href: 123, src: 123 },

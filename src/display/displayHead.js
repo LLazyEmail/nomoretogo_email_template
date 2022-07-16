@@ -1,5 +1,5 @@
 // import { displayFactoryTwo } from 'email-template-object';
-
+import Factory from './factory';
 import headComponent from '../domain/outer/headComponent';
 
 import {
@@ -14,38 +14,32 @@ import {
   style2,
 } from '../domain/outer/subHeadComponents';
 
-let addon1 = {
-  blobHead: blobHead(),
-  bodyStyle: bodyStyle(),
-  font1: font1(),
-  font2: font2(),
-  headMetaTags: headMetaTags(),
-  ifStyle: ifStyle(),
-  mediaStyle: mediaStyle(),
-  style: style(),
-  style2: style2(),
-
-  // variable:value,
-  title: 'text title',
-};
-
+var error = '';
+var result = null;
 try {
-  var fullComponent = headComponent(addon1);
-} catch (err) {
-  var error = err;
+  var params = {
+    blobHead: blobHead(),
+    bodyStyle: bodyStyle(),
+    font1: font1(),
+    font2: font2(),
+    headMetaTags: headMetaTags(),
+    ifStyle: ifStyle(),
+    mediaStyle: mediaStyle(),
+    style: style(),
+    style2: style2(),
+
+    // variable:value,
+    title: 'text title',
+  };
+
+  const factory = new Factory(headComponent, params);
+  result = factory.create();
+} catch (e) {
+  error = e;
 }
 
-var result = error != undefined ? error : fullComponent;
-
-//variant one
-// const settings = {
-//   component: headComponent,
-//   params: addon1,
-// };
-
-// const Factory = new displayFactoryTwo();
-
-// console.log(Factory.create(settings));
-// export default Factory.create(settings);
+if (error != '') {
+  console.log(error);
+}
 
 export default result;
