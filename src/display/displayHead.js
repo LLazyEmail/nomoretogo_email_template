@@ -35,7 +35,7 @@ try {
   const factory = new Factory(headComponent, params);
   result = factory.create();
 } catch (e) {
-  error = e;
+  error = e.message;
 }
 
 if (error != '') {
