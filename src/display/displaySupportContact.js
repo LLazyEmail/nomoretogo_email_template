@@ -19,7 +19,7 @@ try {
   const factory = new Factory(supportContact, params);
   result = factory.create();
 } catch (e) {
-  error = e;
+  error = e.message;
 }
 
 if (error != '') {
