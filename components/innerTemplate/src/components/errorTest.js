@@ -1,6 +1,6 @@
 class Errors {
-  ERROR_MASSAGE = (mes) => {
-    return `Error in component: "${this.component}",  error message: "${mes}"`;
+  ERROR_MESSAGE = (message) => {
+    return `Error in component: "${this.component}",  error message: "${message}"`;
   };
   component = '';
 
@@ -8,8 +8,8 @@ class Errors {
     this.component = component;
   }
 
-  add(err) {
-    const textError = this.ERROR_MASSAGE(err);
+  add(error) {
+    const textError = this.ERROR_MESSAGE(error);
     throw new Error(textError);
   }
 }

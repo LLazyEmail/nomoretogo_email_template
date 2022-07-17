@@ -10,7 +10,7 @@ import {
   viewInBrowserLink,
 } from 'nmtg-template-mailerlite-miscellaneous';
 
-// outerTemplate tamplate start
+// outerTemplate template start
 import {
   blobHead,
   bodyStyle,
