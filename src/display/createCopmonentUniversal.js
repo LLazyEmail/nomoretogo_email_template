@@ -1,6 +1,6 @@
 import Factory from './factory';
 
-function display(component, params = '') {
+function createComponent(component, params = '') {
   var error = '';
   var result = null;
   try {
@@ -11,10 +11,10 @@ function display(component, params = '') {
   }
 
   if (error != '') {
-    console.log(error);
+    throw new Error(error);
   }
 
   return result;
 }
 
-export default display;
+export default createComponent;

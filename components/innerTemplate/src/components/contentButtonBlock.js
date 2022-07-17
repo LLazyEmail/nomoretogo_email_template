@@ -1,6 +1,5 @@
 // Content button block
-
-import Errors from './errorTest';
+import Errors from './Errors';
 
 const mainBlock = (params) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
