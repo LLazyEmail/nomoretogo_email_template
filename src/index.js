@@ -1,7 +1,7 @@
 // Get components
 
 // inner tamplate
-import { contentMainTableWrap } from '../components/innerTemplate (not working)/src/index';
+// import { contentMainTableWrap } from '../components/innerTemplate/src/index';
 
 import {
   address,
@@ -32,7 +32,7 @@ import {
 } from 'nmtg-template-mailerlite-outertemplate';
 
 import {
-  footerComponent,
+  // footerComponent,
   headComponent,
   tableHeaderBlockLogo,
   topPanelViewInBrows,
@@ -52,13 +52,13 @@ import {
 
 import recipe from './components/recipeComponent.js';
 import button from './components/buttonInContentComponent.js';
-import link from './components/old_get-link.js';
+import link from './all_old_component/old_get-link.js';
 
 // TODO change the name of get-support-contact. its not clear what is inside of this component
-import supportContact from './components/old_get-supportContact.js';
+import supportContact from './all_old_component/old_get-supportContact.js';
 // import content from './components/old_get-content.js';
 import content from './components/contentComponent';
-import tableForNotes from './components/old_tableForNotes.js';
+import tableForNotes from './all_old_component/old_tableForNotes.js';
 import tableWithTwoRecipes from './components/tableWithTwoRecipes.js';
 
 export {
@@ -75,7 +75,7 @@ export {
   tableForNotes,
   tableWithTwoRecipes,
   // inner tamplate start
-  contentMainTableWrap,
+  // contentMainTableWrap,
   // inner tamplate end
 
   // outerTamplate start
@@ -83,7 +83,8 @@ export {
   bodyStyle,
   font1,
   font2,
-  footerComponent,
+  //--------------
+  // footerComponent,
   headComponent,
   headMetaTags,
   ifStyle,
@@ -95,8 +96,8 @@ export {
   // outerTamplate end
 
   // typography start
-  headings,
-  paragraph,
-  strong,
+  // headings,
+  // paragraph,
+  // strong,
   // typography end
 };
