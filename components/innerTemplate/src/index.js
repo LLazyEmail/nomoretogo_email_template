@@ -1,5 +1,5 @@
 import contentButton from './components/contentButton';
-// import contentButtonBlock from './components/contentButtonBlock';
+import contentButtonBlock from './components/contentButtonBlock';
 // import contentRecipe from './components/contentRecipe';
 // import contentSubTitleText from './components/contentSubTitleText';
 // import contentTableWithTwoRecipes from './components/contentTableWithTwoRecipes';
@@ -9,7 +9,7 @@ import contentButton from './components/contentButton';
 
 export {
   contentButton,
-  //   contentButtonBlock,
+  contentButtonBlock,
   //   contentRecipe,
   //   contentSubTitleText,
   //   contentTableWithTwoRecipes,

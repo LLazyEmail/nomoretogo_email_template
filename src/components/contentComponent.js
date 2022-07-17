@@ -163,6 +163,7 @@ const textDescription = (textTop, textBottom) => {
 </tbody></table>`;
 };
 
+//////////////////////////////////////////////////////////////////////////////
 // Table two recipe (original html)
 // const tableWithTwoRecipes = () => {
 //   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
@@ -216,6 +217,7 @@ const textDescription = (textTop, textBottom) => {
 //   </tr>
 //   </tbody></table>`;
 // };
+//////////////////////////////////////////////////////////////////////////////
 
 // button block
 const buttonBlock = (id, href, text) => {
