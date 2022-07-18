@@ -1,0 +1,43 @@
+// Component contentSubTitleText
+import Errors from './Errors';
+
+const mainBlock = (subTitleText) => {
+  return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
+  <tbody><tr>
+    <td class="mlContentTableCardTd">
+      <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mlContentTable ml-default" style="width: 640px; min-width: 640px;" width="640">
+        <tbody><tr>
+          <td>
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" class="mlContentTable">
+              <tbody><tr>
+                <td align="center" style="padding: 0px 40px;" class="mlContentOuter">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
+                    <tbody><tr>
+                      <td align="center" class="bodyTitle" style="font-family: 'Poppins', sans-serif; font-size: 19px; font-weight: 400; line-height: 150%; color: #111111; text-transform: none; font-style: normal; text-decoration: none; text-align: center;">${subTitleText}</td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" class="mlContentTable">
+              <tbody><tr>
+                <td height="10" class="spacingHeight-10" style="line-height: 10px; min-height: 10px;"></td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+  </tbody></table>`;
+};
+
+export default function (subTitleText) {
+  const error = new Errors('contentSubTitleText');
+
+  if (subTitleText == '') {
+    error.add('No subTitleText');
+  }
+
+  return mainBlock(subTitleText);
+}
