@@ -1,3 +1,4 @@
+// TODO update this module with factory
 import instructionComponent from '../components/instructionComponent';
 
 const data = {

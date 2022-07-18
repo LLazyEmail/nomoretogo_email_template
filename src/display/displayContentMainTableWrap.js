@@ -1,3 +1,4 @@
+// TODO update this module with factory
 import contentMainTableWrap from '../domain/innerTemplate/contentMainTableWrap';
 
 try {

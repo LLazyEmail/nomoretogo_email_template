@@ -46,19 +46,22 @@ import {
   headings,
   paragraph,
   strong,
-} from '../components/typography/src/index';
+} from 'nmtg-template-mailerlite-typography';
+
 
 // typography end
 
 import recipe from './components/recipeComponent.js';
 import button from './components/buttonInContentComponent.js';
+
 import link from './all_old_component/old_get-link.js';
 
 // TODO change the name of get-support-contact. its not clear what is inside of this component
 import supportContact from './all_old_component/old_get-supportContact.js';
-// import content from './components/old_get-content.js';
-import content from './components/contentComponent';
+
 import tableForNotes from './all_old_component/old_tableForNotes.js';
+import content from './components/contentComponent';
+
 import tableWithTwoRecipes from './components/tableWithTwoRecipes.js';
 
 export {
