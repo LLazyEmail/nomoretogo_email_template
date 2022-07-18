@@ -29,9 +29,6 @@ const imageComponent = (id, href, src) => {
 
 // Get title start
 const titleComponent = (title) => {
-  if (!title) {
-    createError('title');
-  }
   return `<strong><span style="font-size: 16px;">${title}</span></strong>`;
 };
 // Get title end

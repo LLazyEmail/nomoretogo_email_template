@@ -55,12 +55,35 @@ const mainBlock = (image, image2) => {
 };
 
 export default function (params) {
-  const { image, image2 } = params;
   const error = new Errors('contentTableWitchTwoRecipe');
 
-  if (image == '') {
-    error.add('No image');
+  if (!params.length) {
+    error.add('Empty array');
   }
 
-  return mainBlock(image, image2);
+  // add an empty element start
+  if (params.length % 2 != 0) {
+    params.push('');
+  }
+  // add an empty element end
+
+  // split array into two elements start
+  function countImageInRows(arr, chunkSize) {
+    const res = [];
+    while (arr.length > 0) {
+      const chunk = arr.splice(0, chunkSize);
+      res.push(chunk);
+    }
+    return res;
+  }
+  const chanks = countImageInRows(params, 2);
+  // split array into two elements end
+
+  // create image rows start
+  return chanks.reduce((res, element) => {
+    var image = element[0];
+    var image2 = element[1];
+    return res + mainBlock(image, image2);
+  }, '');
+  // create image rows end
 }

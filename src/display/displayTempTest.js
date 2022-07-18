@@ -11,6 +11,7 @@ import {
   lineBlock,
 } from 'nmtg-template-mailerlite-inner';
 
+/* ******************** DATA START **************************************** */
 // Title
 const contentTitleTextParams = {
   hrefTitle: '123',
@@ -25,54 +26,83 @@ const contentSubTitleParams = '123';
 const contentTextDescriptionParams = { textTop: '123', textBottom: '123' };
 
 // Recipe
-const contentRecipeParams = {
-  id: '123',
-  href: '123',
-  src: '123',
-  title: '123',
-  text: '123',
-};
-
-// Recipe 2
-const contentRecipeParams2 = {
-  id: '123',
-  href: '123',
-  src: '123',
-  title: '123',
-  text: '123',
-};
+const contentRecipeParams = [
+  {
+    id: '1',
+    href: '123',
+    src: '123',
+    title: '123',
+    text: '123',
+  },
+  {
+    id: '2',
+    href: '123',
+    src: '123',
+    title: '123',
+    text: '123',
+  },
+  {
+    id: '3',
+    href: '123',
+    src: '123',
+    title: '123',
+    text: '123',
+  },
+  {
+    id: '4',
+    href: '123',
+    src: '123',
+    title: '123',
+    text: '123',
+  },
+  {
+    id: '5',
+    href: '123',
+    src: '123',
+    title: '123',
+    text: '123',
+  },
+];
 
 // Button
 const contentButtonParams = { id: '123', href: '123', text: 123 };
+/* ******************** DATA END **************************************** */
 
-var result = '';
+/* ******************** CREATE CONTENT START ****************************** */
+var result = null;
 try {
   // contentTitleText
-  result += createComponent(contentTitleText, contentTitleTextParams);
+  const title = createComponent(contentTitleText, contentTitleTextParams);
 
   // contentSubTitleText
-  result += createComponent(contentSubTitleText, contentSubTitleParams);
+  const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
 
   // contentTextDescription
-  result += createComponent(
+  const description = createComponent(
     contentTextDescription,
     contentTextDescriptionParams
   );
 
-  // contentTableWitchTwoRecipe and __Recipe
-  var image = createComponent(contentRecipe, contentRecipeParams);
-  var image2 = createComponent(contentRecipe, contentRecipeParams2);
-  result += createComponent(contentTableWithTwoRecipes, { image, image2 });
+  // All Recipe
+  var imagesAll = contentRecipeParams.map((params) => {
+    return createComponent(contentRecipe, params);
+  });
+
+  // All contentTableWitchTwoRecipe
+  const images = createComponent(contentTableWithTwoRecipes, imagesAll);
 
   // Button
-  var contentButtonRes = createComponent(contentButton, contentButtonParams);
-  result += createComponent(contentButtonBlock, contentButtonRes);
+  const contentButtonRes = createComponent(contentButton, contentButtonParams);
+  const button = createComponent(contentButtonBlock, contentButtonRes);
 
   // Line block
-  result += createComponent(lineBlock);
+  const line = createComponent(lineBlock);
+
+  result = `${title}${subTitle}${description}${images}${button}${line}`;
 } catch (e) {
   console.log(e.message);
 }
+/* ******************** CREATE CONTENT END ****************************** */
 
 ////////////////// OLD START ///////////////////////////////
 // var error = '';
