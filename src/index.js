@@ -83,7 +83,7 @@ export {
   // contentMainTableWrap,
   // inner tamplate end
 
-  // outerTamplate start
+  // outerTemplate start
   blobHead,
   bodyStyle,
   font1,
