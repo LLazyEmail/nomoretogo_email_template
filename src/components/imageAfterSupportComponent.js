@@ -2,14 +2,7 @@
 
 import lineBlock from './lineBlock';
 
-const AFTER_SUPPORT_COMPONENT_ERROR = (variable) =>
-  `Empty ${variable} in afterSupportComponent`;
-
-// Checking for errors start
-function createError(variable) {
-  throw new Error(AFTER_SUPPORT_COMPONENT_ERROR(variable));
-}
-// Checking for errors end
+import Errors from '../Errors';
 
 const createImage = (src) => {
   return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
@@ -55,8 +48,11 @@ ${lineBlock()}`;
 };
 
 export default function (src) {
+  const error = new Errors('imageAfterSupportComponent');
+
   if (src == '') {
-    createError('src');
+    error.add('No src');
   }
+
   return mainBlock(src);
 }

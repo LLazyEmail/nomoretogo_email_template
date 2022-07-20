@@ -23,9 +23,9 @@ describe('test fullComponent', () => {
   // test('rendering HeadString Component', () => {
   //   console.log(HeadString);
   // });
-  test('rendering ContentMainTableWrap Component', () => {
-    console.log(ContentMainTableWrapString);
-  });
+  // test('rendering ContentMainTableWrap Component', () => {
+  //   console.log(ContentMainTableWrapString);
+  // });
   // test('rendering Content Component', () => {
   //   console.log(contentString);
   // });
@@ -35,9 +35,9 @@ describe('test fullComponent', () => {
   // test('rendering SupportContact Component', () => {
   //   console.log(SupportContactString);
   // });
-  // test('rendering ImageAfterSupporComponent Component', () => {
-  //   console.log(ImageAfterSupporComponentString);
-  // });
+  test('rendering ImageAfterSupporComponent Component', () => {
+    console.log(ImageAfterSupporComponentString);
+  });
   // test('rendering FooterString Component', () => {
   //   console.log(FooterString);
   // });

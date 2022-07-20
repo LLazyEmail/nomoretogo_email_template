@@ -1,15 +1,24 @@
-// TODO update this module with factory
-
 import imageAfterSupportComponent from '../components/imageAfterSupportComponent';
+import createComponent from './createCopmonentUniversal';
 
-const src = '123';
+/* ******************** DATA START **************************************** */
+// Title
+const imageAfterSupportComponentParams = '123';
 
+/* ******************** DATA END **************************************** */
+
+/* ******************** CREATE CONTENT START ****************************** */
+var result = null;
 try {
-  var fullComponent = imageAfterSupportComponent(src);
-} catch (err) {
-  var error = err;
+  // contentTitleText
+  const imageAfterSupportComponentRes = createComponent(
+    imageAfterSupportComponent,
+    imageAfterSupportComponentParams
+  );
+
+  result = imageAfterSupportComponentRes;
+} catch (e) {
+  console.log(e.message);
 }
-
-var result = error != undefined ? error : fullComponent;
-
+/* ******************** CREATE CONTENT END ****************************** */
 export default result;
