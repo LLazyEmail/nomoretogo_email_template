@@ -1,3 +1,5 @@
+// TODO update this module with factory
+
 import imageAfterSupportComponent from '../components/imageAfterSupportComponent';
 
 const src = '123';
