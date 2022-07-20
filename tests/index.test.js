@@ -21,15 +21,15 @@ describe('test fullComponent', () => {
   // test('rendering Content Component', () => {
   //   console.log(contentString);
   // });
-  // test('rendering Instruction Component', () => {
-  //   console.log(instructionString);
-  // });
+  test('rendering Instruction Component', () => {
+    console.log(instructionString);
+  });
   // test('rendering SupportContact Component', () => {
   //   console.log(SupportContactString);
   // });
-  test('rendering ImageAfterSupporComponent Component', () => {
-    console.log(ImageAfterSupporComponentString);
-  });
+  // test('rendering ImageAfterSupporComponent Component', () => {
+  //   console.log(ImageAfterSupporComponentString);
+  // });
   // test('rendering FooterString Component', () => {
   //   console.log(FooterString);
   // });
