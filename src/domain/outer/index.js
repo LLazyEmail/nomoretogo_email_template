@@ -16,9 +16,9 @@ import headComponent from './headComponent';
 
 // import footerComponent from './old_footerComponent';
 
-import tableHeaderBlockLogo from './tableHeaderBlockLogo';
+import tableHeaderBlockLogo from '../../../sub-modules/innerTemplate/src/components/tableHeaderBlockLogo';
 
-import topPanelViewInBrows from './topPanelViewInBrows';
+import topPanelViewInBrows from '../../../sub-modules/innerTemplate/src/components/topPanelViewInBrows';
 
 export {
   blobHead,

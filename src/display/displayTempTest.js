@@ -13,6 +13,8 @@ import {
   lineBlock,
 } from 'nmtg-template-mailerlite-inner';
 
+// import instructionComponent from '../components/instructionComponent';
+
 /* ******************** DATA START **************************************** */
 // Title
 const contentTitleTextParams = {
@@ -73,7 +75,7 @@ const contentButtonParams = { id: '123', href: '123', text: 123 };
 const instructionTitleParams = '123';
 
 // Instruction text params
-const instructionTextParams = '';
+const instructionTextParams = '123';
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
@@ -118,31 +120,12 @@ try {
     instructionTextParams
   );
 
+  // var asd = createComponent(instructionComponent);
+  // console.log(asd);
+
   result = `${title}${subTitle}${description}${images}${button}${line}`;
 } catch (e) {
   console.log(e.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
-
-////////////////// OLD START ///////////////////////////////
-// var error = '';
-// var result = null;
-// try {
-//   var params = {
-//     id: '123',
-//     href: '123',
-//     text: '123',
-//   };
-
-//   const factory = new Factory(contentButtonBlock, params);
-//   result = factory.create();
-// } catch (e) {
-//   error = e.message;
-// }
-
-// if (error != '') {
-//   console.log(error);
-// }
-////////////////// OLD END ///////////////////////////////
-
 export default result;

@@ -1,10 +1,8 @@
 // create content main table wrap
-
-import topPanelViewInBrows from '../outer/topPanelViewInBrows';
-import tableHeaderBlockLogo from '../outer/tableHeaderBlockLogo';
+import Errors from '../Errors';
 
 // Block main table content (wrap) start
-const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {
+const contentMainTableWrap = (topPanel, blockLogo) => {
   return `<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f8f9" class="mainTable mlBodyBackground" dir="ltr" background="https://preview.mailerlite.com/r0n8w0g0n6/1934358861754405982/l8n5/">
     <tbody><tr>
       <td class="mlTemplateContainer" align="center">
@@ -18,13 +16,13 @@ const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {
             <!-- BORDER RADIUS FOR CARDS LAYOUT -->
             <!-- BORDER RADIUS FOR DEFAULT LAYOUT -->
             <!-- Block top panel start -->
-            ${topPanelViewInBrows(idViewInBrows, hrefViewInBrows)}
+            ${topPanel}
             <!-- Block top panel end -->
             <table align="center" border="0" cellpadding="0" cellspacing="0" class="mlContentTable  mlContentBorderRadius" width="640" style="border-radius: 5px; overflow: hidden;">
               <tbody><tr>
                 <td>
                   <!-- Block header/logotip start -->
-                  ${tableHeaderBlockLogo()}
+                  ${blockLogo}
                   <!-- Block header/logotip end -->
                 </td>
               </tr>
@@ -43,13 +41,16 @@ const contentMainTableWrap = (idViewInBrows, hrefViewInBrows) => {
 };
 // Block main table content (wrap) end
 
-export default function (idViewInBrows, hrefViewInBrows) {
-  if (idViewInBrows == '') {
-    new Error('No idViewInBrows contentMainTableWrap');
+export default function (params) {
+  const { topPanel, blockLogo } = params;
+  const error = new Errors('contentMainTableWrap');
+
+  if (topPanel == '') {
+    error.add('No top panel');
   }
-  if (hrefViewInBrows == '') {
-    new Error('No hrefViewInBrows contentMainTableWrap');
+  if (blockLogo == '') {
+    error.add('No block logo');
   }
 
-  return contentMainTableWrap(idViewInBrows, hrefViewInBrows);
+  return contentMainTableWrap(topPanel, blockLogo);
 }
