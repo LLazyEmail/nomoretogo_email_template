@@ -1,3 +1,6 @@
+import topPanelViewInBrows from './components/topPanelViewInBrows';
+import tableHeaderBlockLogo from './components/tableHeaderBlockLogo';
+
 import contentButton from './components/contentButton';
 import contentButtonBlock from './components/contentButtonBlock';
 import contentRecipe from './components/contentRecipe';
@@ -12,6 +15,8 @@ import instructionText from './components/instructionText';
 import lineBlock from './components/lineBlock';
 
 export {
+  topPanelViewInBrows,
+  tableHeaderBlockLogo,
   contentButton,
   contentButtonBlock,
   contentRecipe,

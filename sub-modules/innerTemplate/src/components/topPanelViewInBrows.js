@@ -1,9 +1,10 @@
 // Create panel view in brows
+import Errors from './Errors';
 
-import { viewInBrowserLink } from 'nmtg-template-mailerlite-miscellaneous';
+// import { viewInBrowserLink } from 'nmtg-template-mailerlite-miscellaneous';
 
 // Top panel start
-const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {
+const topPanelViewInBrows = (link) => {
   return `<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" class="mobileHide">
     <tbody><tr>
       <td align="center">
@@ -14,7 +15,7 @@ const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {
           <tr>
             <td align="left" style="font-family: 'Poppins', sans-serif; color: #111111; font-size: 12px; line-height: 18px;"></td>
             <td align="right" style="font-family: 'Poppins', sans-serif; color: #111111; font-size: 12px; line-height: 18px;">
-              ${viewInBrowserLink(idViewInBrows, hrefViewInBrows)}
+              ${link}
               </td>
           </tr>
           <tr>
@@ -27,13 +28,11 @@ const topPanelViewInBrows = (idViewInBrows, hrefViewInBrows) => {
 };
 // Top panel end
 
-export default function (idViewInBrows, hrefViewInBrows) {
-  if (idViewInBrows == undefined) {
-    throw new Error('No idViewInBrows topPanelViewInBrows');
-  }
-  if (hrefViewInBrows == undefined) {
-    throw new Error('No hrefViewInBrows topPanelViewInBrows');
-  }
+export default function (link) {
+  const error = new Errors('topPanelViewInBrows');
 
-  return topPanelViewInBrows(idViewInBrows, hrefViewInBrows);
+  if (link == '') {
+    error.add('No link');
+  }
+  return topPanelViewInBrows(link);
 }

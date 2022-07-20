@@ -2,7 +2,7 @@
 
 // Config file
 // import { pathMainLogo } from "../../../config.js";
-import { pathMainLogo } from '../../config';
+import { pathMainLogo } from '../../../../src/config';
 
 // Block header/logotip start
 const tableHeaderBlockLogo = () => {

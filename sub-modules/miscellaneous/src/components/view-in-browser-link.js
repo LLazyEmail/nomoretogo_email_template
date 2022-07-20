@@ -1,4 +1,5 @@
 // Create view-in-brows component
+import Errors from '../../../Errors';
 
 // View in brows link start
 const viewInBrowsLink = (id, href) => {
@@ -6,16 +7,16 @@ const viewInBrowsLink = (id, href) => {
 };
 // View in brows link end
 
-const viewInBrowserLink = (id, href) => {
+export default function (params) {
+  const { id, href } = params;
+  const error = new Errors('view-in-brows-link');
+
   if (id == '') {
-    throw new Error('No id viewInBrowsLink');
+    error.add('No id');
   }
   if (href == '') {
-    throw new Error('No href viewInBrowsLink');
+    error.add('No href');
   }
 
   return viewInBrowsLink(id, href);
 }
-
-
-export default viewInBrowserLink;
