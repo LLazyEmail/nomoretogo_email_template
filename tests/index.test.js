@@ -19,7 +19,7 @@ import tempTest from '../src/display/displayTempTest';
 // } from '../src/methods';
 
 describe('test fullComponent', () => {
-  //<<<<<<< HEAD
+
   // test('rendering HeadString Component', () => {
   //   console.log(HeadString);
   // });
@@ -134,4 +134,4 @@ describe('test fullComponent', () => {
 //   });
 
 // });
-// >>>>>>> b0e98621e9b3159af4c9bf15f633fc77f54eb453
+
