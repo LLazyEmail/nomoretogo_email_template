@@ -1,11 +1,14 @@
 {
   "folders": [
-	{
-		"path": "."
-	},
-	{
-		"path": "..\\knife"
-	}
-],
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\knife"
+    },
+    {
+      "path": "..\\test-nuxt"
+    }
+  ],
   "settings": {}
 }

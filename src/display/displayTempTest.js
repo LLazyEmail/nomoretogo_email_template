@@ -8,6 +8,8 @@ import {
   contentTableWithTwoRecipes,
   contentTextDescription,
   contentTitleText,
+  instructionTitle,
+  instructionText,
   lineBlock,
 } from 'nmtg-template-mailerlite-inner';
 
@@ -66,6 +68,12 @@ const contentRecipeParams = [
 
 // Button
 const contentButtonParams = { id: '123', href: '123', text: 123 };
+
+// Instruction title params
+const instructionTitleParams = '123';
+
+// Instruction text params
+const instructionTextParams = '';
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
@@ -97,6 +105,18 @@ try {
 
   // Line block
   const line = createComponent(lineBlock);
+
+  // Instruction title NOT ADD /////////////////////////
+  const instructionTitleRes = createComponent(
+    instructionTitle,
+    instructionTitleParams
+  );
+
+  // Instruction text NOT ADD  ////////////////////////////
+  const instructionTextRes = createComponent(
+    instructionText,
+    instructionTextParams
+  );
 
   result = `${title}${subTitle}${description}${images}${button}${line}`;
 } catch (e) {
