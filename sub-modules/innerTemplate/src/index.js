@@ -5,6 +5,10 @@ import contentSubTitleText from './components/contentSubTitleText';
 import contentTableWithTwoRecipes from './components/contentTableWithTwoRecipes';
 import contentTextDescription from './components/contentTextDescription';
 import contentTitleText from './components/contentTitleText';
+
+import instructionTitle from './components/instructionTitle';
+import instructionText from './components/instructionText';
+
 import lineBlock from './components/lineBlock';
 
 export {
@@ -15,5 +19,7 @@ export {
   contentTableWithTwoRecipes,
   contentTextDescription,
   contentTitleText,
+  instructionTitle,
+  instructionText,
   lineBlock,
 };

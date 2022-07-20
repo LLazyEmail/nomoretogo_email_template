@@ -7,35 +7,35 @@ import ImageAfterSupporComponentString from '../src/display/displayImageAfterSup
 import FooterString from '../src/display/displayFooter';
 ///////////////////////////////////////////////////////////
 import BodyComponentString from '../src/display/displayBodyComponent';
-// import tempTest from '../src/display/displayTempTest';
+import tempTest from '../src/display/displayTempTest';
 
 describe('test fullComponent', () => {
-  test('rendering HeadString Component', () => {
-    console.log(HeadString);
-  });
-  test('rendering ContentMainTableWrap Component', () => {
-    console.log(ContentMainTableWrapString);
-  });
-  test('rendering Content Component', () => {
-    console.log(contentString);
-  });
-  test('rendering Instruction Component', () => {
-    console.log(instructionString);
-  });
-  test('rendering SupportContact Component', () => {
-    console.log(SupportContactString);
-  });
-  test('rendering ImageAfterSupporComponent Component', () => {
-    console.log(ImageAfterSupporComponentString);
-  });
-  test('rendering FooterString Component', () => {
-    console.log(FooterString);
-  });
-  ///////////////////////////////////////////////////////////
-  test('rendering  BodyString Component', () => {
-    console.log(BodyComponentString);
-  });
-  // test('rendering tempTest Component', () => {
-  //   console.log(tempTest);
+  // test('rendering HeadString Component', () => {
+  //   console.log(HeadString);
   // });
+  // test('rendering ContentMainTableWrap Component', () => {
+  //   console.log(ContentMainTableWrapString);
+  // });
+  // test('rendering Content Component', () => {
+  //   console.log(contentString);
+  // });
+  // test('rendering Instruction Component', () => {
+  //   console.log(instructionString);
+  // });
+  // test('rendering SupportContact Component', () => {
+  //   console.log(SupportContactString);
+  // });
+  // test('rendering ImageAfterSupporComponent Component', () => {
+  //   console.log(ImageAfterSupporComponentString);
+  // });
+  // test('rendering FooterString Component', () => {
+  //   console.log(FooterString);
+  // });
+  ///////////////////////////////////////////////////////////
+  // test('rendering BodyString Component', () => {
+  //   console.log(BodyComponentString);
+  // });
+  test('rendering tempTest Component', () => {
+    console.log(tempTest);
+  });
 });
