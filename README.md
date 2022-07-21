@@ -5,33 +5,6 @@ https://github.com/LLazyEmail/free-email-templates-to-try/blob/main/01%20Food%20
 
 project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/blob/main/components/Typography/src/templates/image.js
 
----
-- headComponent
-
-subHeadComponents (import)
-
-blobHead (import)
-bodyStyle (import)
-font1 (import)
-font2 (import)
-headMetaTags (import)
-ifstyle (import)
-mediaStyle (import)
-style (import)
-style2 (import)
----
-- recipeComponent (import)
-
-titleComponent (inline)
-textComponent (inline)
-imageComponent (inline
----
-- footerComponent (import)
-
-address (inline)
-discription (inline)
-createUnsubscribe (inline)
-createSocialPanel (inline)
 
 ---
 
@@ -100,6 +73,28 @@ createSocialPanel (inline)
 ├── 
 └── .gitignore
 ```
+├── headComponent
+│   ├── subheadComponents (import)
+│   │   ├── blobHead (import)
+│   │   ├── bodyStyle (import)
+│   │   ├── font1 (import)
+│   │   ├── font2 (import)
+│   │   ├── headMeteTags (import)
+│   │   ├── ifstyle (import)
+│   │   ├── mediaStyle(import)
+│   │   ├── style(import)
+│   │   └──  style2(import)
+
+├── recipeComponent (import)
+│   ├── titleComponent (inline)
+│   ├── textComponent (inline)
+│   └── imageComponent (inline)
+
+├── footerComponent (import)
+│   ├── address (inline)
+│   ├── discription (inline)
+│   ├── createUnsubscribe (inline)
+│   └── createSocialPanel (inline)
 
 ---
 
