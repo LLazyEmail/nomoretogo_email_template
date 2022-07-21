@@ -1,5 +1,5 @@
 import instructionComponent from '../components/instructionComponent';
-import createComponent from './createCopmonentUniversal';
+import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */
 // Title params
