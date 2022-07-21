@@ -1,4 +1,11 @@
 import headComponent from '../domain/outer/headComponent';
+
+<<<<<<< test
+=======
+
+// TODO import components from subcomponents/outerTemplate
+>>>>>>> main
+
 import {
   blobHead,
   bodyStyle,
