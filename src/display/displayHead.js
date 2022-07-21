@@ -2,6 +2,7 @@
 import Factory from './factory';
 import headComponent from '../domain/outer/headComponent';
 
+// TODO import components from subcomponents/outerTemplate
 import {
   blobHead,
   bodyStyle,
