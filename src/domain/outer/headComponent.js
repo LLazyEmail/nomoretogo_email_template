@@ -1,22 +1,18 @@
 // Create head component
-const HEAD_COMPONENT_ERROR = (variable) => `Empty ${variable} in headComponent`;
-
-// TODO let's make this file more clear.
-// imports of all variables we'll move outside and our function will just accept an object with all these variables.
-// and we need to put more checks and errors here.
+import Errors from '../../Errors';
 
 // Create head component start
 function createHeadComponent(params) {
   var {
     blobHead,
     bodyStyle,
-    mediaStyle,
-    style,
-    style2,
     font1,
     font2,
     meta,
     ifStyle,
+    mediaStyle,
+    style,
+    style2,
     title,
   } = params;
 
@@ -40,48 +36,49 @@ function createHeadComponent(params) {
 
 // we are throwing an error with the same constant 10 times.
 function searchForErrors(params) {
+  const error = new Errors('headComponent');
   var {
     blobHead,
     bodyStyle,
-    mediaStyle,
-    style,
-    style2,
     font1,
     font2,
     meta,
     ifStyle,
+    mediaStyle,
+    style,
+    style2,
     title,
   } = params;
 
   if (blobHead == '') {
-    throw new Error(HEAD_COMPONENT_ERROR('blobHead'));
+    error.add('blobHead');
   }
   if (bodyStyle == '') {
-    throw new Error(HEAD_COMPONENT_ERROR('bodyStyle'));
+    error.add('bodyStyle');
   }
   if (mediaStyle == '') {
-    throw new Error(HEAD_COMPONENT_ERROR('mediaStyle'));
+    error.add('mediaStyle');
   }
   if (style == '') {
-    throw new Error(HEAD_COMPONENT_ERROR('style'));
+    error.add('style');
   }
   if (style2 == '') {
-    throw new Error(HEAD_COMPONENT_ERROR('style2'));
+    error.add('style2');
   }
   if (font1 == '') {
-    throw new Error(HEAD_COMPONENT_ERROR('font1'));
+    error.add('font1');
   }
   if (font2 == '') {
-    throw new Error(HEAD_COMPONENT_ERROR('font2'));
+    error.add('font2');
   }
   if (meta == '') {
-    throw new Error(HEAD_COMPONENT_ERROR('meta'));
+    error.add('meta');
   }
   if (ifStyle == '') {
-    throw new Error(HEAD_COMPONENT_ERROR('ifStyle'));
+    error.add('ifStyle');
   }
   if (title == '') {
-    throw new Error(HEAD_COMPONENT_ERROR('title'));
+    error.add('title');
   }
 }
 

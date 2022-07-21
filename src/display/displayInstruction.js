@@ -6,7 +6,7 @@ import createComponent from './createCopmonentUniversal';
 const instructionComponentParams = {
   title: '123',
   text: '123',
-  title2: '',
+  title2: '123',
   text2: '123',
 };
 
