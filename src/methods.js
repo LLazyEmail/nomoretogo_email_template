@@ -6,19 +6,19 @@ import BodyComponentString from '../src/display/displayBodyComponent';
 import tempTest from '../src/display/displayTempTest';
 
 const printHead = () => {
-return HeadString;
+  return HeadString;
 };
   
 const printContent = () => {
-return contentString;
+  return contentString;
 };
 
 const printMain = () => {
-return tempTest;
+  return tempTest;
 };
   
 const printFooter = () => {
-return FooterString;
+  return FooterString;
 };
   
   const printBody = () => {
