@@ -11,51 +11,51 @@ describe('writing components into files', () => {
 
   test('write head', () => {
 
-//     const string1 = printHead();
+    const string1 = printHead();
 
-//     // console.log(string);
-//     expect(printHead()).toBeDefined();
+    // console.log(string);
+    expect(printHead()).toBeDefined();
 
-//     writingFile(string1);
+    writingFile(string1);
   });
 
-//   test('write content', () => {
+  test('write content', () => {
 
-//     const string2 = printContent();
+    const string2 = printContent();
 
-//     // console.log(string);
-//     expect(printContent()).toBeDefined();
+    // console.log(string);
+    expect(printContent()).toBeDefined();
 
-//     writingFile(string2);
-//   });
+    writingFile(string2);
+  });
 
-//   test('write main', () => {
+  test('write main', () => {
 
-//     const string3 = printMain();
+    const string3 = printMain();
 
-//     // console.log(string);
-//     expect(printMain()).toBeDefined();
+    // console.log(string);
+    expect(printMain()).toBeDefined();
 
-//     writingFile(string3);
-//   });
+    writingFile(string3);
+  });
 
-//   test('write head', () => {
+  test('write head', () => {
 
-//     const string4 = printFooter();
-//     expect(printFooter()).toBeDefined();
+    const string4 = printFooter();
+    expect(printFooter()).toBeDefined();
 
-//     writingFile(string4);
-//   });
+    writingFile(string4);
+  });
 
-//   test('write body', () => {
+  test('write body', () => {
 
-//     const string5 = printBody();
+    const string5 = printBody();
 
-//     // console.log(string);
-//     expect(printBody()).toBeDefined();
+    // console.log(string);
+    expect(printBody()).toBeDefined();
 
-//     writingFile(string5);
-//   });
+    writingFile(string5);
+  });
 
 
 });
