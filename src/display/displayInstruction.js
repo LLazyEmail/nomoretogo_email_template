@@ -2,7 +2,7 @@ import instructionComponent from '../components/instructionComponent';
 import createComponent from './createCopmonentUniversal';
 
 /* ******************** DATA START **************************************** */
-// Title
+// Title params
 const instructionComponentParams = {
   title: '123',
   text: '123',
