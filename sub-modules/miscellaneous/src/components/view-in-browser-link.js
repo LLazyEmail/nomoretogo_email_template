@@ -1,5 +1,5 @@
 // Create view-in-brows component
-import Errors from '../Errors';
+import Errors from './Errors';
 
 // View in brows link start
 const viewInBrowsLink = (id, href) => {

@@ -1,4 +1,4 @@
-import tableWithTwoRecipes from './components/bodyComponent';
+import bodyComponent from './components/bodyComponent';
 import buttonInContentComponent from './components/buttonInContentComponent';
 import contentComponent from './components/contentComponent';
 import contentMainTableWrap from './components/contentMainTableWrap';
@@ -10,7 +10,7 @@ import supportComponent from './components/supportComponent';
 import tableWithTwoRecipes from './components/tableWithTwoRecipes';
 
 export {
-  tableWithTwoRecipes,
+  bodyComponent,
   buttonInContentComponent,
   contentComponent,
   contentMainTableWrap,

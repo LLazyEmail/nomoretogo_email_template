@@ -2,7 +2,7 @@
 import Errors from './Errors';
 
 // Config file
-import { pathToImages } from '../../../config';
+import { pathToImages } from '../config';
 
 // Create path to image start
 function createPathToImage(src) {

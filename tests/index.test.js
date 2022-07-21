@@ -9,21 +9,19 @@ import FooterString from '../src/display/displayFooter';
 import BodyComponentString from '../src/display/displayBodyComponent';
 import tempTest from '../src/display/displayTempTest';
 
-
 describe('test fullComponent', () => {
-
-  // test('rendering HeadString Component', () => {
-  //   console.log(HeadString);
-  // });
+  test('rendering HeadString Component', () => {
+    console.log(HeadString);
+  });
   // test('rendering ContentMainTableWrap Component', () => {
   //   console.log(ContentMainTableWrapString);
   // });
   // test('rendering Content Component', () => {
   //   console.log(contentString);
   // });
-  test('rendering Instruction Component', () => {
-    console.log(instructionString);
-  });
+  // test('rendering Instruction Component', () => {
+  //   console.log(instructionString);
+  // });
   // test('rendering SupportContact Component', () => {
   //   console.log(SupportContactString);
   // });
@@ -79,7 +77,4 @@ describe('test fullComponent', () => {
 //   //   console.log(tempTest);
 //   // });
 
-
-
 // });
-
