@@ -2,7 +2,7 @@ import imageAfterSupportComponent from '../components/imageAfterSupportComponent
 import createComponent from './createCopmonentUniversal';
 
 /* ******************** DATA START **************************************** */
-// Title
+// Title image after support
 const imageAfterSupportComponentParams = '123';
 
 /* ******************** DATA END **************************************** */
