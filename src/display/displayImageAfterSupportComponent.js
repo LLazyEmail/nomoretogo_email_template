@@ -1,5 +1,5 @@
 import imageAfterSupportComponent from '../components/imageAfterSupportComponent';
-import createComponent from './createCopmonentUniversal';
+import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */
 // Title image after support

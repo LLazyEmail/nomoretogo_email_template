@@ -1,5 +1,5 @@
 import footerComponent from '../domain/outer/footerComponent';
-import createComponent from './createCopmonentUniversal';
+import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */
 // Footer params

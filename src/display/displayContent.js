@@ -53,7 +53,7 @@
 ///////////////////////////////////////////////////////////////
 
 import contentComponent from '../components/contentComponent';
-import createComponent from './createCopmonentUniversal';
+import createComponent from './createComponentUniversal';
 
 import {
   contentButton,
