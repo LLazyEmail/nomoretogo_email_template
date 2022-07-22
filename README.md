@@ -73,28 +73,7 @@ project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/
 ├── 
 └── .gitignore
 ```
-├── headComponent
-│   ├── subheadComponents (import)
-│   │   ├── blobHead (import)
-│   │   ├── bodyStyle (import)
-│   │   ├── font1 (import)
-│   │   ├── font2 (import)
-│   │   ├── headMeteTags (import)
-│   │   ├── ifstyle (import)
-│   │   ├── mediaStyle(import)
-│   │   ├── style(import)
-│   │   └──  style2(import)
 
-├── recipeComponent (import)
-│   ├── titleComponent (inline)
-│   ├── textComponent (inline)
-│   └── imageComponent (inline)
-
-├── footerComponent (import)
-│   ├── address (inline)
-│   ├── discription (inline)
-│   ├── createUnsubscribe (inline)
-│   └── createSocialPanel (inline)
 
 ---
 
