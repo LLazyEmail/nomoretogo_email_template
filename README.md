@@ -1,37 +1,10 @@
 # nomoretogo_email_template
 
-template from: 
+template from:
 https://github.com/LLazyEmail/free-email-templates-to-try/blob/main/01%20Food%20%26%20Recipes/nmgt/Korean%20Barbecue%20Beef%20_%20Pork%20Schnitzel%20_%20Bahn%20Mi%20Meatball%20Skewers.html
 
 project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/blob/main/components/Typography/src/templates/image.js
 
----
-- headComponent
-
-subHeadComponents (import)
-
-blobHead (import)
-bodyStyle (import)
-font1 (import)
-font2 (import)
-headMetaTags (import)
-ifstyle (import)
-mediaStyle (import)
-style (import)
-style2 (import)
----
-- recipeComponent (import)
-
-titleComponent (inline)
-textComponent (inline)
-imageComponent (inline
----
-- footerComponent (import)
-
-address (inline)
-discription (inline)
-createUnsubscribe (inline)
-createSocialPanel (inline)
 
 ---
 
@@ -46,12 +19,12 @@ createSocialPanel (inline)
 │   │   ├── **/*.js
 │   └── xxx
 ├── dist (or build)
-├── 
+├──
 ├── components
 │   ├── innerTemplate (not working)
 │   │   ├── src
 │   │       ├── components/contentMainTableWrap.js
-│   │       ├── index.te-st.js 
+│   │       ├── index.te-st.js
 │   ├── miscellaneous
 │   │   ├── src
 │   │       ├── components/address.js
@@ -62,7 +35,7 @@ createSocialPanel (inline)
 │   │   ├── src
 │   │       ├── components
 │   │       ├── test
-│   │       ├── index.te-st.js 
+│   │       ├── index.te-st.js
 │   ├── typography
 │   │   ├── src
 │   │       ├── components/headings.js
@@ -70,7 +43,7 @@ createSocialPanel (inline)
 │   │       ├── components/strong.js
 │   │       ├── index.js
 │   │   ├── test
-│   │       ├──index.te-st.js 
+│   │       ├──index.te-st.js
 │   └── config.js
 ├── data
 │   ├── images
@@ -97,10 +70,56 @@ createSocialPanel (inline)
 │   └── index.test.js
 ├── README.md
 ├── package.json
-├── 
+├──
 └── .gitignore
 ```
-
+```bash
+├── headComponent
+│   ├── subheadComponents (import)
+│       ├── blobHead (import)
+│       ├── bodyStyle (import)
+│       ├── font1 (import)
+│       ├── font2 (import)
+│       ├── headMeteTags (import)
+│       ├── ifstyle (import)
+│       ├── mediaStyle(import)
+│       ├── style(import)
+│       └──  style2(import)
+├── bodyComponent
+│   ├── contentMainTableWrap (import)
+│       ├── topPanelViewinBrows (import)
+│       │   ├── viewinBrowserLink (import)
+│       ├── tableHeaderBlockLogo (import)
+│   ├── contentComponent (import)
+│       ├── titleText (inline)
+│       ├── subTitleText (inline)
+│       ├── textDescription (inline)
+│       ├── tableWitchTwoRecipes (import)
+│           ├── recipeComponent (import)
+│               ├── titleComponent (inline)
+│               ├── textComponent (inline)
+│               ├── imageComponent (inline)
+│       ├── buttonBlock (inline)
+│       ├── emptyBlock (import)
+│   ├── instructionComponent (import)
+│       ├── createtitle (inline)
+│       ├── createtext (inline)
+│   ├── supportContact (import)
+│       ├── createSupportLink (inline)
+│       ├── createSupportTitle (inline)
+│       ├── createSupportTextTop (inline)
+│       ├── createSupportMail (inline)
+│       ├── createSupportBottom (inline)
+│       ├── emptyBlock (import)
+│   ├── afretSupportContact (import)
+│       ├── createImage (inline)
+│       ├── emptyBlock (import)
+│   ├── footerComponent (import)
+│       ├── address (inline)
+│       ├── discription (inline)
+│       ├── createUnsubscribe (inline)
+│       ├── createSocialPanel (import)
+```
 ---
 
 
