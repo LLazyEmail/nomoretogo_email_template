@@ -1,16 +1,3 @@
-// TODO update this module with factory
-// import contentMainTableWrap from '../domain/innerTemplate/contentMainTableWrap';
-
-// try {
-//   var fullComponent = contentMainTableWrap('123', 'href');
-// } catch (err) {
-//   var error = err;
-// }
-
-// var result = error != undefined ? error : fullComponent;
-
-// export default result;
-
 ////////////////////////////////////////////////////////////////
 // import { displayFactoryTwo } from 'email-template-object';
 // import Factory from './factory';
