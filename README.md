@@ -6,6 +6,9 @@ https://github.com/LLazyEmail/free-email-templates-to-try/blob/main/01%20Food%20
 project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/blob/main/components/Typography/src/templates/image.js
 
 
+https://www.nomoretogo.com/weekly-menu/
+
+
 ---
 
 ```bash
