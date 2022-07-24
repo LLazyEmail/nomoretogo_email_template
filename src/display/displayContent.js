@@ -79,6 +79,15 @@ const contentRecipeParams = [
     text: '123',
 
   },
+  {
+    id: '6',
+    href: '123',
+    src: '123',
+    //------
+    title: '123',
+    text: '123',
+
+  },
 ];
 
 
