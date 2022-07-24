@@ -1,4 +1,4 @@
-import footerComponent from '../domain/outer/footerComponent';
+import footerComponent from 'nmtg-template-mailerlite-outertemplate';
 import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */

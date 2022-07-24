@@ -1,8 +1,3 @@
-// import headComponent from '../domain/outer/headComponent';
-
-import { headComponent } from 'nmtg-template-mailerlite-outertemplate';
-
-
 import {
   blobHead,
   bodyStyle,
@@ -13,6 +8,7 @@ import {
   mediaStyle,
   style,
   style2,
+  headComponent
 } from 'nmtg-template-mailerlite-outertemplate';
 
 import createComponent from './createComponentUniversal';
