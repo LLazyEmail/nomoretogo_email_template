@@ -10,6 +10,13 @@ import mediaStyle from './components/mediaStyle';
 import style from './components/style';
 import style2 from './components/style2';
 
+//------------
+import footerComponent from './components/footerComponent';
+import headComponent from './components/headComponent';
+
+
+
+
 export {
   blobHead,
   bodyStyle,
@@ -20,4 +27,7 @@ export {
   mediaStyle,
   style,
   style2,
+  //--------
+  footerComponent,
+  headComponent
 };

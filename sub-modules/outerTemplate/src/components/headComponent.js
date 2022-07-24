@@ -1,5 +1,5 @@
 // Create head component
-import Errors from '../../Errors';
+import Errors from './Errors';
 
 // Create head component start
 function createHeadComponent(params) {
@@ -84,7 +84,9 @@ function searchForErrors(params) {
 
 // TODO I dont think we need to return this function. fill find a comment to it later
 
-export default function (subComponent) {
+const headComponent = (subComponent) => {
   searchForErrors(subComponent);
   return createHeadComponent(subComponent);
 }
+
+export default headComponent;

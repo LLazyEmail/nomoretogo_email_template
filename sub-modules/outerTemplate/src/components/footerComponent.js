@@ -1,7 +1,7 @@
 // Create footer component
 
 // Config file
-import { pathSocialIcons, unsubscribe } from '../../config';
+import { pathSocialIcons, unsubscribe } from '../config';
 
 // Create path to image start
 function createPathToImage(src) {
@@ -62,7 +62,7 @@ const createSocialPanel = function (socials) {
 // Create footerSosial end
 
 // Create foot content start
-const mainBlock = (socials) => {
+const footerComponent = (socials) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableFooterCardTd">
@@ -151,6 +151,5 @@ const mainBlock = (socials) => {
 };
 // Create foot content end
 
-export default function (socials) {
-  return mainBlock(socials);
-}
+
+export default footerComponent
