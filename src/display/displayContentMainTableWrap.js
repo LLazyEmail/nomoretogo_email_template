@@ -1,26 +1,3 @@
-////////////////////////////////////////////////////////////////
-// import { displayFactoryTwo } from 'email-template-object';
-// import Factory from './factory';
-// import contentMainTableWrap from '../components/contentMainTableWrap';
-
-// import {
-//   topPanelViewInBrows,
-//   tableHeaderBlockLogo,
-// } from 'nmtg-template-mailerlite-inner';
-
-// var error = '';
-// var result = null;
-// try {
-
-
-//   const factory = new Factory(contentMainTableWrap, params);
-//   result = factory.create();
-// } catch (e) {
-//   error = e.message;
-// }
-
-
-//////////////////////////////////////////////////////////////////
 import createComponent from './createComponentUniversal';
 import contentMainTableWrap from '../components/contentMainTableWrap';
 import { viewInBrowserLink } from 'nmtg-template-mailerlite-miscellaneous';

@@ -3584,10 +3584,10 @@
   "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-miscellaneous/-/nmtg-template-mailerlite-miscellaneous-0.7.0.tgz"
   "version" "0.7.0"
 
-"nmtg-template-mailerlite-outertemplate@^0.3.0":
-  "integrity" "sha512-6IE6D/FQ+ZHvhORLwlldV9FUOzcqw1liuTtRnmnqYLCTmHNupJwQMW5uSYzwg0HOfNe1Gxm/KrGCulbKHOhRPA=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-0.3.0.tgz"
-  "version" "0.3.0"
+"nmtg-template-mailerlite-outertemplate@^0.4.0":
+  "integrity" "sha512-6+j1P7dU9yKDcmJGih7Qkm/ptflJZ0FqxjyotduIXewQ/K6lNaeAUGUcof9IsiEvj0t5ZY1RpRHQt9n43oXfHQ=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-0.4.0.tgz"
+  "version" "0.4.0"
 
 "nmtg-template-mailerlite-typography@^0.2.0":
   "integrity" "sha512-Nh+gshucsaOp7gwx6WBaPGjIkWpBXUq9hiqZPhPvCHJrqnB3b3XHlE+qvlu3EIwkEKCHBvCARn+NmM6qJYzFXQ=="

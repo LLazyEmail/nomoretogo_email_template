@@ -1,4 +1,7 @@
-import headComponent from '../domain/outer/headComponent';
+// import headComponent from '../domain/outer/headComponent';
+
+import { headComponent } from 'nmtg-template-mailerlite-outertemplate';
+
 
 import {
   blobHead,
@@ -12,7 +15,7 @@ import {
   style2,
 } from 'nmtg-template-mailerlite-outertemplate';
 
-import createComponent from './createCopmonentUniversal';
+import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */
 // Head params
