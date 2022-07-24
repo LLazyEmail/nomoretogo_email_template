@@ -26,7 +26,11 @@ const contentTitleTextParams = {
 const contentSubTitleParams = '123';
 
 // Description
-const contentTextDescriptionParams = { textTop: '123', textBottom: '123' };
+const contentTextDescriptionParams = { 
+  textTop: '123', textBottom: '123' 
+};
+
+
 
 // Recipe
 const contentRecipeParams = [
@@ -34,41 +38,57 @@ const contentRecipeParams = [
     id: '1',
     href: '123',
     src: '123',
+    //------
     title: '123',
     text: '123',
+
   },
   {
     id: '2',
     href: '123',
     src: '123',
+    //------
     title: '123',
     text: '123',
+
   },
   {
     id: '3',
     href: '123',
     src: '123',
+    //------
     title: '123',
     text: '123',
+
   },
   {
     id: '4',
     href: '123',
     src: '123',
+    //------
     title: '123',
     text: '123',
+
   },
   {
     id: '5',
     href: '123',
     src: '123',
+    //------
     title: '123',
     text: '123',
+
   },
 ];
 
+
 // Button
-const contentButtonParams = { id: '123', href: '123', text: 123 };
+// https://www.nomoretogo.com/weekly-menu/
+const contentButtonParams = { 
+  id: '123', 
+  href: '123', 
+  text: '123' 
+};
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
