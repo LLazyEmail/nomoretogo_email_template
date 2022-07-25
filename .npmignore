@@ -1,1 +1,9 @@
 src
+tests
+sub-modules
+images
+rollup.config.js
+.babelrc
+.eslintignore
+.eslintric
+.gitignore

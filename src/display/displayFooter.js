@@ -1,16 +1,24 @@
-import footerComponent from '../domain/outer/footerComponent';
-const socials = [
+import footerComponent from 'nmtg-template-mailerlite-outertemplate';
+import createComponent from './createComponentUniversal';
+
+/* ******************** DATA START **************************************** */
+// Footer params
+const socialsParams = [
   { href: 123, src: 123 },
   { href: 123, src: 123 },
-  { href: '123', src: 123 },
+  { href: '123', src: '' },
 ];
 
+/* ******************** DATA END **************************************** */
+
+/* ******************** CREATE CONTENT START ****************************** */
+var result = null;
 try {
-  var fullComponent = footerComponent(socials);
-} catch (err) {
-  var error = err;
+  const footerComponentRes = createComponent(footerComponent, socialsParams);
+
+  result = footerComponentRes;
+} catch (e) {
+  console.log(e.message);
 }
-
-var result = error != undefined ? error : fullComponent;
-
+/* ******************** CREATE CONTENT END ****************************** */
 export default result;

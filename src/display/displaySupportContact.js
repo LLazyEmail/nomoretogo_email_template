@@ -1,25 +1,29 @@
-import supportContact from '../components/supportContact';
+import Factory from './factory';
+import supportContact from '../components/supportComponent';
 
-let data = {
-  topTitle: '123',
-  topLinkHref: '123',
-  topLinkId: '123',
-  topLinkText: '123',
-
-  bottomTitle: '123',
-  bottomLinkHref: '123',
-  bottomLinkId: '123',
-  bottomLinkText: '123',
-
-  bottomTextContact: '123',
-};
-
+var error = '';
+var result = null;
 try {
-  var fullComponent = supportContact(data);
-} catch (err) {
-  var error = err;
+  var params = {
+    topTitle: '123',
+    topLinkHref: '123',
+    topLinkId: '123',
+    topLinkText: '123',
+    bottomTitle: '123',
+    bottomLinkHref: '123',
+    bottomLinkId: '123',
+    bottomLinkText: '123',
+    bottomTextContact: '123',
+  };
+
+  const factory = new Factory(supportContact, params);
+  result = factory.create();
+} catch (e) {
+  error = e.message;
 }
 
-var result = error != undefined ? error : fullComponent;
+if (error != '') {
+  console.log(error);
+}
 
 export default result;

@@ -1,6 +1,5 @@
 // Create instruction component
-const INSTRUCTION_COMPONENT_ERROR = (variable) =>
-  `Empty ${variable} in instructionComponent`;
+import Errors from '../Errors';
 
 const createTitle = (title) => {
   return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"><strong>${title}</strong></p>`;
@@ -59,19 +58,20 @@ const mainBlock = (params) => {
 
 // we are throwing an error with the same constant 10 times.
 function searchForErrors(params) {
+  const error = new Errors('instructionComponent');
   var { title, text, title2, text2 } = params;
 
   if (title == '') {
-    throw new Error(INSTRUCTION_COMPONENT_ERROR('title'));
+    error.add('No title');
   }
   if (text == '') {
-    throw new Error(INSTRUCTION_COMPONENT_ERROR('text'));
+    error.add('No text');
   }
   if (title2 == '') {
-    throw new Error(INSTRUCTION_COMPONENT_ERROR('title2'));
+    error.add('No title2');
   }
   if (text2 == '') {
-    throw new Error(INSTRUCTION_COMPONENT_ERROR('text2'));
+    error.add('No text2');
   }
 }
 
