@@ -1,18 +1,28 @@
 import instructionComponent from '../components/instructionComponent';
+import createComponent from './createComponentUniversal';
 
-const data = {
+/* ******************** DATA START **************************************** */
+// Title params
+const instructionComponentParams = {
   title: '123',
   text: '123',
   title2: '123',
   text2: '123',
 };
 
+/* ******************** DATA END **************************************** */
+
+/* ******************** CREATE CONTENT START ****************************** */
+var result = null;
 try {
-  var fullComponent = instructionComponent(data);
-} catch (err) {
-  var error = err;
+  const instructionComponentRes = createComponent(
+    instructionComponent,
+    instructionComponentParams
+  );
+
+  result = instructionComponentRes;
+} catch (e) {
+  console.log(e.message);
 }
-
-var result = error != undefined ? error : fullComponent;
-
+/* ******************** CREATE CONTENT END ****************************** */
 export default result;

@@ -1,13 +1,21 @@
 import bodyComponent from '../components/bodyComponent';
+import createComponent from './createComponentUniversal';
 
-const bodyData = '123';
+/* ******************** DATA START **************************************** */
+// Body params
+const bodyComponentParams = '123';
 
+/* ******************** DATA END **************************************** */
+
+/* ******************** CREATE CONTENT START ****************************** */
+var result = null;
 try {
-  var fullComponent = bodyComponent(bodyData);
-} catch (err) {
-  var error = err;
+  // contentTitleText
+  const bodyComponentRes = createComponent(bodyComponent, bodyComponentParams);
+
+  result = bodyComponentRes;
+} catch (e) {
+  console.log(e.message);
 }
-
-var result = error != undefined ? error : fullComponent;
-
+/* ******************** CREATE CONTENT END ****************************** */
 export default result;

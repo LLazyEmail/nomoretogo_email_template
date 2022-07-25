@@ -1,9 +1,3 @@
-// import { displayFactoryTwo } from 'email-template-object';
-
-// import headComponent from "../../components/outerTemplate/src/components/headComponent";
-
-import headComponent from '../domain/outer/headComponent';
-
 import {
   blobHead,
   bodyStyle,
@@ -13,10 +7,15 @@ import {
   ifStyle,
   mediaStyle,
   style,
-  style2, //'../../components/outerTemplate/src/components/subHeadComponents';
-} from '../domain/outer/';
+  style2,
+  headComponent
+} from 'nmtg-template-mailerlite-outertemplate';
 
-let addon1 = {
+import createComponent from './createComponentUniversal';
+
+/* ******************** DATA START **************************************** */
+// Head params
+const HeadParams = {
   blobHead: blobHead(),
   bodyStyle: bodyStyle(),
   font1: font1(),
@@ -26,31 +25,21 @@ let addon1 = {
   mediaStyle: mediaStyle(),
   style: style(),
   style2: style2(),
-
   // variable:value,
   title: 'text title',
 };
 
-// var component;
-// var error;
+/* ******************** DATA END **************************************** */
+
+/* ******************** CREATE CONTENT START ****************************** */
+var result = null;
 try {
-  var fullComponent = headComponent(addon1);
-} catch (err) {
-  var error = err;
+  // headComponent
+  const headComponentRes = createComponent(headComponent, HeadParams);
+
+  result = headComponentRes;
+} catch (e) {
+  console.log(e.message);
 }
-
-var result = error != undefined ? error : fullComponent;
-// var result = font1();
-
-//variant one
-// const settings = {
-//   component: headComponent,
-//   params: addon1,
-// };
-
-// const Factory = new displayFactoryTwo();
-
-// console.log(Factory.create(settings));
-// export default Factory.create(settings);
-
+/* ******************** CREATE CONTENT END ****************************** */
 export default result;
