@@ -5,6 +5,11 @@ https://github.com/LLazyEmail/free-email-templates-to-try/blob/main/01%20Food%20
 
 project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/blob/main/components/Typography/src/templates/image.js
 
+---
+
+https://www.nomoretogo.com/weekly-menu/
+
+---
 
 https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/twitter.webp
 https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/amazon.png
