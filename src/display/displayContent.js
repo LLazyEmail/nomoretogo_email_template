@@ -39,8 +39,8 @@ const contentRecipeParams = [
     href: "https://www.nomoretogo.com/weekly-menu/",
     src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe1.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Chipotle Cream Skillet Chicken",
+    text: "over Rice and Snap Peas"',
 
   },
   {
@@ -48,8 +48,8 @@ const contentRecipeParams = [
     href: "https://www.nomoretogo.com/weekly-menu/",
     src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe2.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Pork Schnitzel",
+    text: "with German Spaetzle and Green Beans",
 
   },
   {
@@ -57,8 +57,8 @@ const contentRecipeParams = [
     href: "https://www.nomoretogo.com/weekly-menu/",
     src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe3.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Bahn Mi Meatball Skewers",
+    text: 'yummy',
 
   },
   {
@@ -66,8 +66,8 @@ const contentRecipeParams = [
     href: "https://www.nomoretogo.com/weekly-menu/",
     src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe4.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Korean Barbecue Beef with Sesame Rice Noodles",
+    text: "and Spicy Pickled Cucumbers and Carrots",
 
   },
   {
@@ -75,8 +75,8 @@ const contentRecipeParams = [
     href: "https://www.nomoretogo.com/weekly-menu/",
     src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe5.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Grilled Salmon with Chipotle Cream Sauce",
+    text: "over Potato Poblano Hash and Broccolini",
 
   },
   {
@@ -84,8 +84,8 @@ const contentRecipeParams = [
     href: "https://www.nomoretogo.com/weekly-menu/",
     src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe6.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Saucy Grilled Shrimp",
+    text: "and a Corn and Radish Salad with Avocado Dressing",
 
   },
 ];
