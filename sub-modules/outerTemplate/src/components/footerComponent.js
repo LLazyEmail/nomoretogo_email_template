@@ -20,8 +20,8 @@ const address = () => {
   return `<p style="margin-top: 0px; margin-bottom: 0px;">Dallas,&nbsp;Texas United States</p>`;
 };
 
-// Discription
-const discription = () => {
+// Description
+const description = () => {
   return `<p style="margin-top: 0px; margin-bottom: 0px;">You received this email because you signed up on our website or made a purchase from us.</p>`;
 };
 
@@ -44,10 +44,11 @@ const createSocialPanel = function (socials) {
     if (social.src == '') {
       error.add('No src');
     }
+    const image = createPathToImage(social.src);
     return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">
         <a href="${social.href}" target="_self">
         <img width="24" alt="facebook" 
-        src="${createPathToImage(social.src)}" 
+        src="${image}" 
         style="display: block;" border="0">
         </a>
         </td>`;
@@ -56,7 +57,7 @@ const createSocialPanel = function (socials) {
 // Create footerSosial end
 
 // Create foot content start
-const mainBlock = (socials) => {
+const footerComponent = (socialLinks) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableFooterCardTd">
@@ -104,7 +105,7 @@ const mainBlock = (socials) => {
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
                                 <tbody>
                                 <tr>
-                                ${createSocialPanel(socials)}
+                                ${createSocialPanel(socialLinks)}
                                 </tr>
                               </tbody></table>
                             </td>
@@ -113,7 +114,7 @@ const mainBlock = (socials) => {
                         <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right" width="267" style="width: 267px; min-width: 267px;" class="mlContentTable">
                           <tbody><tr>
                             <td align="right" class="bodyTitle" id="footerUnsubscribeText-44" style="font-family: 'Poppins', sans-serif; font-size: 12px; line-height: 150%; color: #111111;">
-                              ${discription()}
+                              ${description()}
                             </td>
                           </tr>
                           <tr>
@@ -143,8 +144,6 @@ const mainBlock = (socials) => {
   </tr>
 </tbody></table>`;
 };
-// Create foot content end
+// Footer content end
 
-export default function (socials) {
-  return mainBlock(socials);
-}
+export default footerComponent;
