@@ -84,9 +84,7 @@ function searchForErrors(params) {
 
 // TODO I dont think we need to return this function. fill find a comment to it later
 
-const headComponent = (subComponent) => {
+export default function (subComponent) {
   searchForErrors(subComponent);
   return createHeadComponent(subComponent);
 }
-
-export default headComponent;

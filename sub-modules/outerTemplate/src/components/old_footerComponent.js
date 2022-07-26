@@ -1,7 +1,7 @@
 // Create footer component
 
 // Config file
-import { pathSocialIcons, unsubscribe } from '../../config';
+import { pathSocialIcons, unsubscribe } from '../config';
 
 // Create path to image start
 function createPathToImage(src) {
@@ -27,7 +27,7 @@ const address = () => {
 };
 
 // Discription
-const discription = () => {
+const description = () => {
   return `<p style="margin-top: 0px; margin-bottom: 0px;">You received this email because you signed up on our website or made a purchase from us.</p>`;
 };
 
@@ -50,10 +50,11 @@ const createSocialPanel = function (socials) {
     if (social.src == '') {
       createError('src');
     }
+    const image = createPathToImage(social.src);
     return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">
         <a href="${social.href}" target="_self">
         <img width="24" alt="facebook" 
-        src="${createPathToImage(social.src)}" 
+        src="${image}" 
         style="display: block;" border="0">
         </a>
         </td>`;
@@ -62,7 +63,7 @@ const createSocialPanel = function (socials) {
 // Create footerSosial end
 
 // Create foot content start
-const mainBlock = (socials) => {
+const footerComponent = (socialsLinks) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableFooterCardTd">
@@ -110,7 +111,7 @@ const mainBlock = (socials) => {
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
                                 <tbody>
                                 <tr>
-                                ${createSocialPanel(socials)}
+                                ${createSocialPanel(socialsLinks)}
                                 </tr>
                               </tbody></table>
                             </td>
@@ -151,6 +152,5 @@ const mainBlock = (socials) => {
 };
 // Create foot content end
 
-export default function (socials) {
-  return mainBlock(socials);
-}
+
+export default footerComponent
