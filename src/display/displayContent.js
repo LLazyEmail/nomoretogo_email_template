@@ -34,52 +34,58 @@ const contentTextDescriptionParams = {
 // Recipe
 const contentRecipeParams = [
   {
-    id: 'imageBlock-26',
-    href: 'https://click.mailerlite.com/link/c/YT0xOTM0MzU4ODYxNzU0NDA1OTgyJmM9bDhuNSZiPTk2MDM1NzI4MyZkPWoweTNkMnY=.CZMYEt1NLJMvifvHlshzUDUIx2GdM_OI3eoDf4kOCI0',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe1.jpeg',
+    id: "imageBlock-26",
+    href: "https://www.nomoretogo.com/weekly-menu/",
+    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe1.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Chipotle Cream Skillet Chicken",
+    text: "over Rice and Snap Peas"',
+
   },
   {
-    id: 'imageBlock-21',
-    href: 'https://click.mailerlite.com/link/c/YT0xOTM0MzU4ODYxNzU0NDA1OTgyJmM9bDhuNSZiPTk2MDM1NzI4MiZkPXMwajFkNnk=.8I5D4n7gtfmzuGZiriGRhZHeQLEWahZokr2rEih7l-s',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe2.jpeg',
+    id: "imageBlock-21",
+    href: "https://www.nomoretogo.com/weekly-menu/",
+    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe2.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Pork Schnitzel",
+    text: "with German Spaetzle and Green Beans",
+
   },
   {
-    id: 'imageBlock-27',
-    href: 'https://click.mailerlite.com/link/c/YT0xOTM0MzU4ODYxNzU0NDA1OTgyJmM9bDhuNSZiPTk2MDM1NzI4NCZkPWwxazJ5Mmk=.RIl2-ItpqAdqgUI30NcBt0XRKSXfuEqpAnuUlWbDXIo',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe3.jpeg',
+    id: "imageBlock-27",
+    href: "https://www.nomoretogo.com/weekly-menu/",
+    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe3.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Bahn Mi Meatball Skewers",
+    text: 'yummy',
+
   },
   {
-    id: 'imageBlock-15',
-    href: 'https://click.mailerlite.com/link/c/YT0xOTM0MzU4ODYxNzU0NDA1OTgyJmM9bDhuNSZiPTk2MDM1NzI3OSZkPWwwcjRnNXE=.mSuqCzlUp90haEWchocSmhjYNDWkS0ekN-j3JX9Q_zQ',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe4.jpeg',
+    id: "imageBlock-15",
+    href: "https://www.nomoretogo.com/weekly-menu/",
+    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe4.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Korean Barbecue Beef with Sesame Rice Noodles",
+    text: "and Spicy Pickled Cucumbers and Carrots",
+
   },
   {
-    id: 'imageBlock-14',
-    href: 'https://click.mailerlite.com/link/c/YT0xOTM0MzU4ODYxNzU0NDA1OTgyJmM9bDhuNSZiPTk2MDM1NzI3NyZkPXg4YThzNWw=.5EZ2YvXBDSr5PVkwh4GWCdJID0-pOGdh9L7xp4JMJ08',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe5.jpeg',
+    id: "imageBlock-14",
+    href: "https://www.nomoretogo.com/weekly-menu/",
+    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe5.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Grilled Salmon with Chipotle Cream Sauce",
+    text: "over Potato Poblano Hash and Broccolini",
+
   },
   {
-    id: 'imageBlock-20',
-    href: 'https://click.mailerlite.com/link/c/YT0xOTM0MzU4ODYxNzU0NDA1OTgyJmM9bDhuNSZiPTk2MDM1NzI4MSZkPWEybjZ2NWE=.ZNIgmmi6FTsGd-0jooca-DM-Znm2AhsssGDZsE0cBn0',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe6.jpeg',
+    id: "imageBlock-20",
+    href: "https://www.nomoretogo.com/weekly-menu/",
+    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe6.jpeg"
     //------
-    title: '123',
-    text: '123',
+    title: "Saucy Grilled Shrimp",
+    text: "and a Corn and Radish Salad with Avocado Dressing",
+
   },
 ];
 
