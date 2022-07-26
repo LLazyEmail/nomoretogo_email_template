@@ -91,4 +91,4 @@ const headComponent = (subComponent) => {
   return createHeadComponent(subComponent);
 }
 
-expor default headComponent;
+export default headComponent;

@@ -59,7 +59,7 @@
     "email-template-object": "^0.2.0",
     "nmtg-template-mailerlite-inner": "^0.5.0",
     "nmtg-template-mailerlite-miscellaneous": "^0.7.0",
-    "nmtg-template-mailerlite-outertemplate": "^0.4.0",
+    "nmtg-template-mailerlite-outertemplate": "^0.5.0",
     "nmtg-template-mailerlite-typography": "^0.2.0"
   }
 }
