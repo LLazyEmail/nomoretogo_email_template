@@ -8,7 +8,7 @@ import {
   mediaStyle,
   style,
   style2,
-  headComponent
+  headComponent,
 } from 'nmtg-template-mailerlite-outertemplate';
 
 import createComponent from './createComponentUniversal';
