@@ -1,6 +1,8 @@
 // Create head component
 import Errors from './Errors';
 
+const footerError = new Errors('footerComponent');
+
 // Create head component start
 function createHeadComponent(params) {
   var {
@@ -51,40 +53,42 @@ function searchForErrors(params) {
   } = params;
 
   if (blobHead == '') {
-    error.add('blobHead');
+    footerError.add('blobHead');
   }
   if (bodyStyle == '') {
-    error.add('bodyStyle');
+    footerError.add('bodyStyle');
   }
   if (mediaStyle == '') {
-    error.add('mediaStyle');
+    footerError.add('mediaStyle');
   }
   if (style == '') {
-    error.add('style');
+    footerError.add('style');
   }
   if (style2 == '') {
-    error.add('style2');
+    footerError.add('style2');
   }
   if (font1 == '') {
-    error.add('font1');
+    footerError.add('font1');
   }
   if (font2 == '') {
-    error.add('font2');
+    footerError.add('font2');
   }
   if (meta == '') {
-    error.add('meta');
+    footerError.add('meta');
   }
   if (ifStyle == '') {
-    error.add('ifStyle');
+    footerError.add('ifStyle');
   }
   if (title == '') {
-    error.add('title');
+    footerError.add('title');
   }
 }
 
 // TODO I dont think we need to return this function. fill find a comment to it later
 
-export default function (subComponent) {
+const headComponent = (subComponent) => {
   searchForErrors(subComponent);
   return createHeadComponent(subComponent);
 }
+
+expor default headComponent;
