@@ -6,7 +6,7 @@ import BodyComponentString from '../src/display/displayBodyComponent';
 import tempTest from '../src/display/displayTempTest';
 
 
-console.log(typeof HeadString)
+// console.log(HeadString)
 
 const catchErrorTraceOutput = (error) => {
   // we need to test how it actually work
@@ -49,7 +49,8 @@ const writingFile = (content) => {
   try {
     writeHTML(fileName, content);
   } catch (err) {
-    //console.log(err);
+    throw new Error(err.message);
+    // console.log(err);
     //console.log(content);
   }
 };

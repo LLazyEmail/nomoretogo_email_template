@@ -14,7 +14,7 @@ describe('writing components into files', () => {
     const string1 = printHead();
 
     // console.log(string);
-    expect(printHead()).toBeDefined();
+    expect(string1).toBeDefined();
 
     writingFile(string1);
   });

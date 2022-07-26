@@ -2,11 +2,14 @@ import { footerComponent } from 'nmtg-template-mailerlite-outertemplate';
 import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */
+
+
+
 // Footer params
 const socialsParams = [
-  { href: 123, src: 123 },
-  { href: 123, src: 123 },
-  { href: '123', src: '' },
+  { href: '123', src: '123' },
+  { href: '123', src: '123' },
+  { href: '123', src: '123' },
 ];
 
 /* ******************** DATA END **************************************** */
