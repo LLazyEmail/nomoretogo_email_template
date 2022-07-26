@@ -14,9 +14,6 @@ import style2 from './components/style2';
 import footerComponent from './components/footerComponent';
 import headComponent from './components/headComponent';
 
-
-
-
 export {
   blobHead,
   bodyStyle,
@@ -29,5 +26,5 @@ export {
   style2,
   //--------
   footerComponent,
-  headComponent
+  headComponent,
 };
