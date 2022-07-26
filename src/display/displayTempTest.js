@@ -79,9 +79,12 @@ const instructionTextParams = '123';
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
-var result = null;
-try {
-  // contentTitleText
+// var result = null;
+// try {
+
+
+  const displayTemp = () => {
+      // contentTitleText
   const title = createComponent(contentTitleText, contentTitleTextParams);
 
   // contentSubTitleText
@@ -98,6 +101,7 @@ try {
     return createComponent(contentRecipe, params);
   });
 
+  
   // All contentTableWitchTwoRecipe
   const images = createComponent(contentTableWithTwoRecipes, imagesAll);
 
@@ -123,9 +127,23 @@ try {
   // var asd = createComponent(instructionComponent);
   // console.log(asd);
 
-  result = `${title}${subTitle}${description}${images}${button}${line}`;
-} catch (e) {
-  console.log(e.message);
-}
+  return title + subTitle + description + images + button + line;
+  
+  }
+
+
+
+
+
+  // result = `${title}${subTitle}${description}${images}${button}${line}`;
+
+  // console.log(result);
+
+
+
+
+// } catch (error) {
+//   console.log(error.message);
+// }
 /* ******************** CREATE CONTENT END ****************************** */
-export default result;
+export default displayTemp;

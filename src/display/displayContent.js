@@ -27,10 +27,9 @@ const contentSubTitleParams = '123';
 
 // Description
 const contentTextDescriptionParams = {
-  textTop: '123', textBottom: '123'
+  textTop: '123',
+  textBottom: '123',
 };
-
-
 
 // Recipe
 const contentRecipeParams = [
@@ -90,13 +89,12 @@ const contentRecipeParams = [
   },
 ];
 
-
 // Button
 // https://www.nomoretogo.com/weekly-menu/
 const contentButtonParams = {
   id: '123',
   href: '123',
-  text: '123'
+  text: '123',
 };
 /* ******************** DATA END **************************************** */
 
@@ -133,8 +131,8 @@ try {
   const allContentRes = `${title}${subTitle}${description}${images}${button}${line}`;
 
   result = createComponent(contentComponent, allContentRes);
-} catch (e) {
-  console.log(e.message);
+} catch (error) {
+  console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
 export default result;

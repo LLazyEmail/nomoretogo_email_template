@@ -11,6 +11,8 @@ https://www.nomoretogo.com/weekly-menu/
 
 ---
 
+### static images
+
 https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/twitter.webp
 https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/amazon.png
 https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/facebook.webp
@@ -22,6 +24,7 @@ https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data
 https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe4.jpeg
 https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe5.jpeg
 https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe6.jpeg
+
 ---
 
 ```bash

@@ -1,7 +1,10 @@
-import footerComponent from 'nmtg-template-mailerlite-outertemplate';
+import { footerComponent } from 'nmtg-template-mailerlite-outertemplate';
 import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */
+
+
+
 // Footer params
 const socialsParams = [
   { href: "https://www.facebook.com/nomoretogo/", src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/facebook.webp"},
@@ -12,13 +15,14 @@ const socialsParams = [
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
-var result = null;
-try {
-  const footerComponentRes = createComponent(footerComponent, socialsParams);
+// var result = null;
+// try {
+  const footerComponentRes = createComponent(footerComponent, socialsLinksParams);
 
-  result = footerComponentRes;
-} catch (e) {
-  console.log(e.message);
-}
+//   result = footerComponentRes;
+// } catch (error) {
+//   console.log(error);
+//   // console.log(error.message);
+// }
 /* ******************** CREATE CONTENT END ****************************** */
-export default result;
+export default footerComponentRes;

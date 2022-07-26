@@ -8,7 +8,7 @@ import {
   mediaStyle,
   style,
   style2,
-  headComponent
+  headComponent,
 } from 'nmtg-template-mailerlite-outertemplate';
 
 import createComponent from './createComponentUniversal';
@@ -26,20 +26,19 @@ const HeadParams = {
   style: style(),
   style2: style2(),
   // variable:value,
-  title: 'text title',
+  title: 'text title', //TODO update it later
 };
 
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
-var result = null;
-try {
-  // headComponent
+// var result = null;
+// try {
+//   headComponent;
   const headComponentRes = createComponent(headComponent, HeadParams);
-
-  result = headComponentRes;
-} catch (e) {
-  console.log(e.message);
-}
+//   result = headComponentRes;
+// } catch (error) {
+//   console.log(error.message);
+// }
 /* ******************** CREATE CONTENT END ****************************** */
-export default result;
+export default headComponentRes;

@@ -5,6 +5,8 @@ class Errors {
   component = '';
 
   constructor(component = 'No component') {
+    // TODO this statement is giving errors from time to time.
+    // I think we need to debug it.
     this.component = component;
   }
 

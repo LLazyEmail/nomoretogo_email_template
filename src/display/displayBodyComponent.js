@@ -14,8 +14,8 @@ try {
   const bodyComponentRes = createComponent(bodyComponent, bodyComponentParams);
 
   result = bodyComponentRes;
-} catch (e) {
-  console.log(e.message);
+} catch (error) {
+  console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
 export default result;

@@ -38,8 +38,8 @@ try {
 
   // ContentMainTableWrap
   result = createComponent(contentMainTableWrap, contentMainTableWrapParams);
-} catch (e) {
-  console.log(e.message);
+} catch (eerror) {
+  console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
 
