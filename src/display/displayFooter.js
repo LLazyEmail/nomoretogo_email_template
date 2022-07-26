@@ -1,4 +1,4 @@
-import footerComponent from 'nmtg-template-mailerlite-outertemplate';
+import { footerComponent } from 'nmtg-template-mailerlite-outertemplate';
 import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */
@@ -17,8 +17,9 @@ try {
   const footerComponentRes = createComponent(footerComponent, socialsParams);
 
   result = footerComponentRes;
-} catch (e) {
-  console.log(e.message);
+} catch (error) {
+  console.log(error);
+  // console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
 export default result;

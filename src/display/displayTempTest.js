@@ -124,8 +124,8 @@ try {
   // console.log(asd);
 
   result = `${title}${subTitle}${description}${images}${button}${line}`;
-} catch (e) {
-  console.log(e.message);
+} catch (error) {
+  console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
 export default result;

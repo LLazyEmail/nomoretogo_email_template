@@ -5,6 +5,20 @@ import FooterString from '../src/display/displayFooter';
 import BodyComponentString from '../src/display/displayBodyComponent';
 import tempTest from '../src/display/displayTempTest';
 
+
+console.log(typeof HeadString)
+
+const catchErrorTraceOutput = (error) => {
+  // we need to test how it actually work
+  const callerLine = error.stack.split('\n')[4];
+  const index = callerLine.indexOf('at ');
+  // eslint-disable-next-line no-unused-vars
+  const clean = callerLine.slice(index + 2, callerLine.length);
+
+  throw error;
+};
+
+
 const printHead = () => {
   return HeadString;
 };
@@ -47,4 +61,5 @@ export {
   printFooter,
   printBody,
   writingFile,
+  catchErrorTraceOutput
 };

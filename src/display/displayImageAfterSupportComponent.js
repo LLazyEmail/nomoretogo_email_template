@@ -17,8 +17,8 @@ try {
   );
 
   result = imageAfterSupportComponentRes;
-} catch (e) {
-  console.log(e.message);
+} catch (error) {
+  console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
 export default result;

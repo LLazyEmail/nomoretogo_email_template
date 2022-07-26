@@ -125,8 +125,8 @@ try {
   const allContentRes = `${title}${subTitle}${description}${images}${button}${line}`;
 
   result = createComponent(contentComponent, allContentRes);
-} catch (e) {
-  console.log(e.message);
+} catch (error) {
+  console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
 export default result;
