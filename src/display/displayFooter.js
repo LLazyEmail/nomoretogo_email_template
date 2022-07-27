@@ -6,7 +6,7 @@ import createComponent from './createComponentUniversal';
 
 
 // Footer params
-const socialsParams = [{ 
+const socialsLinksParams = [{ 
     href: "https://www.facebook.com/nomoretogo/", src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/facebook.webp"
   },
   { 

@@ -1,6 +1,6 @@
 // Create Main display
 import createComponent from './createComponentUniversal';
-import BodyComponent from '../components/bodyComponent';
+import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
 
 import displayHead from '../display/displayHead';
 import displayContentMainTableWrap from '../display/displayContentMainTableWrap';
@@ -49,7 +49,7 @@ if (error == '') {
     ${displayImageAfterSupportComponent}
     ${displayFooter}`;
 
-  const BodyComponentRes = createComponent(BodyComponent, bodyContentParams);
+  const BodyComponentRes = createComponent(bodyComponent, bodyContentParams);
 
   result = `${displayHead}${BodyComponentRes}`;
 } else {
