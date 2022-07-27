@@ -1,27 +1,22 @@
 // Create support component
 
 import { mailingAddress } from '../config';
+import { strong } from 'nmtg-template-mailerlite-typography';
+import Errors from './Errors';
 
 import lineBlock from './lineBlock';
 
-const SUPPORT_COMPONENT_ERROR = (variable) =>
-  `Empty ${variable} in supportComponent`;
-
-// Checking for errors start
-function createError(variable) {
-  throw new Error(SUPPORT_COMPONENT_ERROR(variable));
-}
-// Checking for errors end
+const error = new Errors('supportComponent');
 
 const createSupportLink = (href, id, text) => {
   if (href == '') {
-    createError('href');
+    error.add('href');
   }
   if (id == '') {
-    createError('id');
+    error.add('id');
   }
   if (text == '') {
-    createError('text');
+    error.add('text');
   }
 
   return `<a
@@ -36,21 +31,21 @@ const createSupportLink = (href, id, text) => {
 
 const createSupportTitle = (title) => {
   if (title == '') {
-    createError('title');
+    error.add('title');
   }
 
-  return `<strong>${title}</strong>`;
+  return strong(title);
 };
 
 const createSupportTextTop = (href, id, text) => {
   if (href == '') {
-    createError('href textTop');
+    error.add('href textTop');
   }
   if (id == '') {
-    createError('id textTop');
+    error.add('id textTop');
   }
   if (text == '') {
-    createError('text textTop');
+    error.add('text textTop');
   }
 
   return `Connect with other home cooks on our closed group for No More To-Go Members Only 
@@ -60,23 +55,27 @@ const createSupportTextTop = (href, id, text) => {
 // "contact@motoretogo.com"
 // TODO can be replaced with link component
 const createSupportMail = (textMail) => {
-  if (textMail == '') {
+//   if (textMail == '') {
+// <<<<<<< HEAD
+//     error.add('textMail');
+// =======
 
-    createError('textMail');
-  }
+//     createError('textMail');
+// >>>>>>> b397a16ebea6c3c4790519ee56320e7be6d679f4
+//   }
 
   return `<a href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">${textMail}.&nbsp;</a>`;
 };
 
 const createSupportTextBottom = (href, id, text, textMail) => {
   if (href == '') {
-    createError('href textBottom');
+    error.add('href textBottom');
   }
   if (id == '') {
-    createError('id textBottom');
+    error.add('id textBottom');
   }
   if (text == '') {
-    createError('text textBottom');
+    error.add('text textBottom');
   }
   // TODO very strange line...
   return `"Please contact us via the "

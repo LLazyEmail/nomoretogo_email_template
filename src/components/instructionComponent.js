@@ -1,8 +1,10 @@
 // Create instruction component
-import Errors from '../Errors';
+import Errors from './Errors';
+import { strong } from 'nmtg-template-mailerlite-typography';
 
 const createTitle = (title) => {
-  return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"><strong>${title}</strong></p>`;
+  return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
+  ${strong(title)}</p>`;
 };
 
 const createText = (text) => {
