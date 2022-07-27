@@ -91,7 +91,9 @@ const mainRecipe = (id, href, src, title, text) => {
 };
 // Main Recipe block end
 
-export default function (data) {
+const recipeComponent = (data) => {
   const { id, href, src, title, text } = data;
   return mainRecipe(id, href, src, title, text);
 }
+
+export default recipeComponent;

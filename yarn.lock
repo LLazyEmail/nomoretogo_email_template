@@ -3574,10 +3574,10 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"nmtg-template-mailerlite-inner@^0.6.0":
-  "integrity" "sha512-gn9ncw2qqGUsfJUB8j3f9oqDW0vpVMpoHMvBKos+eJQAFXuoRAxaQ+dNJW4AsYnt3XtwmahbIc3f6ri1+uHyIA=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-0.6.0.tgz"
-  "version" "0.6.0"
+"nmtg-template-mailerlite-inner@^0.7.0":
+  "integrity" "sha512-Vh5deSPyQwZVyxEogMe3c2cHp9amNzRgRz3TUxbt3vZvAHPsxvFXJ6vIEaXlzOeAm1nFOIYSaCD7DmsJpb86ew=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-0.7.0.tgz"
+  "version" "0.7.0"
 
 "nmtg-template-mailerlite-miscellaneous@^0.7.0":
   "integrity" "sha512-s3edVosod11MpyYJy2hxVVQEroKZkcZeVnpYnVOztcTQ+Nujk3/FeQcYfTMMXOyMTTxXhIBflGkDTjBstmdl7w=="
