@@ -54,12 +54,14 @@ const createSupportTextTop = (href, id, text) => {
   }
 
   return `Connect with other home cooks on our closed group for No More To-Go Members Only 
-  ${createSupportLink(href, id, text)}.`;
+  ${createSupportLink(href: "https://www.facebook.com/groups/nmtg.homecooks?utm_source=newsletter&utm_medium=email&utm_campaign=korean_barbecue_beef_pork_schnitzel_bahn_mi_meatball_skewers&utm_term=2022-07-27", id, text)}.`;
 };
 
+// "contact@motoretogo.com"
 // TODO can be replaced with link component
 const createSupportMail = (textMail) => {
   if (textMail == '') {
+
     createError('textMail');
   }
 
@@ -76,7 +78,7 @@ const createSupportTextBottom = (href, id, text, textMail) => {
   if (text == '') {
     createError('text textBottom');
   }
-
+  // TODO very strange line...
   return `"Please contact us via the "
   ${createSupportLink(href, id, text)} 
   " link at the bottom of each page on the site. Or, email us at "
