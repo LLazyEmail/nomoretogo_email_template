@@ -38,7 +38,6 @@ if (displayFooter == null) {
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
-
 if (error == '') {
   const bodyContentParams = `
     ${displayContentMainTableWrap}
@@ -53,7 +52,8 @@ if (error == '') {
 
   result = `${displayHead}${BodyComponentRes}`;
 } else {
-  console.log(error);
+  const mesError = `Error in component: "displayMain",  error message: "${error}"`;
+  console.log(mesError);
 }
 /* ******************** CREATE CONTENT END ****************************** */
 export default result;

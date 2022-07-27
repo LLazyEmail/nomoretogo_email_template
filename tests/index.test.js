@@ -12,9 +12,9 @@ import FooterString from '../src/display/displayFooter';
 import tempTest from '../src/display/displayTempTest';
 
 describe('test fullComponent', () => {
-  test('rendering MainString Component', () => {
-    console.log(MainString);
-  });
+  // test('rendering MainString Component', () => {
+  //   console.log(MainString);
+  // });
   // test('rendering BodyString Component', () => {
   //   console.log(BodyComponentString);
   // });
@@ -30,9 +30,9 @@ describe('test fullComponent', () => {
   // test('rendering Instruction Component', () => {
   //   console.log(instructionString);
   // });
-  // test('rendering SupportContact Component', () => {
-  //   console.log(SupportContactString);
-  // });
+  test('rendering SupportContact Component', () => {
+    console.log(SupportContactString);
+  });
   // test('rendering ImageAfterSupporComponent Component', () => {
   //   console.log(ImageAfterSupporComponentString);
   // });

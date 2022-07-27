@@ -1,5 +1,5 @@
 // Component contentSubTitleText
-import Errors from './Errors';
+import { subheading } from 'nmtg-template-mailerlite-typography';
 
 const mainBlock = (subTitleText) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
@@ -13,7 +13,7 @@ const mainBlock = (subTitleText) => {
                 <td align="center" style="padding: 0px 40px;" class="mlContentOuter">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
-                      <td align="center" class="bodyTitle" style="font-family: 'Poppins', sans-serif; font-size: 19px; font-weight: 400; line-height: 150%; color: #111111; text-transform: none; font-style: normal; text-decoration: none; text-align: center;">${subTitleText}</td>
+                      ${subheading(subTitleText)}
                     </tr>
                   </tbody></table>
                 </td>
@@ -33,11 +33,5 @@ const mainBlock = (subTitleText) => {
 };
 
 export default function (subTitleText) {
-  const error = new Errors('contentSubTitleText');
-
-  if (subTitleText == '') {
-    error.add('No subTitleText');
-  }
-
   return mainBlock(subTitleText);
 }

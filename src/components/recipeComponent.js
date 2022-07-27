@@ -1,72 +1,35 @@
 // Create recipe component
 
 // Error
-const RECIPE_ERROR = (variable) => `No ${variable} in recipeComponent`;
-
-// Config file
-import { pathToImages } from '../config.js';
-
-// Create path to image start
-function createPathToImage(src) {
-  return pathToImages + src;
-}
-// Create path to image end
-
-// Checking for errors start
-function createError(variable) {
-  throw new Error(RECIPE_ERROR(variable));
-}
-// Checking for errors end
+import Errors from './Errors';
+import { image } from 'nmtg-template-mailerlite-typography';
+const error = Errors('recipeComponent');
 
 // Get title start
 const titleComponent = (title) => {
-  if (!title) {
-    createError('title');
+  if (title == '') {
+    error.add('title');
   }
   return `<strong><span style="font-size: 16px;">${title}</span></strong>`;
 };
-
 // Get title end
 
 // Get text start
 const textComponent = (text) => {
-  if (!text) {
-    createError('text');
+  if (text == '') {
+    error.add('text');
   }
 
   return `${text}`;
-  // original vercion example
-  // return `over Potato Poblano Hash<strong>&nbsp;<br></strong>and Broccolini `;
 };
 // Get text end
-
-// Get image start
-const imageComponent = (id, href, src) => {
-  if (!id) {
-    createError('id');
-  }
-  if (!href) {
-    createError('href');
-  }
-  if (!src) {
-    createError('src');
-  }
-
-  return `<a href="${href}" data-link-id="${id}" target="_self">
-  <img 
-    src="${createPathToImage(
-      src
-    )}" border="0" alt="" width="267" style="display: block;">
-    </a>`;
-};
-// Get image end
 
 // Main Recipe block start
 const mainRecipe = (id, href, src, title, text) => {
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267" class="mlContentTable marginBottom" style="width: 267px; min-width: 267px;">
     <tbody><tr>
       <td id="imageBlock-14" align="center">
-       ${imageComponent(id, href, src)}
+       ${image(id, href, src)}
       </td>
     </tr>
     <tr>

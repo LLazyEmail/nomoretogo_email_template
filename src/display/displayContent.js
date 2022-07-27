@@ -4,7 +4,6 @@ import contentComponent from '../components/contentComponent';
 import createComponent from './createComponentUniversal';
 
 import {
-  contentButton,
   contentButtonBlock,
   contentRecipe,
   contentSubTitleText,
@@ -14,6 +13,7 @@ import {
   lineBlock,
 } from 'nmtg-template-mailerlite-inner';
 
+import { button } from 'nmtg-template-mailerlite-typography';
 /* ******************** DATA START **************************************** */
 // Title
 const contentTitleTextParams = {
@@ -116,17 +116,18 @@ try {
   const images = createComponent(contentTableWithTwoRecipes, imagesAll);
 
   // Button
-  const contentButtonRes = createComponent(contentButton, contentButtonParams);
-  const button = createComponent(contentButtonBlock, contentButtonRes);
+  const contentButtonRes = createComponent(button, contentButtonParams);
+  const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
 
   // Line block
   const line = createComponent(lineBlock);
 
-  const allContentRes = `${title}${subTitle}${description}${images}${button}${line}`;
+  const allContentRes = `${title}${subTitle}${description}${images}${buttonRes}${line}`;
 
   result = createComponent(contentComponent, allContentRes);
 } catch (error) {
   console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
-export default result;
+
+export default 1; //result;
