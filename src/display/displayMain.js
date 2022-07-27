@@ -52,6 +52,9 @@ if (error == '') {
   const BodyComponentRes = createComponent(bodyComponent, bodyContentParams);
 
   result = `${displayHead}${BodyComponentRes}`;
+
+  console.log(result);
+
 } else {
   console.log(error);
 }
