@@ -1,4 +1,5 @@
 import imageAfterSupportComponent from '../components/imageAfterSupportComponent';
+
 import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */

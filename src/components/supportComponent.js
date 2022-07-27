@@ -57,8 +57,11 @@ const createSupportTextTop = (href, id, text) => {
   ${createSupportLink(href: "https://www.facebook.com/groups/nmtg.homecooks?utm_source=newsletter&utm_medium=email&utm_campaign=korean_barbecue_beef_pork_schnitzel_bahn_mi_meatball_skewers&utm_term=2022-07-27", id, text)}.`;
 };
 
-const createSupportMail = ("contact@motoretogo.com") => {
-  if (textMail == "contact@motoretogo.com") {
+// "contact@motoretogo.com"
+// TODO can be replaced with link component
+const createSupportMail = (textMail) => {
+  if (textMail == '') {
+
     createError('textMail');
   }
 
@@ -75,7 +78,7 @@ const createSupportTextBottom = (href, id, text, textMail) => {
   if (text == '') {
     createError('text textBottom');
   }
-
+  // TODO very strange line...
   return `"Please contact us via the "
   ${createSupportLink(href, id, text)} 
   " link at the bottom of each page on the site. Or, email us at "
@@ -123,13 +126,16 @@ const mainBlock = (params) => {
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
-                        ${createSupportTitle(bottomTitle)}<br>
+                        ${createSupportTitle(bottomTitle)}
+                        <br>
                         ${createSupportTextBottom(
                           bottomLinkHref,
                           bottomLinkId,
                           bottomLinkText,
                           bottomTextContact
-                        )}<br><strong><br></strong></p>
+                        )}
+                        <br><strong><br></strong>
+                        </p>
                         <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;"></p>
                       </td>
                     </tr>

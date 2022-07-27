@@ -1,27 +1,6 @@
-// Create tableWithTwoRecipes
+import { recipeComponent } from '../index';
 
-import recipe from './recipeComponent.js';
 
-// Error
-// const ERROR_TABLE_WITCH_TWO_RECIPES = `No ${variable} in table two recipes`;
-
-// Config file
-// import { pathToImages } from '../config.js';
-
-// Create path to image start
-// function createPathToImage(src) {
-//   return pathToImages + src;
-// }
-// Create path to image end
-
-// Component image start
-// const getImage = (id, href, src) => {
-//   return `<a href="${href}" data-link-id="${id}" target="_self">
-//   <img src="${createPathToImage(src)}"
-//   border="0" alt="" width="267" style="display: block;">
-// </a>`;
-// };
-// Component image end
 
 // Main table start
 const mainTableWitchTwoRecipes = (dataImageOne, dataImageTwo) => {

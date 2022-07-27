@@ -35,7 +35,7 @@ const textComponent = (text) => {
   }
 
   return `${text}`;
-  // original vercion example
+  // original version example
   // return `over Potato Poblano Hash<strong>&nbsp;<br></strong>and Broccolini `;
 };
 // Get text end
@@ -52,11 +52,11 @@ const imageComponent = (id, href, src) => {
     createError('src');
   }
 
+  const image = createPathToImage(src);
+
   return `<a href="${href}" data-link-id="${id}" target="_self">
   <img 
-    src="${createPathToImage(
-      src
-    )}" border="0" alt="" width="267" style="display: block;">
+    src="${image}" border="0" alt="" width="267" style="display: block;">
     </a>`;
 };
 // Get image end
@@ -91,7 +91,9 @@ const mainRecipe = (id, href, src, title, text) => {
 };
 // Main Recipe block end
 
-export default function (data) {
+const recipeComponent = (data) => {
   const { id, href, src, title, text } = data;
   return mainRecipe(id, href, src, title, text);
 }
+
+export default recipeComponent;

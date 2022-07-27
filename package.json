@@ -34,7 +34,7 @@
     "jest": "28.1.2",
     "markup-generator": "0.5.5",
     "prettier": "2.7.1",
-    "rollup": "2.77.0",
+    "rollup": "2.77.1",
     "rollup-plugin-includepaths": "0.2.4",
     "rollup-plugin-node-builtins": "2.1.2",
     "rollup-plugin-node-globals": "1.4.0",
@@ -57,9 +57,9 @@
     "@babel/runtime": "^7.18.3",
     "babel-preset-react-app": "^10.0.1",
     "email-template-object": "^0.2.0",
-    "nmtg-template-mailerlite-inner": "^0.5.0",
+    "nmtg-template-mailerlite-inner": "^0.7.0",
     "nmtg-template-mailerlite-miscellaneous": "^0.7.0",
-    "nmtg-template-mailerlite-outertemplate": "^0.5.0",
+    "nmtg-template-mailerlite-outertemplate": "^0.6.0",
     "nmtg-template-mailerlite-typography": "^0.2.0"
   }
 }
