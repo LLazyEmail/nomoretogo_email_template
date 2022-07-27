@@ -60,6 +60,6 @@
     "nmtg-template-mailerlite-inner": "^0.7.0",
     "nmtg-template-mailerlite-miscellaneous": "^0.7.0",
     "nmtg-template-mailerlite-outertemplate": "^0.6.0",
-    "nmtg-template-mailerlite-typography": "^0.2.0"
+    "nmtg-template-mailerlite-typography": "^0.3.0"
   }
 }
