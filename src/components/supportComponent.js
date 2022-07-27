@@ -54,11 +54,11 @@ const createSupportTextTop = (href, id, text) => {
   }
 
   return `Connect with other home cooks on our closed group for No More To-Go Members Only 
-  ${createSupportLink(href, id, text)}.`;
+  ${createSupportLink(href: "https://www.facebook.com/groups/nmtg.homecooks?utm_source=newsletter&utm_medium=email&utm_campaign=korean_barbecue_beef_pork_schnitzel_bahn_mi_meatball_skewers&utm_term=2022-07-27", id, text)}.`;
 };
 
-const createSupportMail = (textMail) => {
-  if (textMail == '') {
+const createSupportMail = ("contact@motoretogo.com") => {
+  if (textMail == "contact@motoretogo.com") {
     createError('textMail');
   }
 
