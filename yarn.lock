@@ -3574,20 +3574,20 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"nmtg-template-mailerlite-inner@^0.5.0":
-  "integrity" "sha512-NkB87spBR9eGqK6vNba4xDOg4AOaapmyz9KTV/MrT1RU2OPQEm2NrA2vUqrF2MzbNJaEml1MkGA7I+/UM/3S6Q=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-0.5.0.tgz"
-  "version" "0.5.0"
+"nmtg-template-mailerlite-inner@^0.6.0":
+  "integrity" "sha512-gn9ncw2qqGUsfJUB8j3f9oqDW0vpVMpoHMvBKos+eJQAFXuoRAxaQ+dNJW4AsYnt3XtwmahbIc3f6ri1+uHyIA=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-0.6.0.tgz"
+  "version" "0.6.0"
 
 "nmtg-template-mailerlite-miscellaneous@^0.7.0":
   "integrity" "sha512-s3edVosod11MpyYJy2hxVVQEroKZkcZeVnpYnVOztcTQ+Nujk3/FeQcYfTMMXOyMTTxXhIBflGkDTjBstmdl7w=="
   "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-miscellaneous/-/nmtg-template-mailerlite-miscellaneous-0.7.0.tgz"
   "version" "0.7.0"
 
-"nmtg-template-mailerlite-outertemplate@^0.5.0":
-  "integrity" "sha512-H+xyA1d3OiARWy1SqeaXm1N0sAFsqRsrQRTBe4A56olj1tWwC0ZL1qEc0G/WgvIlYjUCm5sC4zER0RImaIBC3A=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-0.5.0.tgz"
-  "version" "0.5.0"
+"nmtg-template-mailerlite-outertemplate@^0.6.0":
+  "integrity" "sha512-ho047mirEJ/3n9FtiXJT4XE/6+Fro2lWFDDjvMovwg94UDPEVjEqY5SVkJQgT3Q4gKmnhv59Yf0J0uS7znU5ug=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-0.6.0.tgz"
+  "version" "0.6.0"
 
 "nmtg-template-mailerlite-typography@^0.2.0":
   "integrity" "sha512-Nh+gshucsaOp7gwx6WBaPGjIkWpBXUq9hiqZPhPvCHJrqnB3b3XHlE+qvlu3EIwkEKCHBvCARn+NmM6qJYzFXQ=="
