@@ -1,4 +1,5 @@
 import instructionComponent from '../components/instructionComponent';
+
 import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */
