@@ -13,6 +13,7 @@ import style2 from './components/style2';
 //------------
 import footerComponent from './components/footerComponent';
 import headComponent from './components/headComponent';
+import bodyComponent from './components/bodyComponent';
 
 export {
   blobHead,
@@ -27,4 +28,5 @@ export {
   //--------
   footerComponent,
   headComponent,
+  bodyComponent
 };

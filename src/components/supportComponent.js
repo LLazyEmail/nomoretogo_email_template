@@ -57,6 +57,7 @@ const createSupportTextTop = (href, id, text) => {
   ${createSupportLink(href, id, text)}.`;
 };
 
+// TODO can be replaced with link component
 const createSupportMail = (textMail) => {
   if (textMail == '') {
     createError('textMail');
@@ -123,13 +124,16 @@ const mainBlock = (params) => {
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
-                        ${createSupportTitle(bottomTitle)}<br>
+                        ${createSupportTitle(bottomTitle)}
+                        <br>
                         ${createSupportTextBottom(
                           bottomLinkHref,
                           bottomLinkId,
                           bottomLinkText,
                           bottomTextContact
-                        )}<br><strong><br></strong></p>
+                        )}
+                        <br><strong><br></strong>
+                        </p>
                         <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;"></p>
                       </td>
                     </tr>
