@@ -1,4 +1,7 @@
-import bodyComponent from '../components/bodyComponent';
+// import bodyComponent from '../components/bodyComponent';
+
+import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
+
 import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */

@@ -13,6 +13,8 @@ import instructionText from './components/instructionText';
 
 import lineBlock from './components/lineBlock';
 
+import recipeComponent from './components/recipeComponent';
+
 export {
   topPanelViewInBrows,
   tableHeaderBlockLogo,
@@ -25,4 +27,5 @@ export {
   instructionTitle,
   instructionText,
   lineBlock,
+  recipeComponent,
 };

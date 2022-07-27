@@ -6,7 +6,7 @@ function createError(variable) {
 }
 // Checking for errors end
 
-const mainBlock = (bodyContent) => {
+const bodyComponent = (bodyContent) => {
   if (bodyContent == '') {
     createError('bodyContent');
   }
@@ -92,6 +92,4 @@ const mainBlock = (bodyContent) => {
   <div class="mallbery-caa" style="z-index: 2147483647 !important; text-transform: none !important; position: fixed;"></div></body>`;
 };
 
-export default function (bodyContent) {
-  return mainBlock(bodyContent);
-}
+export default bodyComponent;

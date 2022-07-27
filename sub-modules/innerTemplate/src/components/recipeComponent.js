@@ -21,9 +21,38 @@ const textComponent = (text) => {
   }
 
   return `${text}`;
+<<<<<<< HEAD:src/components/recipeComponent.js
 };
 // Get text end
 
+=======
+  // original version example
+  // return `over Potato Poblano Hash<strong>&nbsp;<br></strong>and Broccolini `;
+};
+// Get text end
+
+// Get image start
+const imageComponent = (id, href, src) => {
+  if (!id) {
+    createError('id');
+  }
+  if (!href) {
+    createError('href');
+  }
+  if (!src) {
+    createError('src');
+  }
+
+  const image = createPathToImage(src);
+
+  return `<a href="${href}" data-link-id="${id}" target="_self">
+  <img 
+    src="${image}" border="0" alt="" width="267" style="display: block;">
+    </a>`;
+};
+// Get image end
+
+>>>>>>> b397a16ebea6c3c4790519ee56320e7be6d679f4:sub-modules/innerTemplate/src/components/recipeComponent.js
 // Main Recipe block start
 const mainRecipe = (id, href, src, title, text) => {
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267" class="mlContentTable marginBottom" style="width: 267px; min-width: 267px;">
@@ -54,7 +83,9 @@ const mainRecipe = (id, href, src, title, text) => {
 };
 // Main Recipe block end
 
-export default function (data) {
+const recipeComponent = (data) => {
   const { id, href, src, title, text } = data;
   return mainRecipe(id, href, src, title, text);
 }
+
+export default recipeComponent;

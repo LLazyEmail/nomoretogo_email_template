@@ -49,13 +49,20 @@ const createSupportTextTop = (href, id, text) => {
   }
 
   return `Connect with other home cooks on our closed group for No More To-Go Members Only 
-  ${createSupportLink(href, id, text)}.`;
+  ${createSupportLink(href: "https://www.facebook.com/groups/nmtg.homecooks?utm_source=newsletter&utm_medium=email&utm_campaign=korean_barbecue_beef_pork_schnitzel_bahn_mi_meatball_skewers&utm_term=2022-07-27", id, text)}.`;
 };
 
+// "contact@motoretogo.com"
+// TODO can be replaced with link component
 const createSupportMail = (textMail) => {
-  if (textMail == '') {
-    error.add('textMail');
-  }
+//   if (textMail == '') {
+// <<<<<<< HEAD
+//     error.add('textMail');
+// =======
+
+//     createError('textMail');
+// >>>>>>> b397a16ebea6c3c4790519ee56320e7be6d679f4
+//   }
 
   return `<a href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">${textMail}.&nbsp;</a>`;
 };
@@ -70,7 +77,7 @@ const createSupportTextBottom = (href, id, text, textMail) => {
   if (text == '') {
     error.add('text textBottom');
   }
-
+  // TODO very strange line...
   return `"Please contact us via the "
   ${createSupportLink(href, id, text)} 
   " link at the bottom of each page on the site. Or, email us at "
@@ -118,13 +125,16 @@ const mainBlock = (params) => {
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
-                        ${createSupportTitle(bottomTitle)}<br>
+                        ${createSupportTitle(bottomTitle)}
+                        <br>
                         ${createSupportTextBottom(
                           bottomLinkHref,
                           bottomLinkId,
                           bottomLinkText,
                           bottomTextContact
-                        )}<br><strong><br></strong></p>
+                        )}
+                        <br><strong><br></strong>
+                        </p>
                         <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;"></p>
                       </td>
                     </tr>
