@@ -89,6 +89,6 @@ function searchForErrors(params) {
 const headComponent = (subComponent) => {
   searchForErrors(subComponent);
   return createHeadComponent(subComponent);
-}
+};
 
 export default headComponent;

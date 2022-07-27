@@ -28,5 +28,5 @@ export {
   //--------
   footerComponent,
   headComponent,
-  bodyComponent
+  bodyComponent,
 };
