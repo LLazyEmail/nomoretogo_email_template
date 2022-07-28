@@ -1,7 +1,7 @@
 // create tableHeaderBlockLogo
 
 // Config file
-// import { pathMainLogo } from "../../../config.js";
+// import { pathMainLogo } from '../config';
 import { pathMainLogo } from '../config';
 import Errors from './Errors';
 
