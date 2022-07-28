@@ -3,7 +3,7 @@
 // Error
 import Errors from './Errors';
 import { image } from 'nmtg-template-mailerlite-typography';
-const error = Errors('recipeComponent');
+const error = new Errors('recipeComponent');
 
 // Get title start
 const titleComponent = (title) => {
