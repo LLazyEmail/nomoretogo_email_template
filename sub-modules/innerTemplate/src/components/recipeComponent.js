@@ -24,27 +24,6 @@ const textComponent = (text) => {
 };
 // Get text end
 
-// Get image start
-const imageComponent = (id, href, src) => {
-  if (!id) {
-    createError('id');
-  }
-  if (!href) {
-    createError('href');
-  }
-  if (!src) {
-    createError('src');
-  }
-
-  const image = createPathToImage(src);
-
-  return `<a href="${href}" data-link-id="${id}" target="_self">
-  <img 
-    src="${image}" border="0" alt="" width="267" style="display: block;">
-    </a>`;
-};
-// Get image end
-
 // Main Recipe block start
 const mainRecipe = (id, href, src, title, text) => {
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267" class="mlContentTable marginBottom" style="width: 267px; min-width: 267px;">
