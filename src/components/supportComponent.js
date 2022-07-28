@@ -49,20 +49,19 @@ const createSupportTextTop = (href, id, text) => {
   }
 
   return `Connect with other home cooks on our closed group for No More To-Go Members Only 
-  ${createSupportLink(href: "https://www.facebook.com/groups/nmtg.homecooks?utm_source=newsletter&utm_medium=email&utm_campaign=korean_barbecue_beef_pork_schnitzel_bahn_mi_meatball_skewers&utm_term=2022-07-27", id, text)}.`;
+  ${createSupportLink(
+    {
+      href: 'https://www.facebook.com/groups/nmtg.homecooks?utm_source=newsletter&utm_medium=email&utm_campaign=korean_barbecue_beef_pork_schnitzel_bahn_mi_meatball_skewers&utm_term=2022-07-27',
+    },
+    id,
+    text
+  )}.`;
 };
 
-// "contact@motoretogo.com"
-// TODO can be replaced with link component
 const createSupportMail = (textMail) => {
-//   if (textMail == '') {
-// <<<<<<< HEAD
-//     error.add('textMail');
-// =======
-
-//     createError('textMail');
-// >>>>>>> b397a16ebea6c3c4790519ee56320e7be6d679f4
-//   }
+  if (textMail == '') {
+    error.add('textMail');
+  }
 
   return `<a href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">${textMail}.&nbsp;</a>`;
 };
