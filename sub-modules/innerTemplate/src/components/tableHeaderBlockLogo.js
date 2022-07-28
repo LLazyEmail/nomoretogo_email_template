@@ -3,6 +3,7 @@
 // Config file
 // import { pathMainLogo } from "../../../config.js";
 import { pathMainLogo } from '../config';
+import Errors from './Errors';
 
 // Block header/logotip start
 const tableHeaderBlockLogo = () => {
@@ -40,8 +41,9 @@ const tableHeaderBlockLogo = () => {
 // Block header/logotip end
 
 export default function () {
+  const error = new Errors('tableHeaderBlockLogo');
   if (pathMainLogo == '') {
-    throw new Error('No pathMainLogo tableHeaderBlockLogo');
+    error.add('No pathMainLogo tableHeaderBlockLogo');
   }
 
   return tableHeaderBlockLogo();
