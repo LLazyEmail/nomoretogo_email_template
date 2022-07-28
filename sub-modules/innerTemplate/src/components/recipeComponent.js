@@ -21,13 +21,6 @@ const textComponent = (text) => {
   }
 
   return `${text}`;
-<<<<<<< HEAD:src/components/recipeComponent.js
-};
-// Get text end
-
-=======
-  // original version example
-  // return `over Potato Poblano Hash<strong>&nbsp;<br></strong>and Broccolini `;
 };
 // Get text end
 
@@ -52,7 +45,6 @@ const imageComponent = (id, href, src) => {
 };
 // Get image end
 
->>>>>>> b397a16ebea6c3c4790519ee56320e7be6d679f4:sub-modules/innerTemplate/src/components/recipeComponent.js
 // Main Recipe block start
 const mainRecipe = (id, href, src, title, text) => {
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267" class="mlContentTable marginBottom" style="width: 267px; min-width: 267px;">
@@ -86,6 +78,6 @@ const mainRecipe = (id, href, src, title, text) => {
 const recipeComponent = (data) => {
   const { id, href, src, title, text } = data;
   return mainRecipe(id, href, src, title, text);
-}
+};
 
 export default recipeComponent;
