@@ -1,5 +1,5 @@
 // Content Recipe
-import Errors from './Errors';
+import Errors from '../components/Errors';
 
 // Config file
 import { pathToImages } from '../config';
@@ -27,6 +27,7 @@ const imageComponent = (id, href, src) => {
 };
 // Get image end
 
+// TODO can be replaced with strong component
 // Get title start
 const titleComponent = (title) => {
   return `<strong><span style="font-size: 16px;">${title}</span></strong>`;
