@@ -12,13 +12,21 @@ function createPathToImage(src) {
 }
 // Create path to image end
 
+const img2 = () => {
+
+}
+
+
 // Main image block start
-const mainBlock = (id, href, src) => {
+const mainBlock = (params) => {
+
+  const image = createPathToImage(src);
+
   return `<a href="${href}" data-link-id="${id}" target="_self">
-  <img 
-    src="${createPathToImage(
-      src
-    )}" border="0" alt="" width="267" style="display: block;">
+      <img 
+        src="${image}" 
+        border="0" alt="" 
+        width="267" style="display: block;">
     </a>`;
 };
 
