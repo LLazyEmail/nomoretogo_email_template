@@ -2,7 +2,7 @@ import topPanelViewInBrows from './components/topPanelViewInBrows';
 import tableHeaderBlockLogo from './components/tableHeaderBlockLogo';
 
 import contentButtonBlock from './components/contentButtonBlock';
-import contentRecipe from './components/contentRecipe';
+// import contentRecipe from './components/old_contentRecipe';
 import contentSubTitleText from './components/contentSubTitleText';
 import contentTableWithTwoRecipes from './components/contentTableWithTwoRecipes';
 import contentTextDescription from './components/contentTextDescription';
@@ -19,7 +19,7 @@ export {
   topPanelViewInBrows,
   tableHeaderBlockLogo,
   contentButtonBlock,
-  contentRecipe,
+  // contentRecipe,
   contentSubTitleText,
   contentTableWithTwoRecipes,
   contentTextDescription,

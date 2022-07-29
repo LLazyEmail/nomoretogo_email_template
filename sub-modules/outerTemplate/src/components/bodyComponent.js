@@ -1,14 +1,9 @@
-const BODY_COMPONENT_ERROR = (variable) => `Empty ${variable} in bodyComponent`;
-
-// Checking for errors start
-function createError(variable) {
-  throw new Error(BODY_COMPONENT_ERROR(variable));
-}
-// Checking for errors end
+import Errors from './Errors';
+const error = new Errors('bodyComponent');
 
 const bodyComponent = (bodyContent) => {
   if (bodyContent == '') {
-    createError('bodyContent');
+    error.add('bodyContent');
   }
 
   return `<body class="mlBodyBackground" style="padding: 0; margin: 0; -webkit-font-smoothing:antialiased; background-color:#f6f8f9; -webkit-text-size-adjust:none;" data-new-gr-c-s-check-loaded="14.1058.0" data-gr-ext-installed="">

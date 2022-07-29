@@ -1,6 +1,4 @@
-import { recipeComponent } from '../index';
-
-
+import { recipeComponent } from 'nmtg-template-mailerlite-inner';
 
 // Main table start
 const mainTableWitchTwoRecipes = (dataImageOne, dataImageTwo) => {
@@ -26,12 +24,12 @@ const mainTableWitchTwoRecipes = (dataImageOne, dataImageTwo) => {
                   <table role="presentation" cellpadding="0" border="0" align="center" width="100%">
                     <tbody><tr>
                       <td valign="top">
-                         ${recipe(dataImageOne)}
+                         ${recipeComponent(dataImageOne)}
                         <!--[if mso]>
                       </td>
                       <td valign="top">
                       <![endif]-->
-                        ${recipe(dataImageTwo)}
+                        ${recipeComponent(dataImageTwo)}
                       </td>
                     </tr>
                   </tbody></table>
