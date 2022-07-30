@@ -6,6 +6,7 @@ import { pathMainLogo } from '../config';
 import Errors from './Errors';
 
 // Block header/logotip start
+// TODO image can be updated
 const tableHeaderBlockLogo = () => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>

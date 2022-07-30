@@ -38,6 +38,7 @@ const createUnsubscribe = (href) => {
 
 // Create footerSosial start
 // TODO add linkComponent
+// TODO add image
 const createSocialPanel = function (socials) {
   return socials.map((social) => {
     if (social.href == '') {
@@ -46,7 +47,9 @@ const createSocialPanel = function (socials) {
     if (social.src == '') {
       error.add('No src');
     }
+    //-----------------
     const image = createPathToImage(social.src);
+
     return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">
         <a href="${social.href}" target="_self">
         <img width="24" alt="facebook" 
