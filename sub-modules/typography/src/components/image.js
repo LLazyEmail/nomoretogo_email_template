@@ -59,20 +59,20 @@ export {
   imgWrapper
 }
 
-export default function (params) {
-  const { id, href, src } = params;
+// export default function (params) {
+//   const { id, href, src } = params;
 
-  const error = Errors('image');
+//   const error = Errors('image');
 
-  if (id == '') {
-    error.add('No id');
-  }
-  if (href == '') {
-    error.add('No href');
-  }
-  if (src == '') {
-    error.add('No src');
-  }
+//   if (id == '') {
+//     error.add('No id');
+//   }
+//   if (href == '') {
+//     error.add('No href');
+//   }
+//   if (src == '') {
+//     error.add('No src');
+//   }
 
-  return mainBlock(id, href, src);
-}
+//   return mainBlock(id, href, src);
+// }
