@@ -26,6 +26,7 @@ const description = () => {
 };
 
 // Unsubscribe
+// TODO add linkComoponent
 const createUnsubscribe = (href) => {
   if (href == '') {
     error.add('No unsubscribe');
@@ -36,6 +37,7 @@ const createUnsubscribe = (href) => {
 };
 
 // Create footerSosial start
+// TODO add linkComponent
 const createSocialPanel = function (socials) {
   return socials.map((social) => {
     if (social.href == '') {

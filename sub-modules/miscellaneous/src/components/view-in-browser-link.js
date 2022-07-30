@@ -2,6 +2,7 @@
 import Errors from './Errors';
 
 // View in brows link start
+// TODO add linkComponent
 const viewInBrowsLink = (id, href) => {
   return `<a style="color: #111111;" href="${href}" data-link-id="${id}" target="_blank">View in browser</a>`;
 };
