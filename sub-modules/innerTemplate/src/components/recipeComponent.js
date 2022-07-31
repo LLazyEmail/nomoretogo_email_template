@@ -27,14 +27,8 @@ const textComponent = (text) => {
 
 // Main Recipe block start
 const mainRecipe = (id, href, src, title, text) => {
-<<<<<<< HEAD
-  const recipeImage = image(id, href, src);
-
-=======
-
   const recipeImage = imageComponent(id, href, src);
-  
->>>>>>> ef924faa6bd9e07289b5812adf0573b55601bf88
+
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267" 
   class="mlContentTable marginBottom" style="width: 267px; min-width: 267px;">
     <tbody><tr>
@@ -64,9 +58,9 @@ const mainRecipe = (id, href, src, title, text) => {
 };
 // Main Recipe block end
 
-export default (data) => {
+const recipeComponent = (data) => {
   const { id, href, src, title, text } = data;
   return mainRecipe(id, href, src, title, text);
-
-  return mainRecipe(id, href, src, title, text);
 };
+
+export default recipeComponent;
