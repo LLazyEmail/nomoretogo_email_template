@@ -4,13 +4,11 @@ import {
   printMain,
   printFooter,
   printBody,
-  writingFile
+  writingFile,
 } from '../src/methods';
 
 describe('writing components into files', () => {
-
   test('write head', () => {
-
     const string1 = printHead();
 
     // console.log(string);
@@ -20,7 +18,6 @@ describe('writing components into files', () => {
   });
 
   test('write content', () => {
-
     const string2 = printContent();
 
     // console.log(string);
@@ -30,7 +27,6 @@ describe('writing components into files', () => {
   });
 
   test('write main', () => {
-
     const string3 = printMain();
 
     // console.log(string);
@@ -40,7 +36,6 @@ describe('writing components into files', () => {
   });
 
   test('write head', () => {
-
     const string4 = printFooter();
     expect(printFooter()).toBeDefined();
 
@@ -48,7 +43,6 @@ describe('writing components into files', () => {
   });
 
   test('write body', () => {
-
     const string5 = printBody();
 
     // console.log(string);
@@ -56,6 +50,4 @@ describe('writing components into files', () => {
 
     writingFile(string5);
   });
-
-
 });

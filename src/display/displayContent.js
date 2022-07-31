@@ -2,12 +2,11 @@
 
 import contentComponent from '../components/contentComponent';
 
-
 import createComponent from './createComponentUniversal';
 
 import {
   contentButtonBlock,
-  contentRecipe,
+  recipeComponent,
   contentSubTitleText,
   contentTableWithTwoRecipes,
   contentTextDescription,
@@ -16,11 +15,12 @@ import {
 } from 'nmtg-template-mailerlite-inner';
 
 // import { button } from 'nmtg-template-mailerlite-typography';
+import {
+  buttonComponent,
+  buttonComponent2,
+} from 'nmtg-template-mailerlite-typography';
 
-import {     
-  buttonComponent
- } from 'nmtg-template-mailerlite-typography';
-
+//  buttonComponent2({id: '12', href: 'google.com'});
 
 /* ******************** DATA START **************************************** */
 // Title
@@ -42,58 +42,52 @@ const contentTextDescriptionParams = {
 // Recipe
 const contentRecipeParams = [
   {
-    id: "imageBlock-26",
-    href: "https://www.nomoretogo.com/weekly-menu/",
-    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe1.jpeg",
+    id: 'imageBlock-26',
+    href: 'https://www.nomoretogo.com/weekly-menu/',
+    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe1.jpeg',
     //------
-    title: "Chipotle Cream Skillet Chicken",
-    text: "over Rice and Snap Peas",
-
+    title: 'Chipotle Cream Skillet Chicken',
+    text: 'over Rice and Snap Peas',
   },
   {
-    id: "imageBlock-21",
-    href: "https://www.nomoretogo.com/weekly-menu/",
-    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe2.jpeg",
+    id: 'imageBlock-21',
+    href: 'https://www.nomoretogo.com/weekly-menu/',
+    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe2.jpeg',
     //------
-    title: "Pork Schnitzel",
-    text: "with German Spaetzle and Green Beans",
-
+    title: 'Pork Schnitzel',
+    text: 'with German Spaetzle and Green Beans',
   },
   {
-    id: "imageBlock-27",
-    href: "https://www.nomoretogo.com/weekly-menu/",
-    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe3.jpeg",
+    id: 'imageBlock-27',
+    href: 'https://www.nomoretogo.com/weekly-menu/',
+    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe3.jpeg',
     //------
-    title: "Bahn Mi Meatball Skewers",
+    title: 'Bahn Mi Meatball Skewers',
     text: 'yummy',
-
   },
   {
-    id: "imageBlock-15",
-    href: "https://www.nomoretogo.com/weekly-menu/",
-    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe4.jpeg",
+    id: 'imageBlock-15',
+    href: 'https://www.nomoretogo.com/weekly-menu/',
+    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe4.jpeg',
     //------
-    title: "Korean Barbecue Beef with Sesame Rice Noodles",
-    text: "and Spicy Pickled Cucumbers and Carrots",
-
+    title: 'Korean Barbecue Beef with Sesame Rice Noodles',
+    text: 'and Spicy Pickled Cucumbers and Carrots',
   },
   {
-    id: "imageBlock-14",
-    href: "https://www.nomoretogo.com/weekly-menu/",
-    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe5.jpeg",
+    id: 'imageBlock-14',
+    href: 'https://www.nomoretogo.com/weekly-menu/',
+    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe5.jpeg',
     //------
-    title: "Grilled Salmon with Chipotle Cream Sauce",
-    text: "over Potato Poblano Hash and Broccolini",
-
+    title: 'Grilled Salmon with Chipotle Cream Sauce',
+    text: 'over Potato Poblano Hash and Broccolini',
   },
   {
-    id: "imageBlock-20",
-    href: "https://www.nomoretogo.com/weekly-menu/",
-    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe6.jpeg",
+    id: 'imageBlock-20',
+    href: 'https://www.nomoretogo.com/weekly-menu/',
+    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe6.jpeg',
     //------
-    title: "Saucy Grilled Shrimp",
-    text: "and a Corn and Radish Salad with Avocado Dressing",
-
+    title: 'Saucy Grilled Shrimp',
+    text: 'and a Corn and Radish Salad with Avocado Dressing',
   },
 ];
 
@@ -111,37 +105,32 @@ var result = null;
 try {
   // contentTitleText
   const title = createComponent(contentTitleText, contentTitleTextParams);
-
   // contentSubTitleText
   const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
-
   // contentTextDescription
   const description = createComponent(
     contentTextDescription,
     contentTextDescriptionParams
   );
-
   // All Recipe
   var imagesAll = contentRecipeParams.map((params) => {
-    return createComponent(contentRecipe, params);
+    return createComponent(recipeComponent, params);
   });
-
   // All contentTableWitchTwoRecipe
   const images = createComponent(contentTableWithTwoRecipes, imagesAll);
-
   // Button
-  const contentButtonRes = createComponent(buttonComponent, contentButtonParams);
+  const contentButtonRes = createComponent(
+    buttonComponent,
+    contentButtonParams
+  );
   const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
-
   // Line block
   const line = createComponent(lineBlock);
-
   const allContentRes = `${title}${subTitle}${description}${images}${buttonRes}${line}`;
-
   result = createComponent(contentComponent, allContentRes);
 } catch (error) {
   console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
 
-export default 1; //result;
+export default result;
