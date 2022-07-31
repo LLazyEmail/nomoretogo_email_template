@@ -59,7 +59,7 @@ const mainBlock = (params) => {
   </tbody></table>`;
 };
 
-// we are throwing an error with the same constant 10 times.
+// TODO we are throwing an error with the same constant 10 times.
 function searchForErrors(params) {
   const error = new Errors('instructionComponent');
   var { title, text, title2, text2 } = params;

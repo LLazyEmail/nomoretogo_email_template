@@ -3614,10 +3614,10 @@
   "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-0.6.0.tgz"
   "version" "0.6.0"
 
-"nmtg-template-mailerlite-typography@^0.4.0":
-  "integrity" "sha512-LWnRIZC/S2WX8q6KV6BV4gWxNyoBRA9OtTgbeYn0G8Y+e8ctEatj8SQ+sjrJnvJe8DP7yLl32W7NHF0H90MTjg=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-0.4.0.tgz"
-  "version" "0.4.0"
+"nmtg-template-mailerlite-typography@^0.5.0":
+  "integrity" "sha512-3G5/xhOXYq6QjFt/TLLhmzYkXyrpQsHdJINVqOLGYy91L/yLrsVKmgELoZrmbHqDWe5SjtoX8pKiyAqc+zESGw=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-0.5.0.tgz"
+  "version" "0.5.0"
   dependencies:
     "create-html-element" "^4.0.1"
     "stringify-attributes" "^3.0.0"
