@@ -1,9 +1,10 @@
 import Factory from './factory';
-// import { catchErrorTraceOutput } from './../methods';
+import { catchErrorTraceOutput } from './../methods';
 
 function createComponent(component, params = '') {
   var error = '';
   var result = null;
+
   try {
     const factory = new Factory(component, params);
     result = factory.create();

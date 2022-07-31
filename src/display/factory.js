@@ -4,6 +4,7 @@ class Factory {
   result = null;
 
   constructor(component, params = '') {
+    // TODO add typeof for a function.
     this.component = component;
     this.params = params;
     this.assembleComponent();

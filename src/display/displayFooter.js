@@ -3,6 +3,13 @@ import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */
 
+import {     
+  buttonComponent2
+ } from 'nmtg-template-mailerlite-typography';
+
+//  buttonComponent2({id: '12', href: 'google.com'});
+
+
 // Footer params
 const socialsLinksParams = [{ 
     href: "https://www.facebook.com/nomoretogo/", 
