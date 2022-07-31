@@ -29,6 +29,7 @@ const createSupportLink = (href, id, text) => {
   </a>`;
 };
 
+// TODO it's definately a heading ... <h4>${createSupportTitle(topTitle)}<br></h4>
 const createSupportTitle = (title) => {
   if (title == '') {
     error.add('title');
@@ -78,7 +79,8 @@ const createSupportTextBottom = (href, id, text, textMail) => {
   if (text == '') {
     error.add('text textBottom');
   }
-  // TODO very strange line...
+  // TODO very strange line, it will be better to define 2 variables before 
+  // return statement and make this string a bit simplier.
   return `"Please contact us via the "
   ${createSupportLink(href, id, text)} 
   " link at the bottom of each page on the site. Or, email us at "
