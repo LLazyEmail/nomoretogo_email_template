@@ -1,7 +1,7 @@
 const linkComponent = (params) => {
-    const { href, content, styles, attributes } = params;
+    const { attributes, content } = params;
 
-    return `<a href="${href}" target="_blank" style="${styles}" ${attributes} >${content}</a>`;;
+    return `<a ${attributes} target="_blank">${content}</a>`;;
 }
 
 export default linkComponent;

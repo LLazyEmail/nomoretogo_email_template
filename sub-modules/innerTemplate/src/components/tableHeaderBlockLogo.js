@@ -20,7 +20,12 @@ const tableHeaderBlockLogo = () => {
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
                       <td align="center">
+
+
                         <img src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;">
+
+
+                        
                       </td>
                     </tr>
                   </tbody></table>

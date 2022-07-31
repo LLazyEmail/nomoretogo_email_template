@@ -7,6 +7,7 @@ import Errors from './Errors';
 // import stringifyAttributes from 'stringify-attributes';
 
 const buttonComponent2 = (params) => {
+<<<<<<< HEAD
   // const attributes = {
   //   class: `mlContentButton`,
   //   href: params.href,
@@ -18,6 +19,24 @@ const buttonComponent2 = (params) => {
   //     href: params.href,
   //     content: params.text,
 };
+=======
+
+  const attributes = {
+    class: `mlContentButton`,
+    href: params.href,
+    "data-link-id": params.id,
+    style: `font-family: "Poppins", sans-serif; background-color: #d6685e; border-radius: 3px; color: #ffffff; display: inline-block; font-size: 17px; font-weight: 400; line-height: 23px; padding: 15px 0 15px 0; text-align: center; text-decoration: none; width: 260px;`,
+  }
+
+  const attributesStr  = stringifyAttributes(attributes);
+  
+  console.log(attributesStr);
+
+  return linkComponent({ content: params.text, attributes });
+
+}
+
+>>>>>>> ef924faa6bd9e07289b5812adf0573b55601bf88
 
 // we will probably loose id param during changes that Arthur is doing.
 const mainBlock = (id, href, text) => {

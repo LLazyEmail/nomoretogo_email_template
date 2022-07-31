@@ -8,16 +8,18 @@ import paragraphComponent from './components/paragraph';
 import linkComponent from './components/link';
 
 import {
-    createImage,
+    imageComponent,
     imgWrapper
 } from './components/image';
 
 export { 
     buttonComponent, 
     buttonComponent2,
-    heading,  strong, subheading,
+    heading,  
+    strong, 
+    subheading,
     //------
-    createImage,
+    imageComponent,
     imgWrapper,
     paragraphComponent,
     linkComponent
