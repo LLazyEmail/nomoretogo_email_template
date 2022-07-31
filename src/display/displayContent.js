@@ -104,33 +104,31 @@ const contentButtonParams = {
 var result = null;
 try {
   // contentTitleText
-  // const title = createComponent(contentTitleText, contentTitleTextParams);
+  const title = createComponent(contentTitleText, contentTitleTextParams);
   // contentSubTitleText
-  // const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
+  const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
   // contentTextDescription
-  // const description = createComponent(
-  //   contentTextDescription,
-  //   contentTextDescriptionParams
-  // );
+  const description = createComponent(
+    contentTextDescription,
+    contentTextDescriptionParams
+  );
   // All Recipe
-  // var imagesAll = contentRecipeParams.map((params) => {
-  //   return createComponent(recipeComponent, params);
-  // });
+  var imagesAll = contentRecipeParams.map((params) => {
+    return createComponent(recipeComponent, params);
+  });
   // All contentTableWitchTwoRecipe
-  // const images = createComponent(contentTableWithTwoRecipes, imagesAll);
+  const images = createComponent(contentTableWithTwoRecipes, imagesAll);
   // Button
-  // const contentButtonRes = createComponent(
-  //   buttonComponent,
-  //   contentButtonParams
-  // );
-  // const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
+  const contentButtonRes = createComponent(
+    buttonComponent,
+    contentButtonParams
+  );
+  const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
   // Line block
-  // const line = createComponent(lineBlock);
-  // const allContentRes = `${title}${subTitle}${description}${images}${buttonRes}${line}`;
-  // result = createComponent(contentComponent, allContentRes);
-  console.log(99999);
+  const line = createComponent(lineBlock);
+  const allContentRes = `${title}${subTitle}${description}${images}${buttonRes}${line}`;
+  result = createComponent(contentComponent, allContentRes);
 } catch (error) {
-  console.log(846461616165);
   console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */

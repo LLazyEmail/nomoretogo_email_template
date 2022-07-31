@@ -1,12 +1,12 @@
-// import { printFooter } from '../src/methods';
+import { printFooter } from '../src/methods';
 
-// describe('writing components into files', () => {
-//   test('write content', () => {
-//     const string2 = printFooter();
+describe('writing components into files', () => {
+  test('write content', () => {
+    const string2 = printFooter();
 
-//     // console.log(string);
-//     //   expect(printContent()).toBeDefined();
+    // console.log(string);
+    //   expect(printContent()).toBeDefined();
 
-//     //   writingFile(string2);
-//   });
-// });
+    //   writingFile(string2);
+  });
+});
