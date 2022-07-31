@@ -12,7 +12,10 @@ import {
     imgWrapper
 } from './components/image';
 
-export { buttonComponent, heading,  strong, subheading,
+export { 
+    buttonComponent, 
+    buttonComponent2,
+    heading,  strong, subheading,
     //------
     createImage,
     imgWrapper,
