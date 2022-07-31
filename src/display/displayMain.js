@@ -52,7 +52,7 @@ if (error == '') {
 
   result = `${displayHead}${BodyComponentRes}`;
 
-  console.log(result);
+  // console.log(result);
 
 } else {
   const mesError = `Error in component: "displayMain",  error message: "${error}"`;
