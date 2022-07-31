@@ -2,6 +2,7 @@
 import Errors from './Errors';
 import { strong } from 'nmtg-template-mailerlite-typography';
 
+// TODO move to inner-template/paragraphs
 const createTitle = (title) => {
   return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
   ${strong(title)}</p>`;

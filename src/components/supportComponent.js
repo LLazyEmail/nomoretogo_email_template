@@ -1,5 +1,4 @@
 // Create support component
-
 import { mailingAddress } from '../config';
 import { strong } from 'nmtg-template-mailerlite-typography';
 import Errors from './Errors';
@@ -8,6 +7,7 @@ import lineBlock from './lineBlock';
 
 const error = new Errors('supportComponent');
 
+// TODO import linkComponent
 const createSupportLink = (href, id, text) => {
   if (href == '') {
     error.add('href');
@@ -47,6 +47,8 @@ const createSupportTextTop = (href, id, text) => {
   if (text == '') {
     error.add('text textTop');
   }
+
+
 
   return `Connect with other home cooks on our closed group for No More To-Go Members Only 
   ${createSupportLink(
@@ -96,6 +98,8 @@ const mainBlock = (params) => {
     bottomLinkText,
     bottomTextContact,
   } = params;
+
+  
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">

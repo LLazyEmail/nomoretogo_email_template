@@ -15,7 +15,17 @@ import {
   lineBlock,
 } from 'nmtg-template-mailerlite-inner';
 
-import { button } from 'nmtg-template-mailerlite-typography';
+// import { button } from 'nmtg-template-mailerlite-typography';
+
+import {     
+  buttonComponent, 
+  buttonComponent2
+ } from 'nmtg-template-mailerlite-typography';
+
+
+//  buttonComponent2({id: '12', href: 'google.com'});
+
+
 /* ******************** DATA START **************************************** */
 // Title
 const contentTitleTextParams = {
@@ -124,7 +134,7 @@ try {
   const images = createComponent(contentTableWithTwoRecipes, imagesAll);
 
   // Button
-  const contentButtonRes = createComponent(button, contentButtonParams);
+  const contentButtonRes = createComponent(buttonComponent, contentButtonParams);
   const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
 
   // Line block

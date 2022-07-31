@@ -2,6 +2,7 @@ import { recipeComponent } from 'nmtg-template-mailerlite-inner';
 
 // Main table start
 const mainTableWitchTwoRecipes = (dataImageOne, dataImageTwo) => {
+  
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
