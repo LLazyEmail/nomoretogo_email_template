@@ -6,7 +6,6 @@ import BodyComponentString from '../src/display/displayBodyComponent';
 // import tempTest from '../src/display/displayTempTest';
 import MainString from '../src/display/displayMain';
 
-
 // console.log(HeadString)
 
 const catchErrorTraceOutput = (error) => {
@@ -18,7 +17,6 @@ const catchErrorTraceOutput = (error) => {
 
   throw error;
 };
-
 
 const printHead = () => {
   return HeadString;
@@ -63,5 +61,5 @@ export {
   printFooter,
   printBody,
   writingFile,
-  catchErrorTraceOutput
+  catchErrorTraceOutput,
 };

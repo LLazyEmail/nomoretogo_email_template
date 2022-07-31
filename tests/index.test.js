@@ -1,12 +1,12 @@
-import MainString from '../src/display/displayMain';
-import BodyComponentString from '../src/display/displayBodyComponent';
-import HeadString from '../src/display/displayHead';
-import ContentMainTableWrapString from '../src/display/displayContentMainTableWrap';
-import contentString from '../src/display/displayContent';
-import instructionString from '../src/display/displayInstruction';
-import SupportContactString from '../src/display/displaySupportContact';
-import ImageAfterSupporComponentString from '../src/display/displayImageAfterSupportComponent';
-import FooterString from '../src/display/displayFooter';
+// import MainString from '../src/display/displayMain';
+// import BodyComponentString from '../src/display/displayBodyComponent';
+// import HeadString from '../src/display/displayHead';
+// import ContentMainTableWrapString from '../src/display/displayContentMainTableWrap';
+// import contentString from '../src/display/displayContent';
+// import instructionString from '../src/display/displayInstruction';
+// import SupportContactString from '../src/display/displaySupportContact';
+// import ImageAfterSupporComponentString from '../src/display/displayImageAfterSupportComponent';
+// import FooterString from '../src/display/displayFooter';
 ///////////////////////////////////////////////////////////
 
 import tempTest from '../src/display/displayTempTest';
