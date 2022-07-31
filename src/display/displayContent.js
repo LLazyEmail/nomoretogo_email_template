@@ -15,8 +15,6 @@ import {
 } from 'nmtg-template-mailerlite-inner';
 
 // import { button } from 'nmtg-template-mailerlite-typography';
-
-<<<<<<< HEAD
 import {
   buttonComponent,
   buttonComponent2,
@@ -24,13 +22,6 @@ import {
 
 //  buttonComponent2({id: '12', href: 'google.com'});
 
-=======
-import {     
-  buttonComponent
- } from 'nmtg-template-mailerlite-typography';
-
-
->>>>>>> a674897c4d24dd8a0f412d3062f5c078610f6dcb
 /* ******************** DATA START **************************************** */
 // Title
 const contentTitleTextParams = {
