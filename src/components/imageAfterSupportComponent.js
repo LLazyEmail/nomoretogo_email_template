@@ -4,6 +4,7 @@ import lineBlock from './lineBlock';
 
 import Errors from '../Errors';
 
+// TODO add imageComponent
 const createImage = (src) => {
   return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
 };
