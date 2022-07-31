@@ -19,9 +19,7 @@ const buttonComponent2 = (params) => {
   
   console.log(attributesStr);
 
-//     href: params.href,
-//     content: params.text,
-
+  return linkComponent({ content: params.text, attributes });
 
 }
 
