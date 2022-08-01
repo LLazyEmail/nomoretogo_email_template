@@ -1,6 +1,8 @@
 import Factory from './factory';
 import { catchErrorTraceOutput } from './../methods';
 
+console.log('createComponentUniversal');
+
 function createComponent(component, params = '') {
   var error = '';
   var result = null;
@@ -12,7 +14,6 @@ function createComponent(component, params = '') {
     error = e.message;
 
     // catchErrorTraceOutput(e);
-    
   }
 
   if (error != '') {

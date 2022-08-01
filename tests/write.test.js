@@ -7,7 +7,6 @@ import {
   writingFile,
 } from '../src/methods';
 
-console.log(123456789);
 describe('writing components into files', () => {
   test('write head', () => {
     const string1 = printHead();
