@@ -2630,7 +2630,7 @@ fs@^0.0.1-security:
 
 fsevents@*, fsevents@^2.3.2, fsevents@~2.3.2:
   version "2.3.2"
-  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
 function-bind@^1.1.1:
@@ -3603,10 +3603,10 @@ makeerror@1.0.12:
   dependencies:
     tmpl "1.0.5"
 
-markup-generator@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.npmjs.org/markup-generator/-/markup-generator-0.6.0.tgz"
-  integrity sha512-WURiagLtIhbsgtPc5C2a2CIhPYRshLEtBRbu36hxZCdE/NTqhAGoR7JprAy4y6Sfup/FjdcKoqt+F2Uk2hMYng==
+markup-generator@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/markup-generator/-/markup-generator-1.0.0.tgz#482acd99ca28414ac4e89803ff06162e354d7055"
+  integrity sha512-yXVS3rk98Fq7p6iVpaHS791V/UGkXjt5KJZcQ29ComN+vaqdzs/btljP6yEK0tcTwcisVhp2CHlA4SC3QHsGmg==
   dependencies:
     fs "^0.0.1-security"
     lodash "^4.17.21"

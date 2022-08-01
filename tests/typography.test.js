@@ -7,6 +7,6 @@ describe('writing components into files', () => {
     // console.log(string);
     //   expect(printContent()).toBeDefined();
 
-    //   writingFile(string2);
+    //   writingFile(string2, 'nmtg');
   });
 });
