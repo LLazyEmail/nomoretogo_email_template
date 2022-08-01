@@ -1,5 +1,5 @@
 import Factory from './factory';
-import { catchErrorTraceOutput } from './../methods';
+// import { catchErrorTraceOutput } from './../methods';
 
 function createComponent(component, params = '') {
   var error = '';
@@ -12,7 +12,6 @@ function createComponent(component, params = '') {
     error = e.message;
 
     // catchErrorTraceOutput(e);
-    
   }
 
   if (error != '') {

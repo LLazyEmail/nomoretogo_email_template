@@ -24,9 +24,9 @@ describe('test fullComponent', () => {
   // test('rendering ContentMainTableWrap Component', () => {
   //   console.log(ContentMainTableWrapString);
   // });
-  // test('rendering Content Component', () => {
-  //   console.log(contentString);
-  // });
+  test('rendering Content Component', () => {
+    console.log(contentString);
+  });
   // test('rendering Instruction Component', () => {
   //   console.log(instructionString);
   // });
