@@ -1,55 +1,55 @@
-import {
-  printHead,
-  printContent,
-  printMain,
-  printFooter,
-  printBody,
-  
-} from '../src/methods';
+// import {
+//   printHead,
+//   printContent,
+//   printMain,
+//   printFooter,
+//   printBody,
 
-import { writingFile } from 'markup-generator';
+// } from '../src/methods';
 
-describe('writing components into files', () => {
-  test('write head', () => {
-    const string1 = printHead();
+// import { writingFile } from 'markup-generator';
 
-    // console.log(string);
-    expect(string1).toBeDefined();
+// describe('writing components into files', () => {
+//   test('write head', () => {
+//     const string1 = printHead();
 
-    writingFile(string1, 'nmtg');
-  });
+//     // console.log(string);
+//     expect(string1).toBeDefined();
 
-  test('write content', () => {
-    const string2 = printContent();
+//     writingFile(string1, 'nmtg');
+//   });
 
-    // console.log(string);
-    expect(printContent()).toBeDefined();
+//   test('write content', () => {
+//     const string2 = printContent();
 
-    writingFile(string2, 'nmtg');
-  });
+//     // console.log(string);
+//     expect(printContent()).toBeDefined();
 
-  test('write main', () => {
-    const string3 = printMain();
+//     writingFile(string2, 'nmtg');
+//   });
 
-    // console.log(string);
-    expect(printMain()).toBeDefined();
+//   test('write main', () => {
+//     const string3 = printMain();
 
-    writingFile(string3, 'nmtg');
-  });
+//     // console.log(string);
+//     expect(printMain()).toBeDefined();
 
-  test('write head', () => {
-    const string4 = printFooter();
-    expect(printFooter()).toBeDefined();
+//     writingFile(string3, 'nmtg');
+//   });
 
-    writingFile(string4, 'nmtg');
-  });
+//   test('write head', () => {
+//     const string4 = printFooter();
+//     expect(printFooter()).toBeDefined();
 
-  test('write body', () => {
-    const string5 = printBody();
+//     writingFile(string4, 'nmtg');
+//   });
 
-    // console.log(string);
-    expect(printBody()).toBeDefined();
+//   test('write body', () => {
+//     const string5 = printBody();
 
-    writingFile(string5, 'nmtg');
-  });
-});
+//     // console.log(string);
+//     expect(printBody()).toBeDefined();
+
+//     writingFile(string5, 'nmtg');
+//   });
+// });
