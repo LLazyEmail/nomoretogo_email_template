@@ -29,7 +29,7 @@ const textComponent = (text) => {
 const mainRecipe = (id, href, src, title, text) => {
   const recipeImage = imageComponent(id, href, src);
 
-  return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267" 
+  return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267"
   class="mlContentTable marginBottom" style="width: 267px; min-width: 267px;">
     <tbody><tr>
       <td id="imageBlock-14" align="center">
