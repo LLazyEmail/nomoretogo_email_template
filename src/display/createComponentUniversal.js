@@ -5,6 +5,17 @@ function createComponent(component, params = '') {
   var error = '';
   var result = null;
 
+  if (component == undefined) {
+    throw new Error(
+      'Error, component - "createComponentUniversal" , massage - "component undefined" '
+    );
+  }
+  if (component == '') {
+    throw new Error(
+      'Error, component - "createComponentUniversal" , massage - "component empty" '
+    );
+  }
+
   try {
     const factory = new Factory(component, params);
     result = factory.create();

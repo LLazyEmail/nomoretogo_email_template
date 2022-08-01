@@ -101,36 +101,36 @@ const contentButtonParams = {
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
-var result = null;
-try {
-  // contentTitleText
-  const title = createComponent(contentTitleText, contentTitleTextParams);
-  // contentSubTitleText
-  const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
-  // contentTextDescription
-  const description = createComponent(
-    contentTextDescription,
-    contentTextDescriptionParams
-  );
-  // All Recipe
-  var imagesAll = contentRecipeParams.map((params) => {
-    return createComponent(recipeComponent, params);
-  });
-  // All contentTableWitchTwoRecipe
-  const images = createComponent(contentTableWithTwoRecipes, imagesAll);
-  // Button
-  const contentButtonRes = createComponent(
-    buttonComponent,
-    contentButtonParams
-  );
-  const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
-  // Line block
-  const line = createComponent(lineBlock);
-  const allContentRes = `${title}${subTitle}${description}${images}${buttonRes}${line}`;
-  result = createComponent(contentComponent, allContentRes);
-} catch (error) {
-  console.log(error.message);
-}
+// var result = null;
+// try {
+//   // contentTitleText
+//   const title = createComponent(contentTitleText, contentTitleTextParams);
+//   // contentSubTitleText
+//   const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
+//   // contentTextDescription
+//   const description = createComponent(
+//     contentTextDescription,
+//     contentTextDescriptionParams
+//   );
+//   // All Recipe
+//   var imagesAll = contentRecipeParams.map((params) => {
+//     return createComponent(recipeComponent, params);
+//   });
+//   // All contentTableWitchTwoRecipe
+//   const images = createComponent(contentTableWithTwoRecipes, imagesAll);
+//   // Button
+//   const contentButtonRes = createComponent(
+//     buttonComponent,
+//     contentButtonParams
+//   );
+//   const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
+//   // Line block
+//   const line = createComponent(lineBlock);
+//   const allContentRes = `${title}${subTitle}${description}${images}${buttonRes}${line}`;
+//   result = createComponent(contentComponent, allContentRes);
+// } catch (error) {
+//   console.log(error.message);
+// }
 /* ******************** CREATE CONTENT END ****************************** */
 
-export default result;
+export default 123; // result;
