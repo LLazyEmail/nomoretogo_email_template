@@ -4,8 +4,10 @@ import {
   printMain,
   printFooter,
   printBody,
-  writingFile,
+  
 } from '../src/methods';
+
+import { writingFile } from 'markup-generator';
 
 describe('writing components into files', () => {
   test('write head', () => {
@@ -14,7 +16,7 @@ describe('writing components into files', () => {
     // console.log(string);
     expect(string1).toBeDefined();
 
-    writingFile(string1);
+    writingFile(string1, 'nmtg');
   });
 
   test('write content', () => {
@@ -23,7 +25,7 @@ describe('writing components into files', () => {
     // console.log(string);
     expect(printContent()).toBeDefined();
 
-    writingFile(string2);
+    writingFile(string2, 'nmtg');
   });
 
   test('write main', () => {
@@ -32,14 +34,14 @@ describe('writing components into files', () => {
     // console.log(string);
     expect(printMain()).toBeDefined();
 
-    writingFile(string3);
+    writingFile(string3, 'nmtg');
   });
 
   test('write head', () => {
     const string4 = printFooter();
     expect(printFooter()).toBeDefined();
 
-    writingFile(string4);
+    writingFile(string4, 'nmtg');
   });
 
   test('write body', () => {
@@ -48,6 +50,6 @@ describe('writing components into files', () => {
     // console.log(string);
     expect(printBody()).toBeDefined();
 
-    writingFile(string5);
+    writingFile(string5, 'nmtg');
   });
 });
