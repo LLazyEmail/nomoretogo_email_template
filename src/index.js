@@ -8,7 +8,7 @@ import instructionComponent from './components/instructionComponent';
 import lineBlock from './components/lineBlock';
 
 import supportComponent from './components/supportComponent';
-import tableWithTwoRecipes from './components/tableWithTwoRecipes';
+// import tableWithTwoRecipes from './components/tableWithTwoRecipes';
 
 export {
   bodyComponent,
@@ -19,5 +19,5 @@ export {
   lineBlock,
   recipeComponent,
   supportComponent,
-  tableWithTwoRecipes,
+  // tableWithTwoRecipes,
 };
