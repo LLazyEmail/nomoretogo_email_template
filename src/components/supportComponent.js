@@ -1,6 +1,6 @@
 // Create support component
 import { mailingAddress } from '../config';
-import { strong } from 'nmtg-template-mailerlite-typography';
+import { strong, linkComponent } from 'nmtg-template-mailerlite-typography';
 import Errors from './Errors';
 
 import lineBlock from './lineBlock';
