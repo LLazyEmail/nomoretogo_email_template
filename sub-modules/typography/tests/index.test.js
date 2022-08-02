@@ -1,4 +1,4 @@
-import { buttonComponent2 } from "../src/components/button";
+import buttonComponent2  from "../src/components/button2";
 
 describe('testing complex links', () => {
 
