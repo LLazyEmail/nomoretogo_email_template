@@ -24,15 +24,15 @@ describe('test fullComponent', () => {
   // test('rendering ContentMainTableWrap Component', () => {
   //   console.log(ContentMainTableWrapString);
   // });
-  // test('rendering Content Component', () => {
-  //   console.log(contentString);
-  // });
+  test('rendering Content Component', () => {
+    console.log(contentString);
+  });
   // test('rendering Instruction Component', () => {
   //   console.log(instructionString);
   // });
-  test('rendering SupportContact Component', () => {
-    console.log(SupportContactString);
-  });
+  // test('rendering SupportContact Component', () => {
+  //   console.log(SupportContactString);
+  // });
   // test('rendering ImageAfterSupporComponent Component', () => {
   //   console.log(ImageAfterSupporComponentString);
   // });
@@ -44,4 +44,3 @@ describe('test fullComponent', () => {
   //   console.log(tempTest);
   // });
 });
-

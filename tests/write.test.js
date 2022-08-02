@@ -4,7 +4,6 @@ import {
   printMain,
   printFooter,
   printBody,
-  
 } from '../src/methods';
 
 import { writingFile } from 'markup-generator';
