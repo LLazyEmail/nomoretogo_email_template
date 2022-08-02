@@ -18,7 +18,7 @@ import {
   // buttonComponent2,
 } from 'nmtg-template-mailerlite-typography';
 
-
+import contentRecipeParams from './recipesData';
 //  buttonComponent2({id: '12', href: 'google.com'});
 
 /* ******************** DATA START **************************************** */
@@ -38,63 +38,13 @@ const contentTextDescriptionParams = {
   textBottom: '123',
 };
 
-// Recipe
-const contentRecipeParams = [
-  {
-    id: 'imageBlock-26',
-    href: 'https://www.nomoretogo.com/weekly-menu/',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe1.jpeg',
-    //------
-    title: 'Chipotle Cream Skillet Chicken',
-    text: 'over Rice and Snap Peas',
-  },
-  {
-    id: 'imageBlock-21',
-    href: 'https://www.nomoretogo.com/weekly-menu/',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe2.jpeg',
-    //------
-    title: 'Pork Schnitzel',
-    text: 'with German Spaetzle and Green Beans',
-  },
-  {
-    id: 'imageBlock-27',
-    href: 'https://www.nomoretogo.com/weekly-menu/',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe3.jpeg',
-    //------
-    title: 'Bahn Mi Meatball Skewers',
-    text: 'yummy',
-  },
-  {
-    id: 'imageBlock-15',
-    href: 'https://www.nomoretogo.com/weekly-menu/',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe4.jpeg',
-    //------
-    title: 'Korean Barbecue Beef with Sesame Rice Noodles',
-    text: 'and Spicy Pickled Cucumbers and Carrots',
-  },
-  {
-    id: 'imageBlock-14',
-    href: 'https://www.nomoretogo.com/weekly-menu/',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe5.jpeg',
-    //------
-    title: 'Grilled Salmon with Chipotle Cream Sauce',
-    text: 'over Potato Poblano Hash and Broccolini',
-  },
-  {
-    id: 'imageBlock-20',
-    href: 'https://www.nomoretogo.com/weekly-menu/',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe6.jpeg',
-    //------
-    title: 'Saucy Grilled Shrimp',
-    text: 'and a Corn and Radish Salad with Avocado Dressing',
-  },
-];
+//-------------------
 
 // Button
-// https://www.nomoretogo.com/weekly-menu/
+// 
 const contentButtonParams = {
-  id: '123',
-  href: '123',
+  id: '04-22-2021',
+  href: 'https://www.nomoretogo.com/weekly-menu/',
   text: '123',
 };
 /* ******************** DATA END **************************************** */
@@ -102,7 +52,7 @@ const contentButtonParams = {
 /* ******************** CREATE CONTENT START ****************************** */
 
 
-// const sectionOne = () => {
+// const contentSectionOne = () => {
 
 //   // contentTitleText
 //   const title = createComponent(contentTitleText, contentTitleTextParams);
@@ -118,7 +68,7 @@ const contentButtonParams = {
 
 // }
 
-// const sectionTwo = () => {
+// const contentSsectionTwo = () => {
  
 //   // All Recipe
 //   var imagesAll = contentRecipeParams.map((params) => {
@@ -144,30 +94,6 @@ const contentButtonParams = {
 // try {
 
 
-//   // contentTitleText
-//   const title = createComponent(contentTitleText, contentTitleTextParams);
-//   // contentSubTitleText
-//   const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
-//   // contentTextDescription
-//   const description = createComponent(
-//     contentTextDescription,
-//     contentTextDescriptionParams
-//   );
-
-
-//   // All Recipe
-//   var imagesAll = contentRecipeParams.map((params) => {
-//     return createComponent(recipeComponent, params);
-//   });
-//   // All contentTableWitchTwoRecipe
-//   const images = createComponent(contentTableWithTwoRecipes, imagesAll);
-//   // Button
-//   const contentButtonRes = createComponent(
-//     buttonComponent,
-//     contentButtonParams
-//   );
-//   const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
-
 
 
 //   // Line block
@@ -175,7 +101,7 @@ const contentButtonParams = {
 
 
 
-//   const allContentRes = sectionOne() + sectionTwo() + line;
+//   const allContentRes = contentSectionOne() + contentSectionTwo() + line;
 //   result = createComponent(contentComponent, allContentRes);
 
 // } catch (error) {

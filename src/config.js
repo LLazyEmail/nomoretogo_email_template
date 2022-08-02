@@ -10,6 +10,10 @@ const pathSocialIcons = '../data/images/';
 const titleHead =
   'Korean Barbecue Beef | Pork Schnitzel | Bahn Mi Meatball Skewers';
 
+//-----------------------
+
+
+
 export {
   contact,
   mailingAddress,
