@@ -2,7 +2,7 @@
 
 // Error
 import Errors from './Errors';
-import { imageComponent } from 'nmtg-template-mailerlite-typography';
+import { imageComponent, strong } from 'nmtg-template-mailerlite-typography';
 const error = new Errors('recipeComponent');
 
 // TODO add strong component from typography

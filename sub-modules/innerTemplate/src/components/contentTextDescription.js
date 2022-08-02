@@ -38,8 +38,9 @@ const mainBlock = (textTop, textBottom) => {
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-                        <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
+                        <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
                           ${textTop}
+                        </p>  
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"><br>

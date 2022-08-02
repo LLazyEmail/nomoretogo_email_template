@@ -1,5 +1,3 @@
-// import contentComponent from '../components/contentComponent';
-
 import contentComponent from '../components/contentComponent';
 
 import createComponent from './createComponentUniversal';
@@ -19,6 +17,7 @@ import {
   buttonComponent,
   // buttonComponent2,
 } from 'nmtg-template-mailerlite-typography';
+
 
 //  buttonComponent2({id: '12', href: 'google.com'});
 
@@ -101,8 +100,10 @@ const contentButtonParams = {
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
-// var result = null;
-// try {
+
+
+// const sectionOne = () => {
+
 //   // contentTitleText
 //   const title = createComponent(contentTitleText, contentTitleTextParams);
 //   // contentSubTitleText
@@ -112,6 +113,13 @@ const contentButtonParams = {
 //     contentTextDescription,
 //     contentTextDescriptionParams
 //   );
+  
+// return title + subTitle + description
+
+// }
+
+// const sectionTwo = () => {
+ 
 //   // All Recipe
 //   var imagesAll = contentRecipeParams.map((params) => {
 //     return createComponent(recipeComponent, params);
@@ -124,12 +132,54 @@ const contentButtonParams = {
 //     contentButtonParams
 //   );
 //   const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
+
+// return images + contentButtonRes
+
+// }
+
+
+
+
+// var result = null;
+// try {
+
+
+//   // contentTitleText
+//   const title = createComponent(contentTitleText, contentTitleTextParams);
+//   // contentSubTitleText
+//   const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
+//   // contentTextDescription
+//   const description = createComponent(
+//     contentTextDescription,
+//     contentTextDescriptionParams
+//   );
+
+
+//   // All Recipe
+//   var imagesAll = contentRecipeParams.map((params) => {
+//     return createComponent(recipeComponent, params);
+//   });
+//   // All contentTableWitchTwoRecipe
+//   const images = createComponent(contentTableWithTwoRecipes, imagesAll);
+//   // Button
+//   const contentButtonRes = createComponent(
+//     buttonComponent,
+//     contentButtonParams
+//   );
+//   const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
+
+
+
 //   // Line block
 //   const line = createComponent(lineBlock);
-//   const allContentRes = `${title}${subTitle}${description}${images}${buttonRes}${line}`;
+
+
+
+//   const allContentRes = sectionOne() + sectionTwo() + line;
 //   result = createComponent(contentComponent, allContentRes);
+
 // } catch (error) {
-//   console.log(error.message);
+//   console.log(error.message)a;
 // }
 /* ******************** CREATE CONTENT END ****************************** */
 

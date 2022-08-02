@@ -10,6 +10,9 @@ export default function (content) {
   return `${content}`;
 }
 
+
+
+
 //////////////////// OLD one big component ///////////////////////////////////////////
 // import tableWithTwoRecipes from './tableWithTwoRecipes.js';
 // import button from './buttonInContentComponent.js';
