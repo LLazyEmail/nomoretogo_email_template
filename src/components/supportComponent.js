@@ -69,6 +69,19 @@ const createSupportMail = (textMail) => {
   return `<a href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">${textMail}.&nbsp;</a>`;
 };
 
+
+{/* <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
+${createSupportTitle(bottomTitle)}
+<br>
+${createSupportTextBottom(
+  bottomLinkHref,
+  bottomLinkId,
+  bottomLinkText,
+  bottomTextContact
+)}
+<br><strong><br></strong>
+</p> */}
+
 const createSupportTextBottom = (href, id, text, textMail) => {
   if (href == '') {
     error.add('href textBottom');
