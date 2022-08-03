@@ -76,11 +76,11 @@ export default function (params) {
     }
     return res;
   }
-  const chanks = countImageInRows(params, 2);
+  const chunks = countImageInRows(params, 2);
   // split array into two elements end
 
   // create image rows start
-  return chanks.reduce((res, element) => {
+  return chunks.reduce((res, element) => {
     var image = element[0];
     var image2 = element[1];
     return res + mainBlock(image, image2);

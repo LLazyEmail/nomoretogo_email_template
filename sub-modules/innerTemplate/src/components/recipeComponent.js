@@ -5,13 +5,28 @@ import Errors from './Errors';
 import { imageComponent, strong } from 'nmtg-template-mailerlite-typography';
 const error = new Errors('recipeComponent');
 
-// TODO add strong component from typography
+
+const recipeName = (params) => {
+
+  const { title, subtitle } = params;
+
+  return `<p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"><strong></strong>
+      ${titleComponent(title)}
+      <br>
+      ${textComponent(subtitle)}
+      </p>`;
+
+}
+
 // Get title start
 const titleComponent = (title) => {
   if (title == '') {
     error.add('title');
   }
-  return `<strong><span style="font-size: 16px;">${title}</span></strong>`;
+
+  const string = `<span style="font-size: 16px;">${title}</span>`;
+
+  return strong(string);
 };
 // Get title end
 
@@ -29,6 +44,9 @@ const textComponent = (text) => {
 const mainRecipe = (id, href, src, title, text) => {
   const recipeImage = imageComponent(id, href, src);
 
+  const titleLine = recipeName({title, subtitle:text});
+
+
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267" 
   class="mlContentTable marginBottom" style="width: 267px; min-width: 267px;">
     <tbody><tr>
@@ -44,11 +62,9 @@ const mainRecipe = (id, href, src, title, text) => {
           </tr>
           <tr>
             <td align="left" class="bodyTitle" id="bodyText-14" style="font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 150%; color: #6f6f6f;">
-              <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"><strong></strong>
-              ${titleComponent(title)}
-              <br>
-              ${textComponent(text)}
-              </p>
+
+              ${titleLine}
+
             </td>
           </tr>
         </tbody></table>
