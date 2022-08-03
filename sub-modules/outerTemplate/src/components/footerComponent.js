@@ -73,7 +73,7 @@ const createSocialPanel = function (socials) {
 // Create footerSosial end
 
 // Create foot content start
-const footerComponent = ({params}) => {
+const footerComponent = (params) => {
 
   const { socialLinks, amazonFreshBlock } = params;
 

@@ -3619,10 +3619,10 @@
   dependencies:
     "tmpl" "1.0.5"
 
-"markup-generator@1.2.0":
-  "integrity" "sha512-ECnuQw9CQYQ0IhcL8ut1csjCHmt1hGK2m3QfGWEiRXiIoJ8vd1gRGpCG0n+4/0161lpvlh4iJzvRzWjcoMUwnQ=="
-  "resolved" "https://registry.npmjs.org/markup-generator/-/markup-generator-1.2.0.tgz"
-  "version" "1.2.0"
+"markup-generator@^1.3.0":
+  "integrity" "sha512-HcVt3kHajW2FgZjRefxhlBcU7Mmq9nlXeOSXtcGKBKWsPZiKGw44fUIF7AkwW9myYad5F+l8BwHJdIMHA2V4nA=="
+  "resolved" "https://registry.npmjs.org/markup-generator/-/markup-generator-1.3.0.tgz"
+  "version" "1.3.0"
   dependencies:
     "fs" "^0.0.1-security"
     "lodash" "^4.17.21"
@@ -3712,10 +3712,10 @@
   "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-miscellaneous/-/nmtg-template-mailerlite-miscellaneous-0.7.0.tgz"
   "version" "0.7.0"
 
-"nmtg-template-mailerlite-outertemplate@^1.0.0":
-  "integrity" "sha512-IqxW71GFxHX1NApYq7hhKCKxQ7ttZouykn114oYzR3S2A+sucLc5JUxrqUNDYJCc6+sUH/yka7JR/kX8/KO4WQ=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-1.0.0.tgz"
-  "version" "1.0.0"
+"nmtg-template-mailerlite-outertemplate@^1.1.0":
+  "integrity" "sha512-vm3raruVOyYAD5n/YAsRqumQKjb3IlLkPwEqzJ/XamNysQGmdxoxANRZ2mtXddFqFa23NkQdZlu8X+wYO6O/8w=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
     "nmtg-template-mailerlite-typography" "^1.0.0"
 
