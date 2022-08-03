@@ -18,7 +18,7 @@ import bodyComponent from './components/bodyComponent';
 
 import emptyBlock from './components/emptyBlock';
 import supportComponent from './components/supportComponent';
-import imageAfterSupportComponent from './components/imageAfterSupportComponent';
+import amazonFreshBlock from './components/amazonFreshBlock';
 
 export {
   blobHead,
@@ -36,5 +36,6 @@ export {
   bodyComponent,
   //------
   emptyBlock,
-  supportComponent
+  supportComponent,
+  amazonFreshBlock
 };

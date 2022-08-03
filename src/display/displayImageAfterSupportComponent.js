@@ -1,4 +1,4 @@
-import { imageAfterSupportComponent } from 'nmtg-template-mailerlite-outertemplate';
+import { amazonFreshBlock } from 'nmtg-template-mailerlite-outertemplate';
 
 import createComponent from './createComponentUniversal';
 
@@ -13,7 +13,7 @@ var result = null;
 try {
   // contentTitleText
   const imageBlock = createComponent(
-    imageAfterSupportComponent,
+    amazonFreshBlock,
     imagePath
   );
 
