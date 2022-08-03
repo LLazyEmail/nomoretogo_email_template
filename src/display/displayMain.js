@@ -1,17 +1,24 @@
 // Create Main display
 import createComponent from './createComponentUniversal';
+
 import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
 
 import displayHead from '../display/displayHead';
 import displayContentMainTableWrap from '../display/displayContentMainTableWrap';
 import displayContent from '../display/displayContent';
+
+import mainComponent from '../components/mainComponent';
+
+//----------
 import displayInstruction from '../display/displayInstruction';
 import displaySupportContact from '../display/displaySupportContact';
+
+
 
 import displayFooter from '../display/displayFooter';
 
 /* ******************** DATA START **************************************** */
-var result = null;
+var MainHTMLTemplate = null;
 var error = '';
 
 if (displayHead == null) {
@@ -48,7 +55,14 @@ if (error == '') {
 
   const BodyComponentRes = createComponent(bodyComponent, bodyContentParams);
 
-  result = `${displayHead}${BodyComponentRes}`;
+  const cfg = {
+    head: displayHead,
+    body: BodyComponentRes
+  };
+
+  MainHTMLTemplate = createComponent(mainComponent, cfg)
+
+  // result = `${displayHead}${BodyComponentRes}`;
 
   // console.log(result);
 
@@ -57,4 +71,4 @@ if (error == '') {
   console.log(mesError);
 }
 /* ******************** CREATE CONTENT END ****************************** */
-export default result;
+export default MainHTMLTemplate;
