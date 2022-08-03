@@ -7,7 +7,7 @@ import displayContentMainTableWrap from '../display/displayContentMainTableWrap'
 import displayContent from '../display/displayContent';
 import displayInstruction from '../display/displayInstruction';
 import displaySupportContact from '../display/displaySupportContact';
-import displayImageAfterSupportComponent from '../display/displayImageAfterSupportComponent';
+import displayImageAfterSupportComponent from './displayAmazonFresh';
 import displayFooter from '../display/displayFooter';
 
 /* ******************** DATA START **************************************** */

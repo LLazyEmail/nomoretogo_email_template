@@ -1,9 +1,13 @@
 // Create view-in-brows component
 import Errors from './Errors';
 
+import { linkComponent } from 'nmtg-template-mailerlite-typography';
+
 // View in brows link start
 // TODO add linkComponent
 const viewInBrowsLink = (id, href) => {
+
+  //-------------------
   return `<a style="color: #111111;" href="${href}" data-link-id="${id}" target="_blank">View in browser</a>`;
 };
 // View in brows link end

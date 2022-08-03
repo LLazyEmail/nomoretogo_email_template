@@ -6,10 +6,10 @@ import {
   contentButtonBlock,
   recipeComponent,
   contentSubTitleText,
-  contentTableWithTwoRecipes,
+  recipeRowBlock,
   contentTextDescription,
   contentTitleText,
-  lineBlock,
+  emptyBlock,
 } from 'nmtg-template-mailerlite-inner';
 
 // import { button } from 'nmtg-template-mailerlite-typography';
@@ -75,7 +75,7 @@ const contentButtonParams = {
 //     return createComponent(recipeComponent, params);
 //   });
 //   // All contentTableWitchTwoRecipe
-//   const images = createComponent(contentTableWithTwoRecipes, imagesAll);
+//   const images = createComponent(recipeRowBlock, imagesAll);
 //   // Button
 //   const contentButtonRes = createComponent(
 //     buttonComponent,
@@ -97,7 +97,7 @@ const contentButtonParams = {
 
 
 //   // Line block
-//   const line = createComponent(lineBlock);
+//   const line = createComponent(emptyBlock);
 
 
 

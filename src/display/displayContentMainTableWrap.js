@@ -1,4 +1,6 @@
 import createComponent from './createComponentUniversal';
+
+//---------------
 import contentMainTableWrap from '../components/contentMainTableWrap';
 
 
@@ -12,8 +14,8 @@ import {
 /* ******************** DATA START **************************************** */
 // View in brows link
 const viewInBrowserLinkParams = {
-  id: '123',
-  href: '123',
+  id: 'view-id',
+  href: 'https://preview.mailerlite.com/r0n8w0g0n6/1934358861754405982/l8n5/',
 };
 
 var contentMainTableWrapParams = {

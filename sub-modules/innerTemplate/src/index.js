@@ -4,7 +4,7 @@ import tableHeaderBlockLogo from './components/tableHeaderBlockLogo';
 import contentButtonBlock from './components/contentButtonBlock';
 // import contentRecipe from './components/old_contentRecipe';
 import contentSubTitleText from './components/contentSubTitleText';
-import contentTableWithTwoRecipes from './components/contentTableWithTwoRecipes';
+// import contentTableWithTwoRecipes from './components/contentTableWithTwoRecipes';
 import contentTextDescription from './components/contentTextDescription';
 import contentTitleText from './components/contentTitleText';
 
@@ -23,7 +23,7 @@ export {
   contentButtonBlock,
   // contentRecipe,
   contentSubTitleText,
-  contentTableWithTwoRecipes,
+  // contentTableWithTwoRecipes,
   contentTextDescription,
   contentTitleText,
   instructionTitle,

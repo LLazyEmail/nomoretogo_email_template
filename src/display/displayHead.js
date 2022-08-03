@@ -26,7 +26,7 @@ const HeadParams = {
   style: style(),
   style2: style2(),
   // variable:value,
-  title: 'text title', //TODO update it later
+  title: 'Korean Barbecue Beef | Pork Schnitzel | Bahn Mi Meatball Skewers', //TODO move to config
 };
 
 /* ******************** DATA END **************************************** */
