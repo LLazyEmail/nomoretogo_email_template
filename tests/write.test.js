@@ -18,25 +18,25 @@ describe('writing components into files', () => {
     writingFile(string1, 'nmtg');
   });
 
-  test('write content', () => {
-    const string2 = printContent();
-
-    // console.log(string);
-    
-
-    writingFile(string2, 'nmtg');
-
-    expect(printContent()).toBeDefined();
-  });
-
-  // test('write main', () => {
-  //   const string3 = printMain();
+  // test('write content', () => {
+  //   const string2 = printContent();
 
   //   // console.log(string);
-  //   expect(printMain()).toBeDefined();
+    
 
-  //   writingFile(string3, 'nmtg');
+  //   writingFile(string2, 'nmtg');
+
+  //   expect(printContent()).toBeDefined();
   // });
+
+  test('write main', () => {
+    const string3 = printMain();
+
+    // console.log(string);
+    expect(printMain()).toBeDefined();
+
+    writingFile(string3, 'nmtg');
+  });
 
   // test('write head', () => {
   //   const string4 = printFooter();
