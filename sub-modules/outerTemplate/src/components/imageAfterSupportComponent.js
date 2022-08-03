@@ -1,12 +1,12 @@
-// Create afterSupport component
-
-import { emptyBlock } from 'nmtg-template-mailerlite-outertemplate';
-
-import { imageComponent } from 'nmtg-template-mailerlite-typography';
-
 // this is amazonFreshImage
 
-import Errors from '../Errors';
+
+// Create afterSupport component
+
+import { imageComponent } from 'nmtg-template-mailerlite-typography';
+import { emptyBlock } from '../index';
+
+import Errors from './Errors';
 
 // TODO add imageComponent
 const createImage = (src) => {

@@ -1,10 +1,10 @@
-import imageAfterSupportComponent from '../components/imageAfterSupportComponent';
+import { imageAfterSupportComponent } from 'nmtg-template-mailerlite-outertemplate';
 
 import createComponent from './createComponentUniversal';
 
 /* ******************** DATA START **************************************** */
-// Title image after support
-const imageAfterSupportComponentParams = '123';
+// TODO can be moved into config later
+const imagePath = 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/amazon.png';
 
 /* ******************** DATA END **************************************** */
 
@@ -12,12 +12,12 @@ const imageAfterSupportComponentParams = '123';
 var result = null;
 try {
   // contentTitleText
-  const imageAfterSupportComponentRes = createComponent(
+  const imageBlock = createComponent(
     imageAfterSupportComponent,
-    imageAfterSupportComponentParams
+    imagePath
   );
 
-  result = imageAfterSupportComponentRes;
+  result = imageBlock;
 } catch (error) {
   console.log(error.message);
 }

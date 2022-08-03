@@ -1,9 +1,12 @@
 import Factory from './factory';
 
-import supportContact from '../components/__supportComponent';
+
+import { supportContact } from 'nmtg-template-mailerlite-outertemplate';
 
 var error = '';
 var result = null;
+
+
 try {
   var params = {
     topTitle: '123',

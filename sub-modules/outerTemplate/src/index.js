@@ -18,6 +18,7 @@ import bodyComponent from './components/bodyComponent';
 
 import emptyBlock from './components/emptyBlock';
 import supportComponent from './components/supportComponent';
+import imageAfterSupportComponent from './components/imageAfterSupportComponent';
 
 export {
   blobHead,
@@ -34,6 +35,6 @@ export {
   headComponent,
   bodyComponent,
   //------
-  lineBlock,
+  emptyBlock,
   supportComponent
 };
