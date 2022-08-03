@@ -1,8 +1,11 @@
 // Create support component
 import { mailingAddress } from '../config';
-import { strong, linkComponent, separatorComponent } from 'nmtg-template-mailerlite-typography';
+import {
+  strong,
+  linkComponent,
+  separatorComponent,
+} from 'nmtg-template-mailerlite-typography';
 import Errors from './Errors';
-
 
 const error = new Errors('supportComponent');
 
@@ -18,14 +21,20 @@ const createSupportLink = (href, id, text) => {
     error.add('text');
   }
 
-  return `<a
-    href="${href}"
-    data-link-id="${id}"
-    target="_blank"
-    style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;"
-  >
-    ${text}
-  </a>`;
+  const params = {
+    attributes: `href="${href}" data-link-id="${id}"`,
+    content: text,
+  };
+  return linkComponent(params);
+
+  // return `<a
+  //   href="${href}"
+  //   data-link-id="${id}"
+  //   target="_blank"
+  //   style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;"
+  // >
+  //   ${text}
+  // </a>`;
 };
 
 // TODO it's definately a heading ... <h4>${createSupportTitle(topTitle)}<br></h4>
@@ -34,7 +43,7 @@ const createSupportTitle = (title) => {
     error.add('title');
   }
 
-  return strong(title);
+  return `<h4>${strong(title)}<br></h4>`;
 };
 
 const createSupportTextTop = (href, id, text) => {
@@ -47,8 +56,6 @@ const createSupportTextTop = (href, id, text) => {
   if (text == '') {
     error.add('text textTop');
   }
-
-
 
   return `Connect with other home cooks on our closed group for No More To-Go Members Only 
   ${createSupportLink(
@@ -68,8 +75,8 @@ const createSupportMail = (textMail) => {
   return `<a href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">${textMail}.&nbsp;</a>`;
 };
 
-
-{/* <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
+{
+  /* <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
 ${createSupportTitle(bottomTitle)}
 <br>
 ${createSupportTextBottom(
@@ -79,7 +86,8 @@ ${createSupportTextBottom(
   bottomTextContact
 )}
 <br><strong><br></strong>
-</p> */}
+</p> */
+}
 
 const createSupportTextBottom = (href, id, text, textMail) => {
   if (href == '') {
@@ -91,12 +99,14 @@ const createSupportTextBottom = (href, id, text, textMail) => {
   if (text == '') {
     error.add('text textBottom');
   }
-  // TODO very strange line, it will be better to define 2 variables before 
+  // TODO very strange line, it will be better to define 2 variables before
   // return statement and make this string a bit simplier.
+  const supportLink = createSupportLink(href, id, text);
+  const supportMail = createSupportMail(textMail);
   return `"Please contact us via the "
-  ${createSupportLink(href, id, text)} 
+  ${supportLink} 
   " link at the bottom of each page on the site. Or, email us at "
-  ${createSupportMail(textMail)}`;
+  ${supportMail}`;
 };
 
 const mainBlock = (params) => {
@@ -113,7 +123,6 @@ const mainBlock = (params) => {
     bottomTextContact,
   } = params;
 
-  
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -131,7 +140,7 @@ const mainBlock = (params) => {
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
                       <td class="bodyTitle" id="bodyText-36" style="font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 150%; color: #6f6f6f;">
-                        <h4>${createSupportTitle(topTitle)}<br></h4>
+                        ${createSupportTitle(topTitle)}
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
                         ${createSupportTextTop(
                           topLinkHref,
