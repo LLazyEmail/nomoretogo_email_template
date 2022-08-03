@@ -5,9 +5,18 @@
 import { pathMainLogo } from '../config';
 import Errors from './Errors';
 
+import { imageComponent } from 'nmtg-template-mailerlite-typography';
+
+const imageParams = {
+  src: pathMainLogo,
+  width: 560,
+};
+const imageLogo = imageComponent(imageParams);
+
 // Block header/logotip start
 // TODO image can be updated
 const tableHeaderBlockLogo = () => {
+  // <img src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"></img>
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -22,8 +31,8 @@ const tableHeaderBlockLogo = () => {
                       <td align="center">
 
 
-                        <img src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;">
-
+                        
+                        ${imageLogo}
 
                         
                       </td>
