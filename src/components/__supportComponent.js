@@ -3,7 +3,7 @@ import { mailingAddress } from '../config';
 import { strong, linkComponent } from 'nmtg-template-mailerlite-typography';
 import Errors from './Errors';
 
-import lineBlock from './lineBlock';
+import lineBlock from './__lineBlock';
 
 const error = new Errors('supportComponent');
 

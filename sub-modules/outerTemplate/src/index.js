@@ -14,6 +14,10 @@ import style2 from './components/style2';
 import footerComponent from './components/footerComponent';
 import headComponent from './components/headComponent';
 import bodyComponent from './components/bodyComponent';
+//------------
+
+import emptyBlock from './components/emptyBlock';
+import supportComponent from './components/supportComponent';
 
 export {
   blobHead,
@@ -29,4 +33,7 @@ export {
   footerComponent,
   headComponent,
   bodyComponent,
+  //------
+  lineBlock,
+  supportComponent
 };

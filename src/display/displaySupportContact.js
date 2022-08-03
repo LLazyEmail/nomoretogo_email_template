@@ -1,6 +1,6 @@
 import Factory from './factory';
 
-import supportContact from '../components/supportComponent';
+import supportContact from '../components/__supportComponent';
 
 var error = '';
 var result = null;

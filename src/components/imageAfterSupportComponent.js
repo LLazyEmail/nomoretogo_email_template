@@ -1,6 +1,6 @@
 // Create afterSupport component
 
-import lineBlock from './lineBlock';
+import lineBlock from './__lineBlock';
 
 import Errors from '../Errors';
 
