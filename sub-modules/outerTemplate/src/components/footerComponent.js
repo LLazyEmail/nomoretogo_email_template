@@ -1,8 +1,9 @@
 // Create footer component
+import { 
+  paragraphComponent, linkComponent, separatorComponent 
+} from 'nmtg-template-mailerlite-typography'; 
 
-import { paragraphComponent, linkComponent } from 'nmtg-template-mailerlite-typography'; 
-
-import { amazonFreshBlock } from '../index';
+// import { emptyBlock } from '../index';
 
 import Errors from './Errors';
 const error = new Errors('footerComponent');
@@ -72,14 +73,17 @@ const createSocialPanel = function (socials) {
 // Create footerSosial end
 
 // Create foot content start
-const footerComponent = (socialLinks) => {
+const footerComponent = ({params}) => {
 
-  // const {} = params;
+  const { socialLinks, amazonFreshBlock } = params;
 
   // amazonFreshBlock
 
 
-  return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
+
+
+  return amazonFreshBlock + separatorComponent() + 
+  `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableFooterCardTd">
       <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mlContentTable ml-default" style="width: 640px; min-width: 640px;" width="640">

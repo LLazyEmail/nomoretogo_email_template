@@ -48,8 +48,7 @@ const mainBlock = (src) => {
       </tbody></table>
     </td>
   </tr>
-</tbody></table> 
-${emptyBlock()}`;
+</tbody></table>`;
 };
 
 export default function (src) {
