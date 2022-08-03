@@ -5,3 +5,4 @@ rollup.config.js
 .eslintric
 .gitignore
 .eslintrc.js
+jest.config.js

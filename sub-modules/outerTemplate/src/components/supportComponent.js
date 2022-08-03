@@ -1,9 +1,8 @@
 // Create support component
 import { mailingAddress } from '../config';
-import { strong, linkComponent } from 'nmtg-template-mailerlite-typography';
+import { strong, linkComponent, separatorComponent } from 'nmtg-template-mailerlite-typography';
 import Errors from './Errors';
 
-import emptyBlock from './emptyBlock';
 
 const error = new Errors('supportComponent');
 
@@ -171,7 +170,7 @@ const mainBlock = (params) => {
     </td>
   </tr>
 </tbody></table>
-${emptyBlock()}`;
+${separatorComponent()}`;
 };
 
 export default function (data) {

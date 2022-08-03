@@ -6,3 +6,4 @@ rollup.config.js
 .gitignore
 tests
 .eslintrc.js
+jest.config.js

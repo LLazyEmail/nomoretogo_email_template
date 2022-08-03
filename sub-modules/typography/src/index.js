@@ -8,6 +8,8 @@ import subheading from './components/subheading';
 import paragraphComponent from './components/paragraph';
 import linkComponent from './components/link';
 
+import separatorComponent from './components/separator';
+
 import {
     imageComponent,
     imgWrapper
@@ -23,5 +25,6 @@ export {
     imageComponent,
     imgWrapper,
     paragraphComponent,
-    linkComponent
+    linkComponent,
+    separatorComponent
 };

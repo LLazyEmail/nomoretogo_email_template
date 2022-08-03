@@ -16,7 +16,6 @@ import headComponent from './components/headComponent';
 import bodyComponent from './components/bodyComponent';
 //------------
 
-import emptyBlock from './components/emptyBlock';
 import supportComponent from './components/supportComponent';
 import amazonFreshBlock from './components/amazonFreshBlock';
 
@@ -34,8 +33,7 @@ export {
   footerComponent,
   headComponent,
   bodyComponent,
-  //------
-  emptyBlock,
+  //------  
   supportComponent,
   amazonFreshBlock
 };
