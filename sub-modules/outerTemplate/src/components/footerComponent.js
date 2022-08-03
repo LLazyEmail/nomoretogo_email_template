@@ -1,5 +1,9 @@
 // Create footer component
 
+import { paragraphComponent, linkComponent } from 'nmtg-template-mailerlite-typography'; 
+
+import { amazonFreshBlock } from '../index';
+
 import Errors from './Errors';
 const error = new Errors('footerComponent');
 
@@ -16,12 +20,15 @@ function createPathToImage(src) {
 const title = 'No More To-Go';
 
 // Address
+// TODO add paragraph component
 const address = () => {
+  // return paragraphComponent('Dallas,&nbsp;Texas United States')
   return `<p style="margin-top: 0px; margin-bottom: 0px;">Dallas,&nbsp;Texas United States</p>`;
 };
 
 // Description
 const description = () => {
+  // return paragraphComponent('You received this email because you signed up on our website or made a purchase from us.')
   return `<p style="margin-top: 0px; margin-bottom: 0px;">You received this email because you signed up on our website or made a purchase from us.</p>`;
 };
 
@@ -31,6 +38,9 @@ const createUnsubscribe = (href) => {
   if (href == '') {
     error.add('No unsubscribe');
   }
+
+  //-------------------------
+
   return `<a href="${href}" style="color: #111111; text-decoration: underline;">
     <span style="color: #111111;">Unsubscribe</span>
     </a>`;
@@ -63,6 +73,12 @@ const createSocialPanel = function (socials) {
 
 // Create foot content start
 const footerComponent = (socialLinks) => {
+
+  // const {} = params;
+
+  // amazonFreshBlock
+
+
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableFooterCardTd">
