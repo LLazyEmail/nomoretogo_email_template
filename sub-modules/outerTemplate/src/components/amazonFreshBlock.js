@@ -5,7 +5,13 @@ import Errors from './Errors';
 
 // TODO add imageComponent
 const createImage = (src) => {
-  return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
+  const imgParams = {
+    src,
+    width: 200,
+  };
+
+  return imageComponent(imgParams);
+  // return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
 };
 
 const mainBlock = (src) => {
