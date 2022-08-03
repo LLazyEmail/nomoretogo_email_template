@@ -3700,25 +3700,35 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"nmtg-template-mailerlite-inner@^0.9.0":
-  "integrity" "sha512-3Fn8NNPN0sg3aiUX2kk14QOB5vB4smJqtb6xZ2Ez6+G7oe3qjdIj8kLQKfVXXQ51enlyjfmAbJIbk7dK1ahaOQ=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-0.9.0.tgz"
-  "version" "0.9.0"
+"nmtg-template-mailerlite-inner@^0.10.0":
+  "integrity" "sha512-PWRCPf40IRGH7H+++WrFgWUKv8kWotjf/An6D1PlZcUJjinwxjbC74bWS7XF34bErvzjUIRCn/scIgTOzUCmyg=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-0.10.0.tgz"
+  "version" "0.10.0"
+  dependencies:
+    "nmtg-template-mailerlite-typography" "^0.5.0"
 
 "nmtg-template-mailerlite-miscellaneous@^0.7.0":
   "integrity" "sha512-s3edVosod11MpyYJy2hxVVQEroKZkcZeVnpYnVOztcTQ+Nujk3/FeQcYfTMMXOyMTTxXhIBflGkDTjBstmdl7w=="
   "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-miscellaneous/-/nmtg-template-mailerlite-miscellaneous-0.7.0.tgz"
   "version" "0.7.0"
 
-"nmtg-template-mailerlite-outertemplate@^0.6.0":
-  "integrity" "sha512-ho047mirEJ/3n9FtiXJT4XE/6+Fro2lWFDDjvMovwg94UDPEVjEqY5SVkJQgT3Q4gKmnhv59Yf0J0uS7znU5ug=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-0.6.0.tgz"
-  "version" "0.6.0"
+"nmtg-template-mailerlite-outertemplate@^0.7.0":
+  "integrity" "sha512-rr5RG2m2K4dR49uGndU450fLUW7+dS/6H2Vf3wYzdjUOiBWh/bBntObp1xt3ZEZjDv8X+hOvofYifwfNI4c+gw=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-0.7.0.tgz"
+  "version" "0.7.0"
 
 "nmtg-template-mailerlite-typography@^0.5.0":
   "integrity" "sha512-3G5/xhOXYq6QjFt/TLLhmzYkXyrpQsHdJINVqOLGYy91L/yLrsVKmgELoZrmbHqDWe5SjtoX8pKiyAqc+zESGw=="
   "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-0.5.0.tgz"
   "version" "0.5.0"
+  dependencies:
+    "create-html-element" "^4.0.1"
+    "stringify-attributes" "^3.0.0"
+
+"nmtg-template-mailerlite-typography@^0.6.0":
+  "integrity" "sha512-O9GWGXkxp/UIEv570SDaCVsoDFx0OV34QacJxCnrTq7nVvPF5VT8nZUnJ8NgRtlt9FKPVsMr2+ylM3YFsdfuyA=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-0.6.0.tgz"
+  "version" "0.6.0"
   dependencies:
     "create-html-element" "^4.0.1"
     "stringify-attributes" "^3.0.0"
