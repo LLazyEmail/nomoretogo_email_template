@@ -14,15 +14,8 @@ const mainComponent = (params) => {
       throw new Error('no body was passed');
     }
   
-    // headComponent.isError();
-    // bodyComponent.isError();
-  
-    return `<!DOCTYPE html>
-    <html
-      xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:v="urn:schemas-microsoft-com:vml"
-      xmlns:o="urn:schemas-microsoft-com:office:office"
-    >
+    return `<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">    
+    <html lang="en">
      ${head}
      ${body}
       
