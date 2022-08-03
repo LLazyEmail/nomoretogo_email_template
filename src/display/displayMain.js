@@ -7,7 +7,7 @@ import displayContentMainTableWrap from '../display/displayContentMainTableWrap'
 import displayContent from '../display/displayContent';
 import displayInstruction from '../display/displayInstruction';
 import displaySupportContact from '../display/displaySupportContact';
-import displayImageAfterSupportComponent from './displayAmazonFresh';
+
 import displayFooter from '../display/displayFooter';
 
 /* ******************** DATA START **************************************** */
@@ -29,9 +29,9 @@ if (displayInstruction == null) {
 if (displaySupportContact == null) {
   error = 'Empty displaySupportContact';
 }
-if (displayImageAfterSupportComponent == null) {
-  error = 'Empty displayImageAfterSupportComponent';
-}
+// if (displayImageAfterSupportComponent == null) {
+//   error = 'Empty displayImageAfterSupportComponent';
+// }
 if (displayFooter == null) {
   error = 'Empty displayFooter';
 }
@@ -44,8 +44,6 @@ if (error == '') {
     ${displayContent}
     ${displayInstruction}
     ${displaySupportContact}
-    ${displayImageAfterSupportComponent}
-    ${displayImageAfterSupportComponent}
     ${displayFooter}`;
 
   const BodyComponentRes = createComponent(bodyComponent, bodyContentParams);
