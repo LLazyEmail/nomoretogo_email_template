@@ -12,7 +12,7 @@ function createComponent(component, params = '') {
   }
   if (component == '') {
     throw new Error(
-      'Error, component - "createComponentUniversal" , massage - "component empty" '
+      'Error, component - "createComponentUniversal" , message - "component empty" '
     );
   }
 
