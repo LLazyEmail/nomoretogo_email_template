@@ -4,3 +4,5 @@ rollup.config.js
 .eslintignore
 .eslintric
 .gitignore
+tests
+.eslintrc.js
