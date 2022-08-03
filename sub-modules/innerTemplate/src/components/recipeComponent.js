@@ -2,21 +2,9 @@
 
 // Error
 import Errors from './Errors';
-import { imageComponent, strong } from 'nmtg-template-mailerlite-typography';
+import { imageComponent, strong, paragraphComponent } from 'nmtg-template-mailerlite-typography';
 const error = new Errors('recipeComponent');
 
-
-const recipeName = (params) => {
-
-  const { title, subtitle } = params;
-
-  return `<p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"><strong></strong>
-      ${titleComponent(title)}
-      <br>
-      ${textComponent(subtitle)}
-      </p>`;
-
-}
 
 // Get title start
 const titleComponent = (title) => {
@@ -40,8 +28,26 @@ const textComponent = (text) => {
 };
 // Get text end
 
+
+// TODO update with paragraphComponent
+const recipeName = (params) => {
+
+  const { title, subtitle } = params;
+
+  return `<p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"><strong></strong>
+      ${titleComponent(title)}
+      <br>
+      ${textComponent(subtitle)}
+      </p>`;
+
+}
+
+
 // Main Recipe block start
 const mainRecipe = (id, href, src, title, text) => {
+
+  // const { id, href, src, title, text } = params;
+
   const recipeImage = imageComponent(id, href, src);
 
   const titleLine = recipeName({title, subtitle:text});
