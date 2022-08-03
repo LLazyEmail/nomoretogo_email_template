@@ -1,6 +1,10 @@
 // Create afterSupport component
 
-import lineBlock from './__lineBlock';
+import { emptyBlock } from 'nmtg-template-mailerlite-outertemplate';
+
+import { imageComponent } from 'nmtg-template-mailerlite-typography';
+
+// this is amazonFreshImage
 
 import Errors from '../Errors';
 
@@ -45,7 +49,7 @@ const mainBlock = (src) => {
     </td>
   </tr>
 </tbody></table> 
-${lineBlock()}`;
+${emptyBlock()}`;
 };
 
 export default function (src) {

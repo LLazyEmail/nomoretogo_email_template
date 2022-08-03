@@ -5,9 +5,9 @@ import contentComponent from './components/contentComponent';
 import contentMainTableWrap from './components/contentMainTableWrap';
 import imageAfterSupportComponent from './components/imageAfterSupportComponent';
 import instructionComponent from './components/instructionComponent';
-import lineBlock from './components/lineBlock';
+// import lineBlock from './components/lineBlock';
 
-import supportComponent from './components/supportComponent';
+// import supportComponent from './components/supportComponent';
 // import tableWithTwoRecipes from './components/tableWithTwoRecipes';
 
 export {
@@ -16,8 +16,8 @@ export {
   contentMainTableWrap,
   imageAfterSupportComponent,
   instructionComponent,
-  lineBlock,
+  // lineBlock,
   recipeComponent,
-  supportComponent,
+  // supportComponent,
   // tableWithTwoRecipes,
 };
