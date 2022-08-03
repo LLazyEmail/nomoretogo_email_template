@@ -7,7 +7,7 @@ function createComponent(component, params = '') {
 
   if (component == undefined) {
     throw new Error(
-      'Error, component - "createComponentUniversal" , massage - "component undefined" '
+      'Error, component - "createComponentUniversal" , message - "component undefined" '
     );
   }
   if (component == '') {
