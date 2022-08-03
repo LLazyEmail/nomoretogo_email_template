@@ -1,7 +1,7 @@
 import Factory from './factory';
 
 
-import { supportContact } from 'nmtg-template-mailerlite-outertemplate';
+import { supportComponent } from 'nmtg-template-mailerlite-outertemplate';
 
 var error = '';
 var result = null;
@@ -20,7 +20,7 @@ try {
     bottomTextContact: '123',
   };
 
-  const factory = new Factory(supportContact, params);
+  const factory = new Factory(supportComponent, params);
   result = factory.create();
 } catch (e) {
   error = e.message;
