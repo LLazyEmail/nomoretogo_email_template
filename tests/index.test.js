@@ -4,8 +4,8 @@ import HeadString from '../src/display/displayHead';
 import ContentMainTableWrapString from '../src/display/displayContentMainTableWrap';
 import contentString from '../src/display/displayContent';
 import instructionString from '../src/display/displayInstruction';
-import SupportContactString from '../src/display/displaySupportContact';
-import ImageAfterSupporComponentString from '../src/display/displayImageAfterSupportComponent';
+// import SupportContactString from '../src/display/displaySupportContact';
+// import ImageAfterSupporComponentString from '../src/display/displayImageAfterSupportComponent';
 import FooterString from '../src/display/displayFooter';
 ///////////////////////////////////////////////////////////
 
@@ -30,12 +30,10 @@ describe('test fullComponent', () => {
   // test('rendering Instruction Component', () => {
   //   console.log(instructionString);
   // });
-  // test('rendering SupportContact Component', () => {
-  //   console.log(SupportContactString);
-  // });
-  // test('rendering ImageAfterSupporComponent Component', () => {
-  //   console.log(ImageAfterSupporComponentString);
-  // });
+
+  
+ 
+  
   // test('rendering FooterString Component', () => {
   //   console.log(FooterString);
   // });

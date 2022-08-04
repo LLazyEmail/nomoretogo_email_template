@@ -12,12 +12,13 @@ import Errors from './Errors';
 const error = new Errors('footerComponent');
 
 // Config file
+// TODO remove pathSocialIcons
 import { pathSocialIcons, unsubscribe } from '../config';
 
 // Create path to image start
-function createPathToImage(src) {
-  return pathSocialIcons + src;
-}
+// function createPathToImage(src) {
+//   return pathSocialIcons + src;
+// }
 // Create path to image end
 
 // Title
@@ -65,51 +66,19 @@ const createUnsubscribe = (href) => {
   //   </a>`;
 };
 
-// Create footerSosial start
-// TODO add linkComponent
-// TODO add image
-const createSocialPanel = function (socials) {
-  return socials.map((social) => {
-    if (social.href == '') {
-      error.add('No href');
-    }
-    if (social.src == '') {
-      error.add('No src');
-    }
-
-    //-----------------
-    const imagePath = createPathToImage(social.src);
-
-    const imageParams = `width="24" alt="${social.alt}" src="${imagePath}" style="display: block;" border="0"`;
-
-    const socialImage = imageComponent(imageParams);
-
-    const linkParams = {
-      attributes: `href="${social.href}" target="_self"`,
-      content: socialImage,
-    };
-    const socialLink = linkComponent(linkParams);
-    return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">${socialLink}</td>`;
-
-    // return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">
-    //     <a href="${social.href}" target="_self">
-    //     <img width="24" alt="facebook"
-    //     src="${imagePath}"
-    //     style="display: block;" border="0">
-    //     </a>
-    //     </td>`;
-  });
-};
-// Create footerSosial end
-
 // Create foot content start
 const footerComponent = (params) => {
-  const { socialLinks, amazonFreshBlock } = params;
 
-  return (
-    amazonFreshBlock +
-    separatorComponent() +
-    `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
+  const { amazonFreshBlock, supportBlock, socialPanel } = params;
+
+
+  return 
+  supportBlock + 
+  separatorComponent() + 
+  amazonFreshBlock + 
+    separatorComponent() + 
+  `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
+
   <tbody><tr>
     <td class="mlContentTableFooterCardTd">
       <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mlContentTable ml-default" style="width: 640px; min-width: 640px;" width="640">
@@ -156,7 +125,7 @@ const footerComponent = (params) => {
                               <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left">
                                 <tbody>
                                 <tr>
-                                ${createSocialPanel(socialLinks)}
+                                ${socialPanel}
                                 </tr>
                               </tbody></table>
                             </td>

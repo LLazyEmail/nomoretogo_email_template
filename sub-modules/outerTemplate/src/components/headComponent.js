@@ -36,6 +36,7 @@ function createHeadComponent(params) {
 }
 // Create head component end
 
+// TODO migrate some errors away 
 // we are throwing an error with the same constant 10 times.
 function searchForErrors(params) {
   const error = new Errors('headComponent');
@@ -84,7 +85,6 @@ function searchForErrors(params) {
   }
 }
 
-// TODO I dont think we need to return this function. fill find a comment to it later
 
 const headComponent = (subComponent) => {
   searchForErrors(subComponent);
