@@ -2,7 +2,6 @@
 import Errors from './Errors';
 import { strong, paragraphComponent } from 'nmtg-template-mailerlite-typography';
 
-// TODO move to inner-template/paragraphs
 const createTitle = (title) => {
   const content = { content: strong(title) };
 
