@@ -5,7 +5,12 @@ import { strong, paragraph } from 'nmtg-template-mailerlite-typography';
 // TODO move to inner-template/paragraphs
 const createTitle = (title) => {
   const content = { content: strong(title) };
-  return paragraph(content);
+
+  const titleParams = {
+    attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
+    content,
+  };
+  return paragraph(titleParams);
   // return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
   // ${strong(title)}</p>`;
 };

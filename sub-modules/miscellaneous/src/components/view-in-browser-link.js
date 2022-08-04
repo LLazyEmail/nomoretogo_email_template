@@ -7,7 +7,7 @@ import { linkComponent } from 'nmtg-template-mailerlite-typography';
 // TODO add linkComponent
 const viewInBrowsLink = (id, href) => {
   const params = {
-    attributes: `style="color: #111111;" href="${href}" data-link-id="${id}"`,
+    attributes: `style="color: #111111;" href="${href}" data-link-id="${id}" target="_blank"`,
     content: 'View in browser',
   };
   return linkComponent(params);

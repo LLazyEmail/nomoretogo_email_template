@@ -7,10 +7,7 @@ import Errors from './Errors';
 
 import { imageComponent } from 'nmtg-template-mailerlite-typography';
 
-const imageParams = {
-  src: pathMainLogo,
-  width: 560,
-};
+const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
 const imageLogo = imageComponent(imageParams);
 
 // Block header/logotip start

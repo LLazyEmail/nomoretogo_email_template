@@ -22,7 +22,10 @@ const createSupportLink = (href, id, text) => {
   }
 
   const params = {
-    attributes: `href="${href}" data-link-id="${id}"`,
+    attributes: `href="${href}"
+      data-link-id="${id}"
+      target="_blank"
+      style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;"`,
     content: text,
   };
   return linkComponent(params);
@@ -72,7 +75,14 @@ const createSupportMail = (textMail) => {
     error.add('textMail');
   }
 
-  return `<a href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">${textMail}.&nbsp;</a>`;
+  const mailParams = {
+    attributes: `href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;"`,
+    content: `${textMail}.&nbsp;`,
+  };
+
+  return linkComponent(mailParams);
+
+  // return `<a href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">${textMail}.&nbsp;</a>`;
 };
 
 {

@@ -26,14 +26,24 @@ const title = 'No More To-Go';
 // Address
 // TODO add paragraph component
 const address = () => {
-  // return paragraphComponent('Dallas,&nbsp;Texas United States')
-  return `<p style="margin-top: 0px; margin-bottom: 0px;">Dallas,&nbsp;Texas United States</p>`;
+  const addressParams = {
+    attributes: `style="margin-top: 0px; margin-bottom: 0px;"`,
+    content: 'Dallas,&nbsp;Texas United States',
+  };
+  return paragraphComponent(addressParams);
+  // return `<p style="margin-top: 0px; margin-bottom: 0px;">Dallas,&nbsp;Texas United States</p>`;
 };
 
 // Description
 const description = () => {
-  // return paragraphComponent('You received this email because you signed up on our website or made a purchase from us.')
-  return `<p style="margin-top: 0px; margin-bottom: 0px;">You received this email because you signed up on our website or made a purchase from us.</p>`;
+  const descriptionParams = {
+    attributes: `style="margin-top: 0px; margin-bottom: 0px;"`,
+    content:
+      'You received this email because you signed up on our website or made a purchase from us.',
+  };
+
+  return paragraphComponent(descriptionParams);
+  // return `<p style="margin-top: 0px; margin-bottom: 0px;">You received this email because you signed up on our website or made a purchase from us.</p>`;
 };
 
 // Unsubscribe
@@ -45,7 +55,7 @@ const createUnsubscribe = (href) => {
 
   const linkParams = {
     attributes: `href="${href}" style="color: #111111; text-decoration: underline;"`,
-    content: 'Unsubscribe',
+    content: `<span style="color: #111111;">Unsubscribe</span>`,
   };
   return linkComponent(linkParams);
   //-------------------------
@@ -70,14 +80,12 @@ const createSocialPanel = function (socials) {
     //-----------------
     const imagePath = createPathToImage(social.src);
 
-    const imageParams = {
-      src: imagePath,
-      width: 24,
-    };
+    const imageParams = `width="24" alt="${social.alt}" src="${imagePath}" style="display: block;" border="0"`;
+
     const socialImage = imageComponent(imageParams);
 
     const linkParams = {
-      attributes: `href="${social.href}"`,
+      attributes: `href="${social.href}" target="_self"`,
       content: socialImage,
     };
     const socialLink = linkComponent(linkParams);

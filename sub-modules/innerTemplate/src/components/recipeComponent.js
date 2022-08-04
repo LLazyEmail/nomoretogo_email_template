@@ -36,7 +36,13 @@ const recipeName = (params) => {
   const { title, subtitle } = params;
 
   const content = `${titleComponent(title)} <br> ${textComponent(subtitle)}`;
-  return paragraphComponent(content);
+
+  const recipeParams = {
+    attributes:
+      'style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"',
+    content,
+  };
+  return paragraphComponent(recipeParams);
 
   // return `<p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"><strong></strong>
   //     ${titleComponent(title)}
