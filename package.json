@@ -59,7 +59,7 @@
     "babel-preset-react-app": "^10.0.1",
     "email-template-object": "^0.2.0",
     "nmtg-template-mailerlite-inner": "^1.0.0",
-    "nmtg-template-mailerlite-miscellaneous": "^0.8.0",
+    "nmtg-template-mailerlite-miscellaneous": "^0.9.0",
     "nmtg-template-mailerlite-outertemplate": "^1.2.0",
     "nmtg-template-mailerlite-typography": "^1.0.0"
   }
