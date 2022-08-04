@@ -19,17 +19,17 @@ const imagePath = 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email
 
 
 
-  var params = {
-    topTitle: '123',
-    topLinkHref: '123',
-    topLinkId: '123',
-    topLinkText: '123',
-    bottomTitle: '123',
-    bottomLinkHref: '123',
-    bottomLinkId: '123',
-    bottomLinkText: '123',
-    bottomTextContact: '123',
-  };
+var params = {
+  topTitle: '123',
+  topLinkHref: '123',
+  topLinkId: '123',
+  topLinkText: '123',
+  bottomTitle: '123',
+  bottomLinkHref: '123',
+  bottomLinkId: '123',
+  bottomLinkText: '123',
+  bottomTextContact: '123',
+};
 
 
 
@@ -56,11 +56,11 @@ try {
   const factory = new Factory(supportComponent, params);
   const supportBlock = factory.create();
 
-  
+  console.log(supportBlock);
   
   const socialMedia = createComponent(SocialPanelComponent, socialsLinksParams);
 
-   
+   console.log(socialMedia);
   
   
   const config = {

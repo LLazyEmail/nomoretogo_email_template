@@ -60,21 +60,22 @@ if (displayFooter == null) {
 
 /* ******************** CREATE CONTENT START ****************************** */
 if (error == '') {
-  const bodyContentParams = `
-    ${displayContentMainTableWrap}
-    ${displayContent}
-    ${displayInstruction}
+  
+  // const bodyContentParams = `
+  //   ${displayContentMainTableWrap}
+  //   ${displayContent}
+  //   ${displayInstruction}
 
-    ${displayFooter}`;
+  //   ${displayFooter}`;
 
-  const BodyComponentRes = createComponent(bodyComponent, bodyContentParams);
+  // const BodyComponentRes = createComponent(bodyComponent, bodyContentParams);
 
-  const cfg = {
-    head: displayHead,
-    body: BodyComponentRes
-  };
+  // const cfg = {
+  //   head: displayHead,
+  //   body: BodyComponentRes
+  // };
 
-  MainHTMLTemplate = createComponent(mainComponent, cfg)
+  // MainHTMLTemplate = createComponent(mainComponent, cfg)
 
   // result = `${displayHead}${BodyComponentRes}`;
 
