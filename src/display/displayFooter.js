@@ -1,4 +1,6 @@
 import { footerComponent, amazonFreshBlock, supportComponent  } from 'nmtg-template-mailerlite-outertemplate';
+import { SocialPanelComponent } from 'nmtg-template-mailerlite-miscellaneous';
+
 import Factory from './factory';
 import createComponent from './createComponentUniversal';
 
@@ -53,13 +55,16 @@ try {
 
   const factory = new Factory(supportComponent, params);
   const supportBlock = factory.create();
+
   
-  createSocialPanel 
-  socialsLinksParams
+  
+  const socialMedia = createComponent(SocialPanelComponent, socialsLinksParams);
+
+   
+  
   
   const config = {
-    // socialLinks: socialsLinksParams,
-    socialPanel: false,
+    socialPanel: socialMedia,
     amazonFreshBlock: imageBlock,
     supportBlock: supportBlock
   }

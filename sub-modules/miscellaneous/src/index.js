@@ -1,3 +1,3 @@
 import viewInBrowserLink from './components/view-in-browser-link';
-
-export { viewInBrowserLink };
+import SocialPanelComponent  from './components/socialPanel';
+export { viewInBrowserLink, SocialPanelComponent  };
