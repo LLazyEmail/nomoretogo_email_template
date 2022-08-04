@@ -41,7 +41,7 @@ const contentTextDescriptionParams = {
 //-------------------
 
 // Button
-// 
+//
 const contentButtonParams = {
   id: '04-22-2021',
   href: 'https://www.nomoretogo.com/weekly-menu/',
@@ -51,62 +51,47 @@ const contentButtonParams = {
 
 /* ******************** CREATE CONTENT START ****************************** */
 
+const contentSectionOne = () => {
+  // contentTitleText
+  const title = createComponent(contentTitleText, contentTitleTextParams);
+  // contentSubTitleText
+  const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
+  // contentTextDescription
+  const description = createComponent(
+    contentTextDescription,
+    contentTextDescriptionParams
+  );
 
-// const contentSectionOne = () => {
+  return title + subTitle + description;
+};
 
-//   // contentTitleText
-//   const title = createComponent(contentTitleText, contentTitleTextParams);
-//   // contentSubTitleText
-//   const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
-//   // contentTextDescription
-//   const description = createComponent(
-//     contentTextDescription,
-//     contentTextDescriptionParams
-//   );
-  
-// return title + subTitle + description
+const contentSectionTwo = () => {
+  // All Recipe
+  var imagesAll = contentRecipeParams.map((params) => {
+    return createComponent(recipeComponent, params);
+  });
+  // All contentTableWitchTwoRecipe
+  const images = createComponent(recipeRowBlock, imagesAll);
+  // Button
+  const contentButtonRes = createComponent(
+    buttonComponent,
+    contentButtonParams
+  );
+  const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
 
-// }
+  return images + buttonRes;
+};
 
-// const contentSsectionTwo = () => {
- 
-//   // All Recipe
-//   var imagesAll = contentRecipeParams.map((params) => {
-//     return createComponent(recipeComponent, params);
-//   });
-//   // All contentTableWitchTwoRecipe
-//   const images = createComponent(recipeRowBlock, imagesAll);
-//   // Button
-//   const contentButtonRes = createComponent(
-//     buttonComponent,
-//     contentButtonParams
-//   );
-//   const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
+var result = null;
+try {
+  // Line block
+  const line = createComponent(emptyBlock);
 
-// return images + contentButtonRes
-
-// }
-
-
-
-
-// var result = null;
-// try {
-
-
-
-
-//   // Line block
-//   const line = createComponent(emptyBlock);
-
-
-
-//   const allContentRes = contentSectionOne() + contentSectionTwo() + line;
-//   result = createComponent(contentComponent, allContentRes);
-
-// } catch (error) {
-//   console.log(error.message)a;
-// }
+  const allContentRes = contentSectionOne() + contentSectionTwo() + line;
+  result = createComponent(contentComponent, allContentRes);
+} catch (error) {
+  console.log(error.message);
+}
 /* ******************** CREATE CONTENT END ****************************** */
 
-export default 1; // result;
+export default result;
