@@ -1,7 +1,10 @@
 // Create footer component
-import { 
-  paragraphComponent, linkComponent, separatorComponent 
-} from 'nmtg-template-mailerlite-typography'; 
+import {
+  paragraphComponent,
+  linkComponent,
+  separatorComponent,
+  imageComponent,
+} from 'nmtg-template-mailerlite-typography';
 
 // import { emptyBlock } from '../index';
 
@@ -23,14 +26,24 @@ const title = 'No More To-Go';
 // Address
 // TODO add paragraph component
 const address = () => {
-  // return paragraphComponent('Dallas,&nbsp;Texas United States')
-  return `<p style="margin-top: 0px; margin-bottom: 0px;">Dallas,&nbsp;Texas United States</p>`;
+  const addressParams = {
+    attributes: `style="margin-top: 0px; margin-bottom: 0px;"`,
+    content: 'Dallas,&nbsp;Texas United States',
+  };
+  return paragraphComponent(addressParams);
+  // return `<p style="margin-top: 0px; margin-bottom: 0px;">Dallas,&nbsp;Texas United States</p>`;
 };
 
 // Description
 const description = () => {
-  // return paragraphComponent('You received this email because you signed up on our website or made a purchase from us.')
-  return `<p style="margin-top: 0px; margin-bottom: 0px;">You received this email because you signed up on our website or made a purchase from us.</p>`;
+  const descriptionParams = {
+    attributes: `style="margin-top: 0px; margin-bottom: 0px;"`,
+    content:
+      'You received this email because you signed up on our website or made a purchase from us.',
+  };
+
+  return paragraphComponent(descriptionParams);
+  // return `<p style="margin-top: 0px; margin-bottom: 0px;">You received this email because you signed up on our website or made a purchase from us.</p>`;
 };
 
 // Unsubscribe
@@ -40,11 +53,16 @@ const createUnsubscribe = (href) => {
     error.add('No unsubscribe');
   }
 
+  const linkParams = {
+    attributes: `href="${href}" style="color: #111111; text-decoration: underline;"`,
+    content: `<span style="color: #111111;">Unsubscribe</span>`,
+  };
+  return linkComponent(linkParams);
   //-------------------------
 
-  return `<a href="${href}" style="color: #111111; text-decoration: underline;">
-    <span style="color: #111111;">Unsubscribe</span>
-    </a>`;
+  // return `<a href="${href}" style="color: #111111; text-decoration: underline;">
+  //   <span style="color: #111111;">Unsubscribe</span>
+  //   </a>`;
 };
 
 // Create footerSosial start
@@ -58,28 +76,40 @@ const createSocialPanel = function (socials) {
     if (social.src == '') {
       error.add('No src');
     }
-    //-----------------
-    const image = createPathToImage(social.src);
 
-    return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">
-        <a href="${social.href}" target="_self">
-        <img width="24" alt="facebook" 
-        src="${image}" 
-        style="display: block;" border="0">
-        </a>
-        </td>`;
+    //-----------------
+    const imagePath = createPathToImage(social.src);
+
+    const imageParams = `width="24" alt="${social.alt}" src="${imagePath}" style="display: block;" border="0"`;
+
+    const socialImage = imageComponent(imageParams);
+
+    const linkParams = {
+      attributes: `href="${social.href}" target="_self"`,
+      content: socialImage,
+    };
+    const socialLink = linkComponent(linkParams);
+    return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">${socialLink}</td>`;
+
+    // return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">
+    //     <a href="${social.href}" target="_self">
+    //     <img width="24" alt="facebook"
+    //     src="${imagePath}"
+    //     style="display: block;" border="0">
+    //     </a>
+    //     </td>`;
   });
 };
 // Create footerSosial end
 
 // Create foot content start
 const footerComponent = (params) => {
-
   const { socialLinks, amazonFreshBlock } = params;
 
-
-  return amazonFreshBlock + separatorComponent() + 
-  `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
+  return (
+    amazonFreshBlock +
+    separatorComponent() +
+    `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableFooterCardTd">
       <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mlContentTable ml-default" style="width: 640px; min-width: 640px;" width="640">
@@ -163,7 +193,8 @@ const footerComponent = (params) => {
       </tbody></table>
     </td>
   </tr>
-</tbody></table>`;
+</tbody></table>`
+  );
 };
 // Footer content end
 
