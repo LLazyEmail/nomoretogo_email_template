@@ -75,10 +75,12 @@ const createSocialPanel = function (socials) {
 // Create foot content start
 const footerComponent = (params) => {
 
-  const { socialLinks, amazonFreshBlock } = params;
+  const { socialLinks, amazonFreshBlock, supportBlock } = params;
 
 
-  return amazonFreshBlock + separatorComponent() + 
+  return 
+  amazonFreshBlock + 
+    separatorComponent() + 
   `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableFooterCardTd">
