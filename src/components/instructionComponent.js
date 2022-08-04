@@ -1,6 +1,6 @@
 // Create instruction component
 import Errors from './Errors';
-import { strong, paragraph } from 'nmtg-template-mailerlite-typography';
+import { strong, paragraphComponent } from 'nmtg-template-mailerlite-typography';
 
 // TODO move to inner-template/paragraphs
 const createTitle = (title) => {
@@ -11,11 +11,14 @@ const createTitle = (title) => {
     content,
   };
   return paragraph(titleParams);
-  // return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
-  // ${strong(title)}</p>`;
 };
 
 const createText = (text) => {
+  // const config = {    
+  //   attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
+  //   content,
+  // };
+
   return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${text}</p>`;
 };
 
