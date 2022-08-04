@@ -1,7 +1,6 @@
 // Create panel view in brows
 import Errors from './Errors';
 
-// TODO update with link from typography
 // Top panel start
 const topPanelViewInBrows = (link) => {
   return `<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" class="mobileHide">

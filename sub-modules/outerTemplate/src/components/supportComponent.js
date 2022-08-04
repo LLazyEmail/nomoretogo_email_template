@@ -9,7 +9,6 @@ import Errors from './Errors';
 
 const error = new Errors('supportComponent');
 
-// TODO import linkComponent
 const createSupportLink = (href, id, text) => {
   if (href == '') {
     error.add('href');
@@ -40,7 +39,7 @@ const createSupportLink = (href, id, text) => {
   // </a>`;
 };
 
-// TODO it's definately a heading ... <h4>${createSupportTitle(topTitle)}<br></h4>
+
 const createSupportTitle = (title) => {
   if (title == '') {
     error.add('title');

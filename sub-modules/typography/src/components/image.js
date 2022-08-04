@@ -30,9 +30,8 @@ const mainBlock = (id, href, src) => {
   };
   return linkComponent(params);
 
-  // TODO use linkComponent instead. but it will require to pass target variables too
-  // return `<a href="${href}" data-link-id="${id}" target="_self">${image}</a>`;
 };
+// return `<a href="${href}" data-link-id="${id}" target="_self">${image}</a>`;
 
 // Main image block end
 
