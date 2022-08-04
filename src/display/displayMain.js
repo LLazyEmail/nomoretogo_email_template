@@ -14,7 +14,6 @@ import displayContent from '../display/displayContent';
 
 
 
-
 import mainComponent from '../components/mainComponent';
 
 //----------
@@ -32,12 +31,16 @@ var error = '';
 if (displayHead == null) {
   error = 'Empty displayHead';
 }
+
+
 if (displayContentMainTableWrap == null) {
   error = 'Empty displayContentMainTableWrap';
 }
 if (displayContent == null) {
   error = 'Empty displayContent';
 }
+
+
 if (displayInstruction == null) {
   error = 'Empty displayInstruction';
 }
@@ -82,4 +85,7 @@ if (error == '') {
   console.log(mesError);
 }
 /* ******************** CREATE CONTENT END ****************************** */
+
+
+
 export default MainHTMLTemplate;

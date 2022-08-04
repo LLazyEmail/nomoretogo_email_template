@@ -8,6 +8,11 @@ import createComponent from './createComponentUniversal';
 // Body params
 const bodyComponentParams = '123';
 
+
+// const bodyComponentParams = {
+
+// };
+
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
