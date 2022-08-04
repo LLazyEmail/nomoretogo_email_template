@@ -41,11 +41,10 @@ const description = () => {
   };
 
   return paragraphComponent(descriptionParams);
-  // return `<p style="margin-top: 0px; margin-bottom: 0px;">You received this email because you signed up on our website or made a purchase from us.</p>`;
 };
+  // return `<p style="margin-top: 0px; margin-bottom: 0px;">You received this email because you signed up on our website or made a purchase from us.</p>`;
 
 // Unsubscribe
-// TODO add linkComoponent
 const createUnsubscribe = (href) => {
   if (href == '') {
     error.add('No unsubscribe');
