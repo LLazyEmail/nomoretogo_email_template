@@ -21,7 +21,8 @@ const mainBlock = (id, href, src) => {
   //   src: createPathToImage(src),
   //   width: 267, // TODO check if width must be string
   // };
-  const attr = `src="${src}" border="0" alt="" width="${width}" style="display: block;"`;
+  const attr = `src="${createPathToImage(src)}" 
+    border="0" alt="" width="267" style="display: block;"`;
   const image = imageComponent(attr);
 
   const params = {
