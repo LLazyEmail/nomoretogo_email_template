@@ -38,4 +38,4 @@ const post_tags = () => {
 }
 
 
-export default { pre_tags, post_tags } 
+export { pre_tags, post_tags } 
