@@ -31,6 +31,13 @@ const imagePath = 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email
 
 
 
+
+
+  
+
+
+
+
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
@@ -47,10 +54,12 @@ try {
   const factory = new Factory(supportComponent, params);
   const supportBlock = factory.create();
   
-  
+  createSocialPanel 
+  socialsLinksParams
   
   const config = {
-    socialLinks: socialsLinksParams,
+    // socialLinks: socialsLinksParams,
+    socialPanel: false,
     amazonFreshBlock: imageBlock,
     supportBlock: supportBlock
   }

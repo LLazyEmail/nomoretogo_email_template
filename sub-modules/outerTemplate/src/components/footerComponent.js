@@ -9,12 +9,13 @@ import Errors from './Errors';
 const error = new Errors('footerComponent');
 
 // Config file
+// TODO remove pathSocialIcons
 import { pathSocialIcons, unsubscribe } from '../config';
 
 // Create path to image start
-function createPathToImage(src) {
-  return pathSocialIcons + src;
-}
+// function createPathToImage(src) {
+//   return pathSocialIcons + src;
+// }
 // Create path to image end
 
 // Title
@@ -59,7 +60,8 @@ const createSocialPanel = function (socials) {
       error.add('No src');
     }
     //-----------------
-    const image = createPathToImage(social.src);
+    // const image = createPathToImage(social.src);
+    const image = social.src;
 
     return `<td align="center" width="24" style="padding: 0px 5px;" ng-show="slink.link != ''">
         <a href="${social.href}" target="_self">
@@ -75,7 +77,7 @@ const createSocialPanel = function (socials) {
 // Create foot content start
 const footerComponent = (params) => {
 
-  const { socialLinks, amazonFreshBlock, supportBlock } = params;
+  const { socialLinks, amazonFreshBlock, supportBlock, createSocialPanel } = params;
 
 
   return 
