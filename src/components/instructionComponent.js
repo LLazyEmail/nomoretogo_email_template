@@ -10,7 +10,7 @@ const createTitle = (title) => {
     attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
     content,
   };
-  return paragraph(titleParams);
+  return paragraphComponent(titleParams);
 };
 
 const createText = (text) => {

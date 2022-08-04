@@ -162,8 +162,9 @@ const footerComponent = (params) => {
       </tbody></table>
     </td>
   </tr>
-</tbody></table>`
-  );
+</tbody></table>`;
+
+
 };
 // Footer content end
 
