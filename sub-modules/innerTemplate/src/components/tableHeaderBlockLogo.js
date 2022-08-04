@@ -1,7 +1,4 @@
 // create tableHeaderBlockLogo
-
-// Config file
-// import { pathMainLogo } from '../config';
 import { pathMainLogo } from '../config';
 import Errors from './Errors';
 
@@ -11,9 +8,9 @@ const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" wi
 const imageLogo = imageComponent(imageParams);
 
 // Block header/logotip start
-// TODO image can be updated
+
 const tableHeaderBlockLogo = () => {
-  // <img src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"></img>
+  
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -25,13 +22,8 @@ const tableHeaderBlockLogo = () => {
                 <td align="center" style="padding: 0px 40px;" class="mlContentOuter">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
-                      <td align="center">
-
-
-                        
-                        ${imageLogo}
-
-                        
+                      <td align="center">                        
+                        ${imageLogo}                        
                       </td>
                     </tr>
                   </tbody></table>

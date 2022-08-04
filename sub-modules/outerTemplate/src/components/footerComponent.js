@@ -30,7 +30,6 @@ const address = () => {
     content: 'Dallas,&nbsp;Texas United States',
   };
   return paragraphComponent(addressParams);
-  // return `<p style="margin-top: 0px; margin-bottom: 0px;">Dallas,&nbsp;Texas United States</p>`;
 };
 
 // Description

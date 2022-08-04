@@ -29,6 +29,8 @@ const createSupportLink = (href, id, text) => {
   };
   return linkComponent(params);
 
+
+};
   // return `<a
   //   href="${href}"
   //   data-link-id="${id}"
@@ -37,8 +39,6 @@ const createSupportLink = (href, id, text) => {
   // >
   //   ${text}
   // </a>`;
-};
-
 
 const createSupportTitle = (title) => {
   if (title == '') {
