@@ -9,7 +9,7 @@ import {
   style,
   style2,
   headComponent,
-} 
+} from '../index';
 
 // Head params
 // const HeadParams = {
@@ -27,14 +27,18 @@ import {
 
 
 
-//     ${meta}
+
+
+
+const pre_tags = () => {
+
+  //    ${meta}
 //     ${font1}
 //     ${ifStyle}
 //     ${style}
 //     ${bodyStyle}
 //     ${mediaStyle}
-
-
-const pre_tags = () => {}
+  
+}
 
 const post_tags = () => {}
