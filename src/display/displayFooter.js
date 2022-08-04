@@ -49,7 +49,8 @@ try {
   
   const config = {
     socialLinks: socialsLinksParams,
-    amazonFreshBlock: imageBlock
+    amazonFreshBlock: imageBlock,
+    supportBlock: false
   }
 
 
