@@ -4,14 +4,22 @@ import createComponent from './createComponentUniversal';
 import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
 
 import displayHead from '../display/displayHead';
+
+
 import displayContentMainTableWrap from '../display/displayContentMainTableWrap';
+
+
+
 import displayContent from '../display/displayContent';
+
+
+
 
 import mainComponent from '../components/mainComponent';
 
 //----------
 import displayInstruction from '../display/displayInstruction';
-import displaySupportContact from '../display/displaySupportContact';
+// import displaySupportContact from '../display/displaySupportContact';
 
 
 
@@ -33,12 +41,15 @@ if (displayContent == null) {
 if (displayInstruction == null) {
   error = 'Empty displayInstruction';
 }
-if (displaySupportContact == null) {
-  error = 'Empty displaySupportContact';
-}
+
+// TODO if we want to keep those checks, we need to move it into footer display probably
+// if (displaySupportContact == null) {
+//   error = 'Empty displaySupportContact';
+// }
 // if (displayImageAfterSupportComponent == null) {
 //   error = 'Empty displayImageAfterSupportComponent';
 // }
+
 if (displayFooter == null) {
   error = 'Empty displayFooter';
 }
@@ -50,7 +61,7 @@ if (error == '') {
     ${displayContentMainTableWrap}
     ${displayContent}
     ${displayInstruction}
-    ${displaySupportContact}
+
     ${displayFooter}`;
 
   const BodyComponentRes = createComponent(bodyComponent, bodyContentParams);

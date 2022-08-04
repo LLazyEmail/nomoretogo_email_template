@@ -79,6 +79,8 @@ const footerComponent = (params) => {
 
 
   return 
+  supportBlock + 
+  separatorComponent() + 
   amazonFreshBlock + 
     separatorComponent() + 
   `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">

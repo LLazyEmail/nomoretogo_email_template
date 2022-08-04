@@ -15,6 +15,8 @@ import {
 // TODO can be moved into config later
 const imagePath = 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/amazon.png';
 
+
+
   var params = {
     topTitle: '123',
     topLinkHref: '123',
@@ -42,15 +44,15 @@ try {
   );
 
 
-    const factory = new Factory(supportComponent, params);
-  result = factory.create();
+  const factory = new Factory(supportComponent, params);
+  const supportBlock = factory.create();
   
   
   
   const config = {
     socialLinks: socialsLinksParams,
     amazonFreshBlock: imageBlock,
-    supportBlock: false
+    supportBlock: supportBlock
   }
 
 
