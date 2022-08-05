@@ -84,8 +84,6 @@ if (error == '') {
 
   // console.log(result);
 
-  result = '123';
-
 } else {
   const mesError = `Error in component: "displayMain",  error message: "${error}"`;
   console.log(mesError);
