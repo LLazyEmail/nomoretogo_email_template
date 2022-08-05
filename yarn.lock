@@ -1385,10 +1385,10 @@
     "@babel/helper-module-imports" "^7.10.4"
     "@rollup/pluginutils" "^3.1.0"
 
-"@rollup/plugin-commonjs@22.0.0":
-  version "22.0.0"
-  resolved "https://registry.npmjs.org/@rollup/plugin-commonjs/-/plugin-commonjs-22.0.0.tgz"
-  integrity sha512-Ktvf2j+bAO+30awhbYoCaXpBcyPmJbaEUYClQns/+6SNCYFURbvBiNbWgHITEsIgDDWCDUclWRKEuf8cwZCFoQ==
+"@rollup/plugin-commonjs@22.0.2":
+  version "22.0.2"
+  resolved "https://registry.npmjs.org/@rollup/plugin-commonjs/-/plugin-commonjs-22.0.2.tgz"
+  integrity sha512-//NdP6iIwPbMTcazYsiBMbJW7gfmpHom33u1beiIoHDEM0Q9clvtQB1T0efvMqHeKsGohiHo97BCPCkBXdscwg==
   dependencies:
     "@rollup/pluginutils" "^3.1.0"
     commondir "^1.0.1"
@@ -2634,7 +2634,7 @@ fs@^0.0.1-security:
 
 fsevents@*, fsevents@^2.3.2, fsevents@~2.3.2:
   version "2.3.2"
-  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
 function-bind@^1.1.1:
@@ -3690,19 +3690,19 @@ natural-compare@^1.4.0:
 
 nmtg-template-mailerlite-inner@^1.1.0:
   version "1.1.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-1.1.0.tgz#2004a5098f3489d5eee52a906e6c46b8d64fbf27"
+  resolved "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-1.1.0.tgz"
   integrity sha512-irSHprSdyFHfYbwDcuZstKkgoUGBisukz3d2lPKPF4dHplCGBBqSKMm4uOahmhhdIctHgCsSXAkH9p4kFuGo5w==
   dependencies:
     nmtg-template-mailerlite-typography "^1.0.0"
 
 nmtg-template-mailerlite-miscellaneous@^0.9.0:
   version "0.9.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-miscellaneous/-/nmtg-template-mailerlite-miscellaneous-0.9.0.tgz#94d195f95d79f3cebc19d5b67f61ef0f1cfcd948"
+  resolved "https://registry.npmjs.org/nmtg-template-mailerlite-miscellaneous/-/nmtg-template-mailerlite-miscellaneous-0.9.0.tgz"
   integrity sha512-VHCrjL8hSRK2VfS4UsFRy8BE4hch/bJT45wAS7nbuthadwIksZdrnZ5vTFokpCRJzdAQTudTMo5z3n6EFip58g==
 
 nmtg-template-mailerlite-outertemplate@^2.0.0:
   version "2.0.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-2.0.0.tgz#584f365f91fe5c599761c734a5d6190a2f083833"
+  resolved "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-2.0.0.tgz"
   integrity sha512-eORH9sewMRmdtNKIK9W49uwgtQMolF7/bzmJ6AngB+jicddFA0boPyyHwmep3QZfYenrsLOYivma0kvZOPt13g==
   dependencies:
     nmtg-template-mailerlite-typography "^3.0.0"
@@ -3717,7 +3717,7 @@ nmtg-template-mailerlite-typography@^1.0.0:
 
 nmtg-template-mailerlite-typography@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-3.0.0.tgz#6735b4be4699769ea099bfc2c204437ac1007e05"
+  resolved "https://registry.npmjs.org/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-3.0.0.tgz"
   integrity sha512-nQvorpasPQkbXYdyiwFSKVRK8eAnEhxcQAsSFb9jZM2gW2bV5Y8n58JevT0OvJHJa4IhuGAbsNwiMBX2RUFV3w==
   dependencies:
     create-html-element "^4.0.1"
