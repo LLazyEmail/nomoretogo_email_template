@@ -4,36 +4,16 @@ import Errors from './Errors';
 import { pathToImages } from '../config.js';
 
 const imageComponent = (attributes) => {
-  return `<img ${attributes}>`;
-  // const { src, width } = params;
-  // return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
+// const { src, width } = params;
+
+  return `<img ${attributes}>`; 
 };
 
-function createPathToImage(src) {
-  return pathToImages + src;
-}
+// return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
 
-// Main image block start
-const mainBlock = (id, href, src) => {
-  // const imagePath = ;
-
-  // const obj = {
-  //   src: createPathToImage(src),
-  //   width: 267, // TODO check if width must be string
-  // };
-  const attr = `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
-  const image = imageComponent(attr);
-
-  const params = {
-    attributes: `href="${href}" data-link-id="${id}"`,
-    content: image,
-  };
-  return linkComponent(params);
-
-};
-// return `<a href="${href}" data-link-id="${id}" target="_self">${image}</a>`;
-
-// Main image block end
+//function createPathToImage(src) {
+//  return pathToImages + src;
+//}
 
 const imgWrapper = (params) => {
   const { id, href, src } = params;
@@ -52,5 +32,28 @@ const imgWrapper = (params) => {
 
   return mainBlock(id, href, src);
 };
+
+// Main image block start
+// const obj = {
+//   src: createPathToImage(src),
+//   width: 267, // TODO check if width must be string
+// };
+  
+const mainBlock = (id, href, src) => {
+  // const imagePath = ;
+
+  const attr = `src="${src}" 
+    border="0" alt="" width="267" style="display: block;"`;
+  const image = imageComponent(attr);
+
+  const params = {
+    attributes: `href="${href}" data-link-id="${id}" target="_self"`,
+    content: image,
+  };
+  return linkComponent(params);
+
+};
+
+// Main image block end
 
 export { imageComponent, imgWrapper };
