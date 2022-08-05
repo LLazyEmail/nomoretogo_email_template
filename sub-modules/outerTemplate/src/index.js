@@ -4,7 +4,7 @@ import blobHead from './components/blobHead';
 import bodyStyle from './components/bodyStyle';
 import font1 from './components/font1';
 import font2 from './components/font2';
-import headMetaTags from './components/headMetaTags';
+import meta from './components/headMetaTags';
 import ifStyle from './components/ifStyle';
 import mediaStyle from './components/mediaStyle';
 import style from './components/style';
@@ -25,7 +25,7 @@ export {
   bodyStyle,
   font1,
   font2,
-  headMetaTags,
+  meta,
   ifStyle,
   mediaStyle,
   style,
@@ -36,5 +36,6 @@ export {
   bodyComponent,
   //------  
   supportComponent,
-  amazonFreshBlock
+  amazonFreshBlock,
+  pre_tags, post_tags
 };

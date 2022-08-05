@@ -9,11 +9,29 @@ const imageComponent = (attributes) => {
   return `<img ${attributes}>`; 
 };
 
-  // return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
+// return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
 
-function createPathToImage(src) {
-  return pathToImages + src;
-}
+//function createPathToImage(src) {
+//  return pathToImages + src;
+//}
+
+const imgWrapper = (params) => {
+  const { id, href, src } = params;
+
+  const error = Errors('image');
+
+  if (id == '') {
+    error.add('No id');
+  }
+  if (href == '') {
+    error.add('No href');
+  }
+  if (src == '') {
+    error.add('No src');
+  }
+
+  return mainBlock(id, href, src);
+};
 
 // Main image block start
 // const obj = {
@@ -33,26 +51,9 @@ const mainBlock = (id, href, src) => {
     content: image,
   };
   return linkComponent(params);
+
 };
 
 // Main image block end
-
-const imgWrapper = (params) => {
-  const { id, href, src } = params;
-
-  const error = Errors('image');
-
-  if (id == '') {
-    error.add('No id');
-  }
-  if (href == '') {
-    error.add('No href');
-  }
-  if (src == '') {
-    error.add('No src');
-  }
-
-  return mainBlock(id, href, src);
-};
 
 export { imageComponent, imgWrapper };

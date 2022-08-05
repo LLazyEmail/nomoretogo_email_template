@@ -9,6 +9,7 @@ import {
 import { writingFile } from 'markup-generator';
 
 describe('writing components into files', () => {
+
   // test('write head', () => {
   //   const string1 = printHead();
 
@@ -49,6 +50,7 @@ describe('writing components into files', () => {
 
   });
 
+  
   // test('write body', () => {
   //   const string5 = printBody();
 

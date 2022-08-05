@@ -31,7 +31,6 @@ const textComponent = (text) => {
 };
 // Get text end
 
-// TODO update with paragraphComponent
 const recipeName = (params) => {
   const { title, subtitle } = params;
 

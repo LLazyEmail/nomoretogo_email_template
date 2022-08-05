@@ -1,6 +1,7 @@
 // Create config file
 const contact = 'xxx';
 const mailingAddress = 'contact@nomoretogo.com';
+
 const unsubscribe =
   'https://unsubscribe.mailerlite.com/cnM9MTkzNDM1ODg2MTc1NDQwNTk4MiZyPTQ1MjExODcy.xzdaBWvETgC7VZFaorm5WH8v0shYzF1HHpZCvM-Su4g';
 const pathToImages = '../data/images/';

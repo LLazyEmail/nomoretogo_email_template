@@ -1,15 +1,12 @@
-// Create afterSupport component
-
 import { imageComponent } from 'nmtg-template-mailerlite-typography';
 import Errors from './Errors';
 
-// TODO add imageComponent
 const createImage = (src) => {
   const imgParams = `src="${src}" border="0" alt="" width="200" style="display: block;"`;
 
   return imageComponent(imgParams);
-  // return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
 };
+  // return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
 
 const mainBlock = (src) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">

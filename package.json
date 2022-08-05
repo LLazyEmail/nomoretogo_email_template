@@ -16,6 +16,7 @@
     "test:typo": "jest ./tests/typography.test.js --passWithNoTests",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
     "lint:prettier": "prettier --write src/",
+    "upd": "yarn add nmtg-template-mailerlite-inner nmtg-template-mailerlite-miscellaneous nmtg-template-mailerlite-outertemplate nmtg-template-mailerlite-typography",
     "lint": "eslint --ext .js . --ignore-path ./.eslintignore --resolve-plugins-relative-to .",
     "lint:fix": "eslint --fix . --ignore-path ./.eslintignore --resolve-plugins-relative-to .",
     "lint2:fix": "eslint --fix . --ignore-path ./.eslintignore --resolve-plugins-relative-to ."
@@ -58,9 +59,9 @@
     "@babel/runtime": "^7.18.3",
     "babel-preset-react-app": "^10.0.1",
     "email-template-object": "^0.2.0",
-    "nmtg-template-mailerlite-inner": "^1.0.0",
-    "nmtg-template-mailerlite-miscellaneous": "^0.8.0",
-    "nmtg-template-mailerlite-outertemplate": "^1.2.0",
-    "nmtg-template-mailerlite-typography": "^1.0.0"
+    "nmtg-template-mailerlite-inner": "^1.1.0",
+    "nmtg-template-mailerlite-miscellaneous": "^0.9.0",
+    "nmtg-template-mailerlite-outertemplate": "^2.0.0",
+    "nmtg-template-mailerlite-typography": "^3.0.0"
   }
 }

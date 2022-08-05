@@ -3,13 +3,13 @@ import {
   bodyStyle,
   font1,
   font2,
-  headMetaTags,
+  meta,
   ifStyle,
   mediaStyle,
   style,
   style2,
-  headComponent,
 } from '../index';
+
 
 // Head params
 // const HeadParams = {
@@ -26,19 +26,16 @@ import {
 // };
 
 
-
-
-
-
 const pre_tags = () => {
-
-  //    ${meta}
-//     ${font1}
-//     ${ifStyle}
-//     ${style}
-//     ${bodyStyle}
-//     ${mediaStyle}
+return meta() + font1() + ifStyle() + style() + 
+      bodyStyle() + mediaStyle() + meta() + font1() +
+      ifStyle() + style() + bodyStyle() + mediaStyle();
   
 }
 
-const post_tags = () => {}
+const post_tags = () => {
+  return style2() + font2() + blobHead();
+}
+
+
+export { pre_tags, post_tags } 
