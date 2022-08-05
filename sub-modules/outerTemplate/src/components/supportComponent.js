@@ -62,9 +62,7 @@ const createSupportTextTop = (href, id, text) => {
 
   return `Connect with other home cooks on our closed group for No More To-Go Members Only 
   ${createSupportLink(
-    {
-      href: 'https://www.facebook.com/groups/nmtg.homecooks',
-    },
+    'https://www.facebook.com/groups/nmtg.homecooks',
     id,
     text
   )}.`;
