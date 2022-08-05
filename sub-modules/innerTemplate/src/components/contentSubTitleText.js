@@ -1,7 +1,7 @@
 // Component contentSubTitleText
 import { subheading } from 'nmtg-template-mailerlite-typography';
 
-const mainBlock = (subTitleText) => {
+const subTitleMainBlock = (subTitleText) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -33,5 +33,5 @@ const mainBlock = (subTitleText) => {
 };
 
 export default function (subTitleText) {
-  return mainBlock(subTitleText);
+  return subTitleMainBlock(subTitleText);
 }

@@ -1,6 +1,6 @@
 // Component line block
 
-const mainBlock = () => {
+const lineMainBlock = () => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -32,5 +32,5 @@ const mainBlock = () => {
 };
 
 export default function () {
-  return mainBlock();
+  return lineMainBlock();
 }

@@ -1,7 +1,7 @@
 // Create strong component
 import Errors from './Errors';
 
-const mainBlock = (content) => {
+const strongMainBlock = (content) => {
   return `<strong>${content}</strong>`;
 };
 
@@ -12,5 +12,5 @@ export default function (content) {
     error.add('No content');
   }
 
-  return mainBlock(content);
+  return strongMainBlock(content);
 }
