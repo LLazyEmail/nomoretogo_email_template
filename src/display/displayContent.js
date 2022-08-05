@@ -88,6 +88,9 @@ try {
   const line = createComponent(emptyBlock);
 
   const allContentRes = contentSectionOne() + contentSectionTwo() + line;
+
+  console.log(allContentRes);
+
   result = createComponent(contentComponent, allContentRes);
 } catch (error) {
   console.log(error.message);

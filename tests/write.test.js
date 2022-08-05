@@ -19,16 +19,16 @@ describe('writing components into files', () => {
   //   writingFile(string1, 'nmtg');
   // });
 
-  // test('write content', () => {
-  //   const string2 = printContent();
+  test('write content', () => {
+    const string2 = printContent();
 
-  //   // console.log(string);
+    // console.log(string);
     
 
-  //   writingFile(string2, 'nmtg');
+    writingFile(string2, 'nmtg');
 
-  //   expect(printContent()).toBeDefined();
-  // });
+    expect(printContent()).toBeDefined();
+  });
 
   // test('write main', () => {
   //   const string3 = printMain();

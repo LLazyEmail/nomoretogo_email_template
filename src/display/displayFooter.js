@@ -21,14 +21,14 @@ const imagePath = 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email
 
 var params = {
   topTitle: 'No More To-Go Facebook Users:',
-  topLinkHref: '123',
-  topLinkId: '123',
-  topLinkText: 'topLinkText',
+  // topLinkHref: '123',
+  topLinkId: 'fb-group',
+  topLinkText: 'Facebook Group Page',
   bottomTitle: 'Have Questions?',
-  bottomLinkHref: '123',
-  bottomLinkId: '123',
+  // bottomLinkHref: '123',
+  bottomLinkId: 'email-id',
   bottomLinkText: '"How Can We Help',
-  bottomTextContact: 'bottomTextContact',
+  // bottomTextContact: 'bottomTextContact',
 };
 
 

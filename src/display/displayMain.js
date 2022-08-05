@@ -61,14 +61,16 @@ if (displayFooter == null) {
 /* ******************** CREATE CONTENT START ****************************** */
 if (error == '') {
   
-  // const bodyContentParams = `
-  //   ${displayContentMainTableWrap}
-  //   ${displayContent}
-  //   ${displayInstruction}
+  const bodyContentParams = `
+    ${displayContentMainTableWrap}
+    ${displayContent}
+    ${displayInstruction}
 
-  //   ${displayFooter}`;
+    ${displayFooter}`;
 
-  // const BodyComponentRes = createComponent(bodyComponent, bodyContentParams);
+  const BodyComponentHTML = createComponent(bodyComponent, bodyContentParams);
+
+  console.log(BodyComponentHTML)
 
   // const cfg = {
   //   head: displayHead,
@@ -80,6 +82,8 @@ if (error == '') {
   // result = `${displayHead}${BodyComponentRes}`;
 
   // console.log(result);
+
+  result = '123';
 
 } else {
   const mesError = `Error in component: "displayMain",  error message: "${error}"`;
