@@ -63,7 +63,7 @@ const createSupportMail = () => {
 
   const mailParams = {
     attributes: `href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;"`,
-    content: mailingAddress,
+    content: `mailto:${mailingAddress}`,
   };
 
   return linkComponent(mailParams);
