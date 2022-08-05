@@ -4,24 +4,27 @@ import Errors from './Errors';
 import { pathToImages } from '../config.js';
 
 const imageComponent = (attributes) => {
-  return `<img ${attributes}>`;
-  // const { src, width } = params;
-  // return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
+// const { src, width } = params;
+
+  return `<img ${attributes}>`; 
 };
+
+  // return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
 
 function createPathToImage(src) {
   return pathToImages + src;
 }
 
 // Main image block start
+// const obj = {
+//   src: createPathToImage(src),
+//   width: 267, // TODO check if width must be string
+// };
+  
 const mainBlock = (id, href, src) => {
   // const imagePath = ;
 
-  // const obj = {
-  //   src: createPathToImage(src),
-  //   width: 267, // TODO check if width must be string
-  // };
-  const attr = `src="${createPathToImage(src)}" 
+  const attr = `src="${src}" 
     border="0" alt="" width="267" style="display: block;"`;
   const image = imageComponent(attr);
 
@@ -30,9 +33,6 @@ const mainBlock = (id, href, src) => {
     content: image,
   };
   return linkComponent(params);
-
-  // TODO use linkComponent instead. but it will require to pass target variables too
-  // return `<a href="${href}" data-link-id="${id}" target="_self">${image}</a>`;
 };
 
 // Main image block end
