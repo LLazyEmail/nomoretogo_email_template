@@ -10,25 +10,25 @@ import { writingFile } from 'markup-generator';
 
 describe('writing components into files', () => {
 
-  // test('write head', () => {
-  //   const string1 = printHead();
-
-  //   // console.log(string);
-  //   expect(string1).toBeDefined();
-
-  //   writingFile(string1, 'nmtg');
-  // });
-
-  test('write content', () => {
-    const string2 = printContent();
+  test('write head', () => {
+    const string1 = printHead();
 
     // console.log(string);
+    expect(string1).toBeDefined();
+
+    writingFile(string1, 'nmtg');
+  });
+
+  // test('write content', () => {
+  //   const string2 = printContent();
+
+  //   // console.log(string);
     
 
-    writingFile(string2, 'nmtg');
+  //   writingFile(string2, 'nmtg');
 
-    expect(printContent()).toBeDefined();
-  });
+  //   expect(printContent()).toBeDefined();
+  // });
 
   // test('write main', () => {
   //   const string3 = printMain();

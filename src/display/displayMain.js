@@ -74,12 +74,12 @@ if (error == '') {
 
   // const cfg = {
   //   head: displayHead,
-  //   body: BodyComponentRes
+  //   body: BodyComponentHTML
   // };
 
   // MainHTMLTemplate = createComponent(mainComponent, cfg)
 
-  // result = `${displayHead}${BodyComponentRes}`;
+  // result = `${displayHead}${BodyComponentHTML}`;
 
   // console.log(result);
 
@@ -93,4 +93,7 @@ if (error == '') {
 
 
 
-export default MainHTMLTemplate;
+export {
+   MainHTMLTemplate,
+   cfg
+}
