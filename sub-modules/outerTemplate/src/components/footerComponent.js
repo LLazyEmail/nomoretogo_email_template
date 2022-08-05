@@ -11,16 +11,12 @@ import Errors from './Errors';
 const error = new Errors('footerComponent');
 
 // Config file
-// TODO remove pathSocialIcons
-import { pathSocialIcons, unsubscribe } from '../config';
-
-// Create path to image start
-// function createPathToImage(src) {
-//   return pathSocialIcons + src;
-// }
-// Create path to image end
+import {  
+  unsubscribe 
+} from '../config';
 
 // Title
+// TODO move title into config
 const title = 'No More To-Go';
 
 // Address
@@ -41,8 +37,7 @@ const description = () => {
   };
 
   return paragraphComponent(descriptionParams);
-};
-  // return `<p style="margin-top: 0px; margin-bottom: 0px;">You received this email because you signed up on our website or made a purchase from us.</p>`;
+};  
 
 // Unsubscribe
 const createUnsubscribe = (href) => {
@@ -154,10 +149,10 @@ const footerComponent = (params) => {
 
   const { amazonFreshBlock, supportBlock, socialPanel } = params;
 
-  const line = supportBlock + separatorComponent() + amazonFreshBlock + separatorComponent() ;
+  const line = supportBlock + separatorComponent() + amazonFreshBlock + separatorComponent() + footerHTML() ;
 
 
-  return '123';
+  return line;
   
 
 };

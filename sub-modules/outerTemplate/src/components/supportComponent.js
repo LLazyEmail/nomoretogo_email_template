@@ -31,14 +31,6 @@ const createSupportLink = (href, id, text) => {
 
 
 };
-  // return `<a
-  //   href="${href}"
-  //   data-link-id="${id}"
-  //   target="_blank"
-  //   style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;"
-  // >
-  //   ${text}
-  // </a>`;
 
 const createSupportTitle = (title) => {
   if (title == '') {
@@ -67,19 +59,15 @@ const createSupportTextTop = (href, id, text) => {
   )}.`;
 };
 
-const createSupportMail = (textMail) => {
-  if (textMail == '') {
-    error.add('textMail');
-  }
+const createSupportMail = () => {
 
   const mailParams = {
     attributes: `href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;"`,
-    content: `${textMail}.&nbsp;`,
+    content: mailingAddress,
   };
 
   return linkComponent(mailParams);
 
-  // return `<a href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;">${textMail}.&nbsp;</a>`;
 };
 
 {
@@ -109,10 +97,11 @@ const createSupportTextBottom = (href, id, text, textMail) => {
   // TODO very strange line, it will be better to define 2 variables before
   // return statement and make this string a bit simplier.
   const supportLink = createSupportLink(href, id, text);
-  const supportMail = createSupportMail(textMail);
-  return `"Please contact us via the "
+  const supportMail = createSupportMail();
+
+  return `Please contact us via the 
   ${supportLink} 
-  " link at the bottom of each page on the site. Or, email us at "
+   link at the bottom of each page on the site. Or, email us at 
   ${supportMail}`;
 };
 
