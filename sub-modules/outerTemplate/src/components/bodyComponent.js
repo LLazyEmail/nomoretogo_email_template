@@ -1,7 +1,7 @@
 import Errors from './Errors';
 const error = new Errors('bodyComponent');
 
-const bodyComponent = (bodyContent) => {
+const bodyComponent = (bodyContent, headerBlock) => {
   if (bodyContent == '') {
     error.add('bodyContent');
   }

@@ -1,8 +1,8 @@
 import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate';
 import { recipeComponent } from 'nmtg-template-mailerlite-inner';
 
-import contentComponent from './components/contentComponent';
-import contentMainTableWrap from './components/contentMainTableWrap';
+import contentComponent from './components/StaticContentComponent';
+// import contentMainTableWrap from './components/contentMainTableWrap';
 import imageAfterSupportComponent from '../sub-modules/outerTemplate/src/components/amazonFreshBlock';
 import instructionComponent from './components/instructionComponent';
 // import lineBlock from './components/lineBlock';
@@ -13,7 +13,7 @@ import instructionComponent from './components/instructionComponent';
 export {
   bodyComponent,
   contentComponent,
-  contentMainTableWrap,
+  // contentMainTableWrap,
   imageAfterSupportComponent,
   instructionComponent,
   // lineBlock,

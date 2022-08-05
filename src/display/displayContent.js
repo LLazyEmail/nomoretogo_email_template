@@ -1,4 +1,4 @@
-import contentComponent from '../components/contentComponent';
+import contentComponent from '../components/StaticContentComponent';
 
 import createComponent from './createComponentUniversal';
 
