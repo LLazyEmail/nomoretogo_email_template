@@ -20,6 +20,8 @@ const bodyComponent = (bodyContent) => {
               <tr>
                 <td bgcolor="#f6f8f9" align="center">
                 <!--<![endif]-->
+
+
                 <!-- Content starts here -->
                 <!-- BORDER RADIUS FOR CARDS LAYOUT -->
                 <!-- BORDER RADIUS FOR DEFAULT LAYOUT -->
@@ -72,6 +74,10 @@ const bodyComponent = (bodyContent) => {
   </tr>
   </tbody></table>
   <!-- Content ends here -->
+
+
+
+  
   <!--[if mso 16]>
   </td>
   </tr>
