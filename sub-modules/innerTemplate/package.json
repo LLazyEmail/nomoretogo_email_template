@@ -46,6 +46,6 @@
     "access": "public"
   },
   "dependencies": {
-    "nmtg-template-mailerlite-typography": "^1.0.0"
+    "nmtg-template-mailerlite-typography": "^3.0.0"
   }
 }
