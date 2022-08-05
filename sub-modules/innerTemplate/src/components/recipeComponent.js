@@ -42,18 +42,13 @@ const recipeName = (params) => {
     content,
   };
   return paragraphComponent(recipeParams);
-
-  // return `<p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"><strong></strong>
-  //     ${titleComponent(title)}
-  //     <br>
-  //     ${textComponent(subtitle)}
-  //     </p>`;
 };
 
 // Main Recipe block start
 const mainRecipe = (id, href, src, title, text) => {
   // const { id, href, src, title, text } = params;
 
+  // TODO add checks to this component
   const recipeImage = imageComponent(id, href, src);
 
   const titleLine = recipeName({ title, subtitle: text });
@@ -72,10 +67,9 @@ const mainRecipe = (id, href, src, title, text) => {
             <td height="20" class="spacingHeight-20"></td>
           </tr>
           <tr>
-            <td align="left" class="bodyTitle" id="bodyText-14" style="font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 150%; color: #6f6f6f;">
-
+            <td align="left" class="bodyTitle" id="bodyText-14" 
+            style="font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 150%; color: #6f6f6f;">
               ${titleLine}
-
             </td>
           </tr>
         </tbody></table>
