@@ -1,7 +1,7 @@
 // Component content discription
 import Errors from './Errors';
 
-const mainBlock = (textTop, textBottom) => {
+const textDescriptionMainBlock = (textTop, textBottom) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -81,5 +81,5 @@ export default function (params) {
     error.add('No textBottom');
   }
 
-  return mainBlock(textTop, textBottom);
+  return textDescriptionMainBlock(textTop, textBottom);
 }

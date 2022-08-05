@@ -1,7 +1,7 @@
 // Component content table with two recipe
 import Errors from './Errors';
 
-const mainBlock = (image, image2) => {
+const tableWithTwoRecipeMainBlock = (image, image2) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -83,7 +83,7 @@ export default function (params) {
   return chunks.reduce((res, element) => {
     var image = element[0];
     var image2 = element[1];
-    return res + mainBlock(image, image2);
+    return res + tableWithTwoRecipeMainBlock(image, image2);
   }, '');
   // create image rows end
 }

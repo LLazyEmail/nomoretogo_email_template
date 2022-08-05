@@ -1,7 +1,7 @@
 // Component instruction text
 import Errors from './Errors';
 
-const mainBlock = (instructionText) => {
+const instructionTextMainBlock = (instructionText) => {
   return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${instructionText}</p>`;
 };
 
@@ -12,5 +12,5 @@ export default function (instructionText) {
     error.add('No text');
   }
 
-  return mainBlock(instructionText);
+  return instructionTextMainBlock(instructionText);
 }

@@ -1,7 +1,7 @@
 // Component instruction title
 import Errors from './Errors';
 
-const mainBlock = (instructionTitle) => {
+const instructionTitleMainBlock = (instructionTitle) => {
   return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"><strong>${instructionTitle}</strong></p>`;
 };
 
@@ -12,5 +12,5 @@ export default function (instructionTitle) {
     error.add('No title text');
   }
 
-  return mainBlock(instructionTitle);
+  return instructionTitleMainBlock(instructionTitle);
 }

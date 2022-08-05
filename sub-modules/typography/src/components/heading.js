@@ -2,7 +2,7 @@
 import Errors from './Errors';
 
 // to add later <td align="center" class="bodyTitle" style="font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 700; line-height: 150%; color: #111111; text-transform: none; font-style: normal; text-decoration: none; text-align: center;">
-const mainBlock = (hrefTitle, idTitle, textTitle) => {
+const headingMainBlock = (hrefTitle, idTitle, textTitle) => {
   return `<a href="${hrefTitle}" data-link-id="${idTitle}" style="text-decoration: none; color: #111111; text-transform: none; font-style: normal; text-decoration: none;" target="_self">${textTitle}</a>`;
 };
 
@@ -20,9 +20,8 @@ export default function (params) {
     error.add('No textTitle');
   }
 
-  return mainBlock(hrefTitle, idTitle, textTitle);
+  return headingMainBlock(hrefTitle, idTitle, textTitle);
 }
-
 
 // to add later as subheading
 // <td align="center" class="bodyTitle" style="font-family: 'Poppins', sans-serif; font-size: 19px; font-weight: 400; line-height: 150%; color: #111111; text-transform: none; font-style: normal; text-decoration: none; text-align: center;">April 22nd, 2021</td>

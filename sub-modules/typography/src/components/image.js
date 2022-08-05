@@ -4,9 +4,9 @@ import Errors from './Errors';
 import { pathToImages } from '../config.js';
 
 const imageComponent = (attributes) => {
-// const { src, width } = params;
+  // const { src, width } = params;
 
-  return `<img ${attributes}>`; 
+  return `<img ${attributes}>`;
 };
 
 // return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
@@ -30,7 +30,7 @@ const imgWrapper = (params) => {
     error.add('No src');
   }
 
-  return mainBlock(id, href, src);
+  return imageMainBlock(id, href, src);
 };
 
 // Main image block start
@@ -38,8 +38,8 @@ const imgWrapper = (params) => {
 //   src: createPathToImage(src),
 //   width: 267, // TODO check if width must be string
 // };
-  
-const mainBlock = (id, href, src) => {
+
+const imageMainBlock = (id, href, src) => {
   // const imagePath = ;
 
   const attr = `src="${src}" 
@@ -51,7 +51,6 @@ const mainBlock = (id, href, src) => {
     content: image,
   };
   return linkComponent(params);
-
 };
 
 // Main image block end

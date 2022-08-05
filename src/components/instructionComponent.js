@@ -1,6 +1,9 @@
 // Create instruction component
 import Errors from './Errors';
-import { strong, paragraphComponent } from 'nmtg-template-mailerlite-typography';
+import {
+  strong,
+  paragraphComponent,
+} from 'nmtg-template-mailerlite-typography';
 
 const createTitle = (title) => {
   const content = { content: strong(title) };
@@ -13,7 +16,7 @@ const createTitle = (title) => {
 };
 
 const createText = (text) => {
-  // const config = {    
+  // const config = {
   //   attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
   //   content,
   // };
@@ -22,7 +25,7 @@ const createText = (text) => {
 };
 
 // TODO : нужно подумать как добавлять множество text
-const mainBlock = (params) => {
+const instructionMainBlock = (params) => {
   var { title, text, title2, text2 } = params;
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
     <tbody><tr>
@@ -89,5 +92,5 @@ function searchForErrors(params) {
 
 export default function (data) {
   searchForErrors(data);
-  return mainBlock(data);
+  return instructionMainBlock(data);
 }

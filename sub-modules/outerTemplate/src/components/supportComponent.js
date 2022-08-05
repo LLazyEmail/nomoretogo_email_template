@@ -28,8 +28,6 @@ const createSupportLink = (href, id, text) => {
     content: text,
   };
   return linkComponent(params);
-
-
 };
 
 const createSupportTitle = (title) => {
@@ -60,14 +58,12 @@ const createSupportTextTop = (href, id, text) => {
 };
 
 const createSupportMail = () => {
-
   const mailParams = {
     attributes: `href="${mailingAddress}" style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;"`,
     content: mailingAddress,
   };
 
   return linkComponent(mailParams);
-
 };
 
 {
@@ -105,7 +101,7 @@ const createSupportTextBottom = (href, id, text, textMail) => {
   ${supportMail}`;
 };
 
-const mainBlock = (params) => {
+const supportMainBlock = (params) => {
   var {
     topTitle,
     topLinkHref,
@@ -179,5 +175,5 @@ ${separatorComponent()}`;
 };
 
 export default function (data) {
-  return mainBlock(data);
+  return supportMainBlock(data);
 }

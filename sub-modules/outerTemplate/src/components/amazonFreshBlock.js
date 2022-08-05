@@ -6,9 +6,9 @@ const createImage = (src) => {
 
   return imageComponent(imgParams);
 };
-  // return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
+// return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
 
-const mainBlock = (src) => {
+const amazonFreshMainBlock = (src) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -53,5 +53,5 @@ export default function (src) {
     error.add('No src');
   }
 
-  return mainBlock(src);
+  return amazonFreshMainBlock(src);
 }
