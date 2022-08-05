@@ -66,7 +66,7 @@ if (error == '') {
     ${displayContent}
     ${displayInstruction}
 
-    ${displayFooter}`;
+    `;
 
   const BodyComponentHTML = createComponent(bodyComponent, bodyContentParams);
 
@@ -74,12 +74,13 @@ if (error == '') {
 
   // const cfg = {
   //   head: displayHead,
-  //   body: BodyComponentHTML
+  //   body: BodyComponentHTML,
+      // footer: displayFooter
   // };
 
   // MainHTMLTemplate = createComponent(mainComponent, cfg)
 
-  // result = `${displayHead}${BodyComponentHTML}`;
+  // result = displayHead + BodyComponentHTML + displayFooter;
 
   // console.log(result);
 
