@@ -56,11 +56,11 @@ try {
   const factory = new Factory(supportComponent, params);
   const supportBlock = factory.create();
 
-  console.log(supportBlock);
+  // console.log(supportBlock);
   
   const socialMedia = createComponent(SocialPanelComponent, socialsLinksParams);
 
-   console.log(socialMedia);
+  //  console.log(socialMedia);
   
   
   const config = {
@@ -71,6 +71,10 @@ try {
 
 
   result = createComponent(footerComponent, config);
+
+  // console.log(result);
+
+
 } catch (error) {
   console.log(error.message);
 }

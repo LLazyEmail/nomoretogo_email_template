@@ -53,7 +53,10 @@ const createUnsubscribe = (href) => {
 };
 
 
-const footerHTML = () => {
+const footerHTML = (params) => {
+
+const { socialPanel, address, description, unsubscribeLink } = params;
+
 return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
 
 <tbody><tr>
@@ -91,7 +94,7 @@ return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable
                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267" style="width: 267px; min-width: 267px;" class="mlContentTable marginBottom">
                         <tbody><tr>
                           <td align="left" class="bodyTitle" id="footerText-44" style="font-family: 'Poppins', sans-serif; font-size: 12px; line-height: 150%; color: #111111;">
-                            ${address()}
+                            ${address}
                           </td>
                         </tr>
                         <tr>
@@ -111,7 +114,7 @@ return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable
                       <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="right" width="267" style="width: 267px; min-width: 267px;" class="mlContentTable">
                         <tbody><tr>
                           <td align="right" class="bodyTitle" id="footerUnsubscribeText-44" style="font-family: 'Poppins', sans-serif; font-size: 12px; line-height: 150%; color: #111111;">
-                            ${description()}
+                            ${description}
                           </td>
                         </tr>
                         <tr>
@@ -119,7 +122,7 @@ return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable
                         </tr>
                         <tr>
                           <td align="right" class="bodyTitle" style="font-family: 'Poppins', sans-serif; font-size: 12px; line-height: 150%; color: #111111;">
-                           ${createUnsubscribe(unsubscribe)}
+                           ${unsubscribeLink}
                           </td>
                         </tr>
                       </tbody></table>
@@ -149,7 +152,16 @@ const footerComponent = (params) => {
 
   const { amazonFreshBlock, supportBlock, socialPanel } = params;
 
-  const line = supportBlock + separatorComponent() + amazonFreshBlock + separatorComponent() + footerHTML() ;
+  const cfg = {
+    address: address(),
+    description: description(),
+    unsubscribeLink: createUnsubscribe(unsubscribe),
+    socialPanel,
+  }
+
+  const line = supportBlock + separatorComponent() + 
+              amazonFreshBlock + separatorComponent() + 
+              footerHTML(cfg) ;
 
 
   return line;
