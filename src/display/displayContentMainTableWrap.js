@@ -1,9 +1,9 @@
 import createComponent from './createComponentUniversal';
 
 //---------------
-import contentMainTableWrap from '../components/contentMainTableWrap';
+// import contentMainTableWrap from '../components/_contentMainTableWrap';
 
-import { viewInBrowserLink } from 'nmtg-template-mailerlite-miscellaneous';
+import { viewInBrowserLink, contentMainTableWrap } from 'nmtg-template-mailerlite-miscellaneous';
 
 import {
   topPanelViewInBrows,

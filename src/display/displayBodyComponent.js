@@ -2,16 +2,27 @@ import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
 
 import createComponent from './createComponentUniversal';
 
-// TODO for some reason body i emplty, while display main is full of stuff
+
+import displayContentMainTableWrap from '../display/displayContentMainTableWrap';
+
+import displayContent from '../display/displayContent';
+import displayInstruction from '../display/displayInstruction';
 
 /* ******************** DATA START **************************************** */
 // Body params
+
+
 const bodyComponentParams = '123';
 
 
 // const bodyComponentParams = {
 
 // };
+
+
+${displayContentMainTableWrap}
+${displayContent}
+${displayInstruction}
 
 /* ******************** DATA END **************************************** */
 

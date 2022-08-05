@@ -1,4 +1,4 @@
-import contentComponent from '../components/contentComponent';
+import contentComponent from '../components/StaticContentComponent';
 
 import createComponent from './createComponentUniversal';
 
@@ -88,6 +88,9 @@ try {
   const line = createComponent(emptyBlock);
 
   const allContentRes = contentSectionOne() + contentSectionTwo() + line;
+
+  console.log(allContentRes);
+
   result = createComponent(contentComponent, allContentRes);
 } catch (error) {
   console.log(error.message);

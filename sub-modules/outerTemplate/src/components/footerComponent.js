@@ -159,7 +159,7 @@ const footerComponent = (params) => {
     socialPanel,
   }
 
-  const line = supportBlock + separatorComponent() + 
+  const line = supportBlock +
               amazonFreshBlock + separatorComponent() + 
               footerHTML(cfg) ;
 

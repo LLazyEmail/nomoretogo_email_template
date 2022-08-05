@@ -4,7 +4,7 @@ import contentString from '../src/display/displayContent';
 import FooterString from '../src/display/displayFooter';
 import BodyComponentString from '../src/display/displayBodyComponent';
 // import tempTest from '../src/display/displayTempTest';
-import MainString from '../src/display/displayMain';
+import { MainHTMLTemplate } from '../src/display/displayMain';
 
 // console.log(HeadString)
 
@@ -27,7 +27,7 @@ const printContent = () => {
 };
 
 const printMain = () => {
-  return MainString;
+  return MainHTMLTemplate;
 };
 
 const printFooter = () => {

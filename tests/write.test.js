@@ -10,14 +10,14 @@ import { writingFile } from 'markup-generator';
 
 describe('writing components into files', () => {
 
-  // test('write head', () => {
-  //   const string1 = printHead();
+  test('write head', () => {
+    const string1 = printHead();
 
-  //   // console.log(string);
-  //   expect(string1).toBeDefined();
+    // console.log(string);
+    expect(string1).toBeDefined();
 
-  //   writingFile(string1, 'nmtg');
-  // });
+    writingFile(string1, 'nmtg');
+  });
 
   // test('write content', () => {
   //   const string2 = printContent();

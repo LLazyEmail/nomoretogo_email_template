@@ -138,24 +138,7 @@ export default function (content) {
 //                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
 //                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
 //                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>${textTop}
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${textBottom}</p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
-//                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
+//                   
 //                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
 //                         <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;"></p>
 //                       </td>

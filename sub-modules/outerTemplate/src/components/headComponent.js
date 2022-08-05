@@ -1,6 +1,7 @@
 // Create head component
 import Errors from './Errors';
 
+// TODO looks strange
 const footerError = new Errors('footerComponent');
 
 // Create head component start
@@ -31,8 +32,9 @@ function createHeadComponent(params) {
     <meta name="robots" content="noindex, nofollow">
     ${style2}
     ${font2}
-    ${blobHead}
+    
   </head>`;
+  // ${blobHead}
 }
 // Create head component end
 

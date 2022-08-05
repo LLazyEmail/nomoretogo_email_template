@@ -61,23 +61,26 @@ if (displayFooter == null) {
 /* ******************** CREATE CONTENT START ****************************** */
 if (error == '') {
   
-  // const bodyContentParams = `
-  //   ${displayContentMainTableWrap}
-  //   ${displayContent}
-  //   ${displayInstruction}
+  const bodyContentParams = `
+    ${displayContentMainTableWrap}
+    ${displayContent}
+    ${displayInstruction}
 
-  //   ${displayFooter}`;
+    `;
 
-  // const BodyComponentRes = createComponent(bodyComponent, bodyContentParams);
+  const BodyComponentHTML = createComponent(bodyComponent, bodyContentParams);
+
+  console.log(BodyComponentHTML)
 
   // const cfg = {
   //   head: displayHead,
-  //   body: BodyComponentRes
+  //   body: BodyComponentHTML,
+      // footer: displayFooter
   // };
 
   // MainHTMLTemplate = createComponent(mainComponent, cfg)
 
-  // result = `${displayHead}${BodyComponentRes}`;
+  // result = displayHead + BodyComponentHTML + displayFooter;
 
   // console.log(result);
 
@@ -89,4 +92,7 @@ if (error == '') {
 
 
 
-export default MainHTMLTemplate;
+export {
+   MainHTMLTemplate,
+   cfg
+}
