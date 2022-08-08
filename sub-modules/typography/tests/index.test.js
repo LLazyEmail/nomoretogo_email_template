@@ -1,4 +1,4 @@
-import buttonComponent2 from '../src/components/button2';
+const buttonComponent2 = require('../src/components/button2');
 
 describe('testing complex links', () => {
   test('rendering head component', () => {
