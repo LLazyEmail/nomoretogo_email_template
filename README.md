@@ -157,3 +157,6 @@ https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data
 * [https://hackernoon.com/cool-resources-for-sending-emails](https://hackernoon.com/cool-resources-for-sending-emails)
 * [https://hackernoon.com/businesses-have-messy-emails](https://hackernoon.com/businesses-have-messy-emails)
 * [https://hackernoon.com/businesses-have-messy-emails-the-relationship-between-security-and-sales](https://hackernoon.com/businesses-have-messy-emails-the-relationship-between-security-and-sales)
+
+
+## [Linkedin page of LLazyEmail](https://www.linkedin.com/company/llazyemail/)
