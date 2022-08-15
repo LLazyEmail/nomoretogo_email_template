@@ -1,13 +1,12 @@
-import { recipeComponent } from '../index';
+import { recipeComponent } from 'nmtg-template-mailerlite-inner';
 
 // THIS BLOCK is a old version of contentTableWithTwoRecipes.... get rid of it later
 
 // Main table start
 const recipeRowBlock = (dataImageOne, dataImageTwo) => {
+  const recipeOne = recipeComponent(dataImageOne);
+  const recipeTwo = recipeComponent(dataImageTwo);
 
-    const recipeOne = recipeComponent(dataImageOne);
-    const recipeTwo = recipeComponent(dataImageTwo);
-  
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -59,6 +58,5 @@ const recipeRowBlock = (dataImageOne, dataImageTwo) => {
   </tr>
   </tbody></table>`;
 };
-
 
 export default recipeRowBlock;
