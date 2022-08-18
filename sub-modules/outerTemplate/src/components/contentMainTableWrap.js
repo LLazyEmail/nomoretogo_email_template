@@ -1,5 +1,5 @@
 // create content main table wrap
-import Errors from '../Errors';
+import Errors from './Errors';
 
 // TODO dont forget to handle view in browser link later. low priority
 
