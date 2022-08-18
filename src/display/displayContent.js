@@ -138,6 +138,12 @@ const dataImage = [
   },
 ];
 
+const contentButtonParams = {
+  id: '04-22-2021',
+  href: 'https://www.nomoretogo.com/weekly-menu/',
+  text: '123',
+};
+
 var result = null;
 try {
   result = contentComponent({
@@ -146,6 +152,7 @@ try {
     contentTextDescriptionParams,
     contentRecipeParams,
     dataImage,
+    contentButtonParams,
   });
 } catch (error) {
   console.log(error.message);

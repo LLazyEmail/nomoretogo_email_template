@@ -1,5 +1,5 @@
 // Create wrap component content
-import Errors from '../Errors';
+// import Errors from '../Errors';
 
 ////////////// VARIANT ONE START ///////////////////////////////////
 // export default function (content) {
@@ -20,41 +20,50 @@ import {
   recipeRowBlock,
   contentTextDescription,
   contentTitleText,
-  emptyBlock,
-  test,
 } from 'nmtg-template-mailerlite-inner';
 
-import { buttonComponent } from 'nmtg-template-mailerlite-typography';
+import {
+  buttonComponent,
+  separatorComponent,
+} from 'nmtg-template-mailerlite-typography';
 
 const mainStaticComponent = (params) => {
+  // distructure params
   const {
     contentTitleTextParams,
     contentSubTitleParams,
     contentTextDescriptionParams,
     contentRecipeParams,
     dataImage,
+    contentButtonParams,
   } = params;
 
-  // const contentTitleTextRes = contentTitleText(contentTitleTextParams);
-  // const contentSubTitleTextRes = contentSubTitleText(contentSubTitleParams);
-  // const contentTextDescriptionRes = contentTextDescription(
-  //   contentTextDescriptionParams
-  // );
-  // const text =
-  //   contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
+  // block 1
+  const contentTitleTextRes = contentTitleText(contentTitleTextParams);
+  const contentSubTitleTextRes = contentSubTitleText(contentSubTitleParams);
+  const contentTextDescriptionRes = contentTextDescription(
+    contentTextDescriptionParams
+  );
+  const text =
+    contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
 
-  // var imagesAll = contentRecipeParams.map((params) => {
-  //   return recipeComponent(params);
-  // });
+  // block 2
+  var imagesAll = contentRecipeParams.map((params) => {
+    return recipeComponent(params);
+  });
   const imageOne = dataImage[0];
   const imageTwo = dataImage[1];
-  console.log(test);
-  // const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
 
-  // const buttonComponent = buttonComponent();
-  // const contentButtonBlock = contentButtonBlock();
+  const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
 
-  return 'staticContentCopmonent'; //  recipeRowBlockRes;
+  const buttonComponentRes = buttonComponent(contentButtonParams);
+  const contentButtonBlockRes = contentButtonBlock(buttonComponentRes);
+  const separator = separatorComponent();
+  const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
+
+  // All content
+  const allContent = text + contentAndAfter;
+  return allContent;
 };
 
 export default function (params) {
