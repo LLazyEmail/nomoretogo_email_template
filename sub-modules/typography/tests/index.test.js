@@ -1,4 +1,5 @@
 const buttonComponent2 = require('../src/components/button2');
+// import { buttonComponent2 } from 'nmtg-template-mailerlite-typography';
 
 describe('testing complex links', () => {
   test('rendering head component', () => {
