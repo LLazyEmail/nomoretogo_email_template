@@ -9,7 +9,7 @@ import ifStyle from './components/ifStyle';
 import mediaStyle from './components/mediaStyle';
 import style from './components/style';
 import style2 from './components/style2';
-import { pre_tags, post_tags } from './components/headTagsIndex'
+import { pre_tags, post_tags } from './components/headTagsIndex';
 
 //------------
 import footerComponent from './components/footerComponent';
@@ -19,6 +19,8 @@ import bodyComponent from './components/bodyComponent';
 
 import supportComponent from './components/supportComponent';
 import amazonFreshBlock from './components/amazonFreshBlock';
+//------------
+import contentMainTableWrap from './components/contentMainTableWrap';
 
 export {
   blobHead,
@@ -34,8 +36,11 @@ export {
   footerComponent,
   headComponent,
   bodyComponent,
-  //------  
+  //------
   supportComponent,
   amazonFreshBlock,
-  pre_tags, post_tags
+  pre_tags,
+  post_tags,
+  // ------
+  contentMainTableWrap,
 };

@@ -3,13 +3,16 @@ import createComponent from './createComponentUniversal';
 //---------------
 // import contentMainTableWrap from '../components/_contentMainTableWrap';
 
-import { viewInBrowserLink, contentMainTableWrap } from 'nmtg-template-mailerlite-miscellaneous';
+import { viewInBrowserLink } from 'nmtg-template-mailerlite-miscellaneous';
+
+import { contentMainTableWrap } from 'nmtg-template-mailerlite-outertemplate';
 
 import {
   topPanelViewInBrows,
   tableHeaderBlockLogo,
 } from 'nmtg-template-mailerlite-inner';
 
+console.log(contentMainTableWrap);
 /* ******************** DATA START **************************************** */
 // View in brows link
 const viewInBrowserLinkParams = {
