@@ -3,17 +3,14 @@ import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate';
 import createComponent from './createComponentUniversal';
 
 import displayContentMainTableWrap from '../display/displayContentMainTableWrap';
-
 import displayContent from '../display/displayContent';
 import displayInstruction from '../display/displayInstruction';
 /* ******************** DATA START **************************************** */
 // Body params
 
-const bodyComponentParams = '123';
+// const bodyComponentParams = '123';
 
-// const bodyComponentParams = {
-
-// };
+const bodyComponentParams = `${displayContentMainTableWrap}${displayContent}${displayInstruction}`;
 
 // ${displayContentMainTableWrap}
 // ${displayContent}
@@ -32,4 +29,4 @@ try {
   console.log(error.message);
 }
 /* ******************** CREATE CONTENT END ****************************** */
-export default 'result';
+export default result;

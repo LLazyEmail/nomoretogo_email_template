@@ -12,7 +12,6 @@ import {
   tableHeaderBlockLogo,
 } from 'nmtg-template-mailerlite-inner';
 
-console.log(contentMainTableWrap);
 /* ******************** DATA START **************************************** */
 // View in brows link
 const viewInBrowserLinkParams = {
