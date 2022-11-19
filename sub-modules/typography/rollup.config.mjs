@@ -4,7 +4,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import builtins from "rollup-plugin-node-builtins";
 import babel from "@rollup/plugin-babel";
 // import notify from "rollup-plugin-notify";
-import pkg from "./package.json";
+import pkg from "./package.json" assert {type: 'json'};
 import globals from "rollup-plugin-node-globals";
 import includePaths from "rollup-plugin-includepaths";
 

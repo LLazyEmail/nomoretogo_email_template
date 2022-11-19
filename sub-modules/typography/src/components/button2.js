@@ -1,12 +1,12 @@
 // // import Errors from './Errors';
-import linkComponent from './link';
-import stringifyAttributes from 'stringify-attributes';
+// import linkComponent from './link';
+// import stringifyAttributes from 'stringify-attributes';
 
-stringifyAttributes({
-  rainbow: true,
-  number: 1,
-  multiple: ['a', 'b'],
-});
+// stringifyAttributes({
+//   rainbow: true,
+//   number: 1,
+//   multiple: ['a', 'b'],
+// });
 
 // import attributes from 'stringify-attributes';
 
@@ -35,4 +35,4 @@ stringifyAttributes({
 
 // export default buttonComponent2;
 
-export default stringifyAttributes;
+// export default stringifyAttributes;
