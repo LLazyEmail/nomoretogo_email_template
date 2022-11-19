@@ -28,6 +28,8 @@ import displayFooter from '../display/displayFooter';
 var MainHTMLTemplate = null;
 var error = '';
 
+var cfg = '';
+
 if (displayHead == null) {
   error = 'Empty displayHead';
 }
@@ -72,15 +74,15 @@ if (error == '') {
 
   console.log(BodyComponentHTML)
 
-  // const cfg = {
-  //   head: displayHead,
-  //   body: BodyComponentHTML,
-      // footer: displayFooter
-  // };
+  cfg = {
+    head: displayHead,
+    body: BodyComponentHTML,
+      footer: displayFooter
+  };
 
-  // MainHTMLTemplate = createComponent(mainComponent, cfg)
+  MainHTMLTemplate = createComponent(mainComponent, cfg)
 
-  // result = displayHead + BodyComponentHTML + displayFooter;
+  result = displayHead + BodyComponentHTML + displayFooter;
 
   // console.log(result);
 

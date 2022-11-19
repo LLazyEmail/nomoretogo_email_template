@@ -46,6 +46,7 @@
     "access": "public"
   },
   "dependencies": {
+    "semver": ">=4.3.2",
     "nmtg-template-mailerlite-typography": "^3.0.0"
   }
 }
