@@ -2,19 +2,21 @@ import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate';
 
 import createComponent from './createComponentUniversal';
 
-import displayContentMainTableWrap from '../display/displayContentMainTableWrap';
-import displayContent from '../display/displayContent';
-import displayInstruction from '../display/displayInstruction';
+import displayContentMainTableWrap from './displayContentMainTableWrap';
+import displayContent from './displayContent';
+import displayInstruction from './displayInstruction';
+
 /* ******************** DATA START **************************************** */
 // Body params
 
-// const bodyComponentParams = '123';
 
-const bodyComponentParams = `${displayContentMainTableWrap}${displayContent}${displayInstruction}`;
 
-// ${displayContentMainTableWrap}
-// ${displayContent}
-// ${displayInstruction}
+const bodyComponentParams = `
+${displayContentMainTableWrap}
+${displayContent}
+${displayInstruction}
+`;
+
 
 /* ******************** DATA END **************************************** */
 
