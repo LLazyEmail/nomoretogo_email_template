@@ -1,6 +1,6 @@
-// import { footerComponent } from "../src/index";
+import { footerComponent } from "../src/index";
 
-const footerComponent = require('../src/components/footerComponent');
+// const footerComponent = require('../src/components/footerComponent');
 
 
 describe('testing our functions', () => {
