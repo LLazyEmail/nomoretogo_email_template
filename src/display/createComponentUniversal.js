@@ -10,6 +10,7 @@ function createComponent(component, params = '') {
       'Error, component - "createComponentUniversal" , message - "component undefined" '
     );
   }
+  
   if (component == '') {
     throw new Error(
       'Error, component - "createComponentUniversal" , message - "component empty" '
