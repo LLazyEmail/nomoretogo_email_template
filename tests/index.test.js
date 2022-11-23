@@ -17,9 +17,11 @@ describe('test fullComponent', () => {
   // test('rendering MainString Component', () => {
   //   console.log(MainString);
   // });
+  /////----------------
   test('rendering BodyString Component', () => {
     console.log(BodyComponentString);
   });
+  /////----------------
   // test('rendering HeadString Component', () => {
   //   console.log(HeadString);
   // });
