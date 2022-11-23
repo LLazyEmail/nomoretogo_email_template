@@ -27,6 +27,10 @@ try {
   const bodyComponentRes = createComponent(bodyComponent, bodyComponentParams);
 
   result = bodyComponentRes;
+  
+  console.log(result);
+  
+  
 } catch (error) {
   console.log(error.message);
 }
