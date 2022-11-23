@@ -11,3 +11,21 @@ describe('footer display method must be initialized', () => {
   });
   
 });
+
+
+
+describe('writing components into files', () => {
+  
+    test('write footer', () => {
+      const string4 = printFooter();
+
+
+      writingFile(string4, 'nmtg');
+
+      expect(printFooter()).toBeDefined();
+
+
+  });
+  
+});
+
