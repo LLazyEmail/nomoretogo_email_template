@@ -14,5 +14,16 @@ describe('content display method must be initialized', () => {
 
 describe('writing components into files', () => {
   
+    // test('write content', () => {
+  //   const string2 = printContent();
+
+  //   // console.log(string);
+    
+
+  //   writingFile(string2, 'nmtg');
+
+  //   expect(printContent()).toBeDefined();
+  // });
+  
   
 });
