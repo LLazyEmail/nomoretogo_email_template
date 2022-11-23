@@ -15,4 +15,13 @@ describe('head display method must be initialized', () => {
 describe('writing components into files', () => {
   
   
+  test('write head', () => {
+    const string1 = printHead();
+
+    // console.log(string);
+    expect(string1).toBeDefined();
+
+    writingFile(string1, 'nmtg');
+  });
+  
 });
