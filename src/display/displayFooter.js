@@ -7,8 +7,11 @@ import createComponent from './createComponentUniversal';
 import socialsLinksParams from './socialLinksData';
 
 
+import { imagePath, params } from './footerData';
 
-/* ******************** DATA START **************************************** */
+
+
+// to test updated version of button component
 
 import {     
   buttonComponent2
@@ -16,35 +19,6 @@ import {
 
 //  buttonComponent2({id: '12', href: 'google.com'});
 
-
-
-// TODO can be moved into config later
-const imagePath = 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/amazon.png';
-
-
-
-var params = {
-  topTitle: 'No More To-Go Facebook Users:',
-  // topLinkHref: '123',
-  topLinkId: 'fb-group',
-  topLinkText: 'Facebook Group Page',
-  bottomTitle: 'Have Questions?',
-  // bottomLinkHref: '123',
-  bottomLinkId: 'email-id',
-  bottomLinkText: '"How Can We Help',
-  // bottomTextContact: 'bottomTextContact',
-};
-
-
-
-
-
-  
-
-
-
-
-/* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
 var result = null;
