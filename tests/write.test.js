@@ -1,14 +1,17 @@
-import {
-  printHead,
-  printContent,
-  printMain,
-  printFooter,
-  printBody,
-} from '../src/methods';
+// import {
+//   printHead,
+//   printContent,
+//   printMain,
+//   printFooter,
+//   printBody,
+// } from '../src/methods';
 
 import { writingFile } from 'markup-generator';
 
 describe('writing components into files', () => {
+  
+  
+  
 
   test('write head', () => {
     const string1 = printHead();
@@ -18,6 +21,9 @@ describe('writing components into files', () => {
 
     writingFile(string1, 'nmtg');
   });
+  
+  
+  
 
   // test('write content', () => {
   //   const string2 = printContent();
@@ -29,6 +35,8 @@ describe('writing components into files', () => {
 
   //   expect(printContent()).toBeDefined();
   // });
+  
+  
 
   // test('write main', () => {
   //   const string3 = printMain();
@@ -38,6 +46,8 @@ describe('writing components into files', () => {
 
   //   writingFile(string3, 'nmtg');
   // });
+  
+  
 
   test('write head', () => {
     const string4 = printFooter();
@@ -59,4 +69,6 @@ describe('writing components into files', () => {
 
   //   writingFile(string5, 'nmtg');
   // });
+  
+  
 });
