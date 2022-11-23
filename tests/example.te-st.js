@@ -1,14 +1,6 @@
 // // https://www.codegrepper.com/code-examples/javascript/jest+test+if+method+exists
 
 
-// describe('', () => {
-//   test('', () => {
-  
-//   });
-// });
-
-
-
 // // jest.mock("../foo");
 // // const foo = require("../foo");
 
