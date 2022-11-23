@@ -3,14 +3,38 @@ import createComponent from './createComponentUniversal';
 
 
 
+import mainComponent from '../components/mainComponent';
 
 
+import displayHead from '../display/displayHead';
+
+
+
+
+
+
+/////
 import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
 
 
 
+import { HTMLBODYSTRING } from '../display/displayBody';
+/////////
 
-import displayHead from '../display/displayHead';
+
+
+
+
+import displayFooter from '../display/displayFooter';
+
+
+
+
+
+
+
+//----------
+
 
 
 import displayContentMainTableWrap from '../display/displayContentMainTableWrap';
@@ -21,15 +45,13 @@ import displayContent from '../display/displayContent';
 
 
 
-import mainComponent from '../components/mainComponent';
 
-//----------
+
 import displayInstruction from '../display/displayInstruction';
 // import displaySupportContact from '../display/displaySupportContact';
 
 
-
-import displayFooter from '../display/displayFooter';
+//----------
 
 
 
