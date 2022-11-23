@@ -35,10 +35,15 @@ const HeadParams = {
 // var result = null;
 // try {
 //   headComponent;
+
+
   const headComponentRes = createComponent(headComponent, HeadParams);
+
+
 //   result = headComponentRes;
 // } catch (error) {
 //   console.log(error.message);
 // }
 /* ******************** CREATE CONTENT END ****************************** */
+
 export default headComponentRes;
