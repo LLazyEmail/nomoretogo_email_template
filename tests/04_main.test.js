@@ -1,3 +1,5 @@
+import { writingFile } from 'markup-generator';
+
 import { MainHTMLString } from '../src/display/displayMain';
 
 
