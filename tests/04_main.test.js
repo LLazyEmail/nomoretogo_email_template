@@ -9,3 +9,9 @@ describe('main display method must be initialized', () => {
   
   
 });
+
+
+describe('writing components into files', () => {
+  
+  
+});
