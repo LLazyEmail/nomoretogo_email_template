@@ -4,8 +4,10 @@ import { FooterHTMLString } from '../src/display/displayFooter';
 
 
 
-describe('main display method must be initialized', () => {
+describe('footer display method must be initialized', () => {
   
-   
+     test('display footer', () => {
+    expect(typeof FooterHTMLString === 'string').toBe(true);
+  });
   
 });
