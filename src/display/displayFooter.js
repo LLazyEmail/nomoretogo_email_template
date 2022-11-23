@@ -5,8 +5,6 @@ import Factory from './factory';
 import createComponent from './createComponentUniversal';
 
 import socialsLinksParams from './socialLinksData';
-
-
 import { imagePath, params } from './footerData';
 
 
@@ -25,12 +23,10 @@ var result = null;
 try {
 
 
-  const imageBlock = createComponent(
-    amazonFreshBlock,
-    imagePath
-  );
+  const imageBlock = createComponent( amazonFreshBlock, imagePath );
 
 
+  
   const factory = new Factory(supportComponent, params);
   const supportBlock = factory.create();
 
