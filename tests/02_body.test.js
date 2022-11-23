@@ -17,5 +17,12 @@ describe('body display method must be initialized', () => {
 
 describe('writing components into files', () => {
   
-  
+    test('write body', () => {
+      const string5 = printBody();
+
+      // console.log(string);
+      expect(printBody()).toBeDefined();
+
+      writingFile(string5, 'nmtg');
+  });
 });
