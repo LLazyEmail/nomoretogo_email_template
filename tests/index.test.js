@@ -1,5 +1,7 @@
 // import MainString from '../src/display/displayMain';
-import BodyComponentString from '../src/display/displayBodyComponent';
+
+import BodyComponentString from '../src/display/displayBody';
+
 // import HeadString from '../src/display/displayHead';
 // import ContentMainTableWrapString from '../src/display/displayContentMainTableWrap';
 // import contentString from '../src/display/displayContent';
