@@ -41,14 +41,14 @@ try {
   //  console.log(socialMedia);
   
   
-  const config = {
+  const settings = {
     socialPanel: socialMedia,
     amazonFreshBlock: imageBlock,
     supportBlock: supportBlock
   }
 
 
-  result = createComponent(footerComponent, config);
+  result = createComponent(footerComponent, settings);
 
   // console.log(result);
 
