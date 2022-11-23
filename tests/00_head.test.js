@@ -10,3 +10,9 @@ describe('head display method must be initialized', () => {
 
   
 });
+
+
+describe('writing components into files', () => {
+  
+  
+});
