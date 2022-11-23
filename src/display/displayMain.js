@@ -1,7 +1,14 @@
 // Create Main display
 import createComponent from './createComponentUniversal';
 
+
+
+
+
 import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
+
+
+
 
 import displayHead from '../display/displayHead';
 
@@ -24,11 +31,14 @@ import displayInstruction from '../display/displayInstruction';
 
 import displayFooter from '../display/displayFooter';
 
+
+
+
 /* ******************** DATA START **************************************** */
 var MainHTMLTemplate = null;
 var error = '';
 
-var cfg = '';
+var settings = '';
 
 if (displayHead == null) {
   error = 'Empty displayHead';
@@ -47,6 +57,9 @@ if (displayInstruction == null) {
   error = 'Empty displayInstruction';
 }
 
+
+
+
 // TODO if we want to keep those checks, we need to move it into footer display probably
 // if (displaySupportContact == null) {
 //   error = 'Empty displaySupportContact';
@@ -55,10 +68,18 @@ if (displayInstruction == null) {
 //   error = 'Empty displayImageAfterSupportComponent';
 // }
 
+
+
+
+
 if (displayFooter == null) {
   error = 'Empty displayFooter';
 }
 /* ******************** DATA END **************************************** */
+
+
+
+
 
 /* ******************** CREATE CONTENT START ****************************** */
 if (error == '') {
@@ -74,15 +95,28 @@ if (error == '') {
 
   console.log(BodyComponentHTML)
 
-  cfg = {
+  
+  
+//variant one
+// const settings = {
+//   component: MainComponent,
+//   params: { head: headString, body: BodyHTMLString },
+// };
+  
+  
+  settings = {
     head: displayHead,
     body: BodyComponentHTML,
-      footer: displayFooter
+    footer: displayFooter
   };
 
-  MainHTMLTemplate = createComponent(mainComponent, cfg)
+  MainHTMLTemplate = createComponent(mainComponent, settings)
 
   result = displayHead + BodyComponentHTML + displayFooter;
+  
+  
+  
+  
 
   // console.log(result);
 
@@ -96,5 +130,5 @@ if (error == '') {
 
 export {
    MainHTMLTemplate,
-   cfg
+   settings
 }
