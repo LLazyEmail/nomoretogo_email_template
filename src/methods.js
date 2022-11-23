@@ -9,31 +9,31 @@ import { MainHTMLTemplate } from '../src/display/displayMain';
 
 // console.log(HeadString)
 
-const printHead = () => {
-  return HeadString;
-};
+// const printHead = () => {
+//   return HeadString;
+// };
 
-const printContent = () => {
-  return contentString;
-};
+// const printContent = () => {
+//   return contentString;
+// };
 
-const printMain = () => {
-  return MainHTMLTemplate;
-};
+// const printMain = () => {
+//   return MainHTMLTemplate;
+// };
 
-const printFooter = () => {
-  return FooterString;
-};
+// const printFooter = () => {
+//   return FooterString;
+// };
 
-const printBody = () => {
-  return BodyComponentString;
-};
+// const printBody = () => {
+//   return BodyComponentString;
+// };
 
 
 export {
-  printHead,
-  printContent,
-  printMain,
-  printFooter,
-  printBody,
+//   printHead,
+//   printContent,
+//   printMain,
+//   printFooter,
+//   printBody,
 };
