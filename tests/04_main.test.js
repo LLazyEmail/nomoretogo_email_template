@@ -12,7 +12,14 @@ describe('main display method must be initialized', () => {
 
 
 describe('writing components into files', () => {
-  
+  test('write main', () => {
+    const string3 = printMain();
+
+    // console.log(string);
+    expect(printMain()).toBeDefined();
+
+    writingFile(string3, 'nmtg');
+  });
   
 });
 
