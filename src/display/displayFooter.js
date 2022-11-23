@@ -5,6 +5,9 @@ import Factory from './factory';
 import createComponent from './createComponentUniversal';
 
 import socialsLinksParams from './socialLinksData';
+
+
+
 /* ******************** DATA START **************************************** */
 
 import {     
@@ -12,6 +15,7 @@ import {
  } from 'nmtg-template-mailerlite-typography';
 
 //  buttonComponent2({id: '12', href: 'google.com'});
+
 
 
 // TODO can be moved into config later
