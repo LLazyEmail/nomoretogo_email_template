@@ -6,7 +6,7 @@ import createComponent from './createComponentUniversal';
 
 // import socialsLinksParams from './_socialLinksData';
 
-import { socialsLinksParams } from './_footerData';
+import { socialsLinksParams } from '../config';
 
 
 import { imagePath, title, params } from './_footerData';
