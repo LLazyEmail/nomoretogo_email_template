@@ -12,12 +12,8 @@ import displayHead from '../display/displayHead';
 
 
 
-/////
+/////---------------
 import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
-
-
-
-
 
 
 
@@ -62,7 +58,7 @@ var MainHTMLTemplate = null;
 var error = '';
 
 var settings = '';
-var result = false;
+var result = null;
 
 if (displayHead == null) {
   error = 'Empty displayHead';
@@ -126,7 +122,7 @@ if (error == '') {
 
   const BodyComponentHTML = createComponent(bodyComponent, bodyContentParams);
 
-  console.log(BodyComponentHTML);
+  // console.log(BodyComponentHTML);
 
   
   
@@ -149,9 +145,13 @@ if (error == '') {
   };
 
   
-  MainHTMLTemplate = createComponent(mainComponent, settings)
+  MainHTMLTemplate = createComponent(mainComponent, settings);
 
-  result = displayHead + BodyComponentHTML + displayFooterHTML;
+  result = `
+  ${displayHead}  
+  ${BodyComponentHTML} 
+  ${displayFooterHTML}
+  `;
   
   
   
@@ -166,8 +166,9 @@ if (error == '') {
 /* ******************** CREATE CONTENT END ****************************** */
 
 
+export default MainHTMLTemplate;
 
-export {
-   MainHTMLTemplate,
-   settings
-}
+// export {
+//     result as MainHTMLTemplate,
+//    settings
+// }
