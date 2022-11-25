@@ -6,7 +6,7 @@ import createComponent from './createComponentUniversal';
 
 
 import displayContentMainTableWrap from './displayContentMainTableWrap';
-import displayContent from './displayContent';
+import displayContentHTML from './displayContent';
 import displayInstruction from './displayInstruction';
 
 
@@ -19,7 +19,7 @@ import displayInstruction from './displayInstruction';
 
 const bodyComponentParams = `
 ${displayContentMainTableWrap}
-${displayContent}
+${displayContentHTML}
 ${displayInstruction}
 `;
 
