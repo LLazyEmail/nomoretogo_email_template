@@ -34,7 +34,7 @@ try {
 
   result = bodyComponentRes;
   
-  console.log(result);
+  // console.log(result);
   
   
 } catch (error) {

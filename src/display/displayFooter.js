@@ -4,8 +4,8 @@ import { SocialPanelComponent } from 'nmtg-template-mailerlite-miscellaneous';
 import Factory from './factory';
 import createComponent from './createComponentUniversal';
 
-import socialsLinksParams from './socialLinksData';
-import { imagePath, params } from './footerData';
+import socialsLinksParams from './_socialLinksData';
+import { imagePath, params } from './_footerData';
 
 
 

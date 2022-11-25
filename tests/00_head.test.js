@@ -17,7 +17,7 @@ describe('writing components into files', () => {
   
   
   test('write head', () => {
-    const string1 = printHead();
+    const string1 = HeadHTMLString;
 
     // console.log(string);
     expect(string1).toBeDefined();
