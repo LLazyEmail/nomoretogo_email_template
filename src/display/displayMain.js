@@ -22,7 +22,7 @@ import { BodyHTMLString } from '../display/displayBody';
 
 
 
-import displayFooter from '../display/displayFooter';
+import displayFooterHTML from '../display/displayFooter';
 
 
 
@@ -72,7 +72,7 @@ if (displayContent == null) {
 }
 
 
-if (displayInstruction == null) {
+if (displayInstructionHTMLString == null) {
   error = 'Empty displayInstruction';
 }
 
@@ -91,7 +91,7 @@ if (displayInstruction == null) {
 
 
 
-if (displayFooter == null) {
+if (displayFooterHTML == null) {
   error = 'Empty displayFooter';
 }
 /* ******************** DATA END **************************************** */
@@ -133,7 +133,7 @@ if (error == '') {
     
     body: BodyComponentHTML,
     
-    footer: displayFooter
+    footer: displayFooterHTML
   };
 
   MainHTMLTemplate = createComponent(mainComponent, settings)
