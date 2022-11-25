@@ -2,9 +2,15 @@ import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate';
 
 import createComponent from './createComponentUniversal';
 
+
+
+
 import displayContentMainTableWrap from './displayContentMainTableWrap';
 import displayContent from './displayContent';
 import displayInstruction from './displayInstruction';
+
+
+
 
 /* ******************** DATA START **************************************** */
 // Body params
