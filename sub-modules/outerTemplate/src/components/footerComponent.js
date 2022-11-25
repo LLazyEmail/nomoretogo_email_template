@@ -15,9 +15,6 @@ import {
   unsubscribe 
 } from '../config';
 
-// Title
-// TODO move title into config
-// const title = 'No More To-Go';
 
 // Address
 const address = () => {
