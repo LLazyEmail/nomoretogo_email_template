@@ -36,7 +36,7 @@ import displayInstructionHTMLString from '../display/displayInstruction';
 
 
 
-import { BodyHTMLString } from '../display/displayBody';
+import BodyHTMLString from '../display/displayBody';
 /////////
 
 
@@ -62,6 +62,7 @@ var MainHTMLTemplate = null;
 var error = '';
 
 var settings = '';
+var result = false;
 
 if (displayHead == null) {
   error = 'Empty displayHead';
@@ -95,11 +96,13 @@ if (displayInstructionHTMLString == null) {
 
 
 
-
-
 if (displayFooterHTML == null) {
   error = 'Empty displayFooter';
 }
+
+// if (displayFooterHTML == null) {
+//   error = 'Empty displayFooter';
+// }
 /* ******************** DATA END **************************************** */
 
 
@@ -123,7 +126,7 @@ if (error == '') {
 
   const BodyComponentHTML = createComponent(bodyComponent, bodyContentParams);
 
-  console.log(BodyComponentHTML)
+  console.log(BodyComponentHTML);
 
   
   
@@ -148,7 +151,7 @@ if (error == '') {
   
   MainHTMLTemplate = createComponent(mainComponent, settings)
 
-  result = displayHead + BodyComponentHTML + displayFooter;
+  result = displayHead + BodyComponentHTML + displayFooterHTML;
   
   
   
