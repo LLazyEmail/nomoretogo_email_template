@@ -16,21 +16,8 @@ import displayHead from '../display/displayHead';
 import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
 
 
-import { BodyHTMLString } from '../display/displayBody';
-/////////
 
 
-
-
-import displayFooterHTML from '../display/displayFooter';
-
-
-
-
-
-
-
-//----------
 
 
 
@@ -48,7 +35,24 @@ import displayInstructionHTMLString from '../display/displayInstruction';
 // import displaySupportContact from '../display/displaySupportContact';
 
 
+
+import { BodyHTMLString } from '../display/displayBody';
+/////////
+
+
+
+
+import displayFooterHTML from '../display/displayFooter';
+
+
+
+
+
+
+
 //----------
+
+
 
 
 
