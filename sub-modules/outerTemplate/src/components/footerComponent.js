@@ -17,7 +17,7 @@ import {
 
 // Title
 // TODO move title into config
-const title = 'No More To-Go';
+// const title = 'No More To-Go';
 
 // Address
 const address = () => {
@@ -55,7 +55,33 @@ const createUnsubscribe = (href) => {
 
 const footerHTML = (params) => {
 
-const { socialPanel, address, description, unsubscribeLink } = params;
+const { socialPanel, address, description, unsubscribeLink, title } = params;
+  
+  
+  
+  if (!socialPanel) {
+    throw new Error('no socialPanel was passed');
+  }
+  // if (typeof copyright != 'function') {
+  //   throw new Error('no copyrights was passed');
+  // }
+
+  if (!address) {
+    throw new Error('invalid address');
+  }
+  
+  if (!description) {
+    throw new Error('invalid description');
+  }
+    if (!unsubscribeLink) {
+    throw new Error('invalid unsubscribeLink');
+  }
+    if (!title) {
+    throw new Error('invalid title');
+  }
+  
+  
+  
 
 return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableFooterDefault" cellpadding="0" cellspacing="0" width="640">
 
@@ -152,7 +178,7 @@ const footerComponent = (params) => {
 
   const { amazonFreshBlock, supportBlock, socialPanel } = params;
 
-  const cfg = {
+  const settings = {
     address: address(),
     description: description(),
     unsubscribeLink: createUnsubscribe(unsubscribe),
@@ -161,7 +187,7 @@ const footerComponent = (params) => {
 
   const line = supportBlock +
               amazonFreshBlock + separatorComponent() + 
-              footerHTML(cfg) ;
+              footerHTML(settings) ;
 
 
   return line;
