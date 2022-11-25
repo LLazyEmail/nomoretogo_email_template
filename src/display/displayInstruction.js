@@ -1,3 +1,5 @@
+// we using this component inside displayMain
+
 import instructionComponent from '../components/instructionComponent';
 
 import createComponent from './createComponentUniversal';
