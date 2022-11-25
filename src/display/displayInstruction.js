@@ -1,4 +1,4 @@
-// we using this component inside displayMain
+// we are using this component inside displayMain
 
 import instructionComponent from '../components/instructionComponent';
 
@@ -18,6 +18,9 @@ import instructionComponentParams from './_instructionData';
 // };
 
 /* ******************** DATA END **************************************** */
+
+
+
 
 /* ******************** CREATE CONTENT START ****************************** */
 var result = null;
