@@ -41,11 +41,15 @@ const mainStaticComponent = (params) => {
   // block 1
   const contentTitleTextRes = contentTitleText(contentTitleTextParams);
   const contentSubTitleTextRes = contentSubTitleText(contentSubTitleParams);
+
   const contentTextDescriptionRes = contentTextDescription(
     contentTextDescriptionParams
   );
+  
   const text =
     contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
+
+
 
   // block 2
   var imagesAll = contentRecipeParams.map((params) => {
@@ -53,6 +57,9 @@ const mainStaticComponent = (params) => {
   });
   const imageOne = dataImage[0];
   const imageTwo = dataImage[1];
+
+
+
 
   const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
 

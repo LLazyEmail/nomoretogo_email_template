@@ -16,6 +16,7 @@ const createTitle = (title) => {
 };
 
 const createText = (text) => {
+  
   // const config = {
   //   attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
   //   content,
@@ -45,12 +46,16 @@ const instructionMainBlock = (params) => {
                       <tbody><tr>
                         <td class="bodyTitle" id="bodyText-34" style="font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 150%; color: #6f6f6f;">
                           <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%; text-align: center;"></p>
+
                           <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"><strong></strong></p>
+
                           ${createTitle(title)}
                           ${createText(text)}
                           ${createTitle(title2)}
                           ${createText(text2)}
+
                           <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">Slice and Dice: Cut the vegetables and store in zippered bags or divided containers.</p>
+                          
                           <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;">Make Ahead and Refrigerate: Make the sauce; Cook the noodles; Make the dressing; Make the spaetzle; Cook the rice.<br><br><br><br><strong></strong><br><strong></strong><strong></strong></p>
                         </td>
                       </tr>

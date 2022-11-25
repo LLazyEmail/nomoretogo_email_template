@@ -1,5 +1,8 @@
 import contentComponent from '../components/StaticContentComponent';
 
+// import contentRecipeParams from '../display/_recipesData';
+
+
 ////////////// VARIANT ONE START ///////////////////////////////////
 
 // import createComponent from './createComponentUniversal';
@@ -20,7 +23,10 @@ import contentComponent from '../components/StaticContentComponent';
 //   // buttonComponent2,
 // } from 'nmtg-template-mailerlite-typography';
 
-// import contentRecipeParams from './recipesData';
+
+
+
+
 // //  buttonComponent2({id: '12', href: 'google.com'});
 
 // /* ******************** DATA START **************************************** */
@@ -67,6 +73,12 @@ import contentComponent from '../components/StaticContentComponent';
 //   return title + subTitle + description;
 // };
 
+
+
+
+
+
+
 // const contentSectionTwo = () => {
 //   // All Recipe
 //   var imagesAll = contentRecipeParams.map((params) => {
@@ -84,6 +96,9 @@ import contentComponent from '../components/StaticContentComponent';
 //   return images + buttonRes;
 // };
 
+
+
+
 // var result = null;
 // try {
 //   // Line block
@@ -99,6 +114,8 @@ import contentComponent from '../components/StaticContentComponent';
 
 // export default result;
 ////////////// VARIANT ONE END /////////////////////////////////////
+
+
 
 ////////////// VARIANT TWO START ///////////////////////////////////
 import contentRecipeParams from './_recipesData';
@@ -119,29 +136,34 @@ const contentTextDescriptionParams = {
   textBottom: '123',
 };
 
-const dataImage = [
-  {
-    id: 'imageBlock-26',
-    href: 'https://www.nomoretogo.com/weekly-menu/',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe1.jpeg',
-    //------
-    title: 'Chipotle Cream Skillet Chicken',
-    text: 'over Rice and Snap Peas',
-  },
-  {
-    id: 'imageBlock-21',
-    href: 'https://www.nomoretogo.com/weekly-menu/',
-    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe2.jpeg',
-    //------
-    title: 'Pork Schnitzel',
-    text: 'with German Spaetzle and Green Beans',
-  },
-];
+
+
+// const dataImage = [
+//   {
+//     id: 'imageBlock-26',
+//     href: 'https://www.nomoretogo.com/weekly-menu/',
+//     src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe1.jpeg',
+//     //------
+//     title: 'Chipotle Cream Skillet Chicken',
+//     text: 'over Rice and Snap Peas',
+//   },
+//   {
+//     id: 'imageBlock-21',
+//     href: 'https://www.nomoretogo.com/weekly-menu/',
+//     src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe2.jpeg',
+//     //------
+//     title: 'Pork Schnitzel',
+//     text: 'with German Spaetzle and Green Beans',
+//   },
+// ];
+
+
+
 
 const contentButtonParams = {
   id: '04-22-2021',
   href: 'https://www.nomoretogo.com/weekly-menu/',
-  text: '123',
+  text: `Get This Week's Menu`,
 };
 
 var result = null;
@@ -151,9 +173,11 @@ try {
     contentSubTitleParams,
     contentTextDescriptionParams,
     contentRecipeParams,
-    dataImage,
+    // contentRecipeParams
+    // dataImage,
     contentButtonParams,
   });
+
 } catch (error) {
   console.log(error.message);
 }

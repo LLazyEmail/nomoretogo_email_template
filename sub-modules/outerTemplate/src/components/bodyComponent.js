@@ -35,7 +35,14 @@ const bodyComponent = (bodyContent, headerBlock) => {
                         <tr>
                           <td align="left" style="font-family: &#39;Poppins&#39;, sans-serif; color: #111111; font-size: 12px; line-height: 18px;"></td>
                           <td align="right" style="font-family: &#39;Poppins&#39;, sans-serif; color: #111111; font-size: 12px; line-height: 18px;">
+
+
+                          
                             <a style="color: #111111;" href="https://click.mailerlite.com/link/c/YT0xOTM0MzU4ODYxNzU0NDA1OTgyJmM9bDhuNSZiPTk2MDM1NzI3MyZkPWUzajFqNW8=.W0GaLZ55-F5iaI7dBLw6RZzE4wwfOh_zk7KO-dSmgA4" data-link-id="960357273" target="_blank">View in browser</a>
+
+
+
+
                           </td>
                         </tr>
                         <tr>
