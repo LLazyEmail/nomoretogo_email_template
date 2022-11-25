@@ -173,16 +173,17 @@ return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable
 };
 
 
-// Create foot content start
+// Create footer content start
 const footerComponent = (params) => {
 
-  const { amazonFreshBlock, supportBlock, socialPanel } = params;
+  const { amazonFreshBlock, supportBlock, socialPanel, title } = params;
 
   const settings = {
     address: address(),
     description: description(),
     unsubscribeLink: createUnsubscribe(unsubscribe),
     socialPanel,
+    title: title,
   }
 
   const line = supportBlock +
