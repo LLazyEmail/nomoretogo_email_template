@@ -68,13 +68,15 @@ if (displayHead == null) {
 }
 
 
+
+
+
 if (displayContentMainTableWrap == null) {
   error = 'Empty displayContentMainTableWrap';
 }
 if (displayContent == null) {
   error = 'Empty displayContent';
 }
-
 
 if (displayInstructionHTMLString == null) {
   error = 'Empty displayInstruction';
@@ -110,6 +112,7 @@ if (error == '') {
   
   
   
+
   
   const bodyContentParams = `
     ${displayContentMainTableWrap}
@@ -122,6 +125,8 @@ if (error == '') {
 
   console.log(BodyComponentHTML)
 
+  
+  
   
   
   
@@ -140,6 +145,7 @@ if (error == '') {
     footer: displayFooterHTML
   };
 
+  
   MainHTMLTemplate = createComponent(mainComponent, settings)
 
   result = displayHead + BodyComponentHTML + displayFooter;
