@@ -38,6 +38,10 @@ const mainStaticComponent = (params) => {
     contentButtonParams,
   } = params;
 
+  
+  
+  
+  
   // block 1
   const contentTitleTextRes = contentTitleText(contentTitleTextParams);
   const contentSubTitleTextRes = contentSubTitleText(contentSubTitleParams);
@@ -49,6 +53,11 @@ const mainStaticComponent = (params) => {
   const text =
     contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
 
+  
+  
+  
+  
+  
 
 
   // block 2
@@ -57,19 +66,29 @@ const mainStaticComponent = (params) => {
   });
   const imageOne = dataImage[0];
   const imageTwo = dataImage[1];
-
-
-
-
   const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
 
+  
+  
+  
+  
+  
+  
+  
+  
   const buttonComponentRes = buttonComponent(contentButtonParams);
   const contentButtonBlockRes = contentButtonBlock(buttonComponentRes);
+  
+  
   const separator = separatorComponent();
   const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
+  
+  
 
   // All content
   const allContent = text + contentAndAfter;
+  
+  
   return allContent;
 };
 
