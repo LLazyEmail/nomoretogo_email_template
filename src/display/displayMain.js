@@ -5,7 +5,6 @@ import createComponent from './createComponentUniversal';
 
 import mainComponent from '../components/mainComponent';
 
-
 import displayHead from '../display/displayHead';
 
 
@@ -17,10 +16,8 @@ import displayHead from '../display/displayHead';
 import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
 
 
-
-import { HTMLBODYSTRING } from '../display/displayBody';
+import { BodyHTMLString } from '../display/displayBody';
 /////////
-
 
 
 
@@ -47,7 +44,7 @@ import displayContent from '../display/displayContent';
 
 
 
-import displayInstruction from '../display/displayInstruction';
+import displayInstructionHTMLString from '../display/displayInstruction';
 // import displaySupportContact from '../display/displaySupportContact';
 
 
@@ -106,10 +103,14 @@ if (displayFooter == null) {
 /* ******************** CREATE CONTENT START ****************************** */
 if (error == '') {
   
+  
+  
+  
+  
   const bodyContentParams = `
     ${displayContentMainTableWrap}
     ${displayContent}
-    ${displayInstruction}
+    ${displayInstructionHTMLString}
 
     `;
 
@@ -117,6 +118,7 @@ if (error == '') {
 
   console.log(BodyComponentHTML)
 
+  
   
   
 //variant one
@@ -128,7 +130,9 @@ if (error == '') {
   
   settings = {
     head: displayHead,
+    
     body: BodyComponentHTML,
+    
     footer: displayFooter
   };
 
