@@ -101,7 +101,7 @@ import contentComponent from '../components/StaticContentComponent';
 ////////////// VARIANT ONE END /////////////////////////////////////
 
 ////////////// VARIANT TWO START ///////////////////////////////////
-import contentRecipeParams from './recipesData';
+import contentRecipeParams from './_recipesData';
 
 // Title
 const contentTitleTextParams = {

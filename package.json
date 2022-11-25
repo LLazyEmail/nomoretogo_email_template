@@ -11,6 +11,7 @@
     "build": "npm run clean && npm run bundle",
     "build:babel": "babel src -d dist",
     "prepublish": "npm run clean && npm run build",
+    "test:all": "jest ./tests/* --passWithNoTests",
     "test": "jest ./tests/index.test.js --passWithNoTests",
     "test:write": "jest ./tests/write.test.js --passWithNoTests",
     "test:typo": "jest ./tests/typography.test.js --passWithNoTests",
