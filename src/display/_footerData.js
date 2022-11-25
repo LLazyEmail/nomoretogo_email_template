@@ -17,7 +17,10 @@ var params = {
 };
 
 
+const title = 'No More To-Go';
+
 export {
   imagePath,
-  params
+  params,
+  title
 }
