@@ -13,21 +13,21 @@ import displayHead from '../display/displayHead';
 
 
 /////---------------
-import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
+// import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
 
 
 
-import displayContentMainTableWrap from '../display/displayContentMainTableWrap';
+// import displayContentMainTableWrap from '../display/displayContentMainTableWrap';
 
 
 
-import displayContent from '../display/displayContent';
+// import displayContent from '../display/displayContent';
 
 
 
 
 
-import displayInstructionHTMLString from '../display/displayInstruction';
+// import displayInstructionHTMLString from '../display/displayInstruction';
 // import displaySupportContact from '../display/displaySupportContact';
 
 
@@ -68,16 +68,16 @@ if (displayHead == null) {
 
 
 
-if (displayContentMainTableWrap == null) {
-  error = 'Empty displayContentMainTableWrap';
-}
-if (displayContent == null) {
-  error = 'Empty displayContent';
-}
+// if (displayContentMainTableWrap == null) {
+//   error = 'Empty displayContentMainTableWrap';
+// }
+// if (displayContent == null) {
+//   error = 'Empty displayContent';
+// }
 
-if (displayInstructionHTMLString == null) {
-  error = 'Empty displayInstruction';
-}
+// if (displayInstructionHTMLString == null) {
+//   error = 'Empty displayInstruction';
+// }
 
 
 
@@ -113,14 +113,14 @@ if (error == '') {
   
 
   
-  const bodyContentParams = `
-    ${displayContentMainTableWrap}
-    ${displayContent}
-    ${displayInstructionHTMLString}
+  // const bodyContentParams = `
+  //   ${displayContentMainTableWrap}
+  //   ${displayContent}
+  //   ${displayInstructionHTMLString}
 
-    `;
+  //   `;
 
-  const BodyComponentHTML = createComponent(bodyComponent, bodyContentParams);
+  // const BodyComponentHTML = createComponent(bodyComponent, bodyContentParams);
 
   // console.log(BodyComponentHTML);
 
@@ -139,7 +139,7 @@ if (error == '') {
   settings = {
     head: displayHead,
     
-    body: BodyComponentHTML,
+    body: BodyHTMLString,
     
     footer: displayFooterHTML
   };
@@ -149,7 +149,7 @@ if (error == '') {
 
   result = `
   ${displayHead}  
-  ${BodyComponentHTML} 
+  ${BodyHTMLString} 
   ${displayFooterHTML}
   `;
   
