@@ -5,7 +5,7 @@ const subHeadingMainBlock = (subTitleText) => {
   return `<td align="center" class="bodyTitle" style="font-family: 'Poppins', sans-serif; font-size: 19px; font-weight: 400; line-height: 150%; color: #111111; text-transform: none; font-style: normal; text-decoration: none; text-align: center;">${subTitleText}</td>`;
 };
 
-export default function (params) {
+const renderSubHeading = (params) => {
   const { subTitleText } = params;
   const error = new Errors('contentSubTitleText');
 
@@ -14,4 +14,14 @@ export default function (params) {
   }
 
   return subHeadingMainBlock(subTitleText);
+}
+
+// <span style="color: #111111;">Unsubscribe</span>
+const spanHeadingBlock = (title) => {
+  return `<span style="color: #111111;">$title</span>`;
+}
+
+export {
+  renderSubHeading,
+  spanHeadingBlock
 }
