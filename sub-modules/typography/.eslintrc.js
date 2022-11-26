@@ -8,7 +8,8 @@ module.exports = {
         "plugin:json/recommended"
     ],
     "parserOptions": {
-        "ecmaVersion": 12
+        "ecmaVersion": 12,
+        "requireConfigFile": false, // <== ADD THIS
     },
     "rules": {
         "import/prefer-default-export": "off",
