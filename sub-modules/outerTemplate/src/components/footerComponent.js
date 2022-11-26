@@ -3,6 +3,7 @@ import {
   paragraphComponent,
   linkComponent,
   separatorComponent,
+  spanHeadingBlock
   // imageComponent,
 } from 'nmtg-template-mailerlite-typography';
 
@@ -44,7 +45,7 @@ const createUnsubscribe = (href) => {
 
   const linkParams = {
     attributes: `href="${href}" style="color: #111111; text-decoration: underline;"`,
-    content: `<span style="color: #111111;">Unsubscribe</span>`, // TODO we can add span into headings
+    content: spanHeadingBlock(`Unsubscribe`), 
   };
   return linkComponent(linkParams);
 };
