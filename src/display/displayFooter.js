@@ -4,18 +4,12 @@ import { SocialPanelComponent } from 'nmtg-template-mailerlite-miscellaneous';
 import Factory from './factory';
 import createComponent from './createComponentUniversal';
 
-// import socialsLinksParams from './_socialLinksData';
 
 import { socialsLinksParams } from '../config';
 
 
 import { imagePath, title, params } from './_footerData';
 
-
-
-// Title
-// TODO move title into config
-// const title = 'No More To-Go';
 
 
 // to test updated version of button component
