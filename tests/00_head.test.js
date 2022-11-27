@@ -22,7 +22,7 @@ describe('writing components into files', () => {
     // console.log(string);
     expect(string1).toBeDefined();
 
-    writingFile(string1, 'nmtg');
+    writingFile(string1, 'nmtg-Head');
   });
   
 });
