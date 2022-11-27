@@ -25,6 +25,6 @@ describe('writing components into files', () => {
       // console.log(string);
       expect(BodyHTMLString).toBeDefined();
 
-      writingFile(string5, 'nmtg');
+      writingFile(string5, 'nmtg-Body');
   });
 });
