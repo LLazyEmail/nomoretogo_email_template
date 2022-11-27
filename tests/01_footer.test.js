@@ -22,7 +22,7 @@ describe('writing components into files', () => {
       const string4 = FooterHTMLString;
 
 
-      writingFile(string4, 'nmtg');
+      writingFile(string4, 'nmtg-footer');
 
       expect(FooterHTMLString).toBeDefined();
 
