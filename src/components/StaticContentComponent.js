@@ -1,5 +1,4 @@
 // Create wrap component content
-
 import {
   contentButtonBlock,
   recipeComponent,
@@ -16,18 +15,46 @@ import {
 
 
 
-const createTitle = (title) => {
-  // const content = { content: strong(title) };
+const createBlockOne = (contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams) => {
 
-  // const titleParams = {
-  //   attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
-  //   content,
-  // };
-  // return paragraphComponent(titleParams);
+  // block 1
+  const contentTitleTextRes = contentTitleText(contentTitleTextParams);
+  const contentSubTitleTextRes = contentSubTitleText(contentSubTitleParams);
 
+  const contentTextDescriptionRes = contentTextDescription(
+    contentTextDescriptionParams
+  );
+  
+  const text =
+    contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
+
+    return text;
 
 };
 
+
+const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
+
+
+
+  
+  
+  const buttonComponentRes = buttonComponent(contentButtonParams);
+
+  const contentButtonBlockRes = contentButtonBlock(buttonComponentRes);
+  
+  
+  const separator = separatorComponent();
+  const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
+  
+  
+
+  // All content
+  const allContent = text + contentAndAfter;
+
+  return allContent;
+
+}
 
 
 const mainStaticComponent = (params) => {
@@ -44,22 +71,17 @@ const mainStaticComponent = (params) => {
   
   
   
-  
   // block 1
-  const contentTitleTextRes = contentTitleText(contentTitleTextParams);
-  const contentSubTitleTextRes = contentSubTitleText(contentSubTitleParams);
+  // const contentTitleTextRes = contentTitleText(contentTitleTextParams);
+  // const contentSubTitleTextRes = contentSubTitleText(contentSubTitleParams);
 
-  const contentTextDescriptionRes = contentTextDescription(
-    contentTextDescriptionParams
-  );
+  // const contentTextDescriptionRes = contentTextDescription(
+  //   contentTextDescriptionParams
+  // );
   
-  const text =
-    contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
+  const text =  createBlockOne(contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams);
+    // contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
 
-  
-  
-  
-  
   
 
 
@@ -73,24 +95,18 @@ const mainStaticComponent = (params) => {
 
   
   
+  // const buttonComponentRes = buttonComponent(contentButtonParams);
+
+  // const contentButtonBlockRes = contentButtonBlock(buttonComponentRes);
   
   
-  
-  
-  
-  
-  const buttonComponentRes = buttonComponent(contentButtonParams);
-  const contentButtonBlockRes = contentButtonBlock(buttonComponentRes);
-  
-  
-  const separator = separatorComponent();
-  const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
+  // const separator = separatorComponent();
+  // const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
   
   
 
   // All content
-  const allContent = text + contentAndAfter;
-  
+  const allContent = contentSubComponent(text, recipeRowBlockRes, contentButtonParams);
   
   return allContent;
 };
