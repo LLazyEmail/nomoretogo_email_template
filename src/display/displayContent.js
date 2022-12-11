@@ -171,7 +171,7 @@ try {
   });
 
 
-  console.log(result);
+  // console.log(result);
 
 } catch (error) {
   console.log(error.message);

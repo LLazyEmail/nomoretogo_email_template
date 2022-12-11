@@ -67,17 +67,17 @@ const createRecipesPanel = (recipes) => {
     return recipeComponent(params);
   });
 
-  console.log(imagesAll);
+  // console.log(imagesAll);
 
   
-  console.log(imagesAll[0]);
+  // console.log(imagesAll[0]);
   
   // console.log(imagesAll[1]);
 
 
-  const imageOne = dataImage[0];
-  const imageTwo = dataImage[1];
-  
+  const imageOne = imagesAll[0];
+  const imageTwo = imagesAll[1];
+  // 
   
   const recipeRowBlockHTML = recipeRowBlock(imageOne, imageTwo);
 
@@ -126,7 +126,3 @@ const StaticComponent = (params) => {
 };
 
 export default StaticComponent;
-
-// export default function (params) {
-//   return StaticComponent(params);
-// }
