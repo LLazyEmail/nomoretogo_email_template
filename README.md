@@ -8,6 +8,10 @@ https://github.com/LLazyEmail/free-email-templates-to-try/blob/main/01%20Food%20
 
 project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/blob/main/components/Typography/src/templates/image.js
 
+
+## TODO
+- [ ] Add validator for error messages and passed parameters 
+
 ---
 
 https://www.nomoretogo.com/weekly-menu/
@@ -29,6 +33,8 @@ https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data
 https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe6.jpeg
 
 ---
+
+
 
 ```bash
 ├── xxx

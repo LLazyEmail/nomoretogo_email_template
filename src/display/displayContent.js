@@ -1,4 +1,9 @@
-import contentComponent from '../components/StaticContentComponent';
+import StaticComponent from '../components/StaticContentComponent';
+
+
+
+
+
 
 // import contentRecipeParams from '../display/_recipesData';
 
@@ -29,6 +34,10 @@ import contentComponent from '../components/StaticContentComponent';
 
 // //  buttonComponent2({id: '12', href: 'google.com'});
 
+
+
+
+
 // /* ******************** DATA START **************************************** */
 // // Title
 // const contentTitleTextParams = {
@@ -56,6 +65,9 @@ import contentComponent from '../components/StaticContentComponent';
 //   text: '123',
 // };
 // /* ******************** DATA END **************************************** */
+
+
+
 
 // /* ******************** CREATE CONTENT START ****************************** */
 
@@ -99,20 +111,17 @@ import contentComponent from '../components/StaticContentComponent';
 
 
 
-// var result = null;
-// try {
+
+
+
 //   // Line block
 //   const line = createComponent(emptyBlock);
 
 //   const allContentRes = contentSectionOne() + contentSectionTwo() + line;
 
 //   result = createComponent(contentComponent, allContentRes);
-// } catch (error) {
-//   console.log(error.message);
-// }
-// /* ******************** CREATE CONTENT END ****************************** */
 
-// export default result;
+
 ////////////// VARIANT ONE END /////////////////////////////////////
 
 
@@ -168,14 +177,24 @@ const contentButtonParams = {
 
 var result = null;
 try {
-  result = contentComponent({
+  result = StaticComponent({
     contentTitleTextParams,
     contentSubTitleParams,
     contentTextDescriptionParams,
+
+
+
+
     contentRecipeParams,
     // contentRecipeParams
     // dataImage,
     contentButtonParams,
+
+
+    
+
+
+
   });
 
 } catch (error) {

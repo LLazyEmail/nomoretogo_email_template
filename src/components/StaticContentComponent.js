@@ -84,6 +84,20 @@ const StaticComponent = (params) => {
     contentButtonParams,
   } = params;
 
+
+
+  
+  if (!contentRecipeParams) {
+    throw new Error('no head was passed');
+  }
+
+  if (!dataImage) {
+    throw new Error('no body was passed');
+  }
+
+  if (!contentButtonParams) {
+    throw new Error('no footer was passed');
+  }
   
   
   
