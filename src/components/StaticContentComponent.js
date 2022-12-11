@@ -33,30 +33,33 @@ const createBlockOne = (contentTitleTextParams, contentSubTitleParams, contentTe
 };
 
 
+// TODO move Weekly menu button section into sub-components
 const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 
-  
-  const buttonComponentRes = buttonComponent(contentButtonParams);
+  // weekly menu button
+  const buttonHTML = buttonComponent(contentButtonParams);
 
-  const contentButtonBlockRes = contentButtonBlock(buttonComponentRes);
+  const contentButtonBlockHTML = contentButtonBlock(buttonHTML);
   
-  const separator = separatorComponent();
-  const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
-  
-  
-
+  const separatorHTML = separatorComponent();
   // All content
-  const allContent = text + contentAndAfter;
+  const allContent = 
+      text +
+      recipeRowBlockRes + 
+      contentButtonBlockHTML + 
+      separatorHTML;
 
   return allContent;
 
 }
 
 
+  // block 2
 const createRecipesPanel = (contentRecipeParams, dataImage) => {
 
 
-  // block 2
+
+
   var imagesAll = contentRecipeParams.map((params) => {
     return recipeComponent(params);
   });
@@ -64,7 +67,7 @@ const createRecipesPanel = (contentRecipeParams, dataImage) => {
   const imageTwo = dataImage[1];
   const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
 
-
+  return recipeRowBlockRes;
 }
 
 
@@ -85,8 +88,6 @@ const StaticComponent = (params) => {
   } = params;
 
 
-
-  
   if (!contentRecipeParams) {
     throw new Error('no head was passed');
   }
@@ -98,48 +99,11 @@ const StaticComponent = (params) => {
   if (!contentButtonParams) {
     throw new Error('no footer was passed');
   }
-  
-  
-  
-  // block 1
-  // const contentTitleTextRes = contentTitleText(contentTitleTextParams);
-  // const contentSubTitleTextRes = contentSubTitleText(contentSubTitleParams);
-
-  // const contentTextDescriptionRes = contentTextDescription(
-  //   contentTextDescriptionParams
-  // );
-  
-  const text =  createBlockOne(contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams);
-
-
-
-
-  // block 2
-  // var imagesAll = contentRecipeParams.map((params) => {
-  //   return recipeComponent(params);
-  // });
-  // const imageOne = dataImage[0];
-  // const imageTwo = dataImage[1];
-  // const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
 
   
+  const text = createBlockOne(contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams);
 
-  var imagesAll = createRecipesPanel(contentRecipeParams, dataImage)
-  
-
-
-
-
-
-  // const buttonComponentRes = buttonComponent(contentButtonParams);
-
-  // const contentButtonBlockRes = contentButtonBlock(buttonComponentRes);
-  
-  
-  // const separator = separatorComponent();
-  // const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
-  
-  
+  const recipeRowBlockRes = createRecipesPanel(contentRecipeParams, dataImage)
 
   // All content
   const allContent = contentSubComponent(text, recipeRowBlockRes, contentButtonParams);
@@ -147,8 +111,8 @@ const StaticComponent = (params) => {
   return allContent;
 };
 
-// export default StaticComponent;
+export default StaticComponent;
 
-export default function (params) {
-  return StaticComponent(params);
-}
+// export default function (params) {
+//   return StaticComponent(params);
+// }

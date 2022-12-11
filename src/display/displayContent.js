@@ -2,12 +2,6 @@ import StaticComponent from '../components/StaticContentComponent';
 
 
 
-
-
-
-// import contentRecipeParams from '../display/_recipesData';
-
-
 ////////////// VARIANT ONE START ///////////////////////////////////
 
 // import createComponent from './createComponentUniversal';
@@ -129,21 +123,27 @@ import StaticComponent from '../components/StaticContentComponent';
 ////////////// VARIANT TWO START ///////////////////////////////////
 import contentRecipeParams from './_recipesData';
 
+
+
 // Title
 const contentTitleTextParams = {
-  hrefTitle: '123',
-  idTitle: '123',
-  textTitle: '123',
+  hrefTitle: '123 - contentTitleTextParams',
+  idTitle: '123 - contentTitleTextParams',
+  textTitle: '123 - contentTitleTextParams',
 };
 
 // Sub title
-const contentSubTitleParams = '123';
+const contentSubTitleParams = 'contentSubTitleParams';
 
 // Description
 const contentTextDescriptionParams = {
-  textTop: '123',
-  textBottom: '123',
+  textTop: 'contentTextDescriptionParams',
+  textBottom: 'contentTextDescriptionParams',
 };
+
+
+
+// const dataImage = [
 
 
 
@@ -169,6 +169,10 @@ const contentTextDescriptionParams = {
 
 
 
+
+
+
+// TODO rename to Weekly Menu button and move to config file
 const contentButtonParams = {
   id: '04-22-2021',
   href: 'https://www.nomoretogo.com/weekly-menu/',
@@ -191,11 +195,14 @@ try {
     contentButtonParams,
 
 
-    
+
 
 
 
   });
+
+
+  console.log(result);
 
 } catch (error) {
   console.log(error.message);
