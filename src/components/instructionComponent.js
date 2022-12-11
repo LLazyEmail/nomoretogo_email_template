@@ -15,19 +15,41 @@ const createTitle = (title) => {
   return paragraphComponent(titleParams);
 };
 
+// replacing 
+// return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${text}</p>`;
 const createText = (text) => {
   
-  // const config = {
-  //   attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
-  //   content,
-  // };
+  const content = { content: text };
 
-  return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${text}</p>`;
+  const config = {
+    attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
+    content,
+  };
+  return paragraphComponent(config);
+
 };
 
-// TODO : нужно подумать как добавлять множество text
+
+const createInstructionsBlock = (params) => {
+  const { title, text, title2, text2 } = params;
+
+return `
+${createTitle(title)}
+${createText(text)}
+${createTitle(title2)}
+${createText(text2)}
+`;
+
+}
+
+
+// TODO: нужно подумать как добавлять множество text
 const instructionMainBlock = (params) => {
-  var { title, text, title2, text2 } = params;
+  // var { title, text, title2, text2 } = params;
+
+
+  const instructions = createInstructionsBlock(params)
+
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
     <tbody><tr>
       <td class="mlContentTableCardTd">
@@ -50,19 +72,24 @@ const instructionMainBlock = (params) => {
                           <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"><strong></strong></p>
 
 
+                          ${instructions}      
 
 
-                          ${createTitle(title)}
-                          ${createText(text)}
-                          ${createTitle(title2)}
-                          ${createText(text2)}
+
+                          <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
+                          Slice and Dice: Cut the vegetables and store in zippered bags or divided containers.
+                          </p>
+                          
+                          <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;">
+
+                          Make Ahead and Refrigerate: Make the sauce; Cook the noodles; Make the dressing; Make the spaetzle; Cook the rice.<br><br><br><br><strong></strong><br><strong></strong><strong></strong>
+                          
+                          </p>
+
 
 
                           
 
-                          <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">Slice and Dice: Cut the vegetables and store in zippered bags or divided containers.</p>
-                          
-                          <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;">Make Ahead and Refrigerate: Make the sauce; Cook the noodles; Make the dressing; Make the spaetzle; Cook the rice.<br><br><br><br><strong></strong><br><strong></strong><strong></strong></p>
                         </td>
                       </tr>
                     </tbody></table>

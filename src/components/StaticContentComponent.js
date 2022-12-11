@@ -53,14 +53,22 @@ const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 }
 
 
-const mainStaticComponent = (params) => {
+const createRecipesPanel = () => {
+
+}
+
+const StaticComponent = (params) => {
   // distructure params
   const {
     contentTitleTextParams,
     contentSubTitleParams,
     contentTextDescriptionParams,
+
+
     contentRecipeParams,
     dataImage,
+
+
     contentButtonParams,
   } = params;
 
@@ -78,6 +86,8 @@ const mainStaticComponent = (params) => {
   const text =  createBlockOne(contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams);
 
 
+
+
   // block 2
   var imagesAll = contentRecipeParams.map((params) => {
     return recipeComponent(params);
@@ -87,6 +97,8 @@ const mainStaticComponent = (params) => {
   const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
 
   
+
+  var imagesAll = createRecipesPanel(contentRecipeParams, dataImage)
   
   // const buttonComponentRes = buttonComponent(contentButtonParams);
 
@@ -105,5 +117,5 @@ const mainStaticComponent = (params) => {
 };
 
 export default function (params) {
-  return mainStaticComponent(params);
+  return StaticComponent(params);
 }
