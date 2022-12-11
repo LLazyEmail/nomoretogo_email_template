@@ -71,10 +71,10 @@ const { socialPanel, address, description, unsubscribeLink, title } = params;
   if (!description) {
     throw new Error('invalid description');
   }
-    if (!unsubscribeLink) {
+  if (!unsubscribeLink) {
     throw new Error('invalid unsubscribeLink');
   }
-    if (!title) {
+  if (!title) {
     throw new Error('invalid title');
   }
   

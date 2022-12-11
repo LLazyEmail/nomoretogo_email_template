@@ -36,16 +36,27 @@ const recipeName = (params) => {
 
   const content = `${titleComponent(title)} <br> ${textComponent(subtitle)}`;
 
-  const recipeParams = {
+  const config = {
     attributes:
       'style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"',
     content,
   };
-  return paragraphComponent(recipeParams);
+  return paragraphComponent(config);
 };
 
 const recipeComponent = (params) => {
   const { id, href, src, title, text } = params;
+
+  if (!id) {
+    throw new Error('invalid id');
+  }
+  if (!href) {
+    throw new Error('invalid href');
+  }
+  if (!src) {
+    throw new Error('invalid src');
+  }
+
 
   // TODO add checks to this component
   const recipeImage = imageComponent(id, href, src);

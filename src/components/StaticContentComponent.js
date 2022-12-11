@@ -61,6 +61,9 @@ const createRecipesPanel = (recipes) => {
 
 
   var imagesAll = recipes.map((params) => {
+
+    // console.log(params);
+
     return recipeComponent(params);
   });
 
