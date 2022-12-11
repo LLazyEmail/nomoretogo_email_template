@@ -44,9 +44,8 @@ const recipeName = (params) => {
   return paragraphComponent(recipeParams);
 };
 
-// Main Recipe block start
-const mainRecipe = (id, href, src, title, text) => {
-  // const { id, href, src, title, text } = params;
+const recipeComponent = (params) => {
+  const { id, href, src, title, text } = params;
 
   // TODO add checks to this component
   const recipeImage = imageComponent(id, href, src);
@@ -56,7 +55,7 @@ const mainRecipe = (id, href, src, title, text) => {
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267" 
   class="mlContentTable marginBottom" style="width: 267px; min-width: 267px;">
     <tbody><tr>
-      <td id="imageBlock-14" align="center">
+      <td id="${id}" align="center">
        ${recipeImage}
       </td>
     </tr>
@@ -77,11 +76,6 @@ const mainRecipe = (id, href, src, title, text) => {
     </tr>
     </tbody></table>`;
 };
-// Main Recipe block end
 
-const recipeComponent = (data) => {
-  const { id, href, src, title, text } = data;
-  return mainRecipe(id, href, src, title, text);
-};
 
 export default recipeComponent;

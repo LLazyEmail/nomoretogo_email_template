@@ -69,7 +69,7 @@ const createRecipesPanel = (recipes) => {
   
   console.log(imagesAll[0]);
   
-  console.log(imagesAll[1]);
+  // console.log(imagesAll[1]);
 
 
   const imageOne = dataImage[0];
