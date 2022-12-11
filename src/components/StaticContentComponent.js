@@ -1,18 +1,5 @@
 // Create wrap component content
-// import Errors from '../Errors';
 
-////////////// VARIANT ONE START ///////////////////////////////////
-// export default function (content) {
-//   const error = new Errors('contentComponent');
-//   if (content == '') {
-//     error.add('No content');
-//   }
-
-//   return `${content}`;
-// }
-////////////// VARIANT ONE END /////////////////////////////////////
-
-////////////// VARIANT TWO START ///////////////////////////////////
 import {
   contentButtonBlock,
   recipeComponent,
@@ -26,6 +13,22 @@ import {
   buttonComponent,
   separatorComponent,
 } from 'nmtg-template-mailerlite-typography';
+
+
+
+const createTitle = (title) => {
+  // const content = { content: strong(title) };
+
+  // const titleParams = {
+  //   attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
+  //   content,
+  // };
+  // return paragraphComponent(titleParams);
+
+
+};
+
+
 
 const mainStaticComponent = (params) => {
   // distructure params
@@ -95,4 +98,3 @@ const mainStaticComponent = (params) => {
 export default function (params) {
   return mainStaticComponent(params);
 }
-////////////// VARIANT TWO END /////////////////////////////////////
