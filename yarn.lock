@@ -3643,10 +3643,10 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"nmtg-template-mailerlite-inner@^1.6.0":
-  "integrity" "sha512-gPG0P08dyatuhp9NAOOHBQnJGGqwF3GpxMBp5Um/1oY4w1mKfGr15mA27Ml/4W5ZLCyjOoPBCdtyFnpNdRlGfw=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-1.6.0.tgz"
-  "version" "1.6.0"
+"nmtg-template-mailerlite-inner@^1.7.0":
+  "integrity" "sha512-ugrvcXEqNKW52mCtVMCXFjpQOIYILtNuxP+64sdgE0/Vs+tCN4/zP4QVkw2QIoUGrR47oLAb9P796Ou70SwkvA=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-1.7.0.tgz"
+  "version" "1.7.0"
   dependencies:
     "nmtg-template-mailerlite-typography" "^3.0.0"
     "semver" ">=4.3.2"

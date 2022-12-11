@@ -1,5 +1,5 @@
 // Recipe
-const contentRecipeParams = [
+const recipes = [
     {
       id: 'imageBlock-26',
       href: 'https://www.nomoretogo.com/weekly-menu/',
@@ -52,4 +52,4 @@ const contentRecipeParams = [
   
 
 
-export default contentRecipeParams;
+export default recipes;

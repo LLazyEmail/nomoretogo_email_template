@@ -6,19 +6,6 @@ import StaticComponent from '../components/StaticContentComponent';
 
 
 
-// // import { button } from 'nmtg-template-mailerlite-typography';
-// import {
-//   buttonComponent,
-//   // buttonComponent2,
-// } from 'nmtg-template-mailerlite-typography';
-
-
-
-
-
-// //  buttonComponent2({id: '12', href: 'google.com'});
-
-
 
 
 
