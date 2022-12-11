@@ -4,7 +4,7 @@ import instructionComponent from '../components/instructionComponent';
 
 import createComponent from './createComponentUniversal';
 
-import instructionComponentParams from './_instructionData';
+import { instructionComponentParams } from '../config';
 
 
 /* ******************** CREATE CONTENT START ****************************** */

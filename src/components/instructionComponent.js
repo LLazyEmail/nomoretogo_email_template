@@ -29,7 +29,8 @@ const createText = (text) => {
 
 };
 
-
+// it was a quick solution, as it's part of static content 
+// that we only needed for testing purposes
 const createInstructionsBlock = (params) => {
   const { title, text, title2, text2 } = params;
 
@@ -38,15 +39,26 @@ ${createTitle(title)}
 ${createText(text)}
 ${createTitle(title2)}
 ${createText(text2)}
+
+
+<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
+Slice and Dice: Cut the vegetables and store in zippered bags or divided containers.
+</p>
+
+<p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;">
+
+Make Ahead and Refrigerate: Make the sauce; Cook the noodles; Make the dressing; Make the spaetzle; Cook the rice.<br><br><br><br><strong></strong><br><strong></strong><strong></strong>
+
+</p>
+
+
 `;
 
 }
 
 
-// TODO: нужно подумать как добавлять множество text
-const instructionMainBlock = (params) => {
-  // var { title, text, title2, text2 } = params;
 
+const instructionMainBlock = (params) => {
 
   const instructions = createInstructionsBlock(params)
 
@@ -73,22 +85,6 @@ const instructionMainBlock = (params) => {
 
 
                           ${instructions}      
-
-
-
-                          <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
-                          Slice and Dice: Cut the vegetables and store in zippered bags or divided containers.
-                          </p>
-                          
-                          <p style="margin-top: 0px; margin-bottom: 0px; line-height: 150%;">
-
-                          Make Ahead and Refrigerate: Make the sauce; Cook the noodles; Make the dressing; Make the spaetzle; Cook the rice.<br><br><br><br><strong></strong><br><strong></strong><strong></strong>
-                          
-                          </p>
-
-
-
-                          
 
                         </td>
                       </tr>
