@@ -35,14 +35,10 @@ const createBlockOne = (contentTitleTextParams, contentSubTitleParams, contentTe
 
 const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 
-
-
-  
   
   const buttonComponentRes = buttonComponent(contentButtonParams);
 
   const contentButtonBlockRes = contentButtonBlock(buttonComponentRes);
-  
   
   const separator = separatorComponent();
   const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
@@ -80,9 +76,6 @@ const mainStaticComponent = (params) => {
   // );
   
   const text =  createBlockOne(contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams);
-    // contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
-
-  
 
 
   // block 2

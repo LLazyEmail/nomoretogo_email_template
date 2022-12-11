@@ -49,10 +49,16 @@ const instructionMainBlock = (params) => {
 
                           <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"><strong></strong></p>
 
+
+
+
                           ${createTitle(title)}
                           ${createText(text)}
                           ${createTitle(title2)}
                           ${createText(text2)}
+
+
+                          
 
                           <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">Slice and Dice: Cut the vegetables and store in zippered bags or divided containers.</p>
                           
