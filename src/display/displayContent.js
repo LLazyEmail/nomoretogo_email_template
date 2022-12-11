@@ -4,17 +4,7 @@ import StaticComponent from '../components/StaticContentComponent';
 
 ////////////// VARIANT ONE START ///////////////////////////////////
 
-// import createComponent from './createComponentUniversal';
 
-// import {
-//   contentButtonBlock,
-//   recipeComponent,
-//   contentSubTitleText,
-//   recipeRowBlock,
-//   contentTextDescription,
-//   contentTitleText,
-//   emptyBlock,
-// } from 'nmtg-template-mailerlite-inner';
 
 // // import { button } from 'nmtg-template-mailerlite-typography';
 // import {
@@ -143,32 +133,7 @@ const contentTextDescriptionParams = {
 
 
 
-// const dataImage = [
-
-
-
-// const dataImage = [
-//   {
-//     id: 'imageBlock-26',
-//     href: 'https://www.nomoretogo.com/weekly-menu/',
-//     src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe1.jpeg',
-//     //------
-//     title: 'Chipotle Cream Skillet Chicken',
-//     text: 'over Rice and Snap Peas',
-//   },
-//   {
-//     id: 'imageBlock-21',
-//     href: 'https://www.nomoretogo.com/weekly-menu/',
-//     src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe2.jpeg',
-//     //------
-//     title: 'Pork Schnitzel',
-//     text: 'with German Spaetzle and Green Beans',
-//   },
-// ];
-
-
-
-
+// const dataImage =  import contentRecipeParams from './_recipesData';
 
 
 
@@ -181,15 +146,19 @@ const contentButtonParams = {
 
 var result = null;
 try {
+
+
+
+
   result = StaticComponent({
     contentTitleTextParams,
     contentSubTitleParams,
     contentTextDescriptionParams,
 
 
-
-
-    contentRecipeParams,
+    recipes: 
+      contentRecipeParams,
+    
     // contentRecipeParams
     // dataImage,
     contentButtonParams,

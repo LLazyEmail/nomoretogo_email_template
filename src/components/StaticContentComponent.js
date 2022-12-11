@@ -55,19 +55,30 @@ const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 
 
   // block 2
-const createRecipesPanel = (contentRecipeParams, dataImage) => {
+const createRecipesPanel = (recipes) => {
 
 
 
 
-  var imagesAll = contentRecipeParams.map((params) => {
+  var imagesAll = recipes.map((params) => {
     return recipeComponent(params);
   });
+
+  console.log(imagesAll);
+
+  
+  console.log(imagesAll[0]);
+  
+  console.log(imagesAll[1]);
+
+
   const imageOne = dataImage[0];
   const imageTwo = dataImage[1];
-  const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
+  
+  
+  const recipeRowBlockHTML = recipeRowBlock(imageOne, imageTwo);
 
-  return recipeRowBlockRes;
+  return recipeRowBlockHTML;
 }
 
 
@@ -80,30 +91,30 @@ const StaticComponent = (params) => {
     contentTextDescriptionParams,
 
     // TODO: create an object for recipes data only
-    contentRecipeParams,
-    dataImage,
+    recipes,
+    // dataImage,
 
 
     contentButtonParams,
   } = params;
 
 
-  if (!contentRecipeParams) {
-    throw new Error('no head was passed');
+  if (!recipes) {
+    throw new Error('no recipes was passed');
   }
 
-  if (!dataImage) {
-    throw new Error('no body was passed');
-  }
+  // if (!dataImage) {
+  //   throw new Error('no body was passed');
+  // }
 
   if (!contentButtonParams) {
-    throw new Error('no footer was passed');
+    throw new Error('no contentButtonParams was passed');
   }
 
   
   const text = createBlockOne(contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams);
 
-  const recipeRowBlockRes = createRecipesPanel(contentRecipeParams, dataImage)
+  const recipeRowBlockRes = createRecipesPanel(recipes)
 
   // All content
   const allContent = contentSubComponent(text, recipeRowBlockRes, contentButtonParams);
