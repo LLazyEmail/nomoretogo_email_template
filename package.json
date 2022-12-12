@@ -13,6 +13,7 @@
     "prepublish": "npm run clean && npm run build",
     "test:all": "jest ./tests/* --passWithNoTests",
     "test:content": "jest ./tests/03_content.test.js --passWithNoTests",
+    "test:recipes": "jest ./tests/03_recipes.test.js --passWithNoTests",
     "test:typo": "jest ./tests/typography.test.js --passWithNoTests",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
     "lint:prettier": "prettier --write src/",

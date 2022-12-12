@@ -4,27 +4,8 @@ import StaticComponent from '../components/StaticContentComponent';
 
 ////////////// VARIANT ONE START ///////////////////////////////////
 
-
-
-
-
-
 // /* ******************** DATA START **************************************** */
 // // Title
-// const contentTitleTextParams = {
-//   hrefTitle: '123',
-//   idTitle: '123',
-//   textTitle: '123',
-// };
-
-// // Sub title
-// const contentSubTitleParams = '123';
-
-// // Description
-// const contentTextDescriptionParams = {
-//   textTop: '123',
-//   textBottom: '123',
-// };
 
 // //-------------------
 

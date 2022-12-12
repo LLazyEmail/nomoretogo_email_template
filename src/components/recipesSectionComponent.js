@@ -1,38 +1,38 @@
 import {
-    contentButtonBlock,
+    // contentButtonBlock,
     recipeComponent,
-    contentSubTitleText,
+    // contentSubTitleText,
     recipeRowBlock,
-    contentTextDescription,
-    contentTitleText,
+    // contentTextDescription,
+    // contentTitleText,
   } from 'nmtg-template-mailerlite-inner';
   
-  import {
-    buttonComponent,
-    separatorComponent,
-  } from 'nmtg-template-mailerlite-typography';
+  // import {
+  //   buttonComponent,
+  //   separatorComponent,
+  // } from 'nmtg-template-mailerlite-typography';
 
 
 
   // TODO move Weekly menu button section into sub-components
-const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
+// const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 
-    // weekly menu button
-    const buttonHTML = buttonComponent(contentButtonParams);
+//     // weekly menu button
+//     const buttonHTML = buttonComponent(contentButtonParams);
   
-    const contentButtonBlockHTML = contentButtonBlock(buttonHTML);
+//     const contentButtonBlockHTML = contentButtonBlock(buttonHTML);
     
-    const separatorHTML = separatorComponent();
-    // All content
-    const allContent = 
-        text +
-        recipeRowBlockRes + 
-        contentButtonBlockHTML + 
-        separatorHTML;
+//     const separatorHTML = separatorComponent();
+//     // All content
+//     const allContent = 
+//         text +
+//         recipeRowBlockRes + 
+//         contentButtonBlockHTML + 
+//         separatorHTML;
   
-    return allContent;
+//     return allContent;
   
-  }
+//   }
 
   
 
@@ -64,8 +64,29 @@ const createRecipesPanel = (recipes) => {
     const recipeRowBlockHTML = recipeRowBlock(imageOne, imageTwo);
   
     return recipeRowBlockHTML;
+}
+
+
+const recipesSectionComponent = (params) => {
+
+  const {
+    recipes,
+    contentButtonParams
+  } = params;
+
+  if (!recipes) {
+    throw new Error('no recipes was passed');
   }
 
+  if (!contentButtonParams) {
+    throw new Error('no contentButtonParams was passed');
+  }
+
+  const recipeRowBlockHTML = createRecipesPanel(recipes);
+
+  // console.log(recipeRowBlockHTML);
+  return recipeRowBlockHTML;
+}
   
 
-  export default recipesSectionComponent;
+export default recipesSectionComponent;

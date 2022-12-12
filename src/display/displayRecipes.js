@@ -1,13 +1,18 @@
 import recipesSectionComponent from '../components/recipesSectionComponent';
 
-
-
 import recipes from './_recipesData';
 
-var result = null;
+const contentButtonParams = {
+  id: '04-22-2021',
+  href: 'https://www.nomoretogo.com/weekly-menu/',
+  text: '123',
+};
 
 
-result = recipesSectionComponent({
+var RecipesHTMLString = null;
+
+
+RecipesHTMLString = recipesSectionComponent({
 
     recipes,
     contentButtonParams,
@@ -15,6 +20,11 @@ result = recipesSectionComponent({
 });
 
 
-  console.log(result);
+if (!RecipesHTMLString) {
+  throw new Error('RecipesHTMLString empty');
+}
 
-export default result;
+
+// console.log(RecipesHTMLString);
+
+export default RecipesHTMLString;
