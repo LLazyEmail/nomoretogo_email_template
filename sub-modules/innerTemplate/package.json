@@ -29,6 +29,7 @@
     "@rollup/plugin-node-resolve": "15.0.1",
     "eslint": "8.26.0",
     "eslint-plugin-json": "3.1.0",
+    "jest": "^29.3.1",
     "prettier": "2.7.1",
     "rollup": "3.3.0",
     "rollup-plugin-includepaths": "0.2.4",
@@ -46,7 +47,7 @@
     "access": "public"
   },
   "dependencies": {
-    "semver": ">=4.3.2",
-    "nmtg-template-mailerlite-typography": "^3.0.0"
+    "nmtg-template-mailerlite-typography": "^3.0.0",
+    "semver": ">=4.3.2"
   }
 }

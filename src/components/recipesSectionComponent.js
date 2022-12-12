@@ -42,6 +42,8 @@ const createRecipesPanel = (recipes) => {
 
 
 
+  // var recipeHTMLMarkupArray
+
     var imagesAll = recipes.map((params) => {
   
       // console.log(params);
