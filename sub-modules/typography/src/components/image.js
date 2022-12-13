@@ -3,12 +3,41 @@ import Errors from './Errors';
 // Config file
 import { pathToImages } from '../config.js';
 
-const imageComponent = (attributes) => {
-  const { src, width, id, href } = attributes;
+import linkComponent from './link';
+
+
+// TODO to solve everything related to image component
+// passing src, width, error handling, etc
+// plus to move it later between other templates
+
+const imageComponentOld = (attributes) => {
+  const { src, width } = attributes;
+
+  if(!width){
+    return  `<img src="${src}" border="0" alt=""  style="display: block;">`;
+  }
 
   return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
+} 
 
-  // return `<img ${attributes}>`;
+// if (typeof params != 'object') {
+//   customError.add('"params" is not "object"');
+// }
+
+// if (typeof params.attributes == '') {
+//   customError.add('empty attributes');
+// }
+const imageComponent = (attributes) => {
+  // const { src, width } = attributes;
+
+  // if(!width){
+  //   return  `<img src="${src}" border="0" alt=""  style="display: block;">`;
+  // }
+
+
+  // return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
+
+  return `<img ${attributes}>`;
 };
 // return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
 
@@ -17,7 +46,7 @@ const imageComponent = (attributes) => {
 //}
 
 const imgWrapper = (params) => {
-  const { id, href, src } = params;
+  const { id, href, src, width } = params;
 
   const error = new Errors('image');
 
@@ -31,7 +60,7 @@ const imgWrapper = (params) => {
     error.add('No src');
   }
 
-  return imageMainBlock(id, href, src);
+  return imageMainBlock(id, href, src, width);
 };
 
 // Main image block start
@@ -41,13 +70,15 @@ const imgWrapper = (params) => {
 // };
 
 // TODO move into Link + Image component
-const imageMainBlock = (id, href, src) => {
+const imageMainBlock = (id, href, src, width) => {
 
 
   // const imagePath = ;
 
   const attr = `src="${src}" 
-    border="0" alt="" width="267" style="display: block;"`;
+    border="0" alt="" ` + 
+    (width === undefined ? `` : `width="${width}"`) +
+     ` style="display: block;"`;
   const image = imageComponent(attr);
 
   const params = {
