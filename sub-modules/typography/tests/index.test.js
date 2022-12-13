@@ -1,4 +1,4 @@
-import { imageComponent, imgWrapper } from '../src/components/image';
+import { linkComponent, imgWrapper } from '../src/components/image';
 
 const data = {
   id: 'imageBlock-26',

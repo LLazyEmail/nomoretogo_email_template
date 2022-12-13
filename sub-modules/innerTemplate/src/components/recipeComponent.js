@@ -3,10 +3,15 @@
 // Error
 import Errors from './Errors';
 import {
-  imageComponent, imgWrapper,
+  // imageComponent, 
+  // linkComponent,
+  // imgWrapper,
   strong,
   paragraphComponent,
 } from 'nmtg-template-mailerlite-typography';
+
+import imageLinkComponent from './imageLink';
+
 const error = new Errors('recipeComponent');
 
 // Get title start
@@ -61,9 +66,9 @@ const recipeComponent = (params) => {
 
   // TODO add checks to this component
 
-  // imgWrapper
-  const recipeImage = imgWrapper({id, href, src});
+  const recipeImage = imageLinkComponent({id, href, src});
 
+  // const recipeImage = imgWrapper({id, href, src});
 
   // const recipeImage = imageComponent(id, href, src);
 

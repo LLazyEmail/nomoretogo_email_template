@@ -79,6 +79,7 @@ const imageMainBlock = (id, href, src, width) => {
     border="0" alt="" ` + 
     (width === undefined ? `` : `width="${width}"`) +
      ` style="display: block;"`;
+     
   const image = imageComponent(attr);
 
   const params = {
