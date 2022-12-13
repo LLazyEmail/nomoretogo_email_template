@@ -46,7 +46,7 @@ const recipeName = (params) => {
 
 const recipeComponent = (params) => {
   const { id, href, src, title, text } = params;
-  console.log(params);
+  // console.log(params);
   
   if (!id) {
     throw new Error('invalid id');
@@ -60,11 +60,16 @@ const recipeComponent = (params) => {
 
 
   // TODO add checks to this component
-  const recipeImage = imageComponent(id, href, src);
 
-console.log(recipeImage);
+  // imgWrapper
+  const recipeImage = imgWrapper({id, href, src});
 
-console.log( imageComponent({id, href, src}) );
+
+  // const recipeImage = imageComponent(id, href, src);
+
+// console.log(recipeImage);
+
+// console.log( imageComponent({id, href, src}) );
 
   if (!recipeImage) {
     throw new Error('invalid recipeImage');

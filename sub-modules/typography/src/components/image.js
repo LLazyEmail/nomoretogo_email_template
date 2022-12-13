@@ -19,7 +19,7 @@ const imageComponent = (attributes) => {
 const imgWrapper = (params) => {
   const { id, href, src } = params;
 
-  const error = Errors('image');
+  const error = new Errors('image');
 
   if (id == '') {
     error.add('No id');
@@ -43,7 +43,7 @@ const imgWrapper = (params) => {
 // TODO move into Link + Image component
 const imageMainBlock = (id, href, src) => {
 
-  
+
   // const imagePath = ;
 
   const attr = `src="${src}" 
