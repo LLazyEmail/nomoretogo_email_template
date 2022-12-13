@@ -3,7 +3,7 @@ import buttonComponent from './components/button';
 import heading from './components/heading';
 
 import strong from './components/strong';
-import { subheading, spanHeadingBlock } from './components/subheading';
+import { renderSubHeading, spanHeadingBlock } from './components/subheading';
 //--------
 import paragraphComponent from './components/paragraph';
 import linkComponent from './components/link';
@@ -20,7 +20,7 @@ export {
     // buttonComponent2,
     heading,  
     strong, 
-    subheading,
+    renderSubHeading,
     spanHeadingBlock,
     //------
     imageComponent,

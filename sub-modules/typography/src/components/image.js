@@ -4,11 +4,12 @@ import Errors from './Errors';
 import { pathToImages } from '../config.js';
 
 const imageComponent = (attributes) => {
-  // const { src, width } = params;
+  const { src, width, id, href } = attributes;
 
-  return `<img ${attributes}>`;
+  return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
+
+  // return `<img ${attributes}>`;
 };
-
 // return `<img src="${src}" border="0" alt="" width="${width}" style="display: block;">`;
 
 //function createPathToImage(src) {
@@ -39,7 +40,10 @@ const imgWrapper = (params) => {
 //   width: 267, // TODO check if width must be string
 // };
 
+// TODO move into Link + Image component
 const imageMainBlock = (id, href, src) => {
+
+  
   // const imagePath = ;
 
   const attr = `src="${src}" 

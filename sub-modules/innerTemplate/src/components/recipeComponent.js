@@ -3,7 +3,7 @@
 // Error
 import Errors from './Errors';
 import {
-  imageComponent,
+  imageComponent, imgWrapper,
   strong,
   paragraphComponent,
 } from 'nmtg-template-mailerlite-typography';

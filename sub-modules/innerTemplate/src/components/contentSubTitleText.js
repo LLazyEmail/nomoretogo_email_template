@@ -1,5 +1,7 @@
 // Component contentSubTitleText
-import { subheading } from 'nmtg-template-mailerlite-typography';
+
+// TODO replace with subheading name, later
+import { renderSubHeading } from 'nmtg-template-mailerlite-typography';
 
 const subTitleMainBlock = (subTitleText) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
