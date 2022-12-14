@@ -63,7 +63,9 @@ import StaticComponent from '../components/StaticContentComponent';
 
 
 ////////////// VARIANT TWO START ///////////////////////////////////
-import contentRecipeParams from './_recipesData';
+// import contentRecipeParams from './_recipesData';
+
+import { recipes } from '../config';
 
 
 
@@ -82,11 +84,6 @@ const contentTextDescriptionParams = {
   textTop: 'contentTextDescriptionParams',
   textBottom: 'contentTextDescriptionParams',
 };
-
-
-
-// const dataImage =  import contentRecipeParams from './_recipesData';
-
 
 
 // TODO rename to Weekly Menu button and move to config file
@@ -109,7 +106,7 @@ try {
 
 
     recipes: 
-      contentRecipeParams,
+      recipes,
     
     // contentRecipeParams
     // dataImage,

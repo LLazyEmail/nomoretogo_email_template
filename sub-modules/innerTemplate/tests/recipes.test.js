@@ -14,7 +14,7 @@ const data = {
     //------
     title: 'Chipotle Cream Skillet Chicken',
     text: 'over Rice and Snap Peas',
-}
+};
 
 
 

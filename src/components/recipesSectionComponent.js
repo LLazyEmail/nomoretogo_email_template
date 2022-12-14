@@ -1,10 +1,6 @@
 import {
-    // contentButtonBlock,
     recipeComponent,
-    // contentSubTitleText,
-    recipeRowBlock,
-    // contentTextDescription,
-    // contentTitleText,
+    recipeRowBlock
   } from 'nmtg-template-mailerlite-inner';
   
   // import {
@@ -39,19 +35,16 @@ import {
    // block 2
 const createRecipesPanel = (recipes) => {
 
-
-
-
   // var recipeHTMLMarkupArray
 
-    var imagesAll = recipes.map((params) => {
+    var imagesAll = recipes.map((values) => {
   
       // console.log(params);
   
-      return recipeComponent(params);
+      return recipeComponent(values);
     });
   
-    // console.log(imagesAll);
+    console.log(imagesAll.length);
   
     
     // console.log(imagesAll[0]);
@@ -70,6 +63,8 @@ const createRecipesPanel = (recipes) => {
 
 
 const recipesSectionComponent = (params) => {
+
+  console.log(params);
 
   const {
     recipes,

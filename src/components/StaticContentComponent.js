@@ -57,17 +57,17 @@ const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
   // block 2
 const createRecipesPanel = (recipes) => {
 
+  if (!recipes){throw new Error('createRecipesPanel params is empty')}
 
 
-
-  var imagesAll = recipes.map((params) => {
+  var imagesAll = recipes.map((values) => {
 
     // console.log(params);
 
-    return recipeComponent(params);
+    return recipeComponent(values);
   });
 
-  
+
   console.log(imagesAll);
 
   

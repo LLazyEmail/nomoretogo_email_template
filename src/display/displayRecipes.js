@@ -1,6 +1,7 @@
 import recipesSectionComponent from '../components/recipesSectionComponent';
 
-import recipes from './_recipesData';
+import { recipes } from '../config';
+
 
 const contentButtonParams = {
   id: '04-22-2021',
