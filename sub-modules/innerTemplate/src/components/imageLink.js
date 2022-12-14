@@ -17,13 +17,9 @@ const imageLinkComponent = (params) => {
       border="0" alt="" ` + 
       (width === undefined ? `` : `width="${width}"`) +
        ` style="display: block;"`;
-       
-    // console.log(attr);
-
+      
 
     const image = imageComponent(attr);
-
-    console.log(image);
   
     const config = {
       attributes: `href="${href}" data-link-id="${id}" target="_self"`,

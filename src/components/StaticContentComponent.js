@@ -67,7 +67,8 @@ const createRecipesPanel = (recipes) => {
     return recipeComponent(params);
   });
 
-  // console.log(imagesAll);
+  
+  console.log(imagesAll);
 
   
   // console.log(imagesAll[0]);
@@ -117,10 +118,10 @@ const StaticComponent = (params) => {
   
   const text = createBlockOne(contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams);
 
-  const recipeRowBlockRes = createRecipesPanel(recipes)
+  const recipeRowBlockResOldRename = createRecipesPanel(recipes)
 
   // All content
-  const allContent = contentSubComponent(text, recipeRowBlockRes, contentButtonParams);
+  const allContent = contentSubComponent(text, recipeRowBlockResOldRename, contentButtonParams);
   
   return allContent;
 };

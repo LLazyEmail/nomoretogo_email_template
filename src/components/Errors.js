@@ -9,8 +9,12 @@ class Errors {
   }
 
   add(error) {
+
+    // TODO should we add line tracing details?
     const textError = this.ERROR_MESSAGE(error);
     throw new Error(textError);
+
+
   }
 }
 

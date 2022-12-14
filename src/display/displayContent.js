@@ -1,22 +1,6 @@
 import StaticComponent from '../components/StaticContentComponent';
 
-
-
 ////////////// VARIANT ONE START ///////////////////////////////////
-
-// /* ******************** DATA START **************************************** */
-// // Title
-
-// //-------------------
-
-// // Button
-// //
-// const contentButtonParams = {
-//   id: '04-22-2021',
-//   href: 'https://www.nomoretogo.com/weekly-menu/',
-//   text: '123',
-// };
-// /* ******************** DATA END **************************************** */
 
 
 
@@ -139,7 +123,9 @@ try {
   });
 
 
-  // console.log(result);
+  console.log(result);
+
+
 
 } catch (error) {
   console.log(error.message);
