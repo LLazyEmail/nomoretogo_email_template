@@ -1,7 +1,5 @@
 import recipeComponent from "../src/components/recipeComponent";
 
-// import recipeComponent from '../components/recipeComponent';
-
 
 const data = {
     id: 'imageBlock-26',

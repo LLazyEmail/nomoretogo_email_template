@@ -18,7 +18,7 @@ const imageLinkComponent = (params) => {
       (width === undefined ? `` : `width="${width}"`) +
        ` style="display: block;"`;
        
-    console.log(attr);
+    // console.log(attr);
 
 
     const image = imageComponent(attr);
