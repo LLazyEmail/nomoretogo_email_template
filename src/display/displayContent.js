@@ -7,8 +7,10 @@ import { recipes } from '../config';
 
 // Title
 const contentTitleTextParams = {
-  hrefTitle: '123 - contentTitleTextParams',
-  idTitle: '123 - contentTitleTextParams',
+  hrefTitle: 'https://nomoretogo.com/login/',
+  // hrefTitle: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/logo.jpeg',
+  
+  idTitle: 'logoBlock-4',
   textTitle: '123 - contentTitleTextParams',
 };
 
@@ -29,6 +31,9 @@ const contentButtonParams = {
   text: `Get This Week's Menu`,
 };
 
+
+// console.log(recipes);
+
 var result = null;
 try {
 
@@ -39,18 +44,10 @@ try {
     contentTitleTextParams,
     contentSubTitleParams,
     contentTextDescriptionParams,
-
-
-    recipes: 
-      recipes,
-    
+    recipes,
     // contentRecipeParams
-    // dataImage,
+ 
     contentButtonParams,
-
-
-
-
 
 
   });
@@ -67,7 +64,5 @@ try {
 } catch (error) {
   console.log(error.message);
 }
-/* ******************** CREATE CONTENT END ****************************** */
 
 export default result;
-////////////// VARIANT TWO END /////////////////////////////////////

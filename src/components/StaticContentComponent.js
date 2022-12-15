@@ -13,7 +13,6 @@ import {
   separatorComponent,
 } from 'nmtg-template-mailerlite-typography';
 
-
 import recipesSectionComponent from '../components/recipesSectionComponent';
 
 
@@ -31,14 +30,17 @@ import recipesSectionComponent from '../components/recipesSectionComponent';
 //   return title + subTitle + description;
 // };
 
-// contentSectionOne = () => {
 
+// contentSectionOne = () => {
 
 const createBlockOne = (title, subTitle, description) => {
 
   // block 1
   const contentTitleTextHTML = contentTitleText(title);
-  const contentSubTitleTextHTML = contentSubTitleText(subTitle);
+
+
+  const contentSubTitleTextHTML = 'contentSubTitleText(subTitle)';
+  // const contentSubTitleTextHTML = contentSubTitleText(subTitle);
 
   const contentTextDescriptionHTML = contentTextDescription(
     description
@@ -98,39 +100,7 @@ const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 
 
 // block 2
-// const createRecipesPanel = (recipes) => {
-
-
-//   // console.log(recipes);
-
-//   if (!recipes){ throw new Error('createRecipesPanel params is empty') }
-
-
-//   var imagesAll = recipes.map((values) => {
-
-//     // console.log(params);
-
-//     return recipeComponent(values);
-//   });
-
-
-//   // console.log(imagesAll);
-
-  
-//   // console.log(imagesAll[0]);
-  
-//   // console.log(imagesAll[1]);
-
-
-//   const imageOne = imagesAll[0];
-//   const imageTwo = imagesAll[1];
-//   // 
-  
-//   const recipeRowBlockHTML = recipeRowBlock(imageOne, imageTwo);
-
-//   return recipeRowBlockHTML;
-// }
-
+// const createRecipesPanel = (recipes) 
 
 
 const StaticComponent = (params) => {
@@ -141,10 +111,9 @@ const StaticComponent = (params) => {
     contentTextDescriptionParams,
 
     recipes,
-
     contentButtonParams,
   } = params;
-
+// console.log(recipes);
 
   if (!recipes) {
     throw new Error('no recipes was passed');
@@ -155,12 +124,14 @@ const StaticComponent = (params) => {
   }
 
   
-  const text = createBlockOne(contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams);
+  const text = createBlockOne(
+    contentTitleTextParams, 
+    contentSubTitleParams, 
+    contentTextDescriptionParams
+  );
 
 
-  const recipesSectionHTML = recipesSectionComponent(recipe);
-
-  // const recipeRowBlockResOldRename = createRecipesPanel(recipes)
+  const recipesSectionHTML = recipesSectionComponent(recipes);
 
   // All content
   const allContent = contentSubComponent(text, recipesSectionHTML, contentButtonParams);

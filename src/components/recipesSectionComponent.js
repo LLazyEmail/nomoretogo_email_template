@@ -76,20 +76,23 @@ const createRecipesPanel = (recipes) => {
 }
 
 
-const recipesSectionComponent = (params) => {
+const recipesSectionComponent = (recipes) => {
 
-  const {
-    recipes,
-    contentButtonParams
-  } = params;
+
+  // const {
+  //   recipes,
+  //   contentButtonParams
+  // } = params;
   
+
+
   if (!recipes) {
     throw new Error('no recipes was passed');
   }
 
-  if (!contentButtonParams) {
-    throw new Error('no contentButtonParams was passed');
-  }
+  // if (!contentButtonParams) {
+  //   throw new Error('no contentButtonParams was passed');
+  // }
 
   const recipeRowBlockHTML = createRecipesPanel(recipes);
 

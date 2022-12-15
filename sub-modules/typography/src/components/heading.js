@@ -1,7 +1,7 @@
 // Component heading
 import Errors from './Errors';
 
-
+// TODO replace with a link component
 const headingMainBlock = (hrefTitle, idTitle, textTitle) => {
   return `<a href="${hrefTitle}" data-link-id="${idTitle}" style="text-decoration: none; color: #111111; text-transform: none; font-style: normal; text-decoration: none;" target="_self">${textTitle}</a>`;
 };
