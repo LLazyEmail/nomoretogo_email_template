@@ -1,9 +1,9 @@
 // Create wrap component content
 import {
   contentButtonBlock,
-  recipeComponent,
+  // recipeComponent,
   contentSubTitleText,
-  recipeRowBlock,
+  // recipeRowBlock,
   contentTextDescription,
   contentTitleText,
 } from 'nmtg-template-mailerlite-inner';
@@ -14,6 +14,7 @@ import {
 } from 'nmtg-template-mailerlite-typography';
 
 
+import recipesSectionComponent from '../components/recipesSectionComponent';
 
 
 // const contentSectionOne = () => {
@@ -97,38 +98,38 @@ const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 
 
 // block 2
-const createRecipesPanel = (recipes) => {
+// const createRecipesPanel = (recipes) => {
 
 
-  // console.log(recipes);
+//   // console.log(recipes);
 
-  if (!recipes){ throw new Error('createRecipesPanel params is empty') }
-
-
-  var imagesAll = recipes.map((values) => {
-
-    // console.log(params);
-
-    return recipeComponent(values);
-  });
+//   if (!recipes){ throw new Error('createRecipesPanel params is empty') }
 
 
-  // console.log(imagesAll);
+//   var imagesAll = recipes.map((values) => {
+
+//     // console.log(params);
+
+//     return recipeComponent(values);
+//   });
+
+
+//   // console.log(imagesAll);
 
   
-  // console.log(imagesAll[0]);
+//   // console.log(imagesAll[0]);
   
-  // console.log(imagesAll[1]);
+//   // console.log(imagesAll[1]);
 
 
-  const imageOne = imagesAll[0];
-  const imageTwo = imagesAll[1];
-  // 
+//   const imageOne = imagesAll[0];
+//   const imageTwo = imagesAll[1];
+//   // 
   
-  const recipeRowBlockHTML = recipeRowBlock(imageOne, imageTwo);
+//   const recipeRowBlockHTML = recipeRowBlock(imageOne, imageTwo);
 
-  return recipeRowBlockHTML;
-}
+//   return recipeRowBlockHTML;
+// }
 
 
 
@@ -139,26 +140,15 @@ const StaticComponent = (params) => {
     contentSubTitleParams,
     contentTextDescriptionParams,
 
-    // TODO: create an object for recipes data only
     recipes,
-    // dataImage,
-
 
     contentButtonParams,
   } = params;
 
 
-
-
-
-
   if (!recipes) {
     throw new Error('no recipes was passed');
   }
-
-  // if (!dataImage) {
-  //   throw new Error('no body was passed');
-  // }
 
   if (!contentButtonParams) {
     throw new Error('no contentButtonParams was passed');
@@ -167,10 +157,13 @@ const StaticComponent = (params) => {
   
   const text = createBlockOne(contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams);
 
-  const recipeRowBlockResOldRename = createRecipesPanel(recipes)
+
+  const recipesSectionHTML = recipesSectionComponent(recipe);
+
+  // const recipeRowBlockResOldRename = createRecipesPanel(recipes)
 
   // All content
-  const allContent = contentSubComponent(text, recipeRowBlockResOldRename, contentButtonParams);
+  const allContent = contentSubComponent(text, recipesSectionHTML, contentButtonParams);
   
   return allContent;
 };

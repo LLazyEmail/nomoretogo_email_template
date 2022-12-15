@@ -1,28 +1,8 @@
 import StaticComponent from '../components/StaticContentComponent';
 
-////////////// VARIANT ONE START ///////////////////////////////////
-
-
-// /* ******************** CREATE CONTENT START ****************************** */
-
-
-//   // Line block
-//   const line = createComponent(emptyBlock);
-
-//   const allContentRes = contentSectionOne() + contentSectionTwo() + line;
-
-//   result = createComponent(contentComponent, allContentRes);
-
-
-////////////// VARIANT ONE END /////////////////////////////////////
-
-
-
-////////////// VARIANT TWO START ///////////////////////////////////
-// import contentRecipeParams from './_recipesData';
+import recipesSectionComponent from '../components/recipesSectionComponent';
 
 import { recipes } from '../config';
-
 
 
 // Title
@@ -74,6 +54,10 @@ try {
 
 
   });
+
+
+
+
 
 
   console.log(result);

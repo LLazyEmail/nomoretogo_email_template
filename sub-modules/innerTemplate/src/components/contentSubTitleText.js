@@ -3,7 +3,7 @@
 // TODO replace with subheading name, later
 import { renderSubHeading } from 'nmtg-template-mailerlite-typography';
 
-const subTitleMainBlock = (subTitleText) => {
+const subTitleMainBlock = (subtitle) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -15,7 +15,7 @@ const subTitleMainBlock = (subTitleText) => {
                 <td align="center" style="padding: 0px 40px;" class="mlContentOuter">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
-                      ${subheading(subTitleText)}
+                      ${renderSubHeading(subtitle)}
                     </tr>
                   </tbody></table>
                 </td>
@@ -34,6 +34,6 @@ const subTitleMainBlock = (subTitleText) => {
   </tbody></table>`;
 };
 
-export default function (subTitleText) {
-  return subTitleMainBlock(subTitleText);
+export default function (subtitle) {
+  return subTitleMainBlock(subtitle);
 }
