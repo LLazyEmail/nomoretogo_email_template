@@ -51,7 +51,6 @@ const recipeName = (params) => {
 
 const recipeComponent = (params) => {
   const { id, href, src, title, text } = params;
-  // console.log(params);
   
   if (!id) {
     throw new Error('invalid id');
@@ -74,13 +73,9 @@ const recipeComponent = (params) => {
 
 // console.log(recipeImage);
 
-// console.log( imageComponent({id, href, src}) );
-
   if (!recipeImage) {
     throw new Error('invalid recipeImage');
   }
-
-
 
   const titleLine = recipeName({ title, subtitle: text });
 
