@@ -32,18 +32,19 @@ const HeadParams = {
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
-// var result = null;
-// try {
-//   headComponent;
+var result = null;
+var headComponentHTML = null;
+try {
+  headComponent;
 
 
-  const headComponentRes = createComponent(headComponent, HeadParams);
+  headComponentHTML = createComponent(headComponent, HeadParams);
 
 
-//   result = headComponentRes;
-// } catch (error) {
-//   console.log(error.message);
-// }
+  result = headComponentHTML;
+} catch (error) {
+  console.log(error.message);
+}
 /* ******************** CREATE CONTENT END ****************************** */
 
-export default headComponentRes;
+export default headComponentHTML;
