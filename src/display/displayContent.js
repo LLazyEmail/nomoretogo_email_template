@@ -3,51 +3,7 @@ import StaticComponent from '../components/StaticContentComponent';
 ////////////// VARIANT ONE START ///////////////////////////////////
 
 
-
-
 // /* ******************** CREATE CONTENT START ****************************** */
-
-// const contentSectionOne = () => {
-//   // contentTitleText
-//   const title = createComponent(contentTitleText, contentTitleTextParams);
-//   // contentSubTitleText
-//   const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
-//   // contentTextDescription
-//   const description = createComponent(
-//     contentTextDescription,
-//     contentTextDescriptionParams
-//   );
-
-//   return title + subTitle + description;
-// };
-
-
-
-
-
-
-
-// const contentSectionTwo = () => {
-//   // All Recipe
-//   var imagesAll = contentRecipeParams.map((params) => {
-//     return createComponent(recipeComponent, params);
-//   });
-//   // All contentTableWitchTwoRecipe
-//   const images = createComponent(recipeRowBlock, imagesAll);
-//   // Button
-//   const contentButtonRes = createComponent(
-//     buttonComponent,
-//     contentButtonParams
-//   );
-//   const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
-
-//   return images + buttonRes;
-// };
-
-
-
-
-
 
 
 //   // Line block

@@ -2,6 +2,8 @@
 
 // Error
 import Errors from './Errors';
+
+// TODO get rid of imgWrappers
 import {
   // imageComponent, 
   // linkComponent,
@@ -53,25 +55,20 @@ const recipeComponent = (params) => {
   const { id, href, src, title, text } = params;
   
   if (!id) {
-    throw new Error('invalid id');
+    throw new Error('recipe component - invalid id');
   }
   if (!href) {
-    throw new Error('invalid href');
+    throw new Error('recipe component - invalid href');
   }
   if (!src) {
-    throw new Error('invalid src');
+    throw new Error('recipe component - invalid src');
   }
 
 
   // TODO add checks to this component
-
+  
+  // TODO moveout recipeImage and titleLine into separate sub methods
   const recipeImage = imageLinkComponent({id, href, src});
-
-  // const recipeImage = imgWrapper({id, href, src});
-
-  // const recipeImage = imageComponent(id, href, src);
-
-// console.log(recipeImage);
 
   if (!recipeImage) {
     throw new Error('invalid recipeImage');

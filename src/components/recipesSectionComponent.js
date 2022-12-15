@@ -3,10 +3,28 @@ import {
     recipeRowBlock
   } from 'nmtg-template-mailerlite-inner';
   
-  // import {
-  //   buttonComponent,
-  //   separatorComponent,
-  // } from 'nmtg-template-mailerlite-typography';
+// import {
+//   buttonComponent,
+//   separatorComponent,
+// } from 'nmtg-template-mailerlite-typography';
+
+
+// usage
+// var matrix = listToMatrix([1, 2, 3, 4, 4, 5, 6, 7, 8, 9], 3);
+function listToMatrix(list, elementsPerSubArray) {
+    var matrix = [], i, k;
+
+    for (i = 0, k = -1; i < list.length; i++) {
+        if (i % elementsPerSubArray === 0) {
+            k++;
+            matrix[k] = [];
+        }
+
+        matrix[k].push(list[i]);
+    }
+
+    return matrix;
+}
 
 
 
@@ -37,40 +55,34 @@ const createRecipesPanel = (recipes) => {
 
   // var recipeHTMLMarkupArray
 
-    var imagesAll = recipes.map((values) => {
+    // var imagesAll = recipes.map((values) => {
   
-      // console.log(params);
+    //   // console.log(params);
   
-      return recipeComponent(values);
-    });
+    //   return recipeComponent(values);
+    // });
   
-    console.log(imagesAll.length);
+    // console.log(imagesAll.length);
   
-    
-    // console.log(imagesAll[0]);
-    
-    // console.log(imagesAll[1]);
-  
-  
-    const imageOne = imagesAll[0];
-    const imageTwo = imagesAll[1];
     // 
-    
-    const recipeRowBlockHTML = recipeRowBlock(imageOne, imageTwo);
-  
+    // TODO can be made better with listToMatrix method
+    var recipeRowBlockHTML = recipeRowBlock(recipes[0], recipes[1]);
+    recipeRowBlockHTML += recipeRowBlock(recipes[2], recipes[3]);
+    recipeRowBlockHTML += recipeRowBlock(recipes[4], recipes[5]);
+
+    // console.log(recipeRowBlockHTML);
+
     return recipeRowBlockHTML;
 }
 
 
 const recipesSectionComponent = (params) => {
 
-  console.log(params);
-
   const {
     recipes,
     contentButtonParams
   } = params;
-
+  
   if (!recipes) {
     throw new Error('no recipes was passed');
   }

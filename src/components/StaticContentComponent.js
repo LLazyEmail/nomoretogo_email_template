@@ -15,20 +15,40 @@ import {
 
 
 
-const createBlockOne = (contentTitleTextParams, contentSubTitleParams, contentTextDescriptionParams) => {
+
+// const contentSectionOne = () => {
+//   // contentTitleText
+//   const title = createComponent(contentTitleText, contentTitleTextParams);
+//   // contentSubTitleText
+//   const subTitle = createComponent(contentSubTitleText, contentSubTitleParams);
+//   // contentTextDescription
+//   const description = createComponent(
+//     contentTextDescription,
+//     contentTextDescriptionParams
+//   );
+
+//   return title + subTitle + description;
+// };
+
+// contentSectionOne = () => {
+
+
+const createBlockOne = (title, subTitle, description) => {
 
   // block 1
-  const contentTitleTextRes = contentTitleText(contentTitleTextParams);
-  const contentSubTitleTextRes = contentSubTitleText(contentSubTitleParams);
+  const contentTitleTextHTML = contentTitleText(title);
+  const contentSubTitleTextHTML = contentSubTitleText(subTitle);
 
-  const contentTextDescriptionRes = contentTextDescription(
-    contentTextDescriptionParams
+  const contentTextDescriptionHTML = contentTextDescription(
+    description
   );
   
-  const text =
-    contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
+  const result =
+  contentTitleTextHTML + contentSubTitleTextHTML + contentTextDescriptionHTML;
+  // return title + subTitle + description;
 
-    return text;
+
+  return result;
 
 };
 
@@ -54,10 +74,35 @@ const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 }
 
 
-  // block 2
+
+
+
+// const contentSectionTwo = () => {
+//   // All Recipe
+//   var imagesAll = contentRecipeParams.map((params) => {
+//     return createComponent(recipeComponent, params);
+//   });
+//   // All contentTableWitchTwoRecipe
+//   const images = createComponent(recipeRowBlock, imagesAll);
+//   // Button
+//   const contentButtonRes = createComponent(
+//     buttonComponent,
+//     contentButtonParams
+//   );
+//   const buttonRes = createComponent(contentButtonBlock, contentButtonRes);
+
+//   return images + buttonRes;
+// };
+
+
+
+// block 2
 const createRecipesPanel = (recipes) => {
 
-  if (!recipes){throw new Error('createRecipesPanel params is empty')}
+
+  // console.log(recipes);
+
+  if (!recipes){ throw new Error('createRecipesPanel params is empty') }
 
 
   var imagesAll = recipes.map((values) => {
@@ -68,7 +113,7 @@ const createRecipesPanel = (recipes) => {
   });
 
 
-  console.log(imagesAll);
+  // console.log(imagesAll);
 
   
   // console.log(imagesAll[0]);
@@ -101,6 +146,10 @@ const StaticComponent = (params) => {
 
     contentButtonParams,
   } = params;
+
+
+
+
 
 
   if (!recipes) {
