@@ -1,7 +1,7 @@
 // Create head component
 import Errors from './Errors';
 
-// TODO looks strange
+// TODO it looks strange
 const footerError = new Errors('footerComponent');
 
 // Create head component start
