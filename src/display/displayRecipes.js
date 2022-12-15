@@ -3,22 +3,24 @@ import recipesSectionComponent from '../components/recipesSectionComponent';
 import { recipes } from '../config';
 
 
-const contentButtonParams = {
-  id: '04-22-2021',
-  href: 'https://www.nomoretogo.com/weekly-menu/',
-  text: '123',
-};
+// const contentButtonParams = {
+//   id: '04-22-2021',
+//   href: 'https://www.nomoretogo.com/weekly-menu/',
+//   text: '123',
+// };
 
 
 var RecipesHTMLString = null;
 
 
-RecipesHTMLString = recipesSectionComponent({
+RecipesHTMLString = recipesSectionComponent(recipes);
 
-    recipes,
-    contentButtonParams,
+// RecipesHTMLString = recipesSectionComponent({
 
-});
+//   recipes,
+//   contentButtonParams,
+
+// });
 
 
 if (!RecipesHTMLString) {

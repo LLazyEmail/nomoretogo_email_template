@@ -2,7 +2,7 @@
 import Errors from './Errors';
 
 // TODO it looks strange
-const footerError = new Errors('footerComponent');
+const headError = new Errors('headComponent');
 
 // Create head component start
 function createHeadComponent(params) {
@@ -56,34 +56,34 @@ function searchForErrors(params) {
   } = params;
 
   if (blobHead == '') {
-    footerError.add('blobHead');
+    headError.add('blobHead');
   }
   if (bodyStyle == '') {
-    footerError.add('bodyStyle');
+    headError.add('bodyStyle');
   }
   if (mediaStyle == '') {
-    footerError.add('mediaStyle');
+    headError.add('mediaStyle');
   }
   if (style == '') {
-    footerError.add('style');
+    headError.add('style');
   }
   if (style2 == '') {
-    footerError.add('style2');
+    headError.add('style2');
   }
   if (font1 == '') {
-    footerError.add('font1');
+    headError.add('font1');
   }
   if (font2 == '') {
-    footerError.add('font2');
+    headError.add('font2');
   }
   if (meta == '') {
-    footerError.add('meta');
+    headError.add('meta');
   }
   if (ifStyle == '') {
-    footerError.add('ifStyle');
+    headError.add('ifStyle');
   }
   if (title == '') {
-    footerError.add('title');
+    headError.add('title');
   }
 }
 

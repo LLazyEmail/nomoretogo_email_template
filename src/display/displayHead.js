@@ -32,16 +32,17 @@ const HeadParams = {
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
-var result = null;
+// var result = null;
 var headComponentHTML = null;
 try {
   headComponent;
 
 
   headComponentHTML = createComponent(headComponent, HeadParams);
+  
+  console.log(headComponentHTML);
 
-
-  result = headComponentHTML;
+  // result = headComponentHTML;
 } catch (error) {
   console.log(error.message);
 }

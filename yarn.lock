@@ -3653,7 +3653,7 @@ nmtg-template-mailerlite-outertemplate@^2.3.0:
 
 nmtg-template-mailerlite-typography@^3.0.0, nmtg-template-mailerlite-typography@^3.8.0:
   version "3.8.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-3.8.0.tgz#91809590ec8ad79492c85d5f2e1b8a1081896913"
+  resolved "https://registry.npmjs.org/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-3.8.0.tgz"
   integrity sha512-KZGC9dy7ikqAX0MU4TO2dhPj0y07jh2pqFPGAG97k6W30s+tG/GzfN6jc2hucj17OSGOavrMXS/G1059NAccNQ==
   dependencies:
     create-html-element "^4.0.1"

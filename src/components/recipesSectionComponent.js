@@ -55,35 +55,18 @@ const createRecipesPanel = (recipes) => {
 
   // var recipeHTMLMarkupArray
 
-    // var imagesAll = recipes.map((values) => {
-  
-    //   // console.log(params);
-  
-    //   return recipeComponent(values);
-    // });
-  
-    // console.log(imagesAll.length);
-  
-    // 
-    // TODO can be made better with listToMatrix method
-    var recipeRowBlockHTML = recipeRowBlock(recipes[0], recipes[1]);
-    recipeRowBlockHTML += recipeRowBlock(recipes[2], recipes[3]);
-    recipeRowBlockHTML += recipeRowBlock(recipes[4], recipes[5]);
+  // TODO can be made better with listToMatrix method
+  var recipeRowBlockHTML = recipeRowBlock(recipes[0], recipes[1]);
+  recipeRowBlockHTML += recipeRowBlock(recipes[2], recipes[3]);
+  recipeRowBlockHTML += recipeRowBlock(recipes[4], recipes[5]);
 
-    // console.log(recipeRowBlockHTML);
+  // console.log(recipeRowBlockHTML);
 
-    return recipeRowBlockHTML;
+  return recipeRowBlockHTML;
 }
 
 
 const recipesSectionComponent = (recipes) => {
-
-
-  // const {
-  //   recipes,
-  //   contentButtonParams
-  // } = params;
-  
 
 
   if (!recipes) {
@@ -96,7 +79,6 @@ const recipesSectionComponent = (recipes) => {
 
   const recipeRowBlockHTML = createRecipesPanel(recipes);
 
-  // console.log(recipeRowBlockHTML);
   return recipeRowBlockHTML;
 }
   
