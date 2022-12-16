@@ -29,18 +29,19 @@ const { socialsLinksParams, imagePath, title, params } = footerData;
 
 /* ******************** CREATE CONTENT START ****************************** */
 var result = null;
+var footerHTMLString = false;
 try {
 
-
+  // first block
   const imageBlock = createComponent( amazonFreshBlock, imagePath );
-
-
   
+  // second block
   const factory = new Factory(supportComponent, params);
   const supportBlock = factory.create();
 
   // console.log(supportBlock);
-  
+
+  // third block
   const socialMedia = createComponent(SocialPanelComponent, socialsLinksParams);
 
   //  console.log(socialMedia);
@@ -65,7 +66,13 @@ try {
   
   // footerHTML(settings) ;
 
-  result = createComponent(footerComponent, settings);
+  footerHTMLString = createComponent(footerComponent, settings);
+
+  result = 
+    supportBlock +
+    amazonFreshBlock + 
+    separatorComponent() + 
+    footerHTMLString;
 
   // console.log(result);
 

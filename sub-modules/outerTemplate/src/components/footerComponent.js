@@ -178,8 +178,8 @@ const footerComponent = (params) => {
   const { 
 
     
-    amazonFreshBlock, 
-    supportBlock, 
+    // amazonFreshBlock, 
+    // supportBlock, 
 
 
     socialPanel, title 
@@ -193,12 +193,10 @@ const footerComponent = (params) => {
     title,
   }
 
-  const line = 
   // supportBlock +
               // amazonFreshBlock + separatorComponent() + 
-
-
-              footerHTML(settings) ;
+  // TODO update it later
+  const line = footerHTML(settings) ;
 
 
   return line;

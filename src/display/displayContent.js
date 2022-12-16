@@ -4,6 +4,8 @@ import StaticComponent from '../components/StaticContentComponent';
 import { recipes } from '../config';
 
 
+// This thing is for static content
+
 // Title
 const contentTitleTextParams = {
   hrefTitle: 'https://nomoretogo.com/login/',
@@ -16,6 +18,7 @@ const contentTitleTextParams = {
 // Sub title
 const contentSubTitleParams = 'contentSubTitleParams'; // April 22nd, 2021
 
+// This part is also static
 // TODO to pass later as one content variable for being able to edit it.
 // maybe with separators, paragraphs, new lines or something
 // Description
@@ -48,6 +51,7 @@ try {
     contentTextDescriptionParams,
 
 
+    
     // TODO Do we need to pass recipes inside Static component or maybe we can move it out here?
     recipes,
     contentButtonParams,
@@ -56,7 +60,8 @@ try {
   });
 
 
-
+///////
+// recipesPanel
 
 
 
