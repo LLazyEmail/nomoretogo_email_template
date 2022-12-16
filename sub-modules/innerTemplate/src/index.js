@@ -17,6 +17,10 @@ import recipeComponent from './components/recipeComponent';
 
 import recipeRowBlock from './components/recipesRowBlock';
 
+import viewInBrowserLink from './components/view-in-browser-link';
+import SocialPanelComponent  from './components/socialPanel';
+
+
 export {
   topPanelViewInBrows,
   tableHeaderBlockLogo,
@@ -32,4 +36,7 @@ export {
   //--------
   recipeComponent,
   recipeRowBlock,
+  //----
+  viewInBrowserLink,
+  SocialPanelComponent
 };

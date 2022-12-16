@@ -1,9 +1,9 @@
 // Create footer component
 import {
   paragraphComponent,
-  linkComponent,
+  // linkComponent,
   // separatorComponent,
-  spanHeadingBlock
+  // spanHeadingBlock
   // imageComponent,
 } from 'nmtg-template-mailerlite-typography';
 
@@ -13,10 +13,6 @@ const error = new Errors('footerComponent');
 
 
 import createUnsubscribe from './unsubscribeLink';
-// Config file
-// import {  
-//   unsubscribe
-// } from '../config';
 
 
 // Address
@@ -38,20 +34,6 @@ const description = () => {
 
   return paragraphComponent(descriptionParams);
 };  
-
-// Unsubscribe
-// const createUnsubscribe = (href) => {
-//   if (href == '') {
-//     error.add('No unsubscribe link provided');
-//   }
-
-//   const linkParams = {
-//     attributes: `href="${href}" style="color: #111111; text-decoration: underline;"`,
-//     content: spanHeadingBlock(`Unsubscribe`), 
-//   };
-//   return linkComponent(linkParams);
-// };
-
 
 const footerHTML = (params) => {
 
@@ -179,9 +161,6 @@ const footerComponent = (params) => {
 
   const { 
 
-    
-    // amazonFreshBlock, 
-    // supportBlock, 
 
     unsubscribe,
     socialPanel, title 

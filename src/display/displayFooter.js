@@ -4,14 +4,8 @@ import { separatorComponent } from 'nmtg-template-mailerlite-typography';
 import Factory from './factory';
 import createComponent from './createComponentUniversal';
 
-// import {  
-//   unsubscribe
-// } from '../config';
 import { footerData, unsubscribe } from '../config';
 
-// import { socialsLinksParams, imagePath, title, params  } from '../config';
-// import { imagePath, title, params } from './_footerData';
-// footerData
 
 const { socialsLinksParams, imagePath, title, params } = footerData;
 
@@ -44,14 +38,14 @@ try {
   // console.log(supportBlock);
 
   // third block
-  const socialMedia = createComponent(SocialPanelComponent, socialsLinksParams);
+  const socialPanel = createComponent(SocialPanelComponent, socialsLinksParams) ;
 
-  //  console.log(socialMedia);
+   console.log(socialPanel);
   
   
   const settings = {
     unsubscribe,
-    socialMedia,
+    socialPanel,
 
 
     // amazonFreshBlock: imageBlock,
