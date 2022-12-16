@@ -21,7 +21,7 @@ const viewInBrowserPath = 'https://preview.mailerlite.com/r0n8w0g0n6/19343588617
 
 /////////////////
 // CONTENT
-
+// TODO separate static content with settings that is necessary for creating outer content template creation
 
 
 
@@ -93,27 +93,6 @@ const instructionComponentParams = {
 };
 
 
-// last part
-// "Footer Data" 
-
-const imagePath = 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/amazon.png';
-
-
-
-var params = {
-  topTitle: 'No More To-Go Facebook Users:',
-  // topLinkHref: '123',
-  topLinkId: 'fb-group',
-  topLinkText: 'Facebook Group Page',
-  bottomTitle: 'Have Questions?',
-  // bottomLinkHref: '123',
-  bottomLinkId: 'email-id',
-  bottomLinkText: '"How Can We Help',
-  // bottomTextContact: 'bottomTextContact',
-};
-
-
-const title = 'No More To-Go';
 
 
 //////////////////
@@ -133,9 +112,35 @@ const socialsLinksParams = [{
   src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/instagram.webp"
 }];
 
+// last part
+// "Footer Data" 
+
+const imagePath = 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/amazon.png';
 
 
 
+var footerParams = {
+  topTitle: 'No More To-Go Facebook Users:',
+  // topLinkHref: '123',
+  topLinkId: 'fb-group',
+  topLinkText: 'Facebook Group Page',
+  bottomTitle: 'Have Questions?',
+  // bottomLinkHref: '123',
+  bottomLinkId: 'email-id',
+  bottomLinkText: '"How Can We Help',
+  // bottomTextContact: 'bottomTextContact',
+};
+
+
+const title = 'No More To-Go';
+
+
+const footerData = {
+  socialsLinksParams,
+  imagePath,
+  params: footerParams,
+  title
+}
 
 
 export {
@@ -146,11 +151,8 @@ export {
   pathMainLogo,
   pathSocialIcons,
   titleHead,
-  socialsLinksParams,
   instructionComponentParams,
   recipes,
   //footer data
-  imagePath,
-  params,
-  title
+  footerData
 };

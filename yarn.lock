@@ -3644,10 +3644,10 @@ nmtg-template-mailerlite-miscellaneous@^0.10.0:
   resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-miscellaneous/-/nmtg-template-mailerlite-miscellaneous-0.10.0.tgz#5b7e0bd4daf92f447d68cda90033078b245cf9b1"
   integrity sha512-tOFnvU6r4BjpEeJP5sAbt0UuHmOiFMG1+KhoTU4UKO5gSaH1S+YbHaSmy3kWenMkcFgmZ2hy36xzZZVPgY7YuQ==
 
-nmtg-template-mailerlite-outertemplate@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-2.4.0.tgz#71b0a1eaaf6d95ef7201cb6b67cf264391a2a85d"
-  integrity sha512-zCWqoa/BNCYv4wlJvMzgMN8GmUPz7Gf21gCaCCK7ayYi/YPRZ41GMyPaFsXw7prlP+TTMx8hsguVIKElHt24tA==
+nmtg-template-mailerlite-outertemplate@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-2.5.0.tgz#6eefb78db18ecbe24b201dc1e62e9bc1cae8049f"
+  integrity sha512-iWjZuaRvh9Ifr+wSbOM8EQu3CPN2/Oa3d+5UC+3CUHmfLqP6SXBvPwpWGQquBpCQMVCcq8/5mBUn1okWlqRJaA==
   dependencies:
     nmtg-template-mailerlite-typography "^3.0.0"
     semver ">=4.3.2"

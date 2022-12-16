@@ -47,7 +47,9 @@ const createBlockOne = (title, subTitle, description) => {
   );
   
   const result =
-  contentTitleTextHTML + contentSubTitleTextHTML + contentTextDescriptionHTML;
+    contentTitleTextHTML + 
+    contentSubTitleTextHTML + 
+    contentTextDescriptionHTML;
   // return title + subTitle + description;
 
 

@@ -2,7 +2,7 @@
 import {
   paragraphComponent,
   linkComponent,
-  separatorComponent,
+  // separatorComponent,
   spanHeadingBlock
   // imageComponent,
 } from 'nmtg-template-mailerlite-typography';
@@ -13,7 +13,7 @@ const error = new Errors('footerComponent');
 
 // Config file
 import {  
-  unsubscribe 
+  unsubscribe
 } from '../config';
 
 
@@ -53,7 +53,7 @@ const createUnsubscribe = (href) => {
 
 const footerHTML = (params) => {
 
-const { socialPanel, address, description, unsubscribeLink, title } = params;
+const { address, description, unsubscribeLink, socialPanel, title } = params;
   
   
   
@@ -98,7 +98,9 @@ return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable
               <td align="center" style="padding: 0px 40px;" class="mlContentOuter">
                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                   <tbody><tr>
-                    <td align="left" class="bodyTitle" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; line-height: 150%; color: #111111;">${title}</td>
+                    <td align="left" class="bodyTitle" style="font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 700; line-height: 150%; color: #111111;">
+                    ${title}
+                    </td>
                   </tr>
                 </tbody></table>
               </td>
@@ -171,21 +173,31 @@ return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable
 };
 
 
-// Create footer content start
 const footerComponent = (params) => {
 
-  const { amazonFreshBlock, supportBlock, socialPanel, title } = params;
+  const { 
+
+    
+    amazonFreshBlock, 
+    supportBlock, 
+
+
+    socialPanel, title 
+  } = params;
 
   const settings = {
     address: address(),
     description: description(),
-    unsubscribeLink: createUnsubscribe(unsubscribe),
+    unsubscribeLink: createUnsubscribe(unsubscribe), // TODO think about moving unsubscribe away, because right now we have strange logic
     socialPanel,
-    title: title,
+    title,
   }
 
-  const line = supportBlock +
-              amazonFreshBlock + separatorComponent() + 
+  const line = 
+  // supportBlock +
+              // amazonFreshBlock + separatorComponent() + 
+
+
               footerHTML(settings) ;
 
 
@@ -193,6 +205,5 @@ const footerComponent = (params) => {
   
 
 };
-// Footer content end
 
 export default footerComponent;

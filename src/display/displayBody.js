@@ -11,12 +11,6 @@ import displayInstruction from './displayInstruction';
 
 
 
-
-
-
-
-
-
 /* ******************** DATA START **************************************** */
 // Body params
 
@@ -27,8 +21,6 @@ ${displayContentMainTableWrap}
 ${displayContentHTML}
 ${displayInstruction}
 `;
-
-
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */

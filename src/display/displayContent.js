@@ -1,7 +1,6 @@
 import StaticComponent from '../components/StaticContentComponent';
 
-import recipesSectionComponent from '../components/recipesSectionComponent';
-
+// import recipesSectionComponent from '../components/recipesSectionComponent';
 import { recipes } from '../config';
 
 
@@ -49,10 +48,8 @@ try {
     contentTextDescriptionParams,
 
 
-    
+    // TODO Do we need to pass recipes inside Static component or maybe we can move it out here?
     recipes,
-    // contentRecipeParams
- 
     contentButtonParams,
 
 

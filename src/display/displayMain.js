@@ -21,8 +21,6 @@ import displayHead from '../display/displayHead';
 
 // import displayContent from '../display/displayContent';
 
-// import displayInstructionHTMLString from '../display/displayInstruction';
-// import displaySupportContact from '../display/displaySupportContact';
 
 
 
