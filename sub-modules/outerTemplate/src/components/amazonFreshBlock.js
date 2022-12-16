@@ -9,6 +9,16 @@ const createImage = (src) => {
 // return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
 
 const amazonFreshMainBlock = (src) => {
+
+  const error = new Errors('imageAfterSupportComponent');
+
+  if (src == '') {
+    error.add('No src');
+  }
+
+
+
+
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -46,12 +56,14 @@ const amazonFreshMainBlock = (src) => {
 </tbody></table>`;
 };
 
-export default function (src) {
-  const error = new Errors('imageAfterSupportComponent');
+// export default function (src) {
+//   const error = new Errors('imageAfterSupportComponent');
 
-  if (src == '') {
-    error.add('No src');
-  }
+//   if (src == '') {
+//     error.add('No src');
+//   }
 
-  return amazonFreshMainBlock(src);
-}
+//   return amazonFreshMainBlock(src);
+// }
+
+export default amazonFreshMainBlock;

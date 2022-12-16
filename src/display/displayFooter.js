@@ -4,8 +4,10 @@ import { separatorComponent } from 'nmtg-template-mailerlite-typography';
 import Factory from './factory';
 import createComponent from './createComponentUniversal';
 
-
-import { footerData } from '../config';
+// import {  
+//   unsubscribe
+// } from '../config';
+import { footerData, unsubscribe } from '../config';
 
 // import { socialsLinksParams, imagePath, title, params  } from '../config';
 // import { imagePath, title, params } from './_footerData';
@@ -33,7 +35,7 @@ var footerHTMLString = false;
 try {
 
   // first block
-  const imageBlock = createComponent( amazonFreshBlock, imagePath );
+  const amazonFreshBlockHTML = createComponent( amazonFreshBlock, imagePath );
   
   // second block
   const factory = new Factory(supportComponent, params);
@@ -48,13 +50,14 @@ try {
   
   
   const settings = {
-    socialPanel: socialMedia,
+    unsubscribe,
+    socialMedia,
 
 
     // amazonFreshBlock: imageBlock,
     // supportBlock: supportBlock,
 
-    title: title,
+     title,
   }
 
 
@@ -68,9 +71,11 @@ try {
 
   footerHTMLString = createComponent(footerComponent, settings);
 
+
+
   result = 
     supportBlock +
-    amazonFreshBlock + 
+    amazonFreshBlockHTML + 
     separatorComponent() + 
     footerHTMLString;
 

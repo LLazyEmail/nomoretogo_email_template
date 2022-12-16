@@ -61,9 +61,9 @@
     "@babel/runtime": "^7.18.3",
     "babel-preset-react-app": "^10.0.1",
     "email-template-object": "^0.2.0",
-    "nmtg-template-mailerlite-inner": "^2.5.0",
+    "nmtg-template-mailerlite-inner": "^2.6.0",
     "nmtg-template-mailerlite-miscellaneous": "^0.10.0",
-    "nmtg-template-mailerlite-outertemplate": "^2.6.0",
+    "nmtg-template-mailerlite-outertemplate": "^2.7.0",
     "nmtg-template-mailerlite-typography": "^3.9.0"
   }
 }

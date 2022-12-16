@@ -125,12 +125,12 @@ var footerParams = {
   topLinkId: 'fb-group',
   topLinkText: 'Facebook Group Page',
   bottomTitle: 'Have Questions?',
-  // bottomLinkHref: '123',
+  bottomLinkHref: 'https://nomoretogo.com/?utm_source=newsletter&utm_medium=email&utm_campaign=korean_barbecue_beef_pork_schnitzel_bahn_mi_meatball_skewers&utm_term=2022-12-16',
   bottomLinkId: 'email-id',
   bottomLinkText: '"How Can We Help',
   // bottomTextContact: 'bottomTextContact',
 };
-
+// contact@nomoretogo.com can be moved away as well.
 
 const title = 'No More To-Go';
 

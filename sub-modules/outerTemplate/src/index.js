@@ -16,7 +16,7 @@ import footerComponent from './components/footerComponent';
 import headComponent from './components/headComponent';
 import bodyComponent from './components/bodyComponent';
 //------------
-
+import createUnsubscribe from './components/unsubscribeLink';
 import supportComponent from './components/supportComponent';
 import amazonFreshBlock from './components/amazonFreshBlock';
 //------------
@@ -37,6 +37,7 @@ export {
   headComponent,
   bodyComponent,
   //------
+  createUnsubscribe,
   supportComponent,
   amazonFreshBlock,
   pre_tags,

@@ -18,7 +18,7 @@ const renderSubHeading = (params) => {
 
 // <span style="color: #111111;">Unsubscribe</span>
 const spanHeadingBlock = (title) => {
-  return `<span style="color: #111111;">$title</span>`;
+  return `<span style="color: #111111;">${title}</span>`;
 }
 
 export {

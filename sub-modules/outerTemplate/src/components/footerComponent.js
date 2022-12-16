@@ -11,10 +11,12 @@ import {
 import Errors from './Errors';
 const error = new Errors('footerComponent');
 
+
+import createUnsubscribe from './unsubscribeLink';
 // Config file
-import {  
-  unsubscribe
-} from '../config';
+// import {  
+//   unsubscribe
+// } from '../config';
 
 
 // Address
@@ -38,17 +40,17 @@ const description = () => {
 };  
 
 // Unsubscribe
-const createUnsubscribe = (href) => {
-  if (href == '') {
-    error.add('No unsubscribe');
-  }
+// const createUnsubscribe = (href) => {
+//   if (href == '') {
+//     error.add('No unsubscribe link provided');
+//   }
 
-  const linkParams = {
-    attributes: `href="${href}" style="color: #111111; text-decoration: underline;"`,
-    content: spanHeadingBlock(`Unsubscribe`), 
-  };
-  return linkComponent(linkParams);
-};
+//   const linkParams = {
+//     attributes: `href="${href}" style="color: #111111; text-decoration: underline;"`,
+//     content: spanHeadingBlock(`Unsubscribe`), 
+//   };
+//   return linkComponent(linkParams);
+// };
 
 
 const footerHTML = (params) => {
@@ -181,7 +183,7 @@ const footerComponent = (params) => {
     // amazonFreshBlock, 
     // supportBlock, 
 
-
+    unsubscribe,
     socialPanel, title 
   } = params;
 

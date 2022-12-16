@@ -57,6 +57,7 @@ const createRecipesPanel = (recipes) => {
 
   // TODO can be made better with listToMatrix method
   var recipeRowBlockHTML = recipeRowBlock(recipes[0], recipes[1]);
+  // console.log(recipes[0]);
   recipeRowBlockHTML += recipeRowBlock(recipes[2], recipes[3]);
   recipeRowBlockHTML += recipeRowBlock(recipes[4], recipes[5]);
 
@@ -73,6 +74,7 @@ const recipesSectionComponent = (recipes) => {
     throw new Error('no recipes was passed');
   }
 
+  // console.log(recipes);
   // if (!contentButtonParams) {
   //   throw new Error('no contentButtonParams was passed');
   // }

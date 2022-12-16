@@ -1,11 +1,11 @@
 import { recipeComponent } from 'nmtg-template-mailerlite-inner';
 
-// THIS BLOCK is a old version of contentTableWithTwoRecipes.... get rid of it later
+// TODO THIS BLOCK is a old version of contentTableWithTwoRecipes.... get rid of it later
 
 // Main table start
-const recipeRowBlock = (recipeOne, recipeTwo) => {
-  // const recipeOne = recipeComponent(dataImageOne);
-  // const recipeTwo = recipeComponent(dataImageTwo);
+const recipeRowBlock = (dataImageOne, dataImageTwo) => {
+  const recipeOne = recipeComponent(dataImageOne);
+  const recipeTwo = recipeComponent(dataImageTwo);
 
   
 

@@ -51,7 +51,7 @@ try {
     contentTextDescriptionParams,
 
 
-    
+
     // TODO Do we need to pass recipes inside Static component or maybe we can move it out here?
     recipes,
     contentButtonParams,
@@ -61,7 +61,7 @@ try {
 
 
 ///////
-// recipesPanel
+// recipesPanel = 
 
 
 
