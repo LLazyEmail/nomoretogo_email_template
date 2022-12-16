@@ -35,12 +35,11 @@ const HeadParams = {
 // var result = null;
 var headComponentHTML = null;
 try {
-  headComponent;
-
+  // headComponent;
 
   headComponentHTML = createComponent(headComponent, HeadParams);
   
-  console.log(headComponentHTML);
+  // console.log(headComponentHTML);
 
   // result = headComponentHTML;
 } catch (error) {

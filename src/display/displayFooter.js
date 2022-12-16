@@ -12,11 +12,13 @@ import { imagePath, title, params } from './_footerData';
 
 
 
+
+
 // to test updated version of button component
 
-import {     
-  buttonComponent2
- } from 'nmtg-template-mailerlite-typography';
+// import {     
+//   buttonComponent2
+//  } from 'nmtg-template-mailerlite-typography';
 
 //  buttonComponent2({id: '12', href: 'google.com'});
 
@@ -43,7 +45,8 @@ try {
   const settings = {
     socialPanel: socialMedia,
     amazonFreshBlock: imageBlock,
-    supportBlock: supportBlock
+    supportBlock: supportBlock,
+    title: title,
   }
 
 

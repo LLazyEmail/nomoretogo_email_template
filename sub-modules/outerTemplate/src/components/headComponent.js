@@ -4,7 +4,6 @@ import Errors from './Errors';
 // TODO it looks strange
 const headError = new Errors('headComponent');
 
-// Create head component start
 function createHeadComponent(params) {
   var {
     blobHead,
@@ -32,16 +31,15 @@ function createHeadComponent(params) {
     <meta name="robots" content="noindex, nofollow">
     ${style2}
     ${font2}
-    
   </head>`;
   // ${blobHead}
 }
-// Create head component end
+
 
 // TODO migrate some errors away 
 // we are throwing an error with the same constant 10 times.
 function searchForErrors(params) {
-  const error = new Errors('headComponent');
+  // const error = new Errors('headComponent');
   var {
     blobHead,
     bodyStyle,

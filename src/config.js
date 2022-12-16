@@ -14,36 +14,14 @@ const viewInBrowserPath = 'https://preview.mailerlite.com/r0n8w0g0n6/19343588617
 //-----------------------
 
 
-// Footer params
-const socialsLinksParams = [{ 
-    href: "https://www.facebook.com/nomoretogo/", 
-    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/facebook.webp"
-  },
-  { 
-    href: "https://twitter.com/nomoretogo", 
-    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/twitter.webp"
-  },
-  { 
-    href: "https://www.instagram.com/nomoretogo/", 
-    src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/instagram.webp"
-  }];
 
 
 
-// Title params
-const instructionComponentParams = {
-  title: 'Ingredients',
-  text: `Saffron: Gives traditional Tandoori its famous yellow coloring. 
-  This week we are using it in the marinade for the Yogurt Spiced Chicken. 
-  It can be pretty expensive, so turmeric is a good alternative, providing the same color and very comparable taste.`,
-  title2: 'Weekend Prep',
-  
-  text2: `Free up your evening and get a little chopping and prep work done this weekend.
 
-  Slice and Dice: Cut the vegetables and store in zippered bags or divided containers.
-  
-  Make Ahead and Refrigerate: Make the sauce; Cook the noodles; Make the dressing; Make the spaetzle; Cook the rice.`,
-};
+
+/////////////////
+// CONTENT
+
 
 
 
@@ -99,9 +77,64 @@ const recipes = [
   },
 ];
 
+// Instructions
+const instructionComponentParams = {
+  title: 'Ingredients',
+  text: `Saffron: Gives traditional Tandoori its famous yellow coloring. 
+  This week we are using it in the marinade for the Yogurt Spiced Chicken. 
+  It can be pretty expensive, so turmeric is a good alternative, providing the same color and very comparable taste.`,
+  title2: 'Weekend Prep',
+  
+  text2: `Free up your evening and get a little chopping and prep work done this weekend.
+
+  Slice and Dice: Cut the vegetables and store in zippered bags or divided containers.
+  
+  Make Ahead and Refrigerate: Make the sauce; Cook the noodles; Make the dressing; Make the spaetzle; Cook the rice.`,
+};
 
 
-// export default recipes; 
+// last part
+// "Footer Data" 
+
+const imagePath = 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/amazon.png';
+
+
+
+var params = {
+  topTitle: 'No More To-Go Facebook Users:',
+  // topLinkHref: '123',
+  topLinkId: 'fb-group',
+  topLinkText: 'Facebook Group Page',
+  bottomTitle: 'Have Questions?',
+  // bottomLinkHref: '123',
+  bottomLinkId: 'email-id',
+  bottomLinkText: '"How Can We Help',
+  // bottomTextContact: 'bottomTextContact',
+};
+
+
+const title = 'No More To-Go';
+
+
+//////////////////
+// FOOTER 
+
+// Footer params
+const socialsLinksParams = [{ 
+  href: "https://www.facebook.com/nomoretogo/", 
+  src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/facebook.webp"
+},
+{ 
+  href: "https://twitter.com/nomoretogo", 
+  src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/twitter.webp"
+},
+{ 
+  href: "https://www.instagram.com/nomoretogo/", 
+  src: "https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/instagram.webp"
+}];
+
+
+
 
 
 
@@ -115,5 +148,9 @@ export {
   titleHead,
   socialsLinksParams,
   instructionComponentParams,
-  recipes
+  recipes,
+  //footer data
+  imagePath,
+  params,
+  title
 };

@@ -21,8 +21,7 @@
     "lint:prettier": "prettier --write src/",
     "upd": "shx chmod +x ./bash/update-packages.sh && ./bash/update-packages.sh",
     "lint": "eslint --ext .js . --ignore-path ./.eslintignore --resolve-plugins-relative-to .",
-    "lint:fix": "shx chmod +x ./bash/lint-fix.sh && ./bash/lint-fix.sh",
-    "lint2:fix": "eslint --fix . --ignore-path ./.eslintignore --resolve-plugins-relative-to ."
+    "lint:fix": "./bash/lint-fix.sh"
   },
   "devDependencies": {
     "@babel/cli": "7.19.3",
@@ -62,9 +61,9 @@
     "@babel/runtime": "^7.18.3",
     "babel-preset-react-app": "^10.0.1",
     "email-template-object": "^0.2.0",
-    "nmtg-template-mailerlite-inner": "^2.3.0",
+    "nmtg-template-mailerlite-inner": "^2.4.0",
     "nmtg-template-mailerlite-miscellaneous": "^0.10.0",
-    "nmtg-template-mailerlite-outertemplate": "^2.3.0",
+    "nmtg-template-mailerlite-outertemplate": "^2.4.0",
     "nmtg-template-mailerlite-typography": "^3.8.0"
   }
 }

@@ -1,6 +1,7 @@
 // Component content discription
 import Errors from './Errors';
 
+//TODO rename contentTextDescription filename
 const textDescriptionMainBlock = (textTop, textBottom) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>

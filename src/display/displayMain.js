@@ -1,8 +1,6 @@
 // Create Main display
 import createComponent from './createComponentUniversal';
 
-
-
 import mainComponent from '../components/mainComponent';
 
 import displayHead from '../display/displayHead';
@@ -23,10 +21,6 @@ import displayHead from '../display/displayHead';
 
 // import displayContent from '../display/displayContent';
 
-
-
-
-
 // import displayInstructionHTMLString from '../display/displayInstruction';
 // import displaySupportContact from '../display/displaySupportContact';
 
@@ -39,9 +33,6 @@ import BodyHTMLString from '../display/displayBody';
 
 
 import displayFooterHTML from '../display/displayFooter';
-
-
-
 
 
 
