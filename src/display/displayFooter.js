@@ -1,5 +1,5 @@
-import { footerComponent, amazonFreshBlock, supportComponent  } from 'nmtg-template-mailerlite-outertemplate';
-import { SocialPanelComponent } from 'nmtg-template-mailerlite-miscellaneous';
+import { footerComponent, amazonFreshBlock, supportComponent, } from 'nmtg-template-mailerlite-outertemplate';
+import { SocialPanelComponent } from 'nmtg-template-mailerlite-inner'; 
 import { separatorComponent } from 'nmtg-template-mailerlite-typography';
 import Factory from './factory';
 import createComponent from './createComponentUniversal';
@@ -35,22 +35,13 @@ try {
   const factory = new Factory(supportComponent, params);
   const supportBlock = factory.create();
 
-  // console.log(supportBlock);
-
   // third block
   const socialPanel = createComponent(SocialPanelComponent, socialsLinksParams) ;
 
-   console.log(socialPanel);
-  
   
   const settings = {
     unsubscribe,
     socialPanel,
-
-
-    // amazonFreshBlock: imageBlock,
-    // supportBlock: supportBlock,
-
      title,
   }
 

@@ -13,6 +13,7 @@ import {
 
 import createComponent from './createComponentUniversal';
 
+import { titleHead } from '../config';
 /* ******************** DATA START **************************************** */
 // Head params
 const HeadParams = {
@@ -26,7 +27,7 @@ const HeadParams = {
   style: style(),
   style2: style2(),
   // variable:value,
-  title: 'Korean Barbecue Beef | Pork Schnitzel | Bahn Mi Meatball Skewers', //TODO move to config
+  title: titleHead,
 };
 
 /* ******************** DATA END **************************************** */

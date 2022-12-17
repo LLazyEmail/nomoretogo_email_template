@@ -5,6 +5,9 @@ function createComponent(component, params = '') {
   var error = '';
   var result = null;
 
+  // TODO add a message that we cant find a component that you are passing into
+  // duplicate of a created issue
+  // Plus check if component is a function or not.
   if (component == undefined) {
     throw new Error(
       'Error, component - "createComponentUniversal" , message - "component undefined" '

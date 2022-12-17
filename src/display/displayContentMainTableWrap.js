@@ -2,7 +2,7 @@ import createComponent from './createComponentUniversal';
 
 //---------------
 
-import { viewInBrowserLink } from 'nmtg-template-mailerlite-miscellaneous';
+import { viewInBrowserLink } from 'nmtg-template-mailerlite-inner';
 
 import { contentMainTableWrap } from 'nmtg-template-mailerlite-outertemplate';
 
@@ -11,37 +11,48 @@ import {
   tableHeaderBlockLogo,
 } from 'nmtg-template-mailerlite-inner';
 
-/* ******************** DATA START **************************************** */
-// View in brows link
-const viewInBrowserLinkParams = {
-  id: 'view-id',
-  href: 'https://preview.mailerlite.com/r0n8w0g0n6/1934358861754405982/l8n5/',
-};
+import { viewInBrowserLinkParams } from '../config';
 
-var contentMainTableWrapParams = {
-  topPanel: '',
-  blockLogo: tableHeaderBlockLogo(),
-};
+// TODO move this component away at some point in the future
+const view_in_browser = (params) => {
 
-/* ******************** DATA END **************************************** */
+  // Link view in brows
+  const htmlString = createComponent(
+    viewInBrowserLink,
+    params
+  );
+
+  return htmlString;
+
+}
+
 
 /* ******************** CREATE CONTENT START ****************************** */
 var result = null;
 try {
   // Link view in brows
-  const linkViewInBrows = createComponent(
-    viewInBrowserLink,
-    viewInBrowserLinkParams
-  );
+  // const linkViewInBrows = createComponent(
+  //   viewInBrowserLink,
+  //   viewInBrowserLinkParams
+  // );
+
+  const ViewInBrowserHTML = view_in_browser(viewInBrowserLinkParams);
 
   // Top panel view in brows
-  contentMainTableWrapParams.topPanel = createComponent(
+  const topPanel = createComponent(
     topPanelViewInBrows,
-    linkViewInBrows
+    ViewInBrowserHTML
   );
 
+
+  var settings = {
+    topPanel: topPanel, 
+    blockLogo: tableHeaderBlockLogo(),
+  };
+
   // ContentMainTableWrap
-  result = createComponent(contentMainTableWrap, contentMainTableWrapParams);
+  result = createComponent(contentMainTableWrap, settings);
+
 } catch (error) {
   console.log(error.message);
 }

@@ -10,11 +10,14 @@ const pathSocialIcons = '../data/images/';
 //------------------
 const titleHead = 'Korean Barbecue Beef | Pork Schnitzel | Bahn Mi Meatball Skewers';
 
-const viewInBrowserPath = 'https://preview.mailerlite.com/r0n8w0g0n6/1934358861754405982/l8n5/';
+// const viewInBrowserPath = 'https://preview.mailerlite.com/r0n8w0g0n6/1934358861754405982/l8n5/';
 //-----------------------
 
 
-
+const viewInBrowserLinkParams = {
+  id: 'view-id',
+  href: 'https://preview.mailerlite.com/r0n8w0g0n6/1934358861754405982/l8n5/',
+}; 
 
 
 
@@ -144,6 +147,7 @@ const footerData = {
 
 
 export {
+  viewInBrowserLinkParams,
   contact,
   mailingAddress,
   unsubscribe,
