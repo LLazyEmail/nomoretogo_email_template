@@ -49,6 +49,8 @@ var error = '';
 var settings = '';
 var result = null;
 
+
+
 if (displayHead == null) {
   error = 'Empty displayHead';
 }
