@@ -1,7 +1,7 @@
 // Create panel view in brows
 // import Errors from './Errors';
 
-import ow from 'ow';
+// import ow from 'ow';
 
 // Top panel start
 const topPanelViewInBrows = (link) => {
@@ -12,7 +12,7 @@ const topPanelViewInBrows = (link) => {
   //   error.add('No link');
   // }
 
-  ow(link, ow.string);
+  // ow(link, ow.string);
 
 
 

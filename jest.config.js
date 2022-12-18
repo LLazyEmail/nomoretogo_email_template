@@ -3,4 +3,5 @@ module.exports = {
  	moduleNameMapper: {
         "@root(.*)$": "<rootDir>/src/$1"
     },
+    modulePaths: ['<rootDir>/src/'],
 }

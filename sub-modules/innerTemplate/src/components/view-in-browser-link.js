@@ -2,7 +2,7 @@
 // import Errors from './Errors';
 
 import { linkComponent } from 'nmtg-template-mailerlite-typography';
-import ow from 'ow';
+// import ow from 'ow';
 
 const viewInBrowsLink = (params) => {
   const { id, href } = params;
@@ -11,8 +11,8 @@ const viewInBrowsLink = (params) => {
   //   id, href
   // }));
 
-  ow(id, ow.string)
-  ow(href, ow.string)
+  // ow(id, ow.string)
+  // ow(href, ow.string)
 
   const settings = {
     attributes: `style="color: #111111;" href="${href}" data-link-id="${id}" target="_blank"`,

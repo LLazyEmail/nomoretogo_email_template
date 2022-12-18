@@ -1,19 +1,23 @@
 import Errors from './Errors';
-const error = new Errors('footerComponent');
+// const error = new Errors('footerComponent');
 
 // Create footerSocial start
 // TODO add linkComponent
 // TODO add image
-const SocialPanelComponent  = function (socials) {
+const SocialPanelComponent  = (socials) => {
 
   var socialPanel = false;
   socials.map(({href, src}) => {
-    if (href == '') {
-      error.add('No href');
-    }
-    if (src == '') {
-      error.add('No src');
-    }
+
+
+    // if (href == '') {
+    //   error.add('No href');
+    // }
+    // if (src == '') {
+    //   error.add('No src');
+    // }
+
+
     //-----------------
     // const image = createPathToImage(social.src);
     const image = src;

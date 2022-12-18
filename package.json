@@ -15,7 +15,7 @@
     "test:content": "bash ./bash/tests.sh 03_content",
     "test:recipes": "bash ./bash/tests.sh 03_recipes",
     "test:typo": "npm run chmodler && ./bash/05-test-typography.sh",
-    "test:new": "npm run chmodler && ./bash/tests.sh",
+    "test": "npm run chmodler && ./bash/tests.sh",
     "clean": "shx rm -rf ./coverage && shx rm -rf ./dist",
     "chmodler": "shx chmod -R 755 ./bash",
     "lint:prettier": "prettier --write src/",
@@ -61,8 +61,8 @@
     "@babel/runtime": "^7.18.3",
     "babel-preset-react-app": "^10.0.1",
     "email-template-object": "^0.2.0",
-    "nmtg-template-mailerlite-inner": "^2.9.0",
-    "nmtg-template-mailerlite-outertemplate": "^2.10.0",
+    "nmtg-template-mailerlite-inner": "^2.12.0",
+    "nmtg-template-mailerlite-outertemplate": "^2.11.0",
     "nmtg-template-mailerlite-typography": "^3.10.0",
     "ow": "^1.1.0"
   }
