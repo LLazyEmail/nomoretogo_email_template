@@ -1,0 +1,2 @@
+// TODO I want to use this file to combine all static wrappers like
+// header of the template, footer of the template, ie everything that is not related to content that can be changed - must be displayed here

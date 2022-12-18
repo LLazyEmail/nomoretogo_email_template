@@ -4,7 +4,7 @@ import instructionComponent from '../components/instructionComponent';
 
 import createComponent from './createComponentUniversal';
 
-import { instructionComponentParams } from '../config';
+// import { instructionComponentParams } from '../config';
 
 
 /* ******************** CREATE CONTENT START ****************************** */
@@ -12,7 +12,7 @@ var result = null;
 try {
   const instructionComponentRes = createComponent(
     instructionComponent,
-    instructionComponentParams
+    // instructionComponentParams
   );
 
   result = instructionComponentRes;

@@ -80,20 +80,22 @@ const recipes = [
   },
 ];
 
+// Not sure if i want to keep this setting here right now
+// I think it must be moved in hands of generator, as it's purely content matter
 // Instructions
-const instructionComponentParams = {
-  title: 'Ingredients',
-  text: `Saffron: Gives traditional Tandoori its famous yellow coloring. 
-  This week we are using it in the marinade for the Yogurt Spiced Chicken. 
-  It can be pretty expensive, so turmeric is a good alternative, providing the same color and very comparable taste.`,
-  title2: 'Weekend Prep',
+// const instructionComponentParams = {
+//   title: 'Ingredients',
+//   text: `Saffron: Gives traditional Tandoori its famous yellow coloring. 
+//   This week we are using it in the marinade for the Yogurt Spiced Chicken. 
+//   It can be pretty expensive, so turmeric is a good alternative, providing the same color and very comparable taste.`,
+//   title2: 'Weekend Prep',
   
-  text2: `Free up your evening and get a little chopping and prep work done this weekend.
+//   text2: `Free up your evening and get a little chopping and prep work done this weekend.
 
-  Slice and Dice: Cut the vegetables and store in zippered bags or divided containers.
+//   Slice and Dice: Cut the vegetables and store in zippered bags or divided containers.
   
-  Make Ahead and Refrigerate: Make the sauce; Cook the noodles; Make the dressing; Make the spaetzle; Cook the rice.`,
-};
+//   Make Ahead and Refrigerate: Make the sauce; Cook the noodles; Make the dressing; Make the spaetzle; Cook the rice.`,
+// };
 
 
 
@@ -155,7 +157,7 @@ export {
   pathMainLogo,
   pathSocialIcons,
   titleHead,
-  instructionComponentParams,
+  // instructionComponentParams, // disabling it as i want to proceed with a static content line
   recipes,
   //footer data
   footerData

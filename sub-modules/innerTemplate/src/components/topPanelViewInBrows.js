@@ -1,6 +1,6 @@
 // Create panel view in brows
 import Errors from './Errors';
-
+import ow from 'ow';
 
 // Top panel start
 const topPanelViewInBrows = (link) => {
@@ -11,8 +11,12 @@ const topPanelViewInBrows = (link) => {
     error.add('No link');
   }
 
+  ow(link, ow.string);
 
-  return `DEBUG<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" class="mobileHide">
+
+
+  return `----------------------------------------------------DEBUG
+  <table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" class="mobileHide">
     <tbody><tr>
       <td align="center">
         <table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" class="mlContentTable">
@@ -31,7 +35,8 @@ const topPanelViewInBrows = (link) => {
         </tbody></table>
       </td>
     </tr>
-    </tbody></table>DEBUG`;
+    </tbody></table>
+    -----------------------------DEBUG`;
 };
 // Top panel end
 
