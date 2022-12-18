@@ -1,22 +1,8 @@
 // Create Main display
+import ow from 'ow';
 import createComponent from './createComponentUniversal';
-
 import mainComponent from '../components/mainComponent';
-
 import displayHead from '../display/displayHead';
-
-
-
-
-
-
-/////---------------
-// import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate'
-
-
-
-// import displayContentMainTableWrap from '../display/displayContentMainTableWrap';
-
 
 
 // import displayContent from '../display/displayContent';
@@ -51,45 +37,21 @@ var result = null;
 
 
 
-if (displayHead == null) {
-  error = 'Empty displayHead';
-}
-
-
-
-
-
-// if (displayContentMainTableWrap == null) {
-//   error = 'Empty displayContentMainTableWrap';
-// }
-// if (displayContent == null) {
-//   error = 'Empty displayContent';
-// }
-
-// if (displayInstructionHTMLString == null) {
-//   error = 'Empty displayInstruction';
+// if (displayHead == null) {
+//   error = 'Empty displayHead';
 // }
 
 
+ow(displayHead, ow.string);
+ow(BodyHTMLString, ow.string.minLength(5));
+ow(displayFooterHTML, ow.string.minLength(5));
 
 
-// TODO if we want to keep those checks, we need to move it into footer display probably
-// if (displaySupportContact == null) {
-//   error = 'Empty displaySupportContact';
-// }
-// if (displayImageAfterSupportComponent == null) {
-//   error = 'Empty displayImageAfterSupportComponent';
-// }
-
-
-
-if (displayFooterHTML == null) {
-  error = 'Empty displayFooter';
-}
 
 // if (displayFooterHTML == null) {
 //   error = 'Empty displayFooter';
 // }
+
 /* ******************** DATA END **************************************** */
 
 
@@ -102,8 +64,6 @@ if (error == '') {
   
   
   
-
-  
   // const bodyContentParams = `
   //   ${displayContentMainTableWrap}
   //   ${displayContent}
@@ -114,10 +74,6 @@ if (error == '') {
   // const BodyComponentHTML = createComponent(bodyComponent, bodyContentParams);
 
   // console.log(BodyComponentHTML);
-
-  
-  
-  
   
   
 //variant one

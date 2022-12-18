@@ -1,16 +1,25 @@
 // create tableHeaderBlockLogo
-import { pathMainLogo } from '../config';
-import Errors from './Errors';
-
+import ow from "ow";
 import { imageComponent } from 'nmtg-template-mailerlite-typography';
 
-const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
-const imageLogo = imageComponent(imageParams);
+import { pathMainLogo } from '../config';
+// import Errors from './Errors';
+
+
+
+const image = () => {
+  ow(pathMainLogo, ow.string);
+
+  const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
+  const imageLogo = imageComponent(imageParams);
+  return imageLogo;
+  
+}
 
 // Block header/logotip start
 
 const tableHeaderBlockLogo = () => {
-  
+
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -23,7 +32,7 @@ const tableHeaderBlockLogo = () => {
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
                       <td align="center">                        
-                        ${imageLogo}                        
+                        ${image()}                        
                       </td>
                     </tr>
                   </tbody></table>
@@ -44,13 +53,15 @@ const tableHeaderBlockLogo = () => {
 };
 // Block header/logotip end
 
-export default function () {
-  const error = new Errors('tableHeaderBlockLogo');
-  if (pathMainLogo == '') {
-    error.add('No pathMainLogo tableHeaderBlockLogo');
-  }
-
-  return tableHeaderBlockLogo();
-}
+// export default function () {
+//   const error = new Errors('tableHeaderBlockLogo');
+//   if (pathMainLogo == '') {
+//     error.add('No pathMainLogo tableHeaderBlockLogo');
+//   }
 
 
+
+//   return tableHeaderBlockLogo();
+// }
+
+export default tableHeaderBlockLogo;

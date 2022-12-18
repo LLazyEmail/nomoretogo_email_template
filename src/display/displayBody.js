@@ -5,9 +5,9 @@ import createComponent from './createComponentUniversal';
 
 
 
-import displayContentMainTableWrap from './displayContentMainTableWrap';
+// import displayContentMainTableWrap from './displayContentMainTableWrap';
 
-import displayContentHTML from './displayContent';
+// import displayContentHTML from './displayContent';
 import displayInstruction from './displayInstruction';
 
 
@@ -15,7 +15,8 @@ import displayInstruction from './displayInstruction';
 /* ******************** DATA START **************************************** */
 // Body params
 
-
+const displayContentMainTableWrap = 'xxx';
+const displayContentHTML = "xxx";
 
 const bodyComponentParams = `
 ${displayContentMainTableWrap}
