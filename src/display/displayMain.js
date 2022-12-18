@@ -2,10 +2,12 @@
 // import ow from 'ow';
 import createComponent from './createComponentUniversal';
 import mainComponent from '../components/mainComponent';
-import displayHead from '../display/displayHead';
 
 
-// import displayContent from '../display/displayContent';
+const displayHead = 'xxx';
+// import displayHead from '../display/displayHead';
+
+
 
 
 
@@ -16,8 +18,8 @@ import BodyHTMLString from '../display/displayBody';
 
 
 
-import displayFooterHTML from '../display/displayFooter';
-
+// import displayFooterHTML from '../display/displayFooter';
+const displayFooterHTML = 'xxx';
 
 
 
