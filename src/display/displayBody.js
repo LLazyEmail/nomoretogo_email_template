@@ -29,7 +29,10 @@ ${displayInstruction}
 var result = null;
 try {
   // contentTitleText
-  const bodyComponentRes = createComponent(bodyComponent, bodyComponentParams);
+  const bodyComponentRes = createComponent(
+    bodyComponent, 
+    bodyComponentParams
+  );
 
   result = bodyComponentRes;
   

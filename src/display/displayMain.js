@@ -1,5 +1,5 @@
 // Create Main display
-import ow from 'ow';
+// import ow from 'ow';
 import createComponent from './createComponentUniversal';
 import mainComponent from '../components/mainComponent';
 import displayHead from '../display/displayHead';
@@ -37,20 +37,20 @@ var result = null;
 
 
 
-// if (displayHead == null) {
-//   error = 'Empty displayHead';
-// }
+if (displayHead == null) {
+  error = 'Empty displayHead';
+}
 
 
-ow(displayHead, ow.string);
-ow(BodyHTMLString, ow.string.minLength(5));
-ow(displayFooterHTML, ow.string.minLength(5));
+// ow(displayHead, ow.string);
+// ow(BodyHTMLString, ow.string.minLength(5));
+// ow(displayFooterHTML, ow.string.minLength(5));
 
 
 
-// if (displayFooterHTML == null) {
-//   error = 'Empty displayFooter';
-// }
+if (displayFooterHTML == null) {
+  error = 'Empty displayFooter';
+}
 
 /* ******************** DATA END **************************************** */
 

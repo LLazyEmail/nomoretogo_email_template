@@ -1,10 +1,7 @@
-// import recipeComponent from "../src/components/recipeComponent";
-
-
-import {
-    recipeComponent,
-    recipeRowBlock
-  } from 'nmtg-template-mailerlite-inner';
+import recipeComponent from "../src/components/recipeComponent";
+// import {
+//     recipeComponent
+//   } from 'nmtg-template-mailerlite-inner';
 
 
 const data = {

@@ -1,5 +1,6 @@
 // Create panel view in brows
 // import Errors from './Errors';
+
 import ow from 'ow';
 
 // Top panel start

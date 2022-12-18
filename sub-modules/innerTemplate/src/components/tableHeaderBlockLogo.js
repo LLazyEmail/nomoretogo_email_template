@@ -1,5 +1,5 @@
 // create tableHeaderBlockLogo
-import ow from "ow";
+// import ow from "ow";
 import { imageComponent } from 'nmtg-template-mailerlite-typography';
 
 import { pathMainLogo } from '../config';
@@ -8,7 +8,8 @@ import { pathMainLogo } from '../config';
 
 
 const image = () => {
-  ow(pathMainLogo, ow.string);
+
+  // ow(pathMainLogo, ow.string);
 
   const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
   const imageLogo = imageComponent(imageParams);

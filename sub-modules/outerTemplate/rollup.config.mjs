@@ -22,7 +22,7 @@ const name = "newsletterLayoutsTypographyPlainJS";
 // packages that should be treated as external dependencies, not bundled
 // e.g. ['axios']
 const external = [
-    // "fs", "path", "uuid"
+    "ow"
 ];
 
 const includePathOptions = {
