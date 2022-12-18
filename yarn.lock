@@ -3653,13 +3653,12 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-nmtg-template-mailerlite-inner@^2.12.0:
-  version "2.12.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-2.12.0.tgz#00cf765762b80e5cd74f0d1e3150f81ffe4549c3"
-  integrity sha512-Yh4Y41jNdN2aYqj3QO1gXWTSWPyAO4f1IHtUJvJyH27Y48bTizTIucCrhN4dAQd6oajg/CLFDn/a4n5dooDsFg==
+nmtg-template-mailerlite-inner@^2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-2.13.0.tgz#602c9f67dc1d9656c678734088e63c3a52fac9ff"
+  integrity sha512-7oXLWZYpPeHdZMoHzRVhtXDiEIxIGXbBkvq7OnLnNFTy/TYpkT7+Wtf6QBZoG/rPkTKvYgGwBsf2QVwTmOXiMA==
   dependencies:
     nmtg-template-mailerlite-typography "^3.8.0"
-    ow "^1.1.0"
     semver ">=4.3.2"
 
 nmtg-template-mailerlite-outertemplate@^2.11.0:
