@@ -134,7 +134,8 @@ const instructionMainBlockOLD = (params) => {
 
 
 const instructionMainBlock = () => {
-return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
+return ` <!-- -->
+<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
 <tbody><tr>
   <td class="mlContentTableCardTd">
     <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mlContentTable ml-default" style="width: 640px; min-width: 640px;" width="640">
@@ -175,7 +176,8 @@ return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable
     </tbody></table>
   </td>
 </tr>
-</tbody></table>`;
+</tbody></table>
+<!-- -->`;
 }
 
 export default instructionMainBlock;

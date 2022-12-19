@@ -29,6 +29,7 @@ const bodyComponent = (bodyContent, headerBlock) => {
                   <tbody><tr>
                     <td align="center">
                       ${bodyContent}
+                      <!-- end of body --> 
                     </td>
   </tr>
   </tbody></table>

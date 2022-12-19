@@ -5,7 +5,7 @@ import createComponent from './createComponentUniversal';
 
 import { contentMainTableWrap } from 'nmtg-template-mailerlite-outertemplate';
 
-import headerComponent from '../components/headerComponent';
+// import headerComponent from '../components/headerComponent';
 
 //------------------
 // TODO just for a header with one unsubscribe link
