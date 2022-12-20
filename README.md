@@ -9,6 +9,12 @@ https://github.com/LLazyEmail/free-email-templates-to-try/blob/main/01%20Food%20
 project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/blob/main/components/Typography/src/templates/image.js
 
 
+### Examples of source.md files
+- https://github.com/LLazyEmail/nomoretogo_email_template/blob/main/data/source.md
+- https://github.com/LLazyEmail/nomoretogo_email_template/blob/main/data/source-wrapped-recipes.md
+- https://github.com/LLazyEmail/nomoretogo_email_template/blob/main/data/source-front-matter.md
+
+
 ## TODO
 - [ ] Add validator for error messages and passed parameters 
 
