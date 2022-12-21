@@ -1,5 +1,5 @@
 import {
-    recipeComponent,
+    // recipeComponent,
     recipeRowBlock
   } from 'nmtg-template-mailerlite-inner';
   

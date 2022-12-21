@@ -26,9 +26,7 @@ import SocialPanelComponent  from './components/socialPanel';
 
 
 export {
-  topPanelViewInBrows,
-  tableHeaderBlockLogo,
-  contentButtonBlock,
+  
   // contentRecipe,
   contentSubTitleText,
   // contentTableWithTwoRecipes,
@@ -42,5 +40,9 @@ export {
   recipeRowBlock,
   //----
   viewInBrowserLink,
-  SocialPanelComponent
+  SocialPanelComponent,
+  //------
+  // topPanelViewInBrows,
+  tableHeaderBlockLogo,
+  contentButtonBlock,
 };
