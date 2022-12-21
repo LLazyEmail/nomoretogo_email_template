@@ -2,7 +2,6 @@
 // import Errors from './Errors';
 
 import { linkComponent } from 'nmtg-template-mailerlite-typography';
-// import ow from 'ow';
 
 const viewInBrowsLink = (params) => {
   const { id, href } = params;

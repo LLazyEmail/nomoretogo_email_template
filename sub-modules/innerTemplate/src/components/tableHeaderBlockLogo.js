@@ -1,5 +1,4 @@
 // create tableHeaderBlockLogo
-// import ow from "ow";
 import { imageComponent } from 'nmtg-template-mailerlite-typography';
 
 import { pathMainLogo } from '../config';
