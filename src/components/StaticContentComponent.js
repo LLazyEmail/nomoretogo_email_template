@@ -9,7 +9,7 @@ import {
 } from 'nmtg-template-mailerlite-inner';
 
 import {
-  buttonComponent,
+  buttonComponentOld,
   separatorComponent,
 } from 'nmtg-template-mailerlite-typography';
 
@@ -62,7 +62,7 @@ const createBlockOne = (title, subTitle, description) => {
 const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 
   // weekly menu button
-  const buttonHTML = buttonComponent(contentButtonParams);
+  const buttonHTML = buttonComponentOld(contentButtonParams);
 
   const contentButtonBlockHTML = contentButtonBlock(buttonHTML);
   

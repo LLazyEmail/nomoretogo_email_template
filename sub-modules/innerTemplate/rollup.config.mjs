@@ -68,8 +68,6 @@ const plugins = () => [
       "node_modules/**",
        // "/src/data/__tests__"
      ],
-    // ignore .babelrc (if defined) and use options defined here
-    // babelrc: false,
     // use recommended babel-preset-env without es modules enabled
     // and with possibility to set custom targets e.g. { node: '8' }
     // presets: [['env', { modules: false, targets }]],
@@ -155,9 +153,6 @@ export default {
       }
     }
   ]
-
-  // Specify here external modules which you don't want to include in your bundle (for instance: 'lodash', 'moment' etc.)
-  // https://rollupjs.org/guide/en#external-e-external
 
   // build es modules or commonjs
 };

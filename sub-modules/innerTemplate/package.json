@@ -1,6 +1,6 @@
 {
   "name": "nmtg-template-mailerlite-inner",
-  "version": "5.0.0",
+  "version": "5.2.0",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -49,6 +49,7 @@
   "dependencies": {
     "html-typography-tags": "^2.2.0",
     "nmtg-template-mailerlite-typography": "^3.8.0",
+    "ow": "^1.1.0",
     "semver": ">=4.3.2"
   }
 }

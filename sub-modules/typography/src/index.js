@@ -1,5 +1,4 @@
-import buttonComponent from './components/button';
-// import buttonComponent2 from './components/button2';
+import buttonComponentOld from './components/button';
 import heading from './components/heading';
 
 import strong from './components/strong';
@@ -15,9 +14,14 @@ import {
     imgWrapper
 } from './components/image';
 
+
+buttonComponentOld({id: '12', href: 'google.com', text: 'GoooGLE link'});
+
+console.log(buttonComponentOld);
+
+
 export { 
-    buttonComponent, 
-    // buttonComponent2,
+    buttonComponentOld, 
     heading,  
     strong, 
     renderSubHeading,
