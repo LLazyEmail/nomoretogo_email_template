@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "html-typography-tags": "^2.2.0",
-    "nmtg-template-mailerlite-typography": "^3.8.0",
+    "nmtg-template-mailerlite-typography": "^4.0.0",
     "semver": ">=4.3.2"
   }
 }
