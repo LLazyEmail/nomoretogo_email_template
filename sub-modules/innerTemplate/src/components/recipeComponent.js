@@ -4,15 +4,20 @@
 import Errors from './Errors';
 
 // TODO get rid of imgWrappers
-import {
-  // imageComponent, 
-  // linkComponent,
-  // imgWrapper,
-  strong,
-  paragraphComponent,
-} from 'nmtg-template-mailerlite-typography';
+// import {
+//   // imageComponent, 
+//   // linkComponent,
+//   // imgWrapper,
+//   strong,
+//   paragraphComponent,
+// } from 'nmtg-template-mailerlite-typography';
+
+import { strongComponent, paragraphComponent, imageLink } from "html-typography-tags";
 
 import imageLinkComponent from './imageLink';
+
+// import { imageLink } from "html-typography-tags";
+
 
 const error = new Errors('recipeComponent');
 
