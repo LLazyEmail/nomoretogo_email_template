@@ -1,4 +1,8 @@
-import { linkComponent, imgWrapper } from '../src/components/image';
+// import { linkComponent, imgWrapper } from '../src/components/image';
+
+import { imageLink, buttonComponent } from 'html-typography-tags';
+
+// const { imageLink, buttonComponent } = require('html-typography-tags');
 
 const data = {
   id: 'imageBlock-26',
@@ -14,21 +18,28 @@ describe('testing image with a link', () => {
   test('rendering imgWrapper component', () => {
 
 
-    const imageLink = imgWrapper(data);
+    const html = imageLink(data);
+
+
 
     console.log(imageLink);
 
   });
 });
 
+// import { buttonComponent } from 'html-typography-tags';
+// const buttonCom
 
-const buttonComponent2 = require('../src/components/button2');
+// const buttonComponent2 = require('../src/components/button2');
 // import { buttonComponent2 } from 'nmtg-template-mailerlite-typography';
 
 describe('testing complex links', () => {
-  test('rendering head component', () => {
-    console.log(buttonComponent2);
-    //buttonComponent2({id: '12', href: 'google.com'});
+  test('rendering btn component', () => {
+    
+    buttonComponent({id: '12', href: 'google.com'});
+
+    console.log(buttonComponent);
+
     //         const string1 = printHead();
     //   //       // console.log(string);
     //         expect(printHead()).toBeDefined();

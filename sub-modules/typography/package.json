@@ -48,8 +48,9 @@
     "access": "public"
   },
   "dependencies": {
-    "semver": ">=4.3.2",
     "create-html-element": "^4.0.1",
+    "html-typography-tags": "^2.2.0",
+    "semver": ">=4.3.2",
     "stringify-attributes": "^3.0.0"
   }
 }

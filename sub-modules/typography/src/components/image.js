@@ -6,6 +6,8 @@ import { pathToImages } from '../config.js';
 import linkComponent from './link';
 
 
+// import 
+
 // TODO to solve everything related to image component
 // passing src, width, error handling, etc
 // plus to move it later between other templates

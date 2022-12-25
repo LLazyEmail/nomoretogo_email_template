@@ -1,1 +1,10 @@
-// <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
+import paragraphComponent from 'html-typography-tags';
+
+const brComponent = (attributes) => {
+    const content = '';
+    // const { attributes, content } = params;
+
+    return paragraphComponent({attributes, content});
+}
+
+export default brComponent;
