@@ -1,6 +1,9 @@
 # nomoretogo_email_template
 
 
+
+
+
 `yarn test:write` for testing how template is generating right now
 
 template from:
