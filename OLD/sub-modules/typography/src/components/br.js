@@ -1,9 +1,7 @@
-import paragraphComponent from 'html-typography-tags';
+import {paragraphComponent} from 'html-typography-tags';
 
 const brComponent = (attributes) => {
     const content = '';
-    // const { attributes, content } = params;
-
     return paragraphComponent({attributes, content});
 }
 

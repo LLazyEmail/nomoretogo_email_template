@@ -3,7 +3,9 @@ import Errors from './Errors';
 // Config file
 import { pathToImages } from '../config.js';
 
-import linkComponent from './link';
+// import linkComponent from './link';
+
+import { linkComponent, imageComponent, imageLink } from 'html-typography-tags';
 
 
 // import 
@@ -82,6 +84,8 @@ const imageMainBlock = (id, href, src, width) => {
     (width === undefined ? `` : `width="${width}"`) +
      ` style="display: block;"`;
      
+
+
   const image = imageComponent(attr);
 
   const params = {
