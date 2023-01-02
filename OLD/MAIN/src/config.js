@@ -148,6 +148,18 @@ const footerData = {
 }
 
 
+const getFooterData = () => {
+
+  return footerData;
+}
+
+const getRecipes = () => {
+  return recipes;
+}
+
+ 
+
+
 export {
   viewInBrowserLinkParams,
   contact,
