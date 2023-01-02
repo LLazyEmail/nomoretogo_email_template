@@ -1,28 +1,28 @@
-import topPanelViewInBrows from './components/topPanelViewInBrows';
-import tableHeaderBlockLogo from './components/tableHeaderBlockLogo';
+import topPanelViewInBrows from './components2/topPanelViewInBrows';
+import tableHeaderBlockLogo from './components2/tableHeaderBlockLogo';
 
-import contentButtonBlock from './components/contentButtonBlock';
+import contentButtonBlock from './components2/contentButtonBlock';
 
-import contentSubTitleText from './components/contentSubTitleText';
+import contentSubTitleText from './components2/contentSubTitleText';
 
-import contentTextDescription from './components/contentTextDescription';
-import contentTitleText from './components/contentTitleText';
+import contentTextDescription from './components2/contentTextDescription';
+import contentTitleText from './components2/contentTitleText';
 
-import instructionTitle from './components/instructionTitle';
-import instructionText from './components/instructionText';
+import instructionTitle from './components2/instructionTitle';
+import instructionText from './components2/instructionText';
 
-import lineBlock from './components/lineBlock';
+import lineBlock from './components2/lineBlock';
 
 ///-------------------
-import recipeComponent from './components/recipeComponent';
+import recipeComponent from './components2/recipeComponent';
 
-import recipeRowBlock from './components/recipesRowBlock';
+import recipeRowBlock from './components2/recipesRowBlock';
 // import contentTableWithTwoRecipes from './components/contentTableWithTwoRecipes';
 // import contentRecipe from './components/old_contentRecipe';
 ///
 
-import viewInBrowserLink from './components/view-in-browser-link';
-import SocialPanelComponent  from './components/socialPanel';
+import viewInBrowserLink from './components2/view-in-browser-link';
+import SocialPanelComponent  from './components2/socialPanel';
 
 
 export {
