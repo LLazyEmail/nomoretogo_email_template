@@ -1,5 +1,5 @@
 import buttonComponent from './components/button';
-import buttonComponent2 from './components/button2';
+
 import heading from './components/heading';
 
 import strong from './components/strong';
@@ -17,7 +17,7 @@ import {
 
 export { 
     buttonComponent, 
-    buttonComponent2,
+    
     heading,  
     strong, 
     subheading,
