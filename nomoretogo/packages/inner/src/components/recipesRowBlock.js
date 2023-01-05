@@ -1,9 +1,9 @@
-import { recipeComponent } from 'nmtg-template-mailerlite-inner';
+import { recipeComponent } from 'nmtg-typo';
 
 // THIS BLOCK is a old version of contentTableWithTwoRecipes.... get rid of it later
 
 // Main table start
-const recipeRowBlock = (dataImageOne, dataImageTwo) => {
+const recipeRowBlock = (dataImageOne: {}, dataImageTwo:{ }) => {
   const recipeOne = recipeComponent(dataImageOne);
   const recipeTwo = recipeComponent(dataImageTwo);
 

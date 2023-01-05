@@ -2,7 +2,7 @@
 import Errors from './Errors';
 
 // Top panel start
-const topPanelViewInBrows = (link) => {
+const topPanelViewInBrows = (link:string) => {
   return `<table cellpadding="0" cellspacing="0" border="0" align="center" width="640" style="width: 640px; min-width: 640px;" class="mobileHide">
     <tbody><tr>
       <td align="center">

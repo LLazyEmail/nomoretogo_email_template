@@ -2,11 +2,15 @@
 
 // Error
 import Errors from './Errors';
+
+
 import {
   imageComponent,
   strong,
   paragraphComponent,
-} from 'nmtg-template-mailerlite-typography';
+} from 'nmtg-typo';
+
+
 const error = new Errors('recipeComponent');
 
 // Get title start

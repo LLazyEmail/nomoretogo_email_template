@@ -1,16 +1,10 @@
-// create tableHeaderBlockLogo
-import { pathMainLogo } from '../config';
-import Errors from './Errors';
+// Component contentSubTitleText
+// import { subheading } from 'nmtg-template-mailerlite-typography';
 
-import { imageComponent } from 'nmtg-template-mailerlite-typography';
+import { subheading } from 'nmtg-typo';
 
-const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
-const imageLogo = imageComponent(imageParams);
 
-// Block header/logotip start
-
-const tableHeaderBlockLogo = () => {
-  
+const subTitleMainBlock = (subTitleText:string) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -22,9 +16,7 @@ const tableHeaderBlockLogo = () => {
                 <td align="center" style="padding: 0px 40px;" class="mlContentOuter">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
-                      <td align="center">                        
-                        ${imageLogo}                        
-                      </td>
+                      ${subheading(subTitleText)}
                     </tr>
                   </tbody></table>
                 </td>
@@ -42,13 +34,7 @@ const tableHeaderBlockLogo = () => {
   </tr>
   </tbody></table>`;
 };
-// Block header/logotip end
 
-export default function () {
-  const error = new Errors('tableHeaderBlockLogo');
-  if (pathMainLogo == '') {
-    error.add('No pathMainLogo tableHeaderBlockLogo');
-  }
-
-  return tableHeaderBlockLogo();
+export default function (subTitleText) {
+  return subTitleMainBlock(subTitleText);
 }
