@@ -1,7 +1,7 @@
 # nomoretogo_email_template
 
 
-
+https://nx.dev/getting-started/integrated-repo-tutorial
 
 
 `yarn test:write` for testing how template is generating right now
