@@ -4,7 +4,9 @@
   "main": "dist/index.js",
   "devDependencies": {},
   "scripts": {
-    "build": "tsc src/index.ts --outDir dist"
+    "build": "tsc src/index.ts --outDir dist",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint  . --fix --ext .ts"
   },
   "dependencies": {
     "stringify-attributes": "^3.0.0",
