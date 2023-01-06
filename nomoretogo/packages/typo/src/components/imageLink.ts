@@ -33,6 +33,6 @@ function imageLink (id: number, href: string, src: string, width: string) {
       content: image,
     };
     return linkComponent(params);
-  };
+  }
 
   export default imageLink;

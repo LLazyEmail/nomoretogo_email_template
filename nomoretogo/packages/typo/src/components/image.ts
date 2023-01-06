@@ -27,7 +27,7 @@ function imageComponent (params: { src: string, width: string }) {
 
   return  `<img ${attributesStr} >`;
 
-};
+}
 
 
 export default imageComponent;

@@ -5,7 +5,8 @@
   "devDependencies": {},
   "scripts": {
     "build": "tsc src/index.ts --outDir dist",
-    "lint": "eslint ."
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint  . --fix --ext .ts"
   },
   "dependencies": {
     "stringify-attributes": "^3.0.0"

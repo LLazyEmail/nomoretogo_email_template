@@ -14,7 +14,7 @@ import stringifyAttributes from 'stringify-attributes';
 
 
 function buttonComponent(params: { id: string, href: string, text: string }) {
-   var attributes = {
+   const attributes = {
     id: params.id,
     class: `mlContentButton`,
     href: params.href,
@@ -22,11 +22,11 @@ function buttonComponent(params: { id: string, href: string, text: string }) {
     style: `font-family: "Poppins", sans-serif; background-color: #d6685e; border-radius: 3px; color: #ffffff; display: inline-block; font-size: 17px; font-weight: 400; line-height: 23px; padding: 15px 0 15px 0; text-align: center; text-decoration: none; width: 260px;`,
   };
 
-  var attributesStr = stringifyAttributes(attributes);
+  const attributesStr = stringifyAttributes(attributes);
 
   console.log(attributesStr);
 
-  var linkObject = {
+  const linkObject = {
     attributes: attributesStr,
     content: params.text
   }
@@ -34,7 +34,7 @@ function buttonComponent(params: { id: string, href: string, text: string }) {
   console.log(linkObject);
 
   return linkComponent(linkObject);
-};
+}
 
 // // we will probably loose id param during changes that Arthur is doing.
 // const bottonTwoMainBlock = (id, href, text) => {

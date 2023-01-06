@@ -13,7 +13,7 @@ function divComponent (params: any) {
  
 
     return `<div ${attributesStr}>${content}</div>`;
-  };
+  }
   
   export default divComponent;
 

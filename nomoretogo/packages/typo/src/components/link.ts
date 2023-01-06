@@ -12,7 +12,7 @@ function linkComponent (params: any) {
   const attributesStr = stringifyAttributes(attributes);
 
   return `<a ${attributesStr}>${content}</a>`;
-};
+}
 
 export default linkComponent;
 

@@ -1,3 +1,3 @@
 export interface Parameters {
-    [key: string]: Object[]
+    [key: string]: object[]
 }

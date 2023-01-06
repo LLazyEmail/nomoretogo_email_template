@@ -9,7 +9,7 @@ function italicComponent (params: any) {
 
 
     return `<i>${content}</i>`;
-  };
+  }
   
   export default italicComponent;
 

@@ -9,7 +9,7 @@ function paragraphComponent (params: any) {
  
 
     return `<p ${attributesStr}>${content}</p>`;
-  };
+  }
   
   export default paragraphComponent;
 
