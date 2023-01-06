@@ -4,6 +4,9 @@
     "main": "dist/index.js",
     "devDependencies": {},
     "scripts": {
-      "build": "tsc index.ts --outDir dist"
+      "build": "tsc src/index.ts --outDir dist"
+    },
+    "dependencies": {
+      "typo": "*"
     }
   }
