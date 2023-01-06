@@ -1,4 +1,4 @@
-import paragraphComponent from 'html-typography-tags';
+import {paragraphComponent} from 'typo';
 
 const brComponent = (attributes) => {
     const content = '';

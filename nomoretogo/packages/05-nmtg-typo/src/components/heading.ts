@@ -1,11 +1,11 @@
 // Component heading
 
-import { linkComponent } from 'html-typography-tags';
-
+import { linkComponent } from 'typo';
+import stringifyAttributes from 'stringify-attributes';
 // import Errors from './Errors';
 
 // TODO replace with a link component
-const headingMainBlock = (hrefTitle, idTitle, textTitle) => {
+const headingMainBlock = (hrefTitle: string, idTitle: string, textTitle: string) => {
 
   // const aHEADNMTG = headingNMTG({
   //   href: hrefTitle,
