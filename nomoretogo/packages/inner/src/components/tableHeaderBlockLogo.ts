@@ -2,7 +2,7 @@
 import { pathMainLogo } from '../config';
 import Errors from './Errors';
 
-import { imageComponent } from 'nmtg-typo';
+import { imageComponent } from 'typo';
 
 const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
 const imageLogo = imageComponent(imageParams);
@@ -44,11 +44,13 @@ const tableHeaderBlockLogo = () => {
 };
 // Block header/logotip end
 
-export default function () {
-  const error = new Errors('tableHeaderBlockLogo');
-  if (pathMainLogo == '') {
-    error.add('No pathMainLogo tableHeaderBlockLogo');
-  }
+// export default function () {
+//   const error = new Errors('tableHeaderBlockLogo');
+//   if (pathMainLogo == '') {
+//     error.add('No pathMainLogo tableHeaderBlockLogo');
+//   }
 
-  return tableHeaderBlockLogo();
-}
+//   return tableHeaderBlockLogo();
+// }
+
+export default tableHeaderBlockLogo;

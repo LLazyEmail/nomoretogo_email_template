@@ -1,5 +1,5 @@
 // Component title text
-import { heading } from 'nmtg-typo"';
+import { heading } from 'nmtg-typo';
 
 const titleTextMainBlock = (params) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">

@@ -6,22 +6,22 @@ import Errors from './Errors';
 
 import {
   imageComponent,
-  strong,
+  strongComponent,
   paragraphComponent,
-} from 'nmtg-typo';
+} from 'typo';
 
 
 const error = new Errors('recipeComponent');
 
 // Get title start
-const titleComponent = (title) => {
+const titleComponent = (title: string) => {
   if (title == '') {
     error.add('title');
   }
 
   const string = `<span style="font-size: 16px;">${title}</span>`;
 
-  return strong(string);
+  return strongComponent(string);
 };
 // Get title end
 
@@ -53,7 +53,7 @@ const mainRecipe = (id, href, src, title, text) => {
   // const { id, href, src, title, text } = params;
 
   // TODO add checks to this component
-  const recipeImage = imageComponent(id, href, src);
+  const recipeImage = imageComponent({id, href, src});
 
   const titleLine = recipeName({ title, subtitle: text });
 
