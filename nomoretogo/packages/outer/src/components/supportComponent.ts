@@ -1,15 +1,17 @@
 // Create support component
 import { mailingAddress } from '../config';
 import {
-  strong,
-  linkComponent,
-  separatorComponent,
-} from 'nmtg-template-mailerlite-typography';
+  strongComponent,
+  linkComponent
+} from 'typo';
+
+import { separatorComponent } from 'nmtg-typo';
+
 import Errors from './Errors';
 
 const error = new Errors('supportComponent');
 
-const createSupportLink = (href, id, text) => {
+const createSupportLink = (href:string, id:string, text:string) => {
   if (href == '') {
     error.add('href');
   }
@@ -30,15 +32,15 @@ const createSupportLink = (href, id, text) => {
   return linkComponent(params);
 };
 
-const createSupportTitle = (title) => {
+const createSupportTitle = (title:string) => {
   if (title == '') {
     error.add('title');
   }
 
-  return `<h4>${strong(title)}<br></h4>`;
+  return `<h4>${strongComponent(title)}<br></h4>`;
 };
 
-const createSupportTextTop = (href, id, text) => {
+const createSupportTextTop = (href:string, id:string, text:string) => {
   if (href == '') {
     error.add('href textTop');
   }
@@ -66,21 +68,8 @@ const createSupportMail = () => {
   return linkComponent(mailParams);
 };
 
-{
-  /* <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
-${createSupportTitle(bottomTitle)}
-<br>
-${createSupportTextBottom(
-  bottomLinkHref,
-  bottomLinkId,
-  bottomLinkText,
-  bottomTextContact
-)}
-<br><strong><br></strong>
-</p> */
-}
 
-const createSupportTextBottom = (href, id, text, textMail) => {
+const createSupportTextBottom = (href:string, id:string, text:string, textMail:string) => {
   if (href == '') {
     error.add('href textBottom');
   }
@@ -101,7 +90,7 @@ const createSupportTextBottom = (href, id, text, textMail) => {
   ${supportMail}`;
 };
 
-const supportMainBlock = (params) => {
+const supportMainBlock = (params:any) => {
   var {
     topTitle,
     topLinkHref,
@@ -174,6 +163,6 @@ const supportMainBlock = (params) => {
 ${separatorComponent()}`;
 };
 
-export default function (data) {
+export default function (data:any) {
   return supportMainBlock(data);
 }
