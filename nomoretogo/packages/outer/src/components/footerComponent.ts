@@ -1,11 +1,11 @@
 // Create footer component
 import {
   paragraphComponent,
-  // linkComponent,
+  
   // separatorComponent,
   // spanHeadingBlock
   // imageComponent,
-} from 'nmtg-template-mailerlite-typography';
+} from 'typo';
 
 
 import Errors from './Errors';
@@ -35,10 +35,9 @@ const description = () => {
   return paragraphComponent(descriptionParams);
 };  
 
-const footerHTML = (params) => {
+const footerHTML = (params:{address:string, description:string, unsubscribeLink:string, socialPanel:string, title:string}) => {
 
 const { address, description, unsubscribeLink, socialPanel, title } = params;
-  
   
   
   if (!socialPanel) {

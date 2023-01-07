@@ -1,14 +1,14 @@
-import { imageComponent } from 'nmtg-template-mailerlite-typography';
+import { imageComponent } from 'typo';
 import Errors from './Errors';
 
-const createImage = (src) => {
+const createImage = (src:string) => {
   const imgParams = `src="${src}" border="0" alt="" width="200" style="display: block;"`;
 
   return imageComponent(imgParams);
 };
 // return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
 
-const amazonFreshMainBlock = (src) => {
+const amazonFreshMainBlock = (src:string) => {
 
   const error = new Errors('imageAfterSupportComponent');
 

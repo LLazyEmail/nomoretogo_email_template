@@ -12,7 +12,7 @@ import Errors from './Errors';
 
 
 // Block main table content (wrap) start
-const contentMainTableWrap = (  topPanel, blockLogo  ) => {
+const contentMainTableWrap = (  topPanel:string, blockLogo:string  ) => {
   return `<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f6f8f9" class="mainTable mlBodyBackground" dir="ltr" background="https://preview.mailerlite.com/r0n8w0g0n6/1934358861754405982/l8n5/">
     <tbody><tr>
       <td class="mlTemplateContainer" align="center">
