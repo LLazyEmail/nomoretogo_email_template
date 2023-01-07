@@ -1,6 +1,6 @@
 // import { linkComponent, imgWrapper } from '../src/components/image';
 
-import { imageLink, buttonComponent } from 'html-typography-tags';
+import { imageLink, buttonComponent } from 'typo';
 
 // const { imageLink, buttonComponent } = require('html-typography-tags');
 

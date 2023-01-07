@@ -5,7 +5,10 @@ import stringifyAttributes from 'stringify-attributes';
 // import Errors from './Errors';
 
 // TODO replace with a link component
-const headingMainBlock = (hrefTitle: string, idTitle: string, textTitle: string) => {
+const headingMainBlock = (params: { hrefTitle: string, idTitle: string, textTitle: string }) => {
+
+
+
 
   // const aHEADNMTG = headingNMTG({
   //   href: hrefTitle,
@@ -24,10 +27,10 @@ const headingMainBlock = (hrefTitle: string, idTitle: string, textTitle: string)
 
   // console.log(attributesStr);
 
-  return linkComponent({ content: textTitle, attributesStr });
+  return linkComponent({ content: params.textTitle, attributesStr });
 
 
-  return `<a href="${hrefTitle}" data-link-id="${idTitle}" style="text-decoration: none; color: #111111; text-transform: none; font-style: normal; text-decoration: none;" target="_self">${textTitle}</a>`;
+  // return `<a href="${hrefTitle}" data-link-id="${idTitle}" style="text-decoration: none; color: #111111; text-transform: none; font-style: normal; text-decoration: none;" target="_self">${textTitle}</a>`;
 };
 
 
