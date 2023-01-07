@@ -17,6 +17,8 @@ import recipeComponent from './components/recipeComponent';
 
 import recipeRowBlock from './components/recipesRowBlock';
 
+import viewInBrowsLink from './components/viewBrowserLink';
+
 export {
   topPanelViewInBrows,
   tableHeaderBlockLogo,
@@ -32,4 +34,6 @@ export {
   //--------
   recipeComponent,
   recipeRowBlock,
+  viewInBrowsLink
 };
+

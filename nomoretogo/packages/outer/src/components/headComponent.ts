@@ -5,7 +5,7 @@ import Errors from './Errors';
 const headError = new Errors('headComponent');
 
 function createHeadComponent(params:any) {
-  var {
+  const {
     blobHead,
     bodyStyle,
     font1,
@@ -40,7 +40,7 @@ function createHeadComponent(params:any) {
 // we are throwing an error with the same constant 10 times.
 function searchForErrors(params:any) {
   // const error = new Errors('headComponent');
-  var {
+  const {
     blobHead,
     bodyStyle,
     font1,

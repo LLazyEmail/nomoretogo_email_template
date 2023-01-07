@@ -91,7 +91,7 @@ const createSupportTextBottom = (href:string, id:string, text:string, textMail:s
 };
 
 const supportMainBlock = (params:any) => {
-  var {
+  const {
     topTitle,
     topLinkHref,
     topLinkId,

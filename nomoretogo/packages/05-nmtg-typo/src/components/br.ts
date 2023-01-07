@@ -1,4 +1,4 @@
-import {paragraphComponent} from 'typo';
+import { paragraphComponent } from 'typo';
 
 const brComponent = (attributes) => {
     const content = '';
