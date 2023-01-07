@@ -4,7 +4,7 @@ import Errors from './Errors';
 // TODO it looks strange
 const headError = new Errors('headComponent');
 
-function createHeadComponent(params) {
+function createHeadComponent(params:any) {
   var {
     blobHead,
     bodyStyle,
@@ -38,7 +38,7 @@ function createHeadComponent(params) {
 
 // TODO migrate some errors away 
 // we are throwing an error with the same constant 10 times.
-function searchForErrors(params) {
+function searchForErrors(params:any) {
   // const error = new Errors('headComponent');
   var {
     blobHead,
@@ -86,7 +86,7 @@ function searchForErrors(params) {
 }
 
 
-const headComponent = (subComponent) => {
+const headComponent = (subComponent:string) => {
   searchForErrors(subComponent);
   return createHeadComponent(subComponent);
 };

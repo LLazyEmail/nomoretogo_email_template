@@ -1,10 +1,6 @@
 // Create footer component
 import {
-  paragraphComponent,
-  
-  // separatorComponent,
-  // spanHeadingBlock
-  // imageComponent,
+  paragraphComponent
 } from 'typo';
 
 
@@ -156,11 +152,9 @@ return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable
 };
 
 
-const footerComponent = (params) => {
+const footerComponent = (params:any) => {
 
   const { 
-
-
     unsubscribe,
     socialPanel, title 
   } = params;

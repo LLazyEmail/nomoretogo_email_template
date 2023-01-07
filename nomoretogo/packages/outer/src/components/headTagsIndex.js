@@ -25,7 +25,7 @@ import {
 
 // };
 
-
+// TODO implement it
 const pre_tags = () => {
 return meta() + font1() + ifStyle() + style() + 
       bodyStyle() + mediaStyle() + meta() + font1() +
