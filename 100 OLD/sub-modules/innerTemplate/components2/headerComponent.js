@@ -9,7 +9,7 @@ import {
     // tableHeaderBlockLogo,
   } from 'nmtg-template-mailerlite-inner';
   
-  import { viewInBrowserLinkParams } from '../config';
+  import { viewInBrowserLinkParams } from '../src/config';
   
   // TODO move this component away at some point in the future
   const view_in_browser = (params) => {

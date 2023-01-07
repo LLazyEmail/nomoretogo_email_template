@@ -81,8 +81,8 @@ export default function (params) {
 
   // create image rows start
   return chunks.reduce((res, element) => {
-    var image = element[0];
-    var image2 = element[1];
+    const image = element[0];
+    const image2 = element[1];
     return res + tableWithTwoRecipeMainBlock(image, image2);
   }, '');
   // create image rows end
