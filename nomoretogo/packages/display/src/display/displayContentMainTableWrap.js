@@ -3,7 +3,7 @@ import createComponent from './createComponentUniversal';
 
 // import { viewInBrowserLink } from 'nmtg-template-mailerlite-inner';
 
-import { contentMainTableWrap } from 'nmtg-template-mailerlite-outertemplate';
+import { contentMainTableWrap } from 'outer';
 
 // import headerComponent from '../components/headerComponent';
 

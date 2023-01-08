@@ -1,8 +1,8 @@
-import { footerComponent, amazonFreshBlock, supportComponent } from 'nmtg-template-mailerlite-outertemplate';
+import { footerComponent, amazonFreshBlock, supportComponent } from 'outer';
 
 // import { SocialPanelComponent } from 'nmtg-template-mailerlite-inner'; 
 
-import { separatorComponent } from 'nmtg-template-mailerlite-typography';
+import { separatorComponent } from 'nmtg-typo';
 import Factory from './factory';
 import createComponent from './createComponentUniversal';
 

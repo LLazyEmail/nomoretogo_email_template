@@ -1,4 +1,0 @@
-
-,
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint  . --fix --ext .ts"

@@ -1,4 +1,4 @@
-import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate';
+import { bodyComponent } from 'outer';
 
 import createComponent from './createComponentUniversal';
 

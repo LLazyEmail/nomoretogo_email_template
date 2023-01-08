@@ -18,7 +18,6 @@
  
  import linkComponent from './components/link';
  
- 
  import listComponent from './components/list';
  import listItemComponent from './components/listItem';
  
@@ -32,6 +31,50 @@ function multiply(a:number, b:number) {
     return a * b;
 }
 
+///////////////////////////////
+// I'm adding my tests here, because i dont know how to organize it right now
+//////////////////////////////
+
+
+const attributes = {
+    style: "width: 600px"
+  }
+  
+const content = "Bla bla bla";
+  
+const config = {id: '12', href: 'https://google.com', text: 'Bla bla bla'};
+  
+const data = {
+    id: 'imageBlock-26',
+    href: 'https://www.nomoretogo.com/weekly-menu/',
+    src: 'https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data/images/recipe1.jpeg',
+    //------
+    title: 'Chipotle Cream Skillet Chicken',
+    text: 'over Rice and Snap Peas',
+};
+
+
+const linkHTML = linkComponent(config);
+
+const buttonHTML = buttonComponent(config);
+
+const strongHTML = strongComponent({attributes, content});
+
+const imageLinkHTML = imageLink(data);
+
+console.log(linkHTML);
+
+console.log(buttonHTML);
+
+console.log(strongHTML);
+
+console.log(imageLinkHTML);
+
+
+
+
+// End of tests
+////
 
 export {
     multiply,
