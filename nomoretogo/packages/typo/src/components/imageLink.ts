@@ -5,7 +5,9 @@ import linkComponent from './link';
 import imageComponent from "./image";
 // TODO upgrade it
 // params: { src: string, width: string }
-function imageLink (id: number, href: string, src: string, width: string) {
+function imageLink (params: { id: string, href: string, src: string, width: string }) {
+
+    const { id, href, src, width } = params;
 
     const image_attributes = {
       src, width
@@ -28,11 +30,11 @@ function imageLink (id: number, href: string, src: string, width: string) {
       target: "_self",
     }
   
-    const params = {
+    const parameters = {
       attributes: stringifyAttributes(link_attributes),
       content: image,
     };
-    return linkComponent(params);
+    return linkComponent(parameters);
   }
 
   export default imageLink;
