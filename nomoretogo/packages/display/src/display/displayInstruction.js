@@ -4,15 +4,12 @@ import instructionComponent from '../components/instructionComponent';
 
 import createComponent from './createComponentUniversal';
 
-// import { instructionComponentParams } from '../config';
-
 
 /* ******************** CREATE CONTENT START ****************************** */
 var result = null;
 try {
   const instructionComponentRes = createComponent(
-    instructionComponent,
-    // instructionComponentParams
+    instructionComponent
   );
 
   result = instructionComponentRes;
