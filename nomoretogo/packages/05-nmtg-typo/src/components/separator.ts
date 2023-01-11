@@ -1,3 +1,5 @@
+// TODO move this out
+
 const separatorComponent = () => {
     return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
     <tbody><tr>
