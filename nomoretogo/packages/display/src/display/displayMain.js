@@ -44,10 +44,6 @@ if (displayHead == null) {
 }
 
 
-// ow(displayHead, ow.string);
-// ow(BodyHTMLString, ow.string.minLength(5));
-// ow(displayFooterHTML, ow.string.minLength(5));
-
 
 
 if (displayFooterHTML == null) {
