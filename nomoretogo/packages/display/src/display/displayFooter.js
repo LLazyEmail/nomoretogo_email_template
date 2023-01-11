@@ -14,17 +14,6 @@ const { socialsLinksParams, imagePath, title, params } = footerData;
 
 
 
-
-
-// to test updated version of button component
-
-// import {     
-//   buttonComponent2
-//  } from 'nmtg-template-mailerlite-typography';
-
-//  buttonComponent2({id: '12', href: 'google.com'});
-
-
 /* ******************** CREATE CONTENT START ****************************** */
 var result = null;
 var footerHTMLString = false;
