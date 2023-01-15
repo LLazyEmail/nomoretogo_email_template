@@ -37,8 +37,6 @@ const contentButtonParams = {
 };
 
 
-// console.log(recipes);
-
 var result = null;
 try {
 
@@ -59,9 +57,6 @@ try {
 
   });
 
-
-///////
-// recipesPanel = 
 
 
 
