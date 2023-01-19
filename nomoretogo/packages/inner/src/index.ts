@@ -12,11 +12,11 @@ import instructionTitle from './components/instructionTitle';
 import instructionText from './components/instructionText';
 
 import lineBlock from './components/lineBlock';
+//----------------------
+import recipeComponent from './components/recipe/recipeComponent';
 
-import recipeComponent from './components/recipeComponent';
-
-import recipeRowBlock from './components/recipesRowBlock';
-
+import recipeRowBlock from './components/recipe/recipesRowBlock';
+//----------------------
 import viewInBrowsLink from './components/viewBrowserLink';
 
 export {
