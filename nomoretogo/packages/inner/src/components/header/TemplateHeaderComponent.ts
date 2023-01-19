@@ -12,7 +12,7 @@ import {
     // tableHeaderBlockLogo,
 } from 'innerTemplate';
   
-import { viewInBrowserLinkParams } from '../config';
+import { viewInBrowserLinkParams } from '../../config';
   
   // TODO move this component away at some point in the future
   const view_in_browser = (params) => {

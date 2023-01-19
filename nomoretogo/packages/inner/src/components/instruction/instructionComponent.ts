@@ -2,7 +2,7 @@
 // While this part is mostly done, i decide to switch to a static content, as it's not necessary for us
 // it's a pure content that must be easily handled by markdown generator
 
-import Errors from './Errors';
+import Errors from '../Errors';
 import {
   strongComponent,
   paragraphComponent,

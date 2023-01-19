@@ -1,5 +1,5 @@
 // Component instruction text
-import Errors from './Errors';
+import Errors from '../Errors';
 
 const instructionTextMainBlock = (instructionText) => {
   return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${instructionText}</p>`;

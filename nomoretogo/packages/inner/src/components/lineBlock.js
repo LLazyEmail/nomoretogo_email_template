@@ -31,6 +31,8 @@ const lineMainBlock = () => {
   </tbody></table>`;
 };
 
-export default function () {
-  return lineMainBlock();
-}
+export default lineMainBlock;
+
+// export default function () {
+//   return lineMainBlock();
+// }

@@ -1,5 +1,5 @@
 // Component content table with two recipe
-import Errors from './Errors';
+import Errors from '../Errors';
 
 const tableWithTwoRecipeMainBlock = (image:string, image2:string) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">

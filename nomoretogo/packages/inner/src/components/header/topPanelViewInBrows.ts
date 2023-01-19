@@ -1,5 +1,5 @@
 // Create panel view in brows
-import Errors from './Errors';
+import Errors from '../Errors';
 
 // Top panel start
 const topPanelViewInBrows = (link:string) => {
