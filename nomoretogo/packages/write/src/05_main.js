@@ -1,6 +1,6 @@
 import { writingFile } from 'markup-generator';
 
-import MainHTMLString from '../src/display/displayMain';
+import MainHTMLString from 'display';
 
 
     writingFile(MainHTMLString, 'nmtg-Main');

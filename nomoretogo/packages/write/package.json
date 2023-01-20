@@ -9,6 +9,7 @@
     "lint:fix": "eslint  . --fix --ext .ts"
   },
   "dependencies": {
-    "stringify-attributes": "^3.0.0"
+    "stringify-attributes": "^3.0.0",
+    "display": "*"
   }
 }
