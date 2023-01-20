@@ -1,6 +1,7 @@
 // Create view-in-brows component
 // import Errors from './Errors';
 
+
 import { linkComponent } from 'html-typography-tags';
 
 const viewInBrowsLink = (params) => {
