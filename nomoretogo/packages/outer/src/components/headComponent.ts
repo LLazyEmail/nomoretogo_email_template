@@ -5,6 +5,7 @@ import Errors from './Errors';
 const headError = new Errors('headComponent');
 
 function createHeadComponent(params:any) {
+  
   const {
     blobHead,
     bodyStyle,

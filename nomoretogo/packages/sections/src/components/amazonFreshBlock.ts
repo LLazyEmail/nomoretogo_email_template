@@ -1,5 +1,5 @@
 import { imageComponent } from 'typo';
-import Errors from './Errors';
+import Errors from '../../../outer/src/components/Errors';
 
 const createImage = (src:string) => {
   const imgParams = `src="${src}" border="0" alt="" width="200" style="display: block;"`;

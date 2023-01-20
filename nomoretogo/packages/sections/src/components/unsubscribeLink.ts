@@ -1,5 +1,5 @@
 import {
-    linkComponent
+  linkComponent
 } from 'typo';
 import { spanHeadingBlock } from 'nmtg-typo';
 
