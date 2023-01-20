@@ -1,3 +1,6 @@
+MOVING code away: https://github.com/LLazyEmail/nomoretogo_email_template/issues/517
+
+
 // // https://www.codegrepper.com/code-examples/javascript/jest+test+if+method+exists
 
 
