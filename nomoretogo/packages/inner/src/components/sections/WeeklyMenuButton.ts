@@ -4,7 +4,7 @@ import {
 } from 'typo';
 
 // TODO move Weekly menu button section into sub-components
-const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
+const contentSubComponent = (text, recipeRow, contentButtonParams) => {
 
     // weekly menu button
     const buttonHTML = buttonComponent(contentButtonParams);
@@ -15,7 +15,7 @@ const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
     // All content
     const allContent = 
         text +
-        recipeRowBlockRes + 
+        recipeRow + 
         contentButtonBlockHTML + 
         separatorHTML;
   
