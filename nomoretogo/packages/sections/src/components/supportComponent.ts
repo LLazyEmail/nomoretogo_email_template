@@ -24,9 +24,9 @@ const createSupportLink = (href:string, id:string, text:string) => {
 
   const params = {
     attributes: `href="${href}"
-      data-link-id="${id}"
-      target="_blank"
-      style="word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;"`,
+    data-link-id: "${id}"
+    target: "_blank"
+    style: "word-break: break-word; font-family: 'Poppins', sans-serif; color: #09c269; text-decoration: underline;"`,
     content: text,
   };
   return linkComponent(params);
