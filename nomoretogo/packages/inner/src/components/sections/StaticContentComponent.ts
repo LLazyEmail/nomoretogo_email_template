@@ -59,6 +59,7 @@ const createBlockOne = (title, subTitle, description) => {
 
 
 // TODO move Weekly menu button section into sub-components
+// it was already moved into weeklyMenuButton.ts file
 const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 
   // weekly menu button
