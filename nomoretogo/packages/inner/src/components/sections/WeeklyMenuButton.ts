@@ -3,6 +3,8 @@ import {
   separatorComponent,
 } from 'typo';
 
+// TODO import  contentButtonBlock
+
 // TODO move Weekly menu button section into sub-components
 const contentSubComponent = (text, recipeRow, contentButtonParams) => {
 
