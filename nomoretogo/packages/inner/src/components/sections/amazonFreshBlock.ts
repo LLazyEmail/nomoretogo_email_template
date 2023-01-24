@@ -56,14 +56,4 @@ const amazonFreshMainBlock = (src:string) => {
 </tbody></table>`;
 };
 
-// export default function (src) {
-//   const error = new Errors('imageAfterSupportComponent');
-
-//   if (src == '') {
-//     error.add('No src');
-//   }
-
-//   return amazonFreshMainBlock(src);
-// }
-
 export default amazonFreshMainBlock;
