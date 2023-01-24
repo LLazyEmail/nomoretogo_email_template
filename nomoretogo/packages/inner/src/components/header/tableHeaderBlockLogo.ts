@@ -17,6 +17,8 @@ const displayLogo = (pathMainLogo) => {
 
 // Block header/logotip start
 
+// maybe it's better to pass logo image instead of using displayLogo function
+
 const tableHeaderBlockLogo = () => {
   
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
