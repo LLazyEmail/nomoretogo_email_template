@@ -2,19 +2,7 @@ import { recipesSectionComponent } from 'inner';
 
 import { recipes } from '../config';
 
-
-
-var RecipesHTMLString = null;
-
-
-RecipesHTMLString = recipesSectionComponent(recipes);
-
-// RecipesHTMLString = recipesSectionComponent({
-
-//   recipes,
-//   contentButtonParams,
-
-// });
+var RecipesHTMLString = recipesSectionComponent(recipes);
 
 
 if (!RecipesHTMLString) {
