@@ -1,19 +1,25 @@
+import {
+  buttonComponent,
+  separatorComponent,
+} from 'typo';
 
-// const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
+// TODO import  contentButtonBlock
 
-//     // weekly menu button
-//     const buttonHTML = buttonComponent(contentButtonParams);
+const contentSubComponent = (text, recipeRow, contentButtonParams) => {
+
+    // weekly menu button
+    const buttonHTML = buttonComponent(contentButtonParams);
   
-//     const contentButtonBlockHTML = contentButtonBlock(buttonHTML);
+    const contentButtonBlockHTML = contentButtonBlock(buttonHTML);
     
-//     const separatorHTML = separatorComponent();
-//     // All content
-//     const allContent = 
-//         text +
-//         recipeRowBlockRes + 
-//         contentButtonBlockHTML + 
-//         separatorHTML;
+    const separatorHTML = separatorComponent();
+    // All content
+    const allContent = 
+        text +
+        recipeRow + 
+        contentButtonBlockHTML + 
+        separatorHTML;
   
-//     return allContent;
+    return allContent;
   
-//   }
+  }
