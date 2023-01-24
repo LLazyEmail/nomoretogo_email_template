@@ -2,11 +2,7 @@ import { writingFile } from 'markup-generator';
 
 import { RecipesHTMLString } from 'display';
 
-const partialWrite3 = (string, suffix) => {
+import writeFileParticle from 'utils';
 
-writingFile(string, suffix);
-// TODO add a function that will display an output in console.  
-return true;
-}
 
-export default partialWrite3(RecipesHTMLString, 'nmtg-recipe')
+export default writeFileParticle(RecipesHTMLString, 'nmtg-recipe')
