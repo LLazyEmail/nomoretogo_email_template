@@ -2,14 +2,9 @@ import createComponent from './createComponentUniversal';
 //---------------
 
 
-import { contentMainTableWrap } from 'outer';
+// import { contentMainTableWrap } from 'outer';
+import { TopPanelSection, contentMainTableWrap }  from 'inner'; 
 
-import { headerSection }  from 'inner'; 
-
-//------------------
-
-
-// import { viewInBrowserLinkParams } from '../config';
 
 
 //---------------------------
@@ -24,11 +19,11 @@ try {
   // );
 
 //   const topPanel = '';
-  const topPanel = headerComponent();
+  const topPanelHTML = TopPanelSection();
 
 
   var settings = {
-    topPanel: topPanel, 
+    topPanel: topPanelHTML, 
     blockLogo: tableHeaderBlockLogo(),
   };
 
