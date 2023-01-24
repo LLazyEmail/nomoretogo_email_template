@@ -3,6 +3,11 @@
 import createComponent from '../createComponentUniversal';
 
 //------------------
+
+
+import { viewInBrowserLinkParams } from '../../config';
+
+
 // TODO just for a header with one unsubscribe link
 // we have so many stuff going on here. looks weak
 
@@ -11,14 +16,13 @@ import topPanelViewInBrows from './topPanelViewInBrows';
 
 
 
-import { viewInBrowserLinkParams } from '../../config';
 
 
 import html_view_in_browser from './html_view_in_browser';
   
   
   
-const headerComponent = () => {
+const headerSection = () => {
 
   const ViewInBrowserLinkHTML = html_view_in_browser(viewInBrowserLinkParams);
 
@@ -34,4 +38,4 @@ const headerComponent = () => {
   return topPanel;
 }
 
-  export default headerComponent;
+  export default headerSection;
