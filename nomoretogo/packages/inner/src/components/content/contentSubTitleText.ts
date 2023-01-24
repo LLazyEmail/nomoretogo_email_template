@@ -3,6 +3,12 @@ import { subheading } from 'nmtg-typo';
 
 // TODO should we replace a method inside with a string
 const subTitleMainBlock = (subTitleText:string) => {
+  
+  
+  
+  
+  
+  
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
