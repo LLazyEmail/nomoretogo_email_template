@@ -3,7 +3,6 @@
 // Error
 import Errors from './Errors';
 
-
 import {
   imageComponent,
   strongComponent,
@@ -11,7 +10,11 @@ import {
 } from 'typo';
 
 
-import titleComponent from './title';
+// import titleComponent from './title';
+
+// import textComponent from './text';
+
+import recipeName from './name';
 
 const error = new Errors('recipeComponent');
 
@@ -28,31 +31,36 @@ const error = new Errors('recipeComponent');
 // Get title end
 
 // Get text start
-const textComponent = (text) => {
-  if (text == '') {
-    error.add('text');
-  }
+// const textComponent = (text) => {
+//   if (text == '') {
+//     error.add('text');
+//   }
 
-  return `${text}`;
-};
+//   return `${text}`;
+// };
 // Get text end
 
-const recipeName = (params) => {
-  const { title, subtitle } = params;
 
-  const content = `${titleComponent(title)} <br> ${textComponent(subtitle)}`;
 
-  const recipeParams = {
-    attributes:
-      'style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"',
-    content,
-  };
-  return paragraphComponent(recipeParams);
-};
+// const recipeName = (params) => {
+//   const { title, subtitle } = params;
+
+//   const content = `${titleComponent(title)} <br> ${textComponent(subtitle)}`;
+
+//   const recipeParams = {
+//     attributes:
+//       'style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"',
+//     content,
+//   };
+//   return paragraphComponent(recipeParams);
+// };
+
+
 
 // Main Recipe block start
-const mainRecipe = (id, href, src, title, text) => {
-  // const { id, href, src, title, text } = params;
+const recipeComponent = (params) => {
+  
+   const { id, href, src, title, text } = params;
 
   // TODO add checks to this component
   const recipeImage = imageComponent({id, href, src});
@@ -85,9 +93,9 @@ const mainRecipe = (id, href, src, title, text) => {
 };
 // Main Recipe block end
 
-const recipeComponent = (data) => {
-  const { id, href, src, title, text } = data;
-  return mainRecipe(id, href, src, title, text);
-};
+// const recipeComponent = (data) => {
+//   const { id, href, src, title, text } = data;
+//   return mainRecipe(id, href, src, title, text);
+// };
 
 export default recipeComponent;
