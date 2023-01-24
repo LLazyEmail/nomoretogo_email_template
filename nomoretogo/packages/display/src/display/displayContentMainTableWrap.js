@@ -1,6 +1,6 @@
 import createComponent from './createComponentUniversal';
 //---------------
-\
+
 
 import { contentMainTableWrap } from 'outer';
 
@@ -9,28 +9,11 @@ import { contentMainTableWrap } from 'outer';
 import { headerSection }  from 'inner'; 
 
 //------------------
-// TODO just for a header with one unsubscribe link
-// we have so many stuff going on here. looks weak
-// import {
-//   viewInBrowserLink,
-//   topPanelViewInBrows,
-//   tableHeaderBlockLogo,
-// } from 'nmtg-template-mailerlite-inner';
+
 
 // import { viewInBrowserLinkParams } from '../config';
 
-// TODO move this component away at some point in the future
-// const view_in_browser = (params) => {
 
-//   // Link view in brows
-//   const htmlString = createComponent(
-//     viewInBrowserLink,
-//     params
-//   );
-
-//   return htmlString;
-
-// }
 //---------------------------
 
 /* ******************** CREATE CONTENT START ****************************** */
