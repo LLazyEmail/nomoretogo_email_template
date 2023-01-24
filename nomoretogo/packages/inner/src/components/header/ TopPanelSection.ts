@@ -22,7 +22,7 @@ import html_view_in_browser from './html_view_in_browser';
   
   
   
-const headerSection = () => {
+const TopPanelSection = () => {
 
   const ViewInBrowserLinkHTML = html_view_in_browser(viewInBrowserLinkParams);
 
@@ -38,4 +38,4 @@ const headerSection = () => {
   return topPanel;
 }
 
-export default headerSection;
+export default TopPanelSection;
