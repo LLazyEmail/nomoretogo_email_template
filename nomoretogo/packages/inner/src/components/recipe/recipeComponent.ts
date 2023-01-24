@@ -11,18 +11,20 @@ import {
 } from 'typo';
 
 
+import titleComponent from './title';
+
 const error = new Errors('recipeComponent');
 
 // Get title start
-const titleComponent = (title: string) => {
-  if (title == '') {
-    error.add('title');
-  }
+// const titleComponent = (title: string) => {
+//   if (title == '') {
+//     error.add('title');
+//   }
 
-  const string = `<span style="font-size: 16px;">${title}</span>`;
+//   const string = `<span style="font-size: 16px;">${title}</span>`;
 
-  return strongComponent(string);
-};
+//   return strongComponent(string);
+// };
 // Get title end
 
 // Get text start
