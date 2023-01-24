@@ -1,8 +1,16 @@
 import { writingFile } from 'markup-generator';
 
-import HeadHTMLString from 'display';
+import { HeadHTMLString } from 'display';
 
 
+const partialWrite1 = (string, suffix) => {
 
-writingFile(HeadHTMLString, 'nmtg-Head');
+  writingFile(string, suffix);
+  // TODO add a function that will display an output in console.  
+
+}
+
+export default partialWrite1(HeadHTMLString, 'nmtg-Head');
+
+// writingFile(HeadHTMLString, 'nmtg-Head');
  
