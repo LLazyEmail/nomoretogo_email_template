@@ -5,16 +5,16 @@ import createComponent from '../createComponentUniversal';
 import viewInBrowserLink from './viewInBrowserLink';
 
 
-  const html_view_in_browser = (params) => {
+const html_view_in_browser = (params) => {
+
+  // Link view in brows
+  const htmlString = createComponent(
+    viewInBrowserLink,
+    params
+  );
+
+  return htmlString;
+
+}
   
-    // Link view in brows
-    const htmlString = createComponent(
-      viewInBrowserLink,
-      params
-    );
-  
-    return htmlString;
-  
-  }
-  
-  export default html_view_in_browser;
+export default html_view_in_browser;
