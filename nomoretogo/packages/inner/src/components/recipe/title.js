@@ -1,6 +1,12 @@
 // Error
 import Errors from './Errors';
 
+import {
+//   imageComponent,
+  strongComponent
+//   paragraphComponent,
+} from 'typo';
+
 // Get title start
 const titleComponent = (title: string) => {
   if (title == '') {
