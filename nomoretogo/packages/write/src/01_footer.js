@@ -1,21 +1,14 @@
 import { writingFile } from 'markup-generator';
 
-import FooterHTMLString from 'display';
+import { FooterHTMLString } from 'display';
 
 
+const partialWrite2 = (string, suffix) => {
 
-describe('writing components into files', () => {
-  
-    test('write footer', () => {
-      const string4 = FooterHTMLString;
+  writingFile(string, suffix);
+  // TODO add a function that will display an output in console.  
 
+}
 
-      writingFile(string4, 'nmtg-footer');
-
-      expect(FooterHTMLString).toBeDefined();
-
-
-  });
-  
-});
+export default partialWrite2(FooterHTMLString, 'nmtg-footer')
 
