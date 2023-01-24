@@ -1,5 +1,6 @@
 // Create view-in-brows component
 // import Errors from './Errors';
+// import ow from 'ow';
 
 import { linkComponent } from 'typo';
 
