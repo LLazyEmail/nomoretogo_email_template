@@ -1,11 +1,12 @@
 import createComponent from './createComponentUniversal';
 //---------------
-
-// import { viewInBrowserLink } from 'nmtg-template-mailerlite-inner';
+\
 
 import { contentMainTableWrap } from 'outer';
 
 // import headerComponent from '../components/headerComponent';
+
+import { headerSection }  from 'inner'; 
 
 //------------------
 // TODO just for a header with one unsubscribe link
