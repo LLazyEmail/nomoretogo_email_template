@@ -1,21 +1,9 @@
-// we need to move some stuff into one file
-// 
 import createComponent from '../createComponentUniversal';
 
 //------------------
 
-
 import { viewInBrowserLinkParams } from '../../config';
-
-
-// TODO just for a header with one unsubscribe link
-// we have so many stuff going on here. looks weak
-
-// import viewInBrowserLink from './viewInBrowserLink';
 import topPanelViewInBrows from './topPanelViewInBrows';
-
-
-
 
 
 import html_view_in_browser from './html_view_in_browser';
