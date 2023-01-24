@@ -14,29 +14,13 @@ import topPanelViewInBrows from './topPanelViewInBrows';
 import { viewInBrowserLinkParams } from '../../config';
 
 
-// import {
-//     viewInBrowserLink,
-//     topPanelViewInBrows,
-//     // tableHeaderBlockLogo,
-// } from 'innerTemplate';
   
   
-  // TODO move this component away at some point in the future
-  const view_in_browser = (params) => {
   
-    // Link view in brows
-    const htmlString = createComponent(
-      viewInBrowserLink,
-      params
-    );
   
-    return htmlString;
-  
-  }
-// TODO move to innerTemplate component later and probably merge few files together
   const headerComponent = () => {
 
-    const ViewInBrowserLinkHTML = view_in_browser(viewInBrowserLinkParams);
+    const ViewInBrowserLinkHTML = html_view_in_browser(viewInBrowserLinkParams);
 
     // Top panel view in brows
   
