@@ -1,4 +1,4 @@
-
+import recipesSectionComponent from './section';
 // const 
 
-export default false;
+export default recipesSectionComponent;
