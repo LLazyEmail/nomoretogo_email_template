@@ -2,7 +2,6 @@ import createComponent from './createComponentUniversal';
 //---------------
 
 
-// import { contentMainTableWrap } from 'outer';
 import { TopPanelSection, contentMainTableWrap }  from 'inner'; 
 
 
@@ -13,12 +12,8 @@ import { TopPanelSection, contentMainTableWrap }  from 'inner';
 var result = null;
 try {
   // Top panel view in brows  
-  // const topPanel = createComponent(
-  //   topPanelViewInBrows,
-  //   ViewInBrowserHTML
-  // );
 
-//   const topPanel = '';
+  //  const topPanel = '';
   const topPanelHTML = TopPanelSection();
 
 
