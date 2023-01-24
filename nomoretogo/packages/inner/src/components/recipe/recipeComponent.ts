@@ -3,57 +3,12 @@
 // Error
 import Errors from './Errors';
 
-import {
-  imageComponent,
-  strongComponent,
-  paragraphComponent,
-} from 'typo';
+import { imageComponent } from 'typo';
 
-
-// import titleComponent from './title';
-
-// import textComponent from './text';
 
 import recipeName from './name';
 
 const error = new Errors('recipeComponent');
-
-// Get title start
-// const titleComponent = (title: string) => {
-//   if (title == '') {
-//     error.add('title');
-//   }
-
-//   const string = `<span style="font-size: 16px;">${title}</span>`;
-
-//   return strongComponent(string);
-// };
-// Get title end
-
-// Get text start
-// const textComponent = (text) => {
-//   if (text == '') {
-//     error.add('text');
-//   }
-
-//   return `${text}`;
-// };
-// Get text end
-
-
-
-// const recipeName = (params) => {
-//   const { title, subtitle } = params;
-
-//   const content = `${titleComponent(title)} <br> ${textComponent(subtitle)}`;
-
-//   const recipeParams = {
-//     attributes:
-//       'style="margin-top: 0px; margin-bottom: 0px; line-height: 150%; text-align: center;"',
-//     content,
-//   };
-//   return paragraphComponent(recipeParams);
-// };
 
 
 
@@ -70,9 +25,7 @@ const recipeComponent = (params) => {
   return `<table role="presentation" cellpadding="0" cellspacing="0" border="0" align="left" width="267" 
   class="mlContentTable marginBottom" style="width: 267px; min-width: 267px;">
     <tbody><tr>
-      <td id="imageBlock-14" align="center">
-       ${recipeImage}
-      </td>
+      <td id="imageBlock-14" align="center">${recipeImage}</td>
     </tr>
     <tr>
       <td align="center" style="padding: 0px 20px;">
