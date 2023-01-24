@@ -3,8 +3,13 @@ import {
   separatorComponent,
 } from 'typo';
 
-// TODO import  contentButtonBlock
 
+
+// TODO import  contentButtonBlock
+// contentButtonBlock
+
+
+// TODO update this component. we can use TEXT and RecipesSection as separate parts
 const contentSubComponent = (text, recipeRow, contentButtonParams) => {
 
     // weekly menu button
@@ -22,4 +27,4 @@ const contentSubComponent = (text, recipeRow, contentButtonParams) => {
   
     return allContent;
   
-  }
+}
