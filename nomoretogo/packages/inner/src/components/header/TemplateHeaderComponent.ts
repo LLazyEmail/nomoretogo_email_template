@@ -6,13 +6,20 @@ import createComponent from '../createComponentUniversal';
 // TODO just for a header with one unsubscribe link
 // we have so many stuff going on here. looks weak
 
-import {
-    viewInBrowserLink,
-    topPanelViewInBrows,
-    // tableHeaderBlockLogo,
-} from 'innerTemplate';
-  
+import viewInBrowserLink from './viewInBrowserLink';
+import topPanelViewInBrows from './topPanelViewInBrows';
+
+
+
 import { viewInBrowserLinkParams } from '../../config';
+
+
+// import {
+//     viewInBrowserLink,
+//     topPanelViewInBrows,
+//     // tableHeaderBlockLogo,
+// } from 'innerTemplate';
+  
   
   // TODO move this component away at some point in the future
   const view_in_browser = (params) => {
