@@ -2,7 +2,9 @@
 
 
 
-npx nx build typography
+npx nx build typo
+
+npx nx build typo
 
 https://nx.dev/getting-started/package-based-repo-tutorial
 
