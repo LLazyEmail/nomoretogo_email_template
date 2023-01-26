@@ -1,6 +1,6 @@
 import blobHead from './head/blobHead';
 import bodyStyle from './head/bodyStyle';
-import meta from './head/MetaTags';
+import meta from './head/metaTags';
 import { ifStyle, mediaStyle, font1, font2 }from './head/ifStyle';
 
 import style from './head/style';
