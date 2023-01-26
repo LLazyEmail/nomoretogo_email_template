@@ -9,6 +9,8 @@ import ifStyle from './components/ifStyle';
 import mediaStyle from './components/mediaStyle';
 import style from './components/style';
 import style2 from './components/style2';
+
+
 import { pre_tags, post_tags } from './components/headTagsIndex';
 
 //------------
@@ -16,7 +18,7 @@ import footerComponent from './components/footerComponent';
 import headComponent from './components/headComponent';
 import bodyComponent from './components/bodyComponent';
 //------------
-import createUnsubscribe from './components/unsubscribeLink';
+// import createUnsubscribe from './components/footer/unsubscribeLink';
 import supportComponent from './components/supportComponent';
 import amazonFreshBlock from './components/amazonFreshBlock';
 //------------

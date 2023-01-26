@@ -8,7 +8,7 @@ import Errors from './Errors';
 const error = new Errors('footerComponent');
 
 
-import createUnsubscribe from './unsubscribeLink';
+import createUnsubscribe from './footer/unsubscribeLink';
 
 
 // Address
