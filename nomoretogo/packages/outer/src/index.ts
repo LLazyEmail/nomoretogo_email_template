@@ -19,10 +19,10 @@ import headComponent from './components/headComponent';
 import bodyComponent from './components/bodyComponent';
 //------------
 // import createUnsubscribe from './components/footer/unsubscribeLink';
-import supportComponent from './components/supportComponent';
-import amazonFreshBlock from './components/amazonFreshBlock';
+// import supportComponent from './components/supportComponent';
+// import amazonFreshBlock from './components/amazonFreshBlock';
 //------------
-import contentMainTableWrap from './components/contentMainTableWrap';
+// import contentMainTableWrap from './components/contentMainTableWrap';
 
 export {
   // blobHead,
@@ -39,11 +39,11 @@ export {
   headComponent,
   bodyComponent,
   //------
-  createUnsubscribe,
-  supportComponent,
-  amazonFreshBlock,
+  // createUnsubscribe,
+  // supportComponent,
+  // amazonFreshBlock,
   pre_tags,
   post_tags,
   // ------
-  contentMainTableWrap,
+  // contentMainTableWrap,
 };

@@ -8,7 +8,7 @@ import {
   mediaStyle,
   style,
   style2,
-} from '../index';
+} from './head';
 
 
 // Head params
@@ -27,9 +27,18 @@ import {
 
 // TODO implement it
 const pre_tags = () => {
-return meta() + font1() + ifStyle() + style() + 
-      bodyStyle() + mediaStyle() + meta() + font1() +
-      ifStyle() + style() + bodyStyle() + mediaStyle();
+return meta() + font1() + ifStyle() + 
+      
+      style() + 
+      bodyStyle() + 
+      mediaStyle() +
+
+      meta() + font1() +
+      ifStyle() + 
+      
+      style() + 
+      bodyStyle() + 
+      mediaStyle();
   
 }
 
