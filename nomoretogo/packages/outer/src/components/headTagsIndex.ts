@@ -1,14 +1,10 @@
-import {
-  blobHead,
-  bodyStyle,
-  font1,
-  font2,
-  meta,
-  ifStyle,
-  mediaStyle,
-  style,
-  style2,
-} from './head';
+import blobHead from './head/blobHead';
+import bodyStyle from './head/bodyStyle';
+import meta from './head/MetaTags';
+import { ifStyle, mediaStyle, font1, font2 }from './head/ifStyle';
+
+import style from './head/style';
+import style2 from './head/style2';
 
 
 // Head params
