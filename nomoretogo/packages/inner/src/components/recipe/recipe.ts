@@ -1,7 +1,7 @@
 // Create recipe component
 
 // Error
-import Errors from './Errors';
+import Errors from '../Errors';
 
 import { imageComponent } from 'typo';
 

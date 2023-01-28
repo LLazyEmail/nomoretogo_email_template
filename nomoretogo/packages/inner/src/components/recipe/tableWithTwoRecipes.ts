@@ -54,6 +54,16 @@ const tableWithTwoRecipeMainBlock = (image:string, image2:string) => {
   </tbody></table>`;
 };
 
+function countImageInRows(arr, chunkSize) {
+  const res = [];
+  while (arr.length > 0) {
+    const chunk = arr.splice(0, chunkSize);
+    res.push(chunk);
+  }
+  return res;
+}
+
+
 export default function (params) {
   const error = new Errors('contentTableWitchTwoRecipe');
 
@@ -68,14 +78,14 @@ export default function (params) {
   // add an empty element end
 
   // split array into two elements start
-  function countImageInRows(arr, chunkSize) {
-    const res = [];
-    while (arr.length > 0) {
-      const chunk = arr.splice(0, chunkSize);
-      res.push(chunk);
-    }
-    return res;
-  }
+  // function countImageInRows(arr, chunkSize) {
+  //   const res = [];
+  //   while (arr.length > 0) {
+  //     const chunk = arr.splice(0, chunkSize);
+  //     res.push(chunk);
+  //   }
+  //   return res;
+  // }
   const chunks = countImageInRows(params, 2);
   // split array into two elements end
 
