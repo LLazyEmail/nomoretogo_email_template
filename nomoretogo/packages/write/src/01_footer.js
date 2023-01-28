@@ -1,4 +1,3 @@
-import { writingFile } from 'markup-generator';
 
 import { FooterHTMLString } from 'display';
 

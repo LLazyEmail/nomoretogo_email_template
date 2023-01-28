@@ -1,3 +1,5 @@
+import { writingFile } from 'markup-generator';
+
 const partialWrite3 = (string, suffix) => {
 
   writingFile(string, suffix);
