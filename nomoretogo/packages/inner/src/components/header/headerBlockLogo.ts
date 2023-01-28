@@ -15,13 +15,23 @@ const displayLogo = (pathMainLogo) => {
   return imageLogo;
 }
 
+const image = (pathMainLogo) => {
+
+  // ow(pathMainLogo, ow.string);
+
+  const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
+  const imageLogo = imageComponent(imageParams);
+  return imageLogo;
+  
+}
+
 // Block header/logotip start
 
 // maybe it's better to pass logo image instead of using displayLogo function
 
 const tableHeaderBlockLogo = () => {
   
-  return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
+  return `<!--  --><table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
       <table align="center" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0" class="mlContentTable ml-default" style="width: 640px; min-width: 640px;" width="640">
@@ -33,7 +43,7 @@ const tableHeaderBlockLogo = () => {
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
                       <td align="center">                        
-                        ${displayLogo(pathMainLogo)}                        
+                        ${image(pathMainLogo)}                        
                       </td>
                     </tr>
                   </tbody></table>
@@ -50,7 +60,7 @@ const tableHeaderBlockLogo = () => {
       </tbody></table>
     </td>
   </tr>
-  </tbody></table>`;
+  </tbody></table><!--  -->`;
 };
 // Block header/logotip end
 
