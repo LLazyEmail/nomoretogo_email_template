@@ -1,3 +1,7 @@
+import {
+  paragraphComponent
+} from 'typo';
+
 // Description
 const description = () => {
   const descriptionParams = {
