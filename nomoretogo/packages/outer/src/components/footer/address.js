@@ -1,3 +1,7 @@
+import {
+  paragraphComponent
+} from 'typo';
+
 // Address
 const address = () => {
   const addressParams = {
