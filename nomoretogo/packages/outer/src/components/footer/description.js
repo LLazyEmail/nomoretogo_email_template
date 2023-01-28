@@ -8,3 +8,5 @@ const description = () => {
 
   return paragraphComponent(descriptionParams);
 };  
+
+export default description;
