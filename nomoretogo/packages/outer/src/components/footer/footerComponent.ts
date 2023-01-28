@@ -13,7 +13,7 @@ import createUnsubscribe from './footer/unsubscribeLink';
 import address from 'address';
 import description from 'description';
 import footerHTML from 'section';
-import 
+import SocialPanelComponent from 'social';
 
 
 const footerComponent = (params:any) => {
