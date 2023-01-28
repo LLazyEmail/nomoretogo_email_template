@@ -1,6 +1,10 @@
 // Component instruction text
 import Errors from '../Errors';
 
+import {
+  strongComponent,
+  paragraphComponent,
+} from 'typo';
 const instructionTextMainBlock = (instructionText) => {
   return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${instructionText}</p>`;
 };
