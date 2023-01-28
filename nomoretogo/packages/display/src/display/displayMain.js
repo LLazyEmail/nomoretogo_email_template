@@ -1,7 +1,7 @@
 // Create Main display
 // import ow from 'ow';
 import createComponent from './createComponentUniversal';
-import mainComponent from '../components/mainComponent';
+import {mainComponent} from 'mainComponent';
 
 
 const displayHead = 'xxx';
