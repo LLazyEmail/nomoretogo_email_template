@@ -1,9 +1,14 @@
 import Errors from './Errors';
 // const error = new Errors('footerComponent');
 
-// Create footerSocial start
 // TODO add linkComponent
 // TODO add image
+
+// import {
+//   paragraphComponent
+// } from 'typo';
+
+
 const SocialPanelComponent  = (socials) => {
 
   var socialPanel = false;
@@ -34,6 +39,6 @@ const SocialPanelComponent  = (socials) => {
   return socialPanel;
 
   };
-  // Create footerSosial end
+  
 
   export default SocialPanelComponent;
