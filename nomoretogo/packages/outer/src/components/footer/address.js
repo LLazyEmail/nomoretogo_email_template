@@ -6,3 +6,5 @@ const address = () => {
   };
   return paragraphComponent(addressParams);
 };
+
+export default address;
