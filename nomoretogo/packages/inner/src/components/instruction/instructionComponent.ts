@@ -8,29 +8,7 @@ import {
   paragraphComponent,
 } from 'typo';
 
-const createTitle = (title) => {
-  const content = { content: strongComponent(title) };
 
-  const titleParams = {
-    attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
-    content,
-  };
-  return paragraphComponent(titleParams);
-};
-
-// replacing 
-// return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${text}</p>`;
-const createText = (text) => {
-  
-  const content = { content: text };
-
-  const config = {
-    attributes: `style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"`,
-    content,
-  };
-  return paragraphComponent(config);
-
-};
 
 // it was a quick solution, as it's part of static content 
 // that we only needed for testing purposes
@@ -134,6 +112,8 @@ const instructionMainBlockOLD = (params) => {
 
 
 const instructionMainBlock = () => {
+  
+  
 return ` <!-- -->
 <table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
 <tbody><tr>
