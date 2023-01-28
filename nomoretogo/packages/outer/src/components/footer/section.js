@@ -116,3 +116,5 @@ return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable
 </tbody></table>`;
 
 };
+
+export default footerHTML;
