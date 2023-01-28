@@ -1,7 +1,7 @@
 // Component content discription
 import Errors from '../Errors';
 
-const textDescriptionMainBlock = (textTop, textBottom) => {
+const textDescriptionMainBlock = (top, bottom) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -39,12 +39,12 @@ const textDescriptionMainBlock = (textTop, textBottom) => {
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">
-                          ${textTop}
+                          ${top}
                         </p>  
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"><br>
-                          ${textBottom}
+                          ${bottom}
                         </p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
                         <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"></p>
