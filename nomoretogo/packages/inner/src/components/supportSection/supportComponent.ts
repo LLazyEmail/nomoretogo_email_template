@@ -1,5 +1,5 @@
 // Create support component
-import { mailingAddress } from '../../../outer/src/config';
+import { mailingAddress } from '../../config';
 import {
   strongComponent,
   linkComponent
@@ -7,7 +7,7 @@ import {
 
 import { separatorComponent } from 'nmtg-typo';
 
-import Errors from '../../../outer/src/components/Errors';
+import Errors from '../Errors';
 
 const error = new Errors('supportComponent');
 
