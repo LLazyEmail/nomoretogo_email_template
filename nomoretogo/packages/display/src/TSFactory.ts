@@ -38,7 +38,7 @@ abstract class AbsctractCreator {
 }
 
 
-class DisplayBodyComponent implements IComponent {
+class InterfaceBodyComponent implements IComponent {
     
     name = EmailTemplateBodyComponent;
     
@@ -48,16 +48,16 @@ class DisplayBodyComponent implements IComponent {
 
 }
 
-class DisplayFooterComponent implements IComponent {
+class InterfaceFooterComponent implements IComponent {
 
     name = footerComponent;
 }
     
-class DisplayHeadComponent implements IComponent {
+class InterfaceHeadComponent implements IComponent {
     name = headComponent;
 }    
     
-class DisplayMainComponent implements IComponent {
+class InterfaceMainComponent implements IComponent {
     name = mainComponent;
 }    
 
