@@ -1,3 +1,7 @@
+// https://sbcode.net/typescript/factory/
+// https://refactoring.guru/design-patterns/factory-method/typescript/example
+// https://www.sitepen.com/blog/advanced-typescript-concepts-classes-and-types
+
 interface iPartial = {
     partial: string;
 }
