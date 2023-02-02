@@ -1,60 +1,159 @@
-class displayFactoryTwo {
+interface iPartial = {
+    partial: string;
+}
 
-    error = false;
-    partial = '';
+interface IHTMLString = {
+    name: string;
+}
+    
+interface IComponent = {
+    name:string;
+    component(params:any, subcomponents:any): void;
+    subcomponents:any;
+}
 
-    isError = () => {
-        return this.error;
-    }
-    setPartial = (string) => {
-      this.partial = string;
-    }
+abstract class Creator {
 
-    getPartial = () => {
-      return this.partial;
-    }
-
-    display = () => {
-      this.getPartial();
-    }
-
-    create = (settings) => {
+    public abstract factoryMethod(): IComponent;
+    
+//     public partial:string;
+    
+    public create(): string {
         
-        // if (!settings)
-        // add error checking here.. probably few versions to test
-
-        const { component, params, subcomponents } = settings;
-
-        // cover a case when subcomponents didnt passed and we apply { }
-
-
-        let partial;
-
+        // Call the factory method to create a Product object.
+        const htmlString = this.factoryMethod();
         
-        
-
-
-          //here i want to apply a check and see if everything is fine, if not we generate error = true 
-          try {
-            partial = component(params, subcomponents);
-
-            return partial;
-            // this.setPartial(partial);
-            // console.log(partial);
-
-          } catch (err) {
-            // statements to handle any exceptions
-            console.log(err);
-            // this.error = true;
-          }
-
+        return htmlString;
+        // Now, use the product.
+        // return `Creator: The same creator's code has just worked with ${product.operation()}`;
     }
+    
+// while using create for setting a variable partial, display will be used for returning this HTML String when it's necessary.
+//     public display():
+
+}
+
+
+class DisplayBodyComponent implements IComponent {
+    
+    name = EmailTemplateBodyComponent;
+    
+    public component(params:any, subcomponents:string): string {
+        return name(params, subcomponents);
+    }
+
+}
+
+class DisplayFooterComponent implements IComponent {
+
+    name = footerComponent;
+}
+    
+class DisplayHeadComponent implements IComponent {
+    name = headComponent;
+}    
+    
+class DisplayMainComponent implements IComponent {
+    name = mainComponent;
+}    
+
+// addtional things to have later 
+// 1. errors
+// error = false;
+// isError = () => {
+//     return this.error;
+// }
+// try {
+//     ...
+
+// } catch (err) {
+
+//     this.error = true;
+// }
+
+// or 
+// I want to have a better way to report errors, so each subcomponent can report an issue, so we can track it better 
+//       isError: () => { if(this.error){ return 'errror is here'; } }
+
+// 2. get method
+// 	  get: () => { return component; },
+
+
+// 3. log
+//       // log: () => { 
+//       //     console.log('123');
+
+          
+//       // //     console.log(this.display()) 
+//       // },
+
+// 4. subcomponents map
+//           if(subcomponents){
+//             //   subcomponents.map((component) => {
+//             //     component.init();
+//             //   })
+//           }
+
+// 5. returning object with errors and partials for calling later
+//     return {
+//       error: false, 
+//       partial: string,
+
+// 6. debug
+// if it's enabled, we are calling this.log() method
+
+// class displayFactoryTwo {
+
+//     partial = '';
+
+
+//     setPartial = (string) => {
+//       this.partial = string;
+//     }
+
+//     getPartial = () => {
+//       return this.partial;
+//     }
+
+//     display = () => {
+//       this.getPartial();
+//     }
+
+//     create = (settings) => {
+        
+//         // if (!settings)
+//         // add error checking here.. probably few versions to test
+
+//         const { component, params, subcomponents } = settings;
+
+//         // cover a case when subcomponents didnt passed and we apply { }
+
+
+//         let partial;
+
+       
+
+//           //here i want to apply a check and see if everything is fine, if not we generate error = true 
+//           try {
+//             partial = component(params, subcomponents);
+
+//             return partial;
+//             // this.setPartial(partial);
+//             // console.log(partial);
+
+//           } catch (err) {
+//             // statements to handle any exceptions
+//             console.log(err);
+    
+//           }
+
+//     }
 
 
     
-}
+// }
 
-export default displayFactoryTwo;
+// export default displayFactoryTwo;
 
 
 //     return {
@@ -79,56 +178,26 @@ export default displayFactoryTwo;
         
 //       checks: () => { return []; },  
         
-        
-//       init: () => {
-  
-//       },
-      
-//       try: () => {
-  
-//       },
-
-// 	  get: () => { return component; },
 
 //       checks: () => {
 //           checks.map(() => {
 
 //           })
 
-//           if(subcomponents){
-//             //   subcomponents.map((component) => {
-//             //     component.init();
-//             //   })
-//           }
+
 
         
 
 //       },
 
-//       // log: () => { 
-//       //     console.log('123');
-
-          
-//       // //     console.log(this.display()) 
-//       // },
 
 
 
-//       //get: () => {name:name, regEx:regEx, replace:replace(), isError:false},
+
   
 //       //combine: () => {return {name:name, regEx:regEx, replace:replace()}},
   
-//       // I want to have a better way to report errors, so each callback can report an issue, so we can track it better 
-//       isError: () => { if(this.error){ return 'errror is here'; } }
+
 //     }
 //   }
 
-
-//   displayFactory.log = () => {
-//     // log: () => { 
-//       console.log('123');
-//       console.log(this.display()) 
-//   // },
-//   }
-  
-//   export default displayFactory;
