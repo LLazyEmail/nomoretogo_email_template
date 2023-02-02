@@ -3,15 +3,15 @@
 // https://www.sitepen.com/blog/advanced-typescript-concepts-classes-and-types
 // https://stackoverflow.com/questions/41926269/naming-abstract-classes-and-interfaces-in-typescript
 
-interface iPartial = {
+interface PartialInterface = {
     partial: string;
 }
 
-interface IHTMLString = {
+interface IHTMLStringInterface = {
     name: string;
 }
     
-interface IComponent = {
+interface ComponentInterface = {
     name:string;
     component(params:any, subcomponents:any): void;
     subcomponents:any;
@@ -39,7 +39,7 @@ abstract class AbsctractCreator {
 }
 
 
-class InterfaceBodyComponent implements IComponent {
+class BodyComponentInterface implements ComponentInterface {
     
     name = EmailTemplateBodyComponent;
     
@@ -49,16 +49,16 @@ class InterfaceBodyComponent implements IComponent {
 
 }
 
-class InterfaceFooterComponent implements IComponent {
+class FooterComponentInterface implements ComponentInterface {
 
     name = footerComponent;
 }
     
-class InterfaceHeadComponent implements IComponent {
+class HeadComponentInterface implements ComponentInterface {
     name = headComponent;
 }    
     
-class InterfaceMainComponent implements IComponent {
+class MainComponentInterface implements ComponentInterface {
     name = mainComponent;
 }    
 
