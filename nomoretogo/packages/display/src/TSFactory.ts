@@ -16,7 +16,7 @@ interface IComponent = {
     subcomponents:any;
 }
 
-abstract class Creator {
+abstract class AbsctractCreator {
 
     public abstract factoryMethod(): IComponent;
     
