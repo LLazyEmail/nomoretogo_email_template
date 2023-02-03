@@ -11,6 +11,7 @@ class Factory extends AbstractFactory {
   result = null;
 
   constructor(component, params = '') {
+    super();
     // TODO add typeof for a function.
     this.component = component;
     this.params = params;

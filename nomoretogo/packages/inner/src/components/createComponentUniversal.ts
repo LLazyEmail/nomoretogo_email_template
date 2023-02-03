@@ -1,7 +1,7 @@
 import Factory from './Factory';
 // import { catchErrorTraceOutput } from './../methods';
 
-function createComponent(component, params = '') {
+function createComponent(component:void, params:any) {
   var error = '';
   var result = null;
 
