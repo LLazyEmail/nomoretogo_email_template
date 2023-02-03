@@ -5,7 +5,7 @@ abstract class AbstractFactory {
 }
 
 
-class Factory {
+class Factory extends AbstractFactory {
   component = '';
   params = '';
   result = null;
