@@ -1,4 +1,4 @@
-import Factory from './factory';
+import Factory from './Factory';
 // import { catchErrorTraceOutput } from './../methods';
 
 function createComponent(component, params = '') {

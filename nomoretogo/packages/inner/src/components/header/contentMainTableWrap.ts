@@ -1,5 +1,5 @@
 // create content main table wrap
-import Errors from './Errors';
+import Errors from '../Errors';
 
 
 

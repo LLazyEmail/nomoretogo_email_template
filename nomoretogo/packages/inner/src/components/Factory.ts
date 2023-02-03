@@ -1,3 +1,10 @@
+abstract class AbstractFactory {
+  component: string;
+  params: any;
+  result: string;
+}
+
+
 class Factory {
   component = '';
   params = '';
