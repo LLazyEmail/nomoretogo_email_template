@@ -12,8 +12,8 @@ import {
 
 
 
-import instructionTitle from './components/instruction/instructionTitle';
-import instructionText from './components/instruction/instructionText';
+import instructionTitle from './components/instruction/title';
+import instructionText from './components/instruction/text';
 //--------------------------
 import lineBlock from './components/lineBlock';
 
