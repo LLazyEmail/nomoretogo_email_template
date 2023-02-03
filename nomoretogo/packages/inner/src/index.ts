@@ -1,14 +1,13 @@
 // Header
-import { TopPanelSection, contentMainTableWrap } from './components/header;
+import { TopPanelSection, contentMainTableWrap } from './components/header';
 
 
 
-import contentButtonBlock from './components/contentButtonBlock';
 
-import contentSubTitleText from './components/contentSubTitleText';
+import {
+  contentButtonBlock, contentSubTitleText, contentTextDescription, contentTitleText
+} from './components/content';
 
-import contentTextDescription from './components/contentTextDescription';
-import contentTitleText from './components/contentTitleText';
 //---------------------------
 
 
