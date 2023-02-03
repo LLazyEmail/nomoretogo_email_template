@@ -2,7 +2,7 @@
 // 
 import createComponent from '../createComponentUniversal';
 
-import viewInBrowserLink from './viewInBrowserLink';
+import viewInBrowserLink from './viewBrowserLink';
 
 
 const html_view_in_browser = (params) => {

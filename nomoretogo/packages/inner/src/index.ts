@@ -1,5 +1,5 @@
 // Header
-import { TopPanelSection, contentMainTableWrap } from './components/header';
+import { TopPanelSection, contentMainTableWrap } from './components/header/index';
 
 
 import {
