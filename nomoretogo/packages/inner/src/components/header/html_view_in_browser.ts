@@ -1,6 +1,6 @@
 // we need to move some stuff into one file
 // 
-import createComponent from '../createComponentUniversal';
+import createComponent from '../../createComponentUniversal';
 
 import viewInBrowserLink from './viewBrowserLink';
 
