@@ -23,7 +23,7 @@ import lineBlock from './components/lineBlock';
 
 //----------------------
 // removing other components related to recipes
-import recipesSectionComponent from './components/recipe';
+import recipesContainerComponent from './components/recipe';
 
 //----------------------
 

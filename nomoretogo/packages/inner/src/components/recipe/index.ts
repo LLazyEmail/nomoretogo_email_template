@@ -1,4 +1,4 @@
-import recipesSectionComponent from './section';
+import recipesContainerComponent from './container';
 // const 
 
-export default recipesSectionComponent;
+export default recipesContainerComponent;

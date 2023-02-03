@@ -25,7 +25,7 @@ const createRecipesPanel = (recipes) => {
 }
 
 
-const recipesSectionComponent = (recipes) => {
+const recipesContainerComponent = (recipes) => {
 
 
   if (!recipes) {
@@ -43,4 +43,4 @@ const recipesSectionComponent = (recipes) => {
 }
   
 
-export default recipesSectionComponent;
+export default recipesContainerComponent;
