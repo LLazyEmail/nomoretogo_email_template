@@ -5,6 +5,7 @@ import {  strongComponent } from 'typo';
 
 // Get title start
 const titleComponent = (title: string) => {
+  const error = new Errors('contentTitle');
   if (title == '') {
     error.add('title');
   }
