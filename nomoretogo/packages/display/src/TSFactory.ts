@@ -3,15 +3,15 @@
 // https://www.sitepen.com/blog/advanced-typescript-concepts-classes-and-types
 // https://stackoverflow.com/questions/41926269/naming-abstract-classes-and-interfaces-in-typescript
 
-interface PartialInterface = {
+interface PartialInterface {
     partial: string;
 }
 
-interface IHTMLStringInterface = {
+interface IHTMLStringInterface {
     name: string;
 }
     
-interface ComponentInterface = {
+interface ComponentInterface {
     name:string;
     component(params:any, subcomponents:any): void;
     subcomponents:any;

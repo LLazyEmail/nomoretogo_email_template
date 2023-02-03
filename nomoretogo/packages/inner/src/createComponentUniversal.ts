@@ -2,8 +2,8 @@ import Factory from './Factory';
 // import { catchErrorTraceOutput } from './../methods';
 
 function createComponent(component:void, params:any) {
-  var error = '';
-  var result = null;
+  let error = '';
+  let result = null;
 
   // TODO add a message that we cant find a component that you are passing into
   // duplicate of a created issue

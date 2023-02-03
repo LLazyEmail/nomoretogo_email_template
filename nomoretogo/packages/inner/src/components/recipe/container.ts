@@ -7,7 +7,7 @@ const createRecipesPanel = (recipes) => {
   // var recipeHTMLMarkupArray
 
   // TODO can be made better with listToMatrix method
-  var recipeRowBlockHTML = recipeRowBlock(recipes[0], recipes[1]);
+  let recipeRowBlockHTML = recipeRowBlock(recipes[0], recipes[1]);
   // console.log(recipes[0]);
   recipeRowBlockHTML += recipeRowBlock(recipes[2], recipes[3]);
   recipeRowBlockHTML += recipeRowBlock(recipes[4], recipes[5]);

@@ -5,7 +5,8 @@
   "scripts": {
     "b": "npm run chmodler && ./bash/build.sh",
     "b2": "npx nx run-many --target=build",
-    "chmodler": "shx chmod -R 755 ./bash"
+    "chmodler": "shx chmod -R 755 ./bash",
+    "lint:fix": "./bash/lint-fix.sh"
   },
   "private": true,
   "devDependencies": {
