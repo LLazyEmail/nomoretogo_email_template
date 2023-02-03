@@ -4,7 +4,7 @@
 
 import { linkComponent } from 'typo';
 
-const viewInBrowsLink = (params) => {
+const viewInBrowsLink = (params: {id:string, href:string}) => {
   const { id, href } = params;
   
   // ow(params, ow.object.exactShape({

@@ -1,20 +1,22 @@
+type Fcomponent = (parameters:any) => void;
+
 abstract class AbstractFactory {
-  component: string;
+  abstract component(): Fcomponent;
   params: any;
-  result: string;
+  public result: string;
 }
 
 
 class Factory extends AbstractFactory {
-  component = '';
-  params = '';
-  result = null;
+  // component = '';
+  // params = '';
+  // result = null;
 
-  constructor(component, params = '') {
+  constructor(component, params) {
     super();
     // TODO add typeof for a function.
     this.component = component;
-    this.params = params;
+    this.params = params || '';
     this.assembleComponent();
   }
 
