@@ -1,12 +1,5 @@
-import {
-    // recipeComponent,
-    recipeRowBlock
-  } from 'innerTemplate';
-
-
-import { listToMatrix } from 'utils';
-// listToMatrix moved to utils
-
+import recipeRowBlock from './row';
+import listToMatrix from './utils';
 
 // block 2
 const createRecipesPanel = (recipes) => {

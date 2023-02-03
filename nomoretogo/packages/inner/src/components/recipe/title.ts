@@ -1,11 +1,7 @@
 // Error
-import Errors from './Errors';
+import Errors from '../Errors';
 
-import {
-//   imageComponent,
-  strongComponent
-//   paragraphComponent,
-} from 'typo';
+import {  strongComponent } from 'typo';
 
 // Get title start
 const titleComponent = (title: string) => {

@@ -3,7 +3,7 @@ import {
   separatorComponent,
 } from 'typo';
 
-
+import { contentButtonBlock } from '../content';
 
 // TODO import  contentButtonBlock
 // contentButtonBlock

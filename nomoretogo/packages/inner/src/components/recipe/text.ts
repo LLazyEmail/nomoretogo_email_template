@@ -1,6 +1,6 @@
-import Errors from './Errors';
+import Errors from '../Errors';
 
-const textComponent = (text) => {
+const textComponent = (text:string) => {
   if (text == '') {
     error.add('text');
   }

@@ -1,5 +1,5 @@
   // split array into two elements start
-  function countImageInRows(arr, chunkSize) {
+  function countImageInRows(arr:any, chunkSize:any) {
     const res = [];
     while (arr.length > 0) {
       const chunk = arr.splice(0, chunkSize);

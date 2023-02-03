@@ -1,4 +1,4 @@
-import { recipeComponent } from 'nmtg-typo';
+import recipeComponent from './recipe';
 
 // THIS BLOCK is a old version of contentTableWithTwoRecipes.... get rid of it later
 

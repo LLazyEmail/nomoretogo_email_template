@@ -1,4 +1,4 @@
-import Errors from './Errors';
+import Errors from '../Errors';
 const error = new Errors('recipeComponent');
 
 import { paragraphComponent } from 'typo';
@@ -6,7 +6,7 @@ import { paragraphComponent } from 'typo';
 import titleComponent from './title';
 import textComponent from './text';
 
-const recipeName = (params) => {
+const recipeName = (params: {title:string, subtitle: string}) => {
   const { title, subtitle } = params;
 
   const titleHTML = titleComponent(title);

@@ -1,16 +1,11 @@
-// Create recipe component
-
 // Error
 import Errors from '../Errors';
 
 import { imageComponent } from 'typo';
 
-
 import recipeName from './name';
 
 const error = new Errors('recipeComponent');
-
-
 
 // Main Recipe block start
 const recipeComponent = (params) => {
@@ -45,10 +40,5 @@ const recipeComponent = (params) => {
     </tbody></table>`;
 };
 // Main Recipe block end
-
-// const recipeComponent = (data) => {
-//   const { id, href, src, title, text } = data;
-//   return mainRecipe(id, href, src, title, text);
-// };
 
 export default recipeComponent;
