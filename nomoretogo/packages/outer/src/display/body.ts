@@ -1,9 +1,9 @@
 // Body
 
-import { bodyComponent } from 'outer';
+import bodyComponent from '../components/bodyComponent';
 
-import createComponent from './createComponentUniversal';
 
+// import createComponent from './createComponentUniversal';
 
 
 
@@ -17,11 +17,7 @@ import displayInstruction from './displayInstruction';
 
 /* ******************** DATA START **************************************** */
 // Body params
-
-// const displayContentMainTableWrap = 'xxx';
-// const displayContentHTML = "xxx";
-
-const bodyComponentParams = `
+const params = `
 ${displayContentMainTableWrap}
 ${displayContentHTML}
 ${displayInstruction}
@@ -29,20 +25,8 @@ ${displayInstruction}
 /* ******************** DATA END **************************************** */
 
 /* ******************** CREATE CONTENT START ****************************** */
-var result = null;
-// try {
-  // contentTitleText
-  const bodyComponentRes 
-  
-  
-  
-  = createComponent(
-    bodyComponent, 
-    bodyComponentParams
-  );
 
-
+const BodyHTMLString = bodyComponent(params);
   
-  result = bodyComponentRes;
   
-  // console.log(result);
+export default BodyHTMLString;

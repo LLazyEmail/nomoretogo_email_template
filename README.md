@@ -4,6 +4,10 @@
 https://nx.dev/getting-started/integrated-repo-tutorial
 
 
+
+
+https://stackblitz.com/edit/typescript-qzlpln?file=index.ts
+
 `yarn test:write` for testing how template is generating right now
 
 template from:
