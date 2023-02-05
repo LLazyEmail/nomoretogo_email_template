@@ -2,25 +2,27 @@
 // HEAD
 import ow from 'ow';
 // Create head component
-import Errors from '../Errors';
+// import Errors from '../Errors';
 
 // TODO it looks strange
-const headError = new Errors('headComponent');
+// const headError = new Errors('headComponent');
 
-function createHeadComponent(params:any) {
+function headComponent(params:any) {
   
-  const {
-    blobHead,
-    bodyStyle,
-    font1,
-    font2,
-    meta,
-    ifStyle,
-    mediaStyle,
-    style,
-    style2,
-    title,
-  } = params;
+    searchForErrors(params);
+
+    const {
+        blobHead,
+        bodyStyle,
+        font1,
+        font2,
+        meta,
+        ifStyle,
+        mediaStyle,
+        style,
+        style2,
+        title,
+    } = params;
 
   return `<head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -57,36 +59,22 @@ function searchForErrors(params:any) {
     title,
   } = params;
 
-  if (blobHead == '') {
-    headError.add('blobHead');
-  }
-  if (bodyStyle == '') {
-    headError.add('bodyStyle');
-  }
-  if (mediaStyle == '') {
-    headError.add('mediaStyle');
-  }
-  if (style == '') {
-    headError.add('style');
-  }
-  if (style2 == '') {
-    headError.add('style2');
-  }
-  if (font1 == '') {
-    headError.add('font1');
-  }
-  if (font2 == '') {
-    headError.add('font2');
-  }
-  if (meta == '') {
-    headError.add('meta');
-  }
-  if (ifStyle == '') {
-    headError.add('ifStyle');
-  }
-  if (title == '') {
-    headError.add('title');
-  }
+  ow(blobHead, ow.string.not.empty);
+  ow(bodyStyle, ow.string.not.empty);
+
+  ow(mediaStyle, ow.string.not.empty);
+  
+  ow(style, ow.string.not.empty);
+  ow(style2, ow.string.not.empty);
+
+  ow(font1, ow.string.not.empty);
+  ow(font2, ow.string.not.empty);
+  
+  ow(meta, ow.string.not.empty);
+  
+  ow(ifStyle, ow.string.not.empty);
+  ow(title, ow.string.not.empty);
+  
 }
 
 // headComponent 

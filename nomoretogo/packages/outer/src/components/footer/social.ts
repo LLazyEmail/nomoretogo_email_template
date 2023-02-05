@@ -19,6 +19,9 @@ const SocialPanelComponent  = (socials) => {
   socials.map(({ href, src }) => {
 
 
+    ow(href, ow.string.not.empty);
+    ow(src, ow.string.not.empty);
+
     // if (href == '') {
     //   error.add('No href');
     // }
