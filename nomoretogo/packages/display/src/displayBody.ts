@@ -1,6 +1,6 @@
 import { bodyComponent } from 'outer';
 
-import createComponent from './createComponentUniversal';
+import createComponent from '../old/createComponentUniversal.t-s';
 
 
 

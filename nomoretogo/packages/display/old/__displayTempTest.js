@@ -1,4 +1,4 @@
-import createComponent from './createComponentUniversal';
+import createComponent from './createComponentUniversal.t-s';
 
 import {
   contentButton,

@@ -1,6 +1,6 @@
 // Create Main display
 // import ow from 'ow';
-import createComponent from './createComponentUniversal';
+import createComponent from '../createComponentUniversal';
 import {mainComponent} from 'inner';
 
 

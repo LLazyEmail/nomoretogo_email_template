@@ -4,7 +4,7 @@ import { footerComponent, amazonFreshBlock, supportComponent } from 'outer';
 
 import { separatorComponent } from 'nmtg-typo';
 import Factory from './factory';
-import createComponent from './createComponentUniversal';
+import createComponent from '../createComponentUniversal';
 
 import { footerData, unsubscribe } from '../config';
 
