@@ -1,6 +1,6 @@
 
 // HEAD
-
+import ow from 'ow';
 // Create head component
 import Errors from '../Errors';
 

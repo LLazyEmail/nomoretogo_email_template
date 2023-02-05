@@ -1,6 +1,6 @@
 // Create head component
 import Errors from './Errors';
-
+import ow from 'ow';
 // TODO it looks strange
 const headError = new Errors('headComponent');
 

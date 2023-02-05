@@ -1,3 +1,5 @@
+import ow from 'ow';
+
 const mainComponent = (params) => {
     if (!params) {
       throw new Error('no Sub Components was passed');

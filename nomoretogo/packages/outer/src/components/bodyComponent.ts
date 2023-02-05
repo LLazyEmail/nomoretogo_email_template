@@ -1,6 +1,8 @@
 import Errors from './Errors';
 const error = new Errors('bodyComponent');
 
+import ow from 'ow';
+
 const bodyComponent = (bodyContent:string, headerBlock:string) => {
   if (bodyContent == '') {
     error.add('bodyContent');

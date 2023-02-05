@@ -1,18 +1,22 @@
-import Errors from './Errors';
-// const error = new Errors('footerComponent');
-
 // TODO add linkComponent
 // TODO add image
 
 // import {
+  // linkComponent,
+  // imageComponent,
+  // imageLink
 //   paragraphComponent
 // } from 'typo';
 
+import ow from 'ow';
+
+// import Errors from './Errors';
+// const error = new Errors('footerComponent');
 
 const SocialPanelComponent  = (socials) => {
 
   var socialPanel = false;
-  socials.map(({href, src}) => {
+  socials.map(({ href, src }) => {
 
 
     // if (href == '') {

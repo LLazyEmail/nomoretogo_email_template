@@ -3,6 +3,7 @@ import {
   paragraphComponent
 } from 'typo';
 
+import ow from 'ow';
 
 import Errors from './Errors';
 const error = new Errors('footerComponent');
