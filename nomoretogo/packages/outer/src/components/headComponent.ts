@@ -1,6 +1,8 @@
 // Create head component
 import Errors from './Errors';
-import ow from 'ow';
+// import ow from 'ow';
+
+import { pre_tags, post_tags } from './head/tags';
 // TODO it looks strange
 const headError = new Errors('headComponent');
 
@@ -8,36 +10,31 @@ function createHeadComponent(params:any) {
   
   const {
     blobHead,
-    bodyStyle,
-    font1,
-    font2,
-    meta,
-    ifStyle,
-    mediaStyle,
-    style,
-    style2,
+    // bodyStyle,
+    // font1,
+    // font2,
+    // meta,
+    // ifStyle,
+    // mediaStyle,
+    // style,
+    // style2,
+    //------
     title,
   } = params;
 
   return `<head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <!--[if !mso]><!--><!--[if gte mso 9]><xml><o:OfficeDocumentsettings><o:AllowPNG/><o:PixelsPerInch>96<o:PixelsPerInch></o:OfficeDocumentsettings></xml><![endif]--><!--<![endif]-->
-    ${meta}
-    ${font1}
-    ${ifStyle}
-    ${style}
-    ${bodyStyle}
-    ${mediaStyle}
+    ${pre_tags()}
     <title>${title}</title>
     <meta name="robots" content="noindex, nofollow">
-    ${style2}
-    ${font2}
+    ${post_tags()}
   </head>`;
   // ${blobHead}
 }
 
 
-// TODO migrate some errors away 
+// TODO replace with ow and simplify this logic
 // we are throwing an error with the same constant 10 times.
 function searchForErrors(params:any) {
   // const error = new Errors('headComponent');
@@ -93,3 +90,19 @@ const headComponent = (subComponent:string) => {
 };
 
 export default headComponent;
+
+
+// return `<head>
+// <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+//   <!--[if !mso]><!--><!--[if gte mso 9]><xml><o:OfficeDocumentsettings><o:AllowPNG/><o:PixelsPerInch>96<o:PixelsPerInch></o:OfficeDocumentsettings></xml><![endif]--><!--<![endif]-->
+//   ${meta}
+//   ${font1}
+//   ${ifStyle}
+//   ${style}
+//   ${bodyStyle}
+//   ${mediaStyle}
+//   <title>${title}</title>
+//   <meta name="robots" content="noindex, nofollow">
+//   ${style2}
+//   ${font2}
+// </head>`;

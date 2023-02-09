@@ -2759,6 +2759,7 @@
   "version" "2.0.0"
   dependencies:
     "nmtg-typo" "*"
+    "ow" "^1.1.1"
     "typo" "*"
 
 "ow@^1.1.1":
