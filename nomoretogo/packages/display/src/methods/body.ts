@@ -5,6 +5,10 @@ import { bodyComponent } from 'outer';
 
 
 
+import RecipesHTMLString from './recipes';
+
+
+
 
 
 // import contentContainer from ''

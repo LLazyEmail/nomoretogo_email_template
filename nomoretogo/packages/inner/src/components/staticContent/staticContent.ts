@@ -1,7 +1,7 @@
 import { 
   separatorComponent, 
   buttonComponent 
-} from 'nmtg-typo' ;
+} from 'nmtg-typo';
 
 import recipeComponent from '../recipe/recipe';
 import subtitle from '../content/subtitle';
@@ -17,7 +17,7 @@ import instructionContainerStatic from '../instruction/containerStatic';
 
 
 
-  const StaticComponent = (params) => {
+  const StaticContentComponent = (params) => {
     // distructure params
     const {
       contentTitleTextParams,
@@ -29,7 +29,7 @@ import instructionContainerStatic from '../instruction/containerStatic';
     } = params;
   
     // block 1
-    const contentTitleTextRes = '<!--  contentTitleTextRes -->';
+    // const contentTitleTextRes = '<!--  contentTitleTextRes -->';
     // const contentTitleTextRes = titleTextMainBlock(contentTitleTextParams);
 
     // const contentSubTitleTextRes = subtitle(contentSubTitleParams);
@@ -41,6 +41,8 @@ import instructionContainerStatic from '../instruction/containerStatic';
     // const text =
     //   contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
   
+    const text = '<!--  TEXT -->';
+
     // block 2
     var imagesAll = contentRecipeParams.map((params) => {
       return recipeComponent(params);
@@ -63,6 +65,6 @@ import instructionContainerStatic from '../instruction/containerStatic';
     
   };
   
-  export default StaticComponent;
+  export default StaticContentComponent;
 
   

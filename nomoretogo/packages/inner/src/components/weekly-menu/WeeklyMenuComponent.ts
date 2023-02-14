@@ -1,7 +1,9 @@
 import {
-  buttonComponent,
-  separatorComponent,
-} from 'typo';
+  // buttonComponent,
+  separatorComponent
+} from 'nmtg-typo';
+
+import { buttonComponent } from 'typo';
 
 import weeklyMenuButtonBlock from './WeeklyMenuButtonBlock';
 
@@ -10,10 +12,10 @@ import recipesContainerComponent from '../recipe';
 
 
 // TODO update this component. we can use TEXT and RecipesSection as separate parts
-const WeeklyMenuComponent = (recipes, button) => {
+const WeeklyMenuContainerComponent = (recipes, buttonArr) => {
 
     // weekly menu button
-    const buttonHTML = buttonComponent(button);
+    const buttonHTML = buttonComponent(buttonArr);
   
     const weeklyMenuButtonHTML = weeklyMenuButtonBlock(buttonHTML);
     
@@ -33,4 +35,4 @@ const WeeklyMenuComponent = (recipes, button) => {
   
 }
 
-export default WeeklyMenuComponent;
+export default WeeklyMenuContainerComponent;

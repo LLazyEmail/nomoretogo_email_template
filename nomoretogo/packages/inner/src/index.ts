@@ -21,9 +21,13 @@ import lineBlock from './components/lineBlock';
 
 //----------------------
 // removing other components related to recipes
+// remove later as we have weekly menu
 import recipesContainerComponent from './components/recipe';
 
-import StaticComponent from './components/staticContent/staticContent';
+
+import WeeklyMenuContainerComponent from './components/weekly-menu/WeeklyMenuComponent';
+
+import StaticContentComponent from './components/staticContent/staticContent';
 
 //----------------------
 export {
@@ -42,11 +46,11 @@ export {
   instructionContainerStatic,
   //------------
   recipesContainerComponent,
-
+  WeeklyMenuContainerComponent,
   // instructionTitle,
   // instructionText,
   lineBlock,
   //----------
-  StaticComponent
+  StaticContentComponent
 };
 

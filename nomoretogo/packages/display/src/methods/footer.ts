@@ -3,9 +3,13 @@ import { footerComponent, amazonFreshBlock, supportComponent, SocialPanelCompone
 
 import { separatorComponent } from 'nmtg-typo';
 
+
+
 import { footerData, unsubscribe } from '../config';
 
 const { socialsLinksParams, imagePath, title, params } = footerData;
+
+
 
 
 

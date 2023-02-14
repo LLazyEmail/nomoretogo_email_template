@@ -2,6 +2,9 @@
 import createText from "./text";
 import createTitle from "./title";
 
+
+
+
 // it was a quick solution, as it's part of static content 
 // that we only needed for testing purposes
 const instructionsString = (params) => {

@@ -1,8 +1,8 @@
-import { recipesSectionComponent } from 'inner';
+import { recipesContainerComponent } from 'inner';
 
 import { recipes } from '../config';
 
-var RecipesHTMLString = recipesSectionComponent(recipes);
+var RecipesHTMLString = recipesContainerComponent(recipes);
 
 
 if (!RecipesHTMLString) {

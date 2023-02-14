@@ -83,6 +83,7 @@ const recipes = [
 // Not sure if i want to keep this setting here right now
 // I think it must be moved in hands of generator, as it's purely content matter
 // Instructions
+
 // const instructionComponentParams = {
 //   title: 'Ingredients',
 //   text: `Saffron: Gives traditional Tandoori its famous yellow coloring. 

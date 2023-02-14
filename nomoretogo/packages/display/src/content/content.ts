@@ -1,7 +1,13 @@
-import StaticComponent from 'inner';
+import { StaticContentComponent }  from 'inner';
+
+
+import RecipesHTMLString from './recipes';
+
 
 // import recipesSectionComponent from '../components/recipesSectionComponent';
-import { recipes } from '../config';
+// import { recipes } from '../config';
+
+
 
 
 // This thing is for static content
@@ -29,6 +35,9 @@ const TextDescriptionParams = {
 };
 
 
+
+
+
 // TODO rename to Weekly Menu button and move to config file
 const buttonParams = {
   id: '04-22-2021',
@@ -40,14 +49,19 @@ const buttonParams = {
 // var result = null;
 // try {
 
-  const contentHTMLString = StaticComponent({
+
+
+
+
+  const contentHTMLString = StaticContentComponent({
     TitleTextParams,
     SubTitleParams,
     TextDescriptionParams,
 
 
 
-    // TODO Do we need to pass recipes inside Static component or maybe we can move it out here?
+    // TODO Do we need to pass recipes inside Static component 
+    // or maybe we can move it out here?
     recipes,
     buttonParams,
 
