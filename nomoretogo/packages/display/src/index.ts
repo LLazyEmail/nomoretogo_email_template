@@ -1,25 +1,14 @@
-import HeadString from './
-src/display/displayHead';
+import headHTMLString from './methods/head';
 
-import contentString from '../src/display/displayContent';
+import contentHTMLString from './content/content';
 
-import FooterString from './display/displayFooter';
+import footerHTMLString from './methods/footer';
 
-import BodyComponentString from '../src/display/displayBodyComponent';
+import BodyHTMLString from './methods/body';
 
-import { MainHTMLTemplate } from './display/displayMain';
-
-export {
-    
-}
+import MainHTMLTemplate  from './display/displayMain';
 
 
-import HeadString from '../src/display/displayHead';
-import contentString from '../src/display/displayContent';
-import FooterString from '../src/display/displayFooter';
-import BodyComponentString from '../src/display/displayBodyComponent';
-
-import { MainHTMLTemplate } from '../src/display/displayMain';
 
 export {
     MainHTMLTemplate

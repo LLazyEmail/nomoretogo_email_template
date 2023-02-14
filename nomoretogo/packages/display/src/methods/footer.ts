@@ -12,7 +12,7 @@ const { socialsLinksParams, imagePath, title, params } = footerData;
 
 /* ******************** CREATE CONTENT START ****************************** */
 var result = null;
-var footerHTMLString = false;
+// var footerHTMLString = false;
 
 
   // first block
@@ -48,10 +48,10 @@ var footerHTMLString = false;
   // footerHTML(settings) ;
 
 
-  footerHTMLString = footerComponent(settings);
+  const footerHTMLString = footerComponent(settings);
   // footerHTMLString = createComponent(footerComponent, settings);
 
-
+  console.log(footerHTMLString);
 
   result = 
     supportBlock +
@@ -60,3 +60,6 @@ var footerHTMLString = false;
     footerHTMLString;
 
   // console.log(result);
+
+
+  export default footerHTMLString;

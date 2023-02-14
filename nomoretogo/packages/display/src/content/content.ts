@@ -37,13 +37,13 @@ const contentButtonParams = {
 };
 
 
-var result = null;
-try {
+// var result = null;
+// try {
 
 
 
 
-  result = StaticComponent({
+  const contentHTMLString = StaticComponent({
     contentTitleTextParams,
     contentSubTitleParams,
     contentTextDescriptionParams,
@@ -60,12 +60,8 @@ try {
 
 
 
-  // console.log(result);
+  console.log(contentHTMLString);
+
+export default contentHTMLString;
 
 
-
-} catch (error) {
-  console.log(error.message);
-}
-
-export default result;
