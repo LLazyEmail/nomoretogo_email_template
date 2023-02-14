@@ -1,4 +1,4 @@
-import buttonBlock from '../content/buttonBlock';
+import { separatorComponent, buttonComponent } from 'nmtg-typo' ;
 
 import recipeComponent from '../recipe/recipe';
 import subtitle from '../content/subtitle';
@@ -6,18 +6,8 @@ import recipeRowBlock from '../recipe/row';
 
 import textDescriptionMainBlock from '../content/description';
 import titleTextMainBlock from '../content/title';
+import buttonBlock from '../content/buttonBlock';
 
-import {
-    contentButtonBlock,
-    // recipeComponent,
-    // contentSubTitleText,
-    // recipeRowBlock,
-    // contentTextDescription,
-    contentTitleText,
-  } from 'nmtg-template-mailerlite-inner';
-  
-
-import { separatorComponent, buttonComponent } from 'nmtg-typo' ;
 
 
   const StaticComponent = (params) => {
@@ -38,7 +28,7 @@ import { separatorComponent, buttonComponent } from 'nmtg-typo' ;
     const contentTextDescriptionRes = textDescriptionMainBlock(
       contentTextDescriptionParams
     );
-    
+
     const text =
       contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
   
@@ -52,7 +42,8 @@ import { separatorComponent, buttonComponent } from 'nmtg-typo' ;
     const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
   
     const buttonComponentRes = buttonComponent(contentButtonParams);
-    const contentButtonBlockRes = contentButtonBlock(buttonComponentRes);
+    const contentButtonBlockRes = buttonBlock(buttonComponentRes);
+
     const separator = separatorComponent();
     const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
   
