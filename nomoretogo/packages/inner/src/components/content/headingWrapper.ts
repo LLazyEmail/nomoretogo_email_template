@@ -33,7 +33,4 @@ const titleTextMainBlock = (params) => {
   </tr>
   </tbody></table>`;
 };
-
-export default function (params) {
-  return titleTextMainBlock(params);
-}
+export default titleTextMainBlock;

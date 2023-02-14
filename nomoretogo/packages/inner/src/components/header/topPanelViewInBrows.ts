@@ -26,11 +26,13 @@ const topPanelViewInBrows = (link:string) => {
 };
 // Top panel end
 
-export default function (link) {
-  const error = new Errors('topPanelViewInBrows');
+export default topPanelViewInBrows
 
-  if (link == '') {
-    error.add('No link');
-  }
-  return topPanelViewInBrows(link);
-}
+// export default function (link) {
+//   const error = new Errors('topPanelViewInBrows');
+
+//   if (link == '') {
+//     error.add('No link');
+//   }
+//   return topPanelViewInBrows(link);
+// }

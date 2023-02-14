@@ -1,6 +1,8 @@
 ts-node your-script.ts
 
 
+i was forced to remove factory and createComponentUniversal, as it messing up with our new setup
+
 or 
 
 ```

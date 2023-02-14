@@ -2,19 +2,19 @@
 // While this part is mostly done, i decide to switch to a static content, as it's not necessary for us
 // it's a pure content that must be easily handled by markdown generator
 
-import Errors from '../Errors';
+// import Errors from '../Errors';
 import {
   strongComponent,
   paragraphComponent,
 } from 'typo';
 
-
+import instructionsBlock from './block';
 
 
 
 const instructionMainBlockOLD = (params) => {
 
-  const instructions = createInstructionsBlock(params)
+  const instructionsHTML = instructionsBlock(params);
 
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
     <tbody><tr>
@@ -38,7 +38,7 @@ const instructionMainBlockOLD = (params) => {
                           <p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;"><strong></strong></p>
 
 
-                          ${instructions}      
+                          ${instructionsHTML}      
 
                         </td>
                       </tr>

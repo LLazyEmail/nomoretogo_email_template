@@ -1,4 +1,4 @@
-import createComponent from '../../createComponentUniversal';
+// import createComponent from '../../createComponentUniversal';
 
 //------------------
 
@@ -15,13 +15,18 @@ const TopPanelSection = () => {
 
   const ViewInBrowserLinkHTML = html_view_in_browser(viewInBrowserLinkParams);
 
+  // topPanelViewInBrows
+
   // Top panel view in brows
 
   // const topPanel = '';
-  const topPanel = createComponent(
-    topPanelViewInBrows,
-    ViewInBrowserLinkHTML
-  );
+
+  const topPanel = topPanelViewInBrows(ViewInBrowserLinkHTML);
+
+  // const topPanel = createComponent(
+  //   topPanelViewInBrows,
+  //   ViewInBrowserLinkHTML
+  // );
 
   console.log(topPanel);
   return topPanel;

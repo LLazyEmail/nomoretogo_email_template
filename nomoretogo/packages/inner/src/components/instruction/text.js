@@ -1,23 +1,12 @@
 // Component instruction text
-import Errors from '../Errors';
+// import Errors from '../Errors';
 
 import {
-  strongComponent,
+  // strongComponent,
   paragraphComponent,
 } from 'typo';
-const instructionTextMainBlock = (instructionText) => {
-  return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${instructionText}</p>`;
-};
 
-export default function (instructionText) {
-  const error = new Errors('instructionText');
 
-  if (instructionText == '') {
-    error.add('No text');
-  }
-
-  return instructionTextMainBlock(instructionText);
-}
 // replacing 
 // return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${text}</p>`;
 const createText = (text) => {
@@ -31,3 +20,5 @@ const createText = (text) => {
   return paragraphComponent(config);
 
 };
+
+export default createText;

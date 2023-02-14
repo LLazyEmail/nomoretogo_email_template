@@ -1,5 +1,5 @@
 // Component content discription
-import Errors from '../Errors';
+// import Errors from '../Errors';
 
 const textDescriptionMainBlock = (top, bottom) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
@@ -69,17 +69,19 @@ const textDescriptionMainBlock = (top, bottom) => {
 </tbody></table>`;
 };
 
-export default function (params) {
-  const { textTop, textBottom } = params;
-  const error = new Errors('contentTextDescription');
+export default textDescriptionMainBlock;
 
-  if (textTop == '') {
-    error.add('No textTop');
-  }
+// export default function (params) {
+//   const { textTop, textBottom } = params;
+//   const error = new Errors('contentTextDescription');
 
-  if (textBottom == '') {
-    error.add('No textBottom');
-  }
+//   if (textTop == '') {
+//     error.add('No textTop');
+//   }
 
-  return textDescriptionMainBlock(textTop, textBottom);
-}
+//   if (textBottom == '') {
+//     error.add('No textBottom');
+//   }
+
+//   return textDescriptionMainBlock(textTop, textBottom);
+// }

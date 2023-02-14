@@ -1,6 +1,6 @@
 // we need to move some stuff into one file
 // 
-import createComponent from '../../createComponentUniversal';
+// import createComponent from '../../createComponentUniversal';
 
 import viewInBrowserLink from './viewBrowserLink';
 
@@ -8,10 +8,14 @@ import viewInBrowserLink from './viewBrowserLink';
 const html_view_in_browser = (params) => {
 
   // Link view in brows
-  const htmlString = createComponent(
-    viewInBrowserLink,
-    params
-  );
+
+  const htmlString = viewInBrowserLink(params);
+
+
+  // const htmlString = createComponent(
+  //   viewInBrowserLink,
+  //   params
+  // );
 
   return htmlString;
 
