@@ -1,15 +1,9 @@
 // Footer 
-
-import { footerComponent, amazonFreshBlock, supportComponent } from 'outer';
-
-// import { SocialPanelComponent } from 'nmtg-template-mailerlite-inner'; 
+import { footerComponent, amazonFreshBlock, supportComponent, SocialPanelComponent } from 'outer';
 
 import { separatorComponent } from 'nmtg-typo';
-// import Factory from './factory';
-// import createComponent from './createComponentUniversal';
 
-import { footerData, unsubscribe } from 'outer/src/config';
-
+import { footerData, unsubscribe } from '../config';
 
 const { socialsLinksParams, imagePath, title, params } = footerData;
 
@@ -34,6 +28,7 @@ var footerHTMLString = false;
 
   const socialPanel = ' xxxx social panel ';
   // const socialPanel = SocialPanelComponent(socialsLinksParams);
+
   // const socialPanel = createComponent(SocialPanelComponent, socialsLinksParams) ;
 
   
