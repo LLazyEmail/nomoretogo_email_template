@@ -18,6 +18,8 @@ import lineBlock from './components/lineBlock';
 // removing other components related to recipes
 import recipesContainerComponent from './components/recipe';
 
+import StaticComponent from './components/staticContent/staticContent';
+
 //----------------------
 export {
 
@@ -33,5 +35,7 @@ export {
   instructionTitle,
   instructionText,
   lineBlock,
+  //----------
+  StaticComponent
 };
 

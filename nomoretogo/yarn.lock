@@ -1898,6 +1898,11 @@ inherits@2, inherits@^2.0.3, inherits@^2.0.4:
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
+inner@*:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/inner/-/inner-0.2.0.tgz#ec746db1906837f4c6c647e50241ba614c27d8c9"
+  integrity sha512-ihjlPM2tuxBxdFVwjFisf1A6YJVc6vVBtOgIPpWVsrnqCoXtjXWDIGDMMYf0a27Nksdg6LvMsSppWdZWc1qVkg==
+
 interpret@^1.0.0:
   version "1.4.0"
   resolved "https://registry.npmjs.org/interpret/-/interpret-1.4.0.tgz"

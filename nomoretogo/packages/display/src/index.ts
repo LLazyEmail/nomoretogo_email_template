@@ -6,8 +6,7 @@ import footerHTMLString from './methods/footer';
 
 import BodyHTMLString from './methods/body';
 
-import MainHTMLTemplate  from './display/displayMain';
-
+import MainHTMLTemplate from './methods/main';
 
 
 export {
