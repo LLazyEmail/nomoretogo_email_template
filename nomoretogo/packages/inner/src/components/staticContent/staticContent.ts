@@ -1,18 +1,12 @@
-// Create wrap component content
-// import Errors from '../Errors';
+import buttonBlock from '../content/buttonBlock';
 
-////////////// VARIANT ONE START ///////////////////////////////////
-// export default function (content) {
-//   const error = new Errors('contentComponent');
-//   if (content == '') {
-//     error.add('No content');
-//   }
+import recipeComponent from '../recipe/recipe';
+import subtitle from '../content/subtitle';
+import recipeRowBlock from '../recipe/row';
 
-//   return `${content}`;
-// }
-////////////// VARIANT ONE END /////////////////////////////////////
+import textDescriptionMainBlock from '../content/description';
+import titleTextMainBlock from '../content/title';
 
-////////////// VARIANT TWO START ///////////////////////////////////
 import {
     contentButtonBlock,
     recipeComponent,
@@ -22,11 +16,10 @@ import {
     contentTitleText,
   } from 'nmtg-template-mailerlite-inner';
   
-  import {
-    buttonComponent,
-    separatorComponent,
-  } from 'nmtg-template-mailerlite-typography';
-  
+
+import { separatorComponent, buttonComponent } from 'nmtg-typo' ;
+
+
   const StaticComponent = (params) => {
     // distructure params
     const {
@@ -66,8 +59,6 @@ import {
     return allContent;
   };
   
-  // export default function (params) {
-  //   return mainStaticComponent(params);
-  // }
-  ////////////// VARIANT TWO END /////////////////////////////////////
+  export default StaticComponent;
+
   
