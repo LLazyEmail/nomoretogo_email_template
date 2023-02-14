@@ -1,6 +1,3 @@
-// Get components
-
-
 import { pre_tags, post_tags } from './components/head/tags';
 
 //------------
@@ -17,11 +14,6 @@ export {
   headComponent,
   bodyComponent,
   //------
-  // createUnsubscribe,
-  // supportComponent,
-  // amazonFreshBlock,
   pre_tags,
   post_tags,
-  // ------
-  // contentMainTableWrap,
 };

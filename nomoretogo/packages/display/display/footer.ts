@@ -8,7 +8,7 @@ import { separatorComponent } from 'nmtg-typo';
 // import Factory from './factory';
 // import createComponent from './createComponentUniversal';
 
-import { footerData, unsubscribe } from '../config';
+import { footerData, unsubscribe } from 'outer/src/config';
 
 
 const { socialsLinksParams, imagePath, title, params } = footerData;

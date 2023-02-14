@@ -1,6 +1,6 @@
 // Body
 // import ow from 'ow';
-import bodyComponent from '../components/bodyComponent';
+import bodyComponent from 'outer/src/components/bodyComponent';
 
 
 // import createComponent from './createComponentUniversal';
