@@ -1,12 +1,12 @@
 // Create head component
 
-import ow from 'ow';
+// import ow from 'ow';
 
 import { pre_tags, post_tags } from './head/tags';
 // TODO it looks strange
 // const headError = new Errors('headComponent');
 
-function createHeadComponent(params:any) {
+function headComponent(params:any) {
   
   const {
     blobHead,
@@ -36,53 +36,44 @@ function createHeadComponent(params:any) {
 
 // TODO migrate some errors away 
 // we are throwing an error with the same constant 10 times.
-function searchForErrors(params:any) {
-  // const error = new Errors('headComponent');
-  const {
-    blobHead,
-    bodyStyle,
-    font1,
-    font2,
-    meta,
-    ifStyle,
-    mediaStyle,
-    style,
-    style2,
-    title,
-  } = params;
+// function searchForErrors(params:any) {
+//   // const error = new Errors('headComponent');
+//   const {
+//     blobHead,
+//     bodyStyle,
+//     font1,
+//     font2,
+//     meta,
+//     ifStyle,
+//     mediaStyle,
+//     style,
+//     style2,
+//     title,
+//   } = params;
 
-  // if (blobHead == '') {
-  //   headError.add('blobHead');
-  // }
-  // if (bodyStyle == '') {
-  //   headError.add('bodyStyle');
-  // }
- 
- 
+//   ow(blobHead, ow.string.not.empty);
+//   ow(bodyStyle, ow.string.not.empty);
 
-  ow(blobHead, ow.string.not.empty);
-  ow(bodyStyle, ow.string.not.empty);
-
-  ow(mediaStyle, ow.string.not.empty);
+//   ow(mediaStyle, ow.string.not.empty);
   
-  ow(style, ow.string.not.empty);
-  ow(style2, ow.string.not.empty);
+//   ow(style, ow.string.not.empty);
+//   ow(style2, ow.string.not.empty);
 
-  ow(font1, ow.string.not.empty);
-  ow(font2, ow.string.not.empty);
+//   ow(font1, ow.string.not.empty);
+//   ow(font2, ow.string.not.empty);
   
-  ow(meta, ow.string.not.empty);
+//   ow(meta, ow.string.not.empty);
   
-  ow(ifStyle, ow.string.not.empty);
-  ow(title, ow.string.not.empty);
+//   ow(ifStyle, ow.string.not.empty);
+//   ow(title, ow.string.not.empty);
 
-}
+// }
 
 
-const headComponent = (subComponent:string) => {
-  searchForErrors(subComponent);
-  return createHeadComponent(subComponent);
-};
+// const headComponent = (subComponent:string) => {
+//   searchForErrors(subComponent);
+//   return createHeadComponent(subComponent);
+// };
 
 export default headComponent;
 

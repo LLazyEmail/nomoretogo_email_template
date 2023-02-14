@@ -14,7 +14,7 @@ import {
 
 import createComponent from './createComponentUniversal';
 
-import { titleHead } from '../config';
+import { titleHead } from '../src/config';
 /* ******************** DATA START **************************************** */
 // Head params
 const HeadParams = {
