@@ -1,7 +1,7 @@
 // Get components
 
 
-import { pre_tags, post_tags } from './components/headTagsIndex';
+import { pre_tags, post_tags } from './components/head/tags';
 
 //------------
 import footerComponent from './components/footerComponent';
