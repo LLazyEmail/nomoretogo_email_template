@@ -9,10 +9,10 @@ import titleTextMainBlock from '../content/title';
 
 import {
     contentButtonBlock,
-    recipeComponent,
-    contentSubTitleText,
-    recipeRowBlock,
-    contentTextDescription,
+    // recipeComponent,
+    // contentSubTitleText,
+    // recipeRowBlock,
+    // contentTextDescription,
     contentTitleText,
   } from 'nmtg-template-mailerlite-inner';
   
@@ -32,11 +32,13 @@ import { separatorComponent, buttonComponent } from 'nmtg-typo' ;
     } = params;
   
     // block 1
-    const contentTitleTextRes = contentTitleText(contentTitleTextParams);
-    const contentSubTitleTextRes = contentSubTitleText(contentSubTitleParams);
-    const contentTextDescriptionRes = contentTextDescription(
+    const contentTitleTextRes = titleTextMainBlock(contentTitleTextParams);
+
+    const contentSubTitleTextRes = subtitle(contentSubTitleParams);
+    const contentTextDescriptionRes = textDescriptionMainBlock(
       contentTextDescriptionParams
     );
+    
     const text =
       contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
   
