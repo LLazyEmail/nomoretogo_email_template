@@ -1,10 +1,15 @@
 // Body
 // import ow from 'ow';
-import bodyComponent from 'outer/src/components/bodyComponent';
+
+import { bodyComponent } from 'outer';
 
 
-// import createComponent from './createComponentUniversal';
 
+
+
+// import contentContainer from ''
+// import contentHTML from ''
+// import instructionHTML from ''
 
 // import displayContentMainTableWrap from '../components/displayContentMainTableWrap';
 // import displayContentHTML from './displayContent';
@@ -15,14 +20,14 @@ const displayContentMainTableWrap = '';
 const displayContentHTML = '';
 const displayInstruction = '';
 
-/* ******************** DATA START **************************************** */
+
 // Body params
 const params = `
 ${displayContentMainTableWrap}
 ${displayContentHTML}
 ${displayInstruction}
 `;
-/* ******************** DATA END **************************************** */
+
 
 /* ******************** CREATE CONTENT START ****************************** */
 
