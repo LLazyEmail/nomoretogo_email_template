@@ -11,6 +11,7 @@ import {
   headComponent,
 } from 'nmtg-template-mailerlite-outertemplate';
 
+
 import createComponent from './createComponentUniversal';
 
 import { titleHead } from '../config';
