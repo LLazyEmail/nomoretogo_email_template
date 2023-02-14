@@ -1,5 +1,5 @@
 import { imageComponent } from 'typo';
-import Errors from './Errors';
+import Errors from '../Errors';
 
 const createImage = (src:string) => {
   const imgParams = `src="${src}" border="0" alt="" width="200" style="display: block;"`;
@@ -18,6 +18,8 @@ const amazonFreshMainBlock = (src:string) => {
   }
 
 
+  const imageHTML = createImage(src);
+
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -35,7 +37,7 @@ const amazonFreshMainBlock = (src:string) => {
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
                       <td align="center" id="imageBlock-40">
-                        ${createImage(src)}
+                        ${imageHTML}
                       </td>
                     </tr>
                   </tbody></table>
