@@ -1,6 +1,6 @@
 // @TODO change names here, no need to have them so long.
 
-import contentButtonBlock from './buttonBlock';
+// import contentButtonBlock from './buttonBlock';
 
 import contentSubTitleText from './subtitle';
 
@@ -8,5 +8,5 @@ import contentTextDescription from './description';
 import contentTitleText from './title';
 
 export {
-    contentButtonBlock, contentSubTitleText, contentTextDescription, contentTitleText
+    contentSubTitleText, contentTextDescription, contentTitleText
 }

@@ -6,7 +6,7 @@ import recipeRowBlock from '../recipe/row';
 
 import textDescriptionMainBlock from '../content/description';
 import titleTextMainBlock from '../content/title';
-import buttonBlock from '../content/buttonBlock';
+import buttonBlock from '../weekly-menu/WeeklyMenuButtonBlock';
 
 
 

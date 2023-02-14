@@ -1,7 +1,7 @@
 // Content button block
-import Errors from '../Errors';
+// import Errors from '../Errors';
 
-const buttonBlockMainBlock = (params:string) => {
+const weeklyMenuButtonBlock = (buttonHTML:string) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -27,7 +27,7 @@ const buttonBlockMainBlock = (params:string) => {
                                   <w:anchorlock/>
                                   <center>
                                   <![endif]-->
-                                  ${params}
+                                  ${buttonHTML}
                                   <!--[if mso]>
                                   </center>
                                 </v:roundrect>
@@ -54,12 +54,14 @@ const buttonBlockMainBlock = (params:string) => {
   </tbody></table>`;
 };
 
-export default function (params) {
-  const error = new Errors('contentButtonBlock');
+export default weeklyMenuButtonBlock;
 
-  if (params == '') {
-    error.add('No params/empty params');
-  }
+// export default function (params) {
+//   const error = new Errors('contentButtonBlock');
 
-  return buttonBlockMainBlock(params);
-}
+//   if (params == '') {
+//     error.add('No params/empty params');
+//   }
+
+//   return buttonBlockMainBlock(params);
+// }
