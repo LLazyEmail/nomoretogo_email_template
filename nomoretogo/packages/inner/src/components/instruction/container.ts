@@ -8,13 +8,13 @@ import {
   paragraphComponent,
 } from 'typo';
 
-import instructionsBlock from './block';
+import instructionsString from './string';
 
 
 
-const instructionMainBlockOLD = (params) => {
+const instructionContainerOLD = (params) => {
 
-  const instructionsHTML = instructionsBlock(params);
+  const instructionsHTML = instructionsString(params);
 
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
     <tbody><tr>
@@ -84,7 +84,7 @@ const instructionMainBlockOLD = (params) => {
 // }
 
 
-const instructionMainBlock = () => {
+const instructionContainerComponent = () => {
   
   
 return ` <!-- -->
@@ -133,4 +133,4 @@ return ` <!-- -->
 <!-- -->`;
 }
 
-export default instructionMainBlock;
+export default instructionContainerComponent;

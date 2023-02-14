@@ -3,13 +3,20 @@ import { TopPanelSection, contentMainTableWrap } from './components/header/index
 
 
 import {
-  contentButtonBlock, contentSubTitleText, contentTextDescription, contentTitleText
+   contentSubTitleText, contentTextDescription, contentTitleText
 } from './components/content';
 
 //---------------------------
 
-import instructionTitle from './components/instruction/title';
-import instructionText from './components/instruction/text';
+// import instructionTitle from './components/instruction/title';
+// import instructionText from './components/instruction/text';
+
+
+import instructionContainerComponent from './components/instruction/container';
+import instructionContainerStatic from './components/instruction/container-static';
+
+
+
 //--------------------------
 import lineBlock from './components/lineBlock';
 
@@ -26,14 +33,20 @@ export {
   TopPanelSection, contentMainTableWrap, 
   //-----------------
 
-  contentButtonBlock,
+  // contentButtonBlock,
 
   contentSubTitleText,
 
   contentTextDescription,
   contentTitleText,
-  instructionTitle,
-  instructionText,
+  //--------------------
+  instructionContainerComponent,
+  instructionContainerStatic,
+  //------------
+  recipesContainerComponent,
+
+  // instructionTitle,
+  // instructionText,
   lineBlock,
   //----------
   StaticComponent

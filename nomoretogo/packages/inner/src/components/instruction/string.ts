@@ -4,7 +4,7 @@ import createTitle from "./title";
 
 // it was a quick solution, as it's part of static content 
 // that we only needed for testing purposes
-const instructionsBlock = (params) => {
+const instructionsString = (params) => {
   const { title, text, title2, text2 } = params;
 
 return `
@@ -22,5 +22,5 @@ return `
 
 }
 
-export default instructionsBlock;
+export default instructionsString;
 

@@ -1,4 +1,4 @@
-const instructionMainBlock = () => {
+const instructionContainerStatic = () => {
   
   
 return ` <!-- -->
@@ -47,4 +47,4 @@ return ` <!-- -->
 <!-- -->`;
 }
 
-export default instructionMainBlock;
+export default instructionContainerStatic;

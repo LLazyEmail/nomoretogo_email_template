@@ -1,5 +1,5 @@
 // Component instruction text
-// import Errors from '../Errors';
+
 
 import {
   // strongComponent,
