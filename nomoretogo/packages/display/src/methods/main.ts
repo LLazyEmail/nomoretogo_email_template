@@ -1,0 +1,1 @@
+import { mainComponent } from 'inner';

@@ -1,6 +1,6 @@
-import ow from 'ow';
+// import ow from 'ow';
 
-const mainComponent = (params) => {
+const mainComponent = (params:{head:string, body:string, footer: string}) => {
     if (!params) {
       throw new Error('no Sub Components was passed');
     }
