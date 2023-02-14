@@ -1,4 +1,7 @@
-import { separatorComponent, buttonComponent } from 'nmtg-typo' ;
+import { 
+  separatorComponent, 
+  buttonComponent 
+} from 'nmtg-typo' ;
 
 import recipeComponent from '../recipe/recipe';
 import subtitle from '../content/subtitle';
@@ -7,6 +10,10 @@ import recipeRowBlock from '../recipe/row';
 import textDescriptionMainBlock from '../content/description';
 import titleTextMainBlock from '../content/title';
 import buttonBlock from '../weekly-menu/WeeklyMenuButtonBlock';
+
+
+
+import instructionContainerStatic from '../instruction/containerStatic';
 
 
 
@@ -22,15 +29,17 @@ import buttonBlock from '../weekly-menu/WeeklyMenuButtonBlock';
     } = params;
   
     // block 1
-    const contentTitleTextRes = titleTextMainBlock(contentTitleTextParams);
+    const contentTitleTextRes = '<!--  contentTitleTextRes -->';
+    // const contentTitleTextRes = titleTextMainBlock(contentTitleTextParams);
 
-    const contentSubTitleTextRes = subtitle(contentSubTitleParams);
-    const contentTextDescriptionRes = textDescriptionMainBlock(
-      contentTextDescriptionParams
-    );
+    // const contentSubTitleTextRes = subtitle(contentSubTitleParams);
 
-    const text =
-      contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
+    // const contentTextDescriptionRes = textDescriptionMainBlock(
+    //   contentTextDescriptionParams
+    // );
+
+    // const text =
+    //   contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
   
     // block 2
     var imagesAll = contentRecipeParams.map((params) => {
@@ -47,9 +56,11 @@ import buttonBlock from '../weekly-menu/WeeklyMenuButtonBlock';
     const separator = separatorComponent();
     const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
   
+
     // All content
     const allContent = text + contentAndAfter;
     return allContent;
+    
   };
   
   export default StaticComponent;

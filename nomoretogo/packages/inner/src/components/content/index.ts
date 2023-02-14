@@ -1,6 +1,5 @@
 // @TODO change names here, no need to have them so long.
 
-// import contentButtonBlock from './buttonBlock';
 
 import contentSubTitleText from './subtitle';
 

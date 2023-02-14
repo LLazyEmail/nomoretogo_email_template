@@ -1,7 +1,7 @@
 // Error
 import Errors from '../Errors';
 
-import {  strongComponent } from 'typo';
+import { strongComponent } from 'typo';
 
 // Get title start
 const titleComponent = (title: string) => {

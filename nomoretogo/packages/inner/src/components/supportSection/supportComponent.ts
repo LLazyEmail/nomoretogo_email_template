@@ -22,6 +22,7 @@ const createSupportLink = (href:string, id:string, text:string) => {
     error.add('text');
   }
 
+  //TODO convert attributes into an object.
   const params = {
     attributes: `href="${href}"
     data-link-id: "${id}"

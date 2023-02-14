@@ -1,5 +1,7 @@
 // Header
-import { TopPanelSection, contentMainTableWrap } from './components/header/index';
+import { 
+  TopPanelSection, contentMainTableWrap 
+} from './components/header/index';
 
 
 import {
@@ -8,12 +10,8 @@ import {
 
 //---------------------------
 
-// import instructionTitle from './components/instruction/title';
-// import instructionText from './components/instruction/text';
-
-
 import instructionContainerComponent from './components/instruction/container';
-import instructionContainerStatic from './components/instruction/container-static';
+import instructionContainerStatic from './components/instruction/containerStatic';
 
 
 

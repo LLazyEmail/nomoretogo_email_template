@@ -1,5 +1,5 @@
 import recipeRowBlock from './row';
-import { listToMatrix } from './utils';
+// import { listToMatrix } from './utils';
 
 // block 2
 const createRecipesPanel = (recipes) => {
