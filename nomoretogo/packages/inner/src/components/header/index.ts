@@ -2,4 +2,6 @@ import contentMainTableWrap from './contentMainTableWrap';
 
 import TopPanelSection from './TopPanelSection';
 
-export { TopPanelSection, contentMainTableWrap }
+import tableHeaderBlockLogo from './headerBlockLogo';
+
+export { TopPanelSection, contentMainTableWrap, tableHeaderBlockLogo }

@@ -1,6 +1,6 @@
 // create tableHeaderBlockLogo
 import { pathMainLogo } from '../../config';
-import Errors from '../Errors';
+// import Errors from '../Errors';
 
 import { imageComponent } from 'typo';
 

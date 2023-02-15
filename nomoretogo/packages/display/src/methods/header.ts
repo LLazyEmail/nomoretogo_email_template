@@ -1,5 +1,9 @@
-
-import { TopPanelSection, contentMainTableWrap }  from 'inner'; 
+//TODO add header later into head, also move things as container
+import { 
+  TopPanelSection, 
+  contentMainTableWrap, 
+  tableHeaderBlockLogo
+}  from 'inner'; 
 
 const topPanelHTML = TopPanelSection();
 

@@ -12,19 +12,6 @@ import BodyHTMLString from './body';
 const displayFooterHTML = 'xxx';
 
 
-// const bodyContentParams = `
-  //   ${displayContentMainTableWrap}
-  //   ${displayContent}
-  //   ${displayInstructionHTMLString}
-
-  //   `;
-  
-  
-  // const BodyComponentHTML = createComponent(bodyComponent, bodyContentParams);
-
-  // console.log(BodyComponentHTML);
-  
-
 
 const settings = {
     head: displayHead,

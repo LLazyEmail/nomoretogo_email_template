@@ -4,36 +4,22 @@
 import { bodyComponent } from 'outer';
 
 
+import contentHTMLString from '../content/content'
+import WeeklyMenuHTMLString from '../content/weekly';
 
-import RecipesHTMLString from './recipes';
-
-
-
-
-
-// import contentContainer from ''
-// import contentHTML from ''
-// import instructionHTML from ''
 
 // import displayContentMainTableWrap from '../components/displayContentMainTableWrap';
-// import displayContentHTML from './displayContent';
-// import displayInstruction from './displayInstruction';
-
-
-const displayContentMainTableWrap = '';
-const displayContentHTML = '';
-const displayInstruction = '';
+import headerAndContentHTMLString from './header';
 
 
 // Body params
 const params = `
-${displayContentMainTableWrap}
-${displayContentHTML}
-${displayInstruction}
+${headerAndContentHTMLString}
+${contentHTMLString}
+${WeeklyMenuHTMLString}
+
 `;
 
-
-/* ******************** CREATE CONTENT START ****************************** */
 
 const BodyHTMLString = bodyComponent(params);
   

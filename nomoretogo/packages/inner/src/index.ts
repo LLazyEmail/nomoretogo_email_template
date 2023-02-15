@@ -1,6 +1,6 @@
 // Header
 import { 
-  TopPanelSection, contentMainTableWrap 
+  TopPanelSection, contentMainTableWrap, tableHeaderBlockLogo 
 } from './components/header/index';
 
 
@@ -27,9 +27,9 @@ import WeeklyMenuContainerComponent from './components/weekly-menu/WeeklyMenuCom
 import StaticContentComponent from './components/staticContent/staticContent';
 
 
-import SupportContainerComponent from './components/supportSection/container';
-
 import contentContainer from './components/content/container';
+
+import SupportContainerComponent from './components/supportSection/container';
 
 // import {
 //   contentSubTitleText, contentTextDescription, contentTitleText
@@ -41,6 +41,7 @@ export {
   TopPanelSection,
   
   contentMainTableWrap, 
+  tableHeaderBlockLogo,
   //-----------------
 
   contentContainer,
