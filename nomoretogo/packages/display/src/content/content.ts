@@ -1,4 +1,4 @@
-import { StaticContentComponent, WeeklyMenuContainerComponent }  from 'inner';
+import { StaticContentComponent, contentContainer, WeeklyMenuContainerComponent }  from 'inner';
 
 import RecipesHTMLString from './_recipes';
 

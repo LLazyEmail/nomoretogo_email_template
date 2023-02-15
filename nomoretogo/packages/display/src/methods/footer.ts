@@ -1,10 +1,8 @@
 // Footer 
 import { 
-  footerComponent,  SocialPanelComponent
+  footerComponent,  
+  SocialPanelComponent
 } from 'outer';
-
-import { separatorComponent } from 'nmtg-typo';
-
 
 import supportHTMLString from '../content/support-amazon-fresh'; 
 
@@ -25,8 +23,8 @@ var result = null;
 
 
   // third block
-  const socialPanel = ' xxxx social panel ';
-  // const socialPanel = SocialPanelComponent(socialsLinksParams);
+  // const socialPanel = ' xxxx social panel ';
+  const socialPanel = SocialPanelComponent(socialsLinksParams);
 
   // const socialPanel = createComponent(SocialPanelComponent, socialsLinksParams) ;
 
@@ -46,10 +44,6 @@ var result = null;
   console.log(footerHTMLString);
 
   result = 
-
-    // supportBlock +
-    // amazonFreshBlockHTML + 
-    // separatorComponent() + 
 
     supportHTMLString + 
     footerHTMLString;

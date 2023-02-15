@@ -4,9 +4,7 @@ import {
 } from './components/header/index';
 
 
-import {
-   contentSubTitleText, contentTextDescription, contentTitleText
-} from './components/content';
+
 
 //---------------------------
 
@@ -31,18 +29,23 @@ import StaticContentComponent from './components/staticContent/staticContent';
 
 import SupportContainerComponent from './components/supportSection/container';
 
+import contentContainer from './components/content/container';
+
+// import {
+//   contentSubTitleText, contentTextDescription, contentTitleText
+// } from './components/content';
+
 //----------------------
 export {
 
-  TopPanelSection, contentMainTableWrap, 
+  TopPanelSection,
+  
+  contentMainTableWrap, 
   //-----------------
 
-  // contentButtonBlock,
+  contentContainer,
+  StaticContentComponent,
 
-  contentSubTitleText,
-
-  contentTextDescription,
-  contentTitleText,
   //--------------------
   instructionContainerComponent,
   instructionContainerStatic,
@@ -53,7 +56,6 @@ export {
   // instructionText,
   lineBlock,
   //----------
-  StaticContentComponent,
   SupportContainerComponent
 };
 

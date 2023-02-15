@@ -1,8 +1,8 @@
 import { SupportContainerComponent } from 'inner';
 
-import { imagePath, footerData } from '../config';
+import { footerData } from '../config';
 
-const { params } = footerData;
+const { imagePath, params } = footerData;
 
 const supportHTMLString =  SupportContainerComponent(params, imagePath); 
 

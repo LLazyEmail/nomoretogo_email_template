@@ -5,10 +5,12 @@ import {
 
 import recipeComponent from '../recipe/recipe';
 import subtitle from '../content/subtitle';
+
 import recipeRowBlock from '../recipe/row';
 
 import textDescriptionMainBlock from '../content/description';
 import titleTextMainBlock from '../content/title';
+
 import buttonBlock from '../weekly-menu/WeeklyMenuButtonBlock';
 
 
@@ -28,6 +30,7 @@ import instructionContainerStatic from '../instruction/containerStatic';
       contentButtonParams,
     } = params;
   
+
     // block 1
     // const contentTitleTextRes = '<!--  contentTitleTextRes -->';
     // const contentTitleTextRes = titleTextMainBlock(contentTitleTextParams);
@@ -43,6 +46,8 @@ import instructionContainerStatic from '../instruction/containerStatic';
   
     const text = '<!--  TEXT -->';
 
+
+
     // block 2
     var imagesAll = contentRecipeParams.map((params) => {
       return recipeComponent(params);
@@ -56,6 +61,9 @@ import instructionContainerStatic from '../instruction/containerStatic';
     const contentButtonBlockRes = buttonBlock(buttonComponentRes);
 
     const separator = separatorComponent();
+
+
+    
     const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
   
 
