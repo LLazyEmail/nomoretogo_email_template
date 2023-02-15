@@ -3,15 +3,30 @@ import {
   buttonComponent 
 } from 'nmtg-typo';
 
-import recipeComponent from '../recipe/recipe';
+import { recipes } from '../../config';
+
+
+
+// import recipeRowBlock from '../recipe/row';
+
 import subtitle from '../content/subtitle';
-
-import recipeRowBlock from '../recipe/row';
-
 import textDescriptionMainBlock from '../content/description';
 import titleTextMainBlock from '../content/title';
 
-import buttonBlock from '../weekly-menu/WeeklyMenuButtonBlock';
+
+
+import WeeklyMenuContainerComponent from '../weekly-menu/WeeklyMenuComponent';
+
+
+const buttonParams = {
+  id: '04-22-2021',
+  href: 'https://www.nomoretogo.com/weekly-menu/',
+  text: `Get This Week's Menu`,
+};
+
+
+// import recipeComponent from '../recipe/recipe';
+// import buttonBlock from '../weekly-menu/WeeklyMenuButtonBlock';
 
 
 
@@ -49,22 +64,24 @@ import instructionContainerStatic from '../instruction/containerStatic';
 
 
     // block 2
-    var imagesAll = contentRecipeParams.map((params) => {
-      return recipeComponent(params);
-    });
-    const imageOne = dataImage[0];
-    const imageTwo = dataImage[1];
+    // var imagesAll = contentRecipeParams.map((params) => {
+    //   return recipeComponent(params);
+    // });
+    // const imageOne = dataImage[0];
+    // const imageTwo = dataImage[1];
   
-    const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
+    // const recipeRowBlockRes = recipeRowBlock(imageOne, imageTwo);
   
-    const buttonComponentRes = buttonComponent(contentButtonParams);
-    const contentButtonBlockRes = buttonBlock(buttonComponentRes);
+    // const buttonComponentRes = buttonComponent(contentButtonParams);
+    // const contentButtonBlockRes = buttonBlock(buttonComponentRes);
+
+    const weeklyHTML = WeeklyMenuContainerComponent(recipes, buttonParams);
 
     const separator = separatorComponent();
 
 
-    
-    const contentAndAfter = recipeRowBlockRes + contentButtonBlockRes + separator;
+
+    const contentAndAfter = weeklyHTML +  separator;
   
 
     // All content
