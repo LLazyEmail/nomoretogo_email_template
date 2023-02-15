@@ -16,6 +16,9 @@ https://github.com/LLazyEmail/free-email-templates-to-try/blob/main/01%20Food%20
 
 project structure will be similar to: https://github.com/LLazyEmail/_trying-lit/blob/main/components/Typography/src/templates/image.js
 
+
+*Sadly, in order to speed up process, we removed tests + Jest, Display class, Error class and component Universal class*
+
 I removed factory class, component universal and errors class from some of our packages in order to avoid errors from our new setup
 
 
