@@ -11,7 +11,8 @@ import recipesContainerComponent from '../recipe';
 
 
 
-// TODO update this component. we can use TEXT and RecipesSection as separate parts
+// TODO update this component. 
+// we can use TEXT and RecipesSection as separate parts
 const WeeklyMenuContainerComponent = (recipes, buttonArr) => {
 
     // weekly menu button

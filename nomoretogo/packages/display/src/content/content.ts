@@ -1,7 +1,7 @@
 import { StaticContentComponent }  from 'inner';
 
 
-import RecipesHTMLString from './recipes';
+import RecipesHTMLString from './_recipes';
 
 
 // import recipesSectionComponent from '../components/recipesSectionComponent';

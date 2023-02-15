@@ -13,15 +13,10 @@ const buttonParams = {
   };
 
 
-// var RecipesHTMLString = recipesSectionComponent(recipes);
-
-
-// if (!RecipesHTMLString) {
-//   throw new Error('RecipesHTMLString empty');
-// }
-
-
-const WeeklyMenuHTMLString = WeeklyMenuContainerComponent(recipes, buttonParams);
+const WeeklyMenuHTMLString = WeeklyMenuContainerComponent(
+        recipes, 
+        buttonParams
+      );
 
 if (!WeeklyMenuHTMLString) {
   throw new Error('WeeklyMenuHTMLString empty');

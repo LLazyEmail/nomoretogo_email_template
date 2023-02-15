@@ -164,6 +164,8 @@ const supportMainBlock = (params:any) => {
 ${separatorComponent()}`;
 };
 
-export default function (data:any) {
-  return supportMainBlock(data);
-}
+export default supportMainBlock;
+
+// export default function (data:any) {
+//   return supportMainBlock(data);
+// }
