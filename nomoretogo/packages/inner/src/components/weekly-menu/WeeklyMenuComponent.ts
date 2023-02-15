@@ -2,13 +2,10 @@ import {
   // buttonComponent,
   separatorComponent
 } from 'nmtg-typo';
-
 import { buttonComponent } from 'typo';
 
 import weeklyMenuButtonBlock from './WeeklyMenuButtonBlock';
-
 import recipesContainerComponent from '../recipe';
-
 
 
 // TODO update this component. 
@@ -24,6 +21,7 @@ const WeeklyMenuContainerComponent = (recipes, buttonArr) => {
     const recipeContainerHTML = recipesContainerComponent(recipes);
 
     // const separatorHTML = separatorComponent();
+
     // All content
     const allContent = 
         // text +

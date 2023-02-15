@@ -1,16 +1,20 @@
 // Footer 
-import { footerComponent, amazonFreshBlock, supportComponent, SocialPanelComponent } from 'outer';
+import { 
+  footerComponent, amazonFreshBlock, supportComponent, SocialPanelComponent
+} from 'outer';
 
 import { separatorComponent } from 'nmtg-typo';
 
 
+import supportHTMLString from '../content/support-amazon-fresh'; 
 
 import { footerData, unsubscribe } from '../config';
 
-const { socialsLinksParams, imagePath, title, params } = footerData;
-
-
-
+const { 
+  socialsLinksParams,  
+  title, 
+  params 
+} = footerData;
 
 
 
@@ -21,12 +25,14 @@ var result = null;
 
   // first block
   // const amazonFreshBlockHTML = createComponent( amazonFreshBlock, imagePath );
-  const amazonFreshBlockHTML = amazonFreshBlock(imagePath);
+  // const amazonFreshBlockHTML = amazonFreshBlock(imagePath);
   
   // second block
   // const factory = new Factory(supportComponent, params);
   // const supportBlock = factory.create();
-  const supportBlock = supportComponent(params);
+  // const supportBlock = supportComponent(params);
+
+  
 
   // third block
 
@@ -43,13 +49,7 @@ var result = null;
   }
 
 
-
-  // footerHTML = 
-  // const line = supportBlock +
-  // amazonFreshBlock + separatorComponent() + 
-
-  
-  // footerHTML(settings) ;
+  // const line =  footerHTML(settings) ;
 
 
   const footerHTMLString = footerComponent(settings);
@@ -58,9 +58,12 @@ var result = null;
   console.log(footerHTMLString);
 
   result = 
-    supportBlock +
-    amazonFreshBlockHTML + 
-    separatorComponent() + 
+
+    // supportBlock +
+    // amazonFreshBlockHTML + 
+    // separatorComponent() + 
+
+    supportHTMLString + 
     footerHTMLString;
 
   // console.log(result);
