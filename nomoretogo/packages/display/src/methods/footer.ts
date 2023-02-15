@@ -1,6 +1,6 @@
 // Footer 
 import { 
-  footerComponent, amazonFreshBlock, supportComponent, SocialPanelComponent
+  footerComponent,  SocialPanelComponent
 } from 'outer';
 
 import { separatorComponent } from 'nmtg-typo';
@@ -20,22 +20,11 @@ const {
 
 /* ******************** CREATE CONTENT START ****************************** */
 var result = null;
+
 // var footerHTMLString = false;
 
 
-  // first block
-  // const amazonFreshBlockHTML = createComponent( amazonFreshBlock, imagePath );
-  // const amazonFreshBlockHTML = amazonFreshBlock(imagePath);
-  
-  // second block
-  // const factory = new Factory(supportComponent, params);
-  // const supportBlock = factory.create();
-  // const supportBlock = supportComponent(params);
-
-  
-
   // third block
-
   const socialPanel = ' xxxx social panel ';
   // const socialPanel = SocialPanelComponent(socialsLinksParams);
 
@@ -45,12 +34,11 @@ var result = null;
   const settings = {
     unsubscribe,
     socialPanel,
-     title,
+    title,
   }
 
 
   // const line =  footerHTML(settings) ;
-
 
   const footerHTMLString = footerComponent(settings);
   // footerHTMLString = createComponent(footerComponent, settings);

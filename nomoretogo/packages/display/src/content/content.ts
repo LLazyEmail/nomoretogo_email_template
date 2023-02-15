@@ -1,5 +1,4 @@
-import { StaticContentComponent }  from 'inner';
-
+import { StaticContentComponent, WeeklyMenuContainerComponent }  from 'inner';
 
 import RecipesHTMLString from './_recipes';
 
@@ -33,7 +32,6 @@ const TextDescriptionParams = {
   textBottom: `Happy Cooking,` + "\n" +
   `Stacey, Sloane, and the No More To-Go Team`,
 };
-
 
 
 

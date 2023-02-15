@@ -13,8 +13,6 @@ import {
 import instructionContainerComponent from './components/instruction/container';
 import instructionContainerStatic from './components/instruction/containerStatic';
 
-
-
 //--------------------------
 import lineBlock from './components/lineBlock';
 
@@ -27,7 +25,11 @@ import recipesContainerComponent from './components/recipe';
 
 import WeeklyMenuContainerComponent from './components/weekly-menu/WeeklyMenuComponent';
 
+
 import StaticContentComponent from './components/staticContent/staticContent';
+
+
+import SupportContainerComponent from './components/supportSection/container';
 
 //----------------------
 export {
@@ -51,6 +53,7 @@ export {
   // instructionText,
   lineBlock,
   //----------
-  StaticContentComponent
+  StaticContentComponent,
+  SupportContainerComponent
 };
 
