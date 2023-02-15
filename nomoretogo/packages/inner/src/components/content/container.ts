@@ -4,7 +4,6 @@ import textDescriptionMainBlock from './description';
 
 const contentContainer = ({ title, subtitle, description }) => {
 
-
     const titleHTML = titleTextMainBlock(title);
 
     const subtitleHTML = subTitleMainBlock(subtitle);
