@@ -1,5 +1,3 @@
-
-
 import { MainHTMLString } from 'display';
 
 import writeFileParticle from 'utils';
