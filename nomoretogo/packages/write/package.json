@@ -2,14 +2,16 @@
   "name": "write",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "markup-generator": "^1.7.0"
+  },
   "scripts": {
     "build": "tsc src/index.ts --outDir dist",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint  . --fix --ext .ts"
   },
   "dependencies": {
-    "stringify-attributes": "^3.0.0",
-    "display": "*"
+    "display": "*",
+    "stringify-attributes": "^3.0.0"
   }
 }
