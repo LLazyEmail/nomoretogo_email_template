@@ -4,7 +4,15 @@
 
 npx nx build typo
 
-npx nx build typo
+npx nx build nmtg-typo
+
+npx nx build outer
+
+npx nx build innerTemplate
+
+npx nx build display
+
+npx nx build write
 
 
 

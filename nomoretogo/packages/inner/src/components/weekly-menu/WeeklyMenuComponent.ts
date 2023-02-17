@@ -9,23 +9,18 @@ import weeklyMenuButtonBlock from './WeeklyMenuButtonBlock';
 import recipesContainerComponent from '../recipe';
 
 
-// TODO update this component. 
-// we can use TEXT and RecipesSection as separate parts
+// TODO add instructions into weekly menu container
 const WeeklyMenuContainerComponent = (recipes, buttonArr) => {
 
     // weekly menu button
     const buttonHTML = buttonComponent(buttonArr);
-  
-    const weeklyMenuButtonHTML = weeklyMenuButtonBlock(buttonHTML);
-    
-
+    const weeklyMenuButtonHTML = weeklyMenuButtonBlock(buttonHTML);  
     const recipeContainerHTML = recipesContainerComponent(recipes);
 
-    // const separatorHTML = separatorComponent();
 
     // All content
     const allContent = 
-        // text +
+
         recipeContainerHTML + 
 
         weeklyMenuButtonHTML + 

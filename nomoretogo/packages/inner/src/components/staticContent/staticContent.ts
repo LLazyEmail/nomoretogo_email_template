@@ -15,7 +15,7 @@ import instructionContainerStatic from '../instruction/containerStatic';
 
 
 const StaticContentComponent = (params) => {
-  // distructure params
+  // destructure params
   const {
     title,
     subtitle,
