@@ -1,6 +1,12 @@
 # nomoretogo_email_template
 
 
+"html-typography-tags": "^0.2.0",
+    "nmtg-template-mailerlite-inner": "^5.2.0",
+    "nmtg-template-mailerlite-outertemplate": "^2.12.0",
+    "nmtg-template-mailerlite-typography": "^4.1.0"
+  }
+
 https://nx.dev/getting-started/integrated-repo-tutorial
 
 
