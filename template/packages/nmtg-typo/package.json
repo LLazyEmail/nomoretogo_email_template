@@ -1,5 +1,9 @@
 {
   "name": "@template/nmtg-typo",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "stringify-attributes": "^3.0.0",
+    "@template/html-typography-tags": "*"
+  }
 }
