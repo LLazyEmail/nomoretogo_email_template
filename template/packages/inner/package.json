@@ -1,5 +1,9 @@
 {
   "name": "@template/inner",
-  "version": "0.0.1",
-  "type": "commonjs"
+  "version": "2.0.1",
+  "type": "commonjs",
+    "dependencies": {
+      "typo": "*",
+      "nmtg-typo": "*"
+    }
 }

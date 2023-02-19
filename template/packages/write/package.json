@@ -1,5 +1,9 @@
 {
   "name": "@template/write",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "@template/display": "*",
+    "stringify-attributes": "^3.0.0"
+  }
 }

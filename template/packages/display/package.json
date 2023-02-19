@@ -1,5 +1,11 @@
 {
   "name": "@template/display",
-  "version": "0.0.1",
-  "type": "commonjs"
+  "version": "2.0.1",
+  "type": "commonjs",
+  "dependencies": {
+    "@template/typo": "*",
+    "@template/nmtg-typo": "*",
+    "@template/outer": "*",
+    "@template/inner": "*"
+  }
 }
