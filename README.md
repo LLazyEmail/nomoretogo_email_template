@@ -1,5 +1,5 @@
 # nomoretogo_email_template
-
+@template/html-typography-tags
 
 "html-typography-tags": "^0.2.0",
     "nmtg-template-mailerlite-inner": "^5.2.0",

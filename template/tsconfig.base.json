@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@template/html-typography-tags": [
+        "packages/html-typography-tags/src/index.ts"
+      ],
+      "@template/nmtg-typo": ["packages/nmtg-typo/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

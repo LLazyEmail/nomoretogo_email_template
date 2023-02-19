@@ -1,0 +1,17 @@
+{
+  "name": "html-typography-tags",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "dependencies": {
+    "stringify-attributes": "^3.0.0"
+  },
+  "author": "Arthur Tkachenko, Yuriy",
+  "license": "MIT",
+  "private": false,
+  "release": {
+    "publishDir": "dist"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
