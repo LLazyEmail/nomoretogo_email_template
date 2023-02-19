@@ -15,10 +15,15 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@template/display": ["packages/display/src/index.ts"],
       "@template/html-typography-tags": [
         "packages/html-typography-tags/src/index.ts"
       ],
-      "@template/nmtg-typo": ["packages/nmtg-typo/src/index.ts"]
+      "@template/htouter": ["packages/htouter/src/index.ts"],
+      "@template/inner": ["packages/inner/src/index.ts"],
+      "@template/nmtg-typo": ["packages/nmtg-typo/src/index.ts"],
+      "@template/outer": ["packages/outer/src/index.ts"],
+      "@template/write": ["packages/write/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
