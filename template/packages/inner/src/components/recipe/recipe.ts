@@ -1,18 +1,20 @@
 // Error
-import Errors from '../Errors';
+// import Errors from '../Errors';
 
-import { imageComponent } from 'typo';
+import { imageComponent } from 'html-typography-tags';
 
 import recipeName from './name';
 
-const error = new Errors('recipeComponent');
+// const error = new Errors('recipeComponent');
 
 // Main Recipe block start
-const recipeComponent = (params) => {
+const recipeComponent = (params:any) => {
   
    const { id, href, src, title, text } = params;
 
   // TODO add checks to this component
+
+
   const recipeImage = imageComponent({id, href, src});
 
   const titleLine = recipeName({ title, subtitle: text });

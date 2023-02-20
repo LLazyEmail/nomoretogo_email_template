@@ -1,7 +1,7 @@
-import Errors from '../Errors';
-const error = new Errors('recipeComponent');
+// import Errors from '../Errors';
+// const error = new Errors('recipeComponent');
 
-import { paragraphComponent } from 'typo';
+import { paragraphComponent } from 'html-typography-tags';
 
 import titleComponent from './title';
 import textComponent from './text';

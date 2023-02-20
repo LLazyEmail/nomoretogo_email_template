@@ -1,7 +1,7 @@
 // Error
 import Errors from '../Errors';
 
-import { strongComponent } from 'typo';
+import { strongComponent } from 'html-typography-tags';
 
 // Get title start
 const titleComponent = (title: string) => {

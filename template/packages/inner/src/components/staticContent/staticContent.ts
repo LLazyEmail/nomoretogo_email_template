@@ -1,6 +1,6 @@
 import { 
   separatorComponent
-} from 'nmtg-typo';
+} from 'nmtg-template-mailerlite-typography';
 
 import contentContainer from '../content/container';
 
@@ -14,7 +14,7 @@ import WeeklyMenuContainerComponent from '../weekly-menu/WeeklyMenuComponent';
 import instructionContainerStatic from '../instruction/containerStatic';
 
 
-const StaticContentComponent = (params) => {
+const StaticContentComponent = (params: {title, subtitle, description, recipes, buttonParams}) => {
   // destructure params
   const {
     title,

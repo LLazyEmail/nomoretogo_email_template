@@ -1,19 +1,30 @@
 // Create wrap component content
-import {
-  contentButtonBlock,
-  // recipeComponent,
-  contentSubTitleText,
-  // recipeRowBlock,
-  contentTextDescription,
-  contentTitleText,
-} from 'innerTemplate';
+import { buttonComponent } from 'html-typography-tags';
+
+
+// import {
+//   contentButtonBlock,
+//   // recipeComponent,
+//   contentSubTitleText,
+//   // recipeRowBlock,
+//   contentTextDescription,
+//   contentTitleText,
+// } from 'inner';
+
+
+
+import titleTextMainBlock from '../content/title';
+import subTitleMainBlock from '../content/subtitle';
+import textDescriptionMainBlock from '../content/description';
+
+
+
 
 import {
-  buttonComponentOld,
-  separatorComponent,
-} from 'nmtg-typo';
+  separatorComponent
+} from "nmtg-template-mailerlite-typography"
 
-import recipesSectionComponent from './recipesSectionComponent';
+import recipesSectionComponent from '../recipes/recipesSectionComponent';
 
 
 // const contentSectionOne = () => {
@@ -63,7 +74,7 @@ const createBlockOne = (title, subTitle, description) => {
 const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
 
   // weekly menu button
-  const buttonHTML = buttonComponentOld(contentButtonParams);
+  const buttonHTML = buttonComponent(contentButtonParams);
 
   const contentButtonBlockHTML = contentButtonBlock(buttonHTML);
   

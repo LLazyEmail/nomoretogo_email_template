@@ -3,7 +3,7 @@ import recipeComponent from './recipe';
 // THIS BLOCK is a old version of contentTableWithTwoRecipes.... get rid of it later
 
 // Main table start
-const recipeRowBlock = (dataImageOne: {}, dataImageTwo:{ }) => {
+const recipeRowBlock = (dataImageOne: any, dataImageTwo: any) => {
   const recipeOne = recipeComponent(dataImageOne);
   const recipeTwo = recipeComponent(dataImageTwo);
 

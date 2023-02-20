@@ -2,7 +2,7 @@ import recipeRowBlock from './row';
 // import { listToMatrix } from './utils';
 
 // block 2
-const createRecipesPanel = (recipes) => {
+const createRecipesPanel = (recipes:any) => {
 
   // var recipeHTMLMarkupArray
 
@@ -18,7 +18,7 @@ const createRecipesPanel = (recipes) => {
 }
 
 
-const recipesContainerComponent = (recipes) => {
+const recipesContainerComponent = (recipes:any) => {
 
 
   if (!recipes) {
