@@ -1,15 +1,12 @@
-// Component instruction text
-
-
 import {
   // strongComponent,
   paragraphComponent,
-} from 'typo';
+} from 'html-typography-tags';
 
 
 // replacing 
 // return `<p style="margin-top: 0px; margin-bottom: 10px; line-height: 150%;">${text}</p>`;
-const createText = (text) => {
+const createText = (text:string) => {
   
   const content = { content: text };
 

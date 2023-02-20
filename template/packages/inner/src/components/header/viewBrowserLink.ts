@@ -2,7 +2,7 @@
 // import Errors from './Errors';
 // import ow from 'ow';
 
-import { linkComponent } from 'typo';
+import { linkComponent } from 'html-typography-tags';
 
 const viewInBrowsLink = (params: {id:string, href:string}) => {
   const { id, href } = params;

@@ -11,7 +11,7 @@
 
 import instructionsString from './string';
 
-const instructionContainerComponent = (params) => {
+const instructionContainerComponent = (params:any) => {
 
   const instructionsHTML = instructionsString(params);
 

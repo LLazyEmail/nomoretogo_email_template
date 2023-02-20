@@ -5,7 +5,7 @@
 import viewInBrowserLink from './viewBrowserLink';
 
 
-const html_view_in_browser = (params) => {
+const html_view_in_browser = (params:any) => {
 
   // Link view in brows
 

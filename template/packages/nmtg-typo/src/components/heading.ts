@@ -1,6 +1,6 @@
 // Component heading
 
-import { linkComponent } from '@template/html-typography-tags';
+import { linkComponent } from 'html-typography-tags';
 import stringifyAttributes from 'stringify-attributes';
 // import Errors from './Errors';
 
