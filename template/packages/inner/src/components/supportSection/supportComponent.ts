@@ -3,9 +3,9 @@ import { mailingAddress } from '../../config';
 import {
   strongComponent,
   linkComponent
-} from 'typo';
+} from 'html-typography-tags';
 
-import { separatorComponent } from 'nmtg-typo';
+import { separatorComponent } from 'nmtg-template-mailerlite-typography';
 
 import Errors from '../Errors';
 

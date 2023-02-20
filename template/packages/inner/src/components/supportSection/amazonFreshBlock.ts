@@ -1,10 +1,17 @@
-import { imageComponent } from 'typo';
+import { imageComponent } from 'html-typography-tags';
 import Errors from '../Errors';
 
 const createImage = (src:string) => {
+  
+  // TODO fix it
   const imgParams = `src="${src}" border="0" alt="" width="200" style="display: block;"`;
 
-  return imageComponent(imgParams);
+  const params = {
+    src: src,
+    width: "200"
+  }
+
+  return imageComponent(params);
 };
 // return `<img src="${src}" border="0" alt="" width="200" style="display: block;">`;
 
