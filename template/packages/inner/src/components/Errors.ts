@@ -1,5 +1,5 @@
 class Errors {
-  ERROR_MESSAGE = (message) => {
+  ERROR_MESSAGE = (message:string) => {
     return `Error in component: "${this.component}",  error message: "${message}"`;
   };
   component = '';
@@ -8,7 +8,7 @@ class Errors {
     this.component = component;
   }
 
-  add(error) {
+  add(error:string) {
     const textError = this.ERROR_MESSAGE(error);
     throw new Error(textError);
   }

@@ -2,13 +2,16 @@ import titleTextMainBlock from './title';
 import subTitleMainBlock from './subtitle';
 import textDescriptionMainBlock from './description';
 
-const contentContainer = ({ title, subtitle, description }) => {
+const contentContainer = (params: { title: string, subtitle: string, description: any }) => {
 
-    const titleHTML = titleTextMainBlock(title);
+    const titleHTML = titleTextMainBlock(params.title);
 
-    const subtitleHTML = subTitleMainBlock(subtitle);
+    const subtitleHTML = subTitleMainBlock(params.subtitle);
 
-    const descriptionHTML = textDescriptionMainBlock(description.textTop, description.textBottom);
+    const descriptionHTML = textDescriptionMainBlock(
+            params.description.textTop, 
+            params.description.textBottom
+        );
 
     // const text = '<!--  TEXT -->';
     const text = titleHTML + subtitleHTML + descriptionHTML;

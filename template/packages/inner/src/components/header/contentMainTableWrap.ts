@@ -44,7 +44,7 @@ const contentMainTableWrap = ( topPanel:string, blockLogo:string ) => {
 };
 // Block main table content (wrap) end
 
-export default function (params) {
+export default function (params:any) {
   const { topPanel, blockLogo } = params;
   const error = new Errors('contentMainTableWrap');
 

@@ -14,6 +14,14 @@ html-typography-tags@*:
   dependencies:
     stringify-attributes "^3.0.0"
 
+nmtg-template-mailerlite-typography@*:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-5.0.1.tgz#01600f35c9c4804f3ddf1eab287ca91b2ae1c085"
+  integrity sha512-3geomUwi4hUHaWwhabb72EkVimh8j0OJmd/bgeTTM3HBImfHoujn2UFYBIekCncJVclKwsd4eGTYMkdPuoxUiQ==
+  dependencies:
+    html-typography-tags "*"
+    stringify-attributes "^3.0.0"
+
 stringify-attributes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/stringify-attributes/-/stringify-attributes-3.0.0.tgz#10d8c3615924df47b70d28c848d71c8afb0a8e52"

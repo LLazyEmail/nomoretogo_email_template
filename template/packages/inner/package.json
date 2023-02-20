@@ -3,7 +3,7 @@
   "version": "2.0.1",
   "type": "commonjs",
     "dependencies": {
-      "typo": "*",
-      "nmtg-typo": "*"
+      "html-typography-tags": "*",
+      "nmtg-template-mailerlite-typography": "*"
     }
 }

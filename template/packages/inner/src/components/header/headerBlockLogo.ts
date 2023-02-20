@@ -2,25 +2,37 @@
 import { pathMainLogo } from '../../config';
 // import Errors from '../Errors';
 
-import { imageComponent } from 'typo';
+import { imageComponent } from 'html-typography-tags';
 
 // const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
 // const imageLogo = imageComponent(imageParams);
 
-const displayLogo = (pathMainLogo) => {
+const displayLogo = (pathMainLogo:string) => {
 
-  const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
-  const imageLogo = imageComponent(imageParams);
+  const params = {
+    src: pathMainLogo,
+    width: "560"
+  }
+
+  // TODO make passing all attrbutes working
+  // const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
+  const imageLogo = imageComponent(params);
   
   return imageLogo;
 }
 
-const image = (pathMainLogo) => {
+const image = (pathMainLogo:string) => {
 
   // ow(pathMainLogo, ow.string);
 
-  const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
-  const imageLogo = imageComponent(imageParams);
+  // const imageParams = `src="${pathMainLogo}" id="logoBlock-4" border="0" alt="" width="560" style="display: block;"`;
+
+  const params = {
+    src: pathMainLogo,
+    width: "560"
+  }
+
+  const imageLogo = imageComponent(params);
   return imageLogo;
   
 }

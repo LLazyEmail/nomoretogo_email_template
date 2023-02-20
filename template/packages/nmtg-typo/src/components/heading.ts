@@ -5,7 +5,7 @@ import stringifyAttributes from 'stringify-attributes';
 // import Errors from './Errors';
 
 // TODO replace with a link component
-const headingMainBlock = (params: { hrefTitle: string, idTitle: string, textTitle: string }) => {
+const heading = (params: { hrefTitle: string, idTitle: string, textTitle: string }) => {
 
 
 
@@ -34,7 +34,7 @@ const headingMainBlock = (params: { hrefTitle: string, idTitle: string, textTitl
 };
 
 
-export default headingMainBlock;
+export default heading;
 
 // export default function (params) {
 //   const { hrefTitle, idTitle, textTitle } = params;

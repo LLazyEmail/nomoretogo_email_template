@@ -1,7 +1,7 @@
 // Component title text
-import { heading } from 'nmtg-typo';
+import { heading } from 'nmtg-template-mailerlite-typography';
 
-const titleTextMainBlock = (params) => {
+const titleTextMainBlock = (params:any) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">

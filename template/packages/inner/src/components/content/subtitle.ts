@@ -1,5 +1,5 @@
 // Component contentSubTitleText
-import { subheading } from 'nmtg-typo';
+import { renderSubHeading } from 'nmtg-template-mailerlite-typography';
 
 // TODO should we replace a method inside with a string
 const subTitleMainBlock = (subTitleText:string) => {
@@ -20,7 +20,7 @@ const subTitleMainBlock = (subTitleText:string) => {
                 <td align="center" style="padding: 0px 40px;" class="mlContentOuter">
                   <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" width="100%">
                     <tbody><tr>
-                      ${subheading(subTitleText)}
+                      ${renderSubHeading({subTitleText})}
                     </tr>
                   </tbody></table>
                 </td>
@@ -38,7 +38,8 @@ const subTitleMainBlock = (subTitleText:string) => {
   </tr>
   </tbody></table>`;
 };
+export default subTitleMainBlock;
 
-export default function (subTitleText) {
-  return subTitleMainBlock(subTitleText);
-}
+// export default function (subTitleText) {
+//   return subTitleMainBlock(subTitleText);
+// }
