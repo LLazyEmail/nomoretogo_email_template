@@ -7,7 +7,7 @@ import createTitle from "./title";
 
 // it was a quick solution, as it's part of static content 
 // that we only needed for testing purposes
-const instructionsString = (params) => {
+const instructionsString = (params:{ title:string, text:string, title2:string, text2:string }) => {
   const { title, text, title2, text2 } = params;
 
 return `

@@ -1,20 +1,21 @@
 // Create footer component
 import {
   paragraphComponent
-} from 'typo';
+} from 'html-typography-tags';
 
-import ow from 'ow';
+// import ow from 'ow';
 
-import Errors from './Errors';
-const error = new Errors('footerComponent');
+// import Errors from './Errors';
+// const error = new Errors('footerComponent');
 
 
-import createUnsubscribe from './footer/unsubscribeLink';
+import createUnsubscribe from './unsubscribeLink';
 
-import address from 'address';
-import description from 'description';
-import footerHTML from 'section';
-import SocialPanelComponent from 'social';
+import address from './address';
+import description from './description';
+import footerHTML from './section';
+
+import SocialPanelComponent from './social';
 
 
 const footerComponent = (params:any) => {

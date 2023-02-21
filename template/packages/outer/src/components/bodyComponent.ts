@@ -1,12 +1,12 @@
-import Errors from './Errors';
-const error = new Errors('bodyComponent');
+// import Errors from './Errors';
+// const error = new Errors('bodyComponent');
 
 // import ow from 'ow';
 
 const bodyComponent = (bodyContent:string, headerBlock:string) => {
-  if (bodyContent == '') {
-    error.add('bodyContent');
-  }
+  // if (bodyContent == '') {
+  //   error.add('bodyContent');
+  // }
 
   return `<body class="mlBodyBackground" style="padding: 0; margin: 0; -webkit-font-smoothing:antialiased; background-color:#f6f8f9; -webkit-text-size-adjust:none;" data-new-gr-c-s-check-loaded="14.1058.0" data-gr-ext-installed="">
   <!-- Make your email an accessible article. -->

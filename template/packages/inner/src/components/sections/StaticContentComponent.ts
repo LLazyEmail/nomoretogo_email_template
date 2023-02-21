@@ -24,7 +24,7 @@ import {
   separatorComponent
 } from "nmtg-template-mailerlite-typography"
 
-import recipesSectionComponent from '../recipes/recipesSectionComponent';
+import recipesContainerComponent from '../recipes/recipesContainerComponent';
 
 
 // const contentSectionOne = () => {

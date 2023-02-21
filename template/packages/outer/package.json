@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "type": "commonjs",
   "dependencies": {
-    "ow": "^1.1.1",
-    "@template/html-typography-tags": "*",
-    "@template/nmtg-typo": "*"
+    "html-typography-tags": "*",
+    "nmtg-template-mailerlite-typography": "*",
+    "ow": "^1.1.1"
   }
 }

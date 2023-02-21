@@ -1,7 +1,7 @@
 import {
     linkComponent
-  } from 'typo';
-  import { spanHeadingBlock } from 'nmtg-typo';
+  } from 'html-typography-tags';
+  import { spanHeadingBlock } from 'nmtg-template-mailerlite-typography';
   
   // Unsubscribe
   const createUnsubscribe = (href:string) => {

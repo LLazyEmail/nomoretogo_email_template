@@ -64,7 +64,7 @@ function countImageInRows(arr, chunkSize) {
 }
 
 
-export default function (params) {
+export default function (params:any) {
   const error = new Errors('contentTableWitchTwoRecipe');
 
   if (!params.length) {

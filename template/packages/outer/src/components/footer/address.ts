@@ -1,6 +1,6 @@
 import {
   paragraphComponent
-} from 'typo';
+} from 'html-typography-tags';
 
 // Address
 const address = () => {

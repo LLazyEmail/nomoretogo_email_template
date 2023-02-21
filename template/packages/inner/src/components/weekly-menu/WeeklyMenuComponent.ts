@@ -2,15 +2,15 @@
 import {
   // buttonComponent,
   separatorComponent
-} from 'nmtg-typo';
-import { buttonComponent } from 'typo';
+} from 'nmtg-template-mailerlite-typography';
+import { buttonComponent } from 'html-typography-tags';
 
 import weeklyMenuButtonBlock from './WeeklyMenuButtonBlock';
 import recipesContainerComponent from '../recipe';
 
 
 // TODO add instructions into weekly menu container
-const WeeklyMenuContainerComponent = (recipes, buttonArr) => {
+const WeeklyMenuContainerComponent = (recipes:any, buttonArr:any) => {
 
     // weekly menu button
     const buttonHTML = buttonComponent(buttonArr);

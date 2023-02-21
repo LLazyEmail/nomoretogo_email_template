@@ -1,21 +1,23 @@
 // Error
 // import Errors from '../Errors';
 
-import { imageComponent } from 'html-typography-tags';
+import { imageComponent, imageLink } from 'html-typography-tags';
 
 import recipeName from './name';
 
 // const error = new Errors('recipeComponent');
 
 // Main Recipe block start
-const recipeComponent = (params:any) => {
+const recipeComponent = (params:{ id:string, href:string, src:string, title:string, text:string }) => {
   
    const { id, href, src, title, text } = params;
 
   // TODO add checks to this component
 
-
-  const recipeImage = imageComponent({id, href, src});
+  // TODO to finish
+  const recIMG = imageLink({ id, href, src, "width": '' });
+  //removing id
+  const recipeImage = imageComponent({ href, src});
 
   const titleLine = recipeName({ title, subtitle: text });
 

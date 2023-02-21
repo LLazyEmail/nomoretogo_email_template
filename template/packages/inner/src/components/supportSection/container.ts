@@ -2,7 +2,7 @@
  import amazonFreshMainBlock from "./amazonFreshBlock";
 
 
- const SupportContainerComponent = (supportParams, amazonParams) => {
+ const SupportContainerComponent = (supportParams:any, amazonParams:any) => {
     return supportComponent(supportParams) + amazonFreshMainBlock(amazonParams);
  }
 

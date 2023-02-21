@@ -14,7 +14,7 @@ import WeeklyMenuContainerComponent from '../weekly-menu/WeeklyMenuComponent';
 import instructionContainerStatic from '../instruction/containerStatic';
 
 
-const StaticContentComponent = (params: {title, subtitle, description, recipes, buttonParams}) => {
+const StaticContentComponent = (params: {title:string, subtitle:string, description:string, recipes:any, buttonParams:any}) => {
   // destructure params
   const {
     title,
