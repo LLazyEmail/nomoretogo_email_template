@@ -1,6 +1,6 @@
 import { writingFile } from 'markup-generator';
 
-const partialWrite3 = (string, suffix) => {
+const writeFileParticle = (string, suffix) => {
 
   writingFile(string, suffix);
   // TODO add a function that will display an output in console.  
