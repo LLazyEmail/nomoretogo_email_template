@@ -1,5 +1,5 @@
 // Component content table with two recipe
-import Errors from '../Errors';
+// import Errors from '../Errors';
 
 const tableWithTwoRecipeMainBlock = (image:string, image2:string) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
@@ -65,11 +65,11 @@ function countImageInRows(arr, chunkSize) {
 
 
 export default function (params:any) {
-  const error = new Errors('contentTableWitchTwoRecipe');
+  // const error = new Errors('contentTableWitchTwoRecipe');
 
-  if (!params.length) {
-    error.add('Empty array');
-  }
+  // if (!params.length) {
+  //   error.add('Empty array');
+  // }
 
   // add an empty element start
   if (params.length % 2 != 0) {

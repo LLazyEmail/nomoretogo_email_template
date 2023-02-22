@@ -1,5 +1,9 @@
 {
   "name": "@template/layout-weekly",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "html-typography-tags": "^4.0.0",
+    "nmtg-template-mailerlite-typography": "^5.0.1"
+  }
 }
