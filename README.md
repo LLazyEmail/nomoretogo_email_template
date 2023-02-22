@@ -9,10 +9,12 @@
 "nmtg-template-mailerlite-typography": "^4.1.0"
 
 
+yarn nx g @nrwl/js:lib layout-content
+
 https://nx.dev/getting-started/integrated-repo-tutorial
 
 
-
+https://www.youtube.com/watch?v=-OmQ-PaSY5M&ab_channel=Nx-Smart%2CFast%2CExtensible
 
 https://stackblitz.com/edit/typescript-qzlpln?file=index.ts
 

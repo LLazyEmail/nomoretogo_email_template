@@ -21,6 +21,7 @@
       ],
       "@template/htouter": ["packages/htouter/src/index.ts"],
       "@template/inner": ["packages/inner/src/index.ts"],
+      "@template/layout-weekly": ["packages/layout-weekly/src/index.ts"],
       "@template/nmtg-typo": ["packages/nmtg-typo/src/index.ts"],
       "@template/outer": ["packages/outer/src/index.ts"],
       "@template/write": ["packages/write/src/index.ts"]
