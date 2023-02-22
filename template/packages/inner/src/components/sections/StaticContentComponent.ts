@@ -3,22 +3,18 @@ import { buttonComponent } from 'html-typography-tags';
 
 
 // import {
-//   contentButtonBlock,
 //   // recipeComponent,
 //   contentSubTitleText,
-//   // recipeRowBlock,
+
 //   contentTextDescription,
 //   contentTitleText,
 // } from 'inner';
 
 
 
-import titleTextMainBlock from '../content/title';
-import subTitleMainBlock from '../content/subtitle';
-import textDescriptionMainBlock from '../content/description';
-
-
-
+import title from '../content/title';
+import subtitle from '../content/subtitle';
+import description from '../content/description';
 
 import {
   separatorComponent
@@ -44,17 +40,17 @@ import recipesContainerComponent from '../recipes/recipesContainerComponent';
 
 // contentSectionOne = () => {
 
-const createBlockOne = (title, subTitle, description) => {
+const createBlockOne = (titleVar:string, subtitleVar:string, descriptionVar:string) => {
 
   // block 1
-  const contentTitleTextHTML = contentTitleText(title);
+  const contentTitleTextHTML = title(titleVar);
 
 
   const contentSubTitleTextHTML = 'contentSubTitleText(subTitle)';
-  // const contentSubTitleTextHTML = contentSubTitleText(subTitle);
+  // const contentSubTitleTextHTML = subtitle(subtitleVar);
 
-  const contentTextDescriptionHTML = contentTextDescription(
-    description
+  const contentTextDescriptionHTML = description(
+    descriptionVar, descriptionVar
   );
   
   const result =
@@ -79,6 +75,7 @@ const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
   const contentButtonBlockHTML = contentButtonBlock(buttonHTML);
   
   const separatorHTML = separatorComponent();
+  
   // All content
   const allContent = 
       text +

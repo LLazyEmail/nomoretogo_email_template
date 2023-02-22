@@ -1,7 +1,7 @@
 // Component title text
 import { heading } from 'nmtg-template-mailerlite-typography';
 
-const titleTextMainBlock = (params:any) => {
+const title = (params:any) => {
   return `<table align="center" border="0" bgcolor="#ffffff" class="mlContentTable mlContentTableDefault" cellpadding="0" cellspacing="0" width="640">
   <tbody><tr>
     <td class="mlContentTableCardTd">
@@ -33,4 +33,4 @@ const titleTextMainBlock = (params:any) => {
   </tr>
   </tbody></table>`;
 };
-export default titleTextMainBlock;
+export default title;
