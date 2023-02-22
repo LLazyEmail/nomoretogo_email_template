@@ -1,6 +1,6 @@
 {
-  "name": "@template/html-typography-tags",
-  "version": "0.0.1",
+  "name": "html-typography-tags",
+  "version": "4.0.2",
   "type": "commonjs",
   "dependencies": {
     "stringify-attributes": "^3.0.0"

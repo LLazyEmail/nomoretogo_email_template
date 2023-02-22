@@ -1,4 +1,4 @@
-// import stringifyAttributes from 'stringify-attributes';
+import stringifyAttributes from 'stringify-attributes';
 
 // TODO think about renaming content into children
 // params: { src: string, width: string }

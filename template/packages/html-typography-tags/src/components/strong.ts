@@ -1,6 +1,6 @@
 // Create strong component
-// import stringifyAttributes from 'stringify-attributes';
-import stringifyAttributes from '../../node_modules/stringify-attributes';
+import stringifyAttributes from 'stringify-attributes';
+// import stringifyAttributes from '../../node_modules/stringify-attributes';
 
 // TODO should we replace content with child as we might have other components inside?
 // params: { src: string, width: string }

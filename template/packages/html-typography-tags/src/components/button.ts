@@ -1,8 +1,8 @@
 // import Errors from './Errors';
 import linkComponent from './link';
-// import stringifyAttributes from 'stringify-attributes';
+import stringifyAttributes from 'stringify-attributes';
 
-import stringifyAttributes from '../../node_modules/stringify-attributes';
+// import stringifyAttributes from '../../node_modules/stringify-attributes';
 
 // stringifyAttributes({
 //   rainbow: true,

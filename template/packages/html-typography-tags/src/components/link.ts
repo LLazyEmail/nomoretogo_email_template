@@ -1,5 +1,5 @@
-// import stringifyAttributes from 'stringify-attributes';
-import stringifyAttributes from '../../node_modules/stringify-attributes';
+import stringifyAttributes from 'stringify-attributes';
+// import stringifyAttributes from '../../node_modules/stringify-attributes';
 // import customErrors from './Errors';
 // const customError = new customErrors('link');
 

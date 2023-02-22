@@ -1,5 +1,5 @@
-// import stringifyAttributes from 'stringify-attributes';
-import stringifyAttributes from '../../node_modules/stringify-attributes';
+import stringifyAttributes from 'stringify-attributes';
+// import stringifyAttributes from '../../node_modules/stringify-attributes';
 // params: { src: string, width: string }
 function paragraphComponent (params: any) {
 

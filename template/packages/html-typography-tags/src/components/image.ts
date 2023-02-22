@@ -7,8 +7,8 @@
 // passing src, width, error handling, etc
 // plus to move it later between other templates
 
-// import stringifyAttributes from 'stringify-attributes';
-import stringifyAttributes from '../../node_modules/stringify-attributes';
+import stringifyAttributes from 'stringify-attributes';
+// import stringifyAttributes from '../../node_modules/stringify-attributes';
 
 function imageComponent (params: { src: string, width: string }) {
 
