@@ -54,7 +54,7 @@ const tableWithTwoRecipeMainBlock = (image:string, image2:string) => {
   </tbody></table>`;
 };
 
-function countImageInRows(arr, chunkSize) {
+function countImageInRows(arr:any, chunkSize:number) {
   const res = [];
   while (arr.length > 0) {
     const chunk = arr.splice(0, chunkSize);

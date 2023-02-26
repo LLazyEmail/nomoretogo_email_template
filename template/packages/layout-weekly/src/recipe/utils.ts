@@ -21,16 +21,16 @@
  * @param width The num of elements per sub-array
  * @return the new matrix
  */
-export const listToMatrix = <T>(list: T[], width: number): T[][] => {
-  const matrix = [];
+// export const listToMatrix = <T>(list: T[], width: number): T[][] => {
+//   const matrix = [];
 
-  for (let i = 0, k = -1; i < list.length; i++) {
-      if (i % width === 0) {
-          k++;
-          matrix[k] = [];
-      }
-      matrix[k].push(list[i]);
-  }
+//   for (let i = 0, k = -1; i < list.length; i++) {
+//       if (i % width === 0) {
+//           k++;
+//           matrix[k] = [];
+//       }
+//       matrix[k].push(list[i]);
+//   }
 
-  return matrix;
-};
+//   return matrix;
+// };

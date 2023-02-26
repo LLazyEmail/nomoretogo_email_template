@@ -15,9 +15,9 @@ const recipeComponent = (params:{ id:string, href:string, src:string, title:stri
   // TODO add checks to this component
 
   // TODO to finish
-  const recIMG = imageLink({ id, href, src, "width": '' });
+  const recipeImage = imageLink({ id, href, src, "width": '' });
   //removing id
-  const recipeImage = imageComponent({ href, src});
+  // const recipeImage = imageComponent({ href, src});
 
   const titleLine = recipeName({ title, subtitle: text });
 
