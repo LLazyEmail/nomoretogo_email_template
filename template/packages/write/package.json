@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "type": "commonjs",
   "dependencies": {
-    "@template/display": "*",
-    "stringify-attributes": "^3.0.0",
-    "write":"*"
+    "markup-generator": "^2.1.0",
+    "stringify-attributes": "^3.0.0"
   }
 }
