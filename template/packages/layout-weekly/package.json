@@ -5,5 +5,13 @@
   "dependencies": {
     "html-typography-tags": "^4.1.0",
     "nmtg-template-mailerlite-typography": "^5.1.0"
+  },
+  "license": "MIT",
+  "private": false,
+  "release": {
+    "publishDir": "dist"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -4,7 +4,15 @@
   "type": "commonjs",
   "dependencies": {
     "html-typography-tags": "^4.1.0",
-    "nmtg-template-mailerlite-typography": "*",
-    "layout-weekly": "*"
+    "nmtg-template-layout-weekly": "^1.0.0",
+    "nmtg-template-mailerlite-typography": "*"
+  },
+  "license": "MIT",
+  "private": false,
+  "release": {
+    "publishDir": "dist"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

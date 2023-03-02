@@ -5,5 +5,13 @@
   "dependencies": {
     "markup-generator": "^2.4.0",
     "stringify-attributes": "^3.0.0"
+  },
+  "license": "MIT",
+  "private": false,
+  "release": {
+    "publishDir": "dist"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

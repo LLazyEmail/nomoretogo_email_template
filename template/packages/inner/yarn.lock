@@ -21,10 +21,26 @@ html-typography-tags@^4.1.0:
   dependencies:
     stringify-attributes "^3.0.0"
 
+nmtg-template-layout-weekly@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/nmtg-template-layout-weekly/-/nmtg-template-layout-weekly-1.0.0.tgz#bfb2d145586a92203723cfb5c9421c3bf1ce6e1c"
+  integrity sha512-ibeR1gfjUqlfcSN2TIbczEpmV75MK5Av2CaQzxgR62zxxJiCsFZ8XfslBXkUe2F7SggM3xZy6zlDkGllkDqU2A==
+  dependencies:
+    html-typography-tags "^4.1.0"
+    nmtg-template-mailerlite-typography "^5.1.0"
+
 nmtg-template-mailerlite-typography@*:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-5.0.1.tgz#01600f35c9c4804f3ddf1eab287ca91b2ae1c085"
   integrity sha512-3geomUwi4hUHaWwhabb72EkVimh8j0OJmd/bgeTTM3HBImfHoujn2UFYBIekCncJVclKwsd4eGTYMkdPuoxUiQ==
+  dependencies:
+    html-typography-tags "*"
+    stringify-attributes "^3.0.0"
+
+nmtg-template-mailerlite-typography@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-5.1.0.tgz#09e47af572ef1489b19a8efd5de1ce76e1af8d31"
+  integrity sha512-ut9m2AQzDOws6Rub+Ebihs7tqrhYzKzXaVIxdvYsHASS4Yila8Ro0CtOQNyeAnn7YD1GPgmG5ZXNFG6qNYBNLQ==
   dependencies:
     html-typography-tags "*"
     stringify-attributes "^3.0.0"
