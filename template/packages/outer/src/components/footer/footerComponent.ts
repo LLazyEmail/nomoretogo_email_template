@@ -15,7 +15,7 @@ import address from './address';
 import description from './description';
 import footerHTML from './section';
 
-import SocialPanelComponent from './social';
+// import SocialPanelComponent from './social';
 
 
 const footerComponent = (params:any) => {

@@ -1,4 +1,4 @@
-import { headComponent } from 'outer';
+import { headComponent } from 'nmtg-template-mailerlite-outertemplate';
 
 import { titleHead } from '../config';
 

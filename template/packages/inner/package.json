@@ -1,6 +1,6 @@
 {
-  "name": "@template/inner",
-  "version": "2.0.1",
+  "name": "nmtg-template-mailerlite-inner",
+  "version": "7.0.1",
   "type": "commonjs",
   "dependencies": {
     "html-typography-tags": "^4.1.0",

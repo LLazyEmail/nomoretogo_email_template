@@ -3,9 +3,8 @@
   "version": "2.0.1",
   "type": "commonjs",
   "dependencies": {
-    "@template/typo": "*",
-    "@template/nmtg-typo": "*",
-    "@template/outer": "*",
-    "@template/inner": "*"
+    "nmtg-template-layout-weekly": "^1.0.0",
+    "nmtg-template-mailerlite-inner": "^7.0.0",
+    "nmtg-template-mailerlite-outertemplate": "^5.1.0"
   }
 }

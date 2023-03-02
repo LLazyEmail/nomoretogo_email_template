@@ -1,5 +1,5 @@
 // Create Main display
-import { mainComponent } from 'inner';
+import { mainComponent } from 'nmtg-template-mailerlite-outertemplate';
 
 // import headHTMLString from './head';
 const displayHead = 'xxx';

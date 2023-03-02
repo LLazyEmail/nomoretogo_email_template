@@ -2,7 +2,7 @@
 import { 
   footerComponent,  
   SocialPanelComponent
-} from 'outer';
+} from 'nmtg-template-mailerlite-outertemplate';
 
 import supportHTMLString from '../content/support-amazon-fresh'; 
 

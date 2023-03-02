@@ -1,4 +1,4 @@
-import { SupportContainerComponent } from 'inner';
+import { SupportContainerComponent } from 'nmtg-template-mailerlite-inner';
 
 import { footerData } from '../config';
 

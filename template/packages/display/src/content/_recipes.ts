@@ -1,4 +1,4 @@
-import { recipesContainerComponent } from 'inner';
+import { recipesContainerComponent } from 'nmtg-template-layout-weekly';
 
 import { recipes } from '../config';
 

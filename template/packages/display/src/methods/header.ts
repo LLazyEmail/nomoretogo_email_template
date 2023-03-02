@@ -3,7 +3,7 @@ import {
   TopPanelSection, 
   contentMainTableWrap, 
   tableHeaderBlockLogo
-}  from 'inner'; 
+}  from 'nmtg-template-mailerlite-inner'; 
 
 const topPanelHTML = TopPanelSection();
 

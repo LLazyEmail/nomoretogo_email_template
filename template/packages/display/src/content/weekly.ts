@@ -1,7 +1,7 @@
 import { 
   WeeklyMenuContainerComponent,
   instructionContainerComponent
-} from 'inner';
+} from 'nmtg-template-layout-weekly';
 
 import { recipes } from '../config';
 

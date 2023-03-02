@@ -1,7 +1,7 @@
 // Body
 // import ow from 'ow';
 
-import { bodyComponent } from 'outer';
+import { bodyComponent } from 'nmtg-template-mailerlite-outertemplate';
 
 
 import contentHTMLString from '../content/content'

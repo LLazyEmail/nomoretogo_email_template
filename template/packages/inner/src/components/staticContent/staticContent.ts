@@ -8,7 +8,7 @@ import {
   WeeklyMenuContainerComponent, instructionContainerStatic 
 } from 'nmtg-template-layout-weekly';
 
-const StaticContentComponent = (params: {titleVar:string, subtitleVar:string, descriptionVar:string, recipes:any, buttonParams:any}) => {
+const StaticContentComponent = (params: {titleVar:any, subtitleVar:string, descriptionVar:any, recipes:any, buttonParams:any}) => {
   // destructure params
   const {
     titleVar,

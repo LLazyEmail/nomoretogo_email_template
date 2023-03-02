@@ -8,10 +8,7 @@ nmtg-template-mailerlite-outertemplate
 
 nmtg-template-layout-weekly
 
-
-
-"nmtg-template-mailerlite-inner": "^5.2.0",
-
+nmtg-template-mailerlite-inner
 
 
 

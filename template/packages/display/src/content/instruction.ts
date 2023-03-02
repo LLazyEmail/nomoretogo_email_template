@@ -1,7 +1,7 @@
 
 // we are using this component inside displayMain
 
-import { instructionContainerComponent } from 'inner';
+import { instructionContainerComponent } from 'nmtg-template-layout-weekly';
 
 // i decide to put content here, as we need a better structure with config file
 const settings = {
