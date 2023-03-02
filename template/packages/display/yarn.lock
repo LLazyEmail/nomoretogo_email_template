@@ -53,10 +53,10 @@ nmtg-template-mailerlite-inner@^7.0.0:
     nmtg-template-layout-weekly "^1.0.0"
     nmtg-template-mailerlite-typography "*"
 
-nmtg-template-mailerlite-outertemplate@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-5.1.0.tgz#d11a733548c0298bc315df3da8f78eabfef8b9f1"
-  integrity sha512-DodZgcRZQ4A1SyH9pxpDTlkmuqujQTP+ENPz3oxmdzvfXREz1nos6/4QXliX4wnMMwOf89T9ydIAirgbVV+GwA==
+nmtg-template-mailerlite-outertemplate@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-6.0.0.tgz#467381d48e0a461cbdba7a5656ee12076bfd8b78"
+  integrity sha512-jr7AmC2tRNjsfwYvop/uVMrGmDhHf44+af9xCVJwRbr+NXLEsIXwM2P2cRhBxiqRPeCtlwriDbi+gGJYxllUuw==
   dependencies:
     html-typography-tags "*"
     nmtg-template-mailerlite-typography "*"

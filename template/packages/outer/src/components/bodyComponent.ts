@@ -3,7 +3,7 @@
 
 // import ow from 'ow';
 
-const bodyComponent = (bodyContent:string, headerBlock:string) => {
+const bodyComponent = (bodyContent:string) => {
   // if (bodyContent == '') {
   //   error.add('bodyContent');
   // }
