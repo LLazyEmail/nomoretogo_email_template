@@ -1,12 +1,21 @@
 # nomoretogo_email_template
 
-@template/html-typography-tags
+typography: 
+- html-typography-tags
+- nmtg-template-mailerlite-typography
+
+nmtg-template-mailerlite-outertemplate
+
+nmtg-template-layout-weekly
 
 
-"html-typography-tags": "^0.2.0",
+
 "nmtg-template-mailerlite-inner": "^5.2.0",
-"nmtg-template-mailerlite-outertemplate": "^2.12.0",
-"nmtg-template-mailerlite-typography": "^4.1.0"
+
+
+
+
+
 
 
 yarn nx g @nrwl/js:lib layout-content
