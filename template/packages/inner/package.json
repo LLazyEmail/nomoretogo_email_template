@@ -4,6 +4,7 @@
   "type": "commonjs",
   "dependencies": {
     "html-typography-tags": "^4.1.0",
-    "nmtg-template-mailerlite-typography": "*"
+    "nmtg-template-mailerlite-typography": "*",
+    "layout-weekly": "*"
   }
 }

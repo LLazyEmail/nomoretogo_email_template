@@ -9,9 +9,9 @@ import contentContainer from '../content/container';
 // import textDescriptionMainBlock from '../content/description';
 // import titleTextMainBlock from '../content/title';
 
-import WeeklyMenuContainerComponent from '../weekly-menu/WeeklyMenuComponent';
+import { WeeklyMenuContainerComponent, instructionContainerStatic } from 'nmtg-template-layout-weekly';
 
-import instructionContainerStatic from '../instruction/containerStatic';
+// import instructionContainerStatic from '../instruction/containerStatic';
 
 
 const StaticContentComponent = (params: {title:string, subtitle:string, description:string, recipes:any, buttonParams:any}) => {

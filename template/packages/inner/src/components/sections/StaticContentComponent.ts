@@ -20,7 +20,9 @@ import {
   separatorComponent
 } from "nmtg-template-mailerlite-typography"
 
-import recipesContainerComponent from '../recipes/recipesContainerComponent';
+import { recipesContainerComponent } from 'nmtg-template-layout-weekly';
+
+
 
 
 // const contentSectionOne = () => {
@@ -67,7 +69,7 @@ const createBlockOne = (titleVar:string, subtitleVar:string, descriptionVar:stri
 
 // TODO move Weekly menu button section into sub-components
 // it was already moved into weeklyMenuButton.ts file
-const contentSubComponent = (text, recipeRowBlockRes, contentButtonParams) => {
+const contentSubComponent = (text:string, recipeRowBlockRes:string, contentButtonParams:any) => {
 
   // weekly menu button
   const buttonHTML = buttonComponent(contentButtonParams);

@@ -6,8 +6,13 @@ import {
     
 //---------------------------
 
+
+
 import instructionContainerComponent from './components/instruction/container';
 import instructionContainerStatic from './components/instruction/containerStatic';
+
+
+
 
 //--------------------------
 import lineBlock from './components/lineBlock';
@@ -40,8 +45,8 @@ export {
     StaticContentComponent,
 
     //--------------------
-    instructionContainerComponent,
-    instructionContainerStatic,
+    // instructionContainerComponent,
+    // instructionContainerStatic,
     //------------
    
     // instructionTitle,

@@ -1,6 +1,6 @@
 {
-  "name": "nmtg-layout-weekly",
-  "version": "0.0.1",
+  "name": "nmtg-template-layout-weekly",
+  "version": ".0.1",
   "type": "commonjs",
   "dependencies": {
     "html-typography-tags": "^4.1.0",
