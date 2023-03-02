@@ -3,7 +3,7 @@
 // remove later as we have weekly menu
 import recipesContainerComponent from './recipe';
   
-import WeeklyMenuContainerComponent from './weekly-menu/WeeklyMenuComponent';
+import WeeklyMenuContainerComponent from './weekly-menu/container';
 
 
 

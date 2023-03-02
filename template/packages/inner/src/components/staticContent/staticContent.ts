@@ -4,22 +4,16 @@ import {
 
 import contentContainer from '../content/container';
 
+import { 
+  WeeklyMenuContainerComponent, instructionContainerStatic 
+} from 'nmtg-template-layout-weekly';
 
-// import subtitle from '../content/subtitle';
-// import textDescriptionMainBlock from '../content/description';
-// import titleTextMainBlock from '../content/title';
-
-import { WeeklyMenuContainerComponent, instructionContainerStatic } from 'nmtg-template-layout-weekly';
-
-// import instructionContainerStatic from '../instruction/containerStatic';
-
-
-const StaticContentComponent = (params: {title:string, subtitle:string, description:string, recipes:any, buttonParams:any}) => {
+const StaticContentComponent = (params: {titleVar:string, subtitleVar:string, descriptionVar:string, recipes:any, buttonParams:any}) => {
   // destructure params
   const {
-    title,
-    subtitle,
-    description,
+    titleVar,
+    subtitleVar,
+    descriptionVar,
     // contentRecipeParams,
 
     // dataImage,
@@ -29,13 +23,12 @@ const StaticContentComponent = (params: {title:string, subtitle:string, descript
     buttonParams
   } = params;
 
-
+  
   // block 1
   const text = contentContainer({
-    title, subtitle, description
+    titleVar, subtitleVar, descriptionVar
   })
-  // const text =
-  //   contentTitleTextRes + contentSubTitleTextRes + contentTextDescriptionRes;
+
   // const text = '<!--  TEXT -->';
 
 
@@ -52,7 +45,7 @@ const StaticContentComponent = (params: {title:string, subtitle:string, descript
   console.log(instrHTML);
 
   // All content
-  const allContent = text + contentAndAfter;
+  const allContent = text + contentAndAfter + instrHTML;
   return allContent;
   
 };

@@ -2,7 +2,7 @@
 import { renderSubHeading } from 'nmtg-template-mailerlite-typography';
 
 // TODO should we replace a method inside with a string
-const subTitleMainBlock = (subTitleText:string) => {
+const subtitle = (subTitleText:string) => {
   
   
   
@@ -38,7 +38,7 @@ const subTitleMainBlock = (subTitleText:string) => {
   </tr>
   </tbody></table>`;
 };
-export default subTitleMainBlock;
+export default subtitle;
 
 // export default function (subTitleText) {
 //   return subTitleMainBlock(subTitleText);

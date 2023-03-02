@@ -1,9 +1,6 @@
 // TODO remove to container.ts
-import {
-  // buttonComponent,
-  separatorComponent
-} from 'nmtg-template-mailerlite-typography';
 import { buttonComponent } from 'html-typography-tags';
+import { separatorComponent } from 'nmtg-template-mailerlite-typography';
 
 import weeklyMenuButtonBlock from './WeeklyMenuButtonBlock';
 import recipesContainerComponent from '../recipe';

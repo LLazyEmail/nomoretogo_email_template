@@ -1,16 +1,16 @@
-import titleTextMainBlock from './title';
-import subTitleMainBlock from './subtitle';
-import textDescriptionMainBlock from './description';
+import title from './title';
+import subtitle from './subtitle';
+import description from './description';
 
-const contentContainer = (params: { title: string, subtitle: string, description: any }) => {
+const contentContainer = (params: { titleVar: string, subtitleVar: string, descriptionVar: any }) => {
 
-    const titleHTML = titleTextMainBlock(params.title);
+    const titleHTML = title(params.titleVar);
 
-    const subtitleHTML = subTitleMainBlock(params.subtitle);
+    const subtitleHTML = subtitle(params.subtitleVar);
 
-    const descriptionHTML = textDescriptionMainBlock(
-            params.description.textTop, 
-            params.description.textBottom
+    const descriptionHTML = description(
+            params.descriptionVar.textTop, 
+            params.descriptionVar.textBottom
         );
 
     // const text = '<!--  TEXT -->';
