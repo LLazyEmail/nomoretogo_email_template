@@ -1,6 +1,6 @@
 import { headHTMLString } from 'nmtg-template-display';
 
-import {writeFileParticle} from 'markup-generator';
+import { writeFileParticle } from 'markup-generator';
 
 
 describe('write', () => {
