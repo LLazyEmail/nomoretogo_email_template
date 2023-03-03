@@ -4,6 +4,7 @@
   "type": "commonjs",
   "dependencies": {
     "markup-generator": "^2.4.0",
+    "nmtg-template-display": "^2.0.1",
     "stringify-attributes": "^3.0.0"
   },
   "license": "MIT",
@@ -13,5 +14,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
   }
 }

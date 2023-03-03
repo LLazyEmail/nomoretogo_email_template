@@ -11,7 +11,7 @@ nmtg-template-layout-weekly
 nmtg-template-mailerlite-inner
 
 
-
+nmtg-template-display
 
 
 
@@ -143,6 +143,7 @@ https://raw.githubusercontent.com/LLazyEmail/nomoretogo_email_template/main/data
 ├──
 └── .gitignore
 ```
+
 ```bash
 ├── headComponent
 │   ├── subheadComponents (import)

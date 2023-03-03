@@ -1,5 +1,3 @@
-# Template
-
 # Nomoretogo
 
 
@@ -17,6 +15,7 @@ npx nx build display
 npx nx build write
 
 
+nmtg-template-layout-weekly
 
 https://nx.dev/getting-started/package-based-repo-tutorial
 
@@ -36,7 +35,3 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
-
-nmtg-template-layout-weekly
