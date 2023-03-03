@@ -1,6 +1,7 @@
 # write
 
-nx test nmtg-typo
+
+yarn nx test write
 
 This library was generated with [Nx](https://nx.dev).
 
