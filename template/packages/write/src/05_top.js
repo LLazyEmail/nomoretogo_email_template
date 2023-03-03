@@ -1,11 +1,11 @@
 // TODO add ow for running checks
-import headerComponent from '../src/components/headerComponent';
+// import headerComponent from '../src/components/headerComponent';
+// nmtg-template-display
+// const topPanel = headerComponent();
 
-const topPanel = headerComponent();
+// console.log(topPanel)
 
-console.log(topPanel)
-
-import writeFileParticle from 'utils';
+// import writeFileParticle from 'markup-generator';
 
 
-export default writeFileParticle(topPanel, 'nmtg-top')
+// export default writeFileParticle(topPanel, 'nmtg-top')

@@ -1,6 +1,6 @@
-import { RecipesHTMLString } from 'display';
+import { RecipesHTMLString } from 'nmtg-template-display';
 
-import writeFileParticle from 'utils';
+import writeFileParticle from 'markup-generator';
 
 
 export default writeFileParticle(RecipesHTMLString, 'nmtg-recipe')

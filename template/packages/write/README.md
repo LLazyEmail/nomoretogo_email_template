@@ -1,5 +1,7 @@
 # write
 
+nx test nmtg-typo
+
 This library was generated with [Nx](https://nx.dev).
 
 ## Building
