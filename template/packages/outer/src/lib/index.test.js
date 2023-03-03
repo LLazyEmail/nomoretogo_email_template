@@ -1,4 +1,4 @@
-import { footerComponent } from "../src/index";
+import { footerComponent } from "../index";
 
 // const data = [
 
