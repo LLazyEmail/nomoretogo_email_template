@@ -5,7 +5,7 @@
   "dependencies": {
     "html-typography-tags": "^4.1.0",
     "nmtg-template-layout-weekly": "^1.0.0",
-    "nmtg-template-mailerlite-typography": "*"
+    "nmtg-template-mailerlite-typography": "^7.0.0"
   },
   "license": "MIT",
   "private": false,

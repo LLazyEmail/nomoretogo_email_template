@@ -16,7 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@template/display": ["packages/display/src/index.ts"],
-      "@template/html-typography-tags": [
+      "html-typography-tags": [
         "packages/html-typography-tags/src/index.ts"
       ],      
       "@template/inner": ["packages/inner/src/index.ts"],

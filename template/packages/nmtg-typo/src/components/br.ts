@@ -1,4 +1,4 @@
-import { paragraphComponent } from '@template/html-typography-tags';
+import { paragraphComponent } from 'html-typography-tags';
 
 const brComponent = (attributes:any) => {
     const content = '';

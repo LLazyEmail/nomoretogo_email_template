@@ -31,10 +31,10 @@ html-typography-tags@*:
   dependencies:
     stringify-attributes "^3.0.0"
 
-html-typography-tags@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/html-typography-tags/-/html-typography-tags-4.1.0.tgz#f05bdcad26bfe8fcd7da10179ca56f423e0ad27c"
-  integrity sha512-pP/lYW+fJrwk6P4OChPAv6XLerVNOUDs1uzdSptGNTIzHeTJPRbqPJxY0U/3ZzgTo6x+O4rdxnMcWI8Xib4VvA==
+html-typography-tags@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/html-typography-tags/-/html-typography-tags-5.0.0.tgz#4b3317f51b78e14cf3f761d97a53545c32d14098"
+  integrity sha512-dZhMqN04xXqF/wx4RXDcgNYaBRJsEVSiXvecXtcb0IzywgzhuzBM4FAVxx+Oi7owe6aBJuoXIERyzPfQSdF6nA==
   dependencies:
     stringify-attributes "^3.0.0"
 
@@ -43,12 +43,12 @@ lodash.isequal@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
   integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
 
-nmtg-template-mailerlite-typography@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-6.0.0.tgz#d9fbd329b604cc30475a0a2d9bedc4ab9e03c647"
-  integrity sha512-Qpo5b+CUJybl/nAo1rn1gxKU69N/kGixTwstX2fkicGxJeK11Zl9cyoMzA984udjGkou3v8WoEUa3Aeex23USQ==
+nmtg-template-mailerlite-typography@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-7.0.0.tgz#efbc34f9a3207edc9f29ec0203d3c5f09412ffdc"
+  integrity sha512-CT/vx+N96J9EaU+YSwOOnFV8eZrw3yjHtzgRf7Y7SNFvCoH6jJxAOA1DhHW2DjQdkuDXAHlfBbfW+Jgpfyar+A==
   dependencies:
-    html-typography-tags "^4.1.0"
+    html-typography-tags "^5.0.0"
     stringify-attributes "^3.0.0"
 
 ow@^1.1.1:
