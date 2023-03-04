@@ -4,7 +4,7 @@
   "type": "commonjs",
   "dependencies": {
     "html-typography-tags": "*",
-    "nmtg-template-mailerlite-typography": "*",
+    "nmtg-template-mailerlite-typography": "^6.0.0",
     "ow": "^1.1.1"
   },
   "license": "MIT",

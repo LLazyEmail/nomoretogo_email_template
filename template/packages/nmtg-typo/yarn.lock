@@ -4,19 +4,19 @@
 
 escape-goat@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/escape-goat/-/escape-goat-3.0.0.tgz#e8b5fb658553fe8a3c4959c316c6ebb8c842b19c"
+  resolved "https://registry.npmjs.org/escape-goat/-/escape-goat-3.0.0.tgz"
   integrity sha512-w3PwNZJwRxlp47QGzhuEBldEqVHHhh8/tIPcl6ecf2Bou99cdAt0knihBV0Ecc7CGxYduXVBDheH1K2oADRlvw==
 
-html-typography-tags@*:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/html-typography-tags/-/html-typography-tags-4.0.0.tgz#5fa0cb18b08f82dd680f3531871ce0d0286e62bb"
-  integrity sha512-1mLKFdh6JcNuSQyfKISIuFjgwRBkTPYG6a41w+jCfEkGc0JsvQFavj/UjyLmSTQjPF16uYTrmWooOvQP7MXhqw==
+html-typography-tags@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/html-typography-tags/-/html-typography-tags-4.1.0.tgz#f05bdcad26bfe8fcd7da10179ca56f423e0ad27c"
+  integrity sha512-pP/lYW+fJrwk6P4OChPAv6XLerVNOUDs1uzdSptGNTIzHeTJPRbqPJxY0U/3ZzgTo6x+O4rdxnMcWI8Xib4VvA==
   dependencies:
     stringify-attributes "^3.0.0"
 
 stringify-attributes@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.yarnpkg.com/stringify-attributes/-/stringify-attributes-3.0.0.tgz#10d8c3615924df47b70d28c848d71c8afb0a8e52"
+  resolved "https://registry.npmjs.org/stringify-attributes/-/stringify-attributes-3.0.0.tgz"
   integrity sha512-tJKiThlLfog6ljT7ZTihlMh0iAtjKlu/ss9DMmBE5oOosbMqOMcuxc7zDfxP2lGzSb2Bwvbd3gQTqTSCmXyySw==
   dependencies:
     escape-goat "^3.0.0"
