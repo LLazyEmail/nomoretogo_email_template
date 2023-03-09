@@ -1,7 +1,7 @@
 
-import { FooterHTMLString } from 'nmtg-template-display';
+import { footerHTMLString } from 'nmtg-template-display';
 
-import {writeFileParticle} from 'markup-generator';
+import { writeFileParticle } from 'markup-generator';
 
-export default writeFileParticle(FooterHTMLString, 'nmtg-footer')
+export default writeFileParticle(footerHTMLString, 'nmtg-footer')
 
