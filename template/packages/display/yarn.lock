@@ -3,102 +3,97 @@
 
 
 "@sindresorhus/is@^5.3.0":
-  "integrity" "sha512-CX6t4SYQ37lzxicAqsBtxA3OseeoVrh9cSJ5PFYam0GksYlupRfy1A+Q4aYD3zvcfECLc0zO2u+ZnR2UYKvCrw=="
-  "resolved" "https://registry.npmjs.org/@sindresorhus/is/-/is-5.3.0.tgz"
-  "version" "5.3.0"
+  version "5.3.0"
+  resolved "https://registry.npmjs.org/@sindresorhus/is/-/is-5.3.0.tgz"
+  integrity sha512-CX6t4SYQ37lzxicAqsBtxA3OseeoVrh9cSJ5PFYam0GksYlupRfy1A+Q4aYD3zvcfECLc0zO2u+ZnR2UYKvCrw==
 
-"callsites@^4.0.0":
-  "integrity" "sha512-y3jRROutgpKdz5vzEhWM34TidDU8vkJppF8dszITeb1PQmSqV3DTxyV8G/lyO/DNvtE1YTedehmw9MPZsCBHxQ=="
-  "resolved" "https://registry.npmjs.org/callsites/-/callsites-4.0.0.tgz"
-  "version" "4.0.0"
+callsites@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/callsites/-/callsites-4.0.0.tgz"
+  integrity sha512-y3jRROutgpKdz5vzEhWM34TidDU8vkJppF8dszITeb1PQmSqV3DTxyV8G/lyO/DNvtE1YTedehmw9MPZsCBHxQ==
 
-"dot-prop@^7.2.0":
-  "integrity" "sha512-Ol/IPXUARn9CSbkrdV4VJo7uCy1I3VuSiWCaFSg+8BdUOzF9n3jefIpcgAydvUZbTdEBZs2vEiTiS9m61ssiDA=="
-  "resolved" "https://registry.npmjs.org/dot-prop/-/dot-prop-7.2.0.tgz"
-  "version" "7.2.0"
+dot-prop@^7.2.0:
+  version "7.2.0"
+  resolved "https://registry.npmjs.org/dot-prop/-/dot-prop-7.2.0.tgz"
+  integrity sha512-Ol/IPXUARn9CSbkrdV4VJo7uCy1I3VuSiWCaFSg+8BdUOzF9n3jefIpcgAydvUZbTdEBZs2vEiTiS9m61ssiDA==
   dependencies:
-    "type-fest" "^2.11.2"
+    type-fest "^2.11.2"
 
-"escape-goat@^3.0.0":
-  "integrity" "sha512-w3PwNZJwRxlp47QGzhuEBldEqVHHhh8/tIPcl6ecf2Bou99cdAt0knihBV0Ecc7CGxYduXVBDheH1K2oADRlvw=="
-  "resolved" "https://registry.npmjs.org/escape-goat/-/escape-goat-3.0.0.tgz"
-  "version" "3.0.0"
+escape-goat@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/escape-goat/-/escape-goat-3.0.0.tgz"
+  integrity sha512-w3PwNZJwRxlp47QGzhuEBldEqVHHhh8/tIPcl6ecf2Bou99cdAt0knihBV0Ecc7CGxYduXVBDheH1K2oADRlvw==
 
-"html-typography-tags@^5.0.0":
-  "integrity" "sha512-dZhMqN04xXqF/wx4RXDcgNYaBRJsEVSiXvecXtcb0IzywgzhuzBM4FAVxx+Oi7owe6aBJuoXIERyzPfQSdF6nA=="
-  "resolved" "https://registry.npmjs.org/html-typography-tags/-/html-typography-tags-5.0.0.tgz"
-  "version" "5.0.0"
+html-typography-tags@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/html-typography-tags/-/html-typography-tags-5.0.0.tgz#4b3317f51b78e14cf3f761d97a53545c32d14098"
+  integrity sha512-dZhMqN04xXqF/wx4RXDcgNYaBRJsEVSiXvecXtcb0IzywgzhuzBM4FAVxx+Oi7owe6aBJuoXIERyzPfQSdF6nA==
   dependencies:
-    "stringify-attributes" "^3.0.0"
+    stringify-attributes "^3.0.0"
 
-"lodash.isequal@^4.5.0":
-  "integrity" "sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ=="
-  "resolved" "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz"
-  "version" "4.5.0"
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz"
+  integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
 
-"nmtg-template-layout-weekly@^1.1.0":
-  "integrity" "sha512-ljbP8WkjLVoY0kXltYfYuMK67g6+DE/FaXIaOSaEtkw9Mx1I/qWjSDCWQq4Cf9R0JVpFux8WfWirAD/3P4POew=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-layout-weekly/-/nmtg-template-layout-weekly-1.1.0.tgz"
-  "version" "1.1.0"
+nmtg-template-layout-weekly@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/nmtg-template-layout-weekly/-/nmtg-template-layout-weekly-1.1.0.tgz"
+  integrity sha512-ljbP8WkjLVoY0kXltYfYuMK67g6+DE/FaXIaOSaEtkw9Mx1I/qWjSDCWQq4Cf9R0JVpFux8WfWirAD/3P4POew==
   dependencies:
-    "html-typography-tags" "^5.0.0"
-    "nmtg-template-mailerlite-typography" "^7.0.0"
+    html-typography-tags "^5.0.0"
+    nmtg-template-mailerlite-typography "^7.0.0"
 
-"nmtg-template-mailerlite-inner@^7.6.0":
-  "integrity" "sha512-LxjMsrWkhT1Lgkt04eRKzfIhTbpLiebCRajrgTPBP//Fo2+K1M3tCCe+B9hhZwk333I+7iOMoH/H7loHSYPjsA=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-7.6.0.tgz"
-  "version" "7.6.0"
+nmtg-template-mailerlite-inner@^7.6.0:
+  version "7.6.0"
+  resolved "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-7.6.0.tgz"
+  integrity sha512-LxjMsrWkhT1Lgkt04eRKzfIhTbpLiebCRajrgTPBP//Fo2+K1M3tCCe+B9hhZwk333I+7iOMoH/H7loHSYPjsA==
   dependencies:
-    "html-typography-tags" "^5.0.0"
-    "nmtg-template-layout-weekly" "^1.1.0"
-    "nmtg-template-mailerlite-typography" "^7.0.0"
+    html-typography-tags "^5.0.0"
+    nmtg-template-layout-weekly "^1.1.0"
+    nmtg-template-mailerlite-typography "^7.0.0"
 
-"nmtg-template-mailerlite-outertemplate@^7.0.0":
-  "integrity" "sha512-DQz1a6W9EgsQ6QZFB8GWr4+Ltrwld5YP71Ax9uZAuV0mwHPkoHoKbLnXwg/bJnaet2ltuJmrsBHfrv6KKc89AA=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-7.0.0.tgz"
-  "version" "7.0.0"
+nmtg-template-mailerlite-outertemplate@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-7.0.0.tgz"
+  integrity sha512-DQz1a6W9EgsQ6QZFB8GWr4+Ltrwld5YP71Ax9uZAuV0mwHPkoHoKbLnXwg/bJnaet2ltuJmrsBHfrv6KKc89AA==
   dependencies:
-    "html-typography-tags" "^5.0.0"
-    "nmtg-template-mailerlite-typography" "^7.0.0"
-    "ow" "^1.1.1"
+    html-typography-tags "^5.0.0"
+    nmtg-template-mailerlite-typography "^7.0.0"
+    ow "^1.1.1"
 
-"nmtg-template-mailerlite-typography@^7.0.0":
-  "integrity" "sha512-CT/vx+N96J9EaU+YSwOOnFV8eZrw3yjHtzgRf7Y7SNFvCoH6jJxAOA1DhHW2DjQdkuDXAHlfBbfW+Jgpfyar+A=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-7.0.0.tgz"
-  "version" "7.0.0"
+nmtg-template-mailerlite-typography@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-7.0.0.tgz#efbc34f9a3207edc9f29ec0203d3c5f09412ffdc"
+  integrity sha512-CT/vx+N96J9EaU+YSwOOnFV8eZrw3yjHtzgRf7Y7SNFvCoH6jJxAOA1DhHW2DjQdkuDXAHlfBbfW+Jgpfyar+A==
   dependencies:
-    "html-typography-tags" "^5.0.0"
-    "stringify-attributes" "^3.0.0"
+    html-typography-tags "^5.0.0"
+    stringify-attributes "^3.0.0"
 
-"ow@^1.1.1":
-  "integrity" "sha512-sJBRCbS5vh1Jp9EOgwp1Ws3c16lJrUkJYlvWTYC03oyiYVwS/ns7lKRWow4w4XjDyTrA2pplQv4B2naWSR6yDA=="
-  "resolved" "https://registry.npmjs.org/ow/-/ow-1.1.1.tgz"
-  "version" "1.1.1"
+ow@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/ow/-/ow-1.1.1.tgz"
+  integrity sha512-sJBRCbS5vh1Jp9EOgwp1Ws3c16lJrUkJYlvWTYC03oyiYVwS/ns7lKRWow4w4XjDyTrA2pplQv4B2naWSR6yDA==
   dependencies:
     "@sindresorhus/is" "^5.3.0"
-    "callsites" "^4.0.0"
-    "dot-prop" "^7.2.0"
-    "lodash.isequal" "^4.5.0"
-    "vali-date" "^1.0.0"
+    callsites "^4.0.0"
+    dot-prop "^7.2.0"
+    lodash.isequal "^4.5.0"
+    vali-date "^1.0.0"
 
-"stringify-attributes@^3.0.0":
-  "integrity" "sha512-tJKiThlLfog6ljT7ZTihlMh0iAtjKlu/ss9DMmBE5oOosbMqOMcuxc7zDfxP2lGzSb2Bwvbd3gQTqTSCmXyySw=="
-  "resolved" "https://registry.npmjs.org/stringify-attributes/-/stringify-attributes-3.0.0.tgz"
-  "version" "3.0.0"
+stringify-attributes@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/stringify-attributes/-/stringify-attributes-3.0.0.tgz"
+  integrity sha512-tJKiThlLfog6ljT7ZTihlMh0iAtjKlu/ss9DMmBE5oOosbMqOMcuxc7zDfxP2lGzSb2Bwvbd3gQTqTSCmXyySw==
   dependencies:
-    "escape-goat" "^3.0.0"
+    escape-goat "^3.0.0"
 
-"tslib@^2.3.0":
-  "integrity" "sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg=="
-  "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz"
-  "version" "2.5.0"
+type-fest@^2.11.2:
+  version "2.19.0"
+  resolved "https://registry.npmjs.org/type-fest/-/type-fest-2.19.0.tgz"
+  integrity sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==
 
-"type-fest@^2.11.2":
-  "integrity" "sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA=="
-  "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-2.19.0.tgz"
-  "version" "2.19.0"
-
-"vali-date@^1.0.0":
-  "integrity" "sha512-sgECfZthyaCKW10N0fm27cg8HYTFK5qMWgypqkXMQ4Wbl/zZKx7xZICgcoxIIE+WFAP/MBL2EFwC/YvLxw3Zeg=="
-  "resolved" "https://registry.npmjs.org/vali-date/-/vali-date-1.0.0.tgz"
-  "version" "1.0.0"
+vali-date@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/vali-date/-/vali-date-1.0.0.tgz"
+  integrity sha512-sgECfZthyaCKW10N0fm27cg8HYTFK5qMWgypqkXMQ4Wbl/zZKx7xZICgcoxIIE+WFAP/MBL2EFwC/YvLxw3Zeg==

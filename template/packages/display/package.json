@@ -3,8 +3,10 @@
   "version": "2.5.1",
   "type": "commonjs",
   "dependencies": {
+    "html-typography-tags": "^5.0.0",
     "nmtg-template-layout-weekly": "^1.1.0",
     "nmtg-template-mailerlite-inner": "^7.6.0",
-    "nmtg-template-mailerlite-outertemplate": "^7.0.0"
+    "nmtg-template-mailerlite-outertemplate": "^7.0.0",
+    "nmtg-template-mailerlite-typography": "^7.0.0"
   }
 }
