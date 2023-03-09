@@ -1,10 +1,10 @@
 {
   "name": "nmtg-template-mailerlite-inner",
-  "version": "7.0.1",
+  "version": "7.5.1",
   "type": "commonjs",
   "dependencies": {
-    "html-typography-tags": "^4.1.0",
-    "nmtg-template-layout-weekly": "^1.0.0",
+    "html-typography-tags": "^5.0.0",
+    "nmtg-template-layout-weekly": "^1.1.0",
     "nmtg-template-mailerlite-typography": "^7.0.0"
   },
   "license": "MIT",

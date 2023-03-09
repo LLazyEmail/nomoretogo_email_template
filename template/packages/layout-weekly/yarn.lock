@@ -2,41 +2,29 @@
 # yarn lockfile v1
 
 
-"escape-goat@^3.0.0":
-  "integrity" "sha512-w3PwNZJwRxlp47QGzhuEBldEqVHHhh8/tIPcl6ecf2Bou99cdAt0knihBV0Ecc7CGxYduXVBDheH1K2oADRlvw=="
-  "resolved" "https://registry.npmjs.org/escape-goat/-/escape-goat-3.0.0.tgz"
-  "version" "3.0.0"
+escape-goat@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/escape-goat/-/escape-goat-3.0.0.tgz"
+  integrity sha512-w3PwNZJwRxlp47QGzhuEBldEqVHHhh8/tIPcl6ecf2Bou99cdAt0knihBV0Ecc7CGxYduXVBDheH1K2oADRlvw==
 
-"html-typography-tags@^4.1.0":
-  "integrity" "sha512-pP/lYW+fJrwk6P4OChPAv6XLerVNOUDs1uzdSptGNTIzHeTJPRbqPJxY0U/3ZzgTo6x+O4rdxnMcWI8Xib4VvA=="
-  "resolved" "https://registry.npmjs.org/html-typography-tags/-/html-typography-tags-4.1.0.tgz"
-  "version" "4.1.0"
+html-typography-tags@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/html-typography-tags/-/html-typography-tags-5.0.0.tgz#4b3317f51b78e14cf3f761d97a53545c32d14098"
+  integrity sha512-dZhMqN04xXqF/wx4RXDcgNYaBRJsEVSiXvecXtcb0IzywgzhuzBM4FAVxx+Oi7owe6aBJuoXIERyzPfQSdF6nA==
   dependencies:
-    "stringify-attributes" "^3.0.0"
+    stringify-attributes "^3.0.0"
 
-"html-typography-tags@^5.0.0":
-  "integrity" "sha512-dZhMqN04xXqF/wx4RXDcgNYaBRJsEVSiXvecXtcb0IzywgzhuzBM4FAVxx+Oi7owe6aBJuoXIERyzPfQSdF6nA=="
-  "resolved" "https://registry.npmjs.org/html-typography-tags/-/html-typography-tags-5.0.0.tgz"
-  "version" "5.0.0"
+nmtg-template-mailerlite-typography@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-7.0.0.tgz#efbc34f9a3207edc9f29ec0203d3c5f09412ffdc"
+  integrity sha512-CT/vx+N96J9EaU+YSwOOnFV8eZrw3yjHtzgRf7Y7SNFvCoH6jJxAOA1DhHW2DjQdkuDXAHlfBbfW+Jgpfyar+A==
   dependencies:
-    "stringify-attributes" "^3.0.0"
+    html-typography-tags "^5.0.0"
+    stringify-attributes "^3.0.0"
 
-"nmtg-template-mailerlite-typography@^7.0.0":
-  "integrity" "sha512-CT/vx+N96J9EaU+YSwOOnFV8eZrw3yjHtzgRf7Y7SNFvCoH6jJxAOA1DhHW2DjQdkuDXAHlfBbfW+Jgpfyar+A=="
-  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-7.0.0.tgz"
-  "version" "7.0.0"
+stringify-attributes@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/stringify-attributes/-/stringify-attributes-3.0.0.tgz"
+  integrity sha512-tJKiThlLfog6ljT7ZTihlMh0iAtjKlu/ss9DMmBE5oOosbMqOMcuxc7zDfxP2lGzSb2Bwvbd3gQTqTSCmXyySw==
   dependencies:
-    "html-typography-tags" "^5.0.0"
-    "stringify-attributes" "^3.0.0"
-
-"stringify-attributes@^3.0.0":
-  "integrity" "sha512-tJKiThlLfog6ljT7ZTihlMh0iAtjKlu/ss9DMmBE5oOosbMqOMcuxc7zDfxP2lGzSb2Bwvbd3gQTqTSCmXyySw=="
-  "resolved" "https://registry.npmjs.org/stringify-attributes/-/stringify-attributes-3.0.0.tgz"
-  "version" "3.0.0"
-  dependencies:
-    "escape-goat" "^3.0.0"
-
-"tslib@^2.3.0":
-  "integrity" "sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg=="
-  "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz"
-  "version" "2.5.0"
+    escape-goat "^3.0.0"

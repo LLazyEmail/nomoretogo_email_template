@@ -1,10 +1,10 @@
 {
-  "name": "@template/write",
-  "version": "0.0.1",
+  "name": "nmtg-template-write",
+  "version": "0.2.1",
   "type": "commonjs",
   "dependencies": {
-    "markup-generator": "^2.4.0",
-    "nmtg-template-display": "^2.0.1",
+    "markup-generator": "^2.5.0",
+    "nmtg-template-display": "^2.6.0",
     "stringify-attributes": "^3.0.0"
   },
   "license": "MIT",

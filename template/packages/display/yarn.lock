@@ -3,97 +3,102 @@
 
 
 "@sindresorhus/is@^5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-5.3.0.tgz#0ec9264cf54a527671d990eb874e030b55b70dcc"
-  integrity sha512-CX6t4SYQ37lzxicAqsBtxA3OseeoVrh9cSJ5PFYam0GksYlupRfy1A+Q4aYD3zvcfECLc0zO2u+ZnR2UYKvCrw==
+  "integrity" "sha512-CX6t4SYQ37lzxicAqsBtxA3OseeoVrh9cSJ5PFYam0GksYlupRfy1A+Q4aYD3zvcfECLc0zO2u+ZnR2UYKvCrw=="
+  "resolved" "https://registry.npmjs.org/@sindresorhus/is/-/is-5.3.0.tgz"
+  "version" "5.3.0"
 
-callsites@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/callsites/-/callsites-4.0.0.tgz#8014cea4fedfe681a30e2f7d2d557dd95808a92a"
-  integrity sha512-y3jRROutgpKdz5vzEhWM34TidDU8vkJppF8dszITeb1PQmSqV3DTxyV8G/lyO/DNvtE1YTedehmw9MPZsCBHxQ==
+"callsites@^4.0.0":
+  "integrity" "sha512-y3jRROutgpKdz5vzEhWM34TidDU8vkJppF8dszITeb1PQmSqV3DTxyV8G/lyO/DNvtE1YTedehmw9MPZsCBHxQ=="
+  "resolved" "https://registry.npmjs.org/callsites/-/callsites-4.0.0.tgz"
+  "version" "4.0.0"
 
-dot-prop@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/dot-prop/-/dot-prop-7.2.0.tgz#468172a3529779814d21a779c1ba2f6d76609809"
-  integrity sha512-Ol/IPXUARn9CSbkrdV4VJo7uCy1I3VuSiWCaFSg+8BdUOzF9n3jefIpcgAydvUZbTdEBZs2vEiTiS9m61ssiDA==
+"dot-prop@^7.2.0":
+  "integrity" "sha512-Ol/IPXUARn9CSbkrdV4VJo7uCy1I3VuSiWCaFSg+8BdUOzF9n3jefIpcgAydvUZbTdEBZs2vEiTiS9m61ssiDA=="
+  "resolved" "https://registry.npmjs.org/dot-prop/-/dot-prop-7.2.0.tgz"
+  "version" "7.2.0"
   dependencies:
-    type-fest "^2.11.2"
+    "type-fest" "^2.11.2"
 
-escape-goat@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/escape-goat/-/escape-goat-3.0.0.tgz#e8b5fb658553fe8a3c4959c316c6ebb8c842b19c"
-  integrity sha512-w3PwNZJwRxlp47QGzhuEBldEqVHHhh8/tIPcl6ecf2Bou99cdAt0knihBV0Ecc7CGxYduXVBDheH1K2oADRlvw==
+"escape-goat@^3.0.0":
+  "integrity" "sha512-w3PwNZJwRxlp47QGzhuEBldEqVHHhh8/tIPcl6ecf2Bou99cdAt0knihBV0Ecc7CGxYduXVBDheH1K2oADRlvw=="
+  "resolved" "https://registry.npmjs.org/escape-goat/-/escape-goat-3.0.0.tgz"
+  "version" "3.0.0"
 
-html-typography-tags@*, html-typography-tags@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/html-typography-tags/-/html-typography-tags-4.1.0.tgz#f05bdcad26bfe8fcd7da10179ca56f423e0ad27c"
-  integrity sha512-pP/lYW+fJrwk6P4OChPAv6XLerVNOUDs1uzdSptGNTIzHeTJPRbqPJxY0U/3ZzgTo6x+O4rdxnMcWI8Xib4VvA==
+"html-typography-tags@^5.0.0":
+  "integrity" "sha512-dZhMqN04xXqF/wx4RXDcgNYaBRJsEVSiXvecXtcb0IzywgzhuzBM4FAVxx+Oi7owe6aBJuoXIERyzPfQSdF6nA=="
+  "resolved" "https://registry.npmjs.org/html-typography-tags/-/html-typography-tags-5.0.0.tgz"
+  "version" "5.0.0"
   dependencies:
-    stringify-attributes "^3.0.0"
+    "stringify-attributes" "^3.0.0"
 
-lodash.isequal@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
-  integrity sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==
+"lodash.isequal@^4.5.0":
+  "integrity" "sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ=="
+  "resolved" "https://registry.npmjs.org/lodash.isequal/-/lodash.isequal-4.5.0.tgz"
+  "version" "4.5.0"
 
-nmtg-template-layout-weekly@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-layout-weekly/-/nmtg-template-layout-weekly-1.0.0.tgz#bfb2d145586a92203723cfb5c9421c3bf1ce6e1c"
-  integrity sha512-ibeR1gfjUqlfcSN2TIbczEpmV75MK5Av2CaQzxgR62zxxJiCsFZ8XfslBXkUe2F7SggM3xZy6zlDkGllkDqU2A==
+"nmtg-template-layout-weekly@^1.1.0":
+  "integrity" "sha512-ljbP8WkjLVoY0kXltYfYuMK67g6+DE/FaXIaOSaEtkw9Mx1I/qWjSDCWQq4Cf9R0JVpFux8WfWirAD/3P4POew=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-layout-weekly/-/nmtg-template-layout-weekly-1.1.0.tgz"
+  "version" "1.1.0"
   dependencies:
-    html-typography-tags "^4.1.0"
-    nmtg-template-mailerlite-typography "^5.1.0"
+    "html-typography-tags" "^5.0.0"
+    "nmtg-template-mailerlite-typography" "^7.0.0"
 
-nmtg-template-mailerlite-inner@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-7.0.0.tgz#0c7ab5ffbc776314bb1b585ae5d1a6bcf2e80524"
-  integrity sha512-ySFUZklFw/fqELVu2MeuXmwbgkqS50dsm49s5R0CoPWyfI8KHvF3UhEM0sSmFjW8NGWorGkE6GNjWRmMTliGHg==
+"nmtg-template-mailerlite-inner@^7.6.0":
+  "integrity" "sha512-LxjMsrWkhT1Lgkt04eRKzfIhTbpLiebCRajrgTPBP//Fo2+K1M3tCCe+B9hhZwk333I+7iOMoH/H7loHSYPjsA=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-inner/-/nmtg-template-mailerlite-inner-7.6.0.tgz"
+  "version" "7.6.0"
   dependencies:
-    html-typography-tags "^4.1.0"
-    nmtg-template-layout-weekly "^1.0.0"
-    nmtg-template-mailerlite-typography "*"
+    "html-typography-tags" "^5.0.0"
+    "nmtg-template-layout-weekly" "^1.1.0"
+    "nmtg-template-mailerlite-typography" "^7.0.0"
 
-nmtg-template-mailerlite-outertemplate@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-6.0.0.tgz#467381d48e0a461cbdba7a5656ee12076bfd8b78"
-  integrity sha512-jr7AmC2tRNjsfwYvop/uVMrGmDhHf44+af9xCVJwRbr+NXLEsIXwM2P2cRhBxiqRPeCtlwriDbi+gGJYxllUuw==
+"nmtg-template-mailerlite-outertemplate@^7.0.0":
+  "integrity" "sha512-DQz1a6W9EgsQ6QZFB8GWr4+Ltrwld5YP71Ax9uZAuV0mwHPkoHoKbLnXwg/bJnaet2ltuJmrsBHfrv6KKc89AA=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-outertemplate/-/nmtg-template-mailerlite-outertemplate-7.0.0.tgz"
+  "version" "7.0.0"
   dependencies:
-    html-typography-tags "*"
-    nmtg-template-mailerlite-typography "*"
-    ow "^1.1.1"
+    "html-typography-tags" "^5.0.0"
+    "nmtg-template-mailerlite-typography" "^7.0.0"
+    "ow" "^1.1.1"
 
-nmtg-template-mailerlite-typography@*, nmtg-template-mailerlite-typography@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-5.1.0.tgz#09e47af572ef1489b19a8efd5de1ce76e1af8d31"
-  integrity sha512-ut9m2AQzDOws6Rub+Ebihs7tqrhYzKzXaVIxdvYsHASS4Yila8Ro0CtOQNyeAnn7YD1GPgmG5ZXNFG6qNYBNLQ==
+"nmtg-template-mailerlite-typography@^7.0.0":
+  "integrity" "sha512-CT/vx+N96J9EaU+YSwOOnFV8eZrw3yjHtzgRf7Y7SNFvCoH6jJxAOA1DhHW2DjQdkuDXAHlfBbfW+Jgpfyar+A=="
+  "resolved" "https://registry.npmjs.org/nmtg-template-mailerlite-typography/-/nmtg-template-mailerlite-typography-7.0.0.tgz"
+  "version" "7.0.0"
   dependencies:
-    html-typography-tags "*"
-    stringify-attributes "^3.0.0"
+    "html-typography-tags" "^5.0.0"
+    "stringify-attributes" "^3.0.0"
 
-ow@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/ow/-/ow-1.1.1.tgz#354a0f7df9d8d0cf961b29116daf972ef6be1632"
-  integrity sha512-sJBRCbS5vh1Jp9EOgwp1Ws3c16lJrUkJYlvWTYC03oyiYVwS/ns7lKRWow4w4XjDyTrA2pplQv4B2naWSR6yDA==
+"ow@^1.1.1":
+  "integrity" "sha512-sJBRCbS5vh1Jp9EOgwp1Ws3c16lJrUkJYlvWTYC03oyiYVwS/ns7lKRWow4w4XjDyTrA2pplQv4B2naWSR6yDA=="
+  "resolved" "https://registry.npmjs.org/ow/-/ow-1.1.1.tgz"
+  "version" "1.1.1"
   dependencies:
     "@sindresorhus/is" "^5.3.0"
-    callsites "^4.0.0"
-    dot-prop "^7.2.0"
-    lodash.isequal "^4.5.0"
-    vali-date "^1.0.0"
+    "callsites" "^4.0.0"
+    "dot-prop" "^7.2.0"
+    "lodash.isequal" "^4.5.0"
+    "vali-date" "^1.0.0"
 
-stringify-attributes@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/stringify-attributes/-/stringify-attributes-3.0.0.tgz#10d8c3615924df47b70d28c848d71c8afb0a8e52"
-  integrity sha512-tJKiThlLfog6ljT7ZTihlMh0iAtjKlu/ss9DMmBE5oOosbMqOMcuxc7zDfxP2lGzSb2Bwvbd3gQTqTSCmXyySw==
+"stringify-attributes@^3.0.0":
+  "integrity" "sha512-tJKiThlLfog6ljT7ZTihlMh0iAtjKlu/ss9DMmBE5oOosbMqOMcuxc7zDfxP2lGzSb2Bwvbd3gQTqTSCmXyySw=="
+  "resolved" "https://registry.npmjs.org/stringify-attributes/-/stringify-attributes-3.0.0.tgz"
+  "version" "3.0.0"
   dependencies:
-    escape-goat "^3.0.0"
+    "escape-goat" "^3.0.0"
 
-type-fest@^2.11.2:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-2.19.0.tgz#88068015bb33036a598b952e55e9311a60fd3a9b"
-  integrity sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==
+"tslib@^2.3.0":
+  "integrity" "sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg=="
+  "resolved" "https://registry.npmjs.org/tslib/-/tslib-2.5.0.tgz"
+  "version" "2.5.0"
 
-vali-date@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vali-date/-/vali-date-1.0.0.tgz#1b904a59609fb328ef078138420934f6b86709a6"
-  integrity sha512-sgECfZthyaCKW10N0fm27cg8HYTFK5qMWgypqkXMQ4Wbl/zZKx7xZICgcoxIIE+WFAP/MBL2EFwC/YvLxw3Zeg==
+"type-fest@^2.11.2":
+  "integrity" "sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA=="
+  "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-2.19.0.tgz"
+  "version" "2.19.0"
+
+"vali-date@^1.0.0":
+  "integrity" "sha512-sgECfZthyaCKW10N0fm27cg8HYTFK5qMWgypqkXMQ4Wbl/zZKx7xZICgcoxIIE+WFAP/MBL2EFwC/YvLxw3Zeg=="
+  "resolved" "https://registry.npmjs.org/vali-date/-/vali-date-1.0.0.tgz"
+  "version" "1.0.0"

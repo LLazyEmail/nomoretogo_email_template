@@ -24,13 +24,6 @@ escape-goat@^3.0.0:
   resolved "https://registry.yarnpkg.com/escape-goat/-/escape-goat-3.0.0.tgz#e8b5fb658553fe8a3c4959c316c6ebb8c842b19c"
   integrity sha512-w3PwNZJwRxlp47QGzhuEBldEqVHHhh8/tIPcl6ecf2Bou99cdAt0knihBV0Ecc7CGxYduXVBDheH1K2oADRlvw==
 
-html-typography-tags@*:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/html-typography-tags/-/html-typography-tags-4.0.0.tgz#5fa0cb18b08f82dd680f3531871ce0d0286e62bb"
-  integrity sha512-1mLKFdh6JcNuSQyfKISIuFjgwRBkTPYG6a41w+jCfEkGc0JsvQFavj/UjyLmSTQjPF16uYTrmWooOvQP7MXhqw==
-  dependencies:
-    stringify-attributes "^3.0.0"
-
 html-typography-tags@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/html-typography-tags/-/html-typography-tags-5.0.0.tgz#4b3317f51b78e14cf3f761d97a53545c32d14098"
