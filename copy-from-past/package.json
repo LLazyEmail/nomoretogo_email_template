@@ -2,6 +2,7 @@
   "name": "nmtg-template-mailerlite",
   "version": "0.2.5",
   "description": "im trying to separate part of our code",
+  "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "browser": "dist/index.iife.js",
