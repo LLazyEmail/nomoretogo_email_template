@@ -1,6 +1,6 @@
 {
-  "name": "atherdon-old-newsletter-js-outertemplate",
-  "version": "3.7.6",
+  "name": "nmtg-template-mailerlite",
+  "version": "0.2.5",
   "description": "im trying to separate part of our code",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -18,8 +18,7 @@
     "test:all": "jest ./tests/* --passWithNoTests",
     "test:template": "jest ./tests/template.test.js --passWithNoTests",
     "test": "npm run chmodler && ./bash/tests.sh",
-    "upd": "shx chmod +x ./bash/update-packages.sh && ./bash/update-packages.sh",
-    "lint:fix": "./bash/lint-fix.sh"
+    "upd": "shx chmod +x ./bash/update-packages.sh && ./bash/update-packages.sh"
   },
   "devDependencies": {
     "@babel/cli": "7.19.3",
@@ -55,13 +54,14 @@
     "access": "public"
   },
   "dependencies": {
-    "atherdon-newsletter-js-layouts-body": "^3.2.0",
-    "atherdon-newsletter-js-layouts-misc": "^3.0.0",
-    "atherdon-newsletter-js-layouts-typography": "^3.1.0",
     "email-template-object": "^0.2.0",
-    "html-typography-tags": "^1.3.0",
-    "lit-typography": "^0.1.0",
-    "lodash": "^4.17.21"
+    "html-typography-tags": "^5.0.0",
+    "lodash": "^4.17.21",
+    "nmtg-template-display": "^3.0.0",
+    "nmtg-template-layout-weekly": "^1.1.0",
+    "nmtg-template-mailerlite-inner": "^7.6.0",
+    "nmtg-template-mailerlite-outertemplate": "^7.0.0",
+    "nmtg-template-mailerlite-typography": "^7.0.0"
   },
   "optionalDependencies": {
     "fsevents": "*"
