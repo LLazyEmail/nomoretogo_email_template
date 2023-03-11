@@ -21,7 +21,8 @@
       "@template/nmtg-typo": ["packages/nmtg-typo/src/index.ts"],
       "@template/outer": ["packages/outer/src/index.ts"],
       "@template/write": ["packages/write/src/index.ts"],
-      "html-typography-tags": ["packages/html-typography-tags/src/index.ts"]
+      "html-typography-tags": ["packages/html-typography-tags/src/index.ts"],
+      "full-template":["apps/full-template/src/main.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
