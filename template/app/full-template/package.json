@@ -1,0 +1,19 @@
+{
+  "name": "fulltemplate",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "html-typography-tags": "^5.0.0",
+    "markup-generator": "^2.5.0",
+    "nmtg-template-display": "^3.0.0",
+    "nmtg-template-layout-weekly": "^1.1.0",
+    "nmtg-template-mailerlite-inner": "^7.6.0",
+    "nmtg-template-mailerlite-outertemplate": "^7.0.0",
+    "nmtg-template-mailerlite-typography": "^7.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
