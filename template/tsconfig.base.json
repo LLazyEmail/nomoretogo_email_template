@@ -16,14 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@template/display": ["packages/display/src/index.ts"],
-      "html-typography-tags": [
-        "packages/html-typography-tags/src/index.ts"
-      ],      
       "@template/inner": ["packages/inner/src/index.ts"],
       "@template/layout-weekly": ["packages/layout-weekly/src/index.ts"],
       "@template/nmtg-typo": ["packages/nmtg-typo/src/index.ts"],
       "@template/outer": ["packages/outer/src/index.ts"],
-      "@template/write": ["packages/write/src/index.ts"]
+      "@template/write": ["packages/write/src/index.ts"],
+      "html-typography-tags": ["packages/html-typography-tags/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
