@@ -1,5 +1,13 @@
 const express = require("express");
 const path = require("path");
+
+
+// const a = require("nmtg-template-display");
+// const a = require("nmtg-template-layout-weekly");
+// const a = require("nmtg-template-mailerlite-inner");
+// const a = require("nmtg-template-mailerlite-outertemplate");
+// const a = require("nmtg-template-mailerlite-typography");
+
 // const {
 //   generateHtmlFullTemplateHackernoon,
 //   generateReactFullTemplateHackernoon,

@@ -12,7 +12,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.18.2",
-    "multiparty": "4.2.3"
+    "html-typography-tags": "^5.0.0",
+    "markup-generator": "^2.6.0",
+    "multiparty": "4.2.3",
+    "nmtg-template-display": "^3.0.0",
+    "nmtg-template-layout-weekly": "^1.1.0",
+    "nmtg-template-mailerlite-inner": "^7.6.0",
+    "nmtg-template-mailerlite-outertemplate": "^7.0.0",
+    "nmtg-template-mailerlite-typography": "^7.0.0"
   },
   "devDependencies": {
     "nodemon": "2.0.20"
