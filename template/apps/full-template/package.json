@@ -2,7 +2,8 @@
   "name": "fulltemplate",
   "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc -p tsconfig.app.json"
   },
   "dependencies": {
     "html-typography-tags": "^5.0.0",
