@@ -9,7 +9,7 @@ const content = "Bla bla bla";
 describe('strong component', () => {
     it('should work', () => {
 
-    const strongHTML = strongComponent({attributes, content});
+    const strongHTML = strongComponent({attributes, content}); console.log(strongHTML);
 
       expect(typeof strongHTML).toBe('string');
     });

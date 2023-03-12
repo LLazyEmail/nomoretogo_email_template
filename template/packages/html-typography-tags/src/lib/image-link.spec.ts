@@ -15,7 +15,7 @@ const data = {
 describe('image link component', () => {
   it('should work', () => {
 
-    const imageLinkHTML = imageLink(data);
+    const imageLinkHTML = imageLink(data); console.log(imageLinkHTML);
     expect(typeof imageLinkHTML).toBe('string');
   });
 });
