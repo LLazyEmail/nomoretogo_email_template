@@ -1,17 +1,11 @@
 // export * from './lib/html-typography-tags';
 
-
-
-
 import buttonComponent from './components/button';
 
 import divComponent from './components/div';
 
-
 //  import heading from './components/heading-nmtg';
-
 //  import headingComponent from './components/heading';
-
 //  import headingOneComponent from './components/headingOne';
 
 import imageComponent from './components/image';
@@ -51,6 +45,7 @@ const data = {
     text: 'over Rice and Snap Peas',
     width: "600px"
 };
+
 
 
 const linkHTML = linkComponent(config);
