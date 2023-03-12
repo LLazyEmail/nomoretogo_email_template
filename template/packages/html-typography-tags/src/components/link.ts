@@ -1,17 +1,18 @@
 import stringifyAttributes from 'stringify-attributes';
-// import customErrors from './Errors';
-// const customError = new customErrors('link');
 
 // import ow from 'ow';
 // params: { src: string, width: string }
 function linkComponent (params: any) {
 
-
-
   const { attributes, content } = params;
-  const attributesStr = stringifyAttributes(attributes);
 
-  return `<a ${attributesStr}>${content}</a>`;
+  if (attributes){
+    const attributesStr = stringifyAttributes(attributes);
+    return `<a ${attributesStr}>${content}</a>`;
+  }
+
+  return `<a>${content}</a>`;
+ 
 }
 
 export default linkComponent;
