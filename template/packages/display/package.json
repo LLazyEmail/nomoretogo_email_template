@@ -8,5 +8,8 @@
     "nmtg-template-mailerlite-inner": "^7.6.0",
     "nmtg-template-mailerlite-outertemplate": "^7.0.0",
     "nmtg-template-mailerlite-typography": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
