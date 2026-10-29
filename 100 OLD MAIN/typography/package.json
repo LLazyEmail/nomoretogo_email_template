@@ -50,5 +50,8 @@
   "dependencies": {
     "create-html-element": "^4.0.1",
     "stringify-attributes": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

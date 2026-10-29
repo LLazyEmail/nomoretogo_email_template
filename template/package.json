@@ -6,7 +6,9 @@
     "b": "npm run chmodler && ./bash/build.sh",
     "b2": "npx nx run-many --target=build",
     "chmodler": "shx chmod -R 755 ./bash",
-    "lint:fix": "./bash/lint-fix.sh"
+    "lint:fix": "./bash/lint-fix.sh",
+    "build": "npx nx run-many --target=build",
+    "test": "npx nx run-many --target=test"
   },
   "private": true,
   "dependencies": {
@@ -47,5 +49,8 @@
     "ts-jest": "^29.0.5",
     "ts-node": "10.9.1",
     "typescript": "~4.9.5"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "name": "nomoretogo_email_template",
+  "private": true,
+  "description": "No More To-Go email template monorepo root. Active workspace lives in template/.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "npm --prefix template run build",
+    "test": "npm --prefix template test",
+    "lint": "npm --prefix template run lint:fix"
+  }
+}
