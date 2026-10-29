@@ -5,7 +5,7 @@
 
 // console.log(topPanel)
 
-// import {writeFileParticle} from 'markup-generator';
+// import { writeFileParticle } from './writeFileParticle.js';
 
 
 // export default writeFileParticle(topPanel, 'nmtg-top')

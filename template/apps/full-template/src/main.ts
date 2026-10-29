@@ -1,7 +1,12 @@
 import { headHTMLString } from 'nmtg-template-display';
 
-import {writeFileParticle} from 'markup-generator';
+import { writeGeneratedFile } from 'markup-generator';
 
-  writeFileParticle(headHTMLString, 'nmtg-Head');
+const writeFileParticle = (string, suffix) => {
+  void writeGeneratedFile({ content: string, prefix: suffix });
+  return true;
+};
+
+writeFileParticle(headHTMLString, 'nmtg-Head');
 
 console.log('Hello World');
