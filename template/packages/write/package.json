@@ -3,7 +3,7 @@
   "version": "0.2.1",
   "type": "commonjs",
   "dependencies": {
-    "markup-generator": "^2.5.0",
+    "markup-generator": "^4.0.0",
     "nmtg-template-display": "^3.0.0"
   },
   "license": "MIT",
