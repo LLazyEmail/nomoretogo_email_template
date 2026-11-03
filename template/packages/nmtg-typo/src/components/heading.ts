@@ -1,7 +1,6 @@
 // Component heading
 
 import { linkComponent } from 'html-typography-tags';
-import stringifyAttributes from 'stringify-attributes';
 // import Errors from './Errors';
 
 // TODO replace with a link component
@@ -23,11 +22,7 @@ const heading = (params: { hrefTitle: string, idTitle: string, textTitle: string
     style: `text-decoration: none; color: #111111; text-transform: none; font-style: normal; text-decoration: none;`,
   };
 
-  const attributesStr = stringifyAttributes(attributes);
-
-  // console.log(attributesStr);
-
-  return linkComponent({ content: params.textTitle, attributesStr });
+  return linkComponent({ content: params.textTitle, attributes });
 
 
   // return `<a href="${hrefTitle}" data-link-id="${idTitle}" style="text-decoration: none; color: #111111; text-transform: none; font-style: normal; text-decoration: none;" target="_self">${textTitle}</a>`;
