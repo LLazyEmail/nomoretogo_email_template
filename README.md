@@ -44,6 +44,21 @@ delete this module later
 I removed factory class, component universal and errors class from some of our packages in order to avoid errors from our new setup
 
 
+## CI / GitHub Actions
+
+All workflows live in `.github/workflows/` and run against `main`.
+
+| Workflow | File | When it runs | What it does |
+| --- | --- | --- | --- |
+| Node.js CI | `node.js.yml` | push and PR to `main` | In `template/`: `npm ci`, then `npm run build` (Nx `run-many --target=build`) on Node 22, 24 and 26. `npm test` also runs but is non-blocking (`continue-on-error`) because the old Jest specs are stale, see the note above. |
+| ESLint | `eslint.yml` | push and PR to `main` | Installs `template/` on Node 24 and runs `npx nx run-many --target=lint --all`. |
+| CodeQL | `codeql-analysis.yml` | push and PR to `main`, plus weekly (Tuesday 10:41 UTC) | GitHub code scanning for JavaScript/TypeScript; findings show under Security → Code scanning. |
+| TODO to Issue | `todo.yml` | push and PR to `main` | Turns new `TODO` comments into GitHub issues. |
+
+Dependabot security updates target `template/`; CI installs from `template/package-lock.json` (`template/yarn.lock` is kept for local Yarn users but is not used in CI).
+
+Nx runs locally only: `template/nx.json` uses the default task runner (no Nx Cloud), so no token or account is needed. To reproduce CI: `cd template && npm ci && npm run build`.
+
 ### Examples of source.md files
 - https://github.com/LLazyEmail/nomoretogo_email_template/blob/main/data/source.md
 - https://github.com/LLazyEmail/nomoretogo_email_template/blob/main/data/source-wrapped-recipes.md
