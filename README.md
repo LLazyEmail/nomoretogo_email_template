@@ -55,6 +55,8 @@ All workflows live in `.github/workflows/` and run against `main`.
 | CodeQL | `codeql-analysis.yml` | push and PR to `main`, plus weekly (Tuesday 10:41 UTC) | GitHub code scanning for JavaScript/TypeScript; findings show under Security → Code scanning. |
 | TODO to Issue | `todo.yml` | push and PR to `main` | Turns new `TODO` comments into GitHub issues. |
 
+Dependabot security updates target `template/`; CI installs from `template/package-lock.json` (`template/yarn.lock` is kept for local Yarn users but is not used in CI).
+
 Nx runs locally only: `template/nx.json` uses the default task runner (no Nx Cloud), so no token or account is needed. To reproduce CI: `cd template && npm ci && npm run build`.
 
 ### Examples of source.md files
